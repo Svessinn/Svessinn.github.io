@@ -129,7 +129,8 @@ let app = new Vue({
 	
 	computed: {
 		Val: function () {
-			return 100 * (this.wishlistSize * (1 + this.wishBoost / 100) + this.firstWishBoost / 100) / (this.leftChars - this.disabledChars + ((1 - (this.leftChars) / (this.totalChars)) ** this.PersonalRare) * this.totalChars) + (1 / this.wishProtection);
+                        sm = (this.wishlistSize * (1 + this.wishBoost / 100) + this.firstWishBoost / 100) / (this.leftChars - this.disabledChars + ((1 - (this.leftChars) / (this.totalChars)) ** this.PersonalRare) * this.totalChars) + (1 / this.wishProtection);
+			return 100*sm
 		},
 		
 		Prob: function () {
