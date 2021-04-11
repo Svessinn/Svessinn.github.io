@@ -17,7 +17,7 @@ import json
 # Should be a JSON file
 # We recommend compiling your data using DiscordChatExporter
 files = [
-"flood-7.json"
+# File names go here
 ]
 
 # A dictionary of all the kakera emojis

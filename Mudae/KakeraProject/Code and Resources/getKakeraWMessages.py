@@ -11,9 +11,8 @@ from collections import defaultdict as ddict
 import json
 
 files = [
-"flood-7.json"
+# File names go here
 ]
-
 Mudae = "432610292342587392"
 Mudamaid2 = "488711695640821760"
 

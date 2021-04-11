@@ -25,40 +25,7 @@ dct = ddict(int)
 # Should be .txt files
 # We recommend compiling your data using DiscordChatExporter
 files = [
-
-# Dataset 1 
-# 2021-03-15 22:00 UTC - 2021-03-31 07:26 UTC
-# After Light kakera was added
-
-#"resources-1/flood-1.txt",
-#"resources-1/flood-2.txt",
-#"resources-1/flood-3.txt",
-#"resources-1/flood-4.txt",
-#"resources-1/flood-5.txt",
-#"resources-1/flood-6.txt",
-#"resources-1/flood-7.txt"
-#"resources-1/flood-8.txt",
-#"resources-1/flood-9.txt",
-#"resources-1/flood-husbando.txt",
-#"resources-1/flood-waifu.txt",
-#"resources-1/marry-roulette.txt"
-
-# Dataset 2
-# 2020-12-31 22:00 UTC - 2021-02-28 22:00 UTC
-# Before Light kakera was added
-
-"resources-2/flood-1.txt",
-"resources-2/flood-2.txt",
-"resources-2/flood-3.txt",
-"resources-2/flood-4.txt",
-"resources-2/flood-5.txt",
-"resources-2/flood-6.txt",
-"resources-2/flood-7.txt",
-"resources-2/flood-8.txt",
-"resources-2/flood-9.txt",
-"resources-2/flood-husbando.txt",
-"resources-2/flood-waifu.txt",
-"resources-2/marry-roulette.txt"
+# File names go here
 ]
 
 # Function to filter the kakera reactions
