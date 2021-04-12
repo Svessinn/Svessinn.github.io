@@ -32,7 +32,7 @@
                <div id="calc-form" aria-labelledby="formula-header">
                   <div class="card-body">
                      <form>
-                        <value-input id="bronzeValue" label="Base Value of the Bronze Badge" fa-icon="certificate" v-model:value.number="bronzeValue" :min-tick="1000" :max-tick="10000" :tick-vals="[500, 1000]"></value-input>
+                        <value-input id="bronzeValue" label="Base Value of the Bronze Badge" fa-icon="certificate #CD7F32" v-model:value.number="bronzeValue" :min-tick="1000" :max-tick="10000" :tick-vals="[500, 1000]"></value-input>
                         <value-input id="silverValue" label="Base Value of the Silver Badge" fa-icon="certificate" v-model:value.number="silverValue" :min-tick="1000" :max-tick="10000" :tick-vals="[500, 1000]"></value-input>
                         <value-input id="goldValue" label="Base Value of the Gold Badge" fa-icon="certificate" v-model:value.number="goldValue" :min-tick="1000" :max-tick="10000" :tick-vals="[500, 1000]"></value-input>
                         <value-input id="sapphireValue" label="Base Value of the Sapphire Badge" fa-icon="certificate" v-model:value.number="sapphireValue" :min-tick="1000" :max-tick="10000" :tick-vals="[500, 1000]"></value-input>
@@ -50,7 +50,7 @@
                         </thead>
                         <tbody>
                            <tr>
-                              
+                              <td>{{BadgeValues[0]}}</td>
                            </tr>
                         </tbody>
                      </table>
