@@ -98,14 +98,12 @@ Vue.component("value-input", {
 let app = new Vue({
 	el: "#app",
 	data: {
-		values:{
-			bronzeValue:1000,
-			silverValue:1000,
-			goldValue:1000,
-			sapphireValue:1000,
-			rubyValue:1000,
-			emeraldValue:1000
-		},
+		bronzeValue:1000,
+		silverValue:1000,
+		goldValue:1000,
+		sapphireValue:1000,
+		rubyValue:1000,
+		emeraldValue:1000,
 		timeWasted:10,
 		hoursPerClaim:3,
 		averageCharacterValue:150,
