@@ -161,10 +161,10 @@ let app = new Vue({
 		
 		
 		RubyBase: function () {
-			let Cost = 100;
-			let Remaining = (this.TotalCost-Cost)*0.75;
-			let Time = Cost/this.BaseDailyIncome;
-			return [Cost, Remaining, Time];
+			let cost = this.SumValues[1]+this.SumValues[5]+this.SumValues[9]+this.SumValues[19];
+			let remaining = (this.TotalCost-cost)*0.75;
+			let time = cost/this.BaseDailyIncome;
+			return [cost, remaining, time];
 		},
 		
 		
