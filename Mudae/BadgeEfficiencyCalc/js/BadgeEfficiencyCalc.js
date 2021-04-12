@@ -161,7 +161,7 @@ let app = new Vue({
 		
 		
 		RubyBase: function () {
-			let Cost = this.SumValues[1]+this.SumValues[5]+this.SumValues[9]+this.SumValues[19];
+			let Cost = 100;
 			let Remaining = (this.TotalCost-Cost)*0.75;
 			let Time = Cost/this.BaseDailyIncome;
 			return [Cost, Remaining, Time];
