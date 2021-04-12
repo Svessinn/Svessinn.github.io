@@ -125,3 +125,17 @@ let app = new Vue({
 		hljs.initHighlightingOnLoad();
 	}
 });
+
+let v-for-object = new Vue({
+  el: '#v-for-object',
+  data: {
+    object: {
+	    bronzeValue:1000,
+	    silverValue:1000,
+	    goldValue:1000,
+	    sapphireValue:1000,
+	    rubyValue:1000,
+	    emeraldValue:1000
+    }
+  }
+});
