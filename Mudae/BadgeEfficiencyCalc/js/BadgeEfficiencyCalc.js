@@ -123,7 +123,7 @@ let app = new Vue({
         this.rubyValue, this.rubyValue*2, this.rubyValue*3, this.rubyValue*4, 
         this.emeraldValue, this.emeraldValue*2, this.emeraldValue*3, this.emeraldValue*4,
                   ]
-			return Costs
+			return Costs[2]
 		},
 	mounted: function () {
 		renderMathInElement(this.$refs.nerdShit);
