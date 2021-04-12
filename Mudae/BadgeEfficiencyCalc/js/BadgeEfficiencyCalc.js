@@ -169,10 +169,10 @@ let app = new Vue({
 		
 		
 		EmeraldBase: function () {
-			let Cost = this.SumValues[2]+this.SumValues[6]+this.SumValues[10]+this.SumValues[19];
-			let Remaining = this.TotalCost-Cost;
-			let Time = Cost/this.BaseDailyIncome;
-			return [Cost, Remaining, Time];
+			let cost = this.SumValues[2]+this.SumValues[6]+this.SumValues[10]+this.SumValues[19];
+			let remaining = this.TotalCost-cost;
+			let time = cost/this.BaseDailyIncome;
+			return [cost, remaining, time];
 		},
 		
 		
