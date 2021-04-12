@@ -116,14 +116,20 @@ let app = new Vue({
 	computed: {
 		BadgeValues: function () {
 			let lst = [
-				this.bronzeValue, this.bronzeValue*2, this.bronzeValue*3, this.bronzeValue*4, 
-				this.silverValue, this.silverValue*2, this.silverValue*3, this.silverValue*4, 
-				this.goldValue, this.goldValue*2, this.goldValue*3, this.goldValue*4, 
-				this.sapphireValue, this.sapphireValue*2, this.sapphireValue*3, this.sapphireValue*4, 
-				this.rubyValue, this.rubyValue*2, this.rubyValue*3, this.rubyValue*4, 
-				this.emeraldValue, this.emeraldValue*2, this.emeraldValue*3, this.emeraldValue*4
+				this.bronzeValue,
+				this.silverValue,
+				this.goldValue,
+				this.sapphireValue,
+				this.rubyValue,
+				this.emeraldValue
 			];
-			return lst
+			let values = [];
+			for (let i = 0; i < lst.length; i++) {
+				for (let j = 1; j <= 4; j++) {
+					values.push(lst[i]*j);
+				}
+			}
+			return values
 		},
 		TotalValues: function () {
 			let list = [
