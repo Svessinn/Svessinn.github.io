@@ -129,9 +129,11 @@ let app = new Vue({
 					values.push(lst[i]*j);
 				}
 			}
-			return values
+			return values;
 		},
-		TotalValues: function () {
+		
+		
+		SumValues: function () {
 			let list = [
 				this.bronzeValue,
 				this.silverValue,
@@ -142,13 +144,83 @@ let app = new Vue({
 			];
 			let sumValues = [];
 			for (let i = 0; i < list.length; i++) {
-				sumValues.push(list[i], list[i]*3, list[i]*6, list[i]*10)
+				sumValues.push(list[i], list[i]*3, list[i]*6, list[i]*10);
 			}
-			return sumValues
+			return sumValues;
+		},
+		
+		
+		TotalCost: function () {
+			return this.BadgeValues.reduce((a, b) => a + b)
+		},
+		
+		
+		BaseDailyIncome: function () {
+			return this.averageValueOfKakera*(this.timeWasted/5);
+		},
+		
+		
+		RubyBase: function () {
+			let sumValues = this.SumValues;
+			let Cost = sumValues[1]+sumValues[5]+sumValues[9]+sumValues[19];
+			let Remaining = (this.TotalCost-Cost)*0.75;
+			let Time = Cost/this.BaseDailyIncome;
+			return [Cost, Remaining, Time]
+		},
+		
+		
+		EmeraldBase: function () {
+			let sumValues = this.SumValues;
+			let Cost = sumValues[2]+sumValues[6]+sumValues[10]+sumValues[19];
+			let Remaining = this.TotalCost-Cost;
+			let Time = Cost/this.BaseDailyIncome;
+			return [Cost, Remaining, Time]
+		},
+		
+		
+		IncomeAfterRuby: function () {
+			return this.averageValueOfKakera*(this.timeWasted/3);
+		},
+		
+		
+		RubyRouteIncome: function () {
+			let lst = [];
+			//Gold IV
+			lst.push(this.averageValueOfKakera*(this.timeWasted/2));
+			//Sapphire IV
+			lst.push(this.afterSapphireIV*(this.timeWasted/3));
+			//Gold & Sapphire IV
+			lst.push(this.afterSapphireIV*(this.timeWasted/2));
+			return lst
+		},
+		
+		
+		IncomeAfterEmerald: function () {
+			return this.averageValueOfKakera*(this.timeWasted/3.5) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim);
+		},
+		
+		
+		EmeraldRouteIncome: function () {
+			let lst = [];
+			//Gold IV
+			lst.push(this.averageValueOfKakera*(this.timeWasted/3) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim));
+			//Sapphire IV
+			lst.push(this.afterSapphireIV*(this.timeWasted/3.5) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim));
+			//Ruby IV
+			lst.push(this.averageValueOfKakera*(this.timeWasted/2.5) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim));
+			//Gold & Sapphire IV
+			lst.push(this.afterSapphireIV*(this.timeWasted/3) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim));
+			//Gold & Ruby IV
+			lst.push(this.averageValueOfKakera*(this.timeWasted/2) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim));
+			//Sapphire & Ruby IV
+			lst.push(this.afterSapphireIV*(this.timeWasted/2.5) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim));
+			//Gold, Sapphire & Ruby IV
+			lst.push(this.afterSapphireIV*(this.timeWasted/2) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim));
+			return lst;
 		}
 	},
 	mounted: function () {
 		renderMathInElement(this.$refs.nerdShit);
 		hljs.initHighlightingOnLoad();
 	}
-});
+this.timeWasted/});
