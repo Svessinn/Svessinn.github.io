@@ -1,18 +1,18 @@
-.fa-certificate:nth-child(1) {
+.fa-certificate #bronzeValue {
   color: #CD7F32;
 }
-.fa-certificate:nth-child(2) {
+.fa-certificate #silverValue {
   color: #C0C0C0;
 }
-.fa-certificate:nth-child(3) {
+.fa-certificate #goldValue {
   color: #FFD700;
 }
-.fa-certificate:nth-child(4) {
+.fa-certificate #sapphireValue {
   color: #0F52BA;
 }
-.fa-certificate:nth-child(5) {
+.fa-certificate #rubyValue {
   color: #E0115F;
 }
-.fa-certificate:nth-child(6) {
+.fa-certificate #emeraldValue {
   color: #50C878;
 }
