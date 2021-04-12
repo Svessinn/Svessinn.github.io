@@ -32,7 +32,7 @@
                <div id="calc-form" aria-labelledby="formula-header">
                   <div class="card-body">
                      <form>
-                        <value-input id="bronzeValue" label="Base Value of the Bronze Badge" fa-icon="certificate red" v-model:value.number="bronzeValue" :min-tick="1000" :max-tick="10000" :tick-vals="[500, 1000]"></value-input>
+                        <value-input id="bronzeValue" label="Base Value of the Bronze Badge" fa-icon="certificate #CD7F32" v-model:value.number="bronzeValue" :min-tick="1000" :max-tick="10000" :tick-vals="[500, 1000]"></value-input>
                         <value-input id="silverValue" label="Base Value of the Silver Badge" fa-icon="certificate" v-model:value.number="silverValue" :min-tick="1000" :max-tick="10000" :tick-vals="[500, 1000]"></value-input>
                         <value-input id="goldValue" label="Base Value of the Gold Badge" fa-icon="certificate" v-model:value.number="goldValue" :min-tick="1000" :max-tick="10000" :tick-vals="[500, 1000]"></value-input>
                         <value-input id="sapphireValue" label="Base Value of the Sapphire Badge" fa-icon="certificate" v-model:value.number="sapphireValue" :min-tick="1000" :max-tick="10000" :tick-vals="[500, 1000]"></value-input>
@@ -43,19 +43,6 @@
                         <value-input id="averageCharacterValue" label="Average Value of a Claimed Character" fa-icon="users" v-model:value.number="averageCharacterValue" :min-tick="26" :max-tick="13180" :tick-vals="[10, 50]"></value-input>
                      </form>
                      
-                     
-                  </div>
-               </div>
-            </div>
-            <div class="card mb-4">
-               <h5 class="card-header">
-                  <a data-toggle="collapse" href="#instructions" aria-expanded="true" aria-controls="instructions" id="code-header" class="collapsed d-block">
-                  <i class="fa fa-chevron-down float-right"></i>
-                  Badge Values
-                  </a>
-               </h5>
-               <div id="badgeValues" class="collapse" aria-labelledby="table-header">
-                  <div class="card-body" id="badgeValues" ref="badgeValues">
                      <table class="table table-sm text-center">
                         <thead>
                            <tr>
@@ -68,42 +55,42 @@
                         </thead>
                         <tbody>
                            <tr>
-                              <th scope="row">Bronze</th>
+                              <th>Bronze</th>
                               <td>{{BadgeValues[0]}}</td>
                               <td>{{BadgeValues[1]}}</td>
                               <td>{{BadgeValues[2]}}</td>
                               <td>{{BadgeValues[3]}}</td>
                            </tr>
                            <tr>
-                              <th scope="row">Silver</th>
+                              <th>Silver</th>
                               <td>{{BadgeValues[4]}}</td>
                               <td>{{BadgeValues[5]}}</td>
                               <td>{{BadgeValues[6]}}</td>
                               <td>{{BadgeValues[7]}}</td>
                            </tr>
                            <tr>
-                              <th scope="row">Gold</th>
+                              <th>Gold</th>
                               <td>{{BadgeValues[8]}}</td>
                               <td>{{BadgeValues[9]}}</td>
                               <td>{{BadgeValues[10]}}</td>
                               <td>{{BadgeValues[11]}}</td>
                            </tr>
                            <tr>
-                              <th scope="row">Sapphire</th>
+                              <th>Sapphire</th>
                               <td>{{BadgeValues[12]}}</td>
                               <td>{{BadgeValues[13]}}</td>
                               <td>{{BadgeValues[14]}}</td>
                               <td>{{BadgeValues[15]}}</td>
                            </tr>
                            <tr>
-                              <th scope="row">Ruby</th>
+                              <th>Ruby</th>
                               <td>{{BadgeValues[16]}}</td>
                               <td>{{BadgeValues[17]}}</td>
                               <td>{{BadgeValues[18]}}</td>
                               <td>{{BadgeValues[19]}}</td>
                            </tr>
                            <tr>
-                              <th scope="row">Emerald</th>
+                              <th>Emerald</th>
                               <td>{{BadgeValues[20]}}</td>
                               <td>{{BadgeValues[21]}}</td>
                               <td>{{BadgeValues[22]}}</td>
@@ -111,6 +98,7 @@
                            </tr>
                         </tbody>
                      </table>
+                     
                   </div>
                </div>
             </div>
