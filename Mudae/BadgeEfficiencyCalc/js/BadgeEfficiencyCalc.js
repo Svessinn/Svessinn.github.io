@@ -142,11 +142,7 @@ let app = new Vue({
 			];
 			let sumValues = [];
 			for (let i = 0; i < list.length; i++) {
-				for (let j = 1; j <= 4; j++) {
-					let sm = 0;
-					sm += list[i]*j;
-					sumValues.push(sm);
-				}
+				sumValues.push(list[i], list[i]*3, list[i]*6, list[i]*10)
 			}
 			return sumValues
 		}
