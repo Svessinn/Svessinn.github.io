@@ -223,4 +223,4 @@ let app = new Vue({
 		renderMathInElement(this.$refs.nerdShit);
 		hljs.initHighlightingOnLoad();
 	}
-this.timeWasted/});
+});
