@@ -124,6 +124,10 @@ let app = new Vue({
 				this.emeraldValue, this.emeraldValue*2, this.emeraldValue*3, this.emeraldValue*4
 			]
 			return lst
+		},
+		TotalValues: function () {
+			let list = this.BadgeValues
+			return list
 		}
 	},
 	mounted: function () {
