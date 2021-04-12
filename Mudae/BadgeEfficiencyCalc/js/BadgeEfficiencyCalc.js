@@ -161,8 +161,7 @@ let app = new Vue({
 		
 		
 		RubyBase: function () {
-			let sumValues = this.SumValues;
-			let Cost = sumValues[1]+sumValues[5]+sumValues[9]+sumValues[19];
+			let Cost = this.SumValues[1]+this.SumValues[5]+this.SumValues[9]+this.SumValues[19];
 			let Remaining = (this.TotalCost-Cost)*0.75;
 			let Time = Cost/this.BaseDailyIncome;
 			return [Cost, Remaining, Time]
@@ -170,8 +169,7 @@ let app = new Vue({
 		
 		
 		EmeraldBase: function () {
-			let sumValues = this.SumValues;
-			let Cost = sumValues[2]+sumValues[6]+sumValues[10]+sumValues[19];
+			let Cost = this.SumValues[2]+this.SumValues[6]+this.SumValues[10]+this.SumValues[19];
 			let Remaining = this.TotalCost-Cost;
 			let Time = Cost/this.BaseDailyIncome;
 			return [Cost, Remaining, Time]
