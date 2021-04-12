@@ -50,7 +50,9 @@
                         </thead>
                         <tbody>
                            <tr>
-                              <td>{{BadgeValues}}</td>
+                              <ul id="example-2">
+                                <li v-for="n in BadgeValues">{{ n }}</li>
+                              </ul>
                            </tr>
                         </tbody>
                      </table>
