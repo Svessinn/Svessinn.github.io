@@ -1,18 +1,18 @@
-.fa-certificate #bronzeValue {
+#bronzeValue {
   color: #CD7F32;
 }
-.fa-certificate #silverValue {
+#silverValue {
   color: #C0C0C0;
 }
-.fa-certificate #goldValue {
+#goldValue {
   color: #FFD700;
 }
-.fa-certificate #sapphireValue {
+#sapphireValue {
   color: #0F52BA;
 }
-.fa-certificate #rubyValue {
+#rubyValue {
   color: #E0115F;
 }
-.fa-certificate #emeraldValue {
+#emeraldValue {
   color: #50C878;
 }
