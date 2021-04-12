@@ -122,12 +122,25 @@ let app = new Vue({
 				this.sapphireValue, this.sapphireValue*2, this.sapphireValue*3, this.sapphireValue*4, 
 				this.rubyValue, this.rubyValue*2, this.rubyValue*3, this.rubyValue*4, 
 				this.emeraldValue, this.emeraldValue*2, this.emeraldValue*3, this.emeraldValue*4
-			]
+			];
 			return lst
 		},
 		TotalValues: function () {
-			let list = this.BadgeValues
-			return list
+			let list = [
+				this.bronzeValue,
+				this.silverValue,
+				this.goldValue,
+				this.sapphireValue,
+				this.rubyValue,
+				this.emeraldValue
+			];
+			let sumValues = [];
+			for (let i = 0; i < list.length; i++) {
+				for (let j = 1; j <= 4; j++) {
+					sumValues.push(list[i]*j);
+				}
+			}
+			return sumValues
 		}
 	},
 	mounted: function () {
