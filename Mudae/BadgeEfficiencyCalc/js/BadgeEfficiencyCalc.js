@@ -220,7 +220,6 @@ let app = new Vue({
 		}
 	},
 	mounted: function () {
-		renderMathInElement(this.$refs.nerdShit);
 		hljs.initHighlightingOnLoad();
 	}
 });
