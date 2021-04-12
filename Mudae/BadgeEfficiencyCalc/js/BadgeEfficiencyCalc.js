@@ -17,7 +17,7 @@ Vue.component("value-input", {
                         <div class="input-group-prepend">
                           <span class="input-group-text"><i :class="'fas fa-' + faIcon"></i></span>
                         </div>
-                        <input type="number" class="form-control" id="claimRank" :placeholder="label" :value="value" @input="updateValue" :min="minTick" pattern="\d+" required>
+                        <input type="number" class="form-control" id="claimRank" :placeholder="label" :value="value" @input="updateValue" :min="minTick" :max="maxTick" pattern="\d+" required>
                       </div>
                     </div>
                     <div class="form-group">
