@@ -98,33 +98,28 @@ Vue.component("value-input", {
 let app = new Vue({
 	el: "#app",
 	data: {
-		bronzeValue:1000,
-    silverValue:1000,
-    goldValue:1000,
-    sapphireValue:1000,
-    rubyValue:1000,
-    emeraldValue:1000,
-    timeWasted:10,
-    hoursPerClaim:3,
-    averageCharacterValue:150,
-    averageValueOfKakera:191.35803561590,
-    afterSapphireIV:379.33738561590
+		values:{
+			bronzeValue:1000,
+			silverValue:1000,
+			goldValue:1000,
+			sapphireValue:1000,
+			rubyValue:1000,
+			emeraldValue:1000
+		},
+		timeWasted:10,
+		hoursPerClaim:3,
+		averageCharacterValue:150,
+		averageValueOfKakera:191.35803561590,
+		afterSapphireIV:379.33738561590
 	},
 	
 	
 	
-	computed: {
+	/*computed: {
 		BadgeValues: function () {
-      let Costs = [
-        this.bronzeValue, this.bronzeValue*2, this.bronzeValue*3, this.bronzeValue*4, 
-        this.silverValue, this.silverValue*2, this.silverValue*3, this.silverValue*4,
-        this.goldValue, this.goldValue*2, this.goldValue*3, this.goldValue*4, 
-        this.sapphireValue, this.sapphireValue*2, this.sapphireValue*3, this.sapphireValue*4,
-        this.rubyValue, this.rubyValue*2, this.rubyValue*3, this.rubyValue*4, 
-        this.emeraldValue, this.emeraldValue*2, this.emeraldValue*3, this.emeraldValue*4,
-                  ]
-			return Costs
-		},
+			return this.values
+		}
+	},*/
 	mounted: function () {
 		renderMathInElement(this.$refs.nerdShit);
 		hljs.initHighlightingOnLoad();
