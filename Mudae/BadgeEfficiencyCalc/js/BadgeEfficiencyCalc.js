@@ -156,14 +156,14 @@ let app = new Vue({
 		
 		
 		BaseDailyIncome: function () {
-			return this.averageValueOfKakera*(this.timeWasted/5);
+			return Math.round(this.averageValueOfKakera*(this.timeWasted/5), 2);
 		},
 		
 		
 		RubyBase: function () {
 			let cost = this.SumValues[1]+this.SumValues[5]+this.SumValues[9]+this.SumValues[19];
 			let remaining = (this.TotalCost-cost)*0.75;
-			let time = cost/this.BaseDailyIncome;
+			let time = Math.round(cost/this.BaseDailyIncome, 2);
 			let lst = [cost, remaining, time];
 			return lst;
 		},
@@ -172,50 +172,50 @@ let app = new Vue({
 		EmeraldBase: function () {
 			let cost = this.SumValues[2]+this.SumValues[6]+this.SumValues[10]+this.SumValues[19];
 			let remaining = this.TotalCost-cost;
-			let time = cost/this.BaseDailyIncome;
-			let lst = [cost, remaining, time];
+			let time = Math.round(cost/this.BaseDailyIncome;
+			let lst = [cost, remaining, time], 2);
 			return lst;
 		},
 		
 		
 		IncomeAfterRuby: function () {
-			return this.averageValueOfKakera*(this.timeWasted/3);
+			return Math.round(this.averageValueOfKakera*(this.timeWasted/3), 2);
 		},
 		
 		
 		RubyRouteIncome: function () {
 			let lst = [];
 			//Gold IV
-			lst.push(this.averageValueOfKakera*(this.timeWasted/2));
+			lst.push(Math.round(this.averageValueOfKakera*(this.timeWasted/2), 2));
 			//Sapphire IV
-			lst.push(this.afterSapphireIV*(this.timeWasted/3));
+			lst.push(Math.round(this.afterSapphireIV*(this.timeWasted/3), 2));
 			//Gold & Sapphire IV
-			lst.push(this.afterSapphireIV*(this.timeWasted/2));
+			lst.push(Math.round(this.afterSapphireIV*(this.timeWasted/2), 2));
 			return lst;
 		},
 		
 		
 		IncomeAfterEmerald: function () {
-			return this.averageValueOfKakera*(this.timeWasted/3.5) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim);
+			return Math.round(this.averageValueOfKakera*(this.timeWasted/3.5) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim), 2);
 		},
 		
 		
 		EmeraldRouteIncome: function () {
 			let lst = [];
 			//Gold IV
-			lst.push(this.averageValueOfKakera*(this.timeWasted/3) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim));
+			lst.push(Math.round(this.averageValueOfKakera*(this.timeWasted/3) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim), 2));
 			//Sapphire IV
-			lst.push(this.afterSapphireIV*(this.timeWasted/3.5) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim));
+			lst.push(Math.round(this.afterSapphireIV*(this.timeWasted/3.5) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim), 2));
 			//Ruby IV
-			lst.push(this.averageValueOfKakera*(this.timeWasted/2.5) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim));
+			lst.push(Math.round(this.averageValueOfKakera*(this.timeWasted/2.5) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim), 2));
 			//Gold & Sapphire IV
-			lst.push(this.afterSapphireIV*(this.timeWasted/3) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim));
+			lst.push(Math.round(this.afterSapphireIV*(this.timeWasted/3) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim), 2));
 			//Gold & Ruby IV
-			lst.push(this.averageValueOfKakera*(this.timeWasted/2) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim));
+			lst.push(Math.round(this.averageValueOfKakera*(this.timeWasted/2) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim), 2));
 			//Sapphire & Ruby IV
-			lst.push(this.afterSapphireIV*(this.timeWasted/2.5) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim));
+			lst.push(Math.round(this.afterSapphireIV*(this.timeWasted/2.5) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim), 2));
 			//Gold, Sapphire & Ruby IV
-			lst.push(this.afterSapphireIV*(this.timeWasted/2) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim));
+			lst.push(Math.round(this.afterSapphireIV*(this.timeWasted/2) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim), 2));
 			return lst;
 		}
 	},
