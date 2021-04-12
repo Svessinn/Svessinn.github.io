@@ -173,7 +173,7 @@ let app = new Vue({
 			let cost = this.SumValues[2]+this.SumValues[6]+this.SumValues[10]+this.SumValues[19];
 			let remaining = this.TotalCost-cost;
 			let time = Math.round(cost/this.BaseDailyIncome, 2);
-			let lst = [cost, remaining, time], 2);
+			let lst = [cost, remaining, time];
 			return lst;
 		},
 		
