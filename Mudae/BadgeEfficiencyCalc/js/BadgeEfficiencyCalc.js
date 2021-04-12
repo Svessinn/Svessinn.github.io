@@ -151,7 +151,7 @@ let app = new Vue({
 		
 		
 		TotalCost: function () {
-			return this.BadgeValues.reduce((a, b) => a + b)
+			return this.BadgeValues.reduce((a, b) => a + b);
 		},
 		
 		
@@ -164,7 +164,7 @@ let app = new Vue({
 			let Cost = this.SumValues[1]+this.SumValues[5]+this.SumValues[9]+this.SumValues[19];
 			let Remaining = (this.TotalCost-Cost)*0.75;
 			let Time = Cost/this.BaseDailyIncome;
-			return [Cost, Remaining, Time]
+			return [Cost, Remaining, Time];
 		},
 		
 		
@@ -172,7 +172,7 @@ let app = new Vue({
 			let Cost = this.SumValues[2]+this.SumValues[6]+this.SumValues[10]+this.SumValues[19];
 			let Remaining = this.TotalCost-Cost;
 			let Time = Cost/this.BaseDailyIncome;
-			return [Cost, Remaining, Time]
+			return [Cost, Remaining, Time];
 		},
 		
 		
@@ -189,7 +189,7 @@ let app = new Vue({
 			lst.push(this.afterSapphireIV*(this.timeWasted/3));
 			//Gold & Sapphire IV
 			lst.push(this.afterSapphireIV*(this.timeWasted/2));
-			return lst
+			return lst;
 		},
 		
 		
