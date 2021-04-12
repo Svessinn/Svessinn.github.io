@@ -50,15 +50,21 @@
                         </thead>
                         <tbody>
                            <tr>
-                              <ul>
-                                <li v-for="n in values">{{n}}{{n*2}}{{n*3}}{{n*4}}</li>
-                              </ul>
+                              
                            </tr>
                         </tbody>
                      </table>
+                     
                   </div>
                </div>
             </div>
+         </div>
+         <div>
+            <ul id="v-for-object" class="demo">
+              <li v-for="value in object">
+                {{ value }}
+              </li>
+            </ul>
          </div>
       </main>
       <footer class="footer mt-auto py-3">
