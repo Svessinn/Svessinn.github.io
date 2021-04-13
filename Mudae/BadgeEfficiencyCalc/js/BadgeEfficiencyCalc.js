@@ -396,17 +396,20 @@ let app = new Vue({
 				lst.push(emerald[i]);
 			}
 			let dct = [
-				["Ruby1", lst[0]],
-				["Ruby2", lst[1]],
-				["Emerald1", lst[2]],
-				["Emerald1", lst[3]],
-				["Emerald1", lst[4]],
-				["Emerald1", lst[5]],
-				["Emerald1", lst[6]],
-				["Emerald1", lst[7]]
+				["Ruby IV -> Gold IV -> Sapphire IV", lst[0]],
+				["Ruby IV -> Sapphire IV -> Gold IV", lst[1]],
+				["Emerald IV -> Gold IV -> Sapphire IV -> Ruby IV", lst[2]],
+				["Emerald IV -> Gold IV -> Ruby IV -> Sapphire IV", lst[3]],
+				["Emerald IV -> Sapphire IV -> Gold IV -> Ruby IV", lst[4]],
+				["Emerald IV -> Sapphire IV -> Ruby IV -> Gold IV", lst[5]],
+				["Emerald IV -> Ruby IV -> Gold IV -> Sapphire IV", lst[6]],
+				["Emerald IV -> Ruby IV -> Sapphire IV -> Gold IV", lst[7]]
 			];
 			let sorted = dct;
+			
 			sorted.sort((a,b) => a[1] - b[1]);
+			
+			
 			return sorted;
 		}
 	},
