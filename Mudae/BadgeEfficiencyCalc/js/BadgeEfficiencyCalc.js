@@ -209,6 +209,10 @@ let app = new Vue({
 			time = Math.round(nextBadgeCost/this.RubyRouteIncome[1]*100)/100;
 			lst.push(nextBadgeCost, newRemaining, time);
 			
+			// Times
+			lst.push(this.RubyBase[2]+lst[2]+lst[5])
+			lst.push(this.RubyBase[2]+lst[8]+lst[11])
+			
 			return lst;
 		},
 		
@@ -217,6 +221,7 @@ let app = new Vue({
 			let remaining = this.RubyRouteMid[10];
 			let time = Math.round(remaining/this.RubyRouteIncome[2]*100)/100;
 			let lst = [remaining, time];
+			let finalTimes = [this.RubyRouteMid[12]+time, this.RubyRouteMid[13]+time];
 			return lst;
 		},
 		
