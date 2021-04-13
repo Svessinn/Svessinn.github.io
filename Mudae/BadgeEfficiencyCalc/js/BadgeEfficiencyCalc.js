@@ -293,7 +293,8 @@ let app = new Vue({
 			nextBadgeCost = this.SumValues[15];
 			newRemaining = lst[13]-nextBadgeCost;
 			time = Math.round(nextBadgeCost/this.EmeraldRouteIncome[4]*100)/100;
-			
+			lst.push(nextBadgeCost, newRemaining, time);
+
 			// Sapphire -> Gold -> Ruby
 			
 			// Sapphire -> Ruby -> Gold
