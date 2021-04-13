@@ -159,19 +159,10 @@ let app = new Vue({
 			return Math.round(this.averageValueOfKakera*(this.timeWasted/5));
 		},
 		
-		
+	// Ruby Route
 		RubyBase: function () {
 			let cost = this.SumValues[1]+this.SumValues[5]+this.SumValues[9]+this.SumValues[19];
 			let remaining = (this.TotalCost-cost)*0.75;
-			let time = Math.round(cost/this.BaseDailyIncome*100)/100;
-			let lst = [cost, remaining, time];
-			return lst;
-		},
-		
-		
-		EmeraldBase: function () {
-			let cost = this.SumValues[2]+this.SumValues[6]+this.SumValues[10]+this.SumValues[19];
-			let remaining = this.TotalCost-cost;
 			let time = Math.round(cost/this.BaseDailyIncome*100)/100;
 			let lst = [cost, remaining, time];
 			return lst;
@@ -191,6 +182,48 @@ let app = new Vue({
 			lst.push(Math.round(this.afterSapphireIV*(this.timeWasted/3)));
 			//Gold & Sapphire IV
 			lst.push(Math.round(this.afterSapphireIV*(this.timeWasted/2)));
+			return lst;
+		},
+		
+		
+		RubyRouteMid: function () {
+			let lst = []
+			// Gold -> Sapphire
+			let nextBadgeCost = this.SumValues[11]-this.SumValues[9];
+			let newRemaining = this.RubyBase[1]-nextBadgeCost;
+			let time = Math.round(nextBadgeCost/this.IncomeAfterRuby*100)/100;
+			lst.push(nextBadgeCost, newRemaining, time)
+			
+			nextBadgeCost = this.SumValues[15]-this.SumValues[13];
+			newRemaining = lst[1]-nextBadgeCost;
+			time = Math.round(nextBadgeCost/this.IncomeAfterRuby*100)/100;
+			lst.push(nextBadgeCost, newRemaining, time)
+			// Sapphire -> Gold
+			nextBadgeCost = this.SumValues[15]-this.SumValues[13];
+			newRemaining = this.RubyBase[1]-nextBadgeCost;
+			time = Math.round(nextBadgeCost/this.IncomeAfterRuby*100)/100;
+			lst.push(nextBadgeCost, newRemaining, time)
+			
+			nextBadgeCost = this.SumValues[11]-this.SumValues[9];
+			newRemaining = lst[7]-nextBadgeCost;
+			time = Math.round(nextBadgeCost/this.IncomeAfterRuby*100)/100;
+			lst.push(nextBadgeCost, newRemaining, time)
+			
+			return lst;
+		},
+		
+		
+		RubyRouteEnd: function () {
+			// Gold -> Sapphire
+			// Sapphire -> Gold
+		},
+		
+	// Emerald Route
+		EmeraldBase: function () {
+			let cost = this.SumValues[2]+this.SumValues[6]+this.SumValues[10]+this.SumValues[19];
+			let remaining = this.TotalCost-cost;
+			let time = Math.round(cost/this.BaseDailyIncome*100)/100;
+			let lst = [cost, remaining, time];
 			return lst;
 		},
 		
@@ -217,6 +250,26 @@ let app = new Vue({
 			//Gold, Sapphire & Ruby IV
 			lst.push(Math.round(this.afterSapphireIV*(this.timeWasted/2) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim)));
 			return lst;
+		},
+		
+		
+		EmeraldRouteMid: function () {
+			// Gold -> Sapphire -> Ruby
+			// Gold -> Ruby -> Sapphire
+			// Sapphire -> Gold -> Ruby
+			// Sapphire -> Ruby -> Gold
+			// Ruby -> Gold -> Sapphire
+			// Ruby -> Sapphire -> Gold
+		},
+		
+		
+		EmeraldRouteEnd: function () {
+			// Gold -> Sapphire -> Ruby
+			// Gold -> Ruby -> Sapphire
+			// Sapphire -> Gold -> Ruby
+			// Sapphire -> Ruby -> Gold
+			// Ruby -> Gold -> Sapphire
+			// Ruby -> Sapphire -> Gold
 		}
 	},
 	mounted: function () {
