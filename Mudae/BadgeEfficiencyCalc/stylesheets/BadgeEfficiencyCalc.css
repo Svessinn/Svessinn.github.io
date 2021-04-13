@@ -67,7 +67,13 @@ footer {
 #badge-header:focus,
 #income-header,
 #income-header:hover,
-#income-header:focus{
+#income-header:focus,
+#ruby-header,
+#ruby-header:hover,
+#ruby-header:focus,
+#emerald-header,
+#emerald-header:hover,
+#emerald-header:focus{
 	color: black;
 	text-decoration: none !important;
 }
