@@ -221,7 +221,7 @@ let app = new Vue({
 			let remaining = this.RubyRouteMid[10];
 			let time = Math.round(remaining/this.RubyRouteIncome[2]*100)/100;
 			let lst = [remaining, time];
-			let finalTimes = [this.RubyRouteMid[12]+time, this.RubyRouteMid[13]+time];
+			lst.push(this.RubyRouteMid[12]+time, this.RubyRouteMid[13]+time);
 			return lst;
 		},
 		
