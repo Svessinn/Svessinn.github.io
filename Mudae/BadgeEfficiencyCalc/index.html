@@ -20,6 +20,12 @@
    </head>
    <body class="d-flex flex-column h-100">
       <header>
+         <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+               <h4 class="text-white">Collapsed content</h4>
+               <span class="text-muted">Toggleable via the navbar brand.</span>
+            </div>
+         </div>
          <nav class="navbar navbar-expand-md text-light bg-info">
             <div>
                <a href="../../Main/" id="homeButton">Home</a>
@@ -27,6 +33,9 @@
             <div class="mx-auto">
                <a class="navbar-brand">Badge Efficiency Calculator</a>
             </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
          </nav>
       </header>
       <main role="main" class="flex-fill mt-4">
