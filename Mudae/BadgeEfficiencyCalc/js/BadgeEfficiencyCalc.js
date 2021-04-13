@@ -323,12 +323,12 @@ let app = new Vue({
 			lst.push(nextBadgeCost, newRemaining, time);
 			
 			nextBadgeCost = ruby;
-			newRemaining = lst[10]-nextBadgeCost;
+			newRemaining -= nextBadgeCost;
 			time = Math.round(nextBadgeCost/this.EmeraldRouteIncome[1]*100)/100;
 			lst.push(nextBadgeCost, newRemaining, time);
 			
 			nextBadgeCost = gold;
-			newRemaining = lst[13]-nextBadgeCost;
+			newRemaining -= nextBadgeCost;
 			time = Math.round(nextBadgeCost/this.EmeraldRouteIncome[5]*100)/100;
 			lst.push(nextBadgeCost, newRemaining, time);
 
@@ -339,12 +339,12 @@ let app = new Vue({
 			lst.push(nextBadgeCost, newRemaining, time);
 			
 			nextBadgeCost = gold;
-			newRemaining = lst[10]-nextBadgeCost;
+			newRemaining -= nextBadgeCost;
 			time = Math.round(nextBadgeCost/this.EmeraldRouteIncome[2]*100)/100;
 			lst.push(nextBadgeCost, newRemaining, time);
 			
 			nextBadgeCost = sapphire;
-			newRemaining = lst[13]-nextBadgeCost;
+			newRemaining -= nextBadgeCost;
 			time = Math.round(nextBadgeCost/this.EmeraldRouteIncome[4]*100)/100;
 			lst.push(nextBadgeCost, newRemaining, time);
 
@@ -355,12 +355,12 @@ let app = new Vue({
 			lst.push(nextBadgeCost, newRemaining, time);
 			
 			nextBadgeCost = sapphire;
-			newRemaining = lst[10]-nextBadgeCost;
+			newRemaining -= nextBadgeCost;
 			time = Math.round(nextBadgeCost/this.EmeraldRouteIncome[2]*100)/100;
 			lst.push(nextBadgeCost, newRemaining, time);
 			
 			nextBadgeCost = gold;
-			newRemaining = lst[13]-nextBadgeCost;
+			newRemaining -= nextBadgeCost;
 			time = Math.round(nextBadgeCost/this.EmeraldRouteIncome[5]*100)/100;
 			lst.push(nextBadgeCost, newRemaining, time);
 			
@@ -377,11 +377,7 @@ let app = new Vue({
 		
 		
 		EmeraldRouteEnd: function () {
-			let remaining = this.EmeraldRouteMid[52];
-			let time = Math.round(remaining/this.EmeraldRouteIncome[2]*100)/100;
-			let lst = [remaining, time];
-			lst.push(Math.round((this.EmeraldRouteMid[54]+time)*100)/100, Math.round((this.RubyRouteMid[55]+time)*100)/100);
-			return lst;
+			
 		}
 	},
 	mounted: function () {
