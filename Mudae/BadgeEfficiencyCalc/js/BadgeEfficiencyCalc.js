@@ -176,11 +176,11 @@ let app = new Vue({
 		
 		RubyRouteIncome: function () {
 			let lst = [];
-			//Gold IV
+		//Gold IV
 			lst.push(Math.round(this.averageValueOfKakera*(this.timeWasted/2)));
-			//Sapphire IV
+		//Sapphire IV
 			lst.push(Math.round(this.afterSapphireIV*(this.timeWasted/3)));
-			//Gold & Sapphire IV
+		//Gold & Sapphire IV
 			lst.push(Math.round(this.afterSapphireIV*(this.timeWasted/2)));
 			return lst;
 		},
@@ -188,29 +188,31 @@ let app = new Vue({
 		
 		RubyRouteMid: function () {
 			let lst = []
-			// Gold -> Sapphire
-			let nextBadgeCost = this.SumValues[11]-this.SumValues[9];
+			let gold = this.SumValues[11]-this.SumValues[9];
+			let sapphire = this.SumValues[15];
+		// Gold -> Sapphire
+			let nextBadgeCost = gold;
 			let newRemaining = this.RubyBase[1]-nextBadgeCost;
 			let time = Math.round(nextBadgeCost/this.IncomeAfterRuby*100)/100;
 			lst.push(nextBadgeCost, newRemaining, time);
 			
-			nextBadgeCost = this.SumValues[15];
-			newRemaining = lst[1]-nextBadgeCost;
+			nextBadgeCost = sapphire;
+			newRemaining -= nextBadgeCost;
 			time = Math.round(nextBadgeCost/this.RubyRouteIncome[0]*100)/100;
 			lst.push(nextBadgeCost, newRemaining, time);
 			
-			// Sapphire -> Gold
-			nextBadgeCost = this.SumValues[15];
+		// Sapphire -> Gold
+			nextBadgeCost = sapphire;
 			newRemaining = this.RubyBase[1]-nextBadgeCost;
 			time = Math.round(nextBadgeCost/this.IncomeAfterRuby*100)/100;
 			lst.push(nextBadgeCost, newRemaining, time);
 			
-			nextBadgeCost = this.SumValues[11]-this.SumValues[9];
-			newRemaining = lst[7]-nextBadgeCost;
+			nextBadgeCost = gold;
+			newRemaining -= nextBadgeCost;
 			time = Math.round(nextBadgeCost/this.RubyRouteIncome[1]*100)/100;
 			lst.push(nextBadgeCost, newRemaining, time);
 			
-			// Times
+		// Times
 			lst.push(Math.round((this.RubyBase[2]+lst[2]+lst[5])*100)/100)
 			lst.push(Math.round((this.RubyBase[2]+lst[8]+lst[11])*100)/100)
 			
@@ -243,19 +245,19 @@ let app = new Vue({
 		
 		EmeraldRouteIncome: function () {
 			let lst = [];
-			//Gold IV
+		//Gold IV
 			lst.push(Math.round(this.averageValueOfKakera*(this.timeWasted/3) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim)));
-			//Sapphire IV
+		//Sapphire IV
 			lst.push(Math.round(this.afterSapphireIV*(this.timeWasted/3.5) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim)));
-			//Ruby IV
+		//Ruby IV
 			lst.push(Math.round(this.averageValueOfKakera*(this.timeWasted/2.5) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim)));
-			//Gold & Sapphire IV
+		//Gold & Sapphire IV
 			lst.push(Math.round(this.afterSapphireIV*(this.timeWasted/3) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim)));
-			//Gold & Ruby IV
+		//Gold & Ruby IV
 			lst.push(Math.round(this.averageValueOfKakera*(this.timeWasted/2) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim)));
-			//Sapphire & Ruby IV
+		//Sapphire & Ruby IV
 			lst.push(Math.round(this.afterSapphireIV*(this.timeWasted/2.5) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim)));
-			//Gold, Sapphire & Ruby IV
+		//Gold, Sapphire & Ruby IV
 			lst.push(Math.round(this.afterSapphireIV*(this.timeWasted/2) + this.averageCharacterValue*Math.ceil(this.timeWasted/this.hoursPerClaim)));
 			return lst;
 		},
@@ -263,58 +265,110 @@ let app = new Vue({
 		
 		EmeraldRouteMid: function () {
 			let lst = [];
-			// Gold -> Sapphire -> Ruby
+			let gold = this.SumValues[11]-this.SumValues[10];
+			let sapphire = this.SumValues[15];
+			let ruby = this.SumValues[19];
+		// Gold -> Sapphire -> Ruby
 			let nextBadgeCost = this.SumValues[11]-this.SumValues[10];
 			let newRemaining = this.EmeraldBase[1]-nextBadgeCost;
 			let time = Math.round(nextBadgeCost/this.IncomeAfterEmerald*100)/100;
 			lst.push(nextBadgeCost, newRemaining, time);
 			
-			nextBadgeCost = this.SumValues[15];
-			newRemaining = lst[1]-nextBadgeCost;
+			nextBadgeCost = sapphire;
+			newRemaining -= nextBadgeCost;
 			time = Math.round(nextBadgeCost/this.EmeraldRouteIncome[0]*100)/100;
 			lst.push(nextBadgeCost, newRemaining, time);
 			
-			nextBadgeCost = this.SumValues[19];
-			newRemaining = lst[4]-nextBadgeCost;
+			nextBadgeCost = ruby;
+			newRemaining -= nextBadgeCost;
 			time = Math.round(nextBadgeCost/this.EmeraldRouteIncome[3]*100)/100;
 			lst.push(nextBadgeCost, newRemaining, time);
 			
-			// Gold -> Ruby -> Sapphire
-			nextBadgeCost = this.SumValues[11]-this.SumValues[10];
+		// Gold -> Ruby -> Sapphire
+			nextBadgeCost = gold;
 			newRemaining = this.EmeraldBase[1]-nextBadgeCost;
 			time = Math.round(nextBadgeCost/this.IncomeAfterEmerald*100)/100;
 			lst.push(nextBadgeCost, newRemaining, time);
 			
-			nextBadgeCost = this.SumValues[19];
-			newRemaining = lst[10]-nextBadgeCost;
+			nextBadgeCost = ruby;
+			newRemaining -= nextBadgeCost;
 			time = Math.round(nextBadgeCost/this.EmeraldRouteIncome[0]*100)/100;
 			lst.push(nextBadgeCost, newRemaining, time);
 			
-			nextBadgeCost = this.SumValues[15];
+			nextBadgeCost = sapphire;
+			newRemaining -= nextBadgeCost;
+			time = Math.round(nextBadgeCost/this.EmeraldRouteIncome[4]*100)/100;
+			lst.push(nextBadgeCost, newRemaining, time);
+
+		// Sapphire -> Gold -> Ruby
+			nextBadgeCost = sapphire;
+			newRemaining = this.EmeraldBase[1]-nextBadgeCost;
+			time = Math.round(nextBadgeCost/this.IncomeAfterEmerald*100)/100;
+			lst.push(nextBadgeCost, newRemaining, time);
+			
+			nextBadgeCost = gold;
+			newRemaining -= nextBadgeCost;
+			time = Math.round(nextBadgeCost/this.EmeraldRouteIncome[1]*100)/100;
+			lst.push(nextBadgeCost, newRemaining, time);
+			
+			nextBadgeCost = ruby;
+			newRemaining -= nextBadgeCost;
+			time = Math.round(nextBadgeCost/this.EmeraldRouteIncome[3]*100)/100;
+			lst.push(nextBadgeCost, newRemaining, time);
+
+		// Sapphire -> Ruby -> Gold
+			nextBadgeCost = sapphire;
+			newRemaining = this.EmeraldBase[1]-nextBadgeCost;
+			time = Math.round(nextBadgeCost/this.IncomeAfterEmerald*100)/100;
+			lst.push(nextBadgeCost, newRemaining, time);
+			
+			nextBadgeCost = ruby;
+			newRemaining = lst[10]-nextBadgeCost;
+			time = Math.round(nextBadgeCost/this.EmeraldRouteIncome[1]*100)/100;
+			lst.push(nextBadgeCost, newRemaining, time);
+			
+			nextBadgeCost = gold;
+			newRemaining = lst[13]-nextBadgeCost;
+			time = Math.round(nextBadgeCost/this.EmeraldRouteIncome[5]*100)/100;
+			lst.push(nextBadgeCost, newRemaining, time);
+
+		// Ruby -> Gold -> Sapphire
+			nextBadgeCost = ruby;
+			newRemaining = this.EmeraldBase[1]-nextBadgeCost;
+			time = Math.round(nextBadgeCost/this.IncomeAfterEmerald*100)/100;
+			lst.push(nextBadgeCost, newRemaining, time);
+			
+			nextBadgeCost = gold;
+			newRemaining = lst[10]-nextBadgeCost;
+			time = Math.round(nextBadgeCost/this.EmeraldRouteIncome[2]*100)/100;
+			lst.push(nextBadgeCost, newRemaining, time);
+			
+			nextBadgeCost = sapphire;
 			newRemaining = lst[13]-nextBadgeCost;
 			time = Math.round(nextBadgeCost/this.EmeraldRouteIncome[4]*100)/100;
 			lst.push(nextBadgeCost, newRemaining, time);
 
-			// Sapphire -> Gold -> Ruby
+		// Ruby -> Sapphire -> Gold
+			nextBadgeCost = ruby;
+			newRemaining = this.EmeraldBase[1]-nextBadgeCost;
+			time = Math.round(nextBadgeCost/this.IncomeAfterEmerald*100)/100;
+			lst.push(nextBadgeCost, newRemaining, time);
 			
-			// Sapphire -> Ruby -> Gold
+			nextBadgeCost = sapphire;
+			newRemaining = lst[10]-nextBadgeCost;
+			time = Math.round(nextBadgeCost/this.EmeraldRouteIncome[2]*100)/100;
+			lst.push(nextBadgeCost, newRemaining, time);
 			
-			// Ruby -> Gold -> Sapphire
-			
-			// Ruby -> Sapphire -> Gold
-			
-			
+			nextBadgeCost = gold;
+			newRemaining = lst[13]-nextBadgeCost;
+			time = Math.round(nextBadgeCost/this.EmeraldRouteIncome[5]*100)/100;
+			lst.push(nextBadgeCost, newRemaining, time);
+
 			return lst;
 		},
 		
 		
 		EmeraldRouteEnd: function () {
-			// Gold -> Sapphire -> Ruby
-			// Gold -> Ruby -> Sapphire
-			// Sapphire -> Gold -> Ruby
-			// Sapphire -> Ruby -> Gold
-			// Ruby -> Gold -> Sapphire
-			// Ruby -> Sapphire -> Gold
 			
 			return 0;
 		}
