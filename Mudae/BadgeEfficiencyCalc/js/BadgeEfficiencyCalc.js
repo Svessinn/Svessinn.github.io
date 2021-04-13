@@ -215,7 +215,7 @@ let app = new Vue({
 		
 		RubyRouteEnd: function () {
 			let remaining = this.RubyRouteMid[10];
-			let time = remaining/this.RubyRouteIncome[2];
+			let time = Math.round(remaining/this.RubyRouteIncome[2]*100)/100;
 			let lst = [remaining, time];
 			return lst;
 		},
