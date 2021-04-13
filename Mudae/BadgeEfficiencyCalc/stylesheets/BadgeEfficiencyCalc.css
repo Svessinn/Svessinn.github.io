@@ -1,3 +1,48 @@
+body {
+	min-height: 100vh;
+}
+
+.flex-fill {
+	flex: 1 1 auto;
+}
+
+footer {
+	background-color: #f5f5f5;
+}
+
+.card-header .fa {
+	transition: 0.3s transform ease-in-out;
+}
+
+.card-header .collapsed .fa {
+	transform: rotate(90deg);
+}
+
+.katex {
+	font-size: 1em;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.btn-group {
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+
+.variable {
+	font-size: 1.2em;
+}
+
+.formula {
+	font-size: 1.5em;
+}
+
+.rounded {
+	background-color: #F7F7F7;
+	border-radius: 5%;
+}
+
 #homeButton {
   color:white;
 }
