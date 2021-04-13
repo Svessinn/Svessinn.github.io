@@ -384,6 +384,30 @@ let app = new Vue({
 				lst.push(Math.round((this.EmeraldRouteMid[i]+time)*100)/100)
 			};
 			return lst;
+		},
+		
+		
+		BestRoute: function () {
+			let ruby = this.RubyRouteEnd;
+			let emerald = this.EmeraldRouteEnd;
+			let lst = [];
+			lst.push(ruby[2], ruby[3]);
+			for (let i = 2; i < 8; i++) {
+				lst.push(emerald[i]);
+			}
+			let dct = [
+				["Ruby1", lst[0]],
+				["Ruby2", lst[1]],
+				["Emerald1", lst[2]],
+				["Emerald1", lst[3]],
+				["Emerald1", lst[4]],
+				["Emerald1", lst[5]],
+				["Emerald1", lst[6]],
+				["Emerald1", lst[7]]
+			];
+			let sorted = dct;
+			sorted.sort((a,b) => a[1] - b[1]);
+			return sorted;
 		}
 	},
 	mounted: function () {
