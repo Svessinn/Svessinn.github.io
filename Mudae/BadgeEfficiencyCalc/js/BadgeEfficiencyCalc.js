@@ -363,6 +363,14 @@ let app = new Vue({
 			newRemaining = lst[13]-nextBadgeCost;
 			time = Math.round(nextBadgeCost/this.EmeraldRouteIncome[5]*100)/100;
 			lst.push(nextBadgeCost, newRemaining, time);
+			
+		// Times
+			lst.push(Math.round((this.EmeraldBase[2]+lst[2]+lst[5]+lst[8])*100)/100)
+			lst.push(Math.round((this.EmeraldBase[2]+lst[11]+lst[14]+lst[17])*100)/100)
+			lst.push(Math.round((this.EmeraldBase[2]+lst[20]+lst[23]+lst[26])*100)/100)
+			lst.push(Math.round((this.EmeraldBase[2]+lst[29]+lst[32]+lst[35])*100)/100)
+			lst.push(Math.round((this.EmeraldBase[2]+lst[38]+lst[41]+lst[44])*100)/100)
+			lst.push(Math.round((this.EmeraldBase[2]+lst[47]+lst[50]+lst[53])*100)/100)
 
 			return lst;
 		},
