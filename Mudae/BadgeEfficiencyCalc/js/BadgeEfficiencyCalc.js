@@ -314,6 +314,8 @@ let app = new Vue({
 			// Sapphire -> Ruby -> Gold
 			// Ruby -> Gold -> Sapphire
 			// Ruby -> Sapphire -> Gold
+			
+			return 0;
 		}
 	},
 	mounted: function () {
