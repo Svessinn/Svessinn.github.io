@@ -56,6 +56,25 @@
                         <value-input id="hoursPerClaim" label="Claim interval" fa-icon="users" v-model:value.number="hoursPerClaim" :min-tick="1" :max-tick="10" :tick-vals="[1]"></value-input>
                         <value-input id="averageCharacterValue" label="Average Value of a Claimed Character" fa-icon="users" v-model:value.number="averageCharacterValue" :min-tick="26" :max-tick="13180" :tick-vals="[10, 50]"></value-input>
                      </form>
+                     <table class="table table-sm text-center">
+                        <thead>
+                           <tr>
+                              <th scope="col" >Badge Order Routes</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td id="Route1">{{BestRoute[0]}}</td>
+                              <td id="Route2">{{BestRoute[1]}}</td>
+                              <td id="Route3">{{BestRoute[2]}}</td>
+                              <td id="Route4">{{BestRoute[3]}}</td>
+                              <td id="Route5">{{BestRoute[4]}}</td>
+                              <td id="Route6">{{BestRoute[5]}}</td>
+                              <td id="Route7">{{BestRoute[6]}}</td>
+                              <td id="Route8">{{BestRoute[7]}}</td>
+                           </tr>
+                        </tbody>
+                     </table>
                   </div>
                </div>
             </div>
