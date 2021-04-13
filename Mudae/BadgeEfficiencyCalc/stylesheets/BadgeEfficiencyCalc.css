@@ -3,5 +3,15 @@
 }
 
 #navButton {
-  right:0.5em;
+	padding: .75rem .25rem; !important
+	font-size: 1.25rem;
+	line-height: 1;
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius: .25rem
+}
+
+#navButton:focus,
+#navButton:hover {
+	text-decoration: none
 }
