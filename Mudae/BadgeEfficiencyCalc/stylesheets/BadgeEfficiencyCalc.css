@@ -19,7 +19,39 @@
 
 #badge-header,
 #badge-header:hover,
-#badge-header:focus{
+#badge-header:focus {
 	color: black;
 	text-decoration: none !important;
+}
+
+#Route8 {
+	background-color: #e67373;
+}
+
+#Route7 {
+	background-color: #e1976e;
+}
+
+#Route6 {
+	background-color: #dcbb69;
+}
+
+#Route5 {
+	background-color: #cdd665;
+}
+
+#Route4 {
+	background-color: #a0d061;
+}
+
+#Route3 {
+	background-color: #73c95d;
+}
+
+#Route2 {
+	background-color: #5ac26a;
+}
+
+#Route1 {
+	background-color: #57bb8a;
 }
