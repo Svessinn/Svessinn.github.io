@@ -199,12 +199,12 @@ let app = new Vue({
 			time = Math.round(nextBadgeCost/this.IncomeAfterRuby*100)/100;
 			lst.push(nextBadgeCost, newRemaining, time)
 			// Sapphire -> Gold
-			nextBadgeCost = this.SumValues[15]-this.SumValues[13];
+			nextBadgeCost = this.SumValues[15];
 			newRemaining = this.RubyBase[1]-nextBadgeCost;
 			time = Math.round(nextBadgeCost/this.IncomeAfterRuby*100)/100;
 			lst.push(nextBadgeCost, newRemaining, time)
 			
-			nextBadgeCost = this.SumValues[11];
+			nextBadgeCost = this.SumValues[11]-this.SumValues[9];
 			newRemaining = lst[7]-nextBadgeCost;
 			time = Math.round(nextBadgeCost/this.IncomeAfterRuby*100)/100;
 			lst.push(nextBadgeCost, newRemaining, time)
