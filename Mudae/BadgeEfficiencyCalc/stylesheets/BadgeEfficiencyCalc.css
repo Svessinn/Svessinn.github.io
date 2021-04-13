@@ -17,7 +17,9 @@
 	text-decoration: none
 }
 
-#badge-header{
+#badge-header,
+#badge-header:hover,
+#badge-header:focus{
 	color: black;
 	text-decoration: none !important;
 }
