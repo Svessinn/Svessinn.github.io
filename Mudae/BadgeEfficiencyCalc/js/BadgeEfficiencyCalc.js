@@ -380,7 +380,9 @@ let app = new Vue({
 			let remaining = this.EmeraldRouteMid[52];
 			let time = Math.round(remaining/this.EmeraldRouteIncome[2]*100)/100;
 			let lst = [remaining, time];
-			lst.push(Math.round((this.EmeraldRouteMid[54]+time)*100)/100, Math.round((this.EmeraldRouteMid[55]+time)*100)/100, Math.round((this.EmeraldRouteMid[56]+time)*100)/100, Math.round((this.EmeraldRouteMid[57]+time)*100)/100, Math.round((this.EmeraldRouteMid[58]+time)*100)/100, Math.round((this.EmeraldRouteMid[59]+time)*100)/100);
+			for (let i = 54; i < 60; i++) {
+				lst.push(Math.round((this.EmeraldRouteMid[i]+time)*100)/100)
+			};
 			return lst;
 		}
 	},
