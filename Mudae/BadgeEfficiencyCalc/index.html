@@ -72,79 +72,6 @@
                   </tr>
                 </tbody>
               </table>
-              
-              <table class="table table-sm text-center">
-                <thead>
-                  <tr>
-                    <th scope="col" colspan="4">Income Routes</th>
-                  </tr>
-                </thead>
-                <table class="table table-sm text-center">
-                <thead>
-                  <tr>
-                    <th scope="col" colspan="4">Ruby</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th>Gold IV -> Sapphire IV</th>
-                    <td>{{RubyRouteIncome[0]}} ka</td>
-                    <td>{{RubyRouteIncome[2]}} ka</td>
-                  </tr>
-                  <tr>
-                    <th>Sapphire IV -> Gold IV</th>
-                    <td>{{RubyRouteIncome[1]}} ka</td>
-                    <td>{{RubyRouteIncome[2]}} ka</td>
-                  </tr>
-                </tbody>
-                </table>
-                <table class="table table-sm text-center">
-                <thead>
-                  <tr>
-                    <th scope="col" colspan="4">Emerald</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th>Gold -> Sapphire -> Ruby</th>
-                    <td>{{EmeraldRouteIncome[0]}}</td>
-                    <td>{{EmeraldRouteIncome[3]}}</td>
-                    <td>{{EmeraldRouteIncome[6]}}</td>
-                  </tr>
-                  <tr>
-                    <th>Gold -> Ruby -> Sapphire</th>
-                    <td>{{EmeraldRouteIncome[0]}}</td>
-                    <td>{{EmeraldRouteIncome[4]}}</td>
-                    <td>{{EmeraldRouteIncome[6]}}</td>
-                  </tr>
-                  <tr>
-                    <th>Sapphire -> Gold -> Ruby</th>
-                    <td>{{EmeraldRouteIncome[1]}}</td>
-                    <td>{{EmeraldRouteIncome[3]}}</td>
-                    <td>{{EmeraldRouteIncome[6]}}</td>
-                  </tr>
-                  <tr>
-                    <th>Sapphire -> Ruby -> Gold</th>
-                    <td>{{EmeraldRouteIncome[1]}}</td>
-                    <td>{{EmeraldRouteIncome[5]}}</td>
-                    <td>{{EmeraldRouteIncome[6]}}</td>
-                  </tr>
-                  <tr>
-                    <th>Ruby -> Gold -> Sapphire</th>
-                    <td>{{EmeraldRouteIncome[2]}}</td>
-                    <td>{{EmeraldRouteIncome[4]}}</td>
-                    <td>{{EmeraldRouteIncome[6]}}</td>
-                  </tr>
-                  <tr>
-                    <th>Ruby -> Sapphire -> Gold</th>
-                    <td>{{EmeraldRouteIncome[2]}}</td>
-                    <td>{{EmeraldRouteIncome[5]}}</td>
-                    <td>{{EmeraldRouteIncome[6]}}</td>
-                  </tr>
-                </tbody>
-                </table>
-              </table>
-              
               <table class="table table-sm text-center">
                 <thead>
                   <tr>
@@ -226,6 +153,89 @@
         <p>
           {{BestRoute}}
         </p>
+        <div class="card mb-4">
+          <h5 class="card-header">
+            <a data-toggle="collapse" href="#badge-values" aria-expanded="true" aria-controls="badge-values" id="badge-header" class="collapsed d-block">
+            <i class="fa fa-chevron-down float-right"></i>
+            Badge Values
+            </a>
+          </h5>
+          <div id="income-routes" class="collapse" aria-labelledby="income-header">
+            <div class="card-body" id="income-shit" ref="incomeShit">
+              <table class="table table-sm text-center">
+                <thead>
+                  <tr>
+                    <th scope="col" colspan="4">Income Routes</th>
+                  </tr>
+                </thead>
+                <table class="table table-sm text-center">
+                  <thead>
+                    <tr>
+                      <th scope="col" colspan="4">Ruby</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Gold IV -> Sapphire IV</th>
+                      <td>{{RubyRouteIncome[0]}} ka</td>
+                      <td>{{RubyRouteIncome[2]}} ka</td>
+                    </tr>
+                    <tr>
+                      <th>Sapphire IV -> Gold IV</th>
+                      <td>{{RubyRouteIncome[1]}} ka</td>
+                      <td>{{RubyRouteIncome[2]}} ka</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="table table-sm text-center">
+                  <thead>
+                    <tr>
+                      <th scope="col" colspan="4">Emerald</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Gold -> Sapphire -> Ruby</th>
+                      <td>{{EmeraldRouteIncome[0]}}</td>
+                      <td>{{EmeraldRouteIncome[3]}}</td>
+                      <td>{{EmeraldRouteIncome[6]}}</td>
+                    </tr>
+                    <tr>
+                      <th>Gold -> Ruby -> Sapphire</th>
+                      <td>{{EmeraldRouteIncome[0]}}</td>
+                      <td>{{EmeraldRouteIncome[4]}}</td>
+                      <td>{{EmeraldRouteIncome[6]}}</td>
+                    </tr>
+                    <tr>
+                      <th>Sapphire -> Gold -> Ruby</th>
+                      <td>{{EmeraldRouteIncome[1]}}</td>
+                      <td>{{EmeraldRouteIncome[3]}}</td>
+                      <td>{{EmeraldRouteIncome[6]}}</td>
+                    </tr>
+                    <tr>
+                      <th>Sapphire -> Ruby -> Gold</th>
+                      <td>{{EmeraldRouteIncome[1]}}</td>
+                      <td>{{EmeraldRouteIncome[5]}}</td>
+                      <td>{{EmeraldRouteIncome[6]}}</td>
+                    </tr>
+                    <tr>
+                      <th>Ruby -> Gold -> Sapphire</th>
+                      <td>{{EmeraldRouteIncome[2]}}</td>
+                      <td>{{EmeraldRouteIncome[4]}}</td>
+                      <td>{{EmeraldRouteIncome[6]}}</td>
+                    </tr>
+                    <tr>
+                      <th>Ruby -> Sapphire -> Gold</th>
+                      <td>{{EmeraldRouteIncome[2]}}</td>
+                      <td>{{EmeraldRouteIncome[5]}}</td>
+                      <td>{{EmeraldRouteIncome[6]}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </table>
+            </div>
+          </div>
+        </div>
         <div class="card mb-4">
           <h5 class="card-header">
             <a data-toggle="collapse" href="#badge-values" aria-expanded="true" aria-controls="badge-values" id="badge-header" class="collapsed d-block">
