@@ -192,30 +192,32 @@ let app = new Vue({
 			let nextBadgeCost = this.SumValues[11]-this.SumValues[9];
 			let newRemaining = this.RubyBase[1]-nextBadgeCost;
 			let time = Math.round(nextBadgeCost/this.IncomeAfterRuby*100)/100;
-			lst.push(nextBadgeCost, newRemaining, time)
+			lst.push(nextBadgeCost, newRemaining, time);
 			
 			nextBadgeCost = this.SumValues[15];
 			newRemaining = lst[1]-nextBadgeCost;
 			time = Math.round(nextBadgeCost/this.RubyRouteIncome[0]*100)/100;
-			lst.push(nextBadgeCost, newRemaining, time)
+			lst.push(nextBadgeCost, newRemaining, time);
 			// Sapphire -> Gold
 			nextBadgeCost = this.SumValues[15];
 			newRemaining = this.RubyBase[1]-nextBadgeCost;
 			time = Math.round(nextBadgeCost/this.IncomeAfterRuby*100)/100;
-			lst.push(nextBadgeCost, newRemaining, time)
+			lst.push(nextBadgeCost, newRemaining, time);
 			
 			nextBadgeCost = this.SumValues[11]-this.SumValues[9];
 			newRemaining = lst[7]-nextBadgeCost;
 			time = Math.round(nextBadgeCost/this.RubyRouteIncome[1]*100)/100;
-			lst.push(nextBadgeCost, newRemaining, time)
+			lst.push(nextBadgeCost, newRemaining, time);
 			
 			return lst;
 		},
 		
 		
 		RubyRouteEnd: function () {
-			// Gold -> Sapphire
-			// Sapphire -> Gold
+			let remaining = this.RubyRouteMid[10];
+			let time = remaining/this.RubyRouteIncome[2];
+			let lst = [remaining, time];
+			return lst;
 		},
 		
 	// Emerald Route
