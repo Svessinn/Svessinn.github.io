@@ -20,23 +20,19 @@
    </head>
    <body class="d-flex flex-column h-100">
       <header>
-         <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-               <h4 class="text-white">Collapsed content</h4>
-               <span class="text-muted">Toggleable via the navbar brand.</span>
+         <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+               <div class="bg-dark p-4">
+                  <h4 class="text-white">Collapsed content</h4>
+                  <span class="text-muted">Toggleable via the navbar brand.</span>
+               </div>
             </div>
-         </div>
-         <nav class="navbar navbar-expand-md text-light bg-info">
-            <div>
-               <a href="../../Main/" id="homeButton">Home</a>
-            </div>
-            <div class="mx-auto">
-               <a class="navbar-brand">Badge Efficiency Calculator</a>
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-dark bg-dark">
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
-            </button>
-         </nav>
+               </button>
+            </nav>
+         </div>
       </header>
       <main role="main" class="flex-fill mt-4">
          <div id="app" class="container">
@@ -54,23 +50,20 @@
                         <value-input id="hoursPerClaim" label="Claim interval" fa-icon="users" v-model:value.number="hoursPerClaim" :min-tick="1" :max-tick="10" :tick-vals="[1]"></value-input>
                         <value-input id="averageCharacterValue" label="Average Value of a Claimed Character" fa-icon="users" v-model:value.number="averageCharacterValue" :min-tick="26" :max-tick="13180" :tick-vals="[10, 50]"></value-input>
                      </form>
-                     
-                     
-                     
                   </div>
                </div>
             </div>
             <p>
-            {{BaseDailyIncome}}
+               {{BaseDailyIncome}}
             </p>
             <p>
-            {{RubyBase}}
+               {{RubyBase}}
             </p>
             <p>
-            {{IncomeAfterRuby}}
+               {{IncomeAfterRuby}}
             </p>
             <p>
-            {{RubyRouteIncome}}
+               {{RubyRouteIncome}}
             </p>
             <p>
                {{RubyRouteMid}}
@@ -79,13 +72,13 @@
                {{RubyRouteEnd}}
             </p>
             <p>
-            {{EmeraldBase}}
+               {{EmeraldBase}}
             </p>
             <p>
-            {{IncomeAfterEmerald}}
+               {{IncomeAfterEmerald}}
             </p>
             <p>
-            {{EmeraldRouteIncome}}
+               {{EmeraldRouteIncome}}
             </p>
             <p>
                {{EmeraldRouteMid}}
@@ -93,7 +86,6 @@
             <p>
                {{EmeraldRouteEnd}}
             </p>
-            
             <div class="card mb-4">
                <h5 class="card-header">
                   <a data-toggle="collapse" href="#badge-values" aria-expanded="true" aria-controls="badge-values" id="badge-header" class="collapsed d-block">
@@ -175,7 +167,6 @@
                   </div>
                </div>
             </div>
-            
          </div>
       </main>
       <footer class="footer mt-auto py-3">
