@@ -198,6 +198,7 @@ let app = new Vue({
 			newRemaining = lst[1]-nextBadgeCost;
 			time = Math.round(nextBadgeCost/this.RubyRouteIncome[0]*100)/100;
 			lst.push(nextBadgeCost, newRemaining, time);
+			
 			// Sapphire -> Gold
 			nextBadgeCost = this.SumValues[15];
 			newRemaining = this.RubyBase[1]-nextBadgeCost;
@@ -261,12 +262,48 @@ let app = new Vue({
 		
 		
 		EmeraldRouteMid: function () {
+			let lst = [];
 			// Gold -> Sapphire -> Ruby
+			let nextBadgeCost = this.SumValues[11]-this.SumValues[10];
+			let newRemaining = this.EmeraldBase[1]-nextBadgeCost;
+			let time = Math.round(nextBadgeCost/this.IncomeAfterEmerald*100)/100;
+			lst.push(nextBadgeCost, newRemaining, time);
+			
+			nextBadgeCost = this.SumValues[15];
+			newRemaining = lst[1]-nextBadgeCost;
+			time = Math.round(nextBadgeCost/this.EmeraldRouteIncome[0]*100)/100;
+			lst.push(nextBadgeCost, newRemaining, time);
+			
+			nextBadgeCost = this.SumValues[19];
+			newRemaining = lst[4]-nextBadgeCost;
+			time = Math.round(nextBadgeCost/this.EmeraldRouteIncome[3]*100)/100;
+			lst.push(nextBadgeCost, newRemaining, time);
+			
 			// Gold -> Ruby -> Sapphire
+			nextBadgeCost = this.SumValues[11]-this.SumValues[10];
+			newRemaining = this.EmeraldBase[1]-nextBadgeCost;
+			time = Math.round(nextBadgeCost/this.IncomeAfterEmerald*100)/100;
+			lst.push(nextBadgeCost, newRemaining, time);
+			
+			nextBadgeCost = this.SumValues[19];
+			newRemaining = lst[10]-nextBadgeCost;
+			time = Math.round(nextBadgeCost/this.EmeraldRouteIncome[0]*100)/100;
+			lst.push(nextBadgeCost, newRemaining, time);
+			
+			nextBadgeCost = this.SumValues[15];
+			newRemaining = lst[13]-nextBadgeCost;
+			time = Math.round(nextBadgeCost/this.EmeraldRouteIncome[4]*100)/100;
+			
 			// Sapphire -> Gold -> Ruby
+			
 			// Sapphire -> Ruby -> Gold
+			
 			// Ruby -> Gold -> Sapphire
+			
 			// Ruby -> Sapphire -> Gold
+			
+			
+			return lst;
 		},
 		
 		
