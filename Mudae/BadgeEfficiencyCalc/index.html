@@ -274,6 +274,7 @@
           </h5>
           <div id="ruby-cost" class="collapse" aria-labelledby="ruby-header">
             <div class="card-body" id="ruby-shit" ref="rubyShit">
+              
               <table class="table table-sm text-center">
                 <thead>
                   <tr>
@@ -387,16 +388,6 @@
           </div>
         </div>
         
-         <p>
-          {{RubyBase}}
-        </p>
-        <p>
-          {{RubyRouteMid}}
-        </p>
-        <p>
-          {{RubyRouteEnd}}
-        </p>
-        
         <div class="card mb-4">
           <h5 class="card-header">
             <a data-toggle="collapse" href="#emerald-cost" aria-expanded="true" aria-controls="emerald-cost" id="emerald-header" class="collapsed d-block">
@@ -406,18 +397,29 @@
           </h5>
           <div id="emerald-cost" class="collapse" aria-labelledby="emerald-header">
             <div class="card-body" id="emerald-shit" ref="emeraldShit">
+              
               <table class="table table-sm text-center">
                 <thead>
                   <tr>
-                    <th scope="col"></th>
+                    <th scope="col" colspan="4">Ruby Base</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    
+                    <th>Cost</th>
+                    <th>Remaining</th>
+                    <th>Condition</th>
+                    <th>Time</th>
+                  </tr>
+                  <tr>
+                    <td>{{EmeraldBase[0]}} ka</td>
+                    <td>{{TotalCost-EmeraldBase[0]}} ka</td>
+                    <td>Claims Give Kakera</td>
+                    <td>{{EmeraldBase[2]}} Days</td>
                   </tr>
                 </tbody>
               </table>
+              
             </div>
           </div>
         </div>
@@ -431,7 +433,6 @@
         <p>
           {{EmeraldRouteEnd}}
         </p>
-        <p>{{SumValues}}</p>
       </div>
     </main>
     <footer class="footer mt-auto py-3">
