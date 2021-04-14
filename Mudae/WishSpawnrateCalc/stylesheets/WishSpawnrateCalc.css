@@ -53,7 +53,10 @@ footer {
 
 .navLink,
 .navLink:hover,
-.navLink:focus{
+.navLink:focus,
+#homeButton,
+#homeButton:hover,
+#homeButton:focus{
 	color: white;
 	text-decoration: none !important;
 }
