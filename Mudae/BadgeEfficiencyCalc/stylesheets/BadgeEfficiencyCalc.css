@@ -4,7 +4,10 @@ body {
 
 .navLink,
 .navLink:hover,
-.navLink:focus{
+.navLink:focus,
+#homeButton,
+#homeButton:hover,
+#homeButton:focus{
 	color: white;
 	text-decoration: none !important;
 }
@@ -48,10 +51,6 @@ footer {
 .rounded {
 	background-color: #F7F7F7;
 	border-radius: 5%;
-}
-
-#homeButton {
-  color:white;
 }
 
 #navButton {
