@@ -2,6 +2,14 @@ body {
 	min-height: 100vh;
 }
 
+h4 {
+	color: white;
+}
+
+a {
+	text-decoration: none !important;
+}
+
 .flex-fill {
 	flex: 1 1 auto;
 }
