@@ -2,11 +2,10 @@ body {
 	min-height: 100vh;
 }
 
-h4 {
+.navLink,
+.navLink:hover,
+.navLink:focus{
 	color: white;
-}
-
-a {
 	text-decoration: none !important;
 }
 
