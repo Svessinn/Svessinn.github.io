@@ -115,3 +115,7 @@ footer {
 #Route1 {
 	background-color: #57bb8a;
 }
+
+.navItem {
+	float: right;
+}
