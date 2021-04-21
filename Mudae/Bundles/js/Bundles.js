@@ -8,7 +8,8 @@ const app = new Vue({
     currentPage:1
   },
   created:function() {
-    fetch('https://svessinn.github.io/Mudae/Bundles/Bundles.json')
+    fetch('https://svessinn.github.io/Mudae/Bundles/Bundles')
+    .then(res => res.json())
     .then(res => {
       this.bundles = res;
     })
