@@ -24,12 +24,10 @@ const app = new Vue({
   computed: {
     sortedBundles: function () {
       return this.bundles.sort((a, b) => {
-        a = a.toLowerCase();
-        b = b.toLowerCase();
         let modifier = 1;
         if (this.currentSortDir === 'desc') modifier = -1;
-        if (a[this.currentSort] < b[this.currentSort]) return -1 * modifier;
-        if (a[this.currentSort] > b[this.currentSort]) return 1 * modifier;
+        if (a[this.currentSort].toLowerCase() < b[this.currentSort].toLowerCase()) return -1 * modifier;
+        if (a[this.currentSort].toLowerCase() > b[this.currentSort].toLowerCase()) return 1 * modifier;
         return 0;
       });
     }
