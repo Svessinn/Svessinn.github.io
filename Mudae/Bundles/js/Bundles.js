@@ -3,7 +3,7 @@ const app = new Vue({
   data: {
     bundles: [],
     currentSort: 'Size',
-    currentSortDir: 'asc'
+    currentSortDir: 'desc'
   },
   created: function () {
     fetch('https://svessinn.github.io/Mudae/Bundles/Bundles.json')
@@ -16,7 +16,7 @@ const app = new Vue({
     sort: function (s) {
       //if s == current sort, reverse
       if (s === this.currentSort) {
-        this.currentSortDir = this.currentSortDir === 'asc' ? 'desc' : 'asc';
+        this.currentSortDir = this.currentSortDir === 'desc' ? 'asc' : 'desc';
       }
       this.currentSort = s;
     }
