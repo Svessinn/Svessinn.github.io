@@ -121,7 +121,7 @@ footer {
   padding-bottom: 0.1em;
 }
 
-th {
+.sortable {
   cursor: pointer;
 }
 
