@@ -1,15 +1,122 @@
-table.tableizer-table {
-	font-size: 12px;
-	border: 1px solid #CCC; 
-	font-family: Arial, Helvetica, sans-serif;
-} 
-.tableizer-table td {
-	padding: 4px;
-	margin: 3px;
-	border: 1px solid #CCC;
+body {
+	min-height: 100vh;
 }
-.tableizer-table th {
-	background-color: #104E8B; 
-	color: #FFF;
-	font-weight: bold;
+
+.navLink,
+.navLink:hover,
+.navLink:focus,
+#homeButton,
+#homeButton:hover,
+#homeButton:focus{
+	color: white;
+	text-decoration: none !important;
+}
+
+.flex-fill {
+	flex: 1 1 auto;
+}
+
+footer {
+	background-color: #f5f5f5;
+}
+
+.card-header .fa {
+	transition: 0.3s transform ease-in-out;
+}
+
+.card-header .collapsed .fa {
+	transform: rotate(90deg);
+}
+
+.katex {
+	font-size: 1em;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.btn-group {
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+
+.variable {
+	font-size: 1.2em;
+}
+
+.formula {
+	font-size: 1.5em;
+}
+
+.rounded {
+	background-color: #F7F7F7;
+	border-radius: 5%;
+}
+
+#navButton {
+	padding: .25rem .75rem;
+	font-size: 1.25rem;
+	line-height: 1;
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius: .25rem;
+	float:right !important;
+}
+
+#navButton:focus,
+#navButton:hover {
+	text-decoration: none
+}
+
+#badge-header,
+#badge-header:hover,
+#badge-header:focus,
+#income-header,
+#income-header:hover,
+#income-header:focus,
+#ruby-header,
+#ruby-header:hover,
+#ruby-header:focus,
+#emerald-header,
+#emerald-header:hover,
+#emerald-header:focus{
+	color: black;
+	text-decoration: none !important;
+}
+
+#Route8 {
+	background-color: #e67373;
+}
+
+#Route7 {
+	background-color: #e1976e;
+}
+
+#Route6 {
+	background-color: #dcbb69;
+}
+
+#Route5 {
+	background-color: #cdd665;
+}
+
+#Route4 {
+	background-color: #a0d061;
+}
+
+#Route3 {
+	background-color: #73c95d;
+}
+
+#Route2 {
+	background-color: #5ac26a;
+}
+
+#Route1 {
+	background-color: #57bb8a;
+}
+
+.navItem {
+	float: right;
+	padding-bottom: 0.1em;
 }
