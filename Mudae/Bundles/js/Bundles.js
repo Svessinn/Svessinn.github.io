@@ -1,11 +1,10 @@
+import bundleData from '../Bundles.json';
 const app = new Vue({
   el: '#app',
   data: {
     bundles: [],
     currentSort: 'Size',
-    currentSortDir: 'asc',
-    pageSize: 10,
-    currentPage: 1
+    currentSortDir: 'asc'
   },
   created: function () {
     fetch('https://svessinn.github.io/Mudae/Bundles/Bundles.json')
@@ -21,14 +20,7 @@ const app = new Vue({
         this.currentSortDir = this.currentSortDir === 'asc' ? 'desc' : 'asc';
       }
       this.currentSort = s;
-    },
-    nextPage: function () {
-      if ((this.currentPage * this.pageSize) < this.bundles.length) this.currentPage++;
-    },
-    prevPage: function () {
-      if (this.currentPage > 1) this.currentPage--;
     }
-
   },
   computed: {
     sortedBundles: function () {
@@ -39,6 +31,11 @@ const app = new Vue({
         if (a[this.currentSort] > b[this.currentSort]) return 1 * modifier;
         return 0;
       });
-    }
+    },
+    sortedData: function() {
+     return this.data.sort(function(a, b) {
+        return a.name > b.name;
+     }
+  }
   }
 })
