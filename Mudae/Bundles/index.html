@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <meta charset="UTF-8">
-      <title>Bundles</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/lightfair.min.css">
-      <link rel="stylesheet" href="stylesheets/Bundles.css">
-      <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
-   </head>
+    <meta charset="UTF-8">
+    <title>Bundles</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/lightfair.min.css">
+    <link rel="stylesheet" href="stylesheets/Bundles.css">
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+  </head>
   <body class="d-flex flex-column h-100">
     <header>
       <div class="pos-f-t">
@@ -41,44 +41,43 @@
         </div>
       </div>
     </header>
-     <main role="main" class="flex-fill mt-4">
+    <main role="main" class="flex-fill mt-4">
       <div id="app" class="container">
-        debug: sort={{currentSort}}, dir={{currentSortDir}}
-      <table class="table table-sm text-center">
-        <thead>
-          <tr>
-            <th @click="sort('Bundle')">Bundle</th>
-            <th @click="sort('Size')">Size</th>
-            <th @click="sort('wa')">$wa</th>
-            <th @click="sort('ha')">$ha</th>
-            <th @click="sort('wg')">$wg</th>
-            <th @click="sort('hg')">$hg</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="bundle in sortedBundles">
-            <td>{{bundle.Bundle}}</td>
-            <td>{{bundle.Size}}</td>
-            <td>{{bundle.wa}}</td>
-            <td>{{bundle.ha}}</td>
-            <td>{{bundle.wg}}</td>
-            <td>{{bundle.hg}}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-     </main>
-     <footer class="footer mt-auto py-3">
-         <div class="container">
-            <small class="text-muted">
-            <b>DISCLAIMER:</b> Values may be slightly inaccurate, since baundles are constantly updating.<br>
-            Last Updated 21.04.2021 21:00 UTC
-            Page setup and managed by Svess.
-            </small>
-         </div>
-         <script src="js/Bundles.js"></script>
-         <script>window.console = window.console || function(t) {};</script>
-         <script>if (document.location.search.match(/type=embed/gi)) {window.parent.postMessage("resize", "*");}</script>
-      </footer>
+        <table class="table table-sm text-center">
+          <thead>
+            <tr>
+              <th @click="sort('Bundle')">Bundle</th>
+              <th @click="sort('Size')">Size</th>
+              <th @click="sort('wa')">$wa</th>
+              <th @click="sort('ha')">$ha</th>
+              <th @click="sort('wg')">$wg</th>
+              <th @click="sort('hg')">$hg</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="bundle in sortedBundles">
+              <td>{{bundle.Bundle}}</td>
+              <td>{{bundle.Size}}</td>
+              <td>{{bundle.wa}}</td>
+              <td>{{bundle.ha}}</td>
+              <td>{{bundle.wg}}</td>
+              <td>{{bundle.hg}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <small class="text-muted">
+        <b>DISCLAIMER:</b> Values may be slightly inaccurate, since baundles are constantly updating.<br>
+        Last Updated 21.04.2021 21:00 UTC
+        Page setup and managed by Svess.
+        </small>
+      </div>
+      <script src="js/Bundles.js"></script>
+      <script>window.console = window.console || function(t) {};</script>
+      <script>if (document.location.search.match(/type=embed/gi)) {window.parent.postMessage("resize", "*");}</script>
+    </footer>
   </body>
 </html>
