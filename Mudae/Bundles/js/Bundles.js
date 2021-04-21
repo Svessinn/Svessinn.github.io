@@ -30,11 +30,6 @@ const app = new Vue({
         if (a[this.currentSort] > b[this.currentSort]) return 1 * modifier;
         return 0;
       });
-    },
-    sortedData: function() {
-     return this.data.sort(function(a, b) {
-        return a.name > b.name;
-     }
-  }
+    }
   }
 })
