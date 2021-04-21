@@ -9,7 +9,6 @@ const app = new Vue({
   },
   created:function() {
     fetch('https://svessinn.github.io/Mudae/Bundles/Bundles.json')
-    .then(res => res.json())
     .then(res => {
       this.bundles = res;
     })
