@@ -1,4 +1,3 @@
-import bundleData from '../Bundles.json';
 const app = new Vue({
   el: '#app',
   data: {
