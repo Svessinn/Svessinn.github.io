@@ -3014,5 +3014,109 @@
     "ha":0,
     "wg":40,
     "hg":64
+  },
+  {
+    "Bundle":"Avatar Series",
+    "Size":63,
+    "wa":28,
+    "ha":34,
+    "wg":0,
+    "hg":1
+  },
+  {
+    "Bundle":"Atelier",
+    "Size":82,
+    "wa":13,
+    "ha":3,
+    "wg":53,
+    "hg":29
+  },
+  {
+    "Bundle":"Ateam Inc.",
+    "Size":66,
+    "wa":0,
+    "ha":0,
+    "wg":50,
+    "hg"17:
+  },
+  {
+    "Bundle":"Aikatsu! Series",
+    "Size":79,
+    "wa":68,
+    "ha":11,
+    "wg":65,
+    "hg":8
+  },
+  {
+    "Bundle":"🍞",
+    "Size":4,
+    "wa":0,
+    "ha":2,
+    "wg":2,
+    "hg":1
+  },
+  {
+    "Bundle":"Banjo-Kazooie Series",
+    "Size":15,
+    "wa":0,
+    "ha":0,
+    "wg":5,
+    "hg":11
+  },
+  {
+    "Bundle":"Be My Princess Series",
+    "Size":9,
+    "wa":0,
+    "ha":0,
+    "wg":0,
+    "hg":9
+  },
+  {
+    "Bundle":"Beemoov",
+    "Size":41,
+    "wa":0,
+    "ha":1,
+    "wg":19,
+    "hg":29
+  },
+  {
+    "Bundle":"Ben 10 Series",
+    "Size":23,
+    "wa":9,
+    "ha":14,
+    "wg":0,
+    "hg":0
+  },
+  {
+    "Bundle":"Beyblade Series",
+    "Size":80,
+    "wa":10,
+    "ha":70,
+    "wg":2,
+    "hg":3
+  },
+  {
+    "Bundle":"Bioshock Series",
+    "Size":16,
+    "wa":0,
+    "ha":0,
+    "wg":6,
+    "hg"10:
+  },
+  {
+    "Bundle":"Black★Rock Shooter Series",
+    "Size":19,
+    "wa":12,
+    "ha":1,
+    "wg":6,
+    "hg":0
+  },
+  {
+    "Bundle":"Borderlands Series",
+    "Size":49,
+    "wa":0,
+    "ha":0,
+    "wg":2,
+    "hg":29
   }
 ]
