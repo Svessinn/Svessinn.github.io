@@ -3118,5 +3118,557 @@
     "ha":0,
     "wg":2,
     "hg":29
-  }
+  },
+  {
+    "Bundle":"Castlevania",
+    "Size":57,
+    "wa":6,
+    "ha":8,
+    "wg":16,
+    "hg":32
+  },
+  {
+    "Bundle":"CHARON Universe",
+    "Size":35,
+    "wa":0,
+    "ha":0,
+    "wg":32,
+    "hg":3
+  },
+  {
+    "Bundle":"Studio Ghibli",
+    "Size":73,
+    "wa":38,
+    "ha":35,
+    "wg":0,
+    "hg":0
+  },
+  {
+    "Bundle":"Cheritz",
+    "Size":26,
+    "wa":0,
+    "ha":0,
+    "wg":7,
+    "hg":19
+  },
+  {
+    "Bundle":"Code Geass",
+    "Size":51,
+    "wa":22,
+    "ha":28,
+    "wg":0,
+    "hg":1
+  },
+  {
+    "Bundle":"Comic Strips",
+    "Size":81,
+    "wa":25,
+    "ha":56,
+    "wg":0,
+    "hg":0
+  },
+  {
+    "Bundle":"Corpse Party Series",
+    "Size":32,
+    "wa":15,
+    "ha":7,
+    "wg":23,
+    "hg":9
+  },
+  {
+   "Bundle": "Disgaea Series",
+   "Size": 68,
+   "wa": 5,
+   "ha": 5,
+   "wg": 40,
+   "hg": 31
+ },
+ {
+   "Bundle": "Donkey Kong Series",
+   "Size": 16,
+   "wa": 1,
+   "ha": 2,
+   "wg": 4,
+   "hg": 9
+ },
+ {
+   "Bundle": "Drakengard Series",
+   "Size": 65,
+   "wa": 1,
+   "ha": 1,
+   "wg": 33,
+   "hg": 32
+ },
+ {
+   "Bundle": "EA Sports",
+   "Size": 49,
+   "wa": 0,
+   "ha": 0,
+   "wg": 0,
+   "hg": 49
+ },
+ {
+   "Bundle": "Evangelion",
+   "Size": 39,
+   "wa": 29,
+   "ha": 26,
+   "wg": 0,
+   "hg": 0
+ },
+ {
+   "Bundle": "EXA_PICO",
+   "Size": 60,
+   "wa": 0,
+   "ha": 0,
+   "wg": 43,
+   "hg": 17
+ },
+ {
+   "Bundle": "F-Zero Series",
+   "Size": 10,
+   "wa": 0,
+   "ha": 1,
+   "wg": 0,
+   "hg": 10
+ },
+ {
+   "Bundle": "Fallout Series",
+   "Size": 53,
+   "wa": 0,
+   "ha": 0,
+   "wg": 17,
+   "hg": 39
+ },
+ {
+   "Bundle": "Fatal Frame Series",
+   "Size": 15,
+   "wa": 0,
+   "ha": 0,
+   "wg": 11,
+   "hg": 4
+ },
+ {
+   "Bundle": "Five Nights at Freddy's Series",
+   "Size": 61,
+   "wa": 1,
+   "ha": 0,
+   "wg": 24,
+   "hg": 48
+ },
+ {
+   "Bundle": "FLCL Series",
+   "Size": 11,
+   "wa": 7,
+   "ha": 4,
+   "wg": 0,
+   "hg": 0
+ },
+ {
+   "Bundle": "Future Card Buddyfight Series",
+   "Size": 17,
+   "wa": 2,
+   "ha": 15,
+   "wg": 0,
+   "hg": 4
+ },
+ {
+   "Bundle": "Grisaia",
+   "Size": 37,
+   "wa": 14,
+   "ha": 5,
+   "wg": 16,
+   "hg": 2
+ },
+ {
+   "Bundle": "Grand Theft Auto",
+   "Size": 28,
+   "wa": 0,
+   "ha": 0,
+   "wg": 5,
+   "hg": 23
+ },
+ {
+   "Bundle": "Hiveworks Comics",
+   "Size": 77,
+   "wa": 42,
+   "ha": 39,
+   "wg": 0,
+   "hg": 0
+ },
+ {
+   "Bundle": "HuniePot",
+   "Size": 23,
+   "wa": 0,
+   "ha": 0,
+   "wg": 23,
+   "hg": 0
+ },
+ {
+   "Bundle": "Jugdral Series",
+   "Size": 84,
+   "wa": 0,
+   "ha": 0,
+   "wg": 35,
+   "hg": 49
+ },
+ {
+   "Bundle": "KingsIsle Entertainment",
+   "Size": 29,
+   "wa": 0,
+   "ha": 0,
+   "wg": 10,
+   "hg": 20
+ },
+ {
+   "Bundle": "Kirby",
+   "Size": 65,
+   "wa": 4,
+   "ha": 10,
+   "wg": 30,
+   "hg": 46
+ },
+ {
+   "Bundle": "Layton Series",
+   "Size": 41,
+   "wa": 7,
+   "ha": 6,
+   "wg": 19,
+   "hg": 21
+ },
+ {
+   "Bundle": "Lego",
+   "Size": 70,
+   "wa": 22,
+   "ha": 42,
+   "wg": 2,
+   "hg": 13
+ },
+ {
+   "Bundle": "Life is Strange Series",
+   "Size": 19,
+   "wa": 0,
+   "ha": 0,
+   "wg": 9,
+   "hg": 10
+ },
+ {
+   "Bundle": "Macross",
+   "Size": 54,
+   "wa": 26,
+   "ha": 27,
+   "wg": 2,
+   "hg": 0
+ },
+ {
+   "Bundle": "Man of Action",
+   "Size": 31,
+   "wa": 13,
+   "ha": 19,
+   "wg": 0,
+   "hg": 0
+ },
+ {
+   "Bundle": "Miwashibundle",
+   "Size": 88,
+   "wa": 8,
+   "ha": 6,
+   "wg": 34,
+   "hg": 40
+ },
+ {
+   "Bundle": "Monster Hunter Series",
+   "Size": 49,
+   "wa": 7,
+   "ha": 0,
+   "wg": 28,
+   "hg": 25
+ },
+ {
+   "Bundle": "Mother",
+   "Size": 36,
+   "wa": 0,
+   "ha": 0,
+   "wg": 10,
+   "hg": 28
+ },
+ {
+   "Bundle": "My Little Pony",
+   "Size": 77,
+   "wa": 65,
+   "ha": 12,
+   "wg": 0,
+   "hg": 0
+ },
+ {
+   "Bundle": "Mystery Dungeon Series",
+   "Size": 30,
+   "wa": 0,
+   "ha": 0,
+   "wg": 14,
+   "hg": 22
+ },
+ {
+   "Bundle": "Nikki UP2U Series",
+   "Size": 69,
+   "wa": 0,
+   "ha": 0,
+   "wg": 42,
+   "hg": 28
+ },
+ {
+   "Bundle": "Orange_Juice",
+   "Size": 62,
+   "wa": 0,
+   "ha": 0,
+   "wg": 46,
+   "hg": 18
+ },
+ {
+   "Bundle": "Paper Games",
+   "Size": 81,
+   "wa": 0,
+   "ha": 0,
+   "wg": 45,
+   "hg": 37
+ },
+ {
+   "Bundle": "Paper Mario",
+   "Size": 75,
+   "wa": 0,
+   "ha": 0,
+   "wg": 34,
+   "hg": 52
+ },
+ {
+   "Bundle": "Pikmin Series",
+   "Size": 6,
+   "wa": 0,
+   "ha": 0,
+   "wg": 1,
+   "hg": 5
+ },
+ {
+   "Bundle": "Pokémon Movies",
+   "Size": 29,
+   "wa": 18,
+   "ha": 17,
+   "wg": 0,
+   "hg": 0
+ },
+ {
+   "Bundle": "Pokémon Mystery Dungeon",
+   "Size": 26,
+   "wa": 0,
+   "ha": 0,
+   "wg": 12,
+   "hg": 20
+ },
+ {
+   "Bundle": "Pokémon Ranger Series",
+   "Size": 18,
+   "wa": 7,
+   "ha": 5,
+   "wg": 11,
+   "hg": 8
+ },
+ {
+   "Bundle": "Pokémon Snap Series",
+   "Size": 2,
+   "wa": 0,
+   "ha": 1,
+   "wg": 0,
+   "hg": 2
+ },
+ {
+   "Bundle": "Power Rangers",
+   "Size": 25,
+   "wa": 9,
+   "ha": 17,
+   "wg": 0,
+   "hg": 0
+ },
+ {
+   "Bundle": "Rare",
+   "Size": 47,
+   "wa": 1,
+   "ha": 2,
+   "wg": 16,
+   "hg": 29
+ },
+ {
+   "Bundle": "Resident Evil Series",
+   "Size": 53,
+   "wa": 0,
+   "ha": 1,
+   "wg": 20,
+   "hg": 32
+ },
+ {
+   "Bundle": "Rune Factory Series",
+   "Size": 81,
+   "wa": 0,
+   "ha": 0,
+   "wg": 57,
+   "hg": 24
+ },
+ {
+   "Bundle": "Silent Hill",
+   "Size": 16,
+   "wa": 0,
+   "ha": 0,
+   "wg": 11,
+   "hg": 6
+ },
+ {
+   "Bundle": "Sims Series",
+   "Size": 12,
+   "wa": 0,
+   "ha": 0,
+   "wg": 5,
+   "hg": 7
+ },
+ {
+   "Bundle": "Soul Eater Series",
+   "Size": 47,
+   "wa": 22,
+   "ha": 27,
+   "wg": 0,
+   "hg": 0
+ },
+ {
+   "Bundle": "Souls Series",
+   "Size": 100,
+   "wa": 0,
+   "ha": 1,
+   "wg": 38,
+   "hg": 71
+ },
+ {
+   "Bundle": "Splatoon Series",
+   "Size": 42,
+   "wa": 0,
+   "ha": 8,
+   "wg": 15,
+   "hg": 20
+ },
+ {
+   "Bundle": "Super Mario Galaxy Series",
+   "Size": 11,
+   "wa": 0,
+   "ha": 0,
+   "wg": 5,
+   "hg": 10
+ },
+ {
+   "Bundle": "Super Robot Taisen",
+   "Size": 29,
+   "wa": 0,
+   "ha": 0,
+   "wg": 24,
+   "hg": 5
+ },
+ {
+   "Bundle": "Super Smash Bros. Series",
+   "Size": 23,
+   "wa": 0,
+   "ha": 0,
+   "wg": 17,
+   "hg": 23
+ },
+ {
+   "Bundle": "Tellius Series",
+   "Size": 79,
+   "wa": 0,
+   "ha": 0,
+   "wg": 30,
+   "hg": 50
+ },
+ {
+   "Bundle": "Tenchi Muyou",
+   "Size": 34,
+   "wa": 28,
+   "ha": 6,
+   "wg": 0,
+   "hg": 0
+ },
+ {
+   "Bundle": "The Elder Scrolls",
+   "Size": 83,
+   "wa": 0,
+   "ha": 0,
+   "wg": 47,
+   "hg": 64
+ },
+ {
+   "Bundle": "Toby Fox Games",
+   "Size": 57,
+   "wa": 0,
+   "ha": 0,
+   "wg": 33,
+   "hg": 44
+ },
+ {
+   "Bundle": "Touhou Fanworks",
+   "Size": 32,
+   "wa": 2,
+   "ha": 0,
+   "wg": 29,
+   "hg": 2
+ },
+ {
+   "Bundle": "Touhou Project (PC-98 Canon)",
+   "Size": 33,
+   "wa": 0,
+   "ha": 0,
+   "wg": 32,
+   "hg": 5
+ },
+ {
+   "Bundle": "Valentia Series",
+   "Size": 36,
+   "wa": 0,
+   "ha": 0,
+   "wg": 13,
+   "hg": 23
+ },
+ {
+   "Bundle": "Wand of Fortune Series",
+   "Size": 9,
+   "wa": 0,
+   "ha": 0,
+   "wg": 1,
+   "hg": 8
+ },
+ {
+   "Bundle": "Wario Land Series",
+   "Size": 3,
+   "wa": 0,
+   "ha": 0,
+   "wg": 2,
+   "hg": 1
+ },
+ {
+   "Bundle": "WIXOSS",
+   "Size": 40,
+   "wa": 36,
+   "ha": 1,
+   "wg": 32,
+   "hg": 0
+ },
+ {
+   "Bundle": "Yakuza Series",
+   "Size": 70,
+   "wa": 0,
+   "ha": 0,
+   "wg": 14,
+   "hg": 56
+ },
+ {
+   "Bundle": "Yuusha de Aru Series",
+   "Size": 29,
+   "wa": 24,
+   "ha": 0,
+   "wg": 5,
+   "hg": 0
+ }
 ]
