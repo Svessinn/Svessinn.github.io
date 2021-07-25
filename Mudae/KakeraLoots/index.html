@@ -56,7 +56,7 @@
                      <table class="table table-sm text-center">
                         <thead>
                            <tr>
-                              <th scope="col">% Chance of Rolling a Wish</th>
+                              <th scope="col">Average Kakera Returned from Kakera Loots</th>
                            </tr>
                         </thead>
                         <tbody>
@@ -64,37 +64,7 @@
                               <td>{{Val}}</td>
                            </tr>
                         </tbody>
-                        <thead>
-                           <tr>
-                              <th scope="col">% Chance of Rolling {{wishesDesired}} or More Wishes in {{rollAmount}} Rolls</th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                           <tr>
-                              <td>{{Prob}}</td>
-                           </tr>
-                        </tbody>
                      </table>
-                  </div>
-               </div>
-            </div>
-            
-            
-            <div class="card mb-4">
-               <h5 class="card-header">
-                  <a data-toggle="collapse" href="#instructions" aria-expanded="true" aria-controls="instructions" id="code-header" class="collapsed d-block">
-                  <i class="fa fa-chevron-down float-right"></i>
-                  Instructions
-                  </a>
-               </h5>
-               <div id="instructions" class="collapse" aria-labelledby="code-header">
-                  <div class="card-body" id="instructions" ref="instructions">
-                     To get the number of unclaimed wishes in a roll type use the <span class="rounded">$wltu</span> command<br>
-                     To get the bonuses use the <span class="rounded">$bonus</span> command<br>
-                     To get the number of disabled characters in a roll type use the <span class="rounded">$dld</span> command<br>
-                     To get the number of characthers in a roll type use the <span class="rounded">$bonus</span> command<br>
-                     To get the personal rare value use the <span class="rounded">$persr</span> command<br>
-
                   </div>
                </div>
             </div>
@@ -109,21 +79,12 @@
                </h5>
                <div id="formula-text" class="collapse" aria-labelledby="formula-header">
                   <div class="card-body" id="nerd-shit" ref="nerdShit">
-                     <h5>The Formula for % Chance of Rolling a Wish</h5>
-                     Let <span class="variable">\(wl\)</span> be the number of wishes in your roll type, <span class="variable">\(wb_B\)</span> be badge wish boost, and <span class="variable">\(wb_F\)</span> be the fist wish boost, <span class="variable">\(wp\)</span> be the wish prorection rate, <span class="variable">\(C_D\)</span> be the number of disabled characters in your roll type, <span class="variable">\(C_L\)</span> be the number of unclaimed characters in your roll type, <span class="variable">\(C_T\)</span> be the total number of characters in your roll type, and <span class="variable">\(pr\)</span> be your personal rare value.<br>
+                     <h5>The Formula for Average Kakera Return from Kakera Loots</h5>
+                     Let <span class="variable">\(v\)</span> be the price of the Kakera Loot, <span class="variable">\(P\)</span> be the probability to get a kakera reward from a Kakera Loot (depends on quality), and <span class="variable">\(K\)</span> be the average kakera reward size constant
                      <div class="formula">
                         \[
                         \begin{aligned}
-                        P &= wp + \frac{wl &times (1 + \frac{wb_B}{100}) + \frac{wb_F}{100}}{C_L - C_D + ((1 - \frac{C_L}{C_T})^{pr} )&times C_T}
-                        \end{aligned}
-                        \]
-                     </div>
-                     <h5>The Formula for % Chance of Rolling \(x\) or More Wishes in \(n\) Rolls</h5>
-                     For this formula we'll take the <span class="variable">\(P\)</span> from the previous formula and set it as <span class="variable">\(p\)</span> which is the probability of rolling a wish, then we take <span class="variable">\(p\)</span> and use it to get <span class="variable">\(q\)</span> which is <span class="variable">\(1-p\)</span> or the possibility of not rolling a wish, then we set <span class="variable">\(x\)</span> to the number of wishes you want, and <span class="variable">\(n\)</span> as the number of rolls you have
-                     <div class="formula">
-                        \[
-                        \begin{aligned}
-                        P(z) &= \sum_{z=x}^{n}\frac{n!}{(n-z)!z!}p^{z}q^{n-z}
+                        P &= \frac{1}{6}+(1-\frac{1}{6})\times(\frac{Qual}{100}\times\frac{1}{6})
                         \end{aligned}
                         \]
                      </div>
@@ -131,26 +92,6 @@
                </div>
             </div>
             
-            
-            <div class="card mb-4">
-               <h5 class="card-header">
-                  <a data-toggle="collapse" href="#code-text" aria-expanded="true" aria-controls="code-text" id="code-header" class="collapsed d-block">
-                  <i class="fa fa-chevron-down float-right"></i>
-                  The Code
-                  </a>
-               </h5>
-               <div id="code-text" class="collapse" aria-labelledby="code-header">
-                  <div class="card-body" id="code-shit" ref="codeShit">
-                     This is a simple JavaScript code snippet that just implements the formula shown above.
-                     <pre><code class="lang-js">function WishSpawnRate(WL, WBB, WBF, CD, CL, CT, PR, WP) {
-  return (WL * (1 + WBB / 100) + WBF / 100) / (CL - CD + ((1 - (CL) / (CT)) ** PR) * CT) + (1 / WP);
-}</code></pre>
-                     This is a simple Python code snippet that just implements the formula shown above.
-                     <pre><code class="lang-py">def WishSpawnRate(WL, WBB, WBF, CD, CL, CT, PR, WP):
-  return (WL * (1 + WBB / 100) + WBF / 100) / (CL - CD + ((1 - (CL) / (CT)) ** PR) * CT) + (1 / WP)</code></pre>
-                  </div>
-               </div>
-            </div>
             
          </div>
       </main>
