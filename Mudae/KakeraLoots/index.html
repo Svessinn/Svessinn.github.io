@@ -1,1 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Wish Spawnrate Calculator</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/lightfair.min.css">
+      <link rel="stylesheet" href="stylesheets/WishSpawnrateCalc.css">
+      <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+      <script src='https://github.com/MikeMcl/bignumber.js/blob/master/bignumber.js'></script>
+   </head>
+   <body class="d-flex flex-column h-100">
+      <header>
+      <div class="pos-f-t">
+        <nav class="navbar navbar-dark bg-dark">
+          <div>
+            <a href="../../Main/" id="homeButton">Home</a>
+          </div>
+          <div class="mx-auto">
+            <a class="navbar-brand">Badge Efficiency Calculator</a>
+          </div>
+          <button id="navButton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <h4 class="text-white"><a href="../BadgeEfficiencyCalc/" class="navLink">Badge Efficiency Calculator</a></h4>
+          </div>
+          <div class="bg-dark p-4">
+            <h4 class="navItem"><a href="../Bundles/" class="navLink">Bundles</a></h4>
+          </div>
+        </div>
+      </div>
+    </header>
+      <main role="main" class="flex-fill mt-4">
+         <div id="app" class="container">
+            <div class="card mb-4">
+               <div id="calc-form" aria-labelledby="formula-header">
+                  <div class="card-body">
+                     <form>
+                        <value-input id="wishlistSize" label="No. of Charaters Wished in Your Roll Type (Unclaimed)" fa-icon="list" v-model:value.number="wishlistSize" :min-tick="0" :tick-vals="[1, 10]"></value-input>
+                        <value-input id="wishBoost" label="Badge Wish Boost %" fa-icon="percent" v-model:value.number="wishBoost" :min-tick="0" :max-tick="150" :tick-vals="[25, 50]"></value-input>
+                        <value-input id="firstWishBoost" label="First Wish Boost %" fa-icon="percent" v-model:value.number="firstWishBoost" :min-tick="0" :max-tick="500" :tick-vals="[25, 50]"></value-input>
+                        <value-input id="wishProtection" label="Wish Protection Rate (1/X)" fa-icon="star" v-model:value.number="wishProtection" :min-tick="499" :max-tick="10000" :tick-vals="[1, 10, 25, 50]" is-rank></value-input>
+                        <value-input id="disabledChars" label="No. of Disabled Characters in Your Roll Type" fa-icon="list" v-model:value.number="disabledChars" :min-tick="0" :max-tick="62100" :tick-vals="[1000, 5000]"></value-input>
+                        <value-input id="leftChars" label="No. of Characters Left in Your Roll Type" fa-icon="users" v-model:value.number="leftChars" :min-tick="0" :max-tick="69000" :tick-vals="[1000, 5000]"></value-input>
+                        <value-input id="totalChars" label="Total No. of Characters in Your Roll Type" fa-icon="users" v-model:value.number="totalChars" :min-tick="0" :max-tick="69000" :tick-vals="[1000, 5000]"></value-input>
+                        <value-input id="PersonalRare" label="Personal Rare Value" fa-icon="users" v-model:value.number="PersonalRare" :min-tick="1" :max-tick="10" :tick-vals="[1]"></value-input>
+                        <value-input id="rollAmount" label="Amount of Rolls You Have" fa-icon="users" v-model:value.number="rollAmount" :min-tick="1" :max-tick="170" :tick-vals="[1, 5]"></value-input>
+                        <value-input id="wishesDesired" label="No. of Wishes Desired from Rolls" fa-icon="users" v-model:value.number="wishesDesired" :min-tick="1" :max-tick="170" :tick-vals="[1]"></value-input>
+                        
+                     </form>
+                     <table class="table table-sm text-center">
+                        <thead>
+                           <tr>
+                              <th scope="col">% Chance of Rolling a Wish</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>{{Val}}</td>
+                           </tr>
+                        </tbody>
+                        <thead>
+                           <tr>
+                              <th scope="col">% Chance of Rolling {{wishesDesired}} or More Wishes in {{rollAmount}} Rolls</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>{{Prob}}</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+            
+            
+            <div class="card mb-4">
+               <h5 class="card-header">
+                  <a data-toggle="collapse" href="#instructions" aria-expanded="true" aria-controls="instructions" id="code-header" class="collapsed d-block">
+                  <i class="fa fa-chevron-down float-right"></i>
+                  Instructions
+                  </a>
+               </h5>
+               <div id="instructions" class="collapse" aria-labelledby="code-header">
+                  <div class="card-body" id="instructions" ref="instructions">
+                     To get the number of unclaimed wishes in a roll type use the <span class="rounded">$wltu</span> command<br>
+                     To get the bonuses use the <span class="rounded">$bonus</span> command<br>
+                     To get the number of disabled characters in a roll type use the <span class="rounded">$dld</span> command<br>
+                     To get the number of characthers in a roll type use the <span class="rounded">$bonus</span> command<br>
+                     To get the personal rare value use the <span class="rounded">$persr</span> command<br>
 
+                  </div>
+               </div>
+            </div>
+            
+            
+            <div class="card mb-4">
+               <h5 class="card-header">
+                  <a data-toggle="collapse" href="#formula-text" aria-expanded="true" aria-controls="formula-text" id="formula-header" class="collapsed d-block">
+                  <i class="fa fa-chevron-down float-right"></i>
+                  The Formula
+                  </a>
+               </h5>
+               <div id="formula-text" class="collapse" aria-labelledby="formula-header">
+                  <div class="card-body" id="nerd-shit" ref="nerdShit">
+                     <h5>The Formula for % Chance of Rolling a Wish</h5>
+                     Let <span class="variable">\(wl\)</span> be the number of wishes in your roll type, <span class="variable">\(wb_B\)</span> be badge wish boost, and <span class="variable">\(wb_F\)</span> be the fist wish boost, <span class="variable">\(wp\)</span> be the wish prorection rate, <span class="variable">\(C_D\)</span> be the number of disabled characters in your roll type, <span class="variable">\(C_L\)</span> be the number of unclaimed characters in your roll type, <span class="variable">\(C_T\)</span> be the total number of characters in your roll type, and <span class="variable">\(pr\)</span> be your personal rare value.<br>
+                     <div class="formula">
+                        \[
+                        \begin{aligned}
+                        P &= wp + \frac{wl &times (1 + \frac{wb_B}{100}) + \frac{wb_F}{100}}{C_L - C_D + ((1 - \frac{C_L}{C_T})^{pr} )&times C_T}
+                        \end{aligned}
+                        \]
+                     </div>
+                     <h5>The Formula for % Chance of Rolling \(x\) or More Wishes in \(n\) Rolls</h5>
+                     For this formula we'll take the <span class="variable">\(P\)</span> from the previous formula and set it as <span class="variable">\(p\)</span> which is the probability of rolling a wish, then we take <span class="variable">\(p\)</span> and use it to get <span class="variable">\(q\)</span> which is <span class="variable">\(1-p\)</span> or the possibility of not rolling a wish, then we set <span class="variable">\(x\)</span> to the number of wishes you want, and <span class="variable">\(n\)</span> as the number of rolls you have
+                     <div class="formula">
+                        \[
+                        \begin{aligned}
+                        P(z) &= \sum_{z=x}^{n}\frac{n!}{(n-z)!z!}p^{z}q^{n-z}
+                        \end{aligned}
+                        \]
+                     </div>
+                  </div>
+               </div>
+            </div>
+            
+            
+            <div class="card mb-4">
+               <h5 class="card-header">
+                  <a data-toggle="collapse" href="#code-text" aria-expanded="true" aria-controls="code-text" id="code-header" class="collapsed d-block">
+                  <i class="fa fa-chevron-down float-right"></i>
+                  The Code
+                  </a>
+               </h5>
+               <div id="code-text" class="collapse" aria-labelledby="code-header">
+                  <div class="card-body" id="code-shit" ref="codeShit">
+                     This is a simple JavaScript code snippet that just implements the formula shown above.
+                     <pre><code class="lang-js">function WishSpawnRate(WL, WBB, WBF, CD, CL, CT, PR, WP) {
+  return (WL * (1 + WBB / 100) + WBF / 100) / (CL - CD + ((1 - (CL) / (CT)) ** PR) * CT) + (1 / WP);
+}</code></pre>
+                     This is a simple Python code snippet that just implements the formula shown above.
+                     <pre><code class="lang-py">def WishSpawnRate(WL, WBB, WBF, CD, CL, CT, PR, WP):
+  return (WL * (1 + WBB / 100) + WBF / 100) / (CL - CD + ((1 - (CL) / (CT)) ** PR) * CT) + (1 / WP)</code></pre>
+                  </div>
+               </div>
+            </div>
+            
+         </div>
+      </main>
+      <footer class="footer mt-auto py-3">
+         <div class="container">
+            <small class="text-muted">
+            <b>DISCLAIMER:</b> Values may be slightly inaccurate, but this is the best approximation we could get.<br>
+            <b>DISCLAIMER:</b> Big disable lists and high personal rare (3+) will return invalid resaults<br>
+            Value calculations by Kitty_Gamer23, Page setup and managed by Svess.
+            </small>
+         </div>
+         <script src="js/WishSpawnrateCalc.js"></script>
+         <script>window.console = window.console || function(t) {};</script>
+         <script>if (document.location.search.match(/type=embed/gi)) {window.parent.postMessage("resize", "*");}</script>
+      </footer>
+   </body>
+</html>
+{"mode":"full","isActive":false}
