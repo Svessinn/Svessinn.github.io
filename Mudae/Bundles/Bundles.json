@@ -3104,5 +3104,2220 @@
     "hap": "7.89",
     "wgp": "0.0",
     "hgp": "0.0"
+  },
+	{
+    "Bundle": "Comic Strips",
+    "Aliases": [
+      "Newspaper Comics"
+    ],
+    "Size": 98,
+    "wa": 32,
+    "ha": 66,
+    "wg": 0,
+    "hg": 0,
+    "wap": "32.65",
+    "hap": "67.35",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Comic Valkyrie",
+    "Aliases": [],
+    "Size": 64,
+    "wa": 60,
+    "ha": 4,
+    "wg": 0,
+    "hg": 0,
+    "wap": "93.75",
+    "hap": "6.25",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Comic Yuri-Hime.",
+    "Aliases": [
+      "Comic Yuri Hime",
+      "Comic Yuri-Hime: Justice For Girls",
+      "Yuri Hime"
+    ],
+    "Size": 123,
+    "wa": 120,
+    "ha": 3,
+    "wg": 0,
+    "hg": 0,
+    "wap": "97.56",
+    "hap": "2.44",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Comic Zenon",
+    "Aliases": [],
+    "Size": 61,
+    "wa": 23,
+    "ha": 38,
+    "wg": 0,
+    "hg": 0,
+    "wap": "37.7",
+    "hap": "62.3",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Comic ZERO-SUM",
+    "Aliases": [],
+    "Size": 124,
+    "wa": 32,
+    "ha": 95,
+    "wg": 0,
+    "hg": 0,
+    "wap": "25.81",
+    "hap": "76.61",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Comic@\\u200bBunch",
+    "Aliases": [],
+    "Size": 29,
+    "wa": 10,
+    "ha": 19,
+    "wg": 0,
+    "hg": 0,
+    "wap": "34.48",
+    "hap": "65.52",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Comico",
+    "Aliases": [],
+    "Size": 102,
+    "wa": 40,
+    "ha": 65,
+    "wg": 0,
+    "hg": 0,
+    "wap": "39.22",
+    "hap": "63.73",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Comics",
+    "Aliases": [],
+    "Size": 2035,
+    "wa": 865,
+    "ha": 1195,
+    "wg": 8,
+    "hg": 22,
+    "wap": "42.51",
+    "hap": "58.72",
+    "wgp": "0.39",
+    "hgp": "1.08"
+  },
+  {
+    "Bundle": "ComicWalker",
+    "Aliases": [
+      "Comic Walker"
+    ],
+    "Size": 184,
+    "wa": 144,
+    "ha": 42,
+    "wg": 0,
+    "hg": 0,
+    "wap": "78.26",
+    "hap": "22.83",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Command & Conquer Series",
+    "Aliases": [
+      "Command and Conquer Series"
+    ],
+    "Size": 4,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 2,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "50.0",
+    "hgp": "50.0"
+  },
+  {
+    "Bundle": "Commodorette's Works",
+    "Aliases": [
+      "Commodorette"
+    ],
+    "Size": 3,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 1,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "66.67",
+    "hgp": "33.33"
+  },
+  {
+    "Bundle": "Comp Ace",
+    "Aliases": [],
+    "Size": 495,
+    "wa": 316,
+    "ha": 98,
+    "wg": 73,
+    "hg": 23,
+    "wap": "63.84",
+    "hap": "19.8",
+    "wgp": "14.75",
+    "hgp": "4.65"
+  },
+  {
+    "Bundle": "Compile Heart",
+    "Aliases": [],
+    "Size": 238,
+    "wa": 36,
+    "ha": 8,
+    "wg": 204,
+    "hg": 21,
+    "wap": "15.13",
+    "hap": "3.36",
+    "wgp": "85.71",
+    "hgp": "8.82"
+  },
+  {
+    "Bundle": "Conception Series",
+    "Aliases": [],
+    "Size": 19,
+    "wa": 10,
+    "ha": 1,
+    "wg": 17,
+    "hg": 2,
+    "wap": "52.63",
+    "hap": "5.26",
+    "wgp": "89.47",
+    "hgp": "10.53"
+  },
+  {
+    "Bundle": "Confession Executive Committee ~Love Series~",
+    "Aliases": [
+      "HoneyWorks"
+    ],
+    "Size": 23,
+    "wa": 7,
+    "ha": 16,
+    "wg": 0,
+    "hg": 0,
+    "wap": "30.43",
+    "hap": "69.57",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Cooking Genre",
+    "Aliases": [
+      "Food Preparation Series",
+      "Baking Series",
+      "Cooking",
+      "Cuisine",
+      "Cooking Series"
+    ],
+    "Size": 180,
+    "wa": 74,
+    "ha": 89,
+    "wg": 9,
+    "hg": 11,
+    "wap": "41.11",
+    "hap": "49.44",
+    "wgp": "5.0",
+    "hgp": "6.11"
+  },
+  {
+    "Bundle": "Cool-kyou Shinja's Works",
+    "Aliases": [
+      "Kaname Raigi's Works",
+      "Coolkyousinnjya",
+      "Cool-kyou Shinja",
+      "Coolkyoushinja"
+    ],
+    "Size": 32,
+    "wa": 22,
+    "ha": 10,
+    "wg": 0,
+    "hg": 0,
+    "wap": "68.75",
+    "hap": "31.25",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Core Magazine",
+    "Aliases": [],
+    "Size": 43,
+    "wa": 34,
+    "ha": 9,
+    "wg": 0,
+    "hg": 0,
+    "wap": "79.07",
+    "hap": "20.93",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Corpse Party Series",
+    "Aliases": [],
+    "Size": 35,
+    "wa": 15,
+    "ha": 7,
+    "wg": 25,
+    "hg": 10,
+    "wap": "42.86",
+    "hap": "20.0",
+    "wgp": "71.43",
+    "hgp": "28.57"
+  },
+  {
+    "Bundle": "Cosmere",
+    "Aliases": [],
+    "Size": 40,
+    "wa": 18,
+    "ha": 23,
+    "wg": 0,
+    "hg": 0,
+    "wap": "45.0",
+    "hap": "57.5",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "COVER Corporation",
+    "Aliases": [
+      "Cover Corp.",
+      "Cover Corp",
+      "COVER"
+    ],
+    "Size": 84,
+    "wa": 66,
+    "ha": 21,
+    "wg": 0,
+    "hg": 0,
+    "wap": "78.57",
+    "hap": "25.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Crash Bandicoot N. Sane Trilogy",
+    "Aliases": [],
+    "Size": 21,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 19,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "9.52",
+    "hgp": "90.48"
+  },
+  {
+    "Bundle": "Crash Bandicoot Series",
+    "Aliases": [
+      "Crash Series",
+      "Crash"
+    ],
+    "Size": 69,
+    "wa": 0,
+    "ha": 0,
+    "wg": 16,
+    "hg": 54,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "23.19",
+    "hgp": "78.26"
+  },
+  {
+    "Bundle": "Crazy Frog Series",
+    "Aliases": [],
+    "Size": 2,
+    "wa": 0,
+    "ha": 1,
+    "wg": 1,
+    "hg": 0,
+    "wap": "0.0",
+    "hap": "50.0",
+    "wgp": "50.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Criminal Girls Series",
+    "Aliases": [
+      "Criminal Girls",
+      "CG Series"
+    ],
+    "Size": 10,
+    "wa": 0,
+    "ha": 0,
+    "wg": 10,
+    "hg": 0,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "100.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Croteam",
+    "Aliases": [],
+    "Size": 3,
+    "wa": 0,
+    "ha": 0,
+    "wg": 1,
+    "hg": 3,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "33.33",
+    "hgp": "100.0"
+  },
+  {
+    "Bundle": "Crunchyroll Originals",
+    "Aliases": [
+      "CR Originals"
+    ],
+    "Size": 236,
+    "wa": 96,
+    "ha": 143,
+    "wg": 0,
+    "hg": 0,
+    "wap": "40.68",
+    "hap": "60.59",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Crypt of the Necrodancer Series",
+    "Aliases": [
+      "CotND Series"
+    ],
+    "Size": 12,
+    "wa": 0,
+    "ha": 0,
+    "wg": 8,
+    "hg": 6,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "66.67",
+    "hgp": "50.0"
+  },
+  {
+    "Bundle": "Cube Entertainment",
+    "Aliases": [],
+    "Size": 3,
+    "wa": 1,
+    "ha": 2,
+    "wg": 0,
+    "hg": 0,
+    "wap": "33.33",
+    "hap": "66.67",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Custom Robo",
+    "Aliases": [],
+    "Size": 4,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 2,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "50.0",
+    "hgp": "50.0"
+  },
+  {
+    "Bundle": "CyberConnect2",
+    "Aliases": [
+      "CC2"
+    ],
+    "Size": 126,
+    "wa": 17,
+    "ha": 26,
+    "wg": 46,
+    "hg": 69,
+    "wap": "13.49",
+    "hap": "20.63",
+    "wgp": "36.51",
+    "hgp": "54.76"
+  },
+  {
+    "Bundle": "Cyberpunk Bartender Action",
+    "Aliases": [
+      "CBA"
+    ],
+    "Size": 27,
+    "wa": 0,
+    "ha": 0,
+    "wg": 16,
+    "hg": 12,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "59.26",
+    "hgp": "44.44"
+  },
+  {
+    "Bundle": "CyberStep, Inc.",
+    "Aliases": [
+      "CyberStep"
+    ],
+    "Size": 10,
+    "wa": 3,
+    "ha": 1,
+    "wg": 9,
+    "hg": 1,
+    "wap": "30.0",
+    "hap": "10.0",
+    "wgp": "90.0",
+    "hgp": "10.0"
+  },
+  {
+    "Bundle": "Cycomics",
+    "Aliases": [],
+    "Size": 39,
+    "wa": 27,
+    "ha": 12,
+    "wg": 0,
+    "hg": 0,
+    "wap": "69.23",
+    "hap": "30.77",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Cygames",
+    "Aliases": [
+      "Cykagames"
+    ],
+    "Size": 980,
+    "wa": 248,
+    "ha": 45,
+    "wg": 660,
+    "hg": 256,
+    "wap": "25.31",
+    "hap": "4.59",
+    "wgp": "67.35",
+    "hgp": "26.12"
+  },
+  {
+    "Bundle": "Cygames Games",
+    "Aliases": [
+      "Cykagames Games",
+      "Things to Play if You Love Juventus",
+      "Cygames Games Games Games"
+    ],
+    "Size": 920,
+    "wa": 210,
+    "ha": 22,
+    "wg": 660,
+    "hg": 256,
+    "wap": "22.83",
+    "hap": "2.39",
+    "wgp": "71.74",
+    "hgp": "27.83"
+  },
+  {
+    "Bundle": "Cytus Series",
+    "Aliases": [],
+    "Size": 23,
+    "wa": 0,
+    "ha": 0,
+    "wg": 13,
+    "hg": 10,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "56.52",
+    "hgp": "43.48"
+  },
+  {
+    "Bundle": "d-rights",
+    "Aliases": [],
+    "Size": 215,
+    "wa": 63,
+    "ha": 158,
+    "wg": 0,
+    "hg": 1,
+    "wap": "29.3",
+    "hap": "73.49",
+    "wgp": "0.0",
+    "hgp": "0.47"
+  },
+  {
+    "Bundle": "Da Capo Series",
+    "Aliases": [],
+    "Size": 20,
+    "wa": 2,
+    "ha": 0,
+    "wg": 19,
+    "hg": 1,
+    "wap": "10.0",
+    "hap": "0.0",
+    "wgp": "95.0",
+    "hgp": "5.0"
+  },
+  {
+    "Bundle": "Daitosha",
+    "Aliases": [
+      "Daito",
+      "Daitosha/Shusuisha"
+    ],
+    "Size": 13,
+    "wa": 6,
+    "ha": 7,
+    "wg": 0,
+    "hg": 0,
+    "wap": "46.15",
+    "hap": "53.85",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Dan Schneider's Works",
+    "Aliases": [
+      "Schneider's Bakery",
+      "DanWarp",
+      "Dan Schneider"
+    ],
+    "Size": 27,
+    "wa": 13,
+    "ha": 14,
+    "wg": 0,
+    "hg": 0,
+    "wap": "48.15",
+    "hap": "51.85",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Dangan Fangan Bundgan",
+    "Aliases": [
+      "Dangan & Fangan",
+      "Dangan and Fangan"
+    ],
+    "Size": 179,
+    "wa": 50,
+    "ha": 50,
+    "wg": 60,
+    "hg": 75,
+    "wap": "27.93",
+    "hap": "27.93",
+    "wgp": "33.52",
+    "hgp": "41.9"
+  },
+  {
+    "Bundle": "Danganronpa",
+    "Aliases": [
+      "DR",
+      "Danganronpa Series",
+      "DR Series",
+      "DGRP"
+    ],
+    "Size": 120,
+    "wa": 42,
+    "ha": 44,
+    "wg": 39,
+    "hg": 51,
+    "wap": "35.0",
+    "hap": "36.67",
+    "wgp": "32.5",
+    "hgp": "42.5"
+  },
+  {
+    "Bundle": "Danganronpa Another Series",
+    "Aliases": [
+      "Danganronpa Another",
+      "DRA"
+    ],
+    "Size": 34,
+    "wa": 0,
+    "ha": 0,
+    "wg": 17,
+    "hg": 17,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "50.0",
+    "hgp": "50.0"
+  },
+  {
+    "Bundle": "Danganronpa Fangames",
+    "Aliases": [
+      "Fanganronpa"
+    ],
+    "Size": 59,
+    "wa": 8,
+    "ha": 6,
+    "wg": 21,
+    "hg": 24,
+    "wap": "13.56",
+    "hap": "10.17",
+    "wgp": "35.59",
+    "hgp": "40.68"
+  },
+  {
+    "Bundle": "Darius Series",
+    "Aliases": [],
+    "Size": 14,
+    "wa": 0,
+    "ha": 0,
+    "wg": 9,
+    "hg": 9,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "64.29",
+    "hgp": "64.29"
+  },
+  {
+    "Bundle": "Dark Cloud Series",
+    "Aliases": [
+      "DCS"
+    ],
+    "Size": 10,
+    "wa": 0,
+    "ha": 0,
+    "wg": 3,
+    "hg": 7,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "30.0",
+    "hgp": "70.0"
+  },
+  {
+    "Bundle": "Dark Horse Comics",
+    "Aliases": [
+      "DH Comics",
+      "DHC"
+    ],
+    "Size": 309,
+    "wa": 119,
+    "ha": 194,
+    "wg": 0,
+    "hg": 1,
+    "wap": "38.51",
+    "hap": "62.78",
+    "wgp": "0.0",
+    "hgp": "0.32"
+  },
+  {
+    "Bundle": "Dark Marchen",
+    "Aliases": [
+      "BLACKSOULS Series"
+    ],
+    "Size": 38,
+    "wa": 0,
+    "ha": 0,
+    "wg": 35,
+    "hg": 4,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "92.11",
+    "hgp": "10.53"
+  },
+  {
+    "Bundle": "Date A Live Series",
+    "Aliases": [
+      "DAL Series"
+    ],
+    "Size": 55,
+    "wa": 45,
+    "ha": 5,
+    "wg": 5,
+    "hg": 0,
+    "wap": "81.82",
+    "hap": "9.09",
+    "wgp": "9.09",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Dating Sims",
+    "Aliases": [
+      "Romance Simulation Games",
+      "Dating Simulators"
+    ],
+    "Size": 571,
+    "wa": 71,
+    "ha": 4,
+    "wg": 278,
+    "hg": 282,
+    "wap": "12.43",
+    "hap": "0.7",
+    "wgp": "48.69",
+    "hgp": "49.39"
+  },
+  {
+    "Bundle": "Daum",
+    "Aliases": [],
+    "Size": 108,
+    "wa": 36,
+    "ha": 72,
+    "wg": 0,
+    "hg": 0,
+    "wap": "33.33",
+    "hap": "66.67",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "David Production",
+    "Aliases": [],
+    "Size": 349,
+    "wa": 103,
+    "ha": 233,
+    "wg": 38,
+    "hg": 63,
+    "wap": "29.51",
+    "hap": "66.76",
+    "wgp": "10.89",
+    "hgp": "18.05"
+  },
+  {
+    "Bundle": "DC Multiverse",
+    "Aliases": [
+      "DCM",
+      "DC Series"
+    ],
+    "Size": 512,
+    "wa": 218,
+    "ha": 296,
+    "wg": 3,
+    "hg": 5,
+    "wap": "42.58",
+    "hap": "57.81",
+    "wgp": "0.59",
+    "hgp": "0.98"
+  },
+  {
+    "Bundle": "DC Vertigo",
+    "Aliases": [
+      "DCV",
+      "Vertigo",
+      "Vertigo Comics"
+    ],
+    "Size": 25,
+    "wa": 10,
+    "ha": 15,
+    "wg": 3,
+    "hg": 1,
+    "wap": "40.0",
+    "hap": "60.0",
+    "wgp": "12.0",
+    "hgp": "4.0"
+  },
+  {
+    "Bundle": "Dead Games",
+    "Aliases": [
+      "RIP Games"
+    ],
+    "Size": 389,
+    "wa": 39,
+    "ha": 2,
+    "wg": 293,
+    "hg": 90,
+    "wap": "10.03",
+    "hap": "0.51",
+    "wgp": "75.32",
+    "hgp": "23.14"
+  },
+  {
+    "Bundle": "Dead Rising Series",
+    "Aliases": [],
+    "Size": 7,
+    "wa": 0,
+    "ha": 0,
+    "wg": 3,
+    "hg": 4,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "42.86",
+    "hgp": "57.14"
+  },
+  {
+    "Bundle": "Death Note Series",
+    "Aliases": [],
+    "Size": 26,
+    "wa": 8,
+    "ha": 18,
+    "wg": 0,
+    "hg": 0,
+    "wap": "30.77",
+    "hap": "69.23",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Delightworks",
+    "Aliases": [],
+    "Size": 229,
+    "wa": 31,
+    "ha": 21,
+    "wg": 124,
+    "hg": 115,
+    "wap": "13.54",
+    "hap": "9.17",
+    "wgp": "54.15",
+    "hgp": "50.22"
+  },
+  {
+    "Bundle": "Demonbane Series",
+    "Aliases": [],
+    "Size": 5,
+    "wa": 0,
+    "ha": 0,
+    "wg": 3,
+    "hg": 2,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "60.0",
+    "hgp": "40.0"
+  },
+  {
+    "Bundle": "Dendrobates",
+    "Aliases": [
+      "Locon",
+      "Yadokugaeru"
+    ],
+    "Size": 22,
+    "wa": 1,
+    "ha": 21,
+    "wg": 0,
+    "hg": 0,
+    "wap": "4.55",
+    "hap": "95.45",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Dengeki Bunko",
+    "Aliases": [],
+    "Size": 798,
+    "wa": 564,
+    "ha": 248,
+    "wg": 12,
+    "hg": 2,
+    "wap": "70.68",
+    "hap": "31.08",
+    "wgp": "1.5",
+    "hgp": "0.25"
+  },
+  {
+    "Bundle": "Dengeki Daioh",
+    "Aliases": [],
+    "Size": 480,
+    "wa": 312,
+    "ha": 108,
+    "wg": 71,
+    "hg": 20,
+    "wap": "65.0",
+    "hap": "22.5",
+    "wgp": "14.79",
+    "hgp": "4.17"
+  },
+  {
+    "Bundle": "Dengeki G's Comic",
+    "Aliases": [
+      "Dengeki G's"
+    ],
+    "Size": 896,
+    "wa": 376,
+    "ha": 116,
+    "wg": 431,
+    "hg": 171,
+    "wap": "41.96",
+    "hap": "12.95",
+    "wgp": "48.1",
+    "hgp": "19.08"
+  },
+  {
+    "Bundle": "Dept. Heaven",
+    "Aliases": [
+      "Dept Heaven"
+    ],
+    "Size": 15,
+    "wa": 0,
+    "ha": 0,
+    "wg": 11,
+    "hg": 4,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "73.33",
+    "hgp": "26.67"
+  },
+  {
+    "Bundle": "Destiny",
+    "Aliases": [],
+    "Size": 31,
+    "wa": 0,
+    "ha": 0,
+    "wg": 14,
+    "hg": 19,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "45.16",
+    "hgp": "61.29"
+  },
+  {
+    "Bundle": "Deus Ex Series",
+    "Aliases": [
+      "DE Series",
+      "DES",
+      "Deus Ex Universe"
+    ],
+    "Size": 4,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 2,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "50.0",
+    "hgp": "50.0"
+  },
+  {
+    "Bundle": "DEVGRU-P",
+    "Aliases": [],
+    "Size": 6,
+    "wa": 0,
+    "ha": 0,
+    "wg": 6,
+    "hg": 0,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "100.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Devil Children",
+    "Aliases": [
+      "Demikids"
+    ],
+    "Size": 4,
+    "wa": 2,
+    "ha": 0,
+    "wg": 2,
+    "hg": 2,
+    "wap": "50.0",
+    "hap": "0.0",
+    "wgp": "50.0",
+    "hgp": "50.0"
+  },
+  {
+    "Bundle": "Devil May Cry Series",
+    "Aliases": [
+      "DMC"
+    ],
+    "Size": 21,
+    "wa": 3,
+    "ha": 1,
+    "wg": 8,
+    "hg": 12,
+    "wap": "14.29",
+    "hap": "4.76",
+    "wgp": "38.1",
+    "hgp": "57.14"
+  },
+  {
+    "Bundle": "Devil Summoner",
+    "Aliases": [],
+    "Size": 42,
+    "wa": 1,
+    "ha": 6,
+    "wg": 21,
+    "hg": 25,
+    "wap": "2.38",
+    "hap": "14.29",
+    "wgp": "50.0",
+    "hgp": "59.52"
+  },
+  {
+    "Bundle": "Devil Survivor Series",
+    "Aliases": [],
+    "Size": 28,
+    "wa": 6,
+    "ha": 8,
+    "wg": 13,
+    "hg": 15,
+    "wap": "21.43",
+    "hap": "28.57",
+    "wgp": "46.43",
+    "hgp": "53.57"
+  },
+  {
+    "Bundle": "Devilman Series",
+    "Aliases": [
+      "DM Series"
+    ],
+    "Size": 15,
+    "wa": 6,
+    "ha": 9,
+    "wg": 0,
+    "hg": 0,
+    "wap": "40.0",
+    "hap": "60.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Devolver Digital",
+    "Aliases": [],
+    "Size": 57,
+    "wa": 0,
+    "ha": 0,
+    "wg": 14,
+    "hg": 47,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "24.56",
+    "hgp": "82.46"
+  },
+  {
+    "Bundle": "Diablo Series",
+    "Aliases": [],
+    "Size": 14,
+    "wa": 0,
+    "ha": 0,
+    "wg": 7,
+    "hg": 7,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "50.0",
+    "hgp": "50.0"
+  },
+  {
+    "Bundle": "Dies irae Series",
+    "Aliases": [],
+    "Size": 36,
+    "wa": 0,
+    "ha": 0,
+    "wg": 20,
+    "hg": 18,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "55.56",
+    "hgp": "50.0"
+  },
+  {
+    "Bundle": "Digimon",
+    "Aliases": [
+      "Digital Monsters",
+      "Digimon Franchise"
+    ],
+    "Size": 182,
+    "wa": 46,
+    "ha": 105,
+    "wg": 29,
+    "hg": 49,
+    "wap": "25.27",
+    "hap": "57.69",
+    "wgp": "15.93",
+    "hgp": "26.92"
+  },
+  {
+    "Bundle": "Digimon Games",
+    "Aliases": [],
+    "Size": 56,
+    "wa": 6,
+    "ha": 13,
+    "wg": 24,
+    "hg": 33,
+    "wap": "10.71",
+    "hap": "23.21",
+    "wgp": "42.86",
+    "hgp": "58.93"
+  },
+  {
+    "Bundle": "Digimon Story",
+    "Aliases": [
+      "Digimon Story Series"
+    ],
+    "Size": 34,
+    "wa": 3,
+    "ha": 11,
+    "wg": 14,
+    "hg": 21,
+    "wap": "8.82",
+    "hap": "32.35",
+    "wgp": "41.18",
+    "hgp": "61.76"
+  },
+  {
+    "Bundle": "Digimon World",
+    "Aliases": [
+      "Digimon World Series"
+    ],
+    "Size": 17,
+    "wa": 3,
+    "ha": 2,
+    "wg": 8,
+    "hg": 9,
+    "wap": "17.65",
+    "hap": "11.76",
+    "wgp": "47.06",
+    "hgp": "52.94"
+  },
+  {
+    "Bundle": "Digital Devil Story",
+    "Aliases": [],
+    "Size": 47,
+    "wa": 5,
+    "ha": 14,
+    "wg": 12,
+    "hg": 38,
+    "wap": "10.64",
+    "hap": "29.79",
+    "wgp": "25.53",
+    "hgp": "80.85"
+  },
+  {
+    "Bundle": "Dimension 20",
+    "Aliases": [],
+    "Size": 52,
+    "wa": 19,
+    "ha": 33,
+    "wg": 0,
+    "hg": 0,
+    "wap": "36.54",
+    "hap": "63.46",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Diomed\u00e9a",
+    "Aliases": [
+      "Diomedea"
+    ],
+    "Size": 516,
+    "wa": 199,
+    "ha": 86,
+    "wg": 289,
+    "hg": 3,
+    "wap": "38.57",
+    "hap": "16.67",
+    "wgp": "56.01",
+    "hgp": "0.58"
+  },
+  {
+    "Bundle": "Dirty Pair Series",
+    "Aliases": [],
+    "Size": 4,
+    "wa": 4,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wap": "100.0",
+    "hap": "0.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Disgaea Series",
+    "Aliases": [
+      "Disgaea"
+    ],
+    "Size": 69,
+    "wa": 5,
+    "ha": 5,
+    "wg": 40,
+    "hg": 32,
+    "wap": "7.25",
+    "hap": "7.25",
+    "wgp": "57.97",
+    "hgp": "46.38"
+  },
+  {
+    "Bundle": "Dishonored Series",
+    "Aliases": [],
+    "Size": 7,
+    "wa": 0,
+    "ha": 0,
+    "wg": 4,
+    "hg": 3,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "57.14",
+    "hgp": "42.86"
+  },
+  {
+    "Bundle": "Disney Channel",
+    "Aliases": [],
+    "Size": 224,
+    "wa": 112,
+    "ha": 116,
+    "wg": 0,
+    "hg": 0,
+    "wap": "50.0",
+    "hap": "51.79",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Disney Junior",
+    "Aliases": [
+      "Playhouse Disney",
+      "Disney Jr"
+    ],
+    "Size": 26,
+    "wa": 10,
+    "ha": 16,
+    "wg": 0,
+    "hg": 0,
+    "wap": "38.46",
+    "hap": "61.54",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Disturbing Imagery",
+    "Aliases": [
+      ":ghost:",
+      "CONTENT WARNING",
+      "TRIGGER WARNING",
+      "Uncomfortable Stuff",
+      "Disturbing Content",
+      "Disturbing Toggle",
+      "ToggleDisturbing",
+      "Disturbing Stuff",
+      "Horror Toggle",
+      "ToggleHorror",
+      "Super Scary",
+      "Scary Stuff",
+      "Disturbing",
+      ":ghost:"
+    ],
+    "Size": 1696,
+    "wa": 403,
+    "ha": 428,
+    "wg": 552,
+    "hg": 517,
+    "wap": "23.76",
+    "hap": "25.24",
+    "wgp": "32.55",
+    "hgp": "30.48"
+  },
+  {
+    "Bundle": "DLE",
+    "Aliases": [
+      "Dream Link Entertainment"
+    ],
+    "Size": 35,
+    "wa": 25,
+    "ha": 11,
+    "wg": 0,
+    "hg": 0,
+    "wap": "71.43",
+    "hap": "31.43",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "DMM Games",
+    "Aliases": [
+      "DMM.com",
+      "DMM"
+    ],
+    "Size": 127,
+    "wa": 0,
+    "ha": 0,
+    "wg": 127,
+    "hg": 0,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "100.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Doga Kobo",
+    "Aliases": [],
+    "Size": 384,
+    "wa": 217,
+    "ha": 137,
+    "wg": 16,
+    "hg": 102,
+    "wap": "56.51",
+    "hap": "35.68",
+    "wgp": "4.17",
+    "hgp": "26.56"
+  },
+  {
+    "Bundle": "Donkey Kong Series",
+    "Aliases": [
+      "DK Series",
+      "Donkey Kong Franchise",
+      "DK Franchise",
+      "DKF",
+      "DKS"
+    ],
+    "Size": 18,
+    "wa": 1,
+    "ha": 2,
+    "wg": 5,
+    "hg": 10,
+    "wap": "5.56",
+    "hap": "11.11",
+    "wgp": "27.78",
+    "hgp": "55.56"
+  },
+  {
+    "Bundle": "DONTNOD Entertainment",
+    "Aliases": [],
+    "Size": 27,
+    "wa": 0,
+    "ha": 0,
+    "wg": 13,
+    "hg": 14,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "48.15",
+    "hgp": "51.85"
+  },
+  {
+    "Bundle": "Dora & Diego",
+    "Aliases": [],
+    "Size": 6,
+    "wa": 2,
+    "ha": 4,
+    "wg": 0,
+    "hg": 0,
+    "wap": "33.33",
+    "hap": "66.67",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Double Fine",
+    "Aliases": [],
+    "Size": 31,
+    "wa": 0,
+    "ha": 0,
+    "wg": 9,
+    "hg": 23,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "29.03",
+    "hgp": "74.19"
+  },
+  {
+    "Bundle": "Doug TenNapel's Works",
+    "Aliases": [
+      "Doug TenNapel"
+    ],
+    "Size": 4,
+    "wa": 0,
+    "ha": 1,
+    "wg": 0,
+    "hg": 4,
+    "wap": "0.0",
+    "hap": "25.0",
+    "wgp": "0.0",
+    "hgp": "100.0"
+  },
+  {
+    "Bundle": "Dr. Mario Series",
+    "Aliases": [],
+    "Size": 3,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 3,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "66.67",
+    "hgp": "100.0"
+  },
+  {
+    "Bundle": "Dr. Seuss",
+    "Aliases": [],
+    "Size": 10,
+    "wa": 1,
+    "ha": 9,
+    "wg": 0,
+    "hg": 0,
+    "wap": "10.0",
+    "hap": "90.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Dra-Dra Sharp#",
+    "Aliases": [
+      "Dra Dra Sharp"
+    ],
+    "Size": 26,
+    "wa": 25,
+    "ha": 1,
+    "wg": 0,
+    "hg": 0,
+    "wap": "96.15",
+    "hap": "3.85",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Dragon Age",
+    "Aliases": [
+      "DA",
+      "DA Series",
+      "DAS",
+      "Dragon Age Series"
+    ],
+    "Size": 62,
+    "wa": 4,
+    "ha": 2,
+    "wg": 27,
+    "hg": 33,
+    "wap": "6.45",
+    "hap": "3.23",
+    "wgp": "43.55",
+    "hgp": "53.23"
+  },
+  {
+    "Bundle": "Dragon Ball Anime",
+    "Aliases": [
+      "DB Anime"
+    ],
+    "Size": 178,
+    "wa": 42,
+    "ha": 140,
+    "wg": 0,
+    "hg": 0,
+    "wap": "23.6",
+    "hap": "78.65",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Dragon Ball Games",
+    "Aliases": [
+      "DB Games"
+    ],
+    "Size": 38,
+    "wa": 6,
+    "ha": 15,
+    "wg": 9,
+    "hg": 25,
+    "wap": "15.79",
+    "hap": "39.47",
+    "wgp": "23.68",
+    "hgp": "65.79"
+  },
+  {
+    "Bundle": "Dragon Ball Movies",
+    "Aliases": [
+      "DB Movies"
+    ],
+    "Size": 16,
+    "wa": 1,
+    "ha": 15,
+    "wg": 0,
+    "hg": 0,
+    "wap": "6.25",
+    "hap": "93.75",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Dragon Ball Series",
+    "Aliases": [
+      "DB Franchise",
+      "DBF",
+      "Dragon Ball Franchise",
+      "DB Series"
+    ],
+    "Size": 246,
+    "wa": 53,
+    "ha": 166,
+    "wg": 13,
+    "hg": 36,
+    "wap": "21.54",
+    "hap": "67.48",
+    "wgp": "5.28",
+    "hgp": "14.63"
+  },
+  {
+    "Bundle": "Dragon Quest",
+    "Aliases": [
+      "DQ",
+      "Dragon Quest Series",
+      "Dragon Warrior",
+      "Dragon Warrior Series"
+    ],
+    "Size": 91,
+    "wa": 3,
+    "ha": 16,
+    "wg": 30,
+    "hg": 44,
+    "wap": "3.3",
+    "hap": "17.58",
+    "wgp": "32.97",
+    "hgp": "48.35"
+  },
+  {
+    "Bundle": "Dragon's Dogma Series",
+    "Aliases": [],
+    "Size": 10,
+    "wa": 2,
+    "ha": 2,
+    "wg": 5,
+    "hg": 2,
+    "wap": "20.0",
+    "hap": "20.0",
+    "wgp": "50.0",
+    "hgp": "20.0"
+  },
+  {
+    "Bundle": "Drakengard Series",
+    "Aliases": [
+      "Drag-on Dragoon Series",
+      "DOD Series",
+      "NieR Series",
+      "DrakenNieR",
+      "DrakeNieR"
+    ],
+    "Size": 72,
+    "wa": 1,
+    "ha": 1,
+    "wg": 38,
+    "hg": 36,
+    "wap": "1.39",
+    "hap": "1.39",
+    "wgp": "52.78",
+    "hgp": "50.0"
+  },
+  {
+    "Bundle": "drap",
+    "Aliases": [],
+    "Size": 10,
+    "wa": 1,
+    "ha": 9,
+    "wg": 0,
+    "hg": 0,
+    "wap": "10.0",
+    "hap": "90.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Dream SMP",
+    "Aliases": [
+      "DreamSMP",
+      "Dream Team SMP",
+      "DSMP"
+    ],
+    "Size": 10,
+    "wa": 0,
+    "ha": 10,
+    "wg": 0,
+    "hg": 0,
+    "wap": "0.0",
+    "hap": "100.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "DreamWorks Animation",
+    "Aliases": [
+      "DreamWorks Animation Television",
+      "DreamWorks Classics"
+    ],
+    "Size": 176,
+    "wa": 63,
+    "ha": 116,
+    "wg": 0,
+    "hg": 1,
+    "wap": "35.8",
+    "hap": "65.91",
+    "wgp": "0.0",
+    "hgp": "0.57"
+  },
+  {
+    "Bundle": "DreamWorks Pictures",
+    "Aliases": [
+      "DreamWorks",
+      "DreamWorks SKG",
+      "DreamWorks Studios",
+      "DreamWorks Interactive"
+    ],
+    "Size": 373,
+    "wa": 93,
+    "ha": 279,
+    "wg": 0,
+    "hg": 4,
+    "wap": "24.93",
+    "hap": "74.8",
+    "wgp": "0.0",
+    "hgp": "1.07"
+  },
+  {
+    "Bundle": "Dress-Up Games",
+    "Aliases": [
+      "Dress Up Games"
+    ],
+    "Size": 317,
+    "wa": 4,
+    "ha": 3,
+    "wg": 75,
+    "hg": 236,
+    "wap": "1.26",
+    "hap": "0.95",
+    "wgp": "23.66",
+    "hgp": "74.45"
+  },
+  {
+    "Bundle": "Duel Masters Series",
+    "Aliases": [],
+    "Size": 16,
+    "wa": 1,
+    "ha": 15,
+    "wg": 1,
+    "hg": 2,
+    "wap": "6.25",
+    "hap": "93.75",
+    "wgp": "6.25",
+    "hgp": "12.5"
+  },
+  {
+    "Bundle": "Dungeon Crawlers",
+    "Aliases": [
+      "Dungeon Crawler Games",
+      "Dungeon Crawler"
+    ],
+    "Size": 307,
+    "wa": 6,
+    "ha": 0,
+    "wg": 179,
+    "hg": 161,
+    "wap": "1.95",
+    "hap": "0.0",
+    "wgp": "58.31",
+    "hgp": "52.44"
+  },
+  {
+    "Bundle": "Dungeons & Dragons Genre",
+    "Aliases": [
+      "DnD Genre",
+      "D&D Genre",
+      "Dungeons and Dragons Genre"
+    ],
+    "Size": 207,
+    "wa": 80,
+    "ha": 124,
+    "wg": 8,
+    "hg": 6,
+    "wap": "38.65",
+    "hap": "59.9",
+    "wgp": "3.86",
+    "hgp": "2.9"
+  },
+  {
+    "Bundle": "Dungeons & Dragons Series",
+    "Aliases": [
+      "D&D Series",
+      "Dungeons & Dragons",
+      "Dungeons and Dragons",
+      "D&D",
+      "DnD"
+    ],
+    "Size": 18,
+    "wa": 2,
+    "ha": 4,
+    "wg": 8,
+    "hg": 6,
+    "wap": "11.11",
+    "hap": "22.22",
+    "wgp": "44.44",
+    "hgp": "33.33"
+  },
+  {
+    "Bundle": "Dynamic Planning Co., Ltd",
+    "Aliases": [
+      "Dynamic Planning"
+    ],
+    "Size": 31,
+    "wa": 16,
+    "ha": 16,
+    "wg": 0,
+    "hg": 0,
+    "wap": "51.61",
+    "hap": "51.61",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Dynamite Entertainment",
+    "Aliases": [],
+    "Size": 28,
+    "wa": 12,
+    "ha": 17,
+    "wg": 0,
+    "hg": 0,
+    "wap": "42.86",
+    "hap": "60.71",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "E ve",
+    "Aliases": [
+      "Eve"
+    ],
+    "Size": 18,
+    "wa": 7,
+    "ha": 13,
+    "wg": 0,
+    "hg": 0,
+    "wap": "38.89",
+    "hap": "72.22",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "E.Q. Plus",
+    "Aliases": [],
+    "Size": 2,
+    "wa": 2,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wap": "100.0",
+    "hap": "0.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Earth Star Entertainment",
+    "Aliases": [],
+    "Size": 98,
+    "wa": 75,
+    "ha": 23,
+    "wg": 7,
+    "hg": 8,
+    "wap": "76.53",
+    "hap": "23.47",
+    "wgp": "7.14",
+    "hgp": "8.16"
+  },
+  {
+    "Bundle": "EasyGameStation",
+    "Aliases": [],
+    "Size": 14,
+    "wa": 0,
+    "ha": 0,
+    "wg": 11,
+    "hg": 3,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "78.57",
+    "hgp": "21.43"
+  },
+  {
+    "Bundle": "Ecchi",
+    "Aliases": [
+      "H",
+      "Fanservice",
+      "Virgin Media"
+    ],
+    "Size": 3031,
+    "wa": 2146,
+    "ha": 542,
+    "wg": 400,
+    "hg": 24,
+    "wap": "70.8",
+    "hap": "17.88",
+    "wgp": "13.2",
+    "hgp": "0.79"
+  },
+  {
+    "Bundle": "Ecole",
+    "Aliases": [],
+    "Size": 56,
+    "wa": 2,
+    "ha": 1,
+    "wg": 41,
+    "hg": 15,
+    "wap": "3.57",
+    "hap": "1.79",
+    "wgp": "73.21",
+    "hgp": "26.79"
+  },
+  {
+    "Bundle": "EDGE",
+    "Aliases": [],
+    "Size": 11,
+    "wa": 11,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wap": "100.0",
+    "hap": "0.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Edmund McMillen's Works",
+    "Aliases": [
+      "Edmund McMillen"
+    ],
+    "Size": 33,
+    "wa": 1,
+    "ha": 0,
+    "wg": 15,
+    "hg": 25,
+    "wap": "3.03",
+    "hap": "0.0",
+    "wgp": "45.45",
+    "hgp": "75.76"
+  },
+  {
+    "Bundle": "Education",
+    "Aliases": [
+      "Edutainment",
+      "Educational Entertainment"
+    ],
+    "Size": 251,
+    "wa": 88,
+    "ha": 153,
+    "wg": 11,
+    "hg": 16,
+    "wap": "35.06",
+    "hap": "60.96",
+    "wgp": "4.38",
+    "hgp": "6.37"
+  },
+  {
+    "Bundle": "Eight Bit",
+    "Aliases": [
+      "8bit"
+    ],
+    "Size": 205,
+    "wa": 105,
+    "ha": 87,
+    "wg": 12,
+    "hg": 7,
+    "wap": "51.22",
+    "hap": "42.44",
+    "wgp": "5.85",
+    "hgp": "3.41"
+  },
+  {
+    "Bundle": "Eighting",
+    "Aliases": [],
+    "Size": 6,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 4,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "33.33",
+    "hgp": "66.67"
+  },
+  {
+    "Bundle": "Eiyuu Senki",
+    "Aliases": [],
+    "Size": 17,
+    "wa": 0,
+    "ha": 0,
+    "wg": 16,
+    "hg": 1,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "94.12",
+    "hgp": "5.88"
+  },
+  {
+    "Bundle": "Electronic Arts",
+    "Aliases": [
+      "EA Games",
+      "EA"
+    ],
+    "Size": 344,
+    "wa": 16,
+    "ha": 60,
+    "wg": 116,
+    "hg": 176,
+    "wap": "4.65",
+    "hap": "17.44",
+    "wgp": "33.72",
+    "hgp": "51.16"
+  },
+  {
+    "Bundle": "Elibe Series",
+    "Aliases": [
+      "Elibe"
+    ],
+    "Size": 106,
+    "wa": 0,
+    "ha": 0,
+    "wg": 40,
+    "hg": 69,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "37.74",
+    "hgp": "65.09"
+  },
+  {
+    "Bundle": "Emerald",
+    "Aliases": [],
+    "Size": 33,
+    "wa": 2,
+    "ha": 31,
+    "wg": 0,
+    "hg": 0,
+    "wap": "6.06",
+    "hap": "93.94",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "EmiMG's Works",
+    "Aliases": [
+      "EmiMG"
+    ],
+    "Size": 4,
+    "wa": 3,
+    "ha": 2,
+    "wg": 0,
+    "hg": 0,
+    "wap": "75.0",
+    "hap": "50.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Encourage Films",
+    "Aliases": [],
+    "Size": 31,
+    "wa": 24,
+    "ha": 7,
+    "wg": 0,
+    "hg": 0,
+    "wap": "77.42",
+    "hap": "22.58",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Ensemble Studios",
+    "Aliases": [],
+    "Size": 6,
+    "wa": 0,
+    "ha": 0,
+    "wg": 0,
+    "hg": 6,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "0.0",
+    "hgp": "100.0"
+  },
+  {
+    "Bundle": "Entabridge",
+    "Aliases": [],
+    "Size": 11,
+    "wa": 0,
+    "ha": 0,
+    "wg": 7,
+    "hg": 5,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "63.64",
+    "hgp": "45.45"
+  },
+  {
+    "Bundle": "Enterbrain",
+    "Aliases": [
+      "eb!"
+    ],
+    "Size": 1007,
+    "wa": 273,
+    "ha": 118,
+    "wg": 628,
+    "hg": 160,
+    "wap": "27.11",
+    "hap": "11.72",
+    "wgp": "62.36",
+    "hgp": "15.89"
+  },
+  {
+    "Bundle": "Eon's Works",
+    "Aliases": [],
+    "Size": 10,
+    "wa": 5,
+    "ha": 5,
+    "wg": 0,
+    "hg": 0,
+    "wap": "50.0",
+    "hap": "50.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Epic Games",
+    "Aliases": [
+      "Epic MegaGames",
+      "Potomac Computer Systems",
+      "FuckEpic"
+    ],
+    "Size": 42,
+    "wa": 0,
+    "ha": 0,
+    "wg": 13,
+    "hg": 31,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "30.95",
+    "hgp": "73.81"
+  },
+  {
+    "Bundle": "Erin Hunter's Works",
+    "Aliases": [
+      "Erin Hunter"
+    ],
+    "Size": 63,
+    "wa": 27,
+    "ha": 36,
+    "wg": 0,
+    "hg": 0,
+    "wap": "42.86",
+    "hap": "57.14",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Eroge",
+    "Aliases": [],
+    "Size": 3224,
+    "wa": 692,
+    "ha": 117,
+    "wg": 2077,
+    "hg": 462,
+    "wap": "21.46",
+    "hap": "3.63",
+    "wgp": "64.42",
+    "hgp": "14.33"
+  },
+  {
+    "Bundle": "Eromanhwa",
+    "Aliases": [
+      "Pornhwa",
+      "NSFW Manhwa",
+      "Erotic Manhwa",
+      "Hentai Manhwa",
+      "Manhwa Hentai"
+    ],
+    "Size": 347,
+    "wa": 146,
+    "ha": 202,
+    "wg": 0,
+    "hg": 0,
+    "wap": "42.07",
+    "hap": "58.21",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Etrian Odyssey Series",
+    "Aliases": [
+      "EO Series",
+      "EOS"
+    ],
+    "Size": 28,
+    "wa": 0,
+    "ha": 0,
+    "wg": 19,
+    "hg": 19,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "67.86",
+    "hgp": "67.86"
+  },
+  {
+    "Bundle": "Eureka Seven Series",
+    "Aliases": [],
+    "Size": 28,
+    "wa": 15,
+    "ha": 15,
+    "wg": 0,
+    "hg": 0,
+    "wap": "53.57",
+    "hap": "53.57",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Eushully",
+    "Aliases": [],
+    "Size": 58,
+    "wa": 0,
+    "ha": 0,
+    "wg": 50,
+    "hg": 9,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "86.21",
+    "hgp": "15.52"
+  },
+  {
+    "Bundle": "Evangelion",
+    "Aliases": [
+      "EVA"
+    ],
+    "Size": 41,
+    "wa": 29,
+    "ha": 26,
+    "wg": 2,
+    "hg": 0,
+    "wap": "70.73",
+    "hap": "63.41",
+    "wgp": "4.88",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Evenicle Series",
+    "Aliases": [],
+    "Size": 19,
+    "wa": 0,
+    "ha": 0,
+    "wg": 18,
+    "hg": 1,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "94.74",
+    "hgp": "5.26"
+  },
+  {
+    "Bundle": "Evening",
+    "Aliases": [],
+    "Size": 42,
+    "wa": 24,
+    "ha": 19,
+    "wg": 0,
+    "hg": 0,
+    "wap": "57.14",
+    "hap": "45.24",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "EXA_PICO",
+    "Aliases": [
+      "EXA PICO",
+      "Exapico",
+      "Exa Pieco"
+    ],
+    "Size": 60,
+    "wa": 0,
+    "ha": 0,
+    "wg": 43,
+    "hg": 17,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "71.67",
+    "hgp": "28.33"
   }
 ]
