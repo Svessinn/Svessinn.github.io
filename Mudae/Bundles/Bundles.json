@@ -6072,5 +6072,1757 @@
     "hap": "89.47",
     "wgp": "0.0",
     "hgp": "21.05"
+  },
+	{
+    "Bundle": "Gacha Games",
+    "Aliases": [
+      "Gacha",
+      "Whaler's Paradise",
+      "The Devil"
+    ],
+    "Size": 5182,
+    "wa": 566,
+    "ha": 319,
+    "wg": 3569,
+    "hg": 1638,
+    "wap": "10.92",
+    "hap": "6.16",
+    "wgp": "68.87",
+    "hgp": "31.61"
+  },
+  {
+    "Bundle": "Gagaga Bunko",
+    "Aliases": [],
+    "Size": 315,
+    "wa": 214,
+    "ha": 106,
+    "wg": 0,
+    "hg": 0,
+    "wap": "67.94",
+    "hap": "33.65",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Gainax",
+    "Aliases": [],
+    "Size": 199,
+    "wa": 131,
+    "ha": 83,
+    "wg": 2,
+    "hg": 1,
+    "wap": "65.83",
+    "hap": "41.71",
+    "wgp": "1.01",
+    "hgp": "0.5"
+  },
+  {
+    "Bundle": "Gallop",
+    "Aliases": [],
+    "Size": 464,
+    "wa": 96,
+    "ha": 369,
+    "wg": 12,
+    "hg": 50,
+    "wap": "20.69",
+    "hap": "79.53",
+    "wgp": "2.59",
+    "hgp": "10.78"
+  },
+  {
+    "Bundle": "Game Freak",
+    "Aliases": [],
+    "Size": 388,
+    "wa": 180,
+    "ha": 208,
+    "wg": 217,
+    "hg": 239,
+    "wap": "46.39",
+    "hap": "53.61",
+    "wgp": "55.93",
+    "hgp": "61.6"
+  },
+  {
+    "Bundle": "Game Grumps",
+    "Aliases": [
+      "GameGrumps"
+    ],
+    "Size": 10,
+    "wa": 3,
+    "ha": 7,
+    "wg": 0,
+    "hg": 0,
+    "wap": "30.0",
+    "hap": "70.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Game of Thrones Series",
+    "Aliases": [],
+    "Size": 70,
+    "wa": 17,
+    "ha": 48,
+    "wg": 2,
+    "hg": 3,
+    "wap": "24.29",
+    "hap": "68.57",
+    "wgp": "2.86",
+    "hgp": "4.29"
+  },
+  {
+    "Bundle": "Gangan Comics",
+    "Aliases": [],
+    "Size": 2222,
+    "wa": 1278,
+    "ha": 918,
+    "wg": 53,
+    "hg": 45,
+    "wap": "57.52",
+    "hap": "41.31",
+    "wgp": "2.39",
+    "hgp": "2.03"
+  },
+  {
+    "Bundle": "Gangan Joker",
+    "Aliases": [],
+    "Size": 355,
+    "wa": 216,
+    "ha": 115,
+    "wg": 24,
+    "hg": 23,
+    "wap": "60.85",
+    "hap": "32.39",
+    "wgp": "6.76",
+    "hgp": "6.48"
+  },
+  {
+    "Bundle": "Gangan Online",
+    "Aliases": [],
+    "Size": 291,
+    "wa": 180,
+    "ha": 88,
+    "wg": 10,
+    "hg": 17,
+    "wap": "61.86",
+    "hap": "30.24",
+    "wgp": "3.44",
+    "hgp": "5.84"
+  },
+  {
+    "Bundle": "Gangan Pixiv",
+    "Aliases": [],
+    "Size": 15,
+    "wa": 6,
+    "ha": 9,
+    "wg": 0,
+    "hg": 0,
+    "wap": "40.0",
+    "hap": "60.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Gangan Powered",
+    "Aliases": [],
+    "Size": 33,
+    "wa": 17,
+    "ha": 13,
+    "wg": 3,
+    "hg": 0,
+    "wap": "51.52",
+    "hap": "39.39",
+    "wgp": "9.09",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Gangan Wing",
+    "Aliases": [],
+    "Size": 50,
+    "wa": 25,
+    "ha": 23,
+    "wg": 3,
+    "hg": 0,
+    "wap": "50.0",
+    "hap": "46.0",
+    "wgp": "6.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "GANMA!",
+    "Aliases": [
+      "GANMA"
+    ],
+    "Size": 36,
+    "wa": 30,
+    "ha": 10,
+    "wg": 0,
+    "hg": 0,
+    "wap": "83.33",
+    "hap": "27.78",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Garfield Series",
+    "Aliases": [],
+    "Size": 5,
+    "wa": 0,
+    "ha": 5,
+    "wg": 0,
+    "hg": 0,
+    "wap": "0.0",
+    "hap": "100.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Garo",
+    "Aliases": [
+      "Garo Series"
+    ],
+    "Size": 10,
+    "wa": 4,
+    "ha": 6,
+    "wg": 0,
+    "hg": 0,
+    "wap": "40.0",
+    "hap": "60.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Gathering",
+    "Aliases": [],
+    "Size": 18,
+    "wa": 7,
+    "ha": 16,
+    "wg": 0,
+    "hg": 0,
+    "wap": "38.89",
+    "hap": "88.89",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Gatobob's Works",
+    "Aliases": [
+      "Gatobob"
+    ],
+    "Size": 12,
+    "wa": 1,
+    "ha": 2,
+    "wg": 1,
+    "hg": 9,
+    "wap": "8.33",
+    "hap": "16.67",
+    "wgp": "8.33",
+    "hgp": "75.0"
+  },
+  {
+    "Bundle": "Gears of War Series",
+    "Aliases": [
+      "Gears"
+    ],
+    "Size": 17,
+    "wa": 1,
+    "ha": 0,
+    "wg": 3,
+    "hg": 13,
+    "wap": "5.88",
+    "hap": "0.0",
+    "wgp": "17.65",
+    "hgp": "76.47"
+  },
+  {
+    "Bundle": "GEEKTOYS",
+    "Aliases": [
+      "Geek Toys"
+    ],
+    "Size": 38,
+    "wa": 30,
+    "ha": 8,
+    "wg": 0,
+    "hg": 0,
+    "wap": "78.95",
+    "hap": "21.05",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Geki!Chumai",
+    "Aliases": [
+      "Performai",
+      "Geki Chumai"
+    ],
+    "Size": 22,
+    "wa": 0,
+    "ha": 0,
+    "wg": 20,
+    "hg": 5,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "90.91",
+    "hgp": "22.73"
+  },
+  {
+    "Bundle": "Genco",
+    "Aliases": [],
+    "Size": 900,
+    "wa": 651,
+    "ha": 211,
+    "wg": 48,
+    "hg": 22,
+    "wap": "72.33",
+    "hap": "23.44",
+    "wgp": "5.33",
+    "hgp": "2.44"
+  },
+  {
+    "Bundle": "Genderbender",
+    "Aliases": [
+      "Gender Bender",
+      "Genderswap",
+      "Genderbend",
+      "Rule 63"
+    ],
+    "Size": 153,
+    "wa": 92,
+    "ha": 73,
+    "wg": 7,
+    "hg": 1,
+    "wap": "60.13",
+    "hap": "47.71",
+    "wgp": "4.58",
+    "hgp": "0.65"
+  },
+  {
+    "Bundle": "Genkai Tokki",
+    "Aliases": [
+      "GT",
+      "Genkai Tokki Series",
+      "GT Series"
+    ],
+    "Size": 33,
+    "wa": 0,
+    "ha": 0,
+    "wg": 32,
+    "hg": 1,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "96.97",
+    "hgp": "3.03"
+  },
+  {
+    "Bundle": "Gentosha",
+    "Aliases": [
+      "Gentousha",
+      "Gentosha Comics"
+    ],
+    "Size": 96,
+    "wa": 40,
+    "ha": 58,
+    "wg": 0,
+    "hg": 0,
+    "wap": "41.67",
+    "hap": "60.42",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Gessan",
+    "Aliases": [
+      "Gekkan Sunday",
+      "Monthly Shonen Sunday",
+      "Monthly Shounen Sunday"
+    ],
+    "Size": 41,
+    "wa": 31,
+    "ha": 10,
+    "wg": 0,
+    "hg": 0,
+    "wap": "75.61",
+    "hap": "24.39",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Get Married! Series",
+    "Aliases": [],
+    "Size": 2,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 0,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "100.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "GFantasy",
+    "Aliases": [],
+    "Size": 529,
+    "wa": 198,
+    "ha": 307,
+    "wg": 20,
+    "hg": 27,
+    "wap": "37.43",
+    "hap": "58.03",
+    "wgp": "3.78",
+    "hgp": "5.1"
+  },
+  {
+    "Bundle": "Ghost in the Shell Series",
+    "Aliases": [],
+    "Size": 15,
+    "wa": 3,
+    "ha": 13,
+    "wg": 0,
+    "hg": 0,
+    "wap": "20.0",
+    "hap": "86.67",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "GHOST's Works",
+    "Aliases": [
+      "GHOST",
+      "Marz Mitzi",
+      "GHOST AND PALS",
+      "ghostie",
+      "ghostieP"
+    ],
+    "Size": 17,
+    "wa": 8,
+    "ha": 13,
+    "wg": 0,
+    "hg": 0,
+    "wap": "47.06",
+    "hap": "76.47",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Ghostbusters Franchise",
+    "Aliases": [],
+    "Size": 6,
+    "wa": 1,
+    "ha": 5,
+    "wg": 0,
+    "hg": 0,
+    "wap": "16.67",
+    "hap": "83.33",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Giant Robo Series",
+    "Aliases": [],
+    "Size": 5,
+    "wa": 1,
+    "ha": 4,
+    "wg": 0,
+    "hg": 0,
+    "wap": "20.0",
+    "hap": "80.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Giga",
+    "Aliases": [],
+    "Size": 23,
+    "wa": 2,
+    "ha": 1,
+    "wg": 18,
+    "hg": 2,
+    "wap": "8.7",
+    "hap": "4.35",
+    "wgp": "78.26",
+    "hgp": "8.7"
+  },
+  {
+    "Bundle": "Gijinka",
+    "Aliases": [
+      "Anthropomorphism Bundle",
+      "Humanization"
+    ],
+    "Size": 1375,
+    "wa": 323,
+    "ha": 152,
+    "wg": 904,
+    "hg": 246,
+    "wap": "23.49",
+    "hap": "11.05",
+    "wgp": "65.75",
+    "hgp": "17.89"
+  },
+  {
+    "Bundle": "Ginga Series",
+    "Aliases": [],
+    "Size": 28,
+    "wa": 2,
+    "ha": 26,
+    "wg": 0,
+    "hg": 0,
+    "wap": "7.14",
+    "hap": "92.86",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Girls' Love",
+    "Aliases": [
+      "Shoujo Ai",
+      "GL Bundle",
+      "Girls Love",
+      "Lesbian",
+      "WLW",
+      "Yuri",
+      "GL",
+      "Himedanshi",
+      "Himejoshi",
+      "Sapphic"
+    ],
+    "Size": 1072,
+    "wa": 804,
+    "ha": 44,
+    "wg": 209,
+    "hg": 29,
+    "wap": "75.0",
+    "hap": "4.1",
+    "wgp": "19.5",
+    "hgp": "2.71"
+  },
+  {
+    "Bundle": "Go Nagai",
+    "Aliases": [],
+    "Size": 41,
+    "wa": 22,
+    "ha": 20,
+    "wg": 0,
+    "hg": 0,
+    "wap": "53.66",
+    "hap": "48.78",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "God of War Series",
+    "Aliases": [
+      "GoW"
+    ],
+    "Size": 15,
+    "wa": 0,
+    "ha": 0,
+    "wg": 3,
+    "hg": 12,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "20.0",
+    "hgp": "80.0"
+  },
+  {
+    "Bundle": "Godzilla Franchise",
+    "Aliases": [],
+    "Size": 65,
+    "wa": 20,
+    "ha": 48,
+    "wg": 0,
+    "hg": 3,
+    "wap": "30.77",
+    "hap": "73.85",
+    "wgp": "0.0",
+    "hgp": "4.62"
+  },
+  {
+    "Bundle": "GoHands",
+    "Aliases": [],
+    "Size": 83,
+    "wa": 33,
+    "ha": 50,
+    "wg": 0,
+    "hg": 0,
+    "wap": "39.76",
+    "hap": "60.24",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Golden Sun Series",
+    "Aliases": [
+      "GS Series"
+    ],
+    "Size": 20,
+    "wa": 0,
+    "ha": 0,
+    "wg": 8,
+    "hg": 13,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "40.0",
+    "hgp": "65.0"
+  },
+  {
+    "Bundle": "Gonzo",
+    "Aliases": [],
+    "Size": 463,
+    "wa": 267,
+    "ha": 183,
+    "wg": 23,
+    "hg": 8,
+    "wap": "57.67",
+    "hap": "39.52",
+    "wgp": "4.97",
+    "hgp": "1.73"
+  },
+  {
+    "Bundle": "Gosho Works",
+    "Aliases": [],
+    "Size": 90,
+    "wa": 31,
+    "ha": 59,
+    "wg": 0,
+    "hg": 0,
+    "wap": "34.44",
+    "hap": "65.56",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Grand Jump",
+    "Aliases": [],
+    "Size": 17,
+    "wa": 14,
+    "ha": 3,
+    "wg": 0,
+    "hg": 0,
+    "wap": "82.35",
+    "hap": "17.65",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Grand Theft Auto",
+    "Aliases": [
+      "GTA"
+    ],
+    "Size": 31,
+    "wa": 0,
+    "ha": 0,
+    "wg": 6,
+    "hg": 25,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "19.35",
+    "hgp": "80.65"
+  },
+  {
+    "Bundle": "Grandia Series",
+    "Aliases": [],
+    "Size": 19,
+    "wa": 0,
+    "ha": 0,
+    "wg": 12,
+    "hg": 7,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "63.16",
+    "hgp": "36.84"
+  },
+  {
+    "Bundle": "Grasshopper Manufacture",
+    "Aliases": [
+      "GHM",
+      "SUDA51"
+    ],
+    "Size": 63,
+    "wa": 1,
+    "ha": 0,
+    "wg": 24,
+    "hg": 38,
+    "wap": "1.59",
+    "hap": "0.0",
+    "wgp": "38.1",
+    "hgp": "60.32"
+  },
+  {
+    "Bundle": "Gravity Rush Series",
+    "Aliases": [
+      "Gravity Daze Series",
+      "GR Series",
+      "GRS"
+    ],
+    "Size": 15,
+    "wa": 0,
+    "ha": 0,
+    "wg": 11,
+    "hg": 5,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "73.33",
+    "hgp": "33.33"
+  },
+  {
+    "Bundle": "Gridman Universe",
+    "Aliases": [
+      "SSSS. Series",
+      "SSSS Series",
+      "SSSSS"
+    ],
+    "Size": 32,
+    "wa": 14,
+    "ha": 18,
+    "wg": 0,
+    "hg": 0,
+    "wap": "43.75",
+    "hap": "56.25",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Grim & Evil",
+    "Aliases": [
+      "Grim and Evil"
+    ],
+    "Size": 39,
+    "wa": 14,
+    "ha": 25,
+    "wg": 0,
+    "hg": 0,
+    "wap": "35.9",
+    "hap": "64.1",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Grisaia",
+    "Aliases": [],
+    "Size": 38,
+    "wa": 15,
+    "ha": 5,
+    "wg": 17,
+    "hg": 2,
+    "wap": "39.47",
+    "hap": "13.16",
+    "wgp": "44.74",
+    "hgp": "5.26"
+  },
+  {
+    "Bundle": "Group TAC",
+    "Aliases": [],
+    "Size": 100,
+    "wa": 37,
+    "ha": 58,
+    "wg": 2,
+    "hg": 4,
+    "wap": "37.0",
+    "hap": "58.0",
+    "wgp": "2.0",
+    "hgp": "4.0"
+  },
+  {
+    "Bundle": "Growlanser",
+    "Aliases": [
+      "Growlanser Series"
+    ],
+    "Size": 13,
+    "wa": 0,
+    "ha": 0,
+    "wg": 5,
+    "hg": 8,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "38.46",
+    "hgp": "61.54"
+  },
+  {
+    "Bundle": "Guild Wars Series",
+    "Aliases": [
+      "GWS"
+    ],
+    "Size": 25,
+    "wa": 0,
+    "ha": 0,
+    "wg": 17,
+    "hg": 8,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "68.0",
+    "hgp": "32.0"
+  },
+  {
+    "Bundle": "Guillermo del Toro's Works",
+    "Aliases": [
+      "Guillermo del Toro"
+    ],
+    "Size": 66,
+    "wa": 18,
+    "ha": 55,
+    "wg": 1,
+    "hg": 0,
+    "wap": "27.27",
+    "hap": "83.33",
+    "wgp": "1.52",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Guilty Gear Series",
+    "Aliases": [
+      "GG"
+    ],
+    "Size": 45,
+    "wa": 0,
+    "ha": 0,
+    "wg": 17,
+    "hg": 29,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "37.78",
+    "hgp": "64.44"
+  },
+  {
+    "Bundle": "gumi Inc.",
+    "Aliases": [
+      "gumi",
+      "gimu"
+    ],
+    "Size": 349,
+    "wa": 0,
+    "ha": 0,
+    "wg": 264,
+    "hg": 86,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "75.64",
+    "hgp": "24.64"
+  },
+  {
+    "Bundle": "Gundam",
+    "Aliases": [
+      "Gundam Series",
+      "Gundam Franchise"
+    ],
+    "Size": 194,
+    "wa": 100,
+    "ha": 96,
+    "wg": 0,
+    "hg": 0,
+    "wap": "51.55",
+    "hap": "49.48",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Gundam Build",
+    "Aliases": [],
+    "Size": 23,
+    "wa": 14,
+    "ha": 9,
+    "wg": 0,
+    "hg": 0,
+    "wap": "60.87",
+    "hap": "39.13",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Gundam's Universal Century",
+    "Aliases": [
+      "Universal Century",
+      "UC"
+    ],
+    "Size": 66,
+    "wa": 35,
+    "ha": 32,
+    "wg": 0,
+    "hg": 0,
+    "wap": "53.03",
+    "hap": "48.48",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "GungHo Online Entertainment",
+    "Aliases": [
+      "GungHo"
+    ],
+    "Size": 69,
+    "wa": 5,
+    "ha": 1,
+    "wg": 50,
+    "hg": 23,
+    "wap": "7.25",
+    "hap": "1.45",
+    "wgp": "72.46",
+    "hgp": "33.33"
+  },
+  {
+    "Bundle": "Gust Co. Ltd.",
+    "Aliases": [],
+    "Size": 153,
+    "wa": 13,
+    "ha": 3,
+    "wg": 107,
+    "hg": 46,
+    "wap": "8.5",
+    "hap": "1.96",
+    "wgp": "69.93",
+    "hgp": "30.07"
+  },
+  {
+    "Bundle": "GYAO!",
+    "Aliases": [],
+    "Size": 155,
+    "wa": 80,
+    "ha": 76,
+    "wg": 0,
+    "hg": 0,
+    "wap": "51.61",
+    "hap": "49.03",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Hack 'n Slash Games",
+    "Aliases": [
+      "Hack 'n Slash",
+      "Hack and Slash",
+      "Hack n Slash",
+      "Hack & Slash",
+      "Hack n Slash Games"
+    ],
+    "Size": 244,
+    "wa": 8,
+    "ha": 20,
+    "wg": 106,
+    "hg": 151,
+    "wap": "3.28",
+    "hap": "8.2",
+    "wgp": "43.44",
+    "hgp": "61.89"
+  },
+  {
+    "Bundle": "Hajime Kanzaka's Works",
+    "Aliases": [
+      "Hajime Kanzaka"
+    ],
+    "Size": 14,
+    "wa": 11,
+    "ha": 3,
+    "wg": 0,
+    "hg": 0,
+    "wap": "78.57",
+    "hap": "21.43",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Hakusensha",
+    "Aliases": [],
+    "Size": 621,
+    "wa": 264,
+    "ha": 315,
+    "wg": 20,
+    "hg": 38,
+    "wap": "42.51",
+    "hap": "50.72",
+    "wgp": "3.22",
+    "hgp": "6.12"
+  },
+  {
+    "Bundle": "Hal Film Maker",
+    "Aliases": [],
+    "Size": 96,
+    "wa": 62,
+    "ha": 35,
+    "wg": 0,
+    "hg": 0,
+    "wap": "64.58",
+    "hap": "36.46",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "HAL Laboratory",
+    "Aliases": [],
+    "Size": 113,
+    "wa": 4,
+    "ha": 4,
+    "wg": 50,
+    "hg": 89,
+    "wap": "3.54",
+    "hap": "3.54",
+    "wgp": "44.25",
+    "hgp": "78.76"
+  },
+  {
+    "Bundle": "Half-Life and Portal Universe",
+    "Aliases": [
+      "HLP Universe",
+      "HL/P"
+    ],
+    "Size": 41,
+    "wa": 1,
+    "ha": 2,
+    "wg": 16,
+    "hg": 27,
+    "wap": "2.44",
+    "hap": "4.88",
+    "wgp": "39.02",
+    "hgp": "65.85"
+  },
+  {
+    "Bundle": "Half-Life Series",
+    "Aliases": [
+      "HL",
+      "Half Life Series"
+    ],
+    "Size": 23,
+    "wa": 0,
+    "ha": 0,
+    "wg": 7,
+    "hg": 17,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "30.43",
+    "hgp": "73.91"
+  },
+  {
+    "Bundle": "Halo Series",
+    "Aliases": [
+      "Halo"
+    ],
+    "Size": 33,
+    "wa": 3,
+    "ha": 3,
+    "wg": 8,
+    "hg": 22,
+    "wap": "9.09",
+    "hap": "9.09",
+    "wgp": "24.24",
+    "hgp": "66.67"
+  },
+  {
+    "Bundle": "Hana to Yume",
+    "Aliases": [
+      "HanaYume"
+    ],
+    "Size": 196,
+    "wa": 76,
+    "ha": 121,
+    "wg": 1,
+    "hg": 6,
+    "wap": "38.78",
+    "hap": "61.73",
+    "wgp": "0.51",
+    "hgp": "3.06"
+  },
+  {
+    "Bundle": "Hanaharu Naruko's Art",
+    "Aliases": [
+      "Hanaharu Naruko"
+    ],
+    "Size": 26,
+    "wa": 21,
+    "ha": 5,
+    "wg": 12,
+    "hg": 0,
+    "wap": "80.77",
+    "hap": "19.23",
+    "wgp": "46.15",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Hanamura Mai's Art",
+    "Aliases": [
+      "Hanamura Mai"
+    ],
+    "Size": 53,
+    "wa": 0,
+    "ha": 23,
+    "wg": 7,
+    "hg": 46,
+    "wap": "0.0",
+    "hap": "43.4",
+    "wgp": "13.21",
+    "hgp": "86.79"
+  },
+  {
+    "Bundle": "Hanna-Barbera",
+    "Aliases": [
+      "H-B",
+      "Hanna Barbera",
+      "Hanna-Barbera Productions, Inc.",
+      "H-B Enterprises",
+      "H-B Production Company",
+      "Hanna-Barbera Cartoons, Inc."
+    ],
+    "Size": 141,
+    "wa": 44,
+    "ha": 97,
+    "wg": 0,
+    "hg": 0,
+    "wap": "31.21",
+    "hap": "68.79",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Haoliners Animation League",
+    "Aliases": [],
+    "Size": 56,
+    "wa": 27,
+    "ha": 32,
+    "wg": 0,
+    "hg": 0,
+    "wap": "48.21",
+    "hap": "57.14",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Happy Elements",
+    "Aliases": [],
+    "Size": 101,
+    "wa": 21,
+    "ha": 57,
+    "wg": 25,
+    "hg": 79,
+    "wap": "20.79",
+    "hap": "56.44",
+    "wgp": "24.75",
+    "hgp": "78.22"
+  },
+  {
+    "Bundle": "Harem",
+    "Aliases": [
+      "Reverse Harem"
+    ],
+    "Size": 3076,
+    "wa": 2258,
+    "ha": 617,
+    "wg": 188,
+    "hg": 71,
+    "wap": "73.41",
+    "hap": "20.06",
+    "wgp": "6.11",
+    "hgp": "2.31"
+  },
+  {
+    "Bundle": "Haruhara Works",
+    "Aliases": [],
+    "Size": 125,
+    "wa": 28,
+    "ha": 99,
+    "wg": 0,
+    "hg": 0,
+    "wap": "22.4",
+    "hap": "79.2",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Haruhi Suzumiya Series",
+    "Aliases": [
+      "Haruhi Series",
+      "Haruhi"
+    ],
+    "Size": 20,
+    "wa": 13,
+    "ha": 7,
+    "wg": 0,
+    "hg": 0,
+    "wap": "65.0",
+    "hap": "35.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Harumaki Gohan",
+    "Aliases": [
+      "Studio Gohan"
+    ],
+    "Size": 5,
+    "wa": 5,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wap": "100.0",
+    "hap": "0.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Harvest Moon Series",
+    "Aliases": [
+      "Story of Seasons Series",
+      "Bokuj\u014d Monogatari Series",
+      "Harvest Moon",
+      "HM",
+      "SoS"
+    ],
+    "Size": 51,
+    "wa": 0,
+    "ha": 0,
+    "wg": 24,
+    "hg": 28,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "47.06",
+    "hgp": "54.9"
+  },
+  {
+    "Bundle": "Hasbro",
+    "Aliases": [],
+    "Size": 378,
+    "wa": 100,
+    "ha": 277,
+    "wg": 6,
+    "hg": 7,
+    "wap": "26.46",
+    "hap": "73.28",
+    "wgp": "1.59",
+    "hgp": "1.85"
+  },
+  {
+    "Bundle": "Hataraku Saibou Series",
+    "Aliases": [
+      "Cells at Work! Series",
+      "CaWs",
+      "Cells at Work Series"
+    ],
+    "Size": 30,
+    "wa": 17,
+    "ha": 13,
+    "wg": 0,
+    "hg": 0,
+    "wap": "56.67",
+    "hap": "43.33",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Hatoful Boyfriend Series",
+    "Aliases": [],
+    "Size": 17,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 15,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "11.76",
+    "hgp": "88.24"
+  },
+  {
+    "Bundle": "Hayao Miyazaki's Works",
+    "Aliases": [
+      "Hayao Miyazaki"
+    ],
+    "Size": 54,
+    "wa": 25,
+    "ha": 30,
+    "wg": 0,
+    "hg": 0,
+    "wap": "46.3",
+    "hap": "55.56",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Hazbin Hotel Series",
+    "Aliases": [],
+    "Size": 36,
+    "wa": 18,
+    "ha": 18,
+    "wg": 0,
+    "hg": 0,
+    "wap": "50.0",
+    "hap": "50.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Hentai",
+    "Aliases": [
+      ":underage:",
+      "Adult Content",
+      "X-Rated",
+      "Nukige",
+      "Lemon",
+      "Porn",
+      "18+",
+      ":underage:"
+    ],
+    "Size": 3290,
+    "wa": 1330,
+    "ha": 455,
+    "wg": 1336,
+    "hg": 240,
+    "wap": "40.43",
+    "hap": "13.83",
+    "wgp": "40.61",
+    "hgp": "7.29"
+  },
+  {
+    "Bundle": "Hibike! Euphonium Series",
+    "Aliases": [
+      "Hibike Series"
+    ],
+    "Size": 40,
+    "wa": 35,
+    "ha": 5,
+    "wg": 0,
+    "hg": 0,
+    "wap": "87.5",
+    "hap": "12.5",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Hibiki Works",
+    "Aliases": [],
+    "Size": 15,
+    "wa": 0,
+    "ha": 0,
+    "wg": 15,
+    "hg": 0,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "100.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Hidan no Aria Series",
+    "Aliases": [],
+    "Size": 8,
+    "wa": 6,
+    "ha": 2,
+    "wg": 0,
+    "hg": 0,
+    "wap": "75.0",
+    "hap": "25.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Hidari's Art",
+    "Aliases": [
+      "Left's Art",
+      "Hidari",
+      "Left",
+      "Left Side"
+    ],
+    "Size": 180,
+    "wa": 89,
+    "ha": 37,
+    "wg": 46,
+    "hg": 34,
+    "wap": "49.44",
+    "hap": "20.56",
+    "wgp": "25.56",
+    "hgp": "18.89"
+  },
+  {
+    "Bundle": "Hidden Role Games",
+    "Aliases": [
+      "Social Deduction Games"
+    ],
+    "Size": 27,
+    "wa": 0,
+    "ha": 0,
+    "wg": 14,
+    "hg": 15,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "51.85",
+    "hgp": "55.56"
+  },
+  {
+    "Bundle": "Hideo Kojima",
+    "Aliases": [],
+    "Size": 81,
+    "wa": 0,
+    "ha": 0,
+    "wg": 25,
+    "hg": 58,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "30.86",
+    "hgp": "71.6"
+  },
+  {
+    "Bundle": "Hideo Minaba's Art",
+    "Aliases": [],
+    "Size": 308,
+    "wa": 22,
+    "ha": 10,
+    "wg": 183,
+    "hg": 129,
+    "wap": "7.14",
+    "hap": "3.25",
+    "wgp": "59.42",
+    "hgp": "41.88"
+  },
+  {
+    "Bundle": "Hiiro no Kakera Series",
+    "Aliases": [],
+    "Size": 6,
+    "wa": 1,
+    "ha": 2,
+    "wg": 0,
+    "hg": 3,
+    "wap": "16.67",
+    "hap": "33.33",
+    "wgp": "0.0",
+    "hgp": "50.0"
+  },
+  {
+    "Bundle": "Himukai Yuuji's Art",
+    "Aliases": [
+      "Nishimukai's Art",
+      "Himukai Yuuji",
+      "Nishimukai",
+      "Yuji Himukai's Art",
+      "Yuuji Himukai's Art",
+      "Yuji Himukai",
+      "Yuuji Himukai"
+    ],
+    "Size": 32,
+    "wa": 0,
+    "ha": 0,
+    "wg": 22,
+    "hg": 20,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "68.75",
+    "hgp": "62.5"
+  },
+  {
+    "Bundle": "HinaBitter\u266a Project",
+    "Aliases": [
+      "HinaBitter\u266a Series",
+      "Hinabitter Project",
+      "Hinabitter Series"
+    ],
+    "Size": 7,
+    "wa": 7,
+    "ha": 0,
+    "wg": 7,
+    "hg": 0,
+    "wap": "100.0",
+    "hap": "0.0",
+    "wgp": "100.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Hiro Mashima's Works",
+    "Aliases": [
+      "Hiro Mashima",
+      "Mashima Hiro"
+    ],
+    "Size": 251,
+    "wa": 108,
+    "ha": 150,
+    "wg": 0,
+    "hg": 0,
+    "wap": "43.03",
+    "hap": "59.76",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Hirohiko Araki's Works",
+    "Aliases": [
+      "Hirohiko Araki"
+    ],
+    "Size": 210,
+    "wa": 51,
+    "ha": 168,
+    "wg": 0,
+    "hg": 1,
+    "wap": "24.29",
+    "hap": "80.0",
+    "wgp": "0.0",
+    "hgp": "0.48"
+  },
+  {
+    "Bundle": "Hiromu Arakawa's Works",
+    "Aliases": [
+      "Hiromu Arakawa"
+    ],
+    "Size": 103,
+    "wa": 36,
+    "ha": 70,
+    "wg": 0,
+    "hg": 0,
+    "wap": "34.95",
+    "hap": "67.96",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "HitenKei's Works",
+    "Aliases": [
+      "HitenKei"
+    ],
+    "Size": 3,
+    "wa": 3,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wap": "100.0",
+    "hap": "0.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Hitoma Iruma's Works",
+    "Aliases": [],
+    "Size": 13,
+    "wa": 11,
+    "ha": 2,
+    "wg": 0,
+    "hg": 0,
+    "wap": "84.62",
+    "hap": "15.38",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Hiveworks Comics",
+    "Aliases": [
+      "Hiveworks"
+    ],
+    "Size": 79,
+    "wa": 43,
+    "ha": 40,
+    "wg": 0,
+    "hg": 0,
+    "wap": "54.43",
+    "hap": "50.63",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Hobby Japan",
+    "Aliases": [],
+    "Size": 135,
+    "wa": 123,
+    "ha": 12,
+    "wg": 0,
+    "hg": 0,
+    "wap": "91.11",
+    "hap": "8.89",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Hokuto no Ken Series",
+    "Aliases": [
+      "Fist of the North Star Series",
+      "HnK Series",
+      "FotNS Series"
+    ],
+    "Size": 38,
+    "wa": 5,
+    "ha": 33,
+    "wg": 0,
+    "hg": 1,
+    "wap": "13.16",
+    "hap": "86.84",
+    "wgp": "0.0",
+    "hgp": "2.63"
+  },
+  {
+    "Bundle": "Hollow Knight Series",
+    "Aliases": [
+      "HK Series"
+    ],
+    "Size": 57,
+    "wa": 0,
+    "ha": 0,
+    "wg": 30,
+    "hg": 36,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "52.63",
+    "hgp": "63.16"
+  },
+  {
+    "Bundle": "Homestuck Fanworks",
+    "Aliases": [],
+    "Size": 33,
+    "wa": 14,
+    "ha": 13,
+    "wg": 2,
+    "hg": 8,
+    "wap": "42.42",
+    "hap": "39.39",
+    "wgp": "6.06",
+    "hgp": "24.24"
+  },
+  {
+    "Bundle": "Honoo no Haramase Franchise",
+    "Aliases": [
+      "Honoo no Haramase Series",
+      "Honoo no Haramase",
+      "Motto! Haramase! Honoo no Oppai",
+      "HnH",
+      "MHHnO"
+    ],
+    "Size": 63,
+    "wa": 55,
+    "ha": 0,
+    "wg": 8,
+    "hg": 0,
+    "wap": "87.3",
+    "hap": "0.0",
+    "wgp": "12.7",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Hoods Entertainment",
+    "Aliases": [],
+    "Size": 62,
+    "wa": 47,
+    "ha": 15,
+    "wg": 0,
+    "hg": 0,
+    "wap": "75.81",
+    "hap": "24.19",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Hooksoft",
+    "Aliases": [],
+    "Size": 16,
+    "wa": 0,
+    "ha": 0,
+    "wg": 16,
+    "hg": 0,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "100.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Horror Genre",
+    "Aliases": [
+      "THIS BUNDLE IS FOR THE HORROR GENRE",
+      "Stuff That Gives You The Spooks",
+      "Spooky Stuff",
+      "Spoopy Stuff",
+      "Spooks",
+      "Spoops",
+      "Horror",
+      "Scary"
+    ],
+    "Size": 2336,
+    "wa": 639,
+    "ha": 678,
+    "wg": 590,
+    "hg": 646,
+    "wap": "27.35",
+    "hap": "29.02",
+    "wgp": "25.26",
+    "hgp": "27.65"
+  },
+  {
+    "Bundle": "Hotline Miami Series",
+    "Aliases": [
+      "HMS",
+      "HM Series"
+    ],
+    "Size": 10,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 8,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "20.0",
+    "hgp": "80.0"
+  },
+  {
+    "Bundle": "Houbunsha",
+    "Aliases": [],
+    "Size": 589,
+    "wa": 433,
+    "ha": 53,
+    "wg": 123,
+    "hg": 2,
+    "wap": "73.51",
+    "hap": "9.0",
+    "wgp": "20.88",
+    "hgp": "0.34"
+  },
+  {
+    "Bundle": "HSverse",
+    "Aliases": [
+      "Homestuck World",
+      "Homestuck Universe"
+    ],
+    "Size": 164,
+    "wa": 48,
+    "ha": 74,
+    "wg": 27,
+    "hg": 25,
+    "wap": "29.27",
+    "hap": "45.12",
+    "wgp": "16.46",
+    "hgp": "15.24"
+  },
+  {
+    "Bundle": "Humongous Entertainment",
+    "Aliases": [
+      "Humongous Entertainment, Inc.",
+      "HE"
+    ],
+    "Size": 8,
+    "wa": 0,
+    "ha": 0,
+    "wg": 4,
+    "hg": 4,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "50.0",
+    "hgp": "50.0"
+  },
+  {
+    "Bundle": "HuniePot",
+    "Aliases": [
+      "HuniePop Series"
+    ],
+    "Size": 25,
+    "wa": 0,
+    "ha": 0,
+    "wg": 25,
+    "hg": 0,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "100.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Hyperdimension Neptunia Series",
+    "Aliases": [
+      "Neptunia",
+      "HDN Series",
+      "HDN"
+    ],
+    "Size": 79,
+    "wa": 26,
+    "ha": 2,
+    "wg": 74,
+    "hg": 5,
+    "wap": "32.91",
+    "hap": "2.53",
+    "wgp": "93.67",
+    "hgp": "6.33"
   }
 ]
