@@ -52,6 +52,10 @@
               <th scope="col" @click="sort('ha')" class="sortable">$ha</th>
               <th scope="col" @click="sort('wg')" class="sortable">$wg</th>
               <th scope="col" @click="sort('hg')" class="sortable">$hg</th>
+              <th scope="col" @click="sort('wa%')" class="sortable">$wa</th>
+              <th scope="col" @click="sort('ha%')" class="sortable">$ha</th>
+              <th scope="col" @click="sort('wg%')" class="sortable">$wg</th>
+              <th scope="col" @click="sort('hg%')" class="sortable">$hg</th>
             </tr>
           </thead>
           <tbody>
@@ -62,6 +66,10 @@
               <td>{{bundle.ha}}</td>
               <td>{{bundle.wg}}</td>
               <td>{{bundle.hg}}</td>
+              <td>{{bundle.wa%}}</td>
+              <td>{{bundle.ha%}}</td>
+              <td>{{bundle.wg%}}</td>
+              <td>{{bundle.hg%}}</td>
             </tr>
           </tbody>
         </table>
