@@ -5319,5 +5319,758 @@
     "hap": "0.0",
     "wgp": "71.67",
     "hgp": "28.33"
+  },
+	{
+    "Bundle": "F-Zero Series",
+    "Aliases": [
+      "F Zero Series",
+      "FZS"
+    ],
+    "Size": 12,
+    "wa": 1,
+    "ha": 1,
+    "wg": 1,
+    "hg": 10,
+    "wap": "8.33",
+    "hap": "8.33",
+    "wgp": "8.33",
+    "hgp": "83.33"
+  },
+	{
+    "Bundle": "Fable Series",
+    "Aliases": [],
+    "Size": 11,
+    "wa": 0,
+    "ha": 0,
+    "wg": 5,
+    "hg": 7,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "45.45",
+    "hgp": "63.64"
+  },
+  {
+    "Bundle": "Fabula Nova Crystallis: Final Fantasy",
+    "Aliases": [
+      "Fabula Nova Crystallis",
+      "FNC"
+    ],
+    "Size": 36,
+    "wa": 0,
+    "ha": 0,
+    "wg": 16,
+    "hg": 20,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "44.44",
+    "hgp": "55.56"
+  },
+  {
+    "Bundle": "Fairy Tail Series",
+    "Aliases": [
+      "FT Series"
+    ],
+    "Size": 202,
+    "wa": 86,
+    "ha": 122,
+    "wg": 0,
+    "hg": 0,
+    "wap": "42.57",
+    "hap": "60.4",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Fallout Series",
+    "Aliases": [],
+    "Size": 58,
+    "wa": 0,
+    "ha": 0,
+    "wg": 18,
+    "hg": 43,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "31.03",
+    "hgp": "74.14"
+  },
+  {
+    "Bundle": "Fanime",
+    "Aliases": [
+      "Fan-Made Anime"
+    ],
+    "Size": 21,
+    "wa": 15,
+    "ha": 6,
+    "wg": 0,
+    "hg": 0,
+    "wap": "71.43",
+    "hap": "28.57",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Fanworks",
+    "Aliases": [
+      "Fan Works",
+      "Fan Series",
+      "Fanseries",
+      "Fangames",
+      "Fananimation",
+      "Fancomics",
+      "Fan Games",
+      "Fan Animation",
+      "Fan Comics",
+      "Fanimation"
+    ],
+    "Size": 266,
+    "wa": 76,
+    "ha": 40,
+    "wg": 98,
+    "hg": 67,
+    "wap": "28.57",
+    "hap": "15.04",
+    "wgp": "36.84",
+    "hgp": "25.19"
+  },
+  {
+    "Bundle": "Fanworks Inc.",
+    "Aliases": [
+      "Fanworks Inc"
+    ],
+    "Size": 30,
+    "wa": 12,
+    "ha": 18,
+    "wg": 0,
+    "hg": 0,
+    "wap": "40.0",
+    "hap": "60.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "FARCRY Series",
+    "Aliases": [
+      "Far Cry Series",
+      "FC",
+      "FC Series",
+      "Far Cry"
+    ],
+    "Size": 48,
+    "wa": 0,
+    "ha": 0,
+    "wg": 19,
+    "hg": 33,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "39.58",
+    "hgp": "68.75"
+  },
+  {
+    "Bundle": "Fashion Doll",
+    "Aliases": [],
+    "Size": 48,
+    "wa": 40,
+    "ha": 8,
+    "wg": 0,
+    "hg": 0,
+    "wap": "83.33",
+    "hap": "16.67",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Fatal Frame Series",
+    "Aliases": [
+      "Project Zero Series"
+    ],
+    "Size": 15,
+    "wa": 0,
+    "ha": 0,
+    "wg": 11,
+    "hg": 4,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "73.33",
+    "hgp": "26.67"
+  },
+  {
+    "Bundle": "Fate",
+    "Aliases": [
+      "Fate Series"
+    ],
+    "Size": 455,
+    "wa": 148,
+    "ha": 108,
+    "wg": 178,
+    "hg": 165,
+    "wap": "32.53",
+    "hap": "23.74",
+    "wgp": "39.12",
+    "hgp": "36.26"
+  },
+  {
+    "Bundle": "Fate/EX Series",
+    "Aliases": [
+      "Fate/EXTRA Series",
+      "EXTRA Series"
+    ],
+    "Size": 43,
+    "wa": 20,
+    "ha": 9,
+    "wg": 24,
+    "hg": 16,
+    "wap": "46.51",
+    "hap": "20.93",
+    "wgp": "55.81",
+    "hgp": "37.21"
+  },
+  {
+    "Bundle": "Feel Young",
+    "Aliases": [],
+    "Size": 6,
+    "wa": 4,
+    "ha": 2,
+    "wg": 0,
+    "hg": 0,
+    "wap": "66.67",
+    "hap": "33.33",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Feel. Inc.",
+    "Aliases": [
+      "feel."
+    ],
+    "Size": 176,
+    "wa": 134,
+    "ha": 42,
+    "wg": 10,
+    "hg": 3,
+    "wap": "76.14",
+    "hap": "23.86",
+    "wgp": "5.68",
+    "hgp": "1.7"
+  },
+  {
+    "Bundle": "Fighting Games",
+    "Aliases": [
+      "Fighting",
+      "FG"
+    ],
+    "Size": 871,
+    "wa": 28,
+    "ha": 22,
+    "wg": 420,
+    "hg": 487,
+    "wap": "3.21",
+    "hap": "2.53",
+    "wgp": "48.22",
+    "hgp": "55.91"
+  },
+  {
+    "Bundle": "FilmCow",
+    "Aliases": [],
+    "Size": 5,
+    "wa": 2,
+    "ha": 5,
+    "wg": 0,
+    "hg": 0,
+    "wap": "40.0",
+    "hap": "100.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Filmlink International",
+    "Aliases": [],
+    "Size": 2,
+    "wa": 1,
+    "ha": 1,
+    "wg": 0,
+    "hg": 0,
+    "wap": "50.0",
+    "hap": "50.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Final Fantasy",
+    "Aliases": [
+      "FF",
+      "Final Fantasy Series"
+    ],
+    "Size": 471,
+    "wa": 9,
+    "ha": 16,
+    "wg": 199,
+    "hg": 272,
+    "wap": "1.91",
+    "hap": "3.4",
+    "wgp": "42.25",
+    "hgp": "57.75"
+  },
+  {
+    "Bundle": "Final Fantasy Crystal Chronicles Series",
+    "Aliases": [],
+    "Size": 8,
+    "wa": 0,
+    "ha": 0,
+    "wg": 4,
+    "hg": 5,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "50.0",
+    "hgp": "62.5"
+  },
+  {
+    "Bundle": "Final Fantasy X Series",
+    "Aliases": [
+      "Final Fantasy 10 Series",
+      "FFX Series",
+      "FF10 Series",
+      "Final Fantasy X Duology",
+      "Final Fantasy 10 Duology",
+      "FFX Duology",
+      "FF10 Duology"
+    ],
+    "Size": 22,
+    "wa": 0,
+    "ha": 0,
+    "wg": 9,
+    "hg": 14,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "40.91",
+    "hgp": "63.64"
+  },
+  {
+    "Bundle": "Final Fantasy XIII Trilogy",
+    "Aliases": [
+      "FFXIII Trilogy",
+      "FF XIII Trilogy"
+    ],
+    "Size": 17,
+    "wa": 0,
+    "ha": 0,
+    "wg": 9,
+    "hg": 8,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "52.94",
+    "hgp": "47.06"
+  },
+  {
+    "Bundle": "Fire Emblem",
+    "Aliases": [
+      "FE",
+      "Fire Emblem Series"
+    ],
+    "Size": 662,
+    "wa": 0,
+    "ha": 0,
+    "wg": 280,
+    "hg": 388,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "42.3",
+    "hgp": "58.61"
+  },
+  {
+    "Bundle": "First-person Shooter Games",
+    "Aliases": [
+      "First Person Shooter Games",
+      "1st Person Shooter Games",
+      "First Person Shooters",
+      "1st Person Shooters",
+      "FPS Games",
+      "FPS",
+      "Doom Clones"
+    ],
+    "Size": 690,
+    "wa": 8,
+    "ha": 22,
+    "wg": 261,
+    "hg": 451,
+    "wap": "1.16",
+    "hap": "3.19",
+    "wgp": "37.83",
+    "hgp": "65.36"
+  },
+  {
+    "Bundle": "Five Nights at Freddy's Fanworks",
+    "Aliases": [
+      "FNaF Fanworks"
+    ],
+    "Size": 15,
+    "wa": 0,
+    "ha": 0,
+    "wg": 3,
+    "hg": 14,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "20.0",
+    "hgp": "93.33"
+  },
+  {
+    "Bundle": "Five Nights at Freddy's Series",
+    "Aliases": [
+      "FNaF",
+      "Five Nights at Freddy's"
+    ],
+    "Size": 68,
+    "wa": 1,
+    "ha": 2,
+    "wg": 27,
+    "hg": 53,
+    "wap": "1.47",
+    "hap": "2.94",
+    "wgp": "39.71",
+    "hgp": "77.94"
+  },
+  {
+    "Bundle": "FLCL Series",
+    "Aliases": [
+      "Fooly Cooly Series",
+      "Furi Kuri Series"
+    ],
+    "Size": 12,
+    "wa": 7,
+    "ha": 5,
+    "wg": 0,
+    "hg": 0,
+    "wap": "58.33",
+    "hap": "41.67",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Flying Bark Productions",
+    "Aliases": [],
+    "Size": 8,
+    "wa": 1,
+    "ha": 7,
+    "wg": 0,
+    "hg": 0,
+    "wap": "12.5",
+    "hap": "87.5",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Fortissimo Series",
+    "Aliases": [],
+    "Size": 37,
+    "wa": 0,
+    "ha": 0,
+    "wg": 22,
+    "hg": 16,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "59.46",
+    "hgp": "43.24"
+  },
+  {
+    "Bundle": "Fossil Fighters Series",
+    "Aliases": [],
+    "Size": 8,
+    "wa": 0,
+    "ha": 0,
+    "wg": 4,
+    "hg": 4,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "50.0",
+    "hgp": "50.0"
+  },
+  {
+    "Bundle": "Frederator Studios",
+    "Aliases": [
+      "Frederator"
+    ],
+    "Size": 108,
+    "wa": 40,
+    "ha": 70,
+    "wg": 2,
+    "hg": 3,
+    "wap": "37.04",
+    "hap": "64.81",
+    "wgp": "1.85",
+    "hgp": "2.78"
+  },
+  {
+    "Bundle": "Freebird Games",
+    "Aliases": [],
+    "Size": 10,
+    "wa": 0,
+    "ha": 0,
+    "wg": 6,
+    "hg": 5,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "60.0",
+    "hgp": "50.0"
+  },
+  {
+    "Bundle": "French Media",
+    "Aliases": [
+      "France Bundle",
+      "Ouiaboo Series",
+      "France",
+      "French Bundle",
+      "Made in France",
+      "La Cr\u00e8me de la Cr\u00e8me",
+      "omelette du fromage",
+      "French",
+      "Fran\u00e7ais",
+      "Baguette"
+    ],
+    "Size": 335,
+    "wa": 131,
+    "ha": 191,
+    "wg": 22,
+    "hg": 35,
+    "wap": "39.1",
+    "hap": "57.01",
+    "wgp": "6.57",
+    "hgp": "10.45"
+  },
+  {
+    "Bundle": "Fresh TV Inc.",
+    "Aliases": [],
+    "Size": 104,
+    "wa": 47,
+    "ha": 57,
+    "wg": 0,
+    "hg": 0,
+    "wap": "45.19",
+    "hap": "54.81",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Friday Night Funkin' Universe",
+    "Aliases": [
+      "Friday Night Funkin Universe",
+      "FNF Universe"
+    ],
+    "Size": 26,
+    "wa": 1,
+    "ha": 11,
+    "wg": 4,
+    "hg": 12,
+    "wap": "3.85",
+    "hap": "42.31",
+    "wgp": "15.38",
+    "hgp": "46.15"
+  },
+  {
+    "Bundle": "FromSoftware",
+    "Aliases": [
+      "From Software",
+      "FromSoft"
+    ],
+    "Size": 163,
+    "wa": 0,
+    "ha": 0,
+    "wg": 64,
+    "hg": 112,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "39.26",
+    "hgp": "68.71"
+  },
+  {
+    "Bundle": "Frontier Works",
+    "Aliases": [],
+    "Size": 209,
+    "wa": 80,
+    "ha": 117,
+    "wg": 19,
+    "hg": 9,
+    "wap": "38.28",
+    "hap": "55.98",
+    "wgp": "9.09",
+    "hgp": "4.31"
+  },
+  {
+    "Bundle": "Frontwing",
+    "Aliases": [],
+    "Size": 73,
+    "wa": 25,
+    "ha": 9,
+    "wg": 34,
+    "hg": 6,
+    "wap": "34.25",
+    "hap": "12.33",
+    "wgp": "46.58",
+    "hgp": "8.22"
+  },
+  {
+    "Bundle": "Fruitbat Factory",
+    "Aliases": [
+      "FBF"
+    ],
+    "Size": 93,
+    "wa": 0,
+    "ha": 0,
+    "wg": 71,
+    "hg": 26,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "76.34",
+    "hgp": "27.96"
+  },
+  {
+    "Bundle": "Fruits Basket Series",
+    "Aliases": [],
+    "Size": 38,
+    "wa": 18,
+    "ha": 20,
+    "wg": 0,
+    "hg": 0,
+    "wap": "47.37",
+    "hap": "52.63",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Fuji Mitsuya's Art",
+    "Aliases": [
+      "Fuji Mitsuya"
+    ],
+    "Size": 10,
+    "wa": 0,
+    "ha": 10,
+    "wg": 0,
+    "hg": 0,
+    "wap": "0.0",
+    "hap": "100.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Fuji TV",
+    "Aliases": [
+      "Fuji Television",
+      "BS Fuji",
+      "CX"
+    ],
+    "Size": 2024,
+    "wa": 794,
+    "ha": 1263,
+    "wg": 5,
+    "hg": 14,
+    "wap": "39.23",
+    "hap": "62.4",
+    "wgp": "0.25",
+    "hgp": "0.69"
+  },
+  {
+    "Bundle": "Fujimaru's Works",
+    "Aliases": [
+      "Fujimaru",
+      "fujimaru_24"
+    ],
+    "Size": 15,
+    "wa": 1,
+    "ha": 0,
+    "wg": 13,
+    "hg": 1,
+    "wap": "6.67",
+    "hap": "0.0",
+    "wgp": "86.67",
+    "hgp": "6.67"
+  },
+  {
+    "Bundle": "Fujimi Shobo",
+    "Aliases": [],
+    "Size": 307,
+    "wa": 244,
+    "ha": 59,
+    "wg": 6,
+    "hg": 0,
+    "wap": "79.48",
+    "hap": "19.22",
+    "wgp": "1.95",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Fujino Omori's Works",
+    "Aliases": [
+      "Fujino Omori"
+    ],
+    "Size": 89,
+    "wa": 54,
+    "ha": 22,
+    "wg": 10,
+    "hg": 4,
+    "wap": "60.67",
+    "hap": "24.72",
+    "wgp": "11.24",
+    "hgp": "4.49"
+  },
+  {
+    "Bundle": "Furry",
+    "Aliases": [
+      "Furry Fandom Centered Content Made by and/or for the Furry Community"
+    ],
+    "Size": 475,
+    "wa": 47,
+    "ha": 67,
+    "wg": 57,
+    "hg": 316,
+    "wap": "9.89",
+    "hap": "14.11",
+    "wgp": "12.0",
+    "hgp": "66.53"
+  },
+  {
+    "Bundle": "Futabasha",
+    "Aliases": [],
+    "Size": 194,
+    "wa": 137,
+    "ha": 58,
+    "wg": 0,
+    "hg": 0,
+    "wap": "70.62",
+    "hap": "29.9",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Futanari",
+    "Aliases": [
+      "Futa",
+      "Mesudanshi",
+      "Otokofutanari",
+      "Gyakufutanari",
+      "ftnr"
+    ],
+    "Size": 58,
+    "wa": 29,
+    "ha": 2,
+    "wg": 25,
+    "hg": 4,
+    "wap": "50.0",
+    "hap": "3.45",
+    "wgp": "43.1",
+    "hgp": "6.9"
+  },
+  {
+    "Bundle": "Future Card Buddyfight Series",
+    "Aliases": [
+      "Buddyfight Series",
+      "FCB Series"
+    ],
+    "Size": 19,
+    "wa": 2,
+    "ha": 17,
+    "wg": 0,
+    "hg": 4,
+    "wap": "10.53",
+    "hap": "89.47",
+    "wgp": "0.0",
+    "hgp": "21.05"
   }
 ]
