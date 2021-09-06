@@ -2830,5 +2830,279 @@
     "hap": "13.79",
     "wgp": "50.57",
     "hgp": "13.79"
+  },
+	  {
+    "Bundle": "CloverWorks",
+    "Aliases": [],
+    "Size": 631,
+    "wa": 229,
+    "ha": 235,
+    "wg": 142,
+    "hg": 136,
+    "wap": "36.29",
+    "hap": "37.24",
+    "wgp": "22.5",
+    "hgp": "21.55"
+  },
+  {
+    "Bundle": "Code Geass",
+    "Aliases": [
+      "CG"
+    ],
+    "Size": 53,
+    "wa": 23,
+    "ha": 29,
+    "wg": 0,
+    "hg": 1,
+    "wap": "43.4",
+    "hap": "54.72",
+    "wgp": "0.0",
+    "hgp": "1.89"
+  },
+  {
+    "Bundle": "Code: Realize Series",
+    "Aliases": [
+      "Code: Realize",
+      "C:R",
+      "Code Realize"
+    ],
+    "Size": 25,
+    "wa": 0,
+    "ha": 0,
+    "wg": 7,
+    "hg": 18,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "28.0",
+    "hgp": "72.0"
+  },
+  {
+    "Bundle": "Coffee Kizoku's Art",
+    "Aliases": [
+      "Coffee Kizoku"
+    ],
+    "Size": 3,
+    "wa": 3,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wap": "100.0",
+    "hap": "0.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Coldmirror's Works",
+    "Aliases": [
+      "Coldmirror"
+    ],
+    "Size": 8,
+    "wa": 2,
+    "ha": 6,
+    "wg": 0,
+    "hg": 0,
+    "wap": "25.0",
+    "hap": "75.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Collaboration Works",
+    "Aliases": [],
+    "Size": 30,
+    "wa": 27,
+    "ha": 2,
+    "wg": 0,
+    "hg": 1,
+    "wap": "90.0",
+    "hap": "6.67",
+    "wgp": "0.0",
+    "hgp": "3.33"
+  },
+  {
+    "Bundle": "Comedy Central",
+    "Aliases": [],
+    "Size": 162,
+    "wa": 50,
+    "ha": 114,
+    "wg": 0,
+    "hg": 0,
+    "wap": "30.86",
+    "hap": "70.37",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Comic Avarus",
+    "Aliases": [],
+    "Size": 28,
+    "wa": 5,
+    "ha": 23,
+    "wg": 0,
+    "hg": 0,
+    "wap": "17.86",
+    "hap": "82.14",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Comic Bunch",
+    "Aliases": [],
+    "Size": 4,
+    "wa": 4,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wap": "100.0",
+    "hap": "0.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Comic Cune",
+    "Aliases": [],
+    "Size": 38,
+    "wa": 37,
+    "ha": 2,
+    "wg": 0,
+    "hg": 0,
+    "wap": "97.37",
+    "hap": "5.26",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Comic Days",
+    "Aliases": [],
+    "Size": 21,
+    "wa": 17,
+    "ha": 4,
+    "wg": 0,
+    "hg": 0,
+    "wap": "80.95",
+    "hap": "19.05",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Comic Fire",
+    "Aliases": [],
+    "Size": 51,
+    "wa": 43,
+    "ha": 8,
+    "wg": 0,
+    "hg": 0,
+    "wap": "84.31",
+    "hap": "15.69",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Comic Garden",
+    "Aliases": [],
+    "Size": 62,
+    "wa": 23,
+    "ha": 39,
+    "wg": 0,
+    "hg": 0,
+    "wap": "37.1",
+    "hap": "62.9",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Comic Gene",
+    "Aliases": [],
+    "Size": 134,
+    "wa": 49,
+    "ha": 85,
+    "wg": 5,
+    "hg": 6,
+    "wap": "36.57",
+    "hap": "63.43",
+    "wgp": "3.73",
+    "hgp": "4.48"
+  },
+  {
+    "Bundle": "Comic Gum",
+    "Aliases": [],
+    "Size": 39,
+    "wa": 37,
+    "ha": 2,
+    "wg": 0,
+    "hg": 0,
+    "wap": "94.87",
+    "hap": "5.13",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Comic High!",
+    "Aliases": [
+      "Comic High"
+    ],
+    "Size": 15,
+    "wa": 14,
+    "ha": 1,
+    "wg": 0,
+    "hg": 0,
+    "wap": "93.33",
+    "hap": "6.67",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Comic Meteor",
+    "Aliases": [],
+    "Size": 75,
+    "wa": 64,
+    "ha": 12,
+    "wg": 0,
+    "hg": 0,
+    "wap": "85.33",
+    "hap": "16.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Comic NORA",
+    "Aliases": [
+      "Monthly Comic NORA"
+    ],
+    "Size": 5,
+    "wa": 5,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wap": "100.0",
+    "hap": "0.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Comic REX",
+    "Aliases": [],
+    "Size": 79,
+    "wa": 60,
+    "ha": 14,
+    "wg": 18,
+    "hg": 1,
+    "wap": "75.95",
+    "hap": "17.72",
+    "wgp": "22.78",
+    "hgp": "1.27"
+  },
+  {
+    "Bundle": "Comic Ryu",
+    "Aliases": [],
+    "Size": 76,
+    "wa": 70,
+    "ha": 6,
+    "wg": 0,
+    "hg": 0,
+    "wap": "92.11",
+    "hap": "7.89",
+    "wgp": "0.0",
+    "hgp": "0.0"
   }
 ]
