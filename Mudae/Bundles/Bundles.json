@@ -1,0 +1,2834 @@
+[
+  {
+    "Bundle": ".hack",
+    "Aliases": [
+      "dothack",
+      "dot hack",
+      ".hack Series",
+      ".h"
+    ],
+    "Size": 37,
+    "wa": 14,
+    "ha": 13,
+    "wg": 14,
+    "hg": 15,
+    "wa%": 37.84,
+    "ha%": 35.14,
+    "wg%": 37.84,
+    "hg%": 40.54
+  },
+  {
+    "Bundle": "07th Expansion",
+    "Aliases": [],
+    "Size": 148,
+    "wa": 53,
+    "ha": 31,
+    "wg": 41,
+    "hg": 27,
+    "wa%": 35.81,
+    "ha%": 20.95,
+    "wg%": 27.7,
+    "hg%": 18.24
+  },
+  {
+    "Bundle": "0verflow",
+    "Aliases": [],
+    "Size": 11,
+    "wa": 7,
+    "ha": 2,
+    "wg": 2,
+    "hg": 0,
+    "wa%": 63.64,
+    "ha%": 18.18,
+    "wg%": 18.18,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "101 Dalmatians Series",
+    "Aliases": [],
+    "Size": 10,
+    "wa": 4,
+    "ha": 6,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 40.0,
+    "ha%": 60.0,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "1bitHeart Series",
+    "Aliases": [
+      "1bH",
+      "OBH"
+    ],
+    "Size": 55,
+    "wa": 0,
+    "ha": 0,
+    "wg": 27,
+    "hg": 28,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 49.09,
+    "hg%": 50.91
+  },
+  {
+    "Bundle": "20th Century Fox",
+    "Aliases": [
+      "20th Century Fox Television",
+      "20th Century Studios",
+      "Fox"
+    ],
+    "Size": 553,
+    "wa": 150,
+    "ha": 357,
+    "wg": 20,
+    "hg": 31,
+    "wa%": 27.12,
+    "ha%": 64.56,
+    "wg%": 3.62,
+    "hg%": 5.61
+  },
+  {
+    "Bundle": "2K Games",
+    "Aliases": [],
+    "Size": 23,
+    "wa": 0,
+    "ha": 1,
+    "wg": 12,
+    "hg": 14,
+    "wa%": 0.0,
+    "ha%": 4.35,
+    "wg%": 52.17,
+    "hg%": 60.87
+  },
+  {
+    "Bundle": "3D Adult Comics",
+    "Aliases": [
+      "3D Porn Comics",
+      "Adult 3D Comics"
+    ],
+    "Size": 5,
+    "wa": 5,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 100.0,
+    "ha%": 0.0,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "3D Adult Games",
+    "Aliases": [
+      "Adult 3D Games",
+      "3D Porn Games"
+    ],
+    "Size": 302,
+    "wa": 5,
+    "ha": 0,
+    "wg": 289,
+    "hg": 14,
+    "wa%": 1.66,
+    "ha%": 0.0,
+    "wg%": 95.7,
+    "hg%": 4.64
+  },
+  {
+    "Bundle": "3D Realms",
+    "Aliases": [],
+    "Size": 12,
+    "wa": 0,
+    "ha": 0,
+    "wg": 5,
+    "hg": 7,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 41.67,
+    "hg%": 58.33
+  },
+  {
+    "Bundle": "4-koma",
+    "Aliases": [
+      "4 koma",
+      "Yonkoma",
+      "Four Cell Manga",
+      "4koma"
+    ],
+    "Size": 557,
+    "wa": 455,
+    "ha": 105,
+    "wg": 0,
+    "hg": 1,
+    "wa%": 81.69,
+    "ha%": 18.85,
+    "wg%": 0.0,
+    "hg%": 0.18
+  },
+  {
+    "Bundle": "5th Cell",
+    "Aliases": [],
+    "Size": 12,
+    "wa": 0,
+    "ha": 0,
+    "wg": 6,
+    "hg": 7,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 50.0,
+    "hg%": 58.33
+  },
+  {
+    "Bundle": "774 inc.",
+    "Aliases": [
+      "774 inc"
+    ],
+    "Size": 19,
+    "wa": 19,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 100.0,
+    "ha%": 0.0,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "7th Dragon Series",
+    "Aliases": [
+      "Seventh Dragon Series"
+    ],
+    "Size": 13,
+    "wa": 0,
+    "ha": 0,
+    "wg": 12,
+    "hg": 1,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 92.31,
+    "hg%": 7.69
+  },
+  {
+    "Bundle": "A Goofy Bundle",
+    "Aliases": [],
+    "Size": 6,
+    "wa": 3,
+    "ha": 3,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 50.0,
+    "ha%": 50.0,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "A-1 Pictures",
+    "Aliases": [
+      "A1 Pictures"
+    ],
+    "Size": 1354,
+    "wa": 625,
+    "ha": 637,
+    "wg": 247,
+    "hg": 137,
+    "wa%": 46.16,
+    "ha%": 47.05,
+    "wg%": 18.24,
+    "hg%": 10.12
+  },
+  {
+    "Bundle": "A.C.G.T",
+    "Aliases": [],
+    "Size": 88,
+    "wa": 50,
+    "ha": 10,
+    "wg": 15,
+    "hg": 15,
+    "wa%": 56.82,
+    "ha%": 11.36,
+    "wg%": 17.05,
+    "hg%": 17.05
+  },
+  {
+    "Bundle": "Aardman Animations",
+    "Aliases": [
+      "Aardman",
+      "Aardman Studios"
+    ],
+    "Size": 9,
+    "wa": 3,
+    "ha": 6,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 33.33,
+    "ha%": 66.67,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "aburasobabiyori",
+    "Aliases": [],
+    "Size": 2,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 0,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 100.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Access Games",
+    "Aliases": [],
+    "Size": 34,
+    "wa": 0,
+    "ha": 0,
+    "wg": 16,
+    "hg": 18,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 47.06,
+    "hg%": 52.94
+  },
+  {
+    "Bundle": "Ace Attorney",
+    "Aliases": [
+      "AA",
+      "Gyakuten Saiban",
+      "Turnabout Trial",
+      "Phoenix Wright"
+    ],
+    "Size": 185,
+    "wa": 19,
+    "ha": 21,
+    "wg": 74,
+    "hg": 110,
+    "wa%": 10.27,
+    "ha%": 11.35,
+    "wg%": 40.0,
+    "hg%": 59.46
+  },
+  {
+    "Bundle": "Ace Attorney Investigations",
+    "Aliases": [],
+    "Size": 27,
+    "wa": 1,
+    "ha": 0,
+    "wg": 10,
+    "hg": 16,
+    "wa%": 3.7,
+    "ha%": 0.0,
+    "wg%": 37.04,
+    "hg%": 59.26
+  },
+  {
+    "Bundle": "Ace Attorney Trilogy",
+    "Aliases": [
+      "Phoenix Wright: Ace Attorney Trilogy",
+      "Gyakuten Saiban 123: Naruhodo Selection",
+      "Gyakuten Saiban 123",
+      "AA123",
+      "Phoenix Wright Trilogy"
+    ],
+    "Size": 59,
+    "wa": 18,
+    "ha": 21,
+    "wg": 24,
+    "hg": 35,
+    "wa%": 30.51,
+    "ha%": 35.59,
+    "wg%": 40.68,
+    "hg%": 59.32
+  },
+  {
+    "Bundle": "Ace Combat",
+    "Aliases": [
+      "Ace Combat Series"
+    ],
+    "Size": 19,
+    "wa": 0,
+    "ha": 0,
+    "wg": 5,
+    "hg": 14,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 26.32,
+    "hg%": 73.68
+  },
+  {
+    "Bundle": "Actas",
+    "Aliases": [],
+    "Size": 156,
+    "wa": 143,
+    "ha": 14,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 91.67,
+    "ha%": 8.97,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Action Roleplaying Games",
+    "Aliases": [
+      "ARPGs",
+      "ARPG",
+      "Action RPGs"
+    ],
+    "Size": 1847,
+    "wa": 77,
+    "ha": 73,
+    "wg": 932,
+    "hg": 1000,
+    "wa%": 4.17,
+    "ha%": 3.95,
+    "wg%": 50.46,
+    "hg%": 54.14
+  },
+  {
+    "Bundle": "Activision",
+    "Aliases": [],
+    "Size": 210,
+    "wa": 1,
+    "ha": 3,
+    "wg": 60,
+    "hg": 153,
+    "wa%": 0.48,
+    "ha%": 1.43,
+    "wg%": 28.57,
+    "hg%": 72.86
+  },
+  {
+    "Bundle": "Activision Blizzard",
+    "Aliases": [],
+    "Size": 443,
+    "wa": 4,
+    "ha": 4,
+    "wg": 148,
+    "hg": 303,
+    "wa%": 0.9,
+    "ha%": 0.9,
+    "wg%": 33.41,
+    "hg%": 68.4
+  },
+  {
+    "Bundle": "Adachi Mitsuru",
+    "Aliases": [],
+    "Size": 33,
+    "wa": 13,
+    "ha": 20,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 39.39,
+    "ha%": 60.61,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Adult Cartoons",
+    "Aliases": [],
+    "Size": 517,
+    "wa": 158,
+    "ha": 366,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 30.56,
+    "ha%": 70.79,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Adult Swim",
+    "Aliases": [
+      "[as]",
+      "as"
+    ],
+    "Size": 2662,
+    "wa": 905,
+    "ha": 1822,
+    "wg": 1,
+    "hg": 3,
+    "wa%": 34.0,
+    "ha%": 68.44,
+    "wg%": 0.04,
+    "hg%": 0.11
+  },
+  {
+    "Bundle": "Advance Wars Series",
+    "Aliases": [
+      "AW Series"
+    ],
+    "Size": 26,
+    "wa": 0,
+    "ha": 0,
+    "wg": 11,
+    "hg": 15,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 42.31,
+    "hg%": 57.69
+  },
+  {
+    "Bundle": "AdventureQuest Series",
+    "Aliases": [],
+    "Size": 6,
+    "wa": 0,
+    "ha": 0,
+    "wg": 3,
+    "hg": 4,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 50.0,
+    "hg%": 66.67
+  },
+  {
+    "Bundle": "Afternoon",
+    "Aliases": [],
+    "Size": 207,
+    "wa": 129,
+    "ha": 108,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 62.32,
+    "ha%": 52.17,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "AIC",
+    "Aliases": [
+      "Anime International Company"
+    ],
+    "Size": 258,
+    "wa": 197,
+    "ha": 68,
+    "wg": 1,
+    "hg": 0,
+    "wa%": 76.36,
+    "ha%": 26.36,
+    "wg%": 0.39,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "AidaIro's Works",
+    "Aliases": [
+      "AidaIro"
+    ],
+    "Size": 34,
+    "wa": 14,
+    "ha": 21,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 41.18,
+    "ha%": 61.76,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Aikatsu! Series",
+    "Aliases": [
+      "Aikatsu Series",
+      "Akt",
+      "All Aikatsu"
+    ],
+    "Size": 82,
+    "wa": 71,
+    "ha": 11,
+    "wg": 68,
+    "hg": 8,
+    "wa%": 86.59,
+    "ha%": 13.41,
+    "wg%": 82.93,
+    "hg%": 9.76
+  },
+  {
+    "Bundle": "Aka Akasaka's works",
+    "Aliases": [
+      "Aka Akasaka"
+    ],
+    "Size": 49,
+    "wa": 36,
+    "ha": 13,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 73.47,
+    "ha%": 26.53,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Akame ga Kill Series",
+    "Aliases": [],
+    "Size": 42,
+    "wa": 25,
+    "ha": 19,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 59.52,
+    "ha%": 45.24,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Akaneshinsha",
+    "Aliases": [
+      "Akane Shinsha",
+      "Akane Shin Corporation",
+      "Ninjin Comics",
+      "Tenma Comics"
+    ],
+    "Size": 21,
+    "wa": 15,
+    "ha": 6,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 71.43,
+    "ha%": 28.57,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Akatsuki Works",
+    "Aliases": [],
+    "Size": 7,
+    "wa": 0,
+    "ha": 0,
+    "wg": 5,
+    "hg": 2,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 71.43,
+    "hg%": 28.57
+  },
+  {
+    "Bundle": "Akiba's Trip Series",
+    "Aliases": [],
+    "Size": 14,
+    "wa": 4,
+    "ha": 1,
+    "wg": 6,
+    "hg": 3,
+    "wa%": 28.57,
+    "ha%": 7.14,
+    "wg%": 42.86,
+    "hg%": 21.43
+  },
+  {
+    "Bundle": "Akihisa Ikeda's Works",
+    "Aliases": [
+      "Akihisa Ikeda"
+    ],
+    "Size": 37,
+    "wa": 22,
+    "ha": 14,
+    "wg": 0,
+    "hg": 1,
+    "wa%": 59.46,
+    "ha%": 37.84,
+    "wg%": 0.0,
+    "hg%": 2.7
+  },
+  {
+    "Bundle": "Akihito Tsukushi's Works",
+    "Aliases": [
+      "Akihito Tsukushi"
+    ],
+    "Size": 36,
+    "wa": 19,
+    "ha": 23,
+    "wg": 1,
+    "hg": 1,
+    "wa%": 52.78,
+    "ha%": 63.89,
+    "wg%": 2.78,
+    "hg%": 2.78
+  },
+  {
+    "Bundle": "Akira Amano's Art",
+    "Aliases": [
+      "Akira Amano",
+      "Akira Amano's Works"
+    ],
+    "Size": 120,
+    "wa": 36,
+    "ha": 87,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 30.0,
+    "ha%": 72.5,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Akira Toriyama's Art",
+    "Aliases": [
+      "Akira Toriyama",
+      "Akira Toriyama's Works"
+    ],
+    "Size": 336,
+    "wa": 57,
+    "ha": 168,
+    "wg": 50,
+    "hg": 91,
+    "wa%": 16.96,
+    "ha%": 50.0,
+    "wg%": 14.88,
+    "hg%": 27.08
+  },
+  {
+    "Bundle": "Akita Shoten",
+    "Aliases": [],
+    "Size": 611,
+    "wa": 332,
+    "ha": 282,
+    "wg": 2,
+    "hg": 0,
+    "wa%": 54.34,
+    "ha%": 46.15,
+    "wg%": 0.33,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Aladdin Series",
+    "Aliases": [],
+    "Size": 16,
+    "wa": 5,
+    "ha": 12,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 31.25,
+    "ha%": 75.0,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Alan Moore's Works",
+    "Aliases": [
+      "Alan Moore"
+    ],
+    "Size": 13,
+    "wa": 3,
+    "ha": 11,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 23.08,
+    "ha%": 84.62,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "AliceSoft",
+    "Aliases": [
+      "it's eroge maker!!",
+      "Alice Soft"
+    ],
+    "Size": 185,
+    "wa": 17,
+    "ha": 2,
+    "wg": 146,
+    "hg": 34,
+    "wa%": 9.19,
+    "ha%": 1.08,
+    "wg%": 78.92,
+    "hg%": 18.38
+  },
+  {
+    "Bundle": "Alien Series",
+    "Aliases": [],
+    "Size": 5,
+    "wa": 2,
+    "ha": 2,
+    "wg": 2,
+    "hg": 0,
+    "wa%": 40.0,
+    "ha%": 40.0,
+    "wg%": 40.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Alpha Polis Web Manga",
+    "Aliases": [],
+    "Size": 22,
+    "wa": 13,
+    "ha": 9,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 59.09,
+    "ha%": 40.91,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Alternate Reality Game",
+    "Aliases": [
+      "Alternate Reality Games",
+      "ARG",
+      "ARGs"
+    ],
+    "Size": 17,
+    "wa": 5,
+    "ha": 9,
+    "wg": 4,
+    "hg": 2,
+    "wa%": 29.41,
+    "ha%": 52.94,
+    "wg%": 23.53,
+    "hg%": 11.76
+  },
+  {
+    "Bundle": "Amahara's Works",
+    "Aliases": [],
+    "Size": 49,
+    "wa": 42,
+    "ha": 8,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 85.71,
+    "ha%": 16.33,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Amazon Originals",
+    "Aliases": [],
+    "Size": 71,
+    "wa": 22,
+    "ha": 51,
+    "wg": 1,
+    "hg": 1,
+    "wa%": 30.99,
+    "ha%": 71.83,
+    "wg%": 1.41,
+    "hg%": 1.41
+  },
+  {
+    "Bundle": "Amnesia Series",
+    "Aliases": [],
+    "Size": 3,
+    "wa": 0,
+    "ha": 0,
+    "wg": 1,
+    "hg": 2,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 33.33,
+    "hg%": 66.67
+  },
+  {
+    "Bundle": "Andrew Hussie's Works",
+    "Aliases": [
+      "Andrew Hussie"
+    ],
+    "Size": 176,
+    "wa": 49,
+    "ha": 86,
+    "wg": 27,
+    "hg": 25,
+    "wa%": 27.84,
+    "ha%": 48.86,
+    "wg%": 15.34,
+    "hg%": 14.2
+  },
+  {
+    "Bundle": "Ane LaLa",
+    "Aliases": [],
+    "Size": 7,
+    "wa": 4,
+    "ha": 4,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 57.14,
+    "ha%": 57.14,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Aneko Yusagi's Works",
+    "Aliases": [
+      "Aneko Yusagi"
+    ],
+    "Size": 32,
+    "wa": 22,
+    "ha": 10,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 68.75,
+    "ha%": 31.25,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Animal Crossing",
+    "Aliases": [
+      "Animal Forest",
+      "Doubutsu no Mori",
+      "AnCro",
+      "AC"
+    ],
+    "Size": 259,
+    "wa": 0,
+    "ha": 0,
+    "wg": 107,
+    "hg": 154,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 41.31,
+    "hg%": 59.46
+  },
+  {
+    "Bundle": "Animation Meme Series",
+    "Aliases": [
+      "Animation Memes"
+    ],
+    "Size": 8,
+    "wa": 4,
+    "ha": 1,
+    "wg": 1,
+    "hg": 2,
+    "wa%": 50.0,
+    "ha%": 12.5,
+    "wg%": 12.5,
+    "hg%": 25.0
+  },
+  {
+    "Bundle": "Aniplex",
+    "Aliases": [],
+    "Size": 3983,
+    "wa": 1593,
+    "ha": 1763,
+    "wg": 673,
+    "hg": 452,
+    "wa%": 39.99,
+    "ha%": 44.26,
+    "wg%": 16.9,
+    "hg%": 11.35
+  },
+  {
+    "Bundle": "Ankama",
+    "Aliases": [],
+    "Size": 99,
+    "wa": 32,
+    "ha": 48,
+    "wg": 18,
+    "hg": 25,
+    "wa%": 32.32,
+    "ha%": 48.48,
+    "wg%": 18.18,
+    "hg%": 25.25
+  },
+  {
+    "Bundle": "Ant Studio's Art",
+    "Aliases": [
+      "Ant Studio"
+    ],
+    "Size": 13,
+    "wa": 6,
+    "ha": 7,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 46.15,
+    "ha%": 53.85,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Antechinus",
+    "Aliases": [],
+    "Size": 7,
+    "wa": 7,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 100.0,
+    "ha%": 0.0,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Ape Escape Series",
+    "Aliases": [
+      "AES"
+    ],
+    "Size": 15,
+    "wa": 0,
+    "ha": 1,
+    "wg": 5,
+    "hg": 10,
+    "wa%": 0.0,
+    "ha%": 6.67,
+    "wg%": 33.33,
+    "hg%": 66.67
+  },
+  {
+    "Bundle": "Ar tonelico Series",
+    "Aliases": [],
+    "Size": 51,
+    "wa": 0,
+    "ha": 0,
+    "wg": 36,
+    "hg": 15,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 70.59,
+    "hg%": 29.41
+  },
+  {
+    "Bundle": "Arc System Works",
+    "Aliases": [
+      "ArcSys"
+    ],
+    "Size": 200,
+    "wa": 24,
+    "ha": 33,
+    "wg": 102,
+    "hg": 75,
+    "wa%": 12.0,
+    "ha%": 16.5,
+    "wg%": 51.0,
+    "hg%": 37.5
+  },
+  {
+    "Bundle": "Archanea",
+    "Aliases": [
+      "Archanea Series"
+    ],
+    "Size": 153,
+    "wa": 0,
+    "ha": 0,
+    "wg": 61,
+    "hg": 93,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 39.87,
+    "hg%": 60.78
+  },
+  {
+    "Bundle": "Archie Comics",
+    "Aliases": [
+      "Archie Comics Publications, Inc.",
+      "ACP Inc.",
+      "ACP Inc",
+      "ACPI",
+      "ACPInc.",
+      "ACPInc"
+    ],
+    "Size": 49,
+    "wa": 19,
+    "ha": 30,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 38.78,
+    "ha%": 61.22,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Arifureta Series",
+    "Aliases": [],
+    "Size": 16,
+    "wa": 13,
+    "ha": 3,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 81.25,
+    "ha%": 18.75,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Armpit Fetish Focused Series",
+    "Aliases": [
+      "Armpit Fandom Centered Content Made by and/or for the Armpit Community",
+      "The Perfect Bundle for Armpit Lovers and Only Armpit Lovers",
+      "Armpit Fetish",
+      "Armpits",
+      "Armpit"
+    ],
+    "Size": 6,
+    "wa": 6,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 100.0,
+    "ha%": 0.0,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Artix Entertainment",
+    "Aliases": [],
+    "Size": 10,
+    "wa": 0,
+    "ha": 0,
+    "wg": 4,
+    "hg": 7,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 40.0,
+    "hg%": 70.0
+  },
+  {
+    "Bundle": "Artwork",
+    "Aliases": [
+      "Artworks",
+      "Artbooks"
+    ],
+    "Size": 5,
+    "wa": 5,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 100.0,
+    "ha%": 0.0,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "ASCII Media Works",
+    "Aliases": [
+      "ASCII"
+    ],
+    "Size": 2814,
+    "wa": 1543,
+    "ha": 687,
+    "wg": 785,
+    "hg": 255,
+    "wa%": 54.83,
+    "ha%": 24.41,
+    "wg%": 27.9,
+    "hg%": 9.06
+  },
+  {
+    "Bundle": "ASMR",
+    "Aliases": [
+      "Autonomous Sensory Meridian Response",
+      "Auto Sensory Meridian Response"
+    ],
+    "Size": 12,
+    "wa": 5,
+    "ha": 0,
+    "wg": 7,
+    "hg": 0,
+    "wa%": 41.67,
+    "ha%": 0.0,
+    "wg%": 58.33,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "ASOBIMO, Inc.",
+    "Aliases": [],
+    "Size": 6,
+    "wa": 0,
+    "ha": 0,
+    "wg": 5,
+    "hg": 2,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 83.33,
+    "hg%": 33.33
+  },
+  {
+    "Bundle": "Assassin's Creed Chronicles",
+    "Aliases": [],
+    "Size": 3,
+    "wa": 0,
+    "ha": 0,
+    "wg": 1,
+    "hg": 2,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 33.33,
+    "hg%": 66.67
+  },
+  {
+    "Bundle": "Assassin's Creed Series",
+    "Aliases": [
+      "Assassins Creed Series",
+      "AssCreed Series",
+      "AC Series"
+    ],
+    "Size": 70,
+    "wa": 0,
+    "ha": 1,
+    "wg": 23,
+    "hg": 47,
+    "wa%": 0.0,
+    "ha%": 1.43,
+    "wg%": 32.86,
+    "hg%": 67.14
+  },
+  {
+    "Bundle": "Assault Lily",
+    "Aliases": [],
+    "Size": 14,
+    "wa": 14,
+    "ha": 0,
+    "wg": 2,
+    "hg": 0,
+    "wa%": 100.0,
+    "ha%": 0.0,
+    "wg%": 14.29,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Astro Boy Series",
+    "Aliases": [
+      "Tetsuwan Atom Series"
+    ],
+    "Size": 17,
+    "wa": 4,
+    "ha": 13,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 23.53,
+    "ha%": 76.47,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Ateam Inc.",
+    "Aliases": [],
+    "Size": 66,
+    "wa": 0,
+    "ha": 0,
+    "wg": 50,
+    "hg": 17,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 75.76,
+    "hg%": 25.76
+  },
+  {
+    "Bundle": "Atelier",
+    "Aliases": [
+      "Atelier Series"
+    ],
+    "Size": 91,
+    "wa": 13,
+    "ha": 3,
+    "wg": 60,
+    "hg": 31,
+    "wa%": 14.29,
+    "ha%": 3.3,
+    "wg%": 65.93,
+    "hg%": 34.07
+  },
+  {
+    "Bundle": "Atelier Iris Series",
+    "Aliases": [],
+    "Size": 5,
+    "wa": 0,
+    "ha": 0,
+    "wg": 4,
+    "hg": 1,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 80.0,
+    "hg%": 20.0
+  },
+  {
+    "Bundle": "Atelier Kaguya",
+    "Aliases": [],
+    "Size": 44,
+    "wa": 24,
+    "ha": 0,
+    "wg": 20,
+    "hg": 0,
+    "wa%": 54.55,
+    "ha%": 0.0,
+    "wg%": 45.45,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "ATLUS",
+    "Aliases": [],
+    "Size": 841,
+    "wa": 105,
+    "ha": 105,
+    "wg": 420,
+    "hg": 430,
+    "wa%": 12.49,
+    "ha%": 12.49,
+    "wg%": 49.94,
+    "hg%": 51.13
+  },
+  {
+    "Bundle": "Atsushi Ohkubo's Works",
+    "Aliases": [
+      "Atsushi Ohkubo"
+    ],
+    "Size": 110,
+    "wa": 44,
+    "ha": 70,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 40.0,
+    "ha%": 63.64,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Avatar Series",
+    "Aliases": [
+      "Avatar"
+    ],
+    "Size": 72,
+    "wa": 31,
+    "ha": 40,
+    "wg": 0,
+    "hg": 1,
+    "wa%": 43.06,
+    "ha%": 55.56,
+    "wg%": 0.0,
+    "hg%": 1.39
+  },
+  {
+    "Bundle": "Avex Entertainment",
+    "Aliases": [],
+    "Size": 278,
+    "wa": 127,
+    "ha": 113,
+    "wg": 16,
+    "hg": 25,
+    "wa%": 45.68,
+    "ha%": 40.65,
+    "wg%": 5.76,
+    "hg%": 8.99
+  },
+  {
+    "Bundle": "AXsiZ",
+    "Aliases": [],
+    "Size": 34,
+    "wa": 27,
+    "ha": 2,
+    "wg": 5,
+    "hg": 0,
+    "wa%": 79.41,
+    "ha%": 5.88,
+    "wg%": 14.71,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Baen Books",
+    "Aliases": [],
+    "Size": 2,
+    "wa": 2,
+    "ha": 0,
+    "wg": 1,
+    "hg": 0,
+    "wa%": 100.0,
+    "ha%": 0.0,
+    "wg%": 50.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Baku Ane Series",
+    "Aliases": [
+      "Baku Ane"
+    ],
+    "Size": 7,
+    "wa": 7,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 100.0,
+    "ha%": 0.0,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Bakugan",
+    "Aliases": [
+      "Bakugan Series",
+      "BKGN"
+    ],
+    "Size": 32,
+    "wa": 12,
+    "ha": 22,
+    "wg": 4,
+    "hg": 7,
+    "wa%": 37.5,
+    "ha%": 68.75,
+    "wg%": 12.5,
+    "hg%": 21.88
+  },
+  {
+    "Bundle": "Bakumatsu Fiction",
+    "Aliases": [],
+    "Size": 313,
+    "wa": 83,
+    "ha": 212,
+    "wg": 0,
+    "hg": 28,
+    "wa%": 26.52,
+    "ha%": 67.73,
+    "wg%": 0.0,
+    "hg%": 8.95
+  },
+  {
+    "Bundle": "Bandai Namco",
+    "Aliases": [
+      "Namco",
+      "Namco Bandai",
+      "Scamco",
+      "Bamco"
+    ],
+    "Size": 4016,
+    "wa": 1864,
+    "ha": 1233,
+    "wg": 980,
+    "hg": 723,
+    "wa%": 46.41,
+    "ha%": 30.7,
+    "wg%": 24.4,
+    "hg%": 18.0
+  },
+  {
+    "Bundle": "Bandai Namco Games",
+    "Aliases": [],
+    "Size": 1127,
+    "wa": 201,
+    "ha": 147,
+    "wg": 615,
+    "hg": 533,
+    "wa%": 17.83,
+    "ha%": 13.04,
+    "wg%": 54.57,
+    "hg%": 47.29
+  },
+  {
+    "Bundle": "Bande Dessin\u00e9e",
+    "Aliases": [
+      "Franco-Belgian Comics",
+      "BD Franco-Belge",
+      "BDs",
+      "Bandes Dessin\u00e9es",
+      "BD",
+      "Bande Dessinee"
+    ],
+    "Size": 106,
+    "wa": 28,
+    "ha": 63,
+    "wg": 10,
+    "hg": 17,
+    "wa%": 26.42,
+    "ha%": 59.43,
+    "wg%": 9.43,
+    "hg%": 16.04
+  },
+  {
+    "Bundle": "Bands",
+    "Aliases": [],
+    "Size": 171,
+    "wa": 15,
+    "ha": 157,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 8.77,
+    "ha%": 91.81,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "BanG Dream! Franchise",
+    "Aliases": [
+      "BanG Dream Franchise",
+      "BDF",
+      "BanG Dream! Series",
+      "BanG Dream Series"
+    ],
+    "Size": 76,
+    "wa": 40,
+    "ha": 14,
+    "wg": 44,
+    "hg": 28,
+    "wa%": 52.63,
+    "ha%": 18.42,
+    "wg%": 57.89,
+    "hg%": 36.84
+  },
+  {
+    "Bundle": "Banjo-Kazooie Series",
+    "Aliases": [
+      "Banjo Series",
+      "BK Series",
+      "Banjo Kazooie Series",
+      "Banjo"
+    ],
+    "Size": 15,
+    "wa": 0,
+    "ha": 0,
+    "wg": 5,
+    "hg": 11,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 33.33,
+    "hg%": 73.33
+  },
+  {
+    "Bundle": "Barbie Series",
+    "Aliases": [],
+    "Size": 11,
+    "wa": 6,
+    "ha": 5,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 54.55,
+    "ha%": 45.45,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Baten Kaitos",
+    "Aliases": [],
+    "Size": 54,
+    "wa": 0,
+    "ha": 0,
+    "wg": 21,
+    "hg": 34,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 38.89,
+    "hg%": 62.96
+  },
+  {
+    "Bundle": "Battle Royale Games",
+    "Aliases": [
+      "BR",
+      "Fortnite Clones"
+    ],
+    "Size": 102,
+    "wa": 0,
+    "ha": 0,
+    "wg": 53,
+    "hg": 55,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 51.96,
+    "hg%": 53.92
+  },
+  {
+    "Bundle": "Battle Royale Genre",
+    "Aliases": [],
+    "Size": 100,
+    "wa": 38,
+    "ha": 62,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 38.0,
+    "ha%": 62.0,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Battle Spirits",
+    "Aliases": [],
+    "Size": 21,
+    "wa": 8,
+    "ha": 7,
+    "wg": 11,
+    "hg": 1,
+    "wa%": 38.1,
+    "ha%": 33.33,
+    "wg%": 52.38,
+    "hg%": 4.76
+  },
+  {
+    "Bundle": "BBC",
+    "Aliases": [
+      "British Broadcasting Corporation"
+    ],
+    "Size": 78,
+    "wa": 34,
+    "ha": 48,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 43.59,
+    "ha%": 61.54,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Be My Princess Series",
+    "Aliases": [
+      "BMP Series"
+    ],
+    "Size": 9,
+    "wa": 0,
+    "ha": 0,
+    "wg": 0,
+    "hg": 9,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 0.0,
+    "hg%": 100.0
+  },
+  {
+    "Bundle": "Be x Boy GOLD",
+    "Aliases": [],
+    "Size": 9,
+    "wa": 0,
+    "ha": 9,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 0.0,
+    "ha%": 100.0,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Beans Ace",
+    "Aliases": [],
+    "Size": 16,
+    "wa": 3,
+    "ha": 13,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 18.75,
+    "ha%": 81.25,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Beat 'em Up Games",
+    "Aliases": [
+      "Beat em Up Games",
+      "Beat them Up Games",
+      "Beat 'em Up",
+      "Beat em Up",
+      "Beat them Up",
+      "Beat 'em Ups",
+      "Brawler",
+      "Beat em Ups"
+    ],
+    "Size": 278,
+    "wa": 33,
+    "ha": 10,
+    "wg": 137,
+    "hg": 144,
+    "wa%": 11.87,
+    "ha%": 3.6,
+    "wg%": 49.28,
+    "hg%": 51.8
+  },
+  {
+    "Bundle": "Bee Train",
+    "Aliases": [],
+    "Size": 79,
+    "wa": 36,
+    "ha": 44,
+    "wg": 10,
+    "hg": 17,
+    "wa%": 45.57,
+    "ha%": 55.7,
+    "wg%": 12.66,
+    "hg%": 21.52
+  },
+  {
+    "Bundle": "Beemoov",
+    "Aliases": [],
+    "Size": 51,
+    "wa": 0,
+    "ha": 1,
+    "wg": 19,
+    "hg": 31,
+    "wa%": 0.0,
+    "ha%": 1.96,
+    "wg%": 37.25,
+    "hg%": 60.78
+  },
+  {
+    "Bundle": "Beenox",
+    "Aliases": [],
+    "Size": 45,
+    "wa": 1,
+    "ha": 0,
+    "wg": 13,
+    "hg": 33,
+    "wa%": 2.22,
+    "ha%": 0.0,
+    "wg%": 28.89,
+    "hg%": 73.33
+  },
+  {
+    "Bundle": "BEMANI",
+    "Aliases": [],
+    "Size": 58,
+    "wa": 7,
+    "ha": 0,
+    "wg": 45,
+    "hg": 14,
+    "wa%": 12.07,
+    "ha%": 0.0,
+    "wg%": 77.59,
+    "hg%": 24.14
+  },
+  {
+    "Bundle": "Ben 10 Series",
+    "Aliases": [],
+    "Size": 26,
+    "wa": 11,
+    "ha": 15,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 42.31,
+    "ha%": 57.69,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Bessatsu Margaret",
+    "Aliases": [],
+    "Size": 73,
+    "wa": 37,
+    "ha": 36,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 50.68,
+    "ha%": 49.32,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Bessatsu Shounen Magazine",
+    "Aliases": [
+      "Bessatsu Shounen",
+      "Bessatsu Shonen Magazine"
+    ],
+    "Size": 196,
+    "wa": 96,
+    "ha": 103,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 48.98,
+    "ha%": 52.55,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Bestiality",
+    "Aliases": [
+      "Beastiality",
+      "Zoophilia"
+    ],
+    "Size": 38,
+    "wa": 21,
+    "ha": 0,
+    "wg": 17,
+    "hg": 1,
+    "wa%": 55.26,
+    "ha%": 0.0,
+    "wg%": 44.74,
+    "hg%": 2.63
+  },
+  {
+    "Bundle": "Bethesda",
+    "Aliases": [],
+    "Size": 188,
+    "wa": 0,
+    "ha": 1,
+    "wg": 85,
+    "hg": 135,
+    "wa%": 0.0,
+    "ha%": 0.53,
+    "wg%": 45.21,
+    "hg%": 71.81
+  },
+  {
+    "Bundle": "Betsucomi",
+    "Aliases": [],
+    "Size": 30,
+    "wa": 8,
+    "ha": 22,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 26.67,
+    "ha%": 73.33,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Beyblade Series",
+    "Aliases": [],
+    "Size": 92,
+    "wa": 12,
+    "ha": 80,
+    "wg": 2,
+    "hg": 3,
+    "wa%": 13.04,
+    "ha%": 86.96,
+    "wg%": 2.17,
+    "hg%": 3.26
+  },
+  {
+    "Bundle": "BF (Beta) Series",
+    "Aliases": [],
+    "Size": 50,
+    "wa": 0,
+    "ha": 0,
+    "wg": 0,
+    "hg": 50,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 0.0,
+    "hg%": 100.0
+  },
+  {
+    "Bundle": "Bibury",
+    "Aliases": [],
+    "Size": 27,
+    "wa": 7,
+    "ha": 4,
+    "wg": 15,
+    "hg": 1,
+    "wa%": 25.93,
+    "ha%": 14.81,
+    "wg%": 55.56,
+    "hg%": 3.7
+  },
+  {
+    "Bundle": "Big Comic Spirits",
+    "Aliases": [],
+    "Size": 86,
+    "wa": 33,
+    "ha": 53,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 38.37,
+    "ha%": 61.63,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Big Gangan",
+    "Aliases": [],
+    "Size": 298,
+    "wa": 151,
+    "ha": 126,
+    "wg": 9,
+    "hg": 16,
+    "wa%": 50.67,
+    "ha%": 42.28,
+    "wg%": 3.02,
+    "hg%": 5.37
+  },
+  {
+    "Bundle": "Big Hit Entertainment",
+    "Aliases": [
+      "Big Hit"
+    ],
+    "Size": 31,
+    "wa": 6,
+    "ha": 25,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 19.35,
+    "ha%": 80.65,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "BioShock Series",
+    "Aliases": [],
+    "Size": 17,
+    "wa": 0,
+    "ha": 0,
+    "wg": 7,
+    "hg": 10,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 41.18,
+    "hg%": 58.82
+  },
+  {
+    "Bundle": "BioWare",
+    "Aliases": [],
+    "Size": 153,
+    "wa": 4,
+    "ha": 1,
+    "wg": 67,
+    "hg": 90,
+    "wa%": 2.61,
+    "ha%": 0.65,
+    "wg%": 43.79,
+    "hg%": 58.82
+  },
+  {
+    "Bundle": "Black Clover Series",
+    "Aliases": [
+      "BC Series"
+    ],
+    "Size": 97,
+    "wa": 38,
+    "ha": 61,
+    "wg": 1,
+    "hg": 0,
+    "wa%": 39.18,
+    "ha%": 62.89,
+    "wg%": 1.03,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "BlackMonkey-Pro",
+    "Aliases": [
+      "Herculion",
+      "BLits",
+      "BlackMonkeyPro"
+    ],
+    "Size": 58,
+    "wa": 0,
+    "ha": 0,
+    "wg": 6,
+    "hg": 52,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 10.34,
+    "hg%": 89.66
+  },
+  {
+    "Bundle": "Black\u2605Rock Shooter Series",
+    "Aliases": [
+      "BRSS",
+      "Black Rock Shooter Series",
+      "BRS Series"
+    ],
+    "Size": 22,
+    "wa": 13,
+    "ha": 1,
+    "wg": 6,
+    "hg": 2,
+    "wa%": 59.09,
+    "ha%": 4.55,
+    "wg%": 27.27,
+    "hg%": 9.09
+  },
+  {
+    "Bundle": "BLADE",
+    "Aliases": [],
+    "Size": 15,
+    "wa": 13,
+    "ha": 2,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 86.67,
+    "ha%": 13.33,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "BlazBlue Series",
+    "Aliases": [
+      "BlazBlue"
+    ],
+    "Size": 66,
+    "wa": 22,
+    "ha": 23,
+    "wg": 35,
+    "hg": 31,
+    "wa%": 33.33,
+    "ha%": 34.85,
+    "wg%": 53.03,
+    "hg%": 46.97
+  },
+  {
+    "Bundle": "Bleach Series",
+    "Aliases": [],
+    "Size": 195,
+    "wa": 65,
+    "ha": 132,
+    "wg": 1,
+    "hg": 1,
+    "wa%": 33.33,
+    "ha%": 67.69,
+    "wg%": 0.51,
+    "hg%": 0.51
+  },
+  {
+    "Bundle": "Blizzard Entertainment",
+    "Aliases": [
+      "Blizzard"
+    ],
+    "Size": 240,
+    "wa": 3,
+    "ha": 2,
+    "wg": 92,
+    "hg": 153,
+    "wa%": 1.25,
+    "ha%": 0.83,
+    "wg%": 38.33,
+    "hg%": 63.75
+  },
+  {
+    "Bundle": "Bloody Roar",
+    "Aliases": [
+      "Bloody Roar Series"
+    ],
+    "Size": 5,
+    "wa": 0,
+    "ha": 0,
+    "wg": 1,
+    "hg": 4,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 20.0,
+    "hg%": 80.0
+  },
+  {
+    "Bundle": "Blue Sky Studios",
+    "Aliases": [],
+    "Size": 33,
+    "wa": 13,
+    "ha": 20,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 39.39,
+    "ha%": 60.61,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Body Swap",
+    "Aliases": [],
+    "Size": 62,
+    "wa": 37,
+    "ha": 25,
+    "wg": 1,
+    "hg": 0,
+    "wa%": 59.68,
+    "ha%": 40.32,
+    "wg%": 1.61,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Boichi's Art",
+    "Aliases": [
+      "Boichi"
+    ],
+    "Size": 55,
+    "wa": 24,
+    "ha": 33,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 43.64,
+    "ha%": 60.0,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Boku no Hero Academia Series",
+    "Aliases": [
+      "My Hero Academia Series",
+      "BNHA Series",
+      "MHA Series"
+    ],
+    "Size": 185,
+    "wa": 59,
+    "ha": 123,
+    "wg": 2,
+    "hg": 2,
+    "wa%": 31.89,
+    "ha%": 66.49,
+    "wg%": 1.08,
+    "hg%": 1.08
+  },
+  {
+    "Bundle": "Bomberman Series",
+    "Aliases": [],
+    "Size": 12,
+    "wa": 1,
+    "ha": 2,
+    "wg": 3,
+    "hg": 8,
+    "wa%": 8.33,
+    "ha%": 16.67,
+    "wg%": 25.0,
+    "hg%": 66.67
+  },
+  {
+    "Bundle": "Bomtoon",
+    "Aliases": [],
+    "Size": 97,
+    "wa": 17,
+    "ha": 80,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 17.53,
+    "ha%": 82.47,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Bones",
+    "Aliases": [],
+    "Size": 770,
+    "wa": 303,
+    "ha": 475,
+    "wg": 22,
+    "hg": 22,
+    "wa%": 39.35,
+    "ha%": 61.69,
+    "wg%": 2.86,
+    "hg%": 2.86
+  },
+  {
+    "Bundle": "Boogiepop Series",
+    "Aliases": [],
+    "Size": 21,
+    "wa": 14,
+    "ha": 9,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 66.67,
+    "ha%": 42.86,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Borderlands Series",
+    "Aliases": [
+      "BL Series"
+    ],
+    "Size": 53,
+    "wa": 0,
+    "ha": 0,
+    "wg": 24,
+    "hg": 32,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 45.28,
+    "hg%": 60.38
+  },
+  {
+    "Bundle": "Bosei Kanojo Series",
+    "Aliases": [],
+    "Size": 2,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 0,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 100.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Bouncy",
+    "Aliases": [],
+    "Size": 5,
+    "wa": 5,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 100.0,
+    "ha%": 0.0,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Boys' Love",
+    "Aliases": [
+      "Shounen Ai",
+      "MaleXMale",
+      "BL Bundle",
+      "Boys Love",
+      "MLM",
+      "Yaoi",
+      "Gay",
+      "801",
+      "BL",
+      "Fujoshi",
+      "Fudanshi"
+    ],
+    "Size": 1731,
+    "wa": 87,
+    "ha": 1135,
+    "wg": 65,
+    "hg": 461,
+    "wa%": 5.03,
+    "ha%": 65.57,
+    "wg%": 3.76,
+    "hg%": 26.63
+  },
+  {
+    "Bundle": "Brain's Base",
+    "Aliases": [],
+    "Size": 480,
+    "wa": 201,
+    "ha": 259,
+    "wg": 18,
+    "hg": 20,
+    "wa%": 41.88,
+    "ha%": 53.96,
+    "wg%": 3.75,
+    "hg%": 4.17
+  },
+  {
+    "Bundle": "Brandon Sanderson's Works",
+    "Aliases": [
+      "Brandon Sanderson"
+    ],
+    "Size": 40,
+    "wa": 18,
+    "ha": 23,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 45.0,
+    "ha%": 57.5,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Bravely Series",
+    "Aliases": [
+      "Bravely"
+    ],
+    "Size": 38,
+    "wa": 0,
+    "ha": 0,
+    "wg": 21,
+    "hg": 17,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 55.26,
+    "hg%": 44.74
+  },
+  {
+    "Bundle": "Brazilian Media",
+    "Aliases": [
+      "Brazilian Bundle",
+      "Brasil Bundle",
+      "Bundle Brasileiro",
+      "Brazuca",
+      "Made in Brazil",
+      "Brazil Bundle",
+      "Come to Brazil",
+      "Brazil",
+      "Brasil",
+      ":flag_br:"
+    ],
+    "Size": 153,
+    "wa": 44,
+    "ha": 103,
+    "wg": 4,
+    "hg": 4,
+    "wa%": 28.76,
+    "ha%": 67.32,
+    "wg%": 2.61,
+    "hg%": 2.61
+  },
+  {
+    "Bundle": "Breath of Fire",
+    "Aliases": [
+      "BoF",
+      "Breath of Fire Series"
+    ],
+    "Size": 22,
+    "wa": 0,
+    "ha": 2,
+    "wg": 11,
+    "hg": 12,
+    "wa%": 0.0,
+    "ha%": 9.09,
+    "wg%": 50.0,
+    "hg%": 54.55
+  },
+  {
+    "Bundle": "Brianna Lei's Works",
+    "Aliases": [
+      "Brianna Lei"
+    ],
+    "Size": 10,
+    "wa": 0,
+    "ha": 0,
+    "wg": 7,
+    "hg": 4,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 70.0,
+    "hg%": 40.0
+  },
+  {
+    "Bundle": "Broccoli",
+    "Aliases": [],
+    "Size": 116,
+    "wa": 44,
+    "ha": 53,
+    "wg": 33,
+    "hg": 23,
+    "wa%": 37.93,
+    "ha%": 45.69,
+    "wg%": 28.45,
+    "hg%": 19.83
+  },
+  {
+    "Bundle": "Browser Games",
+    "Aliases": [
+      "Web Games"
+    ],
+    "Size": 1327,
+    "wa": 88,
+    "ha": 84,
+    "wg": 926,
+    "hg": 408,
+    "wa%": 6.63,
+    "ha%": 6.33,
+    "wg%": 69.78,
+    "hg%": 30.75
+  },
+  {
+    "Bundle": "Bryan Lee O'Malley's Works",
+    "Aliases": [
+      "Bryan Lee O'Malley"
+    ],
+    "Size": 31,
+    "wa": 16,
+    "ha": 15,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 51.61,
+    "ha%": 48.39,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "BTS Bundle",
+    "Aliases": [],
+    "Size": 33,
+    "wa": 1,
+    "ha": 10,
+    "wg": 14,
+    "hg": 19,
+    "wa%": 3.03,
+    "ha%": 30.3,
+    "wg%": 42.42,
+    "hg%": 57.58
+  },
+  {
+    "Bundle": "Buffyverse",
+    "Aliases": [],
+    "Size": 22,
+    "wa": 14,
+    "ha": 8,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 63.64,
+    "ha%": 36.36,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Bullet Hell",
+    "Aliases": [
+      "Danmaku",
+      "Manic Shooters"
+    ],
+    "Size": 488,
+    "wa": 54,
+    "ha": 0,
+    "wg": 396,
+    "hg": 181,
+    "wa%": 11.07,
+    "ha%": 0.0,
+    "wg%": 81.15,
+    "hg%": 37.09
+  },
+  {
+    "Bundle": "BUNBUN's Art",
+    "Aliases": [
+      "Abec's Art",
+      "BUNBUN",
+      "Abec"
+    ],
+    "Size": 130,
+    "wa": 76,
+    "ha": 33,
+    "wg": 19,
+    "hg": 3,
+    "wa%": 58.46,
+    "ha%": 25.38,
+    "wg%": 14.62,
+    "hg%": 2.31
+  },
+  {
+    "Bundle": "Bunnywalker",
+    "Aliases": [
+      "Bunny Walker"
+    ],
+    "Size": 98,
+    "wa": 90,
+    "ha": 1,
+    "wg": 8,
+    "hg": 0,
+    "wa%": 91.84,
+    "ha%": 1.02,
+    "wg%": 8.16,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Buriki Clock",
+    "Aliases": [],
+    "Size": 5,
+    "wa": 0,
+    "ha": 0,
+    "wg": 3,
+    "hg": 2,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 60.0,
+    "hg%": 40.0
+  },
+  {
+    "Bundle": "Bushiroad",
+    "Aliases": [],
+    "Size": 518,
+    "wa": 239,
+    "ha": 160,
+    "wg": 250,
+    "hg": 66,
+    "wa%": 46.14,
+    "ha%": 30.89,
+    "wg%": 48.26,
+    "hg%": 12.74
+  },
+  {
+    "Bundle": "Butch Hartman's Works",
+    "Aliases": [
+      "Butch Hartman"
+    ],
+    "Size": 40,
+    "wa": 14,
+    "ha": 26,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 35.0,
+    "ha%": 65.0,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Cab",
+    "Aliases": [],
+    "Size": 4,
+    "wa": 0,
+    "ha": 4,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 0.0,
+    "ha%": 100.0,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Call of Duty",
+    "Aliases": [
+      "CoD"
+    ],
+    "Size": 30,
+    "wa": 0,
+    "ha": 0,
+    "wg": 3,
+    "hg": 27,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 10.0,
+    "hg%": 90.0
+  },
+  {
+    "Bundle": "Canadian Media",
+    "Aliases": [
+      "Canada Bundle"
+    ],
+    "Size": 346,
+    "wa": 72,
+    "ha": 143,
+    "wg": 66,
+    "hg": 85,
+    "wa%": 20.81,
+    "ha%": 41.33,
+    "wg%": 19.08,
+    "hg%": 24.57
+  },
+  {
+    "Bundle": "Capcom",
+    "Aliases": [
+      "Crapcom",
+      "Capcpom"
+    ],
+    "Size": 853,
+    "wa": 52,
+    "ha": 108,
+    "wg": 324,
+    "hg": 535,
+    "wa%": 6.1,
+    "ha%": 12.66,
+    "wg%": 37.98,
+    "hg%": 62.72
+  },
+  {
+    "Bundle": "Caravan Palace's Works",
+    "Aliases": [],
+    "Size": 3,
+    "wa": 2,
+    "ha": 2,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 66.67,
+    "ha%": 66.67,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Cardfight!! Vanguard Series",
+    "Aliases": [
+      "Cardfight Vanguard Series",
+      "CFV Series"
+    ],
+    "Size": 97,
+    "wa": 45,
+    "ha": 38,
+    "wg": 27,
+    "hg": 22,
+    "wa%": 46.39,
+    "ha%": 39.18,
+    "wg%": 27.84,
+    "hg%": 22.68
+  },
+  {
+    "Bundle": "Career Soft",
+    "Aliases": [],
+    "Size": 120,
+    "wa": 0,
+    "ha": 0,
+    "wg": 41,
+    "hg": 79,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 34.17,
+    "hg%": 65.83
+  },
+  {
+    "Bundle": "Carnby Kim's Works",
+    "Aliases": [
+      "Carnby Kim"
+    ],
+    "Size": 23,
+    "wa": 7,
+    "ha": 16,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 30.43,
+    "ha%": 69.57,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Cartoon Network",
+    "Aliases": [
+      "CN"
+    ],
+    "Size": 1177,
+    "wa": 387,
+    "ha": 805,
+    "wg": 12,
+    "hg": 14,
+    "wa%": 32.88,
+    "ha%": 68.39,
+    "wg%": 1.02,
+    "hg%": 1.19
+  },
+  {
+    "Bundle": "Castlevania",
+    "Aliases": [
+      "CV"
+    ],
+    "Size": 57,
+    "wa": 6,
+    "ha": 8,
+    "wg": 16,
+    "hg": 32,
+    "wa%": 10.53,
+    "ha%": 14.04,
+    "wg%": 28.07,
+    "hg%": 56.14
+  },
+  {
+    "Bundle": "Cation Series",
+    "Aliases": [],
+    "Size": 10,
+    "wa": 0,
+    "ha": 0,
+    "wg": 10,
+    "hg": 0,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 100.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "CBeebies",
+    "Aliases": [],
+    "Size": 21,
+    "wa": 6,
+    "ha": 15,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 28.57,
+    "ha%": 71.43,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "CD Projekt Red",
+    "Aliases": [
+      "CD Projekt S.A.",
+      "CD Projekt"
+    ],
+    "Size": 77,
+    "wa": 13,
+    "ha": 13,
+    "wg": 31,
+    "hg": 44,
+    "wa%": 16.88,
+    "ha%": 16.88,
+    "wg%": 40.26,
+    "hg%": 57.14
+  },
+  {
+    "Bundle": "Champion RED",
+    "Aliases": [],
+    "Size": 93,
+    "wa": 68,
+    "ha": 25,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 73.12,
+    "ha%": 26.88,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Channel Awesome",
+    "Aliases": [
+      "Criticverse"
+    ],
+    "Size": 2,
+    "wa": 0,
+    "ha": 2,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 0.0,
+    "ha%": 100.0,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Chaos Chronicle Series",
+    "Aliases": [],
+    "Size": 5,
+    "wa": 3,
+    "ha": 2,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 60.0,
+    "ha%": 40.0,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Chaos Rings Series",
+    "Aliases": [],
+    "Size": 15,
+    "wa": 0,
+    "ha": 0,
+    "wg": 8,
+    "hg": 7,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 53.33,
+    "hg%": 46.67
+  },
+  {
+    "Bundle": "Charisma Records",
+    "Aliases": [],
+    "Size": 8,
+    "wa": 2,
+    "ha": 8,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 25.0,
+    "ha%": 100.0,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "CHARON Universe",
+    "Aliases": [
+      "CHARON",
+      "CHARON's Works"
+    ],
+    "Size": 36,
+    "wa": 0,
+    "ha": 0,
+    "wg": 33,
+    "hg": 3,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 91.67,
+    "hg%": 8.33
+  },
+  {
+    "Bundle": "Cheri+",
+    "Aliases": [],
+    "Size": 19,
+    "wa": 1,
+    "ha": 18,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 5.26,
+    "ha%": 94.74,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Cheritz",
+    "Aliases": [],
+    "Size": 26,
+    "wa": 0,
+    "ha": 0,
+    "wg": 7,
+    "hg": 19,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 26.92,
+    "hg%": 73.08
+  },
+  {
+    "Bundle": "Chespirito",
+    "Aliases": [],
+    "Size": 10,
+    "wa": 3,
+    "ha": 7,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 30.0,
+    "ha%": 70.0,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Chippai",
+    "Aliases": [],
+    "Size": 5,
+    "wa": 5,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 100.0,
+    "ha%": 0.0,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Christmas Specials",
+    "Aliases": [
+      "Christmas",
+      "Xmas Specials",
+      "Xmas"
+    ],
+    "Size": 52,
+    "wa": 9,
+    "ha": 43,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 17.31,
+    "ha%": 82.69,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Chrono",
+    "Aliases": [
+      "Chrono Series"
+    ],
+    "Size": 18,
+    "wa": 0,
+    "ha": 0,
+    "wg": 7,
+    "hg": 12,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 38.89,
+    "hg%": 66.67
+  },
+  {
+    "Bundle": "Civilization",
+    "Aliases": [
+      "Civ Series",
+      "Civilization Series",
+      "Sid Meier's Civilization",
+      "Civ"
+    ],
+    "Size": 11,
+    "wa": 0,
+    "ha": 0,
+    "wg": 3,
+    "hg": 8,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 27.27,
+    "hg%": 72.73
+  },
+  {
+    "Bundle": "CLAMP",
+    "Aliases": [],
+    "Size": 171,
+    "wa": 96,
+    "ha": 93,
+    "wg": 0,
+    "hg": 0,
+    "wa%": 56.14,
+    "ha%": 54.39,
+    "wg%": 0.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Clock Tower Series",
+    "Aliases": [],
+    "Size": 6,
+    "wa": 0,
+    "ha": 0,
+    "wg": 4,
+    "hg": 2,
+    "wa%": 0.0,
+    "ha%": 0.0,
+    "wg%": 66.67,
+    "hg%": 33.33
+  },
+  {
+    "Bundle": "Clock Up",
+    "Aliases": [],
+    "Size": 12,
+    "wa": 8,
+    "ha": 1,
+    "wg": 3,
+    "hg": 0,
+    "wa%": 66.67,
+    "ha%": 8.33,
+    "wg%": 25.0,
+    "hg%": 0.0
+  },
+  {
+    "Bundle": "Cloud22",
+    "Aliases": [],
+    "Size": 87,
+    "wa": 57,
+    "ha": 12,
+    "wg": 44,
+    "hg": 12,
+    "wa%": 65.52,
+    "ha%": 13.79,
+    "wg%": 50.57,
+    "hg%": 13.79
+  }
+]
