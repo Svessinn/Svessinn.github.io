@@ -7824,5 +7824,2730 @@
     "hap": "2.53",
     "wgp": "93.67",
     "hgp": "6.33"
+  },
+	{
+    "Bundle": "ICHI Corporation",
+    "Aliases": [],
+    "Size": 20,
+    "wa": 0,
+    "ha": 20,
+    "wg": 0,
+    "hg": 0,
+    "wap": "0.0",
+    "hap": "100.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "iD Software",
+    "Aliases": [],
+    "Size": 29,
+    "wa": 0,
+    "ha": 1,
+    "wg": 11,
+    "hg": 19,
+    "wap": "0.0",
+    "hap": "3.45",
+    "wgp": "37.93",
+    "hgp": "65.52"
+  },
+  {
+    "Bundle": "Idea Factory",
+    "Aliases": [
+      "!f"
+    ],
+    "Size": 462,
+    "wa": 53,
+    "ha": 69,
+    "wg": 230,
+    "hg": 165,
+    "wap": "11.47",
+    "hap": "14.94",
+    "wgp": "49.78",
+    "hgp": "35.71"
+  },
+  {
+    "Bundle": "ido's Danmakufu",
+    "Aliases": [
+      "ido"
+    ],
+    "Size": 16,
+    "wa": 0,
+    "ha": 0,
+    "wg": 16,
+    "hg": 0,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "100.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Idols",
+    "Aliases": [],
+    "Size": 1470,
+    "wa": 704,
+    "ha": 439,
+    "wg": 735,
+    "hg": 353,
+    "wap": "47.89",
+    "hap": "29.86",
+    "wgp": "50.0",
+    "hgp": "24.01"
+  },
+  {
+    "Bundle": "IDW Publishing",
+    "Aliases": [
+      "Idea and Design Works",
+      "IDW"
+    ],
+    "Size": 829,
+    "wa": 210,
+    "ha": 464,
+    "wg": 87,
+    "hg": 126,
+    "wap": "25.33",
+    "hap": "55.97",
+    "wgp": "10.49",
+    "hgp": "15.2"
+  },
+  {
+    "Bundle": "IG Port",
+    "Aliases": [],
+    "Size": 1518,
+    "wa": 670,
+    "ha": 801,
+    "wg": 109,
+    "hg": 87,
+    "wap": "44.14",
+    "hap": "52.77",
+    "wgp": "7.18",
+    "hgp": "5.73"
+  },
+  {
+    "Bundle": "ihr hertZ",
+    "Aliases": [],
+    "Size": 4,
+    "wa": 0,
+    "ha": 4,
+    "wg": 0,
+    "hg": 0,
+    "wap": "0.0",
+    "hap": "100.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Ikusa Megami Series",
+    "Aliases": [
+      "Ikusa Megami",
+      "Battle Goddess Series"
+    ],
+    "Size": 9,
+    "wa": 0,
+    "ha": 0,
+    "wg": 8,
+    "hg": 1,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "88.89",
+    "hgp": "11.11"
+  },
+  {
+    "Bundle": "Ik\u00e9men Series",
+    "Aliases": [
+      "Ikemen Series"
+    ],
+    "Size": 102,
+    "wa": 0,
+    "ha": 0,
+    "wg": 1,
+    "hg": 101,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "0.98",
+    "hgp": "99.02"
+  },
+  {
+    "Bundle": "Image & Form",
+    "Aliases": [],
+    "Size": 3,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 2,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "66.67",
+    "hgp": "66.67"
+  },
+  {
+    "Bundle": "Image Comics",
+    "Aliases": [],
+    "Size": 84,
+    "wa": 30,
+    "ha": 54,
+    "wg": 1,
+    "hg": 2,
+    "wap": "35.71",
+    "hap": "64.29",
+    "wgp": "1.19",
+    "hgp": "2.38"
+  },
+  {
+    "Bundle": "Imageepoch",
+    "Aliases": [],
+    "Size": 86,
+    "wa": 14,
+    "ha": 9,
+    "wg": 60,
+    "hg": 26,
+    "wap": "16.28",
+    "hap": "10.47",
+    "wgp": "69.77",
+    "hgp": "30.23"
+  },
+  {
+    "Bundle": "Imouto Paradise! Series",
+    "Aliases": [
+      "ImoPara Series",
+      "Imouto Paradise Series",
+      "ImoPara"
+    ],
+    "Size": 15,
+    "wa": 0,
+    "ha": 0,
+    "wg": 15,
+    "hg": 0,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "100.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Inazuma Eleven Series",
+    "Aliases": [
+      "IE Series",
+      "Ina11"
+    ],
+    "Size": 171,
+    "wa": 33,
+    "ha": 134,
+    "wg": 30,
+    "hg": 130,
+    "wap": "19.3",
+    "hap": "78.36",
+    "wgp": "17.54",
+    "hgp": "76.02"
+  },
+  {
+    "Bundle": "Incest & NBR",
+    "Aliases": [
+      "It's Not Like We're Blood Related or Anything",
+      "Incest and Not Blood Related",
+      "Sweet Home Alabama",
+      "Incest and NBR",
+      "NBR and Incest",
+      "NBR & Incest",
+      "I&NBR",
+      "NBR&I",
+      "Incest",
+      "NBR",
+      "Inseki",
+      "Wincest"
+    ],
+    "Size": 565,
+    "wa": 294,
+    "ha": 98,
+    "wg": 145,
+    "hg": 35,
+    "wap": "52.04",
+    "hap": "17.35",
+    "wgp": "25.66",
+    "hgp": "6.19"
+  },
+  {
+    "Bundle": "Indie Games",
+    "Aliases": [
+      "Indie",
+      "Indies"
+    ],
+    "Size": 3675,
+    "wa": 68,
+    "ha": 22,
+    "wg": 2272,
+    "hg": 1707,
+    "wap": "1.85",
+    "hap": "0.6",
+    "wgp": "61.82",
+    "hgp": "46.45"
+  },
+  {
+    "Bundle": "inFAMOUS Series",
+    "Aliases": [
+      "iF"
+    ],
+    "Size": 8,
+    "wa": 0,
+    "ha": 0,
+    "wg": 4,
+    "hg": 4,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "50.0",
+    "hgp": "50.0"
+  },
+  {
+    "Bundle": "Infinity Series",
+    "Aliases": [],
+    "Size": 18,
+    "wa": 0,
+    "ha": 0,
+    "wg": 14,
+    "hg": 4,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "77.78",
+    "hgp": "22.22"
+  },
+  {
+    "Bundle": "Inio Asano",
+    "Aliases": [],
+    "Size": 19,
+    "wa": 8,
+    "ha": 11,
+    "wg": 0,
+    "hg": 0,
+    "wap": "42.11",
+    "hap": "57.89",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "InnerSloth",
+    "Aliases": [],
+    "Size": 12,
+    "wa": 0,
+    "ha": 0,
+    "wg": 3,
+    "hg": 11,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "25.0",
+    "hgp": "91.67"
+  },
+  {
+    "Bundle": "Innocent Grey",
+    "Aliases": [],
+    "Size": 32,
+    "wa": 0,
+    "ha": 0,
+    "wg": 25,
+    "hg": 7,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "78.12",
+    "hgp": "21.88"
+  },
+  {
+    "Bundle": "Insomniac Games",
+    "Aliases": [],
+    "Size": 31,
+    "wa": 0,
+    "ha": 0,
+    "wg": 7,
+    "hg": 25,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "22.58",
+    "hgp": "80.65"
+  },
+  {
+    "Bundle": "Intelligent Systems",
+    "Aliases": [
+      "IntSys"
+    ],
+    "Size": 786,
+    "wa": 0,
+    "ha": 0,
+    "wg": 333,
+    "hg": 470,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "42.37",
+    "hgp": "59.8"
+  },
+  {
+    "Bundle": "Interactive Films",
+    "Aliases": [],
+    "Size": 5,
+    "wa": 0,
+    "ha": 0,
+    "wg": 4,
+    "hg": 2,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "80.0",
+    "hgp": "40.0"
+  },
+  {
+    "Bundle": "Inti Creates",
+    "Aliases": [],
+    "Size": 83,
+    "wa": 0,
+    "ha": 0,
+    "wg": 49,
+    "hg": 35,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "59.04",
+    "hgp": "42.17"
+  },
+  {
+    "Bundle": "Inusuku",
+    "Aliases": [],
+    "Size": 3,
+    "wa": 0,
+    "ha": 0,
+    "wg": 3,
+    "hg": 0,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "100.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "InuYasha Series",
+    "Aliases": [],
+    "Size": 133,
+    "wa": 58,
+    "ha": 75,
+    "wg": 1,
+    "hg": 0,
+    "wap": "43.61",
+    "hap": "56.39",
+    "wgp": "0.75",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "IRL Sports",
+    "Aliases": [
+      "Real Life Sports"
+    ],
+    "Size": 145,
+    "wa": 11,
+    "ha": 134,
+    "wg": 0,
+    "hg": 1,
+    "wap": "7.59",
+    "hap": "92.41",
+    "wgp": "0.0",
+    "hgp": "0.69"
+  },
+  {
+    "Bundle": "Isekai",
+    "Aliases": [
+      "Reverse Isekai"
+    ],
+    "Size": 2443,
+    "wa": 1342,
+    "ha": 931,
+    "wg": 185,
+    "hg": 102,
+    "wap": "54.93",
+    "hap": "38.11",
+    "wgp": "7.57",
+    "hgp": "4.18"
+  },
+  {
+    "Bundle": "Isekai Quartet",
+    "Aliases": [
+      "IseQuar",
+      "IQ"
+    ],
+    "Size": 309,
+    "wa": 168,
+    "ha": 148,
+    "wg": 0,
+    "hg": 0,
+    "wap": "54.37",
+    "hap": "47.9",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Isuna Hasekura's Works",
+    "Aliases": [
+      "Isuna Hasekura"
+    ],
+    "Size": 11,
+    "wa": 7,
+    "ha": 2,
+    "wg": 1,
+    "hg": 1,
+    "wap": "63.64",
+    "hap": "18.18",
+    "wgp": "9.09",
+    "hgp": "9.09"
+  },
+  {
+    "Bundle": "Ivalice Alliance",
+    "Aliases": [],
+    "Size": 43,
+    "wa": 0,
+    "ha": 0,
+    "wg": 14,
+    "hg": 29,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "32.56",
+    "hgp": "67.44"
+  },
+  {
+    "Bundle": "J.C.Staff",
+    "Aliases": [
+      "J.C. Staff",
+      "JC Staff"
+    ],
+    "Size": 1254,
+    "wa": 741,
+    "ha": 462,
+    "wg": 92,
+    "hg": 40,
+    "wap": "59.09",
+    "hap": "36.84",
+    "wgp": "7.34",
+    "hgp": "3.19"
+  },
+  {
+    "Bundle": "Jerma985 Series",
+    "Aliases": [
+      "Jerma Series",
+      "Jermaverse",
+      "Jerma Universe",
+      "Jerma Cinematic Universe"
+    ],
+    "Size": 4,
+    "wa": 2,
+    "ha": 4,
+    "wg": 0,
+    "hg": 0,
+    "wap": "50.0",
+    "hap": "100.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Jet Set Radio Series",
+    "Aliases": [
+      "JSR Series"
+    ],
+    "Size": 12,
+    "wa": 0,
+    "ha": 0,
+    "wg": 5,
+    "hg": 7,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "41.67",
+    "hgp": "58.33"
+  },
+  {
+    "Bundle": "Jewelpet Series",
+    "Aliases": [],
+    "Size": 27,
+    "wa": 21,
+    "ha": 6,
+    "wg": 0,
+    "hg": 0,
+    "wap": "77.78",
+    "hap": "22.22",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Jhonen Vasquez's Works",
+    "Aliases": [
+      "Jhonen Vasquez"
+    ],
+    "Size": 25,
+    "wa": 9,
+    "ha": 17,
+    "wg": 0,
+    "hg": 0,
+    "wap": "36.0",
+    "hap": "68.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Joel Guerra's Works",
+    "Aliases": [
+      "Joel G's Works",
+      "Joel G",
+      "Joel Guerra"
+    ],
+    "Size": 11,
+    "wa": 10,
+    "ha": 4,
+    "wg": 0,
+    "hg": 0,
+    "wap": "90.91",
+    "hap": "36.36",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "JoJo's Bizarre Adventure",
+    "Aliases": [
+      "JoJos Bizarre Adventure",
+      "JoJo no Kimyou na Bouken",
+      "JJBA",
+      "JoJo"
+    ],
+    "Size": 208,
+    "wa": 50,
+    "ha": 167,
+    "wg": 0,
+    "hg": 1,
+    "wap": "24.04",
+    "hap": "80.29",
+    "wgp": "0.0",
+    "hgp": "0.48"
+  },
+  {
+    "Bundle": "JOY RIDE's Works",
+    "Aliases": [
+      "JOY RIDE"
+    ],
+    "Size": 14,
+    "wa": 14,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wap": "100.0",
+    "hap": "0.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "JSK Studio",
+    "Aliases": [],
+    "Size": 2,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 0,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "100.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Jugdral Series",
+    "Aliases": [
+      "Jugdral"
+    ],
+    "Size": 86,
+    "wa": 0,
+    "ha": 0,
+    "wg": 36,
+    "hg": 50,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "41.86",
+    "hgp": "58.14"
+  },
+  {
+    "Bundle": "Jump Magazines",
+    "Aliases": [
+      "Jump"
+    ],
+    "Size": 5003,
+    "wa": 1748,
+    "ha": 3277,
+    "wg": 33,
+    "hg": 200,
+    "wap": "34.94",
+    "hap": "65.5",
+    "wgp": "0.66",
+    "hgp": "4.0"
+  },
+  {
+    "Bundle": "Jump Square",
+    "Aliases": [
+      "Jump SQ"
+    ],
+    "Size": 444,
+    "wa": 142,
+    "ha": 274,
+    "wg": 2,
+    "hg": 100,
+    "wap": "31.98",
+    "hap": "61.71",
+    "wgp": "0.45",
+    "hgp": "22.52"
+  },
+  {
+    "Bundle": "Junji Ito's Works",
+    "Aliases": [
+      "Junji Ito"
+    ],
+    "Size": 17,
+    "wa": 9,
+    "ha": 8,
+    "wg": 0,
+    "hg": 0,
+    "wap": "52.94",
+    "hap": "47.06",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Jurassic Park Series",
+    "Aliases": [],
+    "Size": 10,
+    "wa": 3,
+    "ha": 6,
+    "wg": 1,
+    "hg": 0,
+    "wap": "30.0",
+    "hap": "60.0",
+    "wgp": "10.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "JYP Entertainment",
+    "Aliases": [
+      "JYP",
+      "JYPE"
+    ],
+    "Size": 31,
+    "wa": 14,
+    "ha": 17,
+    "wg": 0,
+    "hg": 0,
+    "wap": "45.16",
+    "hap": "54.84",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "K-Pop",
+    "Aliases": [
+      "Korean Pop",
+      "KPop",
+      "K-Poop",
+      "K Pop"
+    ],
+    "Size": 224,
+    "wa": 124,
+    "ha": 100,
+    "wg": 0,
+    "hg": 0,
+    "wap": "55.36",
+    "hap": "44.64",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Kadokawa Future Publishing",
+    "Aliases": [
+      "Kadokawa"
+    ],
+    "Size": 8959,
+    "wa": 5197,
+    "ha": 2585,
+    "wg": 1495,
+    "hg": 654,
+    "wap": "58.01",
+    "hap": "28.85",
+    "wgp": "16.69",
+    "hgp": "7.3"
+  },
+  {
+    "Bundle": "Kadokawa Shoten",
+    "Aliases": [],
+    "Size": 3757,
+    "wa": 2188,
+    "ha": 1258,
+    "wg": 517,
+    "hg": 80,
+    "wap": "58.24",
+    "hap": "33.48",
+    "wgp": "13.76",
+    "hgp": "2.13"
+  },
+  {
+    "Bundle": "Kagura Games",
+    "Aliases": [],
+    "Size": 48,
+    "wa": 10,
+    "ha": 0,
+    "wg": 46,
+    "hg": 1,
+    "wap": "20.83",
+    "hap": "0.0",
+    "wgp": "95.83",
+    "hgp": "2.08"
+  },
+  {
+    "Bundle": "Kaiju",
+    "Aliases": [
+      "Kaiju Focused Series"
+    ],
+    "Size": 226,
+    "wa": 109,
+    "ha": 148,
+    "wg": 2,
+    "hg": 3,
+    "wap": "48.23",
+    "hap": "65.49",
+    "wgp": "0.88",
+    "hgp": "1.33"
+  },
+  {
+    "Bundle": "KAIJYU-09",
+    "Aliases": [],
+    "Size": 11,
+    "wa": 0,
+    "ha": 0,
+    "wg": 0,
+    "hg": 11,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "0.0",
+    "hgp": "100.0"
+  },
+  {
+    "Bundle": "KakaoPage",
+    "Aliases": [
+      "Kakao"
+    ],
+    "Size": 559,
+    "wa": 223,
+    "ha": 339,
+    "wg": 0,
+    "hg": 0,
+    "wap": "39.89",
+    "hap": "60.64",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Kakegurui Series",
+    "Aliases": [],
+    "Size": 31,
+    "wa": 27,
+    "ha": 4,
+    "wg": 0,
+    "hg": 0,
+    "wap": "87.1",
+    "hap": "12.9",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Kamatani Yuuki's Works",
+    "Aliases": [
+      "Kamatani Yuhki's Works",
+      "Yuuki Kamatani's Works",
+      "Yuhki Kamatani's Works",
+      "Kamatani Yuuki",
+      "Yuuki Kamatani"
+    ],
+    "Size": 17,
+    "wa": 7,
+    "ha": 13,
+    "wg": 0,
+    "hg": 0,
+    "wap": "41.18",
+    "hap": "76.47",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Kamen Rider Series",
+    "Aliases": [
+      "Masked Rider Series",
+      "KRS"
+    ],
+    "Size": 102,
+    "wa": 9,
+    "ha": 95,
+    "wg": 0,
+    "hg": 0,
+    "wap": "8.82",
+    "hap": "93.14",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Kamuo",
+    "Aliases": [],
+    "Size": 3,
+    "wa": 0,
+    "ha": 0,
+    "wg": 3,
+    "hg": 0,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "100.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Kangoku Senkan Series",
+    "Aliases": [],
+    "Size": 5,
+    "wa": 2,
+    "ha": 0,
+    "wg": 3,
+    "hg": 0,
+    "wap": "40.0",
+    "hap": "0.0",
+    "wgp": "60.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Kantoku's Works",
+    "Aliases": [
+      "Kantoku",
+      "Kantoku's Art"
+    ],
+    "Size": 50,
+    "wa": 37,
+    "ha": 5,
+    "wg": 8,
+    "hg": 0,
+    "wap": "74.0",
+    "hap": "10.0",
+    "wgp": "16.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Kara no Shoujo Series",
+    "Aliases": [
+      "KnS Series",
+      "Girl in the Shell Series"
+    ],
+    "Size": 29,
+    "wa": 0,
+    "ha": 0,
+    "wg": 22,
+    "hg": 7,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "75.86",
+    "hgp": "24.14"
+  },
+  {
+    "Bundle": "Karino Takatsu's Works",
+    "Aliases": [
+      "Karino Takatsu"
+    ],
+    "Size": 25,
+    "wa": 17,
+    "ha": 8,
+    "wg": 0,
+    "hg": 0,
+    "wap": "68.0",
+    "hap": "32.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Katamari",
+    "Aliases": [
+      "Katamari Series"
+    ],
+    "Size": 13,
+    "wa": 0,
+    "ha": 0,
+    "wg": 4,
+    "hg": 9,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "30.77",
+    "hgp": "69.23"
+  },
+  {
+    "Bundle": "Katsumi Enami's Art",
+    "Aliases": [
+      "Katsumi Enami"
+    ],
+    "Size": 90,
+    "wa": 28,
+    "ha": 18,
+    "wg": 26,
+    "hg": 18,
+    "wap": "31.11",
+    "hap": "20.0",
+    "wgp": "28.89",
+    "hgp": "20.0"
+  },
+  {
+    "Bundle": "Kawamoto Homura's Works",
+    "Aliases": [
+      "Kawamoto Homura"
+    ],
+    "Size": 36,
+    "wa": 32,
+    "ha": 4,
+    "wg": 0,
+    "hg": 0,
+    "wap": "88.89",
+    "hap": "11.11",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Kazuaki's Art",
+    "Aliases": [
+      "Kazuaki"
+    ],
+    "Size": 20,
+    "wa": 0,
+    "ha": 0,
+    "wg": 1,
+    "hg": 19,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "5.0",
+    "hgp": "95.0"
+  },
+  {
+    "Bundle": "Kazuki Yone's Art",
+    "Aliases": [
+      "Kazuki Yone"
+    ],
+    "Size": 72,
+    "wa": 9,
+    "ha": 56,
+    "wg": 0,
+    "hg": 31,
+    "wap": "12.5",
+    "hap": "77.78",
+    "wgp": "0.0",
+    "hgp": "43.06"
+  },
+  {
+    "Bundle": "Kazuma Kamachi's Works",
+    "Aliases": [
+      "Kazuma Kamachi"
+    ],
+    "Size": 185,
+    "wa": 143,
+    "ha": 47,
+    "wg": 2,
+    "hg": 0,
+    "wap": "77.3",
+    "hap": "25.41",
+    "wgp": "1.08",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Ken Akamatsu's Works",
+    "Aliases": [
+      "Ken Akamatsu"
+    ],
+    "Size": 69,
+    "wa": 54,
+    "ha": 16,
+    "wg": 0,
+    "hg": 0,
+    "wap": "78.26",
+    "hap": "23.19",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Ken ga Kimi Franchise",
+    "Aliases": [],
+    "Size": 13,
+    "wa": 0,
+    "ha": 0,
+    "wg": 1,
+    "hg": 12,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "7.69",
+    "hgp": "92.31"
+  },
+  {
+    "Bundle": "Kenganverse",
+    "Aliases": [],
+    "Size": 68,
+    "wa": 14,
+    "ha": 54,
+    "wg": 0,
+    "hg": 0,
+    "wap": "20.59",
+    "hap": "79.41",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Kenta Shinohara's Art",
+    "Aliases": [
+      "Kenta Shinohara"
+    ],
+    "Size": 39,
+    "wa": 23,
+    "ha": 17,
+    "wg": 0,
+    "hg": 0,
+    "wap": "58.97",
+    "hap": "43.59",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Kentaro Yabuki's Art",
+    "Aliases": [
+      "Kentaro Yabuki",
+      "Kentaro Yabuki's Works",
+      "Yabuki Kentarou"
+    ],
+    "Size": 73,
+    "wa": 45,
+    "ha": 28,
+    "wg": 0,
+    "hg": 0,
+    "wap": "61.64",
+    "hap": "38.36",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Kerokero Ace",
+    "Aliases": [],
+    "Size": 199,
+    "wa": 57,
+    "ha": 88,
+    "wg": 30,
+    "hg": 30,
+    "wap": "28.64",
+    "hap": "44.22",
+    "wgp": "15.08",
+    "hgp": "15.08"
+  },
+  {
+    "Bundle": "Key",
+    "Aliases": [],
+    "Size": 149,
+    "wa": 75,
+    "ha": 35,
+    "wg": 30,
+    "hg": 10,
+    "wap": "50.34",
+    "hap": "23.49",
+    "wgp": "20.13",
+    "hgp": "6.71"
+  },
+  {
+    "Bundle": "Khonjin's Works",
+    "Aliases": [
+      "Connor Lavery's Works",
+      "Khonjin",
+      "Connor Lavery"
+    ],
+    "Size": 5,
+    "wa": 1,
+    "ha": 4,
+    "wg": 0,
+    "hg": 0,
+    "wap": "20.0",
+    "hap": "80.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Kiddy",
+    "Aliases": [],
+    "Size": 5,
+    "wa": 5,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wap": "100.0",
+    "hap": "0.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Kill The Past",
+    "Aliases": [
+      "KTP"
+    ],
+    "Size": 57,
+    "wa": 1,
+    "ha": 0,
+    "wg": 21,
+    "hg": 35,
+    "wap": "1.75",
+    "hap": "0.0",
+    "wgp": "36.84",
+    "hgp": "61.4"
+  },
+  {
+    "Bundle": "Killing Games",
+    "Aliases": [
+      "Danganronpa Clones"
+    ],
+    "Size": 301,
+    "wa": 77,
+    "ha": 84,
+    "wg": 88,
+    "hg": 109,
+    "wap": "25.58",
+    "hap": "27.91",
+    "wgp": "29.24",
+    "hgp": "36.21"
+  },
+  {
+    "Bundle": "Killmonday Games AB",
+    "Aliases": [],
+    "Size": 9,
+    "wa": 0,
+    "ha": 0,
+    "wg": 3,
+    "hg": 6,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "33.33",
+    "hgp": "66.67"
+  },
+  {
+    "Bundle": "Kinami Yuki's Art",
+    "Aliases": [
+      "Kinami Yuki"
+    ],
+    "Size": 8,
+    "wa": 0,
+    "ha": 0,
+    "wg": 1,
+    "hg": 7,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "12.5",
+    "hgp": "87.5"
+  },
+  {
+    "Bundle": "Kinema Citrus",
+    "Aliases": [],
+    "Size": 182,
+    "wa": 113,
+    "ha": 64,
+    "wg": 3,
+    "hg": 9,
+    "wap": "62.09",
+    "hap": "35.16",
+    "wgp": "1.65",
+    "hgp": "4.95"
+  },
+  {
+    "Bundle": "King of Fighters Universe",
+    "Aliases": [
+      "KoF Universe"
+    ],
+    "Size": 95,
+    "wa": 0,
+    "ha": 0,
+    "wg": 33,
+    "hg": 64,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "34.74",
+    "hgp": "67.37"
+  },
+  {
+    "Bundle": "KingsIsle Entertainment",
+    "Aliases": [],
+    "Size": 60,
+    "wa": 0,
+    "ha": 0,
+    "wg": 24,
+    "hg": 37,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "40.0",
+    "hgp": "61.67"
+  },
+  {
+    "Bundle": "Kinnikuman Series",
+    "Aliases": [],
+    "Size": 25,
+    "wa": 0,
+    "ha": 25,
+    "wg": 0,
+    "hg": 0,
+    "wap": "0.0",
+    "hap": "100.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Kinoko Nasu's Works",
+    "Aliases": [
+      "Nasuverse",
+      "Kinoko Nasu"
+    ],
+    "Size": 128,
+    "wa": 56,
+    "ha": 41,
+    "wg": 51,
+    "hg": 33,
+    "wap": "43.75",
+    "hap": "32.03",
+    "wgp": "39.84",
+    "hgp": "25.78"
+  },
+  {
+    "Bundle": "Kinu Nishimura's Art",
+    "Aliases": [
+      "Kinu Nishimura"
+    ],
+    "Size": 88,
+    "wa": 12,
+    "ha": 7,
+    "wg": 25,
+    "hg": 46,
+    "wap": "13.64",
+    "hap": "7.95",
+    "wgp": "28.41",
+    "hgp": "52.27"
+  },
+  {
+    "Bundle": "Kirby",
+    "Aliases": [
+      "Kirby Series"
+    ],
+    "Size": 72,
+    "wa": 3,
+    "ha": 8,
+    "wg": 32,
+    "hg": 52,
+    "wap": "4.17",
+    "hap": "11.11",
+    "wgp": "44.44",
+    "hgp": "72.22"
+  },
+  {
+    "Bundle": "Kiseki Himura's Art",
+    "Aliases": [
+      "Kiseki Himura"
+    ],
+    "Size": 10,
+    "wa": 8,
+    "ha": 2,
+    "wg": 0,
+    "hg": 0,
+    "wap": "80.0",
+    "hap": "20.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Kitty Films",
+    "Aliases": [],
+    "Size": 98,
+    "wa": 41,
+    "ha": 57,
+    "wg": 0,
+    "hg": 0,
+    "wap": "41.84",
+    "hap": "58.16",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "KLab",
+    "Aliases": [],
+    "Size": 130,
+    "wa": 31,
+    "ha": 24,
+    "wg": 85,
+    "hg": 33,
+    "wap": "23.85",
+    "hap": "18.46",
+    "wgp": "65.38",
+    "hgp": "25.38"
+  },
+  {
+    "Bundle": "Klasky Csupo",
+    "Aliases": [],
+    "Size": 71,
+    "wa": 14,
+    "ha": 57,
+    "wg": 0,
+    "hg": 0,
+    "wap": "19.72",
+    "hap": "80.28",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Klonoa",
+    "Aliases": [
+      "Klonoa Series"
+    ],
+    "Size": 9,
+    "wa": 0,
+    "ha": 0,
+    "wg": 3,
+    "hg": 6,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "33.33",
+    "hgp": "66.67"
+  },
+  {
+    "Bundle": "Kodansha",
+    "Aliases": [
+      "Ichijinsha"
+    ],
+    "Size": 4474,
+    "wa": 2288,
+    "ha": 2029,
+    "wg": 280,
+    "hg": 250,
+    "wap": "51.14",
+    "hap": "45.35",
+    "wgp": "6.26",
+    "hgp": "5.59"
+  },
+  {
+    "Bundle": "Koei Tecmo",
+    "Aliases": [
+      "KT",
+      "Koei"
+    ],
+    "Size": 371,
+    "wa": 16,
+    "ha": 9,
+    "wg": 224,
+    "hg": 149,
+    "wap": "4.31",
+    "hap": "2.43",
+    "wgp": "60.38",
+    "hgp": "40.16"
+  },
+  {
+    "Bundle": "KOG Games",
+    "Aliases": [
+      "KOG"
+    ],
+    "Size": 122,
+    "wa": 8,
+    "ha": 6,
+    "wg": 68,
+    "hg": 57,
+    "wap": "6.56",
+    "hap": "4.92",
+    "wgp": "55.74",
+    "hgp": "46.72"
+  },
+  {
+    "Bundle": "Koge-Donbo*'s Art",
+    "Aliases": [
+      "*Koge-Donbo**",
+      "Koge-Donbo"
+    ],
+    "Size": 15,
+    "wa": 13,
+    "ha": 2,
+    "wg": 0,
+    "hg": 0,
+    "wap": "86.67",
+    "hap": "13.33",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Kojima Productions",
+    "Aliases": [
+      "KojiPro"
+    ],
+    "Size": 69,
+    "wa": 0,
+    "ha": 0,
+    "wg": 23,
+    "hg": 47,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "33.33",
+    "hgp": "68.12"
+  },
+  {
+    "Bundle": "KONAMI",
+    "Aliases": [
+      "KONMAI",
+      "573",
+      "FucKonami"
+    ],
+    "Size": 910,
+    "wa": 152,
+    "ha": 322,
+    "wg": 362,
+    "hg": 404,
+    "wap": "16.7",
+    "hap": "35.38",
+    "wgp": "39.78",
+    "hgp": "44.4"
+  },
+  {
+    "Bundle": "Konbu Wakame's Works",
+    "Aliases": [
+      "Konbu Wakame"
+    ],
+    "Size": 15,
+    "wa": 15,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wap": "100.0",
+    "hap": "0.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Konosuba Series",
+    "Aliases": [],
+    "Size": 43,
+    "wa": 31,
+    "ha": 10,
+    "wg": 3,
+    "hg": 0,
+    "wap": "72.09",
+    "hap": "23.26",
+    "wgp": "6.98",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Kouhei Horikoshi's Works",
+    "Aliases": [
+      "Kouhei Horikoshi"
+    ],
+    "Size": 178,
+    "wa": 57,
+    "ha": 122,
+    "wg": 0,
+    "hg": 0,
+    "wap": "32.02",
+    "hap": "68.54",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Kouji Kumeta's Works",
+    "Aliases": [
+      "Kouji Kumeta's Art",
+      "Kouji Kumeta"
+    ],
+    "Size": 64,
+    "wa": 44,
+    "ha": 21,
+    "wg": 0,
+    "hg": 0,
+    "wap": "68.75",
+    "hap": "32.81",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Kouji Seo's Works",
+    "Aliases": [
+      "Kouji Seo"
+    ],
+    "Size": 31,
+    "wa": 22,
+    "ha": 9,
+    "wg": 0,
+    "hg": 0,
+    "wap": "70.97",
+    "hap": "29.03",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Krafton Games",
+    "Aliases": [
+      "Krafton"
+    ],
+    "Size": 5,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 3,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "40.0",
+    "hgp": "60.0"
+  },
+  {
+    "Bundle": "Krosmoz",
+    "Aliases": [
+      "World of Twelve",
+      "Monde des Douzes"
+    ],
+    "Size": 79,
+    "wa": 21,
+    "ha": 39,
+    "wg": 18,
+    "hg": 25,
+    "wap": "26.58",
+    "hap": "49.37",
+    "wgp": "22.78",
+    "hgp": "31.65"
+  },
+  {
+    "Bundle": "Kuaikan Manhua",
+    "Aliases": [
+      "Kuaikan"
+    ],
+    "Size": 64,
+    "wa": 26,
+    "ha": 38,
+    "wg": 0,
+    "hg": 0,
+    "wap": "40.62",
+    "hap": "59.38",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Kuni no Alice Series",
+    "Aliases": [
+      "Wonderful Wonder World",
+      "KnA Series"
+    ],
+    "Size": 15,
+    "wa": 2,
+    "ha": 10,
+    "wg": 0,
+    "hg": 3,
+    "wap": "13.33",
+    "hap": "66.67",
+    "wgp": "0.0",
+    "hgp": "20.0"
+  },
+  {
+    "Bundle": "Kunihiko Ikuhara's Works",
+    "Aliases": [
+      "Kunihiko Ikuhara"
+    ],
+    "Size": 56,
+    "wa": 28,
+    "ha": 28,
+    "wg": 0,
+    "hg": 0,
+    "wap": "50.0",
+    "hap": "50.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Kunio Kato's Works",
+    "Aliases": [
+      "Kunio Kato"
+    ],
+    "Size": 2,
+    "wa": 0,
+    "ha": 2,
+    "wg": 0,
+    "hg": 0,
+    "wap": "0.0",
+    "hap": "100.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Kunio-Kun Franchise",
+    "Aliases": [
+      "Kunio-Kun"
+    ],
+    "Size": 15,
+    "wa": 0,
+    "ha": 0,
+    "wg": 10,
+    "hg": 5,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "66.67",
+    "hgp": "33.33"
+  },
+  {
+    "Bundle": "Kurage Bunch",
+    "Aliases": [],
+    "Size": 22,
+    "wa": 16,
+    "ha": 8,
+    "wg": 0,
+    "hg": 0,
+    "wap": "72.73",
+    "hap": "36.36",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Kurahana Chinatsu's Art",
+    "Aliases": [
+      "Kurahana Chinatsu"
+    ],
+    "Size": 171,
+    "wa": 13,
+    "ha": 64,
+    "wg": 32,
+    "hg": 78,
+    "wap": "7.6",
+    "hap": "37.43",
+    "wgp": "18.71",
+    "hgp": "45.61"
+  },
+  {
+    "Bundle": "Kuroyuki's Art",
+    "Aliases": [
+      "Kuroyuki"
+    ],
+    "Size": 28,
+    "wa": 0,
+    "ha": 23,
+    "wg": 0,
+    "hg": 28,
+    "wap": "0.0",
+    "hap": "82.14",
+    "wgp": "0.0",
+    "hgp": "100.0"
+  },
+  {
+    "Bundle": "Kurumadapro",
+    "Aliases": [],
+    "Size": 167,
+    "wa": 33,
+    "ha": 134,
+    "wg": 0,
+    "hg": 0,
+    "wap": "19.76",
+    "hap": "80.24",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Kyonyuu Fantasy Series",
+    "Aliases": [
+      "Funbag Fantasy Series"
+    ],
+    "Size": 13,
+    "wa": 5,
+    "ha": 1,
+    "wg": 6,
+    "hg": 1,
+    "wap": "38.46",
+    "hap": "7.69",
+    "wgp": "46.15",
+    "hgp": "7.69"
+  },
+  {
+    "Bundle": "Kyoto Animation",
+    "Aliases": [
+      "Kyoani",
+      "KA"
+    ],
+    "Size": 348,
+    "wa": 232,
+    "ha": 116,
+    "wg": 1,
+    "hg": 1,
+    "wap": "66.67",
+    "hap": "33.33",
+    "wgp": "0.29",
+    "hgp": "0.29"
+  },
+  {
+    "Bundle": "L-I-B Works",
+    "Aliases": [],
+    "Size": 2,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 0,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "100.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Lab Zero",
+    "Aliases": [],
+    "Size": 47,
+    "wa": 0,
+    "ha": 0,
+    "wg": 35,
+    "hg": 12,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "74.47",
+    "hgp": "25.53"
+  },
+  {
+    "Bundle": "Laika Studios",
+    "Aliases": [],
+    "Size": 10,
+    "wa": 5,
+    "ha": 5,
+    "wg": 0,
+    "hg": 0,
+    "wap": "50.0",
+    "hap": "50.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "LaLa",
+    "Aliases": [],
+    "Size": 70,
+    "wa": 29,
+    "ha": 41,
+    "wg": 0,
+    "hg": 0,
+    "wap": "41.43",
+    "hap": "58.57",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "LAM's Art",
+    "Aliases": [
+      "Ramdayo's Art",
+      "LAM",
+      "Ramdayo",
+      "Lamily"
+    ],
+    "Size": 14,
+    "wa": 1,
+    "ha": 1,
+    "wg": 11,
+    "hg": 3,
+    "wap": "7.14",
+    "hap": "7.14",
+    "wgp": "78.57",
+    "hgp": "21.43"
+  },
+  {
+    "Bundle": "Langrisser",
+    "Aliases": [
+      "Langrisser Series"
+    ],
+    "Size": 106,
+    "wa": 0,
+    "ha": 0,
+    "wg": 38,
+    "hg": 68,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "35.85",
+    "hgp": "64.15"
+  },
+  {
+    "Bundle": "Lantis",
+    "Aliases": [],
+    "Size": 2427,
+    "wa": 1433,
+    "ha": 961,
+    "wg": 202,
+    "hg": 138,
+    "wap": "59.04",
+    "hap": "39.6",
+    "wgp": "8.32",
+    "hgp": "5.69"
+  },
+  {
+    "Bundle": "Lapin Track",
+    "Aliases": [],
+    "Size": 20,
+    "wa": 6,
+    "ha": 14,
+    "wg": 0,
+    "hg": 0,
+    "wap": "30.0",
+    "hap": "70.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Leaf",
+    "Aliases": [],
+    "Size": 83,
+    "wa": 28,
+    "ha": 23,
+    "wg": 47,
+    "hg": 20,
+    "wap": "33.73",
+    "hap": "27.71",
+    "wgp": "56.63",
+    "hgp": "24.1"
+  },
+  {
+    "Bundle": "Lebre e Coelho Series",
+    "Aliases": [],
+    "Size": 8,
+    "wa": 2,
+    "ha": 6,
+    "wg": 0,
+    "hg": 0,
+    "wap": "25.0",
+    "hap": "75.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Legacy Content",
+    "Aliases": [
+      "This bundle consists of series with characters that are in the bot, but can no longer be rolled due to requests from their publishers",
+      "Legacy",
+      "rip these chars lol",
+      "Things to Play if You Love China",
+      ":flag_cn:"
+    ],
+    "Size": 669,
+    "wa": 0,
+    "ha": 0,
+    "wg": 615,
+    "hg": 55,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "91.93",
+    "hgp": "8.22"
+  },
+  {
+    "Bundle": "Lego",
+    "Aliases": [],
+    "Size": 87,
+    "wa": 25,
+    "ha": 56,
+    "wg": 2,
+    "hg": 13,
+    "wap": "28.74",
+    "hap": "64.37",
+    "wgp": "2.3",
+    "hgp": "14.94"
+  },
+  {
+    "Bundle": "Leiji Matsumoto's Works",
+    "Aliases": [
+      "Leiji Matsumoto"
+    ],
+    "Size": 24,
+    "wa": 11,
+    "ha": 13,
+    "wg": 0,
+    "hg": 0,
+    "wap": "45.83",
+    "hap": "54.17",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Len'en Project",
+    "Aliases": [
+      "Len'en",
+      "LP"
+    ],
+    "Size": 48,
+    "wa": 2,
+    "ha": 3,
+    "wg": 43,
+    "hg": 43,
+    "wap": "4.17",
+    "hap": "6.25",
+    "wgp": "89.58",
+    "hgp": "89.58"
+  },
+  {
+    "Bundle": "Lerche",
+    "Aliases": [],
+    "Size": 496,
+    "wa": 304,
+    "ha": 140,
+    "wg": 51,
+    "hg": 28,
+    "wap": "61.29",
+    "hap": "28.23",
+    "wgp": "10.28",
+    "hgp": "5.65"
+  },
+  {
+    "Bundle": "Lethal League Series",
+    "Aliases": [],
+    "Size": 11,
+    "wa": 0,
+    "ha": 0,
+    "wg": 3,
+    "hg": 8,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "27.27",
+    "hgp": "72.73"
+  },
+  {
+    "Bundle": "Level-5",
+    "Aliases": [
+      "Level 5",
+      "Level5"
+    ],
+    "Size": 309,
+    "wa": 45,
+    "ha": 178,
+    "wg": 72,
+    "hg": 223,
+    "wap": "14.56",
+    "hap": "57.61",
+    "wgp": "23.3",
+    "hgp": "72.17"
+  },
+  {
+    "Bundle": "Lezhin Comics",
+    "Aliases": [
+      "Lezhin"
+    ],
+    "Size": 461,
+    "wa": 164,
+    "ha": 300,
+    "wg": 0,
+    "hg": 0,
+    "wap": "35.57",
+    "hap": "65.08",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "LGBT+ Themes",
+    "Aliases": [
+      "Queer Themes",
+      "LGBT Themes"
+    ],
+    "Size": 509,
+    "wa": 267,
+    "ha": 217,
+    "wg": 28,
+    "hg": 31,
+    "wap": "52.46",
+    "hap": "42.63",
+    "wgp": "5.5",
+    "hgp": "6.09"
+  },
+  {
+    "Bundle": "Libre Shuppan",
+    "Aliases": [],
+    "Size": 36,
+    "wa": 1,
+    "ha": 35,
+    "wg": 0,
+    "hg": 0,
+    "wap": "2.78",
+    "hap": "97.22",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "LIDENFILMS",
+    "Aliases": [],
+    "Size": 230,
+    "wa": 123,
+    "ha": 107,
+    "wg": 13,
+    "hg": 3,
+    "wap": "53.48",
+    "hap": "46.52",
+    "wgp": "5.65",
+    "hgp": "1.3"
+  },
+  {
+    "Bundle": "Life is Strange Series",
+    "Aliases": [
+      "LiS Series"
+    ],
+    "Size": 21,
+    "wa": 0,
+    "ha": 0,
+    "wg": 11,
+    "hg": 10,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "52.38",
+    "hgp": "47.62"
+  },
+  {
+    "Bundle": "Lifewonders",
+    "Aliases": [],
+    "Size": 192,
+    "wa": 0,
+    "ha": 0,
+    "wg": 26,
+    "hg": 171,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "13.54",
+    "hgp": "89.06"
+  },
+  {
+    "Bundle": "Lilith Soft",
+    "Aliases": [
+      "Black Lilith",
+      "Lilith Pixy",
+      "Lilith Co.",
+      "Pixy",
+      "ZIZ"
+    ],
+    "Size": 83,
+    "wa": 24,
+    "ha": 1,
+    "wg": 63,
+    "hg": 3,
+    "wap": "28.92",
+    "hap": "1.2",
+    "wgp": "75.9",
+    "hgp": "3.61"
+  },
+  {
+    "Bundle": "Lim Dall-young's works",
+    "Aliases": [
+      "Lim Dall-young",
+      "Lim Dallyoung",
+      "Im Dal-Young",
+      "MOONZERO",
+      "CDPA"
+    ],
+    "Size": 51,
+    "wa": 49,
+    "ha": 2,
+    "wg": 0,
+    "hg": 0,
+    "wap": "96.08",
+    "hap": "3.92",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "LINE Corporation",
+    "Aliases": [
+      "Naver Webtoon",
+      "WEBTOON",
+      "Line Webtoon",
+      "LINE Corp",
+      "LINE",
+      "LINE Manga",
+      "LINE Games",
+      "Naver Manga",
+      "Naver",
+      "WEEBTOWN"
+    ],
+    "Size": 1417,
+    "wa": 582,
+    "ha": 805,
+    "wg": 56,
+    "hg": 49,
+    "wap": "41.07",
+    "hap": "56.81",
+    "wgp": "3.95",
+    "hgp": "3.46"
+  },
+  {
+    "Bundle": "LISA",
+    "Aliases": [
+      "LISA Series"
+    ],
+    "Size": 14,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 12,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "14.29",
+    "hgp": "85.71"
+  },
+  {
+    "Bundle": "Literature",
+    "Aliases": [
+      "Books",
+      "Novels"
+    ],
+    "Size": 1186,
+    "wa": 487,
+    "ha": 689,
+    "wg": 26,
+    "hg": 37,
+    "wap": "41.06",
+    "hap": "58.09",
+    "wgp": "2.19",
+    "hgp": "3.12"
+  },
+  {
+    "Bundle": "Little Nightmares Series",
+    "Aliases": [],
+    "Size": 6,
+    "wa": 0,
+    "ha": 0,
+    "wg": 3,
+    "hg": 3,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "50.0",
+    "hgp": "50.0"
+  },
+  {
+    "Bundle": "LittleBigPlanet Series",
+    "Aliases": [
+      "LBP Series"
+    ],
+    "Size": 8,
+    "wa": 0,
+    "ha": 0,
+    "wg": 4,
+    "hg": 7,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "50.0",
+    "hgp": "87.5"
+  },
+  {
+    "Bundle": "Live-Action",
+    "Aliases": [
+      "Live Action",
+      "IRL Expansion Pack",
+      "IRL DLC",
+      "Western 3",
+      "IRL 2"
+    ],
+    "Size": 1692,
+    "wa": 562,
+    "ha": 1170,
+    "wg": 14,
+    "hg": 9,
+    "wap": "33.22",
+    "hap": "69.15",
+    "wgp": "0.83",
+    "hgp": "0.53"
+  },
+  {
+    "Bundle": "Lose",
+    "Aliases": [],
+    "Size": 27,
+    "wa": 0,
+    "ha": 0,
+    "wg": 27,
+    "hg": 0,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "100.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Lost Kingdoms Series",
+    "Aliases": [],
+    "Size": 2,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 0,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "100.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Lotte Campaigns",
+    "Aliases": [],
+    "Size": 5,
+    "wa": 4,
+    "ha": 1,
+    "wg": 0,
+    "hg": 0,
+    "wap": "80.0",
+    "hap": "20.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Love Conquers All Games",
+    "Aliases": [
+      "Christine Love's Works",
+      "Christine Love"
+    ],
+    "Size": 7,
+    "wa": 0,
+    "ha": 0,
+    "wg": 6,
+    "hg": 1,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "85.71",
+    "hgp": "14.29"
+  },
+  {
+    "Bundle": "Love Live!",
+    "Aliases": [
+      "Love Live! Series",
+      "Love Live Series",
+      "Love Live",
+      "LL!",
+      "LL"
+    ],
+    "Size": 120,
+    "wa": 60,
+    "ha": 7,
+    "wg": 105,
+    "hg": 4,
+    "wap": "50.0",
+    "hap": "5.83",
+    "wgp": "87.5",
+    "hgp": "3.33"
+  },
+  {
+    "Bundle": "Luck & Logic Series",
+    "Aliases": [],
+    "Size": 9,
+    "wa": 7,
+    "ha": 2,
+    "wg": 7,
+    "hg": 2,
+    "wap": "77.78",
+    "hap": "22.22",
+    "wgp": "77.78",
+    "hgp": "22.22"
+  },
+  {
+    "Bundle": "Ludosity",
+    "Aliases": [],
+    "Size": 13,
+    "wa": 0,
+    "ha": 0,
+    "wg": 8,
+    "hg": 5,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "61.54",
+    "hgp": "38.46"
+  },
+  {
+    "Bundle": "Luigi's Mansion Series",
+    "Aliases": [
+      "LMS"
+    ],
+    "Size": 50,
+    "wa": 0,
+    "ha": 0,
+    "wg": 17,
+    "hg": 35,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "34.0",
+    "hgp": "70.0"
+  },
+  {
+    "Bundle": "Luminous Arc Series",
+    "Aliases": [],
+    "Size": 16,
+    "wa": 0,
+    "ha": 0,
+    "wg": 14,
+    "hg": 2,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "87.5",
+    "hgp": "12.5"
+  },
+  {
+    "Bundle": "Lump of Sugar",
+    "Aliases": [],
+    "Size": 4,
+    "wa": 1,
+    "ha": 0,
+    "wg": 3,
+    "hg": 0,
+    "wap": "25.0",
+    "hap": "0.0",
+    "wgp": "75.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Lunar Series",
+    "Aliases": [
+      "Lunar"
+    ],
+    "Size": 10,
+    "wa": 0,
+    "ha": 0,
+    "wg": 7,
+    "hg": 3,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "70.0",
+    "hgp": "30.0"
+  },
+  {
+    "Bundle": "Lynn Okamoto's Works",
+    "Aliases": [
+      "Lynn Okamoto"
+    ],
+    "Size": 26,
+    "wa": 21,
+    "ha": 5,
+    "wg": 0,
+    "hg": 0,
+    "wap": "80.77",
+    "hap": "19.23",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Mabinogi Franchise",
+    "Aliases": [],
+    "Size": 40,
+    "wa": 0,
+    "ha": 0,
+    "wg": 27,
+    "hg": 13,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "67.5",
+    "hgp": "32.5"
+  },
+  {
+    "Bundle": "Macross",
+    "Aliases": [],
+    "Size": 56,
+    "wa": 26,
+    "ha": 29,
+    "wg": 2,
+    "hg": 0,
+    "wap": "46.43",
+    "hap": "51.79",
+    "wgp": "3.57",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Madagascar Series",
+    "Aliases": [
+      "Madagascar Cinematic Universe",
+      "MCU"
+    ],
+    "Size": 16,
+    "wa": 2,
+    "ha": 14,
+    "wg": 0,
+    "hg": 0,
+    "wap": "12.5",
+    "hap": "87.5",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Madhouse",
+    "Aliases": [],
+    "Size": 1079,
+    "wa": 489,
+    "ha": 593,
+    "wg": 33,
+    "hg": 14,
+    "wap": "45.32",
+    "hap": "54.96",
+    "wgp": "3.06",
+    "hgp": "1.3"
+  },
+  {
+    "Bundle": "Madoka Magica Series",
+    "Aliases": [
+      "MMS",
+      "Madoka Series"
+    ],
+    "Size": 130,
+    "wa": 53,
+    "ha": 6,
+    "wg": 91,
+    "hg": 1,
+    "wap": "40.77",
+    "hap": "4.62",
+    "wgp": "70.0",
+    "hgp": "0.77"
+  },
+  {
+    "Bundle": "Mag Garden",
+    "Aliases": [
+      "MAG Garden Corporation",
+      "Mag-Garden"
+    ],
+    "Size": 302,
+    "wa": 157,
+    "ha": 150,
+    "wg": 0,
+    "hg": 0,
+    "wap": "51.99",
+    "hap": "49.67",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Magazine Be x Boy",
+    "Aliases": [],
+    "Size": 25,
+    "wa": 0,
+    "ha": 25,
+    "wg": 0,
+    "hg": 0,
+    "wap": "0.0",
+    "hap": "100.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Magazine Pocket",
+    "Aliases": [],
+    "Size": 60,
+    "wa": 44,
+    "ha": 16,
+    "wg": 0,
+    "hg": 0,
+    "wap": "73.33",
+    "hap": "26.67",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "MAGES. Inc.",
+    "Aliases": [
+      "5pb. Inc.",
+      "Mages Inc.",
+      "MAGES.",
+      "MAGES Inc",
+      "MAGES",
+      "5pb.",
+      "5pb Inc",
+      "5pb",
+      "Kabushiki gaisha M\u0113jisu",
+      "MAGES.inc",
+      "Kabushiki gaisha 5pb.",
+      "The Five powered & basics"
+    ],
+    "Size": 247,
+    "wa": 68,
+    "ha": 33,
+    "wg": 123,
+    "hg": 60,
+    "wap": "27.53",
+    "hap": "13.36",
+    "wgp": "49.8",
+    "hgp": "24.29"
+  },
+  {
+    "Bundle": "Magic Capsule",
+    "Aliases": [],
+    "Size": 812,
+    "wa": 501,
+    "ha": 301,
+    "wg": 38,
+    "hg": 7,
+    "wap": "61.7",
+    "hap": "37.07",
+    "wgp": "4.68",
+    "hgp": "0.86"
+  },
+  {
+    "Bundle": "Mahjong Games",
+    "Aliases": [
+      "Mahjong"
+    ],
+    "Size": 2,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 0,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "100.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Mahou Shoujo",
+    "Aliases": [
+      "Magical Girl Bundle",
+      "Majokko Bundle",
+      "Witch-Girl Bundle",
+      "Mahou Shoujo Bundle",
+      "Magical Girl",
+      "Majokko",
+      "Witch Girl Bundle",
+      "Witch-Girl",
+      "Witch Girl"
+    ],
+    "Size": 1199,
+    "wa": 831,
+    "ha": 292,
+    "wg": 139,
+    "hg": 6,
+    "wap": "69.31",
+    "hap": "24.35",
+    "wgp": "11.59",
+    "hgp": "0.5"
+  },
+  {
+    "Bundle": "Mahou Shoujo Site Series",
+    "Aliases": [],
+    "Size": 22,
+    "wa": 19,
+    "ha": 4,
+    "wg": 0,
+    "hg": 0,
+    "wap": "86.36",
+    "hap": "18.18",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Mai Matsuura's Art",
+    "Aliases": [
+      "Mai Matsuura"
+    ],
+    "Size": 52,
+    "wa": 16,
+    "ha": 36,
+    "wg": 8,
+    "hg": 12,
+    "wap": "30.77",
+    "hap": "69.23",
+    "wgp": "15.38",
+    "hgp": "23.08"
+  },
+  {
+    "Bundle": "Mainichi Broadcasting System",
+    "Aliases": [
+      "MBS"
+    ],
+    "Size": 1871,
+    "wa": 818,
+    "ha": 1078,
+    "wg": 60,
+    "hg": 57,
+    "wap": "43.72",
+    "hap": "57.62",
+    "wgp": "3.21",
+    "hgp": "3.05"
+  },
+  {
+    "Bundle": "Maitetsu Series",
+    "Aliases": [],
+    "Size": 23,
+    "wa": 8,
+    "ha": 0,
+    "wg": 15,
+    "hg": 0,
+    "wap": "34.78",
+    "hap": "0.0",
+    "wgp": "65.22",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Majin",
+    "Aliases": [
+      "Majin Petit",
+      "Magin Label"
+    ],
+    "Size": 50,
+    "wa": 45,
+    "ha": 3,
+    "wg": 12,
+    "hg": 1,
+    "wap": "90.0",
+    "hap": "6.0",
+    "wgp": "24.0",
+    "hgp": "2.0"
+  },
+  {
+    "Bundle": "Major Series",
+    "Aliases": [],
+    "Size": 36,
+    "wa": 13,
+    "ha": 23,
+    "wg": 0,
+    "hg": 0,
+    "wap": "36.11",
+    "hap": "63.89",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Makoto Raiku's Works",
+    "Aliases": [
+      "Makoto Raiku"
+    ],
+    "Size": 52,
+    "wa": 17,
+    "ha": 35,
+    "wg": 0,
+    "hg": 0,
+    "wap": "32.69",
+    "hap": "67.31",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Makoto Shinkai's Works",
+    "Aliases": [
+      "Makoto Shinkai"
+    ],
+    "Size": 31,
+    "wa": 17,
+    "ha": 14,
+    "wg": 0,
+    "hg": 0,
+    "wap": "54.84",
+    "hap": "45.16",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Mamoru Hosoda",
+    "Aliases": [
+      "Mamoru Hosoda's Works"
+    ],
+    "Size": 22,
+    "wa": 8,
+    "ha": 15,
+    "wg": 0,
+    "hg": 0,
+    "wap": "36.36",
+    "hap": "68.18",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Man of Action",
+    "Aliases": [],
+    "Size": 35,
+    "wa": 15,
+    "ha": 21,
+    "wg": 0,
+    "hg": 0,
+    "wap": "42.86",
+    "hap": "60.0",
+    "wgp": "0.0",
+    "hgp": "0.0"
+  },
+  {
+    "Bundle": "Mana",
+    "Aliases": [
+      "Mana Series",
+      "Seiken Densetsu",
+      "Seiken Densetsu Series"
+    ],
+    "Size": 34,
+    "wa": 0,
+    "ha": 0,
+    "wg": 15,
+    "hg": 19,
+    "wap": "0.0",
+    "hap": "0.0",
+    "wgp": "44.12",
+    "hgp": "55.88"
   }
 ]
