@@ -26,7 +26,7 @@ const app = new Vue({
       return this.bundles.sort((a, b) => {
         let modifier = 1;
         if (this.currentSortDir === 'desc') modifier = -1;
-        if (this.currentSort != 'Bundle') {
+        if (this.currentSort !== 'Bundle') {
           if (a[this.currentSort] < b[this.currentSort]) return -1 * modifier;
           if (a[this.currentSort] > b[this.currentSort]) return 1 * modifier;
         };
