@@ -14066,5 +14066,2942 @@
     "hap": "013.33",
     "wgp": "044.44",
     "hgp": "053.33"
+  },
+	{
+    "Bundle": "Project No.9",
+    "Aliases": [],
+    "Size": 150,
+    "wa": 73,
+    "ha": 29,
+    "wg": 39,
+    "hg": 20,
+    "wap": "048.67",
+    "hap": "019.33",
+    "wgp": "026.00",
+    "hgp": "013.33"
+  },
+  {
+    "Bundle": "ProjectMoon",
+    "Aliases": [
+      "ProjMoon"
+    ],
+    "Size": 112,
+    "wa": 10,
+    "ha": 6,
+    "wg": 63,
+    "hg": 58,
+    "wap": "008.93",
+    "hap": "005.36",
+    "wgp": "056.25",
+    "hgp": "051.79"
+  },
+  {
+    "Bundle": "Psycho-Pass Series",
+    "Aliases": [],
+    "Size": 30,
+    "wa": 11,
+    "ha": 16,
+    "wg": 1,
+    "hg": 2,
+    "wap": "036.67",
+    "hap": "053.33",
+    "wgp": "003.33",
+    "hgp": "006.67"
+  },
+  {
+    "Bundle": "Psychonauts Series",
+    "Aliases": [],
+    "Size": 21,
+    "wa": 0,
+    "ha": 0,
+    "wg": 7,
+    "hg": 15,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "033.33",
+    "hgp": "071.43"
+  },
+  {
+    "Bundle": "Pulltop",
+    "Aliases": [],
+    "Size": 23,
+    "wa": 0,
+    "ha": 0,
+    "wg": 19,
+    "hg": 4,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "082.61",
+    "hgp": "017.39"
+  },
+  {
+    "Bundle": "Punchline Company",
+    "Aliases": [],
+    "Size": 6,
+    "wa": 0,
+    "ha": 0,
+    "wg": 4,
+    "hg": 2,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "066.67",
+    "hgp": "033.33"
+  },
+  {
+    "Bundle": "Punica",
+    "Aliases": [],
+    "Size": 3,
+    "wa": 1,
+    "ha": 2,
+    "wg": 0,
+    "hg": 0,
+    "wap": "033.33",
+    "hap": "066.67",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Purple Software",
+    "Aliases": [],
+    "Size": 36,
+    "wa": 0,
+    "ha": 0,
+    "wg": 32,
+    "hg": 4,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "088.89",
+    "hgp": "011.11"
+  },
+  {
+    "Bundle": "Puyo Puyo Series",
+    "Aliases": [],
+    "Size": 55,
+    "wa": 0,
+    "ha": 0,
+    "wg": 26,
+    "hg": 33,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "047.27",
+    "hgp": "060.00"
+  },
+  {
+    "Bundle": "Puzzle Games",
+    "Aliases": [],
+    "Size": 384,
+    "wa": 24,
+    "ha": 17,
+    "wg": 213,
+    "hg": 198,
+    "wap": "006.25",
+    "hap": "004.43",
+    "wgp": "055.47",
+    "hgp": "051.56"
+  },
+  {
+    "Bundle": "QP Series",
+    "Aliases": [
+      "QPS"
+    ],
+    "Size": 18,
+    "wa": 0,
+    "ha": 0,
+    "wg": 15,
+    "hg": 4,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "083.33",
+    "hgp": "022.22"
+  },
+  {
+    "Bundle": "Quake Series",
+    "Aliases": [],
+    "Size": 3,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 1,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "066.67",
+    "hgp": "033.33"
+  },
+  {
+    "Bundle": "Queen Bee",
+    "Aliases": [],
+    "Size": 40,
+    "wa": 40,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wap": "100.00",
+    "hap": "000.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Queen's Blade Series",
+    "Aliases": [
+      "Queen's Blade Franchise",
+      "QB"
+    ],
+    "Size": 31,
+    "wa": 31,
+    "ha": 0,
+    "wg": 1,
+    "hg": 0,
+    "wap": "100.00",
+    "hap": "000.00",
+    "wgp": "003.23",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Quentin Tarantino",
+    "Aliases": [
+      "Tarantino Movies",
+      "Tarantino's Works",
+      "TaranKino",
+      "Quentin Tarantino's Works",
+      "Tarantino"
+    ],
+    "Size": 12,
+    "wa": 3,
+    "ha": 9,
+    "wg": 0,
+    "hg": 0,
+    "wap": "025.00",
+    "hap": "075.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "qureate",
+    "Aliases": [],
+    "Size": 7,
+    "wa": 0,
+    "ha": 0,
+    "wg": 7,
+    "hg": 0,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "100.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Racing Games",
+    "Aliases": [
+      "Racing Videogames"
+    ],
+    "Size": 62,
+    "wa": 0,
+    "ha": 0,
+    "wg": 22,
+    "hg": 44,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "035.48",
+    "hgp": "070.97"
+  },
+  {
+    "Bundle": "Ragnar\u00f6k",
+    "Aliases": [
+      "Ragnarok"
+    ],
+    "Size": 48,
+    "wa": 5,
+    "ha": 3,
+    "wg": 27,
+    "hg": 20,
+    "wap": "010.42",
+    "hap": "006.25",
+    "wgp": "056.25",
+    "hgp": "041.67"
+  },
+  {
+    "Bundle": "Rainbow Rowell",
+    "Aliases": [],
+    "Size": 5,
+    "wa": 2,
+    "ha": 3,
+    "wg": 0,
+    "hg": 0,
+    "wap": "040.00",
+    "hap": "060.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Rance",
+    "Aliases": [],
+    "Size": 108,
+    "wa": 9,
+    "ha": 1,
+    "wg": 90,
+    "hg": 19,
+    "wap": "008.33",
+    "hap": "000.93",
+    "wgp": "083.33",
+    "hgp": "017.59"
+  },
+  {
+    "Bundle": "Rankin/Bass Productions",
+    "Aliases": [
+      "Rankin Bass Productions",
+      "Rankin/Bass",
+      "Rankin Bass"
+    ],
+    "Size": 42,
+    "wa": 7,
+    "ha": 35,
+    "wg": 0,
+    "hg": 0,
+    "wap": "016.67",
+    "hap": "083.33",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Rare",
+    "Aliases": [
+      "Rareware"
+    ],
+    "Size": 50,
+    "wa": 1,
+    "ha": 2,
+    "wg": 17,
+    "hg": 31,
+    "wap": "002.00",
+    "hap": "004.00",
+    "wgp": "034.00",
+    "hgp": "062.00"
+  },
+  {
+    "Bundle": "Ratchet & Clank Series",
+    "Aliases": [
+      "Ratchet and Clank Series"
+    ],
+    "Size": 9,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 7,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "022.22",
+    "hgp": "077.78"
+  },
+  {
+    "Bundle": "Ray-kbys",
+    "Aliases": [
+      "Ray-K"
+    ],
+    "Size": 15,
+    "wa": 4,
+    "ha": 0,
+    "wg": 10,
+    "hg": 1,
+    "wap": "026.67",
+    "hap": "000.00",
+    "wgp": "066.67",
+    "hgp": "006.67"
+  },
+  {
+    "Bundle": "Rayark Inc.",
+    "Aliases": [
+      "Rayark",
+      "Rayark Games"
+    ],
+    "Size": 56,
+    "wa": 0,
+    "ha": 0,
+    "wg": 31,
+    "hg": 26,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "055.36",
+    "hgp": "046.43"
+  },
+  {
+    "Bundle": "Rayman Series",
+    "Aliases": [],
+    "Size": 18,
+    "wa": 0,
+    "ha": 3,
+    "wg": 8,
+    "hg": 7,
+    "wap": "000.00",
+    "hap": "016.67",
+    "wgp": "044.44",
+    "hgp": "038.89"
+  },
+  {
+    "Bundle": "Re:Zero Universe",
+    "Aliases": [
+      "Re:Zero Series",
+      "ReZero Universe",
+      "RZ Universe",
+      "RZ",
+      "R:Z"
+    ],
+    "Size": 158,
+    "wa": 64,
+    "ha": 84,
+    "wg": 7,
+    "hg": 5,
+    "wap": "040.51",
+    "hap": "053.16",
+    "wgp": "004.43",
+    "hgp": "003.16"
+  },
+  {
+    "Bundle": "Read Comics Publishing",
+    "Aliases": [],
+    "Size": 6,
+    "wa": 6,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wap": "100.00",
+    "hap": "000.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Real Life People",
+    "Aliases": [
+      "RL People",
+      "RLP",
+      "In Real Life People",
+      "IRL People",
+      "IRL",
+      ":IRL:"
+    ],
+    "Size": 1158,
+    "wa": 315,
+    "ha": 844,
+    "wg": 0,
+    "hg": 19,
+    "wap": "027.20",
+    "hap": "072.88",
+    "wgp": "000.00",
+    "hgp": "001.64"
+  },
+  {
+    "Bundle": "Record of Agarest War Series",
+    "Aliases": [],
+    "Size": 10,
+    "wa": 0,
+    "ha": 0,
+    "wg": 8,
+    "hg": 2,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "080.00",
+    "hgp": "020.00"
+  },
+  {
+    "Bundle": "Red Dead Redemption Series",
+    "Aliases": [
+      "RDR Series"
+    ],
+    "Size": 18,
+    "wa": 0,
+    "ha": 0,
+    "wg": 6,
+    "hg": 13,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "033.33",
+    "hgp": "072.22"
+  },
+  {
+    "Bundle": "Rejet",
+    "Aliases": [],
+    "Size": 106,
+    "wa": 7,
+    "ha": 77,
+    "wg": 1,
+    "hg": 30,
+    "wap": "006.60",
+    "hap": "072.64",
+    "wgp": "000.94",
+    "hgp": "028.30"
+  },
+  {
+    "Bundle": "Reki Kawahara's Works",
+    "Aliases": [
+      "Reki Kawahara"
+    ],
+    "Size": 88,
+    "wa": 54,
+    "ha": 35,
+    "wg": 0,
+    "hg": 0,
+    "wap": "061.36",
+    "hap": "039.77",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Resident Evil Series",
+    "Aliases": [
+      "Biohazard Series",
+      "RE Series",
+      "Resident Evil Franchise",
+      "Biohazard Franchise",
+      "Resident Evil",
+      "RE",
+      "Biohazard"
+    ],
+    "Size": 64,
+    "wa": 1,
+    "ha": 2,
+    "wg": 27,
+    "hg": 35,
+    "wap": "001.56",
+    "hap": "003.12",
+    "wgp": "042.19",
+    "hgp": "054.69"
+  },
+  {
+    "Bundle": "Revoroot",
+    "Aliases": [],
+    "Size": 22,
+    "wa": 16,
+    "ha": 6,
+    "wg": 0,
+    "hg": 0,
+    "wap": "072.73",
+    "hap": "027.27",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Rhythm Games",
+    "Aliases": [
+      "Otoge",
+      "RGs"
+    ],
+    "Size": 1313,
+    "wa": 361,
+    "ha": 264,
+    "wg": 755,
+    "hg": 543,
+    "wap": "027.49",
+    "hap": "020.11",
+    "wgp": "057.50",
+    "hgp": "041.36"
+  },
+  {
+    "Bundle": "Ribon",
+    "Aliases": [
+      "Ribon Original"
+    ],
+    "Size": 81,
+    "wa": 44,
+    "ha": 37,
+    "wg": 0,
+    "hg": 0,
+    "wap": "054.32",
+    "hap": "045.68",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Rick Riordan's Works",
+    "Aliases": [
+      "Riordanverse",
+      "Rick Riordan"
+    ],
+    "Size": 54,
+    "wa": 29,
+    "ha": 27,
+    "wg": 0,
+    "hg": 0,
+    "wap": "053.70",
+    "hap": "050.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Rinnedou",
+    "Aliases": [
+      "Reincarnation Temple"
+    ],
+    "Size": 14,
+    "wa": 3,
+    "ha": 9,
+    "wg": 3,
+    "hg": 10,
+    "wap": "021.43",
+    "hap": "064.29",
+    "wgp": "021.43",
+    "hgp": "071.43"
+  },
+  {
+    "Bundle": "Riot Games",
+    "Aliases": [
+      "Rito Games",
+      "Riot"
+    ],
+    "Size": 195,
+    "wa": 0,
+    "ha": 3,
+    "wg": 77,
+    "hg": 119,
+    "wap": "000.00",
+    "hap": "001.54",
+    "wgp": "039.49",
+    "hgp": "061.03"
+  },
+  {
+    "Bundle": "Risk of Rain Series",
+    "Aliases": [],
+    "Size": 13,
+    "wa": 0,
+    "ha": 0,
+    "wg": 5,
+    "hg": 10,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "038.46",
+    "hgp": "076.92"
+  },
+  {
+    "Bundle": "Roald Dahl's Works",
+    "Aliases": [
+      "Roald Dahl"
+    ],
+    "Size": 9,
+    "wa": 3,
+    "ha": 6,
+    "wg": 0,
+    "hg": 0,
+    "wap": "033.33",
+    "hap": "066.67",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Robert Kirkman's Works",
+    "Aliases": [
+      "Robert Kirkman"
+    ],
+    "Size": 40,
+    "wa": 14,
+    "ha": 26,
+    "wg": 1,
+    "hg": 1,
+    "wap": "035.00",
+    "hap": "065.00",
+    "wgp": "002.50",
+    "hgp": "002.50"
+  },
+  {
+    "Bundle": "Robotech",
+    "Aliases": [],
+    "Size": 13,
+    "wa": 8,
+    "ha": 5,
+    "wg": 0,
+    "hg": 0,
+    "wap": "061.54",
+    "hap": "038.46",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Rockstar Games",
+    "Aliases": [
+      "Rockstar"
+    ],
+    "Size": 63,
+    "wa": 0,
+    "ha": 0,
+    "wg": 15,
+    "hg": 49,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "023.81",
+    "hgp": "077.78"
+  },
+  {
+    "Bundle": "Rodong's Art",
+    "Aliases": [
+      "Rodong's"
+    ],
+    "Size": 8,
+    "wa": 7,
+    "ha": 1,
+    "wg": 0,
+    "hg": 0,
+    "wap": "087.50",
+    "hap": "012.50",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Roguelike Games",
+    "Aliases": [],
+    "Size": 96,
+    "wa": 1,
+    "ha": 0,
+    "wg": 56,
+    "hg": 53,
+    "wap": "001.04",
+    "hap": "000.00",
+    "wgp": "058.33",
+    "hgp": "055.21"
+  },
+  {
+    "Bundle": "Rooster Teeth",
+    "Aliases": [
+      "RT"
+    ],
+    "Size": 182,
+    "wa": 70,
+    "ha": 115,
+    "wg": 0,
+    "hg": 0,
+    "wap": "038.46",
+    "hap": "063.19",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Rosenkreuzstilette Series",
+    "Aliases": [],
+    "Size": 16,
+    "wa": 0,
+    "ha": 0,
+    "wg": 16,
+    "hg": 0,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "100.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "RPG Maker 2000 Games",
+    "Aliases": [],
+    "Size": 130,
+    "wa": 0,
+    "ha": 3,
+    "wg": 79,
+    "hg": 55,
+    "wap": "000.00",
+    "hap": "002.31",
+    "wgp": "060.77",
+    "hgp": "042.31"
+  },
+  {
+    "Bundle": "RPG Maker Games",
+    "Aliases": [
+      "RPG Maker",
+      "RPGM"
+    ],
+    "Size": 804,
+    "wa": 24,
+    "ha": 27,
+    "wg": 490,
+    "hg": 335,
+    "wap": "002.99",
+    "hap": "003.36",
+    "wgp": "060.95",
+    "hgp": "041.67"
+  },
+  {
+    "Bundle": "Rumiko Takahashi's Works",
+    "Aliases": [
+      "Rumiko Takahashi"
+    ],
+    "Size": 204,
+    "wa": 91,
+    "ha": 114,
+    "wg": 0,
+    "hg": 0,
+    "wap": "044.61",
+    "hap": "055.88",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Rune Factory Series",
+    "Aliases": [
+      "RF",
+      "RF Series",
+      "Rune Factory"
+    ],
+    "Size": 82,
+    "wa": 0,
+    "ha": 0,
+    "wg": 57,
+    "hg": 25,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "069.51",
+    "hgp": "030.49"
+  },
+  {
+    "Bundle": "Ryo Minenami's Works",
+    "Aliases": [
+      "Ryo Minenami"
+    ],
+    "Size": 11,
+    "wa": 9,
+    "ha": 2,
+    "wg": 0,
+    "hg": 0,
+    "wap": "081.82",
+    "hap": "018.18",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Ryohgo Narita's Works",
+    "Aliases": [
+      "Ryohgo Narita"
+    ],
+    "Size": 99,
+    "wa": 42,
+    "ha": 60,
+    "wg": 1,
+    "hg": 1,
+    "wap": "042.42",
+    "hap": "060.61",
+    "wgp": "001.01",
+    "hgp": "001.01"
+  },
+  {
+    "Bundle": "Ryuuhei Tamura's Works",
+    "Aliases": [
+      "Ryuuhei Tamura"
+    ],
+    "Size": 19,
+    "wa": 10,
+    "ha": 9,
+    "wg": 0,
+    "hg": 0,
+    "wap": "052.63",
+    "hap": "047.37",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Sad Panda Studios",
+    "Aliases": [
+      "SPS"
+    ],
+    "Size": 73,
+    "wa": 0,
+    "ha": 0,
+    "wg": 49,
+    "hg": 25,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "067.12",
+    "hgp": "034.25"
+  },
+  {
+    "Bundle": "SaGa Series",
+    "Aliases": [],
+    "Size": 7,
+    "wa": 0,
+    "ha": 0,
+    "wg": 7,
+    "hg": 0,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "100.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Saint Seiya Series",
+    "Aliases": [
+      "SS Series"
+    ],
+    "Size": 141,
+    "wa": 28,
+    "ha": 113,
+    "wg": 0,
+    "hg": 0,
+    "wap": "019.86",
+    "hap": "080.14",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Sakae Esuno's Works",
+    "Aliases": [],
+    "Size": 28,
+    "wa": 12,
+    "ha": 16,
+    "wg": 0,
+    "hg": 0,
+    "wap": "042.86",
+    "hap": "057.14",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Saki Series",
+    "Aliases": [],
+    "Size": 48,
+    "wa": 46,
+    "ha": 2,
+    "wg": 0,
+    "hg": 0,
+    "wap": "095.83",
+    "hap": "004.17",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Sakura Taisen Series",
+    "Aliases": [
+      "Sakura Wars Series",
+      "Sakura Wars Franchise",
+      "Sakura Taisen Franchise"
+    ],
+    "Size": 37,
+    "wa": 26,
+    "ha": 3,
+    "wg": 32,
+    "hg": 3,
+    "wap": "070.27",
+    "hap": "008.11",
+    "wgp": "086.49",
+    "hgp": "008.11"
+  },
+  {
+    "Bundle": "San-X",
+    "Aliases": [],
+    "Size": 10,
+    "wa": 6,
+    "ha": 10,
+    "wg": 5,
+    "hg": 5,
+    "wap": "060.00",
+    "hap": "100.00",
+    "wgp": "050.00",
+    "hgp": "050.00"
+  },
+  {
+    "Bundle": "Sanrio",
+    "Aliases": [],
+    "Size": 154,
+    "wa": 78,
+    "ha": 69,
+    "wg": 23,
+    "hg": 22,
+    "wap": "050.65",
+    "hap": "044.81",
+    "wgp": "014.94",
+    "hgp": "014.29"
+  },
+  {
+    "Bundle": "Sanrio Mascots",
+    "Aliases": [],
+    "Size": 38,
+    "wa": 20,
+    "ha": 19,
+    "wg": 0,
+    "hg": 0,
+    "wap": "052.63",
+    "hap": "050.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Sanzigen",
+    "Aliases": [],
+    "Size": 103,
+    "wa": 78,
+    "ha": 19,
+    "wg": 45,
+    "hg": 1,
+    "wap": "075.73",
+    "hap": "018.45",
+    "wgp": "043.69",
+    "hgp": "000.97"
+  },
+  {
+    "Bundle": "Satelight",
+    "Aliases": [],
+    "Size": 532,
+    "wa": 262,
+    "ha": 249,
+    "wg": 34,
+    "hg": 12,
+    "wap": "049.25",
+    "hap": "046.80",
+    "wgp": "006.39",
+    "hgp": "002.26"
+  },
+  {
+    "Bundle": "Satoi's Art",
+    "Aliases": [
+      "Satoi"
+    ],
+    "Size": 56,
+    "wa": 5,
+    "ha": 25,
+    "wg": 4,
+    "hg": 22,
+    "wap": "008.93",
+    "hap": "044.64",
+    "wgp": "007.14",
+    "hgp": "039.29"
+  },
+  {
+    "Bundle": "Satoshi Kon",
+    "Aliases": [],
+    "Size": 15,
+    "wa": 10,
+    "ha": 5,
+    "wg": 0,
+    "hg": 0,
+    "wap": "066.67",
+    "hap": "033.33",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Satoshi Mizukami",
+    "Aliases": [],
+    "Size": 38,
+    "wa": 18,
+    "ha": 20,
+    "wg": 0,
+    "hg": 0,
+    "wap": "047.37",
+    "hap": "052.63",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Satoshi Urushihara's Art",
+    "Aliases": [
+      "Satoshi Urushihara's Works",
+      "Satoshi Urushihara"
+    ],
+    "Size": 115,
+    "wa": 7,
+    "ha": 1,
+    "wg": 35,
+    "hg": 72,
+    "wap": "006.09",
+    "hap": "000.87",
+    "wgp": "030.43",
+    "hgp": "062.61"
+  },
+  {
+    "Bundle": "Satou Kentarou's Works",
+    "Aliases": [
+      "Satou Kentarou"
+    ],
+    "Size": 27,
+    "wa": 22,
+    "ha": 6,
+    "wg": 0,
+    "hg": 0,
+    "wap": "081.48",
+    "hap": "022.22",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Scary Go Round",
+    "Aliases": [],
+    "Size": 5,
+    "wa": 5,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wap": "100.00",
+    "hap": "000.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Scat",
+    "Aliases": [
+      "Poop",
+      "Shit",
+      "Feces",
+      "Turd",
+      ":poop:"
+    ],
+    "Size": 16,
+    "wa": 13,
+    "ha": 2,
+    "wg": 1,
+    "hg": 0,
+    "wap": "081.25",
+    "hap": "012.50",
+    "wgp": "006.25",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Science Adventure",
+    "Aliases": [
+      "SciADV"
+    ],
+    "Size": 102,
+    "wa": 30,
+    "ha": 16,
+    "wg": 30,
+    "hg": 27,
+    "wap": "029.41",
+    "hap": "015.69",
+    "wgp": "029.41",
+    "hgp": "026.47"
+  },
+  {
+    "Bundle": "Science SARU",
+    "Aliases": [],
+    "Size": 30,
+    "wa": 13,
+    "ha": 17,
+    "wg": 0,
+    "hg": 0,
+    "wap": "043.33",
+    "hap": "056.67",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Scooby-Doo",
+    "Aliases": [
+      "SD",
+      "Scooby Doo",
+      "Scooby-Doo!"
+    ],
+    "Size": 49,
+    "wa": 15,
+    "ha": 33,
+    "wg": 0,
+    "hg": 1,
+    "wap": "030.61",
+    "hap": "067.35",
+    "wgp": "000.00",
+    "hgp": "002.04"
+  },
+  {
+    "Bundle": "Scott Cawthon's Works",
+    "Aliases": [
+      "scottgames",
+      "Scott Cawthon"
+    ],
+    "Size": 70,
+    "wa": 1,
+    "ha": 3,
+    "wg": 27,
+    "hg": 54,
+    "wap": "001.43",
+    "hap": "004.29",
+    "wgp": "038.57",
+    "hgp": "077.14"
+  },
+  {
+    "Bundle": "Scott Fellows's Works",
+    "Aliases": [
+      "Scott Fellows"
+    ],
+    "Size": 9,
+    "wa": 2,
+    "ha": 7,
+    "wg": 0,
+    "hg": 0,
+    "wap": "022.22",
+    "hap": "077.78",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "SCP",
+    "Aliases": [
+      "SCP Series"
+    ],
+    "Size": 73,
+    "wa": 54,
+    "ha": 58,
+    "wg": 15,
+    "hg": 21,
+    "wap": "073.97",
+    "hap": "079.45",
+    "wgp": "020.55",
+    "hgp": "028.77"
+  },
+  {
+    "Bundle": "SEGA",
+    "Aliases": [
+      "SEGAY"
+    ],
+    "Size": 1762,
+    "wa": 299,
+    "ha": 267,
+    "wg": 843,
+    "hg": 850,
+    "wap": "016.97",
+    "hap": "015.15",
+    "wgp": "047.84",
+    "hgp": "048.24"
+  },
+  {
+    "Bundle": "Segawa",
+    "Aliases": [],
+    "Size": 32,
+    "wa": 0,
+    "ha": 0,
+    "wg": 13,
+    "hg": 19,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "040.62",
+    "hgp": "059.38"
+  },
+  {
+    "Bundle": "Seihou Project",
+    "Aliases": [
+      "Seihou"
+    ],
+    "Size": 3,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 1,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "066.67",
+    "hgp": "033.33"
+  },
+  {
+    "Bundle": "Seikai Series",
+    "Aliases": [],
+    "Size": 6,
+    "wa": 4,
+    "ha": 2,
+    "wg": 0,
+    "hg": 0,
+    "wap": "066.67",
+    "hap": "033.33",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Seikaisha",
+    "Aliases": [
+      "Star Seas Company"
+    ],
+    "Size": 301,
+    "wa": 60,
+    "ha": 55,
+    "wg": 134,
+    "hg": 124,
+    "wap": "019.93",
+    "hap": "018.27",
+    "wgp": "044.52",
+    "hgp": "041.20"
+  },
+  {
+    "Bundle": "Sekai Project",
+    "Aliases": [],
+    "Size": 307,
+    "wa": 23,
+    "ha": 10,
+    "wg": 233,
+    "hg": 41,
+    "wap": "007.49",
+    "hap": "003.26",
+    "wgp": "075.90",
+    "hgp": "013.36"
+  },
+  {
+    "Bundle": "selector WIXOSS",
+    "Aliases": [],
+    "Size": 14,
+    "wa": 14,
+    "ha": 0,
+    "wg": 9,
+    "hg": 0,
+    "wap": "100.00",
+    "hap": "000.00",
+    "wgp": "064.29",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Selfish",
+    "Aliases": [],
+    "Size": 18,
+    "wa": 15,
+    "ha": 0,
+    "wg": 6,
+    "hg": 0,
+    "wap": "083.33",
+    "hap": "000.00",
+    "wgp": "033.33",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Sen's Works",
+    "Aliases": [],
+    "Size": 10,
+    "wa": 0,
+    "ha": 0,
+    "wg": 6,
+    "hg": 4,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "060.00",
+    "hgp": "040.00"
+  },
+  {
+    "Bundle": "Sengoku Period Fiction",
+    "Aliases": [],
+    "Size": 308,
+    "wa": 73,
+    "ha": 97,
+    "wg": 73,
+    "hg": 122,
+    "wap": "023.70",
+    "hap": "031.49",
+    "wgp": "023.70",
+    "hgp": "039.61"
+  },
+  {
+    "Bundle": "Senki Zesshou Symphogear Series",
+    "Aliases": [
+      "Symphogear Series"
+    ],
+    "Size": 46,
+    "wa": 29,
+    "ha": 7,
+    "wg": 10,
+    "hg": 0,
+    "wap": "063.04",
+    "hap": "015.22",
+    "wgp": "021.74",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Senran Kagura",
+    "Aliases": [
+      "SK"
+    ],
+    "Size": 95,
+    "wa": 28,
+    "ha": 2,
+    "wg": 93,
+    "hg": 2,
+    "wap": "029.47",
+    "hap": "002.11",
+    "wgp": "097.89",
+    "hgp": "002.11"
+  },
+  {
+    "Bundle": "Sensitive Content",
+    "Aliases": [
+      "Triggering Content",
+      "Sensitive Imagery",
+      "Triggering Imagery"
+    ],
+    "Size": 136,
+    "wa": 50,
+    "ha": 38,
+    "wg": 32,
+    "hg": 26,
+    "wap": "036.76",
+    "hap": "027.94",
+    "wgp": "023.53",
+    "hgp": "019.12"
+  },
+  {
+    "Bundle": "SEQUEL",
+    "Aliases": [],
+    "Size": 14,
+    "wa": 0,
+    "ha": 0,
+    "wg": 14,
+    "hg": 0,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "100.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Seth MacFarlane's Works",
+    "Aliases": [
+      "Seth MacFarlane"
+    ],
+    "Size": 28,
+    "wa": 10,
+    "ha": 19,
+    "wg": 0,
+    "hg": 0,
+    "wap": "035.71",
+    "hap": "067.86",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Seven",
+    "Aliases": [],
+    "Size": 138,
+    "wa": 83,
+    "ha": 51,
+    "wg": 6,
+    "hg": 3,
+    "wap": "060.14",
+    "hap": "036.96",
+    "wgp": "004.35",
+    "hgp": "002.17"
+  },
+  {
+    "Bundle": "Seven Arcs Pictures",
+    "Aliases": [],
+    "Size": 106,
+    "wa": 92,
+    "ha": 14,
+    "wg": 0,
+    "hg": 0,
+    "wap": "086.79",
+    "hap": "013.21",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Seven Seas Entertainment",
+    "Aliases": [
+      "Air Ship"
+    ],
+    "Size": 1036,
+    "wa": 737,
+    "ha": 310,
+    "wg": 18,
+    "hg": 3,
+    "wap": "071.14",
+    "hap": "029.92",
+    "wgp": "001.74",
+    "hgp": "000.29"
+  },
+  {
+    "Bundle": "Shadow Hearts Series",
+    "Aliases": [],
+    "Size": 11,
+    "wa": 1,
+    "ha": 0,
+    "wg": 6,
+    "hg": 5,
+    "wap": "009.09",
+    "hap": "000.00",
+    "wgp": "054.55",
+    "hgp": "045.45"
+  },
+  {
+    "Bundle": "Shadow of Middle-earth",
+    "Aliases": [
+      "Middle-earth: Shadow of Mordor Series",
+      "Middle-earth: Shadow of War Series",
+      "SoM Series",
+      "SoW Series"
+    ],
+    "Size": 11,
+    "wa": 0,
+    "ha": 0,
+    "wg": 3,
+    "hg": 8,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "027.27",
+    "hgp": "072.73"
+  },
+  {
+    "Bundle": "Shadowhunters",
+    "Aliases": [],
+    "Size": 37,
+    "wa": 15,
+    "ha": 23,
+    "wg": 0,
+    "hg": 0,
+    "wap": "040.54",
+    "hap": "062.16",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Shaft",
+    "Aliases": [],
+    "Size": 475,
+    "wa": 282,
+    "ha": 118,
+    "wg": 93,
+    "hg": 10,
+    "wap": "059.37",
+    "hap": "024.84",
+    "wgp": "019.58",
+    "hgp": "002.11"
+  },
+  {
+    "Bundle": "Shall We Date?",
+    "Aliases": [
+      "SwD?",
+      "Shall we Date",
+      "SwD"
+    ],
+    "Size": 93,
+    "wa": 0,
+    "ha": 0,
+    "wg": 1,
+    "hg": 92,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "001.08",
+    "hgp": "098.92"
+  },
+  {
+    "Bundle": "Shenmue",
+    "Aliases": [],
+    "Size": 14,
+    "wa": 0,
+    "ha": 0,
+    "wg": 5,
+    "hg": 9,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "035.71",
+    "hgp": "064.29"
+  },
+  {
+    "Bundle": "Sherlock Holmes and Pastiches",
+    "Aliases": [
+      "Sherlock Holmes and Adaptations",
+      "Sherlock Holmes & Adaptations",
+      "Sherlock Holmes & Pastiches",
+      "Sherlock Holmes Canon and Non-Canon",
+      "Sherlock Holmes Canon & Non-Canon"
+    ],
+    "Size": 97,
+    "wa": 7,
+    "ha": 29,
+    "wg": 19,
+    "hg": 43,
+    "wap": "007.22",
+    "hap": "029.90",
+    "wgp": "019.59",
+    "hgp": "044.33"
+  },
+  {
+    "Bundle": "Shigure Ui's Art",
+    "Aliases": [
+      "Shigure Ui"
+    ],
+    "Size": 13,
+    "wa": 12,
+    "ha": 1,
+    "wg": 6,
+    "hg": 0,
+    "wap": "092.31",
+    "hap": "007.69",
+    "wgp": "046.15",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Shin Megami Tensei",
+    "Aliases": [
+      "Shin Megami Tensei Series",
+      "SMT Series",
+      "SMT"
+    ],
+    "Size": 120,
+    "wa": 7,
+    "ha": 15,
+    "wg": 52,
+    "hg": 80,
+    "wap": "005.83",
+    "hap": "012.50",
+    "wgp": "043.33",
+    "hgp": "066.67"
+  },
+  {
+    "Bundle": "Shin'ichiro Otsuka's Art",
+    "Aliases": [
+      "Shinichiro Otsuka's Art",
+      "Otsuka Shin'ichiro's Art",
+      "Otsuka Shinichiro's Art",
+      "GASHIN's Art",
+      "Shin'ichiro Otsuka",
+      "Shinichiro Otsuka",
+      "Otsuka Shin'ichiro",
+      "Otsuka Shinichiro",
+      "GASHIN",
+      "Otsuka Shin"
+    ],
+    "Size": 196,
+    "wa": 80,
+    "ha": 85,
+    "wg": 32,
+    "hg": 13,
+    "wap": "040.82",
+    "hap": "043.37",
+    "wgp": "016.33",
+    "hgp": "006.63"
+  },
+	{
+    "Bundle": "Shin-Ei Animation",
+    "Aliases": [],
+    "Size": 103,
+    "wa": 44,
+    "ha": 61,
+    "wg": 2,
+    "hg": 1,
+    "wap": "042.72",
+    "hap": "059.22",
+    "wgp": "001.94",
+    "hgp": "000.97"
+  },
+  {
+    "Bundle": "Shinchosha",
+    "Aliases": [
+      "Shinchousha"
+    ],
+    "Size": 107,
+    "wa": 43,
+    "ha": 67,
+    "wg": 0,
+    "hg": 0,
+    "wap": "040.19",
+    "hap": "062.62",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "ShindoL's Works",
+    "Aliases": [
+      "ShindoL"
+    ],
+    "Size": 4,
+    "wa": 3,
+    "ha": 1,
+    "wg": 0,
+    "hg": 0,
+    "wap": "075.00",
+    "hap": "025.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Shingeki no Bahamut Series",
+    "Aliases": [
+      "SnB Series"
+    ],
+    "Size": 53,
+    "wa": 10,
+    "ha": 9,
+    "wg": 36,
+    "hg": 7,
+    "wap": "018.87",
+    "hap": "016.98",
+    "wgp": "067.92",
+    "hgp": "013.21"
+  },
+  {
+    "Bundle": "Shingeki no Kyojin Series",
+    "Aliases": [
+      "Attack on Titan Series",
+      "SnK Series",
+      "AoT Series"
+    ],
+    "Size": 75,
+    "wa": 29,
+    "ha": 47,
+    "wg": 0,
+    "hg": 0,
+    "wap": "038.67",
+    "hap": "062.67",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Shinichiro Watanabe's Works",
+    "Aliases": [
+      "Shinichiro Watanabe"
+    ],
+    "Size": 60,
+    "wa": 28,
+    "ha": 36,
+    "wg": 0,
+    "hg": 0,
+    "wap": "046.67",
+    "hap": "060.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Shinigami Kareshi Series",
+    "Aliases": [],
+    "Size": 5,
+    "wa": 0,
+    "ha": 0,
+    "wg": 1,
+    "hg": 4,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "020.00",
+    "hgp": "080.00"
+  },
+  {
+    "Bundle": "Shinshokan",
+    "Aliases": [],
+    "Size": 52,
+    "wa": 1,
+    "ha": 51,
+    "wg": 0,
+    "hg": 0,
+    "wap": "001.92",
+    "hap": "098.08",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Shinza Bansho",
+    "Aliases": [],
+    "Size": 53,
+    "wa": 6,
+    "ha": 0,
+    "wg": 27,
+    "hg": 22,
+    "wap": "011.32",
+    "hap": "000.00",
+    "wgp": "050.94",
+    "hgp": "041.51"
+  },
+  {
+    "Bundle": "Shipgirls",
+    "Aliases": [
+      "Botegirls",
+      "Botes"
+    ],
+    "Size": 318,
+    "wa": 78,
+    "ha": 3,
+    "wg": 295,
+    "hg": 1,
+    "wap": "024.53",
+    "hap": "000.94",
+    "wgp": "092.77",
+    "hgp": "000.31"
+  },
+  {
+    "Bundle": "Shiren the Wanderer Series",
+    "Aliases": [],
+    "Size": 6,
+    "wa": 0,
+    "ha": 0,
+    "wg": 3,
+    "hg": 3,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "050.00",
+    "hgp": "050.00"
+  },
+  {
+    "Bundle": "Shizumu Watanabe's Works",
+    "Aliases": [
+      "Shizumu Watanabe"
+    ],
+    "Size": 9,
+    "wa": 4,
+    "ha": 5,
+    "wg": 0,
+    "hg": 0,
+    "wap": "044.44",
+    "hap": "055.56",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Shogakukan",
+    "Aliases": [],
+    "Size": 2803,
+    "wa": 1267,
+    "ha": 1533,
+    "wg": 242,
+    "hg": 321,
+    "wap": "045.20",
+    "hap": "054.69",
+    "wgp": "008.63",
+    "hgp": "011.45"
+  },
+  {
+    "Bundle": "Shoot 'em Ups",
+    "Aliases": [
+      "Shooting Games",
+      "Shmups",
+      "Shmup",
+      "STG",
+      "Shoot em ups",
+      "Gun go brrr"
+    ],
+    "Size": 459,
+    "wa": 54,
+    "ha": 0,
+    "wg": 373,
+    "hg": 156,
+    "wap": "011.76",
+    "hap": "000.00",
+    "wgp": "081.26",
+    "hgp": "033.99"
+  },
+  {
+    "Bundle": "Shooter Games",
+    "Aliases": [],
+    "Size": 1123,
+    "wa": 15,
+    "ha": 24,
+    "wg": 434,
+    "hg": 723,
+    "wap": "001.34",
+    "hap": "002.14",
+    "wgp": "038.65",
+    "hgp": "064.38"
+  },
+  {
+    "Bundle": "Shotacon and Lolicon",
+    "Aliases": [
+      "DISCLAIMER: THIS BOT SERVES AS A DATABASE OF CHARACTERS SUGGESTED FROM ITS COMMUNITY AND DOES NOT SUPPORT ANY OF THESE SERIES IN ANY WAY OR FORM",
+      "Lolicon and Shotacon",
+      "Shotacon & Lolicon",
+      "Lolicon & Shotacon",
+      "Shota and Loli",
+      "Loli and Shota",
+      "Shotacon",
+      "Lolicon",
+      "Shota",
+      "Loli"
+    ],
+    "Size": 259,
+    "wa": 113,
+    "ha": 24,
+    "wg": 123,
+    "hg": 12,
+    "wap": "043.63",
+    "hap": "009.27",
+    "wgp": "047.49",
+    "hgp": "004.63"
+  },
+  {
+    "Bundle": "Shou Shibamoto's Works",
+    "Aliases": [
+      "Shou Shibamoto"
+    ],
+    "Size": 4,
+    "wa": 2,
+    "ha": 2,
+    "wg": 0,
+    "hg": 0,
+    "wap": "050.00",
+    "hap": "050.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Shoujo\u2606Kageki Revue Starlight Series",
+    "Aliases": [
+      "SKRS Series",
+      "Revue Starlight Series",
+      "SKRSS",
+      "Shoujo Kageki Revue Starlight Series",
+      "Revue Starlight"
+    ],
+    "Size": 30,
+    "wa": 10,
+    "ha": 1,
+    "wg": 19,
+    "hg": 1,
+    "wap": "033.33",
+    "hap": "003.33",
+    "wgp": "063.33",
+    "hgp": "003.33"
+  },
+  {
+    "Bundle": "Shounen Ace",
+    "Aliases": [],
+    "Size": 537,
+    "wa": 316,
+    "ha": 208,
+    "wg": 29,
+    "hg": 20,
+    "wap": "058.85",
+    "hap": "038.73",
+    "wgp": "005.40",
+    "hgp": "003.72"
+  },
+  {
+    "Bundle": "Shounen Gahousha",
+    "Aliases": [
+      "Shounen Gahosha"
+    ],
+    "Size": 125,
+    "wa": 62,
+    "ha": 64,
+    "wg": 0,
+    "hg": 0,
+    "wap": "049.60",
+    "hap": "051.20",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Shounen Gangan",
+    "Aliases": [],
+    "Size": 520,
+    "wa": 313,
+    "ha": 209,
+    "wg": 13,
+    "hg": 9,
+    "wap": "060.19",
+    "hap": "040.19",
+    "wgp": "002.50",
+    "hgp": "001.73"
+  },
+  {
+    "Bundle": "Shounen Jump+ Originals",
+    "Aliases": [],
+    "Size": 179,
+    "wa": 118,
+    "ha": 69,
+    "wg": 0,
+    "hg": 0,
+    "wap": "065.92",
+    "hap": "038.55",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Shounen Sirius",
+    "Aliases": [],
+    "Size": 208,
+    "wa": 106,
+    "ha": 104,
+    "wg": 0,
+    "hg": 0,
+    "wap": "050.96",
+    "hap": "050.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Shouzou Kaga's Works",
+    "Aliases": [
+      "Shouzou Kaga"
+    ],
+    "Size": 167,
+    "wa": 0,
+    "ha": 0,
+    "wg": 61,
+    "hg": 106,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "036.53",
+    "hgp": "063.47"
+  },
+  {
+    "Bundle": "Shueisha",
+    "Aliases": [],
+    "Size": 6278,
+    "wa": 2423,
+    "ha": 3892,
+    "wg": 36,
+    "hg": 202,
+    "wap": "038.60",
+    "hap": "061.99",
+    "wgp": "000.57",
+    "hgp": "003.22"
+  },
+  {
+    "Bundle": "Shuka",
+    "Aliases": [],
+    "Size": 86,
+    "wa": 31,
+    "ha": 55,
+    "wg": 0,
+    "hg": 0,
+    "wap": "036.05",
+    "hap": "063.95",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Shuuzou Oshimi",
+    "Aliases": [],
+    "Size": 10,
+    "wa": 8,
+    "ha": 2,
+    "wg": 0,
+    "hg": 0,
+    "wap": "080.00",
+    "hap": "020.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Side-scrolling Games",
+    "Aliases": [
+      "Side Scrolling Games",
+      "Side-scroller Games",
+      "Side Scroller Games",
+      "Side Scrollers",
+      "Side-scrollers"
+    ],
+    "Size": 905,
+    "wa": 20,
+    "ha": 26,
+    "wg": 412,
+    "hg": 565,
+    "wap": "002.21",
+    "hap": "002.87",
+    "wgp": "045.52",
+    "hgp": "062.43"
+  },
+  {
+    "Bundle": "Sierra Entertainment",
+    "Aliases": [
+      "On-Line Systems",
+      "Sierra On-Line",
+      "Sierra"
+    ],
+    "Size": 45,
+    "wa": 0,
+    "ha": 0,
+    "wg": 10,
+    "hg": 35,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "022.22",
+    "hgp": "077.78"
+  },
+  {
+    "Bundle": "Signal.MD",
+    "Aliases": [],
+    "Size": 27,
+    "wa": 11,
+    "ha": 16,
+    "wg": 0,
+    "hg": 0,
+    "wap": "040.74",
+    "hap": "059.26",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Silent Hill",
+    "Aliases": [
+      "SH",
+      "Silent Hill Series"
+    ],
+    "Size": 16,
+    "wa": 0,
+    "ha": 0,
+    "wg": 11,
+    "hg": 6,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "068.75",
+    "hgp": "037.50"
+  },
+  {
+    "Bundle": "Silver Link",
+    "Aliases": [],
+    "Size": 529,
+    "wa": 387,
+    "ha": 119,
+    "wg": 87,
+    "hg": 14,
+    "wap": "073.16",
+    "hap": "022.50",
+    "wgp": "016.45",
+    "hgp": "002.65"
+  },
+  {
+    "Bundle": "Sims Series",
+    "Aliases": [],
+    "Size": 14,
+    "wa": 0,
+    "ha": 0,
+    "wg": 5,
+    "hg": 9,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "035.71",
+    "hgp": "064.29"
+  },
+  {
+    "Bundle": "Simulation Games",
+    "Aliases": [
+      "Simulators"
+    ],
+    "Size": 1171,
+    "wa": 148,
+    "ha": 15,
+    "wg": 655,
+    "hg": 510,
+    "wap": "012.64",
+    "hap": "001.28",
+    "wgp": "055.94",
+    "hgp": "043.55"
+  },
+  {
+    "Bundle": "sin Franchise",
+    "Aliases": [],
+    "Size": 17,
+    "wa": 17,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wap": "100.00",
+    "hap": "000.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Sitcoms",
+    "Aliases": [],
+    "Size": 486,
+    "wa": 155,
+    "ha": 335,
+    "wg": 0,
+    "hg": 0,
+    "wap": "031.89",
+    "hap": "068.93",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Skylanders",
+    "Aliases": [
+      "Skylanders Series"
+    ],
+    "Size": 59,
+    "wa": 1,
+    "ha": 2,
+    "wg": 14,
+    "hg": 45,
+    "wap": "001.69",
+    "hap": "003.39",
+    "wgp": "023.73",
+    "hgp": "076.27"
+  },
+  {
+    "Bundle": "Sly Cooper",
+    "Aliases": [],
+    "Size": 25,
+    "wa": 0,
+    "ha": 0,
+    "wg": 4,
+    "hg": 21,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "016.00",
+    "hgp": "084.00"
+  },
+  {
+    "Bundle": "SM Entertainment",
+    "Aliases": [
+      "SMTOWN"
+    ],
+    "Size": 53,
+    "wa": 23,
+    "ha": 30,
+    "wg": 0,
+    "hg": 0,
+    "wap": "043.40",
+    "hap": "056.60",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Smilegate",
+    "Aliases": [],
+    "Size": 142,
+    "wa": 0,
+    "ha": 0,
+    "wg": 103,
+    "hg": 39,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "072.54",
+    "hgp": "027.46"
+  },
+  {
+    "Bundle": "SNK Corporation",
+    "Aliases": [
+      "Shin Nihon Kikaku",
+      "SNK",
+      "SNK Playmore",
+      "SNK Corp"
+    ],
+    "Size": 159,
+    "wa": 1,
+    "ha": 1,
+    "wg": 64,
+    "hg": 98,
+    "wap": "000.63",
+    "hap": "000.63",
+    "wgp": "040.25",
+    "hgp": "061.64"
+  },
+  {
+    "Bundle": "Sol Press",
+    "Aliases": [],
+    "Size": 24,
+    "wa": 0,
+    "ha": 0,
+    "wg": 24,
+    "hg": 0,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "100.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Solo Musicians",
+    "Aliases": [],
+    "Size": 164,
+    "wa": 62,
+    "ha": 105,
+    "wg": 0,
+    "hg": 0,
+    "wap": "037.80",
+    "hap": "064.02",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Sonic 3 & Knuckles",
+    "Aliases": [
+      "Sonic the Hedgehog 3 & Knuckles",
+      "S3&K",
+      "Sonic 3 and Knuckles"
+    ],
+    "Size": 2,
+    "wa": 0,
+    "ha": 1,
+    "wg": 0,
+    "hg": 2,
+    "wap": "000.00",
+    "hap": "050.00",
+    "wgp": "000.00",
+    "hgp": "100.00"
+  },
+  {
+    "Bundle": "Sonic Mega Collection",
+    "Aliases": [],
+    "Size": 5,
+    "wa": 0,
+    "ha": 4,
+    "wg": 0,
+    "hg": 5,
+    "wap": "000.00",
+    "hap": "080.00",
+    "wgp": "000.00",
+    "hgp": "100.00"
+  },
+  {
+    "Bundle": "Sonic Origins",
+    "Aliases": [],
+    "Size": 7,
+    "wa": 1,
+    "ha": 5,
+    "wg": 1,
+    "hg": 6,
+    "wap": "014.29",
+    "hap": "071.43",
+    "wgp": "014.29",
+    "hgp": "085.71"
+  },
+  {
+    "Bundle": "Sonic the Hedgehog Games",
+    "Aliases": [
+      "Sonic Games"
+    ],
+    "Size": 61,
+    "wa": 18,
+    "ha": 33,
+    "wg": 23,
+    "hg": 43,
+    "wap": "029.51",
+    "hap": "054.10",
+    "wgp": "037.70",
+    "hgp": "070.49"
+  },
+  {
+    "Bundle": "Sonic the Hedgehog Series",
+    "Aliases": [
+      "Sonic Series",
+      "Sonic"
+    ],
+    "Size": 102,
+    "wa": 38,
+    "ha": 52,
+    "wg": 23,
+    "hg": 45,
+    "wap": "037.25",
+    "hap": "050.98",
+    "wgp": "022.55",
+    "hgp": "044.12"
+  },
+  {
+    "Bundle": "Sony",
+    "Aliases": [
+      "Sony Originals",
+      "First Party Sony",
+      "Sony's First Party Titles"
+    ],
+    "Size": 209,
+    "wa": 3,
+    "ha": 3,
+    "wg": 88,
+    "hg": 141,
+    "wap": "001.44",
+    "hap": "001.44",
+    "wgp": "042.11",
+    "hgp": "067.46"
+  },
+  {
+    "Bundle": "Sony (Publisher)",
+    "Aliases": [
+      "Sony Interactive Entertainment",
+      "Sony Computer Entertainment",
+      "SIE",
+      "SCE",
+      "Titles Published by Sony",
+      "Published by Sony",
+      "Sony Publisher",
+      "Sony Published Games"
+    ],
+    "Size": 524,
+    "wa": 17,
+    "ha": 39,
+    "wg": 204,
+    "hg": 304,
+    "wap": "003.24",
+    "hap": "007.44",
+    "wgp": "038.93",
+    "hgp": "058.02"
+  },
+  {
+    "Bundle": "Sony Pictures Animation",
+    "Aliases": [],
+    "Size": 60,
+    "wa": 20,
+    "ha": 27,
+    "wg": 7,
+    "hg": 12,
+    "wap": "033.33",
+    "hap": "045.00",
+    "wgp": "011.67",
+    "hgp": "020.00"
+  },
+  {
+    "Bundle": "Sony Pictures Television",
+    "Aliases": [],
+    "Size": 62,
+    "wa": 25,
+    "ha": 37,
+    "wg": 0,
+    "hg": 0,
+    "wap": "040.32",
+    "hap": "059.68",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Sotsu",
+    "Aliases": [],
+    "Size": 1328,
+    "wa": 839,
+    "ha": 464,
+    "wg": 40,
+    "hg": 34,
+    "wap": "063.18",
+    "hap": "034.94",
+    "wgp": "003.01",
+    "hgp": "002.56"
+  },
+  {
+    "Bundle": "Souichirou Yamamoto's Works",
+    "Aliases": [
+      "Souichirou Yamamoto"
+    ],
+    "Size": 32,
+    "wa": 27,
+    "ha": 5,
+    "wg": 0,
+    "hg": 0,
+    "wap": "084.38",
+    "hap": "015.62",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Soul Eater Series",
+    "Aliases": [],
+    "Size": 48,
+    "wa": 23,
+    "ha": 27,
+    "wg": 0,
+    "hg": 0,
+    "wap": "047.92",
+    "hap": "056.25",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Soul Land Series",
+    "Aliases": [],
+    "Size": 22,
+    "wa": 12,
+    "ha": 10,
+    "wg": 0,
+    "hg": 0,
+    "wap": "054.55",
+    "hap": "045.45",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Soulcalibur Series",
+    "Aliases": [
+      "Soulcalibur",
+      "Soul Calibur",
+      "SC"
+    ],
+    "Size": 49,
+    "wa": 1,
+    "ha": 0,
+    "wg": 20,
+    "hg": 29,
+    "wap": "002.04",
+    "hap": "000.00",
+    "wgp": "040.82",
+    "hgp": "059.18"
+  },
+  {
+    "Bundle": "Souls Series",
+    "Aliases": [
+      "DS",
+      "Souls Games",
+      "Dark Souls Series"
+    ],
+    "Size": 108,
+    "wa": 0,
+    "ha": 1,
+    "wg": 39,
+    "hg": 78,
+    "wap": "000.00",
+    "hap": "000.93",
+    "wgp": "036.11",
+    "hgp": "072.22"
+  },
+  {
+    "Bundle": "Sound Horizon",
+    "Aliases": [],
+    "Size": 5,
+    "wa": 1,
+    "ha": 4,
+    "wg": 0,
+    "hg": 0,
+    "wap": "020.00",
+    "hap": "080.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "South Korean Animation",
+    "Aliases": [
+      "Hanguk Aeni",
+      "Aeni"
+    ],
+    "Size": 103,
+    "wa": 23,
+    "ha": 40,
+    "wg": 28,
+    "hg": 30,
+    "wap": "022.33",
+    "hap": "038.83",
+    "wgp": "027.18",
+    "hgp": "029.13"
+  },
+  {
+    "Bundle": "Soviet Games",
+    "Aliases": [],
+    "Size": 16,
+    "wa": 0,
+    "ha": 0,
+    "wg": 13,
+    "hg": 3,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "081.25",
+    "hgp": "018.75"
+  },
+  {
+    "Bundle": "Space Ghost Chronology",
+    "Aliases": [],
+    "Size": 16,
+    "wa": 0,
+    "ha": 16,
+    "wg": 0,
+    "hg": 0,
+    "wap": "000.00",
+    "hap": "100.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Spanish Media",
+    "Aliases": [
+      "Spain Bundle",
+      "Espa\u00f1a",
+      "Spain",
+      "Cosas de Espa\u00f1a",
+      "Espa\u00f1ita",
+      "Arriba Espa\u00f1a",
+      ":flag_es:"
+    ],
+    "Size": 91,
+    "wa": 21,
+    "ha": 45,
+    "wg": 9,
+    "hg": 18,
+    "wap": "023.08",
+    "hap": "049.45",
+    "wgp": "009.89",
+    "hgp": "019.78"
+  },
+  {
+    "Bundle": "Spelunky Series",
+    "Aliases": [],
+    "Size": 8,
+    "wa": 0,
+    "ha": 0,
+    "wg": 5,
+    "hg": 3,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "062.50",
+    "hgp": "037.50"
+  },
+  {
+    "Bundle": "Spike Chunsoft",
+    "Aliases": [],
+    "Size": 292,
+    "wa": 68,
+    "ha": 42,
+    "wg": 133,
+    "hg": 138,
+    "wap": "023.29",
+    "hap": "014.38",
+    "wgp": "045.55",
+    "hgp": "047.26"
+  },
+  {
+    "Bundle": "Spirit Hunter Series",
+    "Aliases": [],
+    "Size": 9,
+    "wa": 0,
+    "ha": 0,
+    "wg": 3,
+    "hg": 6,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "033.33",
+    "hgp": "066.67"
+  },
+  {
+    "Bundle": "Splatoon Series",
+    "Aliases": [
+      "Splat"
+    ],
+    "Size": 43,
+    "wa": 1,
+    "ha": 8,
+    "wg": 15,
+    "hg": 20,
+    "wap": "002.33",
+    "hap": "018.60",
+    "wgp": "034.88",
+    "hgp": "046.51"
+  },
+  {
+    "Bundle": "SpongeBob SquarePants Series",
+    "Aliases": [
+      "SBSP Series"
+    ],
+    "Size": 45,
+    "wa": 8,
+    "ha": 36,
+    "wg": 0,
+    "hg": 2,
+    "wap": "017.78",
+    "hap": "080.00",
+    "wgp": "000.00",
+    "hgp": "004.44"
+  },
+  {
+    "Bundle": "Sports Animanga",
+    "Aliases": [
+      "Sports Anime",
+      "Sports Manga",
+      "Sports"
+    ],
+    "Size": 1565,
+    "wa": 590,
+    "ha": 968,
+    "wg": 107,
+    "hg": 130,
+    "wap": "037.70",
+    "hap": "061.85",
+    "wgp": "006.84",
+    "hgp": "008.31"
+  },
+  {
+    "Bundle": "Sports Games",
+    "Aliases": [],
+    "Size": 287,
+    "wa": 101,
+    "ha": 105,
+    "wg": 135,
+    "hg": 143,
+    "wap": "035.19",
+    "hap": "036.59",
+    "wgp": "047.04",
+    "hgp": "049.83"
+  },
+  {
+    "Bundle": "Spyro",
+    "Aliases": [
+      "Spyro Series"
+    ],
+    "Size": 17,
+    "wa": 0,
+    "ha": 0,
+    "wg": 5,
+    "hg": 12,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "029.41",
+    "hgp": "070.59"
+  },
+  {
+    "Bundle": "Spyro Multiverse",
+    "Aliases": [],
+    "Size": 76,
+    "wa": 1,
+    "ha": 2,
+    "wg": 19,
+    "hg": 57,
+    "wap": "001.32",
+    "hap": "002.63",
+    "wgp": "025.00",
+    "hgp": "075.00"
+  },
+  {
+    "Bundle": "Spyro Reignited Trilogy",
+    "Aliases": [],
+    "Size": 16,
+    "wa": 0,
+    "ha": 0,
+    "wg": 4,
+    "hg": 12,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "025.00",
+    "hgp": "075.00"
+  },
+  {
+    "Bundle": "Square Enix",
+    "Aliases": [
+      "Squaresoft",
+      "Squeenix",
+      "SQEX",
+      "Enix"
+    ],
+    "Size": 1168,
+    "wa": 61,
+    "ha": 35,
+    "wg": 550,
+    "hg": 615,
+    "wap": "005.22",
+    "hap": "003.00",
+    "wgp": "047.09",
+    "hgp": "052.65"
+  },
+  {
+    "Bundle": "Square Enix Holdings",
+    "Aliases": [
+      "SQEX Holdings"
+    ],
+    "Size": 3630,
+    "wa": 1468,
+    "ha": 989,
+    "wg": 751,
+    "hg": 678,
+    "wap": "040.44",
+    "hap": "027.25",
+    "wgp": "020.69",
+    "hgp": "018.68"
+  },
+  {
+    "Bundle": "Sr Pelo's Works",
+    "Aliases": [],
+    "Size": 4,
+    "wa": 1,
+    "ha": 3,
+    "wg": 0,
+    "hg": 2,
+    "wap": "025.00",
+    "hap": "075.00",
+    "wgp": "000.00",
+    "hgp": "050.00"
+  },
+  {
+    "Bundle": "Stage Musicals",
+    "Aliases": [
+      "Musical Theatre",
+      "Broadway"
+    ],
+    "Size": 33,
+    "wa": 17,
+    "ha": 17,
+    "wg": 0,
+    "hg": 0,
+    "wap": "051.52",
+    "hap": "051.52",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Star Ocean Series",
+    "Aliases": [
+      "Star Ocean"
+    ],
+    "Size": 41,
+    "wa": 4,
+    "ha": 5,
+    "wg": 26,
+    "hg": 15,
+    "wap": "009.76",
+    "hap": "012.20",
+    "wgp": "063.41",
+    "hgp": "036.59"
+  },
+  {
+    "Bundle": "Star Trek",
+    "Aliases": [
+      "Star Trek Series",
+      "ST Series"
+    ],
+    "Size": 53,
+    "wa": 18,
+    "ha": 35,
+    "wg": 0,
+    "hg": 0,
+    "wap": "033.96",
+    "hap": "066.04",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Star Wars Series",
+    "Aliases": [
+      "SW Series",
+      "SWS"
+    ],
+    "Size": 241,
+    "wa": 46,
+    "ha": 131,
+    "wg": 25,
+    "hg": 39,
+    "wap": "019.09",
+    "hap": "054.36",
+    "wgp": "010.37",
+    "hgp": "016.18"
+  },
+  {
+    "Bundle": "Star Wars: Knights of the Old Republic Series",
+    "Aliases": [],
+    "Size": 21,
+    "wa": 0,
+    "ha": 0,
+    "wg": 9,
+    "hg": 12,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "042.86",
+    "hgp": "057.14"
+  },
+  {
+    "Bundle": "Star Wars: The Force Unleashed Series",
+    "Aliases": [],
+    "Size": 5,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 3,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "040.00",
+    "hgp": "060.00"
+  },
+  {
+    "Bundle": "Stargate",
+    "Aliases": [],
+    "Size": 12,
+    "wa": 4,
+    "ha": 8,
+    "wg": 0,
+    "hg": 0,
+    "wap": "033.33",
+    "hap": "066.67",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Starship Entertainment",
+    "Aliases": [],
+    "Size": 12,
+    "wa": 5,
+    "ha": 7,
+    "wg": 0,
+    "hg": 0,
+    "wap": "041.67",
+    "hap": "058.33",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Stephen King's Works",
+    "Aliases": [
+      "Stephen King"
+    ],
+    "Size": 9,
+    "wa": 2,
+    "ha": 8,
+    "wg": 0,
+    "hg": 0,
+    "wap": "022.22",
+    "hap": "088.89",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Stopmotion",
+    "Aliases": [
+      "Claymation",
+      "Stop frame",
+      "Stop Motion",
+      "Stop-Motion"
+    ],
+    "Size": 109,
+    "wa": 26,
+    "ha": 86,
+    "wg": 0,
+    "hg": 0,
+    "wap": "023.85",
+    "hap": "078.90",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Story of Eroolia",
+    "Aliases": [],
+    "Size": 4,
+    "wa": 0,
+    "ha": 0,
+    "wg": 3,
+    "hg": 1,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "075.00",
+    "hgp": "025.00"
+  },
+  {
+    "Bundle": "Strategy Games",
+    "Aliases": [
+      "RTS",
+      "Real-time Strategy Games",
+      "Turn-based Strategy Games"
+    ],
+    "Size": 1527,
+    "wa": 58,
+    "ha": 21,
+    "wg": 803,
+    "hg": 741,
+    "wap": "003.80",
+    "hap": "001.38",
+    "wgp": "052.59",
+    "hgp": "048.53"
+  },
+  {
+    "Bundle": "Street Fighter",
+    "Aliases": [
+      "SF",
+      "Street Fighter Series"
+    ],
+    "Size": 66,
+    "wa": 0,
+    "ha": 0,
+    "wg": 19,
+    "hg": 48,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "028.79",
+    "hgp": "072.73"
+  },
+  {
+    "Bundle": "Street Fighter Shared Universe",
+    "Aliases": [
+      "SF Universe"
+    ],
+    "Size": 87,
+    "wa": 0,
+    "ha": 0,
+    "wg": 32,
+    "hg": 56,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "036.78",
+    "hgp": "064.37"
+  },
+  {
+    "Bundle": "Streets of Rage Trilogy",
+    "Aliases": [
+      "Streets of Rage Series"
+    ],
+    "Size": 6,
+    "wa": 0,
+    "ha": 0,
+    "wg": 1,
+    "hg": 5,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "016.67",
+    "hgp": "083.33"
+  },
+  {
+    "Bundle": "Studio 1st",
+    "Aliases": [],
+    "Size": 10,
+    "wa": 9,
+    "ha": 1,
+    "wg": 1,
+    "hg": 0,
+    "wap": "090.00",
+    "hap": "010.00",
+    "wgp": "010.00",
+    "hgp": "000.00"
   }
 ]
