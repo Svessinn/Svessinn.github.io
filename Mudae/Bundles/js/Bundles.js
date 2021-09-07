@@ -29,11 +29,10 @@ const app = new Vue({
         if (this.currentSort !== 'Bundle') {
           if (a[this.currentSort] < b[this.currentSort]) return -1 * modifier;
           if (a[this.currentSort] > b[this.currentSort]) return 1 * modifier;
-        };
-        else {
+        } else {
           if (a[this.currentSort].toLowerCase() < b[this.currentSort].toLowerCase()) return -1 * modifier;
           if (a[this.currentSort].toLowerCase() > b[this.currentSort].toLowerCase()) return 1 * modifier;
-        };
+        }
         return 0;
       });
     }
