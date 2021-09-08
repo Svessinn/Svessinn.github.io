@@ -1,28 +1,28 @@
 # Imports
 from collections import defaultdict as ddict
+def main():
+	# Variables
+	dct = ddict(list)
+	inp = input('Input:\n')
+	lst = []
 
-# Variables
-dct = ddict(list)
-inp = input('Input:\n')
-lst = []
+	# Main loop
+	while inp:
+		i = list(inp.split('  :revolving_hearts: => '))
+		dct[i[1]].append(i[0])
+		inp = input()
 
-# Main loop
-while inp:
-  i = list(inp.split('  :revolving_hearts: => '))
-  dct[i[1]].append(i[0])
-  inp = input()
+	# Turning defaultdict into a list
+	for i in dct:
+		lst.append([i.capitalize(), dct[i]])
 
-# Turning defaultdict into a list
-for i in dct:
-  lst.append([i.capitalize(), dct[i]])
+	# Sorting list
+	lst.sort()
 
-# Sorting list
-lst.sort()
-
-# Outputting formatted list
-for i in range(len(lst)):
-  print(lst[i][0], end=': \n')
-  print(*lst[i][1], sep=', ', end='\n\n')
+	# Outputting formatted list
+	for i in range(len(lst)):
+		print(lst[i][0], end=': \n')
+		print(*lst[i][1], sep=', ', end='\n\n')
 
 # Instructions
 # copy the characters and owners from a $imao-
