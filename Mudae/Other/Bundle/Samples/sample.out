@@ -1,0 +1,33 @@
+[
+  {
+    "Bundle": ".hack",
+    "Aliases": [
+      "dothack",
+      "dot hack",
+      ".hack Series",
+      ".h"
+    ],
+    "Size": 37,
+    "wa": 14,
+    "ha": 13,
+    "wg": 14,
+    "hg": 15,
+    "wap": 37.84,
+    "hap": 35.14,
+    "wgp": 37.84,
+    "hgp": 40.54
+  },
+  {
+    "Bundle": "07th Expansion",
+    "Aliases": [],
+    "Size": 148,
+    "wa": 53,
+    "ha": 31,
+    "wg": 41,
+    "hg": 27,
+    "wap": 35.81,
+    "hap": 20.95,
+    "wgp": 27.7,
+    "hgp": 18.24
+  }
+]
