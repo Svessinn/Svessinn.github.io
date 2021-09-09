@@ -18802,5 +18802,737 @@
     "hap": "004.69",
     "wgp": "029.69",
     "hgp": "075.00"
+  },
+	{
+    "Bundle": "Tiger & Bunny Series",
+    "Aliases": [],
+    "Size": 12,
+    "wa": 3,
+    "ha": 9,
+    "wg": 0,
+    "hg": 0,
+    "wap": "025.00",
+    "hap": "075.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Tiger Mask Series",
+    "Aliases": [],
+    "Size": 2,
+    "wa": 1,
+    "ha": 1,
+    "wg": 0,
+    "hg": 0,
+    "wap": "050.00",
+    "hap": "050.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Tim Burton's Works",
+    "Aliases": [
+      "Tim Burton"
+    ],
+    "Size": 24,
+    "wa": 7,
+    "ha": 17,
+    "wg": 0,
+    "hg": 0,
+    "wap": "029.17",
+    "hap": "070.83",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Tite Kubo's Works",
+    "Aliases": [
+      "Tite Kubo"
+    ],
+    "Size": 196,
+    "wa": 66,
+    "ha": 133,
+    "wg": 1,
+    "hg": 0,
+    "wap": "033.67",
+    "hap": "067.86",
+    "wgp": "000.51",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "TMNT Series",
+    "Aliases": [
+      "Teenage Mutant Ninja Turtles Series",
+      "Teenage Mutant Ninja Turtle Series"
+    ],
+    "Size": 38,
+    "wa": 6,
+    "ha": 30,
+    "wg": 1,
+    "hg": 2,
+    "wap": "015.79",
+    "hap": "078.95",
+    "wgp": "002.63",
+    "hgp": "005.26"
+  },
+  {
+    "Bundle": "TMS Entertainment",
+    "Aliases": [
+      "Tokyo Movie Shinsha",
+      "Tokyo Movie",
+      "TMS-Kyokuichi"
+    ],
+    "Size": 691,
+    "wa": 272,
+    "ha": 428,
+    "wg": 16,
+    "hg": 14,
+    "wap": "039.36",
+    "hap": "061.94",
+    "wgp": "002.32",
+    "hgp": "002.03"
+  },
+  {
+    "Bundle": "To Be Hero Series",
+    "Aliases": [],
+    "Size": 3,
+    "wa": 2,
+    "ha": 1,
+    "wg": 0,
+    "hg": 0,
+    "wap": "066.67",
+    "hap": "033.33",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "To Heart Series",
+    "Aliases": [
+      "ToHeart Series"
+    ],
+    "Size": 20,
+    "wa": 2,
+    "ha": 1,
+    "wg": 17,
+    "hg": 1,
+    "wap": "010.00",
+    "hap": "005.00",
+    "wgp": "085.00",
+    "hgp": "005.00"
+  },
+  {
+    "Bundle": "Toboso Yana's Art",
+    "Aliases": [
+      "Toboso Yana"
+    ],
+    "Size": 87,
+    "wa": 16,
+    "ha": 43,
+    "wg": 0,
+    "hg": 30,
+    "wap": "018.39",
+    "hap": "049.43",
+    "wgp": "000.00",
+    "hgp": "034.48"
+  },
+  {
+    "Bundle": "Toby Fox Games",
+    "Aliases": [],
+    "Size": 60,
+    "wa": 0,
+    "ha": 0,
+    "wg": 35,
+    "hg": 45,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "058.33",
+    "hgp": "075.00"
+  },
+  {
+    "Bundle": "Toei Animation",
+    "Aliases": [
+      "Toei"
+    ],
+    "Size": 1640,
+    "wa": 551,
+    "ha": 1089,
+    "wg": 33,
+    "hg": 89,
+    "wap": "033.60",
+    "hap": "066.40",
+    "wgp": "002.01",
+    "hgp": "005.43"
+  },
+  {
+    "Bundle": "Toji no Miko Series",
+    "Aliases": [
+      "TnM Series"
+    ],
+    "Size": 32,
+    "wa": 23,
+    "ha": 1,
+    "wg": 21,
+    "hg": 0,
+    "wap": "071.88",
+    "hap": "003.12",
+    "wgp": "065.62",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Tokimeki Memorial Series",
+    "Aliases": [
+      "Tokimeki Memorial"
+    ],
+    "Size": 17,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 15,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "011.76",
+    "hgp": "088.24"
+  },
+  {
+    "Bundle": "Tokusatsu",
+    "Aliases": [],
+    "Size": 298,
+    "wa": 78,
+    "ha": 227,
+    "wg": 0,
+    "hg": 3,
+    "wap": "026.17",
+    "hap": "076.17",
+    "wgp": "000.00",
+    "hgp": "001.01"
+  },
+  {
+    "Bundle": "Tokyo Ghoul Series",
+    "Aliases": [],
+    "Size": 74,
+    "wa": 31,
+    "ha": 43,
+    "wg": 1,
+    "hg": 1,
+    "wap": "041.89",
+    "hap": "058.11",
+    "wgp": "001.35",
+    "hgp": "001.35"
+  },
+  {
+    "Bundle": "Tom Clancy's",
+    "Aliases": [
+      "Tom Clancy"
+    ],
+    "Size": 48,
+    "wa": 0,
+    "ha": 0,
+    "wg": 18,
+    "hg": 30,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "037.50",
+    "hgp": "062.50"
+  },
+  {
+    "Bundle": "Tony Hawk Series",
+    "Aliases": [
+      "Tony Hawk"
+    ],
+    "Size": 2,
+    "wa": 0,
+    "ha": 1,
+    "wg": 0,
+    "hg": 2,
+    "wap": "000.00",
+    "hap": "050.00",
+    "wgp": "000.00",
+    "hgp": "100.00"
+  },
+  {
+    "Bundle": "Tony Taka's Art",
+    "Aliases": [
+      "Tanaka Takayuki's Art",
+      "Tony Taka",
+      "Tanaka Takayuki"
+    ],
+    "Size": 28,
+    "wa": 11,
+    "ha": 0,
+    "wg": 15,
+    "hg": 5,
+    "wap": "039.29",
+    "hap": "000.00",
+    "wgp": "053.57",
+    "hgp": "017.86"
+  },
+  {
+    "Bundle": "Toomics",
+    "Aliases": [
+      "Zzamtoon"
+    ],
+    "Size": 40,
+    "wa": 21,
+    "ha": 19,
+    "wg": 0,
+    "hg": 0,
+    "wap": "052.50",
+    "hap": "047.50",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Toonami",
+    "Aliases": [],
+    "Size": 3148,
+    "wa": 1047,
+    "ha": 2192,
+    "wg": 16,
+    "hg": 48,
+    "wap": "033.26",
+    "hap": "069.63",
+    "wgp": "000.51",
+    "hgp": "001.52"
+  },
+  {
+    "Bundle": "Top wo Nerae! Series",
+    "Aliases": [
+      "Gunbuster Series"
+    ],
+    "Size": 10,
+    "wa": 7,
+    "ha": 3,
+    "wg": 0,
+    "hg": 0,
+    "wap": "070.00",
+    "hap": "030.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Toptoon",
+    "Aliases": [],
+    "Size": 37,
+    "wa": 35,
+    "ha": 2,
+    "wg": 0,
+    "hg": 0,
+    "wap": "094.59",
+    "hap": "005.41",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Total Drama",
+    "Aliases": [
+      "TD"
+    ],
+    "Size": 92,
+    "wa": 41,
+    "ha": 51,
+    "wg": 0,
+    "hg": 0,
+    "wap": "044.57",
+    "hap": "055.43",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Touhou Fanworks",
+    "Aliases": [
+      "Fanhus"
+    ],
+    "Size": 35,
+    "wa": 2,
+    "ha": 0,
+    "wg": 32,
+    "hg": 2,
+    "wap": "005.71",
+    "hap": "000.00",
+    "wgp": "091.43",
+    "hgp": "005.71"
+  },
+  {
+    "Bundle": "Touhou Project",
+    "Aliases": [
+      "Touhou",
+      "Project Shrine Maiden",
+      "TH",
+      "2hu",
+      "Toehoe"
+    ],
+    "Size": 161,
+    "wa": 67,
+    "ha": 1,
+    "wg": 148,
+    "hg": 8,
+    "wap": "041.61",
+    "hap": "000.62",
+    "wgp": "091.93",
+    "hgp": "004.97"
+  },
+  {
+    "Bundle": "Touhou Project (PC-98 Canon)",
+    "Aliases": [
+      "PC-98 Era",
+      "Touhou PC-98",
+      "Touhou PC 98"
+    ],
+    "Size": 33,
+    "wa": 0,
+    "ha": 0,
+    "wg": 32,
+    "hg": 5,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "096.97",
+    "hgp": "015.15"
+  },
+  {
+    "Bundle": "Touhou Project (Windows Canon)",
+    "Aliases": [
+      "Touhou Win",
+      "Windows Era"
+    ],
+    "Size": 128,
+    "wa": 67,
+    "ha": 1,
+    "wg": 116,
+    "hg": 3,
+    "wap": "052.34",
+    "hap": "000.78",
+    "wgp": "090.62",
+    "hgp": "002.34"
+  },
+  {
+    "Bundle": "Touhou Project Universe",
+    "Aliases": [
+      "Touhouverse",
+      "Official and fanmade Touhou Project works"
+    ],
+    "Size": 200,
+    "wa": 71,
+    "ha": 2,
+    "wg": 182,
+    "hg": 11,
+    "wap": "035.50",
+    "hap": "001.00",
+    "wgp": "091.00",
+    "hgp": "005.50"
+  },
+  {
+    "Bundle": "Tower Defense Games",
+    "Aliases": [],
+    "Size": 80,
+    "wa": 1,
+    "ha": 1,
+    "wg": 63,
+    "hg": 23,
+    "wap": "001.25",
+    "hap": "001.25",
+    "wgp": "078.75",
+    "hgp": "028.75"
+  },
+  {
+    "Bundle": "Toy Story Series",
+    "Aliases": [],
+    "Size": 19,
+    "wa": 4,
+    "ha": 15,
+    "wg": 0,
+    "hg": 0,
+    "wap": "021.05",
+    "hap": "078.95",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Toys",
+    "Aliases": [],
+    "Size": 690,
+    "wa": 218,
+    "ha": 395,
+    "wg": 43,
+    "hg": 90,
+    "wap": "031.59",
+    "hap": "057.25",
+    "wgp": "006.23",
+    "hgp": "013.04"
+  },
+  {
+    "Bundle": "Toys For Bob",
+    "Aliases": [],
+    "Size": 88,
+    "wa": 0,
+    "ha": 2,
+    "wg": 18,
+    "hg": 70,
+    "wap": "000.00",
+    "hap": "002.27",
+    "wgp": "020.45",
+    "hgp": "079.55"
+  },
+  {
+    "Bundle": "Trading Card Games",
+    "Aliases": [
+      "Trading Card Game Series",
+      "Trading Card Game Bundle",
+      "Card Games",
+      "TCGs",
+      "CCG",
+      "TCG",
+      "Collectible Card Games"
+    ],
+    "Size": 1184,
+    "wa": 368,
+    "ha": 426,
+    "wg": 568,
+    "hg": 441,
+    "wap": "031.08",
+    "hap": "035.98",
+    "wgp": "047.97",
+    "hgp": "037.25"
+  },
+  {
+    "Bundle": "Transformers Series",
+    "Aliases": [
+      "TFS",
+      "TF Series"
+    ],
+    "Size": 186,
+    "wa": 22,
+    "ha": 164,
+    "wg": 0,
+    "hg": 0,
+    "wap": "011.83",
+    "hap": "088.17",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Trash Taste",
+    "Aliases": [
+      "Trash Taste Podcast"
+    ],
+    "Size": 3,
+    "wa": 0,
+    "ha": 3,
+    "wg": 0,
+    "hg": 0,
+    "wap": "000.00",
+    "hap": "100.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Tri-State Area Series",
+    "Aliases": [],
+    "Size": 32,
+    "wa": 9,
+    "ha": 24,
+    "wg": 0,
+    "hg": 0,
+    "wap": "028.12",
+    "hap": "075.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Trigger",
+    "Aliases": [
+      "Studio Trigger"
+    ],
+    "Size": 203,
+    "wa": 91,
+    "ha": 76,
+    "wg": 24,
+    "hg": 13,
+    "wap": "044.83",
+    "hap": "037.44",
+    "wgp": "011.82",
+    "hgp": "006.40"
+  },
+  {
+    "Bundle": "Troll Series",
+    "Aliases": [],
+    "Size": 7,
+    "wa": 6,
+    "ha": 1,
+    "wg": 0,
+    "hg": 0,
+    "wap": "085.71",
+    "hap": "014.29",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Tsugumi Ohba's Works",
+    "Aliases": [
+      "Tsugumi Ohba"
+    ],
+    "Size": 57,
+    "wa": 18,
+    "ha": 39,
+    "wg": 0,
+    "hg": 0,
+    "wap": "031.58",
+    "hap": "068.42",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Tsuji Santa's Art",
+    "Aliases": [
+      "Tsuji Santa"
+    ],
+    "Size": 13,
+    "wa": 8,
+    "ha": 0,
+    "wg": 3,
+    "hg": 3,
+    "wap": "061.54",
+    "hap": "000.00",
+    "wgp": "023.08",
+    "hgp": "023.08"
+  },
+  {
+    "Bundle": "Tsukino Talent Production",
+    "Aliases": [
+      "Tsukino Pro",
+      "Tsukino Paradise",
+      "Tsukipara"
+    ],
+    "Size": 73,
+    "wa": 13,
+    "ha": 60,
+    "wg": 13,
+    "hg": 46,
+    "wap": "017.81",
+    "hap": "082.19",
+    "wgp": "017.81",
+    "hgp": "063.01"
+  },
+  {
+    "Bundle": "Tsukumizu's works",
+    "Aliases": [
+      "Tsukumizu",
+      "tkmiz"
+    ],
+    "Size": 10,
+    "wa": 9,
+    "ha": 4,
+    "wg": 0,
+    "hg": 0,
+    "wap": "090.00",
+    "hap": "040.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Tufos",
+    "Aliases": [],
+    "Size": 2,
+    "wa": 1,
+    "ha": 1,
+    "wg": 0,
+    "hg": 0,
+    "wap": "050.00",
+    "hap": "050.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Turn-Based RPGs",
+    "Aliases": [
+      "Turn Based RPGs",
+      "TBRPGs"
+    ],
+    "Size": 5532,
+    "wa": 489,
+    "ha": 475,
+    "wg": 3111,
+    "hg": 2566,
+    "wap": "008.84",
+    "hap": "008.59",
+    "wgp": "056.24",
+    "hgp": "046.38"
+  },
+  {
+    "Bundle": "Twitch",
+    "Aliases": [],
+    "Size": 53,
+    "wa": 18,
+    "ha": 34,
+    "wg": 0,
+    "hg": 1,
+    "wap": "033.96",
+    "hap": "064.15",
+    "wgp": "000.00",
+    "hgp": "001.89"
+  },
+  {
+    "Bundle": "TYO Animations",
+    "Aliases": [
+      "Yumeta Company"
+    ],
+    "Size": 91,
+    "wa": 33,
+    "ha": 22,
+    "wg": 14,
+    "hg": 28,
+    "wap": "036.26",
+    "hap": "024.18",
+    "wgp": "015.38",
+    "hgp": "030.77"
+  },
+  {
+    "Bundle": "TYPE-MOON",
+    "Aliases": [
+      "TYPE MOON",
+      "TYPEMOON"
+    ],
+    "Size": 525,
+    "wa": 182,
+    "ha": 130,
+    "wg": 198,
+    "hg": 176,
+    "wap": "034.67",
+    "hap": "024.76",
+    "wgp": "037.71",
+    "hgp": "033.52"
+  },
+  {
+    "Bundle": "Typhoon Graphics",
+    "Aliases": [],
+    "Size": 35,
+    "wa": 8,
+    "ha": 27,
+    "wg": 0,
+    "hg": 23,
+    "wap": "022.86",
+    "hap": "077.14",
+    "wgp": "000.00",
+    "hgp": "065.71"
+  },
+  {
+    "Bundle": "T\u014dh\u014d Co., Ltd.",
+    "Aliases": [
+      "Toho Bundle",
+      "Toho Company Limited",
+      "T\u014dh\u014d Kabushiki-gaisha",
+      "Toho Co., Ltd.",
+      "Toho",
+      "Touhou Co, Ltd",
+      "Toho Co, Ltd"
+    ],
+    "Size": 799,
+    "wa": 287,
+    "ha": 523,
+    "wg": 0,
+    "hg": 4,
+    "wap": "035.92",
+    "hap": "065.46",
+    "wgp": "000.00",
+    "hgp": "000.50"
   }
 ]
