@@ -19515,7 +19515,7 @@
     "hgp": "065.71"
   },
   {
-    "Bundle": "T\u014dh\u014d Co., Ltd.",
+    "Bundle": "Tōhō Co., Ltd.",
     "Aliases": [
       "Toho Bundle",
       "Toho Company Limited",
@@ -19534,5 +19534,1927 @@
     "hap": "065.46",
     "wgp": "000.00",
     "hgp": "000.50"
+  },
+	{
+    "Bundle": "Ubisoft",
+    "Aliases": [
+      "Bugisoft"
+    ],
+    "Size": 432,
+    "wa": 15,
+    "ha": 34,
+    "wg": 166,
+    "hg": 243,
+    "wap": "003.47",
+    "hap": "007.87",
+    "wgp": "038.43",
+    "hgp": "056.25"
+  },
+  {
+    "Bundle": "ufotable",
+    "Aliases": [],
+    "Size": 236,
+    "wa": 83,
+    "ha": 107,
+    "wg": 46,
+    "hg": 47,
+    "wap": "035.17",
+    "hap": "045.34",
+    "wgp": "019.49",
+    "hgp": "019.92"
+  },
+  {
+    "Bundle": "Ultra Jump",
+    "Aliases": [],
+    "Size": 175,
+    "wa": 87,
+    "ha": 91,
+    "wg": 0,
+    "hg": 0,
+    "wap": "049.71",
+    "hap": "052.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Ultraman Universe",
+    "Aliases": [],
+    "Size": 24,
+    "wa": 11,
+    "ha": 13,
+    "wg": 0,
+    "hg": 0,
+    "wap": "045.83",
+    "hap": "054.17",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Umaru-chan Universe",
+    "Aliases": [
+      "UCU"
+    ],
+    "Size": 31,
+    "wa": 21,
+    "ha": 13,
+    "wg": 0,
+    "hg": 0,
+    "wap": "067.74",
+    "hap": "041.94",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "UNDERTALE Fanworks",
+    "Aliases": [
+      "UT Fanworks"
+    ],
+    "Size": 4,
+    "wa": 2,
+    "ha": 1,
+    "wg": 1,
+    "hg": 1,
+    "wap": "050.00",
+    "hap": "025.00",
+    "wgp": "025.00",
+    "hgp": "025.00"
+  },
+  {
+    "Bundle": "Universal Classic Monsters",
+    "Aliases": [],
+    "Size": 3,
+    "wa": 0,
+    "ha": 3,
+    "wg": 0,
+    "hg": 0,
+    "wap": "000.00",
+    "hap": "100.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Universal Pictures",
+    "Aliases": [
+      "Universal Studios",
+      "Universal Film Manufacturing Company",
+      "Universal"
+    ],
+    "Size": 231,
+    "wa": 79,
+    "ha": 152,
+    "wg": 2,
+    "hg": 2,
+    "wap": "034.20",
+    "hap": "065.80",
+    "wgp": "000.87",
+    "hgp": "000.87"
+  },
+  {
+    "Bundle": "Usuba Kagerou's Art",
+    "Aliases": [
+      "Usuba Kagerou"
+    ],
+    "Size": 44,
+    "wa": 0,
+    "ha": 23,
+    "wg": 3,
+    "hg": 41,
+    "wap": "000.00",
+    "hap": "052.27",
+    "wgp": "006.82",
+    "hgp": "093.18"
+  },
+  {
+    "Bundle": "Utawarerumono Series",
+    "Aliases": [
+      "Utaware Series"
+    ],
+    "Size": 39,
+    "wa": 17,
+    "ha": 17,
+    "wg": 21,
+    "hg": 18,
+    "wap": "043.59",
+    "hap": "043.59",
+    "wgp": "053.85",
+    "hgp": "046.15"
+  },
+  {
+    "Bundle": "V Jump",
+    "Aliases": [],
+    "Size": 240,
+    "wa": 77,
+    "ha": 153,
+    "wg": 16,
+    "hg": 47,
+    "wap": "032.08",
+    "hap": "063.75",
+    "wgp": "006.67",
+    "hgp": "019.58"
+  },
+  {
+    "Bundle": "Valentia Series",
+    "Aliases": [
+      "Valentia"
+    ],
+    "Size": 38,
+    "wa": 0,
+    "ha": 0,
+    "wg": 13,
+    "hg": 25,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "034.21",
+    "hgp": "065.79"
+  },
+  {
+    "Bundle": "Valkyrie Drive",
+    "Aliases": [
+      "Valkyrie Drive Series",
+      "VD"
+    ],
+    "Size": 19,
+    "wa": 14,
+    "ha": 0,
+    "wg": 9,
+    "hg": 0,
+    "wap": "073.68",
+    "hap": "000.00",
+    "wgp": "047.37",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Valkyrie Profile Series",
+    "Aliases": [
+      "VP Series",
+      "VP"
+    ],
+    "Size": 20,
+    "wa": 0,
+    "ha": 0,
+    "wg": 11,
+    "hg": 9,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "055.00",
+    "hgp": "045.00"
+  },
+  {
+    "Bundle": "Valve Corporation",
+    "Aliases": [
+      "VALVe"
+    ],
+    "Size": 115,
+    "wa": 6,
+    "ha": 19,
+    "wg": 38,
+    "hg": 77,
+    "wap": "005.22",
+    "hap": "016.52",
+    "wgp": "033.04",
+    "hgp": "066.96"
+  },
+  {
+    "Bundle": "Vampire: The Masquerade",
+    "Aliases": [
+      "VTM",
+      "Vampire: The Masquerade Series",
+      "VTM Series"
+    ],
+    "Size": 11,
+    "wa": 0,
+    "ha": 0,
+    "wg": 5,
+    "hg": 6,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "045.45",
+    "hgp": "054.55"
+  },
+  {
+    "Bundle": "Vanillaware",
+    "Aliases": [],
+    "Size": 50,
+    "wa": 0,
+    "ha": 0,
+    "wg": 27,
+    "hg": 23,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "054.00",
+    "hgp": "046.00"
+  },
+  {
+    "Bundle": "Vanpool",
+    "Aliases": [],
+    "Size": 8,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 6,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "025.00",
+    "hgp": "075.00"
+  },
+  {
+    "Bundle": "Vast Error Universe",
+    "Aliases": [
+      "VEU",
+      "VESB"
+    ],
+    "Size": 30,
+    "wa": 12,
+    "ha": 12,
+    "wg": 2,
+    "hg": 8,
+    "wap": "040.00",
+    "hap": "040.00",
+    "wgp": "006.67",
+    "hgp": "026.67"
+  },
+  {
+    "Bundle": "VenusBlood Series",
+    "Aliases": [],
+    "Size": 30,
+    "wa": 0,
+    "ha": 0,
+    "wg": 28,
+    "hg": 2,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "093.33",
+    "hgp": "006.67"
+  },
+  {
+    "Bundle": "ViacomCBS",
+    "Aliases": [
+      "Columbia Broadcasting System",
+      "The Eye Network",
+      "CBS",
+      "Viacom",
+      "CBS Corporation"
+    ],
+    "Size": 897,
+    "wa": 284,
+    "ha": 620,
+    "wg": 0,
+    "hg": 1,
+    "wap": "031.66",
+    "hap": "069.12",
+    "wgp": "000.00",
+    "hgp": "000.11"
+  },
+  {
+    "Bundle": "Vicarious Visions",
+    "Aliases": [],
+    "Size": 105,
+    "wa": 1,
+    "ha": 2,
+    "wg": 23,
+    "hg": 83,
+    "wap": "000.95",
+    "hap": "001.90",
+    "wgp": "021.90",
+    "hgp": "079.05"
+  },
+  {
+    "Bundle": "Virtual Music",
+    "Aliases": [],
+    "Size": 1595,
+    "wa": 776,
+    "ha": 607,
+    "wg": 579,
+    "hg": 392,
+    "wap": "048.65",
+    "hap": "038.06",
+    "wgp": "036.30",
+    "hgp": "024.58"
+  },
+  {
+    "Bundle": "Virtual Pets",
+    "Aliases": [
+      "Digital Pets",
+      "Artificial Pets"
+    ],
+    "Size": 94,
+    "wa": 28,
+    "ha": 13,
+    "wg": 32,
+    "hg": 32,
+    "wap": "029.79",
+    "hap": "013.83",
+    "wgp": "034.04",
+    "hgp": "034.04"
+  },
+  {
+    "Bundle": "Virtual YouTubers",
+    "Aliases": [
+      "VTubers"
+    ],
+    "Size": 503,
+    "wa": 428,
+    "ha": 83,
+    "wg": 13,
+    "hg": 0,
+    "wap": "085.09",
+    "hap": "016.50",
+    "wgp": "002.58",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Visceral Games",
+    "Aliases": [],
+    "Size": 15,
+    "wa": 0,
+    "ha": 0,
+    "wg": 3,
+    "hg": 12,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "020.00",
+    "hgp": "080.00"
+  },
+  {
+    "Bundle": "Visual Novels",
+    "Aliases": [
+      "VN",
+      "VNs"
+    ],
+    "Size": 5601,
+    "wa": 907,
+    "ha": 399,
+    "wg": 2898,
+    "hg": 1722,
+    "wap": "016.19",
+    "hap": "007.12",
+    "wgp": "051.74",
+    "hgp": "030.74"
+  },
+  {
+    "Bundle": "Vivziepop's Works",
+    "Aliases": [
+      "Vivziepop"
+    ],
+    "Size": 43,
+    "wa": 20,
+    "ha": 23,
+    "wg": 0,
+    "hg": 0,
+    "wap": "046.51",
+    "hap": "053.49",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Vocaloid Song Series",
+    "Aliases": [],
+    "Size": 241,
+    "wa": 119,
+    "ha": 111,
+    "wg": 9,
+    "hg": 8,
+    "wap": "049.38",
+    "hap": "046.06",
+    "wgp": "003.73",
+    "hgp": "003.32"
+  },
+  {
+    "Bundle": "Voice Synthesizers",
+    "Aliases": [
+      "Vocal Synthesis",
+      "Voice Synths",
+      "Vocal Synths"
+    ],
+    "Size": 173,
+    "wa": 117,
+    "ha": 60,
+    "wg": 16,
+    "hg": 2,
+    "wap": "067.63",
+    "hap": "034.68",
+    "wgp": "009.25",
+    "hgp": "001.16"
+  },
+  {
+    "Bundle": "Voltage Inc.",
+    "Aliases": [
+      "Voltage Games",
+      "Voltage",
+      "Voltage Inc"
+    ],
+    "Size": 110,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 108,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "001.82",
+    "hgp": "098.18"
+  },
+  {
+    "Bundle": "Walkingnorth's Works",
+    "Aliases": [
+      "Walkingnorth"
+    ],
+    "Size": 4,
+    "wa": 3,
+    "ha": 1,
+    "wg": 0,
+    "hg": 0,
+    "wap": "075.00",
+    "hap": "025.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Walt Disney Animation Studios",
+    "Aliases": [
+      "Disney Animation",
+      "WDAS",
+      "Disney Animated Canon"
+    ],
+    "Size": 347,
+    "wa": 110,
+    "ha": 239,
+    "wg": 1,
+    "hg": 2,
+    "wap": "031.70",
+    "hap": "068.88",
+    "wgp": "000.29",
+    "hgp": "000.58"
+  },
+  {
+    "Bundle": "Wand of Fortune Series",
+    "Aliases": [],
+    "Size": 9,
+    "wa": 0,
+    "ha": 0,
+    "wg": 1,
+    "hg": 8,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "011.11",
+    "hgp": "088.89"
+  },
+  {
+    "Bundle": "WAO World",
+    "Aliases": [],
+    "Size": 35,
+    "wa": 25,
+    "ha": 9,
+    "wg": 1,
+    "hg": 0,
+    "wap": "071.43",
+    "hap": "025.71",
+    "wgp": "002.86",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Warcraft Universe",
+    "Aliases": [],
+    "Size": 173,
+    "wa": 0,
+    "ha": 0,
+    "wg": 64,
+    "hg": 116,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "036.99",
+    "hgp": "067.05"
+  },
+  {
+    "Bundle": "Warhammer",
+    "Aliases": [],
+    "Size": 56,
+    "wa": 0,
+    "ha": 1,
+    "wg": 10,
+    "hg": 46,
+    "wap": "000.00",
+    "hap": "001.79",
+    "wgp": "017.86",
+    "hgp": "082.14"
+  },
+  {
+    "Bundle": "Wario Land Series",
+    "Aliases": [
+      "WL Series"
+    ],
+    "Size": 3,
+    "wa": 0,
+    "ha": 0,
+    "wg": 2,
+    "hg": 1,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "066.67",
+    "hgp": "033.33"
+  },
+  {
+    "Bundle": "Warner Bros.",
+    "Aliases": [
+      "WB",
+      "Warner Media",
+      "Warner Bros",
+      "Warner Brothers"
+    ],
+    "Size": 1899,
+    "wa": 710,
+    "ha": 1157,
+    "wg": 58,
+    "hg": 42,
+    "wap": "037.39",
+    "hap": "060.93",
+    "wgp": "003.05",
+    "hgp": "002.21"
+  },
+  {
+    "Bundle": "Warriors Orochi Series",
+    "Aliases": [],
+    "Size": 87,
+    "wa": 0,
+    "ha": 0,
+    "wg": 30,
+    "hg": 57,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "034.48",
+    "hgp": "065.52"
+  },
+  {
+    "Bundle": "Warriors Series",
+    "Aliases": [
+      "Musou",
+      "Musou Series"
+    ],
+    "Size": 108,
+    "wa": 0,
+    "ha": 0,
+    "wg": 41,
+    "hg": 69,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "037.96",
+    "hgp": "063.89"
+  },
+  {
+    "Bundle": "Watanabe Akio's Art",
+    "Aliases": [
+      "Poyoyon\u2661Rock's Art",
+      "Poyoyon Rock's Art",
+      "Watanabe Akio",
+      "Poyoyon\u2661Rock",
+      "Poyoyon Rock"
+    ],
+    "Size": 199,
+    "wa": 128,
+    "ha": 44,
+    "wg": 36,
+    "hg": 3,
+    "wap": "064.32",
+    "hap": "022.11",
+    "wgp": "018.09",
+    "hgp": "001.51"
+  },
+  {
+    "Bundle": "WATCH_DOGS Series",
+    "Aliases": [
+      "Watch Dogs Series",
+      "WDS",
+      "W_DS",
+      "WD Series",
+      "W_D Series"
+    ],
+    "Size": 21,
+    "wa": 0,
+    "ha": 0,
+    "wg": 9,
+    "hg": 13,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "042.86",
+    "hgp": "061.90"
+  },
+  {
+    "Bundle": "WayForward",
+    "Aliases": [],
+    "Size": 54,
+    "wa": 0,
+    "ha": 0,
+    "wg": 36,
+    "hg": 18,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "066.67",
+    "hgp": "033.33"
+  },
+  {
+    "Bundle": "Weaver's Works",
+    "Aliases": [
+      "TG Weaver",
+      "TGWeaver",
+      "Weaver"
+    ],
+    "Size": 4,
+    "wa": 2,
+    "ha": 2,
+    "wg": 0,
+    "hg": 0,
+    "wap": "050.00",
+    "hap": "050.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "WEB Comic Gamma Plus",
+    "Aliases": [],
+    "Size": 8,
+    "wa": 8,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wap": "100.00",
+    "hap": "000.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Web Comic Zenyon",
+    "Aliases": [],
+    "Size": 18,
+    "wa": 10,
+    "ha": 8,
+    "wg": 0,
+    "hg": 0,
+    "wap": "055.56",
+    "hap": "044.44",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Web Novels",
+    "Aliases": [
+      "WN",
+      "Webnovels"
+    ],
+    "Size": 65,
+    "wa": 24,
+    "ha": 42,
+    "wg": 0,
+    "hg": 0,
+    "wap": "036.92",
+    "hap": "064.62",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Webcomics",
+    "Aliases": [
+      "Web Comics",
+      "Webtoons",
+      "webcomic"
+    ],
+    "Size": 4175,
+    "wa": 1791,
+    "ha": 2439,
+    "wg": 18,
+    "hg": 39,
+    "wap": "042.90",
+    "hap": "058.42",
+    "wgp": "000.43",
+    "hgp": "000.93"
+  },
+  {
+    "Bundle": "Webmanga",
+    "Aliases": [
+      "Web Manga"
+    ],
+    "Size": 911,
+    "wa": 576,
+    "ha": 292,
+    "wg": 38,
+    "hg": 38,
+    "wap": "063.23",
+    "hap": "032.05",
+    "wgp": "004.17",
+    "hgp": "004.17"
+  },
+  {
+    "Bundle": "Weekly Comic Bunch",
+    "Aliases": [],
+    "Size": 12,
+    "wa": 4,
+    "ha": 8,
+    "wg": 0,
+    "hg": 0,
+    "wap": "033.33",
+    "hap": "066.67",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Weekly Shounen Champion",
+    "Aliases": [
+      "Weekly Sh\u014dnen Champion",
+      "WSC",
+      "Shuukan Shounen Champion"
+    ],
+    "Size": 265,
+    "wa": 103,
+    "ha": 162,
+    "wg": 0,
+    "hg": 0,
+    "wap": "038.87",
+    "hap": "061.13",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Weekly Shounen Jump",
+    "Aliases": [
+      "Weekly Shonen Jump",
+      "WSJ",
+      "Shounen Jump+",
+      "Shonen Jump+",
+      "Shuukan Shounen Jump"
+    ],
+    "Size": 3767,
+    "wa": 1240,
+    "ha": 2580,
+    "wg": 10,
+    "hg": 70,
+    "wap": "032.92",
+    "hap": "068.49",
+    "wgp": "000.27",
+    "hgp": "001.86"
+  },
+  {
+    "Bundle": "Weekly Shounen Magazine",
+    "Aliases": [
+      "WSM",
+      "Shuukan Shounen Magazine"
+    ],
+    "Size": 1070,
+    "wa": 471,
+    "ha": 616,
+    "wg": 0,
+    "hg": 0,
+    "wap": "044.02",
+    "hap": "057.57",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Weekly Shounen Sunday",
+    "Aliases": [
+      "Weekly Shonen Sunday",
+      "WSS",
+      "Shuukan Shounen Sunday"
+    ],
+    "Size": 869,
+    "wa": 410,
+    "ha": 465,
+    "wg": 1,
+    "hg": 1,
+    "wap": "047.18",
+    "hap": "053.51",
+    "wgp": "000.12",
+    "hgp": "000.12"
+  },
+  {
+    "Bundle": "Weekly Young Jump",
+    "Aliases": [
+      "Shuukan Young Jump"
+    ],
+    "Size": 478,
+    "wa": 220,
+    "ha": 264,
+    "wg": 0,
+    "hg": 0,
+    "wap": "046.03",
+    "hap": "055.23",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Western",
+    "Aliases": [
+      "Occidental",
+      ":western_anim:"
+    ],
+    "Size": 10231,
+    "wa": 3983,
+    "ha": 6500,
+    "wg": 94,
+    "hg": 149,
+    "wap": "038.93",
+    "hap": "063.53",
+    "wgp": "000.92",
+    "hgp": "001.46"
+  },
+  {
+    "Bundle": "Western Erotic Games",
+    "Aliases": [
+      "WEG",
+      "/weg/"
+    ],
+    "Size": 558,
+    "wa": 0,
+    "ha": 0,
+    "wg": 461,
+    "hg": 103,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "082.62",
+    "hgp": "018.46"
+  },
+  {
+    "Bundle": "Western Indie Games",
+    "Aliases": [
+      "WIG",
+      "West Indies"
+    ],
+    "Size": 1569,
+    "wa": 5,
+    "ha": 2,
+    "wg": 835,
+    "hg": 891,
+    "wap": "000.32",
+    "hap": "000.13",
+    "wgp": "053.22",
+    "hgp": "056.79"
+  },
+  {
+    "Bundle": "Whedonverse",
+    "Aliases": [
+      "Joss Whedon's Works",
+      "Joss Whedon"
+    ],
+    "Size": 32,
+    "wa": 18,
+    "ha": 14,
+    "wg": 0,
+    "hg": 0,
+    "wap": "056.25",
+    "hap": "043.75",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "When They Cry",
+    "Aliases": [
+      "WTC",
+      "When They Cry Series"
+    ],
+    "Size": 120,
+    "wa": 51,
+    "ha": 31,
+    "wg": 31,
+    "hg": 11,
+    "wap": "042.50",
+    "hap": "025.83",
+    "wgp": "025.83",
+    "hgp": "009.17"
+  },
+  {
+    "Bundle": "Whispwill",
+    "Aliases": [
+      "Allexis Kristedja"
+    ],
+    "Size": 9,
+    "wa": 4,
+    "ha": 5,
+    "wg": 0,
+    "hg": 0,
+    "wap": "044.44",
+    "hap": "055.56",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "White Album Series",
+    "Aliases": [],
+    "Size": 13,
+    "wa": 6,
+    "ha": 4,
+    "wg": 3,
+    "hg": 0,
+    "wap": "046.15",
+    "hap": "030.77",
+    "wgp": "023.08",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "White Fox",
+    "Aliases": [],
+    "Size": 352,
+    "wa": 195,
+    "ha": 162,
+    "wg": 10,
+    "hg": 12,
+    "wap": "055.40",
+    "hap": "046.02",
+    "wgp": "002.84",
+    "hgp": "003.41"
+  },
+  {
+    "Bundle": "Whoniverse",
+    "Aliases": [],
+    "Size": 53,
+    "wa": 26,
+    "ha": 31,
+    "wg": 0,
+    "hg": 0,
+    "wap": "049.06",
+    "hap": "058.49",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Whygena's Works",
+    "Aliases": [
+      "Whygena"
+    ],
+    "Size": 2,
+    "wa": 1,
+    "ha": 2,
+    "wg": 0,
+    "hg": 0,
+    "wap": "050.00",
+    "hap": "100.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Wild ARMs Series",
+    "Aliases": [],
+    "Size": 18,
+    "wa": 0,
+    "ha": 0,
+    "wg": 9,
+    "hg": 9,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "050.00",
+    "hgp": "050.00"
+  },
+  {
+    "Bundle": "Wildbow's Works",
+    "Aliases": [
+      "Wildbow"
+    ],
+    "Size": 5,
+    "wa": 3,
+    "ha": 2,
+    "wg": 0,
+    "hg": 0,
+    "wap": "060.00",
+    "hap": "040.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Williams Street",
+    "Aliases": [],
+    "Size": 114,
+    "wa": 21,
+    "ha": 93,
+    "wg": 0,
+    "hg": 0,
+    "wap": "018.42",
+    "hap": "081.58",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Windows 1st Generation",
+    "Aliases": [
+      "WinGen1"
+    ],
+    "Size": 36,
+    "wa": 26,
+    "ha": 0,
+    "wg": 36,
+    "hg": 1,
+    "wap": "072.22",
+    "hap": "000.00",
+    "wgp": "100.00",
+    "hgp": "002.78"
+  },
+  {
+    "Bundle": "Windows 2nd Generation",
+    "Aliases": [
+      "WinGen2"
+    ],
+    "Size": 31,
+    "wa": 15,
+    "ha": 0,
+    "wg": 30,
+    "hg": 1,
+    "wap": "048.39",
+    "hap": "000.00",
+    "wgp": "096.77",
+    "hgp": "003.23"
+  },
+  {
+    "Bundle": "Windows 3rd Generation",
+    "Aliases": [
+      "WinGen3"
+    ],
+    "Size": 37,
+    "wa": 7,
+    "ha": 0,
+    "wg": 37,
+    "hg": 0,
+    "wap": "018.92",
+    "hap": "000.00",
+    "wgp": "100.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Winged Cloud",
+    "Aliases": [
+      "Sakura Series",
+      "Sakura Games"
+    ],
+    "Size": 27,
+    "wa": 0,
+    "ha": 0,
+    "wg": 27,
+    "hg": 0,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "100.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Wings",
+    "Aliases": [],
+    "Size": 25,
+    "wa": 7,
+    "ha": 19,
+    "wg": 0,
+    "hg": 0,
+    "wap": "028.00",
+    "hap": "076.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Wit Studio",
+    "Aliases": [],
+    "Size": 251,
+    "wa": 103,
+    "ha": 147,
+    "wg": 5,
+    "hg": 2,
+    "wap": "041.04",
+    "hap": "058.57",
+    "wgp": "001.99",
+    "hgp": "000.80"
+  },
+  {
+    "Bundle": "Witchblade Series",
+    "Aliases": [],
+    "Size": 5,
+    "wa": 5,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wap": "100.00",
+    "hap": "000.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "WIXOSS",
+    "Aliases": [
+      "WX",
+      "Wish Across"
+    ],
+    "Size": 41,
+    "wa": 37,
+    "ha": 1,
+    "wg": 33,
+    "hg": 0,
+    "wap": "090.24",
+    "hap": "002.44",
+    "wgp": "080.49",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Wizarding World",
+    "Aliases": [
+      "HP Series"
+    ],
+    "Size": 43,
+    "wa": 12,
+    "ha": 25,
+    "wg": 4,
+    "hg": 3,
+    "wap": "027.91",
+    "hap": "058.14",
+    "wgp": "009.30",
+    "hgp": "006.98"
+  },
+  {
+    "Bundle": "Wizards of the Coast",
+    "Aliases": [],
+    "Size": 89,
+    "wa": 1,
+    "ha": 0,
+    "wg": 50,
+    "hg": 43,
+    "wap": "001.12",
+    "hap": "000.00",
+    "wgp": "056.18",
+    "hgp": "048.31"
+  },
+  {
+    "Bundle": "WOLF RPG Editor Games",
+    "Aliases": [
+      "WOLF RPG"
+    ],
+    "Size": 130,
+    "wa": 0,
+    "ha": 0,
+    "wg": 66,
+    "hg": 64,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "050.77",
+    "hgp": "049.23"
+  },
+  {
+    "Bundle": "Woodwalkers Series",
+    "Aliases": [],
+    "Size": 7,
+    "wa": 4,
+    "ha": 3,
+    "wg": 0,
+    "hg": 0,
+    "wap": "057.14",
+    "hap": "042.86",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "WOOMA",
+    "Aliases": [],
+    "Size": 6,
+    "wa": 4,
+    "ha": 2,
+    "wg": 0,
+    "hg": 0,
+    "wap": "066.67",
+    "hap": "033.33",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Working Designs",
+    "Aliases": [],
+    "Size": 27,
+    "wa": 9,
+    "ha": 5,
+    "wg": 8,
+    "hg": 5,
+    "wap": "033.33",
+    "hap": "018.52",
+    "wgp": "029.63",
+    "hgp": "018.52"
+  },
+  {
+    "Bundle": "World Witches",
+    "Aliases": [],
+    "Size": 36,
+    "wa": 35,
+    "ha": 1,
+    "wg": 0,
+    "hg": 0,
+    "wap": "097.22",
+    "hap": "002.78",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Worst Girls Games",
+    "Aliases": [],
+    "Size": 9,
+    "wa": 0,
+    "ha": 0,
+    "wg": 8,
+    "hg": 1,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "088.89",
+    "hgp": "011.11"
+  },
+  {
+    "Bundle": "Wrestling",
+    "Aliases": [],
+    "Size": 74,
+    "wa": 12,
+    "ha": 62,
+    "wg": 0,
+    "hg": 0,
+    "wap": "016.22",
+    "hap": "083.78",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "X.D. Network Inc.",
+    "Aliases": [],
+    "Size": 5,
+    "wa": 0,
+    "ha": 0,
+    "wg": 4,
+    "hg": 1,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "080.00",
+    "hgp": "020.00"
+  },
+  {
+    "Bundle": "Xebec",
+    "Aliases": [],
+    "Size": 455,
+    "wa": 320,
+    "ha": 127,
+    "wg": 56,
+    "hg": 13,
+    "wap": "070.33",
+    "hap": "027.91",
+    "wgp": "012.31",
+    "hgp": "002.86"
+  },
+  {
+    "Bundle": "Xeno Series",
+    "Aliases": [],
+    "Size": 165,
+    "wa": 0,
+    "ha": 0,
+    "wg": 74,
+    "hg": 96,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "044.85",
+    "hgp": "058.18"
+  },
+  {
+    "Bundle": "Xenoblade",
+    "Aliases": [
+      "Xenoblade Chronicles Series",
+      "Xenoblade Series",
+      "XC Series",
+      "XC",
+      "Xenoshit"
+    ],
+    "Size": 122,
+    "wa": 0,
+    "ha": 0,
+    "wg": 55,
+    "hg": 71,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "045.08",
+    "hgp": "058.20"
+  },
+  {
+    "Bundle": "Xia Da's Works",
+    "Aliases": [
+      "Xia Da"
+    ],
+    "Size": 6,
+    "wa": 3,
+    "ha": 3,
+    "wg": 0,
+    "hg": 0,
+    "wap": "050.00",
+    "hap": "050.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Y Press Games",
+    "Aliases": [
+      "YPG"
+    ],
+    "Size": 12,
+    "wa": 0,
+    "ha": 0,
+    "wg": 0,
+    "hg": 12,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "000.00",
+    "hgp": "100.00"
+  },
+  {
+    "Bundle": "Yai Gameworks",
+    "Aliases": [],
+    "Size": 5,
+    "wa": 0,
+    "ha": 0,
+    "wg": 3,
+    "hg": 3,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "060.00",
+    "hgp": "060.00"
+  },
+  {
+    "Bundle": "Yakuza Series",
+    "Aliases": [
+      "Ryu ga Gotoku series",
+      "RgG",
+      "LaD"
+    ],
+    "Size": 87,
+    "wa": 0,
+    "ha": 0,
+    "wg": 22,
+    "hg": 65,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "025.29",
+    "hgp": "074.71"
+  },
+  {
+    "Bundle": "Yamamoto Kotetsuko's Works",
+    "Aliases": [
+      "Kotetsuko Yamamoto's Works",
+      "Ureshino Midori's Works",
+      "Midori Ureshino's Works",
+      "Hakaider's Works",
+      "Yamamoto Kotetsuko",
+      "Ureshino Midori",
+      "Hakaider"
+    ],
+    "Size": 8,
+    "wa": 0,
+    "ha": 8,
+    "wg": 0,
+    "hg": 0,
+    "wap": "000.00",
+    "hap": "100.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "YG Entertainment",
+    "Aliases": [
+      "YG",
+      "YG Family"
+    ],
+    "Size": 9,
+    "wa": 8,
+    "ha": 1,
+    "wg": 0,
+    "hg": 0,
+    "wap": "088.89",
+    "hap": "011.11",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Yokohama Animation Laboratory",
+    "Aliases": [],
+    "Size": 51,
+    "wa": 48,
+    "ha": 3,
+    "wg": 38,
+    "hg": 3,
+    "wap": "094.12",
+    "hap": "005.88",
+    "wgp": "074.51",
+    "hgp": "005.88"
+  },
+  {
+    "Bundle": "Yom's Art",
+    "Aliases": [
+      "Yomu's Art",
+      "Yom's Works",
+      "Yomu's Works",
+      "Yom",
+      "Yomu",
+      "y_o_m_y_o_m",
+      "Yomtights"
+    ],
+    "Size": 9,
+    "wa": 9,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wap": "100.00",
+    "hap": "000.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Yoshiaki Kawajiri's Works",
+    "Aliases": [
+      "Yoshiaki Kawajiri"
+    ],
+    "Size": 19,
+    "wa": 10,
+    "ha": 9,
+    "wg": 0,
+    "hg": 0,
+    "wap": "052.63",
+    "hap": "047.37",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Yoshiaki Sukeno's Works",
+    "Aliases": [
+      "Yoshiaki Sukeno"
+    ],
+    "Size": 40,
+    "wa": 17,
+    "ha": 23,
+    "wg": 0,
+    "hg": 0,
+    "wap": "042.50",
+    "hap": "057.50",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Yoshihiro Togashi's Works",
+    "Aliases": [
+      "Yoshihiro Togashi"
+    ],
+    "Size": 176,
+    "wa": 54,
+    "ha": 124,
+    "wg": 0,
+    "hg": 0,
+    "wap": "030.68",
+    "hap": "070.45",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Yoshiki Tanaka's Works",
+    "Aliases": [
+      "Yoshiki Tanaka"
+    ],
+    "Size": 37,
+    "wa": 9,
+    "ha": 28,
+    "wg": 0,
+    "hg": 0,
+    "wap": "024.32",
+    "hap": "075.68",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Yoshinobu Yamada's Works",
+    "Aliases": [
+      "Yoshinobu Yamada",
+      "yamadayoshinob"
+    ],
+    "Size": 4,
+    "wa": 4,
+    "ha": 0,
+    "wg": 0,
+    "hg": 0,
+    "wap": "100.00",
+    "hap": "000.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Yoshitoki Ooima's Works",
+    "Aliases": [
+      "Yoshitoki Ooima"
+    ],
+    "Size": 31,
+    "wa": 20,
+    "ha": 14,
+    "wg": 0,
+    "hg": 0,
+    "wap": "064.52",
+    "hap": "045.16",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Yostar Games",
+    "Aliases": [
+      "Yostar"
+    ],
+    "Size": 73,
+    "wa": 0,
+    "ha": 0,
+    "wg": 73,
+    "hg": 0,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "100.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Young Ace",
+    "Aliases": [
+      "Young Ace UP"
+    ],
+    "Size": 281,
+    "wa": 135,
+    "ha": 150,
+    "wg": 0,
+    "hg": 0,
+    "wap": "048.04",
+    "hap": "053.38",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Young Animal",
+    "Aliases": [],
+    "Size": 142,
+    "wa": 73,
+    "ha": 74,
+    "wg": 0,
+    "hg": 0,
+    "wap": "051.41",
+    "hap": "052.11",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Young Champion Magazine",
+    "Aliases": [
+      "Young Champion"
+    ],
+    "Size": 26,
+    "wa": 13,
+    "ha": 13,
+    "wg": 0,
+    "hg": 0,
+    "wap": "050.00",
+    "hap": "050.00",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Young Gangan",
+    "Aliases": [],
+    "Size": 405,
+    "wa": 272,
+    "ha": 122,
+    "wg": 10,
+    "hg": 4,
+    "wap": "067.16",
+    "hap": "030.12",
+    "wgp": "002.47",
+    "hgp": "000.99"
+  },
+  {
+    "Bundle": "Young Horses",
+    "Aliases": [],
+    "Size": 6,
+    "wa": 0,
+    "ha": 0,
+    "wg": 1,
+    "hg": 6,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "016.67",
+    "hgp": "100.00"
+  },
+  {
+    "Bundle": "YouTube",
+    "Aliases": [
+      "YT"
+    ],
+    "Size": 1212,
+    "wa": 665,
+    "ha": 586,
+    "wg": 16,
+    "hg": 7,
+    "wap": "054.87",
+    "hap": "048.35",
+    "wgp": "001.32",
+    "hgp": "000.58"
+  },
+  {
+    "Bundle": "YouTubers",
+    "Aliases": [
+      "YouTube Personalities",
+      "YouTuber"
+    ],
+    "Size": 648,
+    "wa": 431,
+    "ha": 223,
+    "wg": 0,
+    "hg": 1,
+    "wap": "066.51",
+    "hap": "034.41",
+    "wgp": "000.00",
+    "hgp": "000.15"
+  },
+  {
+    "Bundle": "Ys Series",
+    "Aliases": [
+      "Ys"
+    ],
+    "Size": 78,
+    "wa": 5,
+    "ha": 9,
+    "wg": 39,
+    "hg": 39,
+    "wap": "006.41",
+    "hap": "011.54",
+    "wgp": "050.00",
+    "hgp": "050.00"
+  },
+  {
+    "Bundle": "Yu-Gi-Oh!",
+    "Aliases": [
+      "Yu-Gi-Oh! Series",
+      "YGO Series",
+      "Yu-Gi-Oh",
+      "YuGiOh!",
+      "YuGiOh",
+      "YGO!",
+      "YGO",
+      "A5DXAL"
+    ],
+    "Size": 442,
+    "wa": 128,
+    "ha": 234,
+    "wg": 189,
+    "hg": 180,
+    "wap": "028.96",
+    "hap": "052.94",
+    "wgp": "042.76",
+    "hgp": "040.72"
+  },
+  {
+    "Bundle": "Yume Nikki Fangames",
+    "Aliases": [
+      "YNFG",
+      "Yume Nikki Hasei"
+    ],
+    "Size": 25,
+    "wa": 0,
+    "ha": 0,
+    "wg": 20,
+    "hg": 5,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "080.00",
+    "hgp": "020.00"
+  },
+  {
+    "Bundle": "Yusuke Kozaki's Art",
+    "Aliases": [
+      "Yusuke Kozaki"
+    ],
+    "Size": 225,
+    "wa": 7,
+    "ha": 5,
+    "wg": 112,
+    "hg": 104,
+    "wap": "003.11",
+    "hap": "002.22",
+    "wgp": "049.78",
+    "hgp": "046.22"
+  },
+  {
+    "Bundle": "Yusuke Murata's Art",
+    "Aliases": [
+      "Yusuke Murata"
+    ],
+    "Size": 100,
+    "wa": 16,
+    "ha": 84,
+    "wg": 1,
+    "hg": 1,
+    "wap": "016.00",
+    "hap": "084.00",
+    "wgp": "001.00",
+    "hgp": "001.00"
+  },
+  {
+    "Bundle": "Yuusha de Aru Series",
+    "Aliases": [],
+    "Size": 29,
+    "wa": 24,
+    "ha": 0,
+    "wg": 5,
+    "hg": 0,
+    "wap": "082.76",
+    "hap": "000.00",
+    "wgp": "017.24",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Yuzuki Karu's Art",
+    "Aliases": [
+      "Yuzuki Karu"
+    ],
+    "Size": 16,
+    "wa": 1,
+    "ha": 7,
+    "wg": 1,
+    "hg": 7,
+    "wap": "006.25",
+    "hap": "043.75",
+    "wgp": "006.25",
+    "hgp": "043.75"
+  },
+  {
+    "Bundle": "Yuzusoft",
+    "Aliases": [],
+    "Size": 40,
+    "wa": 0,
+    "ha": 0,
+    "wg": 37,
+    "hg": 3,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "092.50",
+    "hgp": "007.50"
+  },
+  {
+    "Bundle": "Y\u014dkai",
+    "Aliases": [
+      "Yokai",
+      "Youkai"
+    ],
+    "Size": 993,
+    "wa": 321,
+    "ha": 393,
+    "wg": 301,
+    "hg": 151,
+    "wap": "032.33",
+    "hap": "039.58",
+    "wgp": "030.31",
+    "hgp": "015.21"
+  },
+  {
+    "Bundle": "Z-ton's Works",
+    "Aliases": [
+      "Z-ton"
+    ],
+    "Size": 14,
+    "wa": 13,
+    "ha": 1,
+    "wg": 0,
+    "hg": 0,
+    "wap": "092.86",
+    "hap": "007.14",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Z/X -Zillions of enemy X-",
+    "Aliases": [
+      "Zillions of enemy X",
+      "Z/X",
+      "ZX"
+    ],
+    "Size": 21,
+    "wa": 8,
+    "ha": 1,
+    "wg": 19,
+    "hg": 2,
+    "wap": "038.10",
+    "hap": "004.76",
+    "wgp": "090.48",
+    "hgp": "009.52"
+  },
+  {
+    "Bundle": "Zero Escape",
+    "Aliases": [
+      "ZE"
+    ],
+    "Size": 30,
+    "wa": 0,
+    "ha": 0,
+    "wg": 11,
+    "hg": 21,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "036.67",
+    "hgp": "070.00"
+  },
+  {
+    "Bundle": "Zexcs",
+    "Aliases": [],
+    "Size": 145,
+    "wa": 77,
+    "ha": 66,
+    "wg": 15,
+    "hg": 4,
+    "wap": "053.10",
+    "hap": "045.52",
+    "wgp": "010.34",
+    "hgp": "002.76"
+  },
+  {
+    "Bundle": "Zoids Series",
+    "Aliases": [],
+    "Size": 13,
+    "wa": 7,
+    "ha": 6,
+    "wg": 0,
+    "hg": 0,
+    "wap": "053.85",
+    "hap": "046.15",
+    "wgp": "000.00",
+    "hgp": "000.00"
+  },
+  {
+    "Bundle": "Zone of the Enders Series",
+    "Aliases": [],
+    "Size": 6,
+    "wa": 1,
+    "ha": 1,
+    "wg": 2,
+    "hg": 3,
+    "wap": "016.67",
+    "hap": "016.67",
+    "wgp": "033.33",
+    "hgp": "050.00"
+  },
+  {
+    "Bundle": "\u00e2ge",
+    "Aliases": [
+      "age"
+    ],
+    "Size": 43,
+    "wa": 15,
+    "ha": 4,
+    "wg": 18,
+    "hg": 7,
+    "wap": "034.88",
+    "hap": "009.30",
+    "wgp": "041.86",
+    "hgp": "016.28"
+  },
+  {
+    "Bundle": "\u014ckami Series",
+    "Aliases": [
+      "Okami Series",
+      "Ookami Series"
+    ],
+    "Size": 23,
+    "wa": 0,
+    "ha": 0,
+    "wg": 11,
+    "hg": 13,
+    "wap": "000.00",
+    "hap": "000.00",
+    "wgp": "047.83",
+    "hgp": "056.52"
   }
 ]
