@@ -53,4 +53,4 @@ def main():
 		outfile.seek(0)
 		outfile.truncate()
 		# Dumping the output data to the output file
-		json.dump(output, outfile, indent=2)
+		json.dump(output, outfile, indent=2, ensure_ascii=False)
