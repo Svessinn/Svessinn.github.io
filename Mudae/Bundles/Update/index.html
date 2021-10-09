@@ -3,38 +3,7 @@
 <head>
 <title>Send HTML Form as JSON</title>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-  $("#btn").click(function(e){
-	 var jsonData = {};
-	 
-   var formData = $("#myform").serializeArray();
-  // console.log(formData);
-   
-   $.each(formData, function() {
-        if (jsonData[this.name]) {
-           if (!jsonData[this.name].push) {
-               jsonData[this.name] = [jsonData[this.name]];
-           }
-           jsonData[this.name].push(this.value || '');
-       } else {
-           jsonData[this.name] = this.value || '';
-       }
-	       
-	   
-   });
-   console.log(jsonData);
-	$.ajax(
-	{
-		url : "action.php",
-		type: "POST",
-		data : jsonData,
-		
-	});
-    e.preventDefault();	
-});
-});
-</script>
+<script src="js/Update.js"></script>
 </head>
 
 <body>
