@@ -14,7 +14,7 @@
 	},
 	{
 		"Bundle": "07th Expansion",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 148,
 		"wa": 53,
 		"ha": 31,
@@ -27,7 +27,7 @@
 	},
 	{
 		"Bundle": "0verflow",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 11,
 		"wa": 7,
 		"ha": 2,
@@ -66,7 +66,7 @@
 	},
 	{
 		"Bundle": "2000 AD",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 1,
 		"ha": 4,
@@ -80,19 +80,19 @@
 	{
 		"Bundle": "20th Century Fox",
 		"Aliases": ["20th Century Fox Television", "20th Century Studios", "Fox"],
-		"Size": 488,
+		"Size": 489,
 		"wa": 139,
-		"ha": 302,
+		"ha": 303,
 		"wg": 20,
 		"hg": 31,
-		"wap": "028.48",
-		"hap": "061.89",
-		"wgp": "004.10",
-		"hgp": "006.35"
+		"wap": "028.43",
+		"hap": "061.96",
+		"wgp": "004.09",
+		"hgp": "006.34"
 	},
 	{
 		"Bundle": "2K Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 23,
 		"wa": 0,
 		"ha": 1,
@@ -131,7 +131,7 @@
 	},
 	{
 		"Bundle": "3D Realms",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 12,
 		"wa": 0,
 		"ha": 0,
@@ -157,7 +157,7 @@
 	},
 	{
 		"Bundle": "4Kids Entertainment",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 358,
 		"wa": 198,
 		"ha": 253,
@@ -170,7 +170,7 @@
 	},
 	{
 		"Bundle": "5th Cell",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 12,
 		"wa": 0,
 		"ha": 0,
@@ -196,7 +196,7 @@
 	},
 	{
 		"Bundle": "774's Art",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 9,
 		"wa": 8,
 		"ha": 1,
@@ -234,6 +234,19 @@
 		"hgp": "000.00"
 	},
 	{
+		"Bundle": "A Shell in the Pit",
+		"Aliases": [],
+		"Size": 6,
+		"wa": 0,
+		"ha": 0,
+		"wg": 6,
+		"hg": 3,
+		"wap": "000.00",
+		"hap": "000.00",
+		"wgp": "100.00",
+		"hgp": "050.00"
+	},
+	{
 		"Bundle": "A-1 Pictures",
 		"Aliases": ["A1 Pictures"],
 		"Size": 1675,
@@ -261,7 +274,7 @@
 	},
 	{
 		"Bundle": "aburasobabiyori",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2,
 		"wa": 0,
 		"ha": 0,
@@ -274,7 +287,7 @@
 	},
 	{
 		"Bundle": "Access Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 35,
 		"wa": 0,
 		"ha": 0,
@@ -300,7 +313,7 @@
 	},
 	{
 		"Bundle": "Ace Attorney Investigations",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 27,
 		"wa": 1,
 		"ha": 0,
@@ -339,7 +352,7 @@
 	},
 	{
 		"Bundle": "Acerola",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 0,
 		"ha": 0,
@@ -352,7 +365,7 @@
 	},
 	{
 		"Bundle": "Actas",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 156,
 		"wa": 143,
 		"ha": 14,
@@ -366,19 +379,19 @@
 	{
 		"Bundle": "Action Roleplaying Games",
 		"Aliases": ["ARPGs", "ARPG", "Action RPGs"],
-		"Size": 2027,
-		"wa": 100,
+		"Size": 2018,
+		"wa": 99,
 		"ha": 129,
-		"wg": 993,
-		"hg": 1124,
-		"wap": "004.93",
-		"hap": "006.36",
-		"wgp": "048.99",
-		"hgp": "055.45"
+		"wg": 987,
+		"hg": 1121,
+		"wap": "004.91",
+		"hap": "006.39",
+		"wgp": "048.91",
+		"hgp": "055.55"
 	},
 	{
 		"Bundle": "Activision",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 222,
 		"wa": 1,
 		"ha": 3,
@@ -391,7 +404,7 @@
 	},
 	{
 		"Bundle": "Activision Blizzard",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 453,
 		"wa": 4,
 		"ha": 5,
@@ -404,7 +417,7 @@
 	},
 	{
 		"Bundle": "Adachi Mitsuru",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 33,
 		"wa": 13,
 		"ha": 20,
@@ -417,7 +430,7 @@
 	},
 	{
 		"Bundle": "Adult Cartoons",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 550,
 		"wa": 166,
 		"ha": 391,
@@ -456,7 +469,7 @@
 	},
 	{
 		"Bundle": "AdventureQuest Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 0,
 		"ha": 0,
@@ -469,7 +482,7 @@
 	},
 	{
 		"Bundle": "Afternoon",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 226,
 		"wa": 136,
 		"ha": 120,
@@ -482,7 +495,7 @@
 	},
 	{
 		"Bundle": "Ai Yazawa's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 24,
 		"wa": 13,
 		"ha": 11,
@@ -521,7 +534,7 @@
 	},
 	{
 		"Bundle": "Aikagi Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2,
 		"wa": 0,
 		"ha": 0,
@@ -560,7 +573,7 @@
 	},
 	{
 		"Bundle": "Akame ga Kill Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 44,
 		"wa": 27,
 		"ha": 19,
@@ -586,7 +599,7 @@
 	},
 	{
 		"Bundle": "Akatsuki Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 7,
 		"wa": 0,
 		"ha": 0,
@@ -599,7 +612,7 @@
 	},
 	{
 		"Bundle": "Akiba's Trip Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 14,
 		"wa": 4,
 		"ha": 1,
@@ -664,7 +677,7 @@
 	},
 	{
 		"Bundle": "Akita Shoten",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 699,
 		"wa": 396,
 		"ha": 306,
@@ -677,7 +690,7 @@
 	},
 	{
 		"Bundle": "Aladdin Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 16,
 		"wa": 5,
 		"ha": 12,
@@ -716,7 +729,7 @@
 	},
 	{
 		"Bundle": "Alien Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 3,
 		"ha": 4,
@@ -729,7 +742,7 @@
 	},
 	{
 		"Bundle": "AlphaDream",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 15,
 		"wa": 0,
 		"ha": 0,
@@ -742,7 +755,7 @@
 	},
 	{
 		"Bundle": "AlphaPolis",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 47,
 		"wa": 33,
 		"ha": 14,
@@ -781,7 +794,7 @@
 	},
 	{
 		"Bundle": "Amahara's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 53,
 		"wa": 43,
 		"ha": 11,
@@ -807,7 +820,7 @@
 	},
 	{
 		"Bundle": "Amnesia Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 0,
 		"ha": 0,
@@ -833,7 +846,7 @@
 	},
 	{
 		"Bundle": "Ane LaLa",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 7,
 		"wa": 4,
 		"ha": 4,
@@ -885,7 +898,7 @@
 	},
 	{
 		"Bundle": "Anime Antenna Iinkai",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 34,
 		"wa": 18,
 		"ha": 1,
@@ -898,7 +911,7 @@
 	},
 	{
 		"Bundle": "Aniplex",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4073,
 		"wa": 1620,
 		"ha": 1799,
@@ -911,7 +924,7 @@
 	},
 	{
 		"Bundle": "Ankama",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 101,
 		"wa": 32,
 		"ha": 50,
@@ -924,7 +937,7 @@
 	},
 	{
 		"Bundle": "Annapurna Interactive",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 37,
 		"wa": 0,
 		"ha": 0,
@@ -950,7 +963,7 @@
 	},
 	{
 		"Bundle": "Antechinus",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 8,
 		"ha": 0,
@@ -989,7 +1002,7 @@
 	},
 	{
 		"Bundle": "Ar tonelico Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 51,
 		"wa": 0,
 		"ha": 0,
@@ -1016,14 +1029,14 @@
 	{
 		"Bundle": "Arcade Games",
 		"Aliases": ["Arcade", "Coin-Op Games", "Coin-Op"],
-		"Size": 903,
+		"Size": 905,
 		"wa": 169,
 		"ha": 76,
-		"wg": 449,
-		"hg": 464,
-		"wap": "018.72",
-		"hap": "008.42",
-		"wgp": "049.72",
+		"wg": 451,
+		"hg": 465,
+		"wap": "018.67",
+		"hap": "008.40",
+		"wgp": "049.83",
 		"hgp": "051.38"
 	},
 	{
@@ -1054,7 +1067,7 @@
 	},
 	{
 		"Bundle": "Argonaut Software",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 16,
 		"wa": 0,
 		"ha": 0,
@@ -1067,7 +1080,7 @@
 	},
 	{
 		"Bundle": "Arifureta Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 18,
 		"wa": 13,
 		"ha": 5,
@@ -1080,7 +1093,7 @@
 	},
 	{
 		"Bundle": "Arika",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 10,
 		"wa": 0,
 		"ha": 2,
@@ -1093,7 +1106,7 @@
 	},
 	{
 		"Bundle": "Arina Tanemura's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 43,
 		"wa": 10,
 		"ha": 32,
@@ -1106,7 +1119,7 @@
 	},
 	{
 		"Bundle": "Arkane Studios",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 0,
 		"ha": 0,
@@ -1132,7 +1145,7 @@
 	},
 	{
 		"Bundle": "Artix Entertainment",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 10,
 		"wa": 0,
 		"ha": 0,
@@ -1158,7 +1171,7 @@
 	},
 	{
 		"Bundle": "Asahi Production",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 406,
 		"wa": 22,
 		"ha": 52,
@@ -1171,7 +1184,7 @@
 	},
 	{
 		"Bundle": "Asahi Shimbunsha",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 49,
 		"wa": 23,
 		"ha": 28,
@@ -1184,7 +1197,7 @@
 	},
 	{
 		"Bundle": "Asanagi's Art",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 6,
 		"ha": 0,
@@ -1223,7 +1236,7 @@
 	},
 	{
 		"Bundle": "ASOBIMO, Inc.",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 9,
 		"wa": 0,
 		"ha": 0,
@@ -1236,7 +1249,7 @@
 	},
 	{
 		"Bundle": "Assassin's Creed Chronicles",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 0,
 		"ha": 0,
@@ -1275,7 +1288,7 @@
 	},
 	{
 		"Bundle": "Ateam Inc.",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 66,
 		"wa": 0,
 		"ha": 0,
@@ -1301,7 +1314,7 @@
 	},
 	{
 		"Bundle": "Atelier Iris Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 0,
 		"ha": 0,
@@ -1314,7 +1327,7 @@
 	},
 	{
 		"Bundle": "Atelier Kaguya",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 47,
 		"wa": 29,
 		"ha": 0,
@@ -1327,7 +1340,7 @@
 	},
 	{
 		"Bundle": "Atelier Ryza Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 12,
 		"wa": 0,
 		"ha": 0,
@@ -1340,7 +1353,7 @@
 	},
 	{
 		"Bundle": "ATLUS",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 873,
 		"wa": 105,
 		"ha": 106,
@@ -1379,7 +1392,7 @@
 	},
 	{
 		"Bundle": "Avex Entertainment",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 302,
 		"wa": 131,
 		"ha": 134,
@@ -1392,7 +1405,7 @@
 	},
 	{
 		"Bundle": "Axiom Verge Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2,
 		"wa": 0,
 		"ha": 0,
@@ -1405,7 +1418,7 @@
 	},
 	{
 		"Bundle": "AXsiZ",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 47,
 		"wa": 38,
 		"ha": 4,
@@ -1418,7 +1431,7 @@
 	},
 	{
 		"Bundle": "Azu's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 5,
 		"ha": 1,
@@ -1444,7 +1457,7 @@
 	},
 	{
 		"Bundle": "Baen Books",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2,
 		"wa": 2,
 		"ha": 0,
@@ -1483,7 +1496,7 @@
 	},
 	{
 		"Bundle": "Bakumatsu Fiction",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 312,
 		"wa": 83,
 		"ha": 211,
@@ -1497,28 +1510,28 @@
 	{
 		"Bundle": "Bandai Namco",
 		"Aliases": ["Namco", "Namco Bandai", "Scamco", "Bamco", "Bandai Namco Holdings", "Bandai Namco Group"],
-		"Size": 5074,
+		"Size": 5079,
 		"wa": 2332,
 		"ha": 1819,
-		"wg": 1049,
-		"hg": 780,
-		"wap": "045.96",
-		"hap": "035.85",
-		"wgp": "020.67",
-		"hgp": "015.37"
+		"wg": 1051,
+		"hg": 784,
+		"wap": "045.91",
+		"hap": "035.81",
+		"wgp": "020.69",
+		"hgp": "015.44"
 	},
 	{
 		"Bundle": "Bandai Namco Games",
-		"Aliases": [""],
-		"Size": 1178,
+		"Aliases": [],
+		"Size": 1183,
 		"wa": 226,
 		"ha": 153,
-		"wg": 638,
-		"hg": 556,
-		"wap": "019.19",
-		"hap": "012.99",
-		"wgp": "054.16",
-		"hgp": "047.20"
+		"wg": 640,
+		"hg": 560,
+		"wap": "019.10",
+		"hap": "012.93",
+		"wgp": "054.10",
+		"hgp": "047.34"
 	},
 	{
 		"Bundle": "Bande Dessinée",
@@ -1535,7 +1548,7 @@
 	},
 	{
 		"Bundle": "Bands",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 201,
 		"wa": 22,
 		"ha": 181,
@@ -1574,7 +1587,7 @@
 	},
 	{
 		"Bundle": "Barbie Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 11,
 		"wa": 6,
 		"ha": 5,
@@ -1587,7 +1600,7 @@
 	},
 	{
 		"Bundle": "Baten Kaitos",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 54,
 		"wa": 0,
 		"ha": 0,
@@ -1613,7 +1626,7 @@
 	},
 	{
 		"Bundle": "Battle Royale Genre",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 121,
 		"wa": 49,
 		"ha": 72,
@@ -1626,7 +1639,7 @@
 	},
 	{
 		"Bundle": "Battle Spirits",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 24,
 		"wa": 8,
 		"ha": 7,
@@ -1639,7 +1652,7 @@
 	},
 	{
 		"Bundle": "BB Comics",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 7,
 		"wa": 3,
 		"ha": 4,
@@ -1678,7 +1691,7 @@
 	},
 	{
 		"Bundle": "Beans Ace",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 16,
 		"wa": 3,
 		"ha": 13,
@@ -1704,7 +1717,7 @@
 	},
 	{
 		"Bundle": "Bee Train",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 85,
 		"wa": 41,
 		"ha": 45,
@@ -1717,7 +1730,7 @@
 	},
 	{
 		"Bundle": "Beemoov",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 52,
 		"wa": 0,
 		"ha": 1,
@@ -1730,7 +1743,7 @@
 	},
 	{
 		"Bundle": "Beenox",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 48,
 		"wa": 1,
 		"ha": 0,
@@ -1756,7 +1769,7 @@
 	},
 	{
 		"Bundle": "BEMANI",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 60,
 		"wa": 7,
 		"ha": 0,
@@ -1821,7 +1834,7 @@
 	},
 	{
 		"Bundle": "Bethesda",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 185,
 		"wa": 0,
 		"ha": 0,
@@ -1834,7 +1847,7 @@
 	},
 	{
 		"Bundle": "Betsucomi",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 30,
 		"wa": 8,
 		"ha": 22,
@@ -1847,7 +1860,7 @@
 	},
 	{
 		"Bundle": "Beyblade Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 96,
 		"wa": 13,
 		"ha": 83,
@@ -1873,7 +1886,7 @@
 	},
 	{
 		"Bundle": "BF (Beta) Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 50,
 		"wa": 0,
 		"ha": 0,
@@ -1899,7 +1912,7 @@
 	},
 	{
 		"Bundle": "Big Comic Spirits",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 93,
 		"wa": 34,
 		"ha": 59,
@@ -1912,7 +1925,7 @@
 	},
 	{
 		"Bundle": "Big Gangan",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 311,
 		"wa": 162,
 		"ha": 128,
@@ -1925,7 +1938,7 @@
 	},
 	{
 		"Bundle": "Big Hero 6 Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 10,
 		"wa": 3,
 		"ha": 7,
@@ -1951,7 +1964,7 @@
 	},
 	{
 		"Bundle": "Bilibili",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 64,
 		"wa": 34,
 		"ha": 30,
@@ -1964,7 +1977,7 @@
 	},
 	{
 		"Bundle": "BioShock Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 17,
 		"wa": 0,
 		"ha": 0,
@@ -1977,20 +1990,20 @@
 	},
 	{
 		"Bundle": "BioWare",
-		"Aliases": [""],
-		"Size": 158,
+		"Aliases": [],
+		"Size": 159,
 		"wa": 4,
-		"ha": 2,
+		"ha": 3,
 		"wg": 69,
 		"hg": 94,
-		"wap": "002.53",
-		"hap": "001.27",
-		"wgp": "043.67",
-		"hgp": "059.49"
+		"wap": "002.52",
+		"hap": "001.89",
+		"wgp": "043.40",
+		"hgp": "059.12"
 	},
 	{
 		"Bundle": "Bishop",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 22,
 		"wa": 21,
 		"ha": 0,
@@ -2042,7 +2055,7 @@
 	},
 	{
 		"Bundle": "BLADE",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 15,
 		"wa": 13,
 		"ha": 2,
@@ -2055,7 +2068,7 @@
 	},
 	{
 		"Bundle": "Blade Runner Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 1,
 		"ha": 2,
@@ -2068,7 +2081,7 @@
 	},
 	{
 		"Bundle": "Blast Shuppan",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 11,
 		"wa": 9,
 		"ha": 2,
@@ -2081,7 +2094,7 @@
 	},
 	{
 		"Bundle": "Blaster Master Zero Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 1,
 		"ha": 1,
@@ -2107,7 +2120,7 @@
 	},
 	{
 		"Bundle": "Bleach Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 199,
 		"wa": 65,
 		"ha": 136,
@@ -2133,7 +2146,7 @@
 	},
 	{
 		"Bundle": "Bloober Team",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2,
 		"wa": 0,
 		"ha": 0,
@@ -2159,7 +2172,7 @@
 	},
 	{
 		"Bundle": "Blue Reflection Franchise",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 1,
 		"ha": 0,
@@ -2172,7 +2185,7 @@
 	},
 	{
 		"Bundle": "Blue Sky Studios",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 35,
 		"wa": 13,
 		"ha": 22,
@@ -2185,7 +2198,7 @@
 	},
 	{
 		"Bundle": "Body Swap",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 65,
 		"wa": 37,
 		"ha": 28,
@@ -2224,7 +2237,7 @@
 	},
 	{
 		"Bundle": "Bokuto Uno's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 9,
 		"wa": 6,
 		"ha": 3,
@@ -2237,7 +2250,7 @@
 	},
 	{
 		"Bundle": "Bomberman Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 23,
 		"wa": 1,
 		"ha": 2,
@@ -2250,7 +2263,7 @@
 	},
 	{
 		"Bundle": "Bomtoon",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 110,
 		"wa": 23,
 		"ha": 87,
@@ -2263,7 +2276,7 @@
 	},
 	{
 		"Bundle": "Bones",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 783,
 		"wa": 309,
 		"ha": 481,
@@ -2276,7 +2289,7 @@
 	},
 	{
 		"Bundle": "Boogiepop Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 21,
 		"wa": 14,
 		"ha": 9,
@@ -2302,7 +2315,7 @@
 	},
 	{
 		"Bundle": "Bosei Kanojo Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2,
 		"wa": 0,
 		"ha": 0,
@@ -2315,7 +2328,7 @@
 	},
 	{
 		"Bundle": "Bouncy",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 5,
 		"ha": 0,
@@ -2341,7 +2354,7 @@
 	},
 	{
 		"Bundle": "Brain's Base",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 515,
 		"wa": 221,
 		"ha": 278,
@@ -2367,7 +2380,7 @@
 	},
 	{
 		"Bundle": "Brave Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 12,
 		"wa": 1,
 		"ha": 11,
@@ -2432,7 +2445,7 @@
 	},
 	{
 		"Bundle": "Broccoli",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 118,
 		"wa": 45,
 		"ha": 54,
@@ -2446,15 +2459,15 @@
 	{
 		"Bundle": "Browser Games",
 		"Aliases": ["Web Games"],
-		"Size": 1377,
+		"Size": 1429,
 		"wa": 107,
-		"ha": 84,
-		"wg": 968,
-		"hg": 416,
-		"wap": "007.77",
-		"hap": "006.10",
-		"wgp": "070.30",
-		"hgp": "030.21"
+		"ha": 85,
+		"wg": 987,
+		"hg": 448,
+		"wap": "007.49",
+		"hap": "005.95",
+		"wgp": "069.07",
+		"hgp": "031.35"
 	},
 	{
 		"Bundle": "Bryan Lee O'Malley's Works",
@@ -2471,7 +2484,7 @@
 	},
 	{
 		"Bundle": "BTS Bundle",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 33,
 		"wa": 1,
 		"ha": 10,
@@ -2523,7 +2536,7 @@
 	},
 	{
 		"Bundle": "Buncololi's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 9,
 		"wa": 8,
 		"ha": 1,
@@ -2536,7 +2549,7 @@
 	},
 	{
 		"Bundle": "Bungie",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 54,
 		"wa": 0,
 		"ha": 0,
@@ -2549,7 +2562,7 @@
 	},
 	{
 		"Bundle": "Bunny Black Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 9,
 		"wa": 0,
 		"ha": 0,
@@ -2575,7 +2588,7 @@
 	},
 	{
 		"Bundle": "Buriki Clock",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 0,
 		"ha": 0,
@@ -2588,7 +2601,7 @@
 	},
 	{
 		"Bundle": "Bushiroad",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 558,
 		"wa": 255,
 		"ha": 183,
@@ -2614,7 +2627,7 @@
 	},
 	{
 		"Bundle": "C. H. Greenblatt's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 13,
 		"wa": 4,
 		"ha": 9,
@@ -2627,7 +2640,7 @@
 	},
 	{
 		"Bundle": "C2C",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 87,
 		"wa": 77,
 		"ha": 10,
@@ -2640,7 +2653,7 @@
 	},
 	{
 		"Bundle": "Cab",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 0,
 		"ha": 4,
@@ -2666,29 +2679,29 @@
 	},
 	{
 		"Bundle": "Camelot Software Planning",
-		"Aliases": [""],
-		"Size": 47,
-		"wa": 3,
+		"Aliases": [],
+		"Size": 26,
+		"wa": 0,
 		"ha": 0,
-		"wg": 29,
-		"hg": 24,
-		"wap": "006.38",
+		"wg": 14,
+		"hg": 18,
+		"wap": "000.00",
 		"hap": "000.00",
-		"wgp": "061.70",
-		"hgp": "051.06"
+		"wgp": "053.85",
+		"hgp": "069.23"
 	},
 	{
 		"Bundle": "Canadian Media",
 		"Aliases": ["Canada Bundle", "Canada", "Canadian Bundle, eh?", "Canadian Bundle", "O Canada", ">A FUCKING LEAF", "Sorry eh", "🍁", "🇨🇦"],
-		"Size": 443,
-		"wa": 103,
+		"Size": 450,
+		"wa": 110,
 		"ha": 200,
 		"wg": 72,
 		"hg": 89,
-		"wap": "023.25",
-		"hap": "045.15",
-		"wgp": "016.25",
-		"hgp": "020.09"
+		"wap": "024.44",
+		"hap": "044.44",
+		"wgp": "016.00",
+		"hgp": "019.78"
 	},
 	{
 		"Bundle": "Capcom",
@@ -2705,7 +2718,7 @@
 	},
 	{
 		"Bundle": "Caravan Palace's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 2,
 		"ha": 2,
@@ -2731,7 +2744,7 @@
 	},
 	{
 		"Bundle": "Career Soft",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 139,
 		"wa": 0,
 		"ha": 0,
@@ -2783,7 +2796,7 @@
 	},
 	{
 		"Bundle": "Castlevania Advance Collection",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 15,
 		"wa": 0,
 		"ha": 0,
@@ -2796,7 +2809,7 @@
 	},
 	{
 		"Bundle": "Castlevania Anniversary Collection",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 12,
 		"wa": 1,
 		"ha": 3,
@@ -2809,7 +2822,7 @@
 	},
 	{
 		"Bundle": "Castlevania Requiem",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 1,
 		"ha": 0,
@@ -2822,7 +2835,7 @@
 	},
 	{
 		"Bundle": "Cation Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 10,
 		"wa": 0,
 		"ha": 0,
@@ -2835,7 +2848,7 @@
 	},
 	{
 		"Bundle": "CBeebies",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 25,
 		"wa": 8,
 		"ha": 17,
@@ -2861,7 +2874,7 @@
 	},
 	{
 		"Bundle": "Cencoroll Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 2,
 		"ha": 1,
@@ -2874,7 +2887,7 @@
 	},
 	{
 		"Bundle": "Champion RED",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 123,
 		"wa": 87,
 		"ha": 35,
@@ -2900,7 +2913,7 @@
 	},
 	{
 		"Bundle": "Chaos Chronicle Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 3,
 		"ha": 2,
@@ -2913,7 +2926,7 @@
 	},
 	{
 		"Bundle": "Chaos Rings Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 15,
 		"wa": 0,
 		"ha": 0,
@@ -2926,7 +2939,7 @@
 	},
 	{
 		"Bundle": "Charisma Records",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 2,
 		"ha": 8,
@@ -2952,7 +2965,7 @@
 	},
 	{
 		"Bundle": "Cheri+",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 21,
 		"wa": 1,
 		"ha": 20,
@@ -2965,7 +2978,7 @@
 	},
 	{
 		"Bundle": "Cheritz",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 26,
 		"wa": 0,
 		"ha": 0,
@@ -2978,7 +2991,7 @@
 	},
 	{
 		"Bundle": "Cherry Arai's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 20,
 		"wa": 17,
 		"ha": 3,
@@ -3004,7 +3017,7 @@
 	},
 	{
 		"Bundle": "ChiChi No Ya",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 13,
 		"wa": 10,
 		"ha": 0,
@@ -3017,7 +3030,7 @@
 	},
 	{
 		"Bundle": "Children's Playground Entertainment",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 56,
 		"wa": 30,
 		"ha": 26,
@@ -3043,7 +3056,7 @@
 	},
 	{
 		"Bundle": "Chippai",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 5,
 		"ha": 0,
@@ -3095,7 +3108,7 @@
 	},
 	{
 		"Bundle": "Chucklefish Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 61,
 		"wa": 0,
 		"ha": 0,
@@ -3121,7 +3134,7 @@
 	},
 	{
 		"Bundle": "CLAMP",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 173,
 		"wa": 96,
 		"ha": 95,
@@ -3134,7 +3147,7 @@
 	},
 	{
 		"Bundle": "Clock Tower Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 0,
 		"ha": 0,
@@ -3147,7 +3160,7 @@
 	},
 	{
 		"Bundle": "Clock Up",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 20,
 		"wa": 15,
 		"ha": 1,
@@ -3160,7 +3173,7 @@
 	},
 	{
 		"Bundle": "Cloud22",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 90,
 		"wa": 59,
 		"ha": 12,
@@ -3173,7 +3186,7 @@
 	},
 	{
 		"Bundle": "Clover Studio",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 24,
 		"wa": 0,
 		"ha": 1,
@@ -3186,7 +3199,7 @@
 	},
 	{
 		"Bundle": "CloverWorks",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 685,
 		"wa": 255,
 		"ha": 250,
@@ -3238,7 +3251,7 @@
 	},
 	{
 		"Bundle": "Coffee Stain Studios",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 11,
 		"wa": 0,
 		"ha": 0,
@@ -3264,7 +3277,7 @@
 	},
 	{
 		"Bundle": "Collaboration Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 30,
 		"wa": 27,
 		"ha": 2,
@@ -3277,7 +3290,7 @@
 	},
 	{
 		"Bundle": "CollegeHumor",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 0,
 		"ha": 3,
@@ -3290,7 +3303,7 @@
 	},
 	{
 		"Bundle": "Comedians",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 0,
 		"ha": 8,
@@ -3303,7 +3316,7 @@
 	},
 	{
 		"Bundle": "Comedy Central",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 170,
 		"wa": 52,
 		"ha": 120,
@@ -3316,7 +3329,7 @@
 	},
 	{
 		"Bundle": "Comic Avarus",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 28,
 		"wa": 5,
 		"ha": 23,
@@ -3329,7 +3342,7 @@
 	},
 	{
 		"Bundle": "Comic Corona",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 46,
 		"wa": 28,
 		"ha": 18,
@@ -3342,7 +3355,7 @@
 	},
 	{
 		"Bundle": "Comic Cune",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 43,
 		"wa": 42,
 		"ha": 2,
@@ -3355,7 +3368,7 @@
 	},
 	{
 		"Bundle": "Comic Days",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 21,
 		"wa": 17,
 		"ha": 4,
@@ -3368,7 +3381,7 @@
 	},
 	{
 		"Bundle": "Comic Fire",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 54,
 		"wa": 46,
 		"ha": 8,
@@ -3394,7 +3407,7 @@
 	},
 	{
 		"Bundle": "Comic Gardo",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 70,
 		"wa": 54,
 		"ha": 16,
@@ -3420,7 +3433,7 @@
 	},
 	{
 		"Bundle": "Comic Gum",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 39,
 		"wa": 37,
 		"ha": 2,
@@ -3446,7 +3459,7 @@
 	},
 	{
 		"Bundle": "Comic Meteor",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 80,
 		"wa": 68,
 		"ha": 13,
@@ -3485,7 +3498,7 @@
 	},
 	{
 		"Bundle": "Comic Ryu",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 81,
 		"wa": 73,
 		"ha": 8,
@@ -3499,19 +3512,19 @@
 	{
 		"Bundle": "Comic Strips",
 		"Aliases": ["Newspaper Comics"],
-		"Size": 110,
+		"Size": 111,
 		"wa": 37,
-		"ha": 73,
+		"ha": 74,
 		"wg": 0,
 		"hg": 0,
-		"wap": "033.64",
-		"hap": "066.36",
+		"wap": "033.33",
+		"hap": "066.67",
 		"wgp": "000.00",
 		"hgp": "000.00"
 	},
 	{
 		"Bundle": "Comic Valkyrie",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 66,
 		"wa": 62,
 		"ha": 4,
@@ -3537,7 +3550,7 @@
 	},
 	{
 		"Bundle": "Comic Zenon",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 70,
 		"wa": 26,
 		"ha": 44,
@@ -3576,7 +3589,7 @@
 	},
 	{
 		"Bundle": "Comico",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 103,
 		"wa": 40,
 		"ha": 66,
@@ -3589,16 +3602,16 @@
 	},
 	{
 		"Bundle": "Comics",
-		"Aliases": [""],
-		"Size": 2223,
-		"wa": 942,
-		"ha": 1317,
+		"Aliases": [],
+		"Size": 2238,
+		"wa": 954,
+		"ha": 1320,
 		"wg": 13,
 		"hg": 30,
-		"wap": "042.38",
-		"hap": "059.24",
+		"wap": "042.63",
+		"hap": "058.98",
 		"wgp": "000.58",
-		"hgp": "001.35"
+		"hgp": "001.34"
 	},
 	{
 		"Bundle": "ComicWalker",
@@ -3611,6 +3624,19 @@
 		"wap": "079.28",
 		"hap": "021.62",
 		"wgp": "008.11",
+		"hgp": "000.00"
+	},
+	{
+		"Bundle": "CoMix Wave Films",
+		"Aliases": [],
+		"Size": 30,
+		"wa": 16,
+		"ha": 14,
+		"wg": 0,
+		"hg": 0,
+		"wap": "053.33",
+		"hap": "046.67",
+		"wgp": "000.00",
 		"hgp": "000.00"
 	},
 	{
@@ -3654,7 +3680,7 @@
 	},
 	{
 		"Bundle": "Comp Ace",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 613,
 		"wa": 416,
 		"ha": 110,
@@ -3667,7 +3693,7 @@
 	},
 	{
 		"Bundle": "Compile Heart",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 248,
 		"wa": 36,
 		"ha": 10,
@@ -3680,7 +3706,7 @@
 	},
 	{
 		"Bundle": "Conception Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 19,
 		"wa": 10,
 		"ha": 1,
@@ -3745,7 +3771,7 @@
 	},
 	{
 		"Bundle": "Cosmere",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 42,
 		"wa": 18,
 		"ha": 25,
@@ -3771,7 +3797,7 @@
 	},
 	{
 		"Bundle": "Craig McCracken's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 48,
 		"wa": 16,
 		"ha": 32,
@@ -3810,7 +3836,7 @@
 	},
 	{
 		"Bundle": "Crayon Shin-chan Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 11,
 		"wa": 4,
 		"ha": 7,
@@ -3823,7 +3849,7 @@
 	},
 	{
 		"Bundle": "Crazy Frog Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2,
 		"wa": 0,
 		"ha": 1,
@@ -3849,7 +3875,7 @@
 	},
 	{
 		"Bundle": "Croteam",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 0,
 		"ha": 0,
@@ -3888,7 +3914,7 @@
 	},
 	{
 		"Bundle": "Cthulhu Mythos",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 2,
 		"ha": 4,
@@ -3901,7 +3927,7 @@
 	},
 	{
 		"Bundle": "Cube Entertainment",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 1,
 		"ha": 2,
@@ -3914,7 +3940,7 @@
 	},
 	{
 		"Bundle": "CUCURI",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2,
 		"wa": 1,
 		"ha": 1,
@@ -3927,7 +3953,7 @@
 	},
 	{
 		"Bundle": "Custom Robo",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 0,
 		"ha": 0,
@@ -3953,7 +3979,7 @@
 	},
 	{
 		"Bundle": "CyberFront",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 46,
 		"wa": 2,
 		"ha": 1,
@@ -3992,7 +4018,7 @@
 	},
 	{
 		"Bundle": "Cycomics",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 39,
 		"wa": 27,
 		"ha": 12,
@@ -4007,11 +4033,11 @@
 		"Bundle": "Cygames",
 		"Aliases": ["Cykagames"],
 		"Size": 1042,
-		"wa": 304,
+		"wa": 306,
 		"ha": 47,
 		"wg": 706,
 		"hg": 273,
-		"wap": "029.17",
+		"wap": "029.37",
 		"hap": "004.51",
 		"wgp": "067.75",
 		"hgp": "026.20"
@@ -4020,18 +4046,18 @@
 		"Bundle": "Cygames Games",
 		"Aliases": ["Cykagames Games", "Things to Play if You Love Juventus", "Cygames Games Games Games"],
 		"Size": 964,
-		"wa": 248,
+		"wa": 250,
 		"ha": 24,
 		"wg": 688,
 		"hg": 273,
-		"wap": "025.73",
+		"wap": "025.93",
 		"hap": "002.49",
 		"wgp": "071.37",
 		"hgp": "028.32"
 	},
 	{
 		"Bundle": "Cytus Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 23,
 		"wa": 0,
 		"ha": 0,
@@ -4057,7 +4083,7 @@
 	},
 	{
 		"Bundle": "Da Capo Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 21,
 		"wa": 0,
 		"ha": 0,
@@ -4070,7 +4096,7 @@
 	},
 	{
 		"Bundle": "Daft Punk Bundle",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 1,
 		"ha": 7,
@@ -4161,7 +4187,7 @@
 	},
 	{
 		"Bundle": "DanMachi Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 89,
 		"wa": 53,
 		"ha": 23,
@@ -4174,7 +4200,7 @@
 	},
 	{
 		"Bundle": "Darius Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 14,
 		"wa": 0,
 		"ha": 0,
@@ -4252,7 +4278,7 @@
 	},
 	{
 		"Bundle": "Daum",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 117,
 		"wa": 40,
 		"ha": 77,
@@ -4265,16 +4291,16 @@
 	},
 	{
 		"Bundle": "David Production",
-		"Aliases": [""],
-		"Size": 358,
-		"wa": 104,
-		"ha": 240,
+		"Aliases": [],
+		"Size": 382,
+		"wa": 113,
+		"ha": 257,
 		"wg": 38,
 		"hg": 62,
-		"wap": "029.05",
-		"hap": "067.04",
-		"wgp": "010.61",
-		"hgp": "017.32"
+		"wap": "029.58",
+		"hap": "067.28",
+		"wgp": "009.95",
+		"hgp": "016.23"
 	},
 	{
 		"Bundle": "DC Multiverse",
@@ -4305,19 +4331,19 @@
 	{
 		"Bundle": "Dead Games",
 		"Aliases": ["RIP Games"],
-		"Size": 434,
+		"Size": 438,
 		"wa": 40,
 		"ha": 4,
-		"wg": 334,
+		"wg": 338,
 		"hg": 108,
-		"wap": "009.22",
-		"hap": "000.92",
-		"wgp": "076.96",
-		"hgp": "024.88"
+		"wap": "009.13",
+		"hap": "000.91",
+		"wgp": "077.17",
+		"hgp": "024.66"
 	},
 	{
 		"Bundle": "Dead or Alive Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 31,
 		"wa": 0,
 		"ha": 0,
@@ -4330,7 +4356,7 @@
 	},
 	{
 		"Bundle": "Dead Rising Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 0,
 		"ha": 0,
@@ -4343,7 +4369,7 @@
 	},
 	{
 		"Bundle": "Death Note Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 26,
 		"wa": 8,
 		"ha": 18,
@@ -4356,7 +4382,7 @@
 	},
 	{
 		"Bundle": "Deep Silver",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 38,
 		"wa": 0,
 		"ha": 0,
@@ -4369,7 +4395,7 @@
 	},
 	{
 		"Bundle": "Demonbane Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 0,
 		"ha": 0,
@@ -4382,7 +4408,7 @@
 	},
 	{
 		"Bundle": "DeNA",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 108,
 		"wa": 7,
 		"ha": 17,
@@ -4395,7 +4421,7 @@
 	},
 	{
 		"Bundle": "Dengeki Bunko",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 825,
 		"wa": 586,
 		"ha": 254,
@@ -4408,7 +4434,7 @@
 	},
 	{
 		"Bundle": "Dengeki Daioh",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 508,
 		"wa": 331,
 		"ha": 112,
@@ -4434,7 +4460,7 @@
 	},
 	{
 		"Bundle": "Denpasoft",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 193,
 		"wa": 23,
 		"ha": 6,
@@ -4460,7 +4486,7 @@
 	},
 	{
 		"Bundle": "Destiny",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 32,
 		"wa": 0,
 		"ha": 0,
@@ -4486,7 +4512,7 @@
 	},
 	{
 		"Bundle": "DEVGRU-P",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 0,
 		"ha": 0,
@@ -4525,7 +4551,7 @@
 	},
 	{
 		"Bundle": "Devil Summoner",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 41,
 		"wa": 1,
 		"ha": 5,
@@ -4538,7 +4564,7 @@
 	},
 	{
 		"Bundle": "Devil Survivor Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 28,
 		"wa": 6,
 		"ha": 8,
@@ -4564,7 +4590,7 @@
 	},
 	{
 		"Bundle": "Devolver Digital",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 61,
 		"wa": 0,
 		"ha": 0,
@@ -4577,7 +4603,7 @@
 	},
 	{
 		"Bundle": "Diablo Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 14,
 		"wa": 0,
 		"ha": 0,
@@ -4603,7 +4629,7 @@
 	},
 	{
 		"Bundle": "Dies irae Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 35,
 		"wa": 0,
 		"ha": 0,
@@ -4629,7 +4655,7 @@
 	},
 	{
 		"Bundle": "Digimon Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 56,
 		"wa": 6,
 		"ha": 13,
@@ -4668,7 +4694,7 @@
 	},
 	{
 		"Bundle": "Digital Devil Story",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 48,
 		"wa": 5,
 		"ha": 14,
@@ -4681,7 +4707,7 @@
 	},
 	{
 		"Bundle": "Dimension 20",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 57,
 		"wa": 21,
 		"ha": 37,
@@ -4720,7 +4746,7 @@
 	},
 	{
 		"Bundle": "Dirty Pair Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 4,
 		"ha": 0,
@@ -4733,7 +4759,7 @@
 	},
 	{
 		"Bundle": "Discovery Family",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 108,
 		"wa": 84,
 		"ha": 26,
@@ -4759,7 +4785,7 @@
 	},
 	{
 		"Bundle": "Dishonored Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 7,
 		"wa": 0,
 		"ha": 0,
@@ -4772,7 +4798,7 @@
 	},
 	{
 		"Bundle": "Disney Channel",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 341,
 		"wa": 175,
 		"ha": 190,
@@ -4798,7 +4824,7 @@
 	},
 	{
 		"Bundle": "Disney Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 184,
 		"wa": 1,
 		"ha": 0,
@@ -4824,7 +4850,7 @@
 	},
 	{
 		"Bundle": "Disney Parks",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 7,
 		"wa": 0,
 		"ha": 7,
@@ -4836,8 +4862,21 @@
 		"hgp": "000.00"
 	},
 	{
+		"Bundle": "Disney Princess Films",
+		"Aliases": ["Disney Princess and Frozen Films", "Disney Princess Franchise", "Disney Princesses", "Disney Princess"],
+		"Size": 104,
+		"wa": 34,
+		"ha": 71,
+		"wg": 1,
+		"hg": 0,
+		"wap": "032.69",
+		"hap": "068.27",
+		"wgp": "000.96",
+		"hgp": "000.00"
+	},
+	{
 		"Bundle": "Disney XD",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 158,
 		"wa": 51,
 		"ha": 109,
@@ -4864,15 +4903,15 @@
 	{
 		"Bundle": "Disturbing Imagery",
 		"Aliases": ["👻", "CONTENT WARNING", "TRIGGER WARNING", "Uncomfortable Stuff", "Disturbing Content", "Disturbing Toggle", "ToggleDisturbing", "Disturbing Stuff", "Horror Toggle", "ToggleHorror", "Super Scary", "Scary Stuff", "Disturbing", "👻 "],
-		"Size": 1817,
+		"Size": 1830,
 		"wa": 433,
 		"ha": 476,
-		"wg": 578,
-		"hg": 536,
-		"wap": "023.83",
-		"hap": "026.20",
-		"wgp": "031.81",
-		"hgp": "029.50"
+		"wg": 584,
+		"hg": 543,
+		"wap": "023.66",
+		"hap": "026.01",
+		"wgp": "031.91",
+		"hgp": "029.67"
 	},
 	{
 		"Bundle": "DLE",
@@ -4902,7 +4941,7 @@
 	},
 	{
 		"Bundle": "Doga Kobo",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 398,
 		"wa": 227,
 		"ha": 141,
@@ -4954,7 +4993,7 @@
 	},
 	{
 		"Bundle": "DOOM Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 17,
 		"wa": 0,
 		"ha": 1,
@@ -4967,7 +5006,7 @@
 	},
 	{
 		"Bundle": "Dora & Diego",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 2,
 		"ha": 4,
@@ -4980,7 +5019,7 @@
 	},
 	{
 		"Bundle": "Dota Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 43,
 		"wa": 1,
 		"ha": 0,
@@ -4993,7 +5032,7 @@
 	},
 	{
 		"Bundle": "Double Fine",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 46,
 		"wa": 0,
 		"ha": 0,
@@ -5019,7 +5058,7 @@
 	},
 	{
 		"Bundle": "Dr. Mario Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 0,
 		"ha": 0,
@@ -5032,7 +5071,7 @@
 	},
 	{
 		"Bundle": "Dr. Seuss",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 10,
 		"wa": 1,
 		"ha": 9,
@@ -5136,7 +5175,7 @@
 	},
 	{
 		"Bundle": "Dragon's Dogma Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 10,
 		"wa": 2,
 		"ha": 2,
@@ -5175,7 +5214,7 @@
 	},
 	{
 		"Bundle": "drap",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 10,
 		"wa": 1,
 		"ha": 9,
@@ -5240,7 +5279,7 @@
 	},
 	{
 		"Bundle": "Duel Masters Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 17,
 		"wa": 5,
 		"ha": 15,
@@ -5254,15 +5293,15 @@
 	{
 		"Bundle": "Dungeon Crawlers",
 		"Aliases": ["Dungeon Crawler Games", "Dungeon Crawler"],
-		"Size": 346,
-		"wa": 5,
+		"Size": 325,
+		"wa": 2,
 		"ha": 0,
-		"wg": 207,
-		"hg": 171,
-		"wap": "001.45",
+		"wg": 192,
+		"hg": 165,
+		"wap": "000.62",
 		"hap": "000.00",
-		"wgp": "059.83",
-		"hgp": "049.42"
+		"wgp": "059.08",
+		"hgp": "050.77"
 	},
 	{
 		"Bundle": "Dungeons & Dragons Genre",
@@ -5305,7 +5344,7 @@
 	},
 	{
 		"Bundle": "Dynamite Entertainment",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 28,
 		"wa": 12,
 		"ha": 17,
@@ -5331,7 +5370,7 @@
 	},
 	{
 		"Bundle": "E.Q. Plus",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2,
 		"wa": 2,
 		"ha": 0,
@@ -5344,7 +5383,7 @@
 	},
 	{
 		"Bundle": "Earth Star Entertainment",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 112,
 		"wa": 87,
 		"ha": 25,
@@ -5356,8 +5395,21 @@
 		"hgp": "007.14"
 	},
 	{
+		"Bundle": "Earthsea Cycle",
+		"Aliases": [],
+		"Size": 4,
+		"wa": 2,
+		"ha": 2,
+		"wg": 0,
+		"hg": 0,
+		"wap": "050.00",
+		"hap": "050.00",
+		"wgp": "000.00",
+		"hgp": "000.00"
+	},
+	{
 		"Bundle": "East Press",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 4,
 		"ha": 0,
@@ -5370,7 +5422,7 @@
 	},
 	{
 		"Bundle": "EasyGameStation",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 14,
 		"wa": 0,
 		"ha": 0,
@@ -5384,19 +5436,19 @@
 	{
 		"Bundle": "Ecchi",
 		"Aliases": ["H", "Fanservice", "Virgin Media"],
-		"Size": 3304,
-		"wa": 2346,
-		"ha": 596,
+		"Size": 3285,
+		"wa": 2344,
+		"ha": 579,
 		"wg": 428,
 		"hg": 32,
-		"wap": "071.00",
-		"hap": "018.04",
-		"wgp": "012.95",
+		"wap": "071.35",
+		"hap": "017.63",
+		"wgp": "013.03",
 		"hgp": "000.97"
 	},
 	{
 		"Bundle": "Echo Project",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 18,
 		"wa": 0,
 		"ha": 0,
@@ -5409,7 +5461,7 @@
 	},
 	{
 		"Bundle": "Ecole",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 56,
 		"wa": 2,
 		"ha": 1,
@@ -5422,7 +5474,7 @@
 	},
 	{
 		"Bundle": "EDGE",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 11,
 		"wa": 11,
 		"ha": 0,
@@ -5474,7 +5526,7 @@
 	},
 	{
 		"Bundle": "Eighting",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 0,
 		"ha": 0,
@@ -5487,7 +5539,7 @@
 	},
 	{
 		"Bundle": "Eiri Shirai's Art",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 24,
 		"wa": 9,
 		"ha": 6,
@@ -5500,7 +5552,7 @@
 	},
 	{
 		"Bundle": "Eiyuu Senki",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 46,
 		"wa": 0,
 		"ha": 0,
@@ -5514,15 +5566,15 @@
 	{
 		"Bundle": "Electronic Arts",
 		"Aliases": ["EA Games", "EA"],
-		"Size": 366,
+		"Size": 367,
 		"wa": 18,
-		"ha": 64,
+		"ha": 65,
 		"wg": 123,
 		"hg": 187,
-		"wap": "004.92",
-		"hap": "017.49",
-		"wgp": "033.61",
-		"hgp": "051.09"
+		"wap": "004.90",
+		"hap": "017.71",
+		"wgp": "033.51",
+		"hgp": "050.95"
 	},
 	{
 		"Bundle": "Elibe Series",
@@ -5539,7 +5591,7 @@
 	},
 	{
 		"Bundle": "Emerald",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 33,
 		"wa": 2,
 		"ha": 31,
@@ -5565,7 +5617,7 @@
 	},
 	{
 		"Bundle": "EMT Squared",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 66,
 		"wa": 51,
 		"ha": 15,
@@ -5578,7 +5630,7 @@
 	},
 	{
 		"Bundle": "Encourage Films",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 32,
 		"wa": 25,
 		"ha": 7,
@@ -5590,8 +5642,21 @@
 		"hgp": "000.00"
 	},
 	{
+		"Bundle": "ENGI",
+		"Aliases": [],
+		"Size": 42,
+		"wa": 32,
+		"ha": 12,
+		"wg": 0,
+		"hg": 0,
+		"wap": "076.19",
+		"hap": "028.57",
+		"wgp": "000.00",
+		"hgp": "000.00"
+	},
+	{
 		"Bundle": "Ensemble Studios",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 0,
 		"ha": 0,
@@ -5604,7 +5669,7 @@
 	},
 	{
 		"Bundle": "Entabridge",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 11,
 		"wa": 0,
 		"ha": 0,
@@ -5630,7 +5695,7 @@
 	},
 	{
 		"Bundle": "Eon's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 10,
 		"wa": 5,
 		"ha": 5,
@@ -5669,7 +5734,7 @@
 	},
 	{
 		"Bundle": "Eroge",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3482,
 		"wa": 732,
 		"ha": 122,
@@ -5683,19 +5748,19 @@
 	{
 		"Bundle": "Eromanhwa",
 		"Aliases": ["Pornhwa", "NSFW Manhwa", "Erotic Manhwa", "Hentai Manhwa", "Manhwa Hentai"],
-		"Size": 391,
-		"wa": 178,
+		"Size": 392,
+		"wa": 179,
 		"ha": 214,
 		"wg": 0,
 		"hg": 0,
-		"wap": "045.52",
-		"hap": "054.73",
+		"wap": "045.66",
+		"hap": "054.59",
 		"wgp": "000.00",
 		"hgp": "000.00"
 	},
 	{
 		"Bundle": "etherane's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 24,
 		"wa": 0,
 		"ha": 0,
@@ -5721,7 +5786,7 @@
 	},
 	{
 		"Bundle": "Eureka Seven Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 29,
 		"wa": 16,
 		"ha": 15,
@@ -5747,7 +5812,7 @@
 	},
 	{
 		"Bundle": "Eushully",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 62,
 		"wa": 0,
 		"ha": 0,
@@ -5773,7 +5838,7 @@
 	},
 	{
 		"Bundle": "Evenicle Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 19,
 		"wa": 0,
 		"ha": 0,
@@ -5786,7 +5851,7 @@
 	},
 	{
 		"Bundle": "Evening",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 44,
 		"wa": 25,
 		"ha": 20,
@@ -5825,7 +5890,7 @@
 	},
 	{
 		"Bundle": "Fable Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 11,
 		"wa": 0,
 		"ha": 0,
@@ -5864,7 +5929,7 @@
 	},
 	{
 		"Bundle": "Fallout Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 60,
 		"wa": 0,
 		"ha": 0,
@@ -5890,7 +5955,7 @@
 	},
 	{
 		"Bundle": "Fanno-Hitori's Art",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 4,
 		"ha": 0,
@@ -5942,7 +6007,7 @@
 	},
 	{
 		"Bundle": "Fashion Doll",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 62,
 		"wa": 51,
 		"ha": 11,
@@ -5994,7 +6059,7 @@
 	},
 	{
 		"Bundle": "Feel Young",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 11,
 		"wa": 7,
 		"ha": 5,
@@ -6033,7 +6098,7 @@
 	},
 	{
 		"Bundle": "Filmation",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 58,
 		"wa": 13,
 		"ha": 45,
@@ -6046,7 +6111,7 @@
 	},
 	{
 		"Bundle": "FilmCow",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 2,
 		"ha": 5,
@@ -6059,7 +6124,7 @@
 	},
 	{
 		"Bundle": "Filmlink International",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2,
 		"wa": 1,
 		"ha": 1,
@@ -6085,7 +6150,7 @@
 	},
 	{
 		"Bundle": "Final Fantasy Crystal Chronicles Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 0,
 		"ha": 0,
@@ -6098,7 +6163,7 @@
 	},
 	{
 		"Bundle": "Final Fantasy Pixel Remaster Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 61,
 		"wa": 0,
 		"ha": 0,
@@ -6111,7 +6176,7 @@
 	},
 	{
 		"Bundle": "Final Fantasy Tactics Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 26,
 		"wa": 0,
 		"ha": 0,
@@ -6147,6 +6212,19 @@
 		"hap": "000.00",
 		"wgp": "052.94",
 		"hgp": "047.06"
+	},
+	{
+		"Bundle": "Finji",
+		"Aliases": [],
+		"Size": 13,
+		"wa": 0,
+		"ha": 0,
+		"wg": 7,
+		"hg": 8,
+		"wap": "000.00",
+		"hap": "000.00",
+		"wgp": "053.85",
+		"hgp": "061.54"
 	},
 	{
 		"Bundle": "Fire Emblem",
@@ -6215,7 +6293,7 @@
 	},
 	{
 		"Bundle": "Flying Bark Productions",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 1,
 		"ha": 7,
@@ -6227,21 +6305,8 @@
 		"hgp": "000.00"
 	},
 	{
-		"Bundle": "Fortissimo Series",
-		"Aliases": [""],
-		"Size": 37,
-		"wa": 0,
-		"ha": 0,
-		"wg": 22,
-		"hg": 16,
-		"wap": "000.00",
-		"hap": "000.00",
-		"wgp": "059.46",
-		"hgp": "043.24"
-	},
-	{
 		"Bundle": "Fossil Fighters Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 0,
 		"ha": 0,
@@ -6267,7 +6332,7 @@
 	},
 	{
 		"Bundle": "Freebird Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 14,
 		"wa": 0,
 		"ha": 0,
@@ -6293,7 +6358,7 @@
 	},
 	{
 		"Bundle": "Fresh TV Inc.",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 114,
 		"wa": 52,
 		"ha": 62,
@@ -6320,19 +6385,19 @@
 	{
 		"Bundle": "FromSoftware",
 		"Aliases": ["From Software", "FromSoft"],
-		"Size": 168,
+		"Size": 173,
 		"wa": 0,
 		"ha": 0,
-		"wg": 65,
-		"hg": 116,
+		"wg": 67,
+		"hg": 120,
 		"wap": "000.00",
 		"hap": "000.00",
-		"wgp": "038.69",
-		"hgp": "069.05"
+		"wgp": "038.73",
+		"hgp": "069.36"
 	},
 	{
 		"Bundle": "Frontier Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 213,
 		"wa": 84,
 		"ha": 117,
@@ -6345,7 +6410,7 @@
 	},
 	{
 		"Bundle": "Frontwing",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 81,
 		"wa": 25,
 		"ha": 9,
@@ -6371,7 +6436,7 @@
 	},
 	{
 		"Bundle": "Fruits Basket Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 39,
 		"wa": 19,
 		"ha": 20,
@@ -6423,7 +6488,7 @@
 	},
 	{
 		"Bundle": "Fujimi Shobo",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 395,
 		"wa": 306,
 		"ha": 84,
@@ -6436,7 +6501,7 @@
 	},
 	{
 		"Bundle": "Fujimi Shuppan",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 10,
 		"wa": 9,
 		"ha": 1,
@@ -6462,7 +6527,7 @@
 	},
 	{
 		"Bundle": "Fujiwara Ryou's Art",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 44,
 		"wa": 1,
 		"ha": 32,
@@ -6488,7 +6553,7 @@
 	},
 	{
 		"Bundle": "Futabasha",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 245,
 		"wa": 155,
 		"ha": 91,
@@ -6541,19 +6606,19 @@
 	{
 		"Bundle": "Gacha Games",
 		"Aliases": ["Gacha", "Whaler's Paradise", "The Devil"],
-		"Size": 5574,
-		"wa": 662,
+		"Size": 5576,
+		"wa": 664,
 		"ha": 336,
-		"wg": 3853,
-		"hg": 1750,
-		"wap": "011.88",
+		"wg": 3855,
+		"hg": 1752,
+		"wap": "011.91",
 		"hap": "006.03",
-		"wgp": "069.12",
-		"hgp": "031.40"
+		"wgp": "069.14",
+		"hgp": "031.42"
 	},
 	{
 		"Bundle": "Gaehoju's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 15,
 		"wa": 15,
 		"ha": 0,
@@ -6566,7 +6631,7 @@
 	},
 	{
 		"Bundle": "Gagaga Bunko",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 317,
 		"wa": 215,
 		"ha": 106,
@@ -6579,7 +6644,7 @@
 	},
 	{
 		"Bundle": "Gainax",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 220,
 		"wa": 147,
 		"ha": 92,
@@ -6592,20 +6657,20 @@
 	},
 	{
 		"Bundle": "Gallop",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 495,
 		"wa": 119,
 		"ha": 395,
-		"wg": 37,
+		"wg": 38,
 		"hg": 97,
 		"wap": "024.04",
 		"hap": "079.80",
-		"wgp": "007.47",
+		"wgp": "007.68",
 		"hgp": "019.60"
 	},
 	{
 		"Bundle": "Game Freak",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 422,
 		"wa": 196,
 		"ha": 222,
@@ -6644,7 +6709,7 @@
 	},
 	{
 		"Bundle": "Game of Thrones Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 73,
 		"wa": 18,
 		"ha": 50,
@@ -6657,7 +6722,7 @@
 	},
 	{
 		"Bundle": "Gangan Comics",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2371,
 		"wa": 1385,
 		"ha": 974,
@@ -6670,7 +6735,7 @@
 	},
 	{
 		"Bundle": "Gangan Joker",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 384,
 		"wa": 235,
 		"ha": 126,
@@ -6683,7 +6748,7 @@
 	},
 	{
 		"Bundle": "Gangan Online",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 411,
 		"wa": 237,
 		"ha": 155,
@@ -6696,7 +6761,7 @@
 	},
 	{
 		"Bundle": "Gangan Pixiv",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 16,
 		"wa": 7,
 		"ha": 9,
@@ -6709,7 +6774,7 @@
 	},
 	{
 		"Bundle": "Gangan Powered",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 33,
 		"wa": 17,
 		"ha": 13,
@@ -6722,7 +6787,7 @@
 	},
 	{
 		"Bundle": "Gangan Wing",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 50,
 		"wa": 25,
 		"ha": 23,
@@ -6748,7 +6813,7 @@
 	},
 	{
 		"Bundle": "Garfield Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 0,
 		"ha": 5,
@@ -6774,7 +6839,7 @@
 	},
 	{
 		"Bundle": "Gate Keepers Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 10,
 		"wa": 8,
 		"ha": 2,
@@ -6787,7 +6852,7 @@
 	},
 	{
 		"Bundle": "Gathering",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 18,
 		"wa": 7,
 		"ha": 16,
@@ -6813,7 +6878,7 @@
 	},
 	{
 		"Bundle": "Gearbox Software",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 55,
 		"wa": 0,
 		"ha": 0,
@@ -6865,7 +6930,7 @@
 	},
 	{
 		"Bundle": "Gen Urobuchi's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 118,
 		"wa": 52,
 		"ha": 60,
@@ -6878,7 +6943,7 @@
 	},
 	{
 		"Bundle": "Genco",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 903,
 		"wa": 665,
 		"ha": 215,
@@ -6904,7 +6969,7 @@
 	},
 	{
 		"Bundle": "Genius Sonority",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 16,
 		"wa": 0,
 		"ha": 0,
@@ -6930,7 +6995,7 @@
 	},
 	{
 		"Bundle": "Genndy Tartakovsky's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 19,
 		"wa": 7,
 		"ha": 12,
@@ -6982,7 +7047,7 @@
 	},
 	{
 		"Bundle": "Get Married! Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2,
 		"wa": 0,
 		"ha": 0,
@@ -6995,7 +7060,7 @@
 	},
 	{
 		"Bundle": "GFantasy",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 551,
 		"wa": 204,
 		"ha": 321,
@@ -7008,7 +7073,7 @@
 	},
 	{
 		"Bundle": "Ghost in the Shell Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 15,
 		"wa": 3,
 		"ha": 13,
@@ -7034,7 +7099,7 @@
 	},
 	{
 		"Bundle": "Ghostbusters Franchise",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 7,
 		"wa": 1,
 		"ha": 6,
@@ -7047,7 +7112,7 @@
 	},
 	{
 		"Bundle": "Giant Robo Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 1,
 		"ha": 4,
@@ -7060,7 +7125,7 @@
 	},
 	{
 		"Bundle": "Giga",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 23,
 		"wa": 2,
 		"ha": 1,
@@ -7086,7 +7151,7 @@
 	},
 	{
 		"Bundle": "Ginga Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 28,
 		"wa": 2,
 		"ha": 26,
@@ -7099,7 +7164,7 @@
 	},
 	{
 		"Bundle": "Gintama Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 257,
 		"wa": 79,
 		"ha": 181,
@@ -7125,7 +7190,7 @@
 	},
 	{
 		"Bundle": "Glitch Productions",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 9,
 		"wa": 5,
 		"ha": 4,
@@ -7138,7 +7203,7 @@
 	},
 	{
 		"Bundle": "Go Nagai",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 43,
 		"wa": 24,
 		"ha": 20,
@@ -7151,7 +7216,7 @@
 	},
 	{
 		"Bundle": "GoatBread",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2,
 		"wa": 0,
 		"ha": 0,
@@ -7164,7 +7229,7 @@
 	},
 	{
 		"Bundle": "Goblin Slayer Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 21,
 		"wa": 12,
 		"ha": 9,
@@ -7190,7 +7255,7 @@
 	},
 	{
 		"Bundle": "Godzilla Franchise",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 69,
 		"wa": 21,
 		"ha": 52,
@@ -7203,7 +7268,7 @@
 	},
 	{
 		"Bundle": "GoHands",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 83,
 		"wa": 33,
 		"ha": 50,
@@ -7229,7 +7294,7 @@
 	},
 	{
 		"Bundle": "Gonzo",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 485,
 		"wa": 280,
 		"ha": 191,
@@ -7242,7 +7307,7 @@
 	},
 	{
 		"Bundle": "Gooseworx's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 9,
 		"wa": 4,
 		"ha": 8,
@@ -7268,7 +7333,7 @@
 	},
 	{
 		"Bundle": "Grand Jump",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 20,
 		"wa": 17,
 		"ha": 3,
@@ -7294,7 +7359,7 @@
 	},
 	{
 		"Bundle": "Grand Theft Auto: The Trilogy",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 15,
 		"wa": 0,
 		"ha": 0,
@@ -7307,7 +7372,7 @@
 	},
 	{
 		"Bundle": "Grandia Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 19,
 		"wa": 0,
 		"ha": 0,
@@ -7345,6 +7410,19 @@
 		"hgp": "033.33"
 	},
 	{
+		"Bundle": "Greg Lobanov",
+		"Aliases": [],
+		"Size": 6,
+		"wa": 0,
+		"ha": 0,
+		"wg": 6,
+		"hg": 3,
+		"wap": "000.00",
+		"hap": "000.00",
+		"wgp": "100.00",
+		"hgp": "050.00"
+	},
+	{
 		"Bundle": "Gridman Universe",
 		"Aliases": ["SSSS. Series", "SSSS Series", "SSSSS"],
 		"Size": 33,
@@ -7372,7 +7450,7 @@
 	},
 	{
 		"Bundle": "Grimms Franchise",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 24,
 		"wa": 10,
 		"ha": 6,
@@ -7385,7 +7463,7 @@
 	},
 	{
 		"Bundle": "Grisaia",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 38,
 		"wa": 15,
 		"ha": 5,
@@ -7398,7 +7476,7 @@
 	},
 	{
 		"Bundle": "Group TAC",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 112,
 		"wa": 43,
 		"ha": 63,
@@ -7424,7 +7502,7 @@
 	},
 	{
 		"Bundle": "GTO Franchise",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 14,
 		"wa": 8,
 		"ha": 6,
@@ -7502,7 +7580,7 @@
 	},
 	{
 		"Bundle": "Gundam Build",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 23,
 		"wa": 14,
 		"ha": 9,
@@ -7554,7 +7632,7 @@
 	},
 	{
 		"Bundle": "GYAO!",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 155,
 		"wa": 79,
 		"ha": 77,
@@ -7593,7 +7671,7 @@
 	},
 	{
 		"Bundle": "Haksan",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 15,
 		"wa": 3,
 		"ha": 12,
@@ -7606,7 +7684,7 @@
 	},
 	{
 		"Bundle": "Hakusensha",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 640,
 		"wa": 287,
 		"ha": 362,
@@ -7619,7 +7697,7 @@
 	},
 	{
 		"Bundle": "Hal Film Maker",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 98,
 		"wa": 64,
 		"ha": 35,
@@ -7632,7 +7710,7 @@
 	},
 	{
 		"Bundle": "HAL Laboratory",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 119,
 		"wa": 4,
 		"ha": 4,
@@ -7697,7 +7775,7 @@
 	},
 	{
 		"Bundle": "Halo Wars Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 0,
 		"ha": 0,
@@ -7762,7 +7840,7 @@
 	},
 	{
 		"Bundle": "Haoliners Animation League",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 70,
 		"wa": 33,
 		"ha": 40,
@@ -7775,7 +7853,7 @@
 	},
 	{
 		"Bundle": "Happy Elements",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 120,
 		"wa": 21,
 		"ha": 56,
@@ -7788,7 +7866,7 @@
 	},
 	{
 		"Bundle": "Happy Madison Productions",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 0,
 		"ha": 3,
@@ -7814,7 +7892,7 @@
 	},
 	{
 		"Bundle": "Haruhara Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 131,
 		"wa": 29,
 		"ha": 104,
@@ -7866,7 +7944,7 @@
 	},
 	{
 		"Bundle": "Hasbro",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 401,
 		"wa": 111,
 		"ha": 289,
@@ -7892,7 +7970,7 @@
 	},
 	{
 		"Bundle": "Hatoful Boyfriend Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 17,
 		"wa": 0,
 		"ha": 0,
@@ -7918,7 +7996,7 @@
 	},
 	{
 		"Bundle": "Hazbin Hotel Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 40,
 		"wa": 18,
 		"ha": 22,
@@ -7931,7 +8009,7 @@
 	},
 	{
 		"Bundle": "Hazelight Studios",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 0,
 		"ha": 0,
@@ -7944,7 +8022,7 @@
 	},
 	{
 		"Bundle": "Heavy Iron Studios",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 0,
 		"ha": 0,
@@ -7958,19 +8036,19 @@
 	{
 		"Bundle": "Hentai",
 		"Aliases": ["🔞", "Adult Content", "X-Rated", "Nukige", "Lemon", "Porn", "18+", "🔞 "],
-		"Size": 3610,
-		"wa": 1472,
+		"Size": 3611,
+		"wa": 1473,
 		"ha": 480,
 		"wg": 1485,
 		"hg": 253,
-		"wap": "040.78",
-		"hap": "013.30",
-		"wgp": "041.14",
+		"wap": "040.79",
+		"hap": "013.29",
+		"wgp": "041.12",
 		"hgp": "007.01"
 	},
 	{
 		"Bundle": "Hi-Rez Studios",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 107,
 		"wa": 0,
 		"ha": 0,
@@ -7996,7 +8074,7 @@
 	},
 	{
 		"Bundle": "Hibiki Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 15,
 		"wa": 0,
 		"ha": 0,
@@ -8009,7 +8087,7 @@
 	},
 	{
 		"Bundle": "Hidan no Aria Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 9,
 		"wa": 7,
 		"ha": 2,
@@ -8048,7 +8126,7 @@
 	},
 	{
 		"Bundle": "Hideo Kojima",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 83,
 		"wa": 0,
 		"ha": 0,
@@ -8061,7 +8139,7 @@
 	},
 	{
 		"Bundle": "Hideo Minaba's Art",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 321,
 		"wa": 24,
 		"ha": 10,
@@ -8074,7 +8152,7 @@
 	},
 	{
 		"Bundle": "Hiiro no Kakera Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 1,
 		"ha": 2,
@@ -8127,13 +8205,13 @@
 	{
 		"Bundle": "Hirohiko Araki's Works",
 		"Aliases": ["Hirohiko Araki"],
-		"Size": 218,
-		"wa": 53,
+		"Size": 219,
+		"wa": 54,
 		"ha": 174,
 		"wg": 0,
 		"hg": 1,
-		"wap": "024.31",
-		"hap": "079.82",
+		"wap": "024.66",
+		"hap": "079.45",
 		"wgp": "000.00",
 		"hgp": "000.46"
 	},
@@ -8152,7 +8230,7 @@
 	},
 	{
 		"Bundle": "Hiroyuki's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 19,
 		"wa": 16,
 		"ha": 3,
@@ -8165,7 +8243,7 @@
 	},
 	{
 		"Bundle": "Hisasi's Art",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 36,
 		"wa": 31,
 		"ha": 5,
@@ -8191,7 +8269,7 @@
 	},
 	{
 		"Bundle": "Hitoma Iruma's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 15,
 		"wa": 13,
 		"ha": 2,
@@ -8217,7 +8295,7 @@
 	},
 	{
 		"Bundle": "Hobby Japan",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 172,
 		"wa": 155,
 		"ha": 17,
@@ -8243,7 +8321,7 @@
 	},
 	{
 		"Bundle": "Holic Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 6,
 		"ha": 0,
@@ -8269,7 +8347,7 @@
 	},
 	{
 		"Bundle": "Homestuck Fanworks",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 33,
 		"wa": 14,
 		"ha": 13,
@@ -8308,7 +8386,7 @@
 	},
 	{
 		"Bundle": "Hoods Entertainment",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 72,
 		"wa": 57,
 		"ha": 15,
@@ -8321,7 +8399,7 @@
 	},
 	{
 		"Bundle": "Hooksoft",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 16,
 		"wa": 0,
 		"ha": 0,
@@ -8334,7 +8412,7 @@
 	},
 	{
 		"Bundle": "HORNETS",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 17,
 		"wa": 8,
 		"ha": 9,
@@ -8348,15 +8426,15 @@
 	{
 		"Bundle": "Horror Genre",
 		"Aliases": ["THIS BUNDLE IS FOR THE HORROR GENRE", "Stuff That Gives You The Spooks", "Spooky Stuff", "Spoopy Stuff", "Spooks", "Spoops", "Horror", "Scary"],
-		"Size": 2499,
-		"wa": 680,
+		"Size": 2500,
+		"wa": 681,
 		"ha": 736,
 		"wg": 619,
 		"hg": 685,
-		"wap": "027.21",
-		"hap": "029.45",
-		"wgp": "024.77",
-		"hgp": "027.41"
+		"wap": "027.24",
+		"hap": "029.44",
+		"wgp": "024.76",
+		"hgp": "027.40"
 	},
 	{
 		"Bundle": "Hotline Miami Series",
@@ -8373,7 +8451,7 @@
 	},
 	{
 		"Bundle": "Houbunsha",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 601,
 		"wa": 442,
 		"ha": 53,
@@ -8412,7 +8490,7 @@
 	},
 	{
 		"Bundle": "huke's Art",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 47,
 		"wa": 28,
 		"ha": 11,
@@ -8464,7 +8542,7 @@
 	},
 	{
 		"Bundle": "Hyrule Warriors Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 11,
 		"wa": 0,
 		"ha": 0,
@@ -8477,7 +8555,7 @@
 	},
 	{
 		"Bundle": "ICHI Corporation",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 20,
 		"wa": 0,
 		"ha": 20,
@@ -8490,7 +8568,7 @@
 	},
 	{
 		"Bundle": "iD Software",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 28,
 		"wa": 0,
 		"ha": 0,
@@ -8529,7 +8607,7 @@
 	},
 	{
 		"Bundle": "Idols",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 1536,
 		"wa": 759,
 		"ha": 457,
@@ -8555,20 +8633,20 @@
 	},
 	{
 		"Bundle": "IG Port",
-		"Aliases": [""],
-		"Size": 1563,
-		"wa": 685,
+		"Aliases": [],
+		"Size": 1542,
+		"wa": 682,
 		"ha": 831,
-		"wg": 109,
-		"hg": 89,
-		"wap": "043.83",
-		"hap": "053.17",
-		"wgp": "006.97",
-		"hgp": "005.69"
+		"wg": 94,
+		"hg": 83,
+		"wap": "044.23",
+		"hap": "053.89",
+		"wgp": "006.10",
+		"hgp": "005.38"
 	},
 	{
 		"Bundle": "ihr hertZ",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 0,
 		"ha": 6,
@@ -8607,7 +8685,7 @@
 	},
 	{
 		"Bundle": "Illumination",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 21,
 		"wa": 5,
 		"ha": 16,
@@ -8620,7 +8698,7 @@
 	},
 	{
 		"Bundle": "Image & Form",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 0,
 		"ha": 0,
@@ -8633,20 +8711,20 @@
 	},
 	{
 		"Bundle": "Image Comics",
-		"Aliases": [""],
-		"Size": 89,
-		"wa": 29,
+		"Aliases": [],
+		"Size": 90,
+		"wa": 30,
 		"ha": 60,
 		"wg": 1,
 		"hg": 2,
-		"wap": "032.58",
-		"hap": "067.42",
-		"wgp": "001.12",
-		"hgp": "002.25"
+		"wap": "033.33",
+		"hap": "066.67",
+		"wgp": "001.11",
+		"hgp": "002.22"
 	},
 	{
 		"Bundle": "Imageepoch",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 87,
 		"wa": 14,
 		"ha": 9,
@@ -8699,15 +8777,15 @@
 	{
 		"Bundle": "Indie Games",
 		"Aliases": ["Indie", "Indies"],
-		"Size": 4074,
+		"Size": 4114,
 		"wa": 71,
 		"ha": 24,
-		"wg": 2534,
-		"hg": 1875,
-		"wap": "001.74",
-		"hap": "000.59",
-		"wgp": "062.20",
-		"hgp": "046.02"
+		"wg": 2542,
+		"hg": 1908,
+		"wap": "001.73",
+		"hap": "000.58",
+		"wgp": "061.79",
+		"hgp": "046.38"
 	},
 	{
 		"Bundle": "inFAMOUS Series",
@@ -8724,7 +8802,7 @@
 	},
 	{
 		"Bundle": "Infinity Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 20,
 		"wa": 0,
 		"ha": 0,
@@ -8750,7 +8828,7 @@
 	},
 	{
 		"Bundle": "Initial D Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 23,
 		"wa": 6,
 		"ha": 17,
@@ -8763,7 +8841,7 @@
 	},
 	{
 		"Bundle": "InnerSloth",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 12,
 		"wa": 0,
 		"ha": 0,
@@ -8776,7 +8854,7 @@
 	},
 	{
 		"Bundle": "Innocent Grey",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 32,
 		"wa": 0,
 		"ha": 0,
@@ -8789,7 +8867,7 @@
 	},
 	{
 		"Bundle": "Insomniac Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 33,
 		"wa": 0,
 		"ha": 0,
@@ -8828,7 +8906,7 @@
 	},
 	{
 		"Bundle": "Inti Creates",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 99,
 		"wa": 1,
 		"ha": 1,
@@ -8841,7 +8919,7 @@
 	},
 	{
 		"Bundle": "Inusuku",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 0,
 		"ha": 0,
@@ -8854,7 +8932,7 @@
 	},
 	{
 		"Bundle": "InuYasha Movies",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 11,
 		"wa": 2,
 		"ha": 9,
@@ -8867,7 +8945,7 @@
 	},
 	{
 		"Bundle": "InuYasha Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 134,
 		"wa": 57,
 		"ha": 77,
@@ -8880,7 +8958,7 @@
 	},
 	{
 		"Bundle": "IO Interactive",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 15,
 		"wa": 0,
 		"ha": 0,
@@ -8908,11 +8986,11 @@
 		"Bundle": "Isekai",
 		"Aliases": ["Reverse Isekai"],
 		"Size": 2655,
-		"wa": 1499,
+		"wa": 1501,
 		"ha": 982,
 		"wg": 203,
 		"hg": 113,
-		"wap": "056.46",
+		"wap": "056.53",
 		"hap": "036.99",
 		"wgp": "007.65",
 		"hgp": "004.26"
@@ -8932,7 +9010,7 @@
 	},
 	{
 		"Bundle": "Ishikei's Art",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 1,
 		"ha": 0,
@@ -8958,7 +9036,7 @@
 	},
 	{
 		"Bundle": "Ivalice Alliance",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 43,
 		"wa": 0,
 		"ha": 0,
@@ -8984,7 +9062,7 @@
 	},
 	{
 		"Bundle": "Jaerim's Art",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 1,
 		"ha": 2,
@@ -8997,7 +9075,7 @@
 	},
 	{
 		"Bundle": "JAST Blue",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 44,
 		"wa": 2,
 		"ha": 26,
@@ -9010,7 +9088,7 @@
 	},
 	{
 		"Bundle": "JAST USA",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 222,
 		"wa": 33,
 		"ha": 12,
@@ -9062,7 +9140,7 @@
 	},
 	{
 		"Bundle": "Jetix",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 41,
 		"wa": 15,
 		"ha": 27,
@@ -9075,7 +9153,7 @@
 	},
 	{
 		"Bundle": "Jewelpet Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 27,
 		"wa": 21,
 		"ha": 6,
@@ -9114,7 +9192,7 @@
 	},
 	{
 		"Bundle": "Joe Murray's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 1,
 		"ha": 4,
@@ -9153,7 +9231,7 @@
 	},
 	{
 		"Bundle": "Jonochrome's Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 0,
 		"ha": 0,
@@ -9166,7 +9244,7 @@
 	},
 	{
 		"Bundle": "Jorge Gutierrez's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 2,
 		"ha": 2,
@@ -9192,7 +9270,7 @@
 	},
 	{
 		"Bundle": "JSK Studio",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2,
 		"wa": 0,
 		"ha": 0,
@@ -9220,13 +9298,13 @@
 		"Bundle": "Jump Magazines",
 		"Aliases": ["Jump"],
 		"Size": 5292,
-		"wa": 1864,
-		"ha": 3472,
-		"wg": 69,
+		"wa": 1865,
+		"ha": 3471,
+		"wg": 70,
 		"hg": 254,
-		"wap": "035.22",
-		"hap": "065.61",
-		"wgp": "001.30",
+		"wap": "035.24",
+		"hap": "065.59",
+		"wgp": "001.32",
 		"hgp": "004.80"
 	},
 	{
@@ -9244,7 +9322,7 @@
 	},
 	{
 		"Bundle": "Jun Mochizuki's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 50,
 		"wa": 20,
 		"ha": 31,
@@ -9283,7 +9361,7 @@
 	},
 	{
 		"Bundle": "Jurassic Park Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 12,
 		"wa": 4,
 		"ha": 7,
@@ -9296,7 +9374,7 @@
 	},
 	{
 		"Bundle": "Just Cause Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2,
 		"wa": 0,
 		"ha": 0,
@@ -9348,7 +9426,7 @@
 	},
 	{
 		"Bundle": "Kadokawa Shoten",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4294,
 		"wa": 2466,
 		"ha": 1390,
@@ -9361,7 +9439,7 @@
 	},
 	{
 		"Bundle": "Kaginado",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 109,
 		"wa": 65,
 		"ha": 27,
@@ -9374,7 +9452,7 @@
 	},
 	{
 		"Bundle": "Kagura Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 77,
 		"wa": 10,
 		"ha": 0,
@@ -9400,7 +9478,7 @@
 	},
 	{
 		"Bundle": "KAIJYU-09",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 11,
 		"wa": 0,
 		"ha": 0,
@@ -9439,7 +9517,7 @@
 	},
 	{
 		"Bundle": "Kakegurui Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 32,
 		"wa": 28,
 		"ha": 4,
@@ -9478,7 +9556,7 @@
 	},
 	{
 		"Bundle": "Kamuo",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 0,
 		"ha": 0,
@@ -9491,7 +9569,7 @@
 	},
 	{
 		"Bundle": "Kangoku Senkan Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 0,
 		"ha": 0,
@@ -9621,7 +9699,7 @@
 	},
 	{
 		"Bundle": "Keiichi Arawi's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 24,
 		"wa": 16,
 		"ha": 8,
@@ -9647,7 +9725,7 @@
 	},
 	{
 		"Bundle": "Ken ga Kimi Franchise",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 13,
 		"wa": 0,
 		"ha": 0,
@@ -9660,7 +9738,7 @@
 	},
 	{
 		"Bundle": "Kenganverse",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 71,
 		"wa": 14,
 		"ha": 57,
@@ -9686,7 +9764,7 @@
 	},
 	{
 		"Bundle": "Kenjirou Hata's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 21,
 		"wa": 17,
 		"ha": 4,
@@ -9725,7 +9803,7 @@
 	},
 	{
 		"Bundle": "Kentarou Miura's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 56,
 		"wa": 21,
 		"ha": 37,
@@ -9738,7 +9816,7 @@
 	},
 	{
 		"Bundle": "Kerokero Ace",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 204,
 		"wa": 58,
 		"ha": 89,
@@ -9751,7 +9829,7 @@
 	},
 	{
 		"Bundle": "Key",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 153,
 		"wa": 81,
 		"ha": 37,
@@ -9790,7 +9868,7 @@
 	},
 	{
 		"Bundle": "Kidari Studio",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 30,
 		"wa": 6,
 		"ha": 24,
@@ -9803,7 +9881,7 @@
 	},
 	{
 		"Bundle": "Kiddy",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 5,
 		"ha": 0,
@@ -9829,7 +9907,7 @@
 	},
 	{
 		"Bundle": "Kill Time Communication",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 15,
 		"wa": 14,
 		"ha": 1,
@@ -9855,7 +9933,7 @@
 	},
 	{
 		"Bundle": "Killmonday Games AB",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 9,
 		"wa": 0,
 		"ha": 0,
@@ -9881,7 +9959,7 @@
 	},
 	{
 		"Bundle": "Kinema Citrus",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 196,
 		"wa": 119,
 		"ha": 72,
@@ -9907,7 +9985,7 @@
 	},
 	{
 		"Bundle": "KingsIsle Entertainment",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 63,
 		"wa": 0,
 		"ha": 0,
@@ -9920,7 +9998,7 @@
 	},
 	{
 		"Bundle": "Kinnikuman Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 31,
 		"wa": 2,
 		"ha": 29,
@@ -9972,7 +10050,7 @@
 	},
 	{
 		"Bundle": "Kirby's Dream Collection",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 36,
 		"wa": 1,
 		"ha": 3,
@@ -9998,7 +10076,7 @@
 	},
 	{
 		"Bundle": "Kitty Films",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 98,
 		"wa": 42,
 		"ha": 56,
@@ -10011,7 +10089,7 @@
 	},
 	{
 		"Bundle": "KLab",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 127,
 		"wa": 31,
 		"ha": 24,
@@ -10024,7 +10102,7 @@
 	},
 	{
 		"Bundle": "Klasky Csupo",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 76,
 		"wa": 17,
 		"ha": 59,
@@ -10037,7 +10115,7 @@
 	},
 	{
 		"Bundle": "Klei Entertainment",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 23,
 		"wa": 0,
 		"ha": 0,
@@ -10132,11 +10210,11 @@
 		"Size": 963,
 		"wa": 161,
 		"ha": 346,
-		"wg": 379,
+		"wg": 380,
 		"hg": 448,
 		"wap": "016.72",
 		"hap": "035.93",
-		"wgp": "039.36",
+		"wgp": "039.46",
 		"hgp": "046.52"
 	},
 	{
@@ -10154,7 +10232,7 @@
 	},
 	{
 		"Bundle": "Konosuba Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 44,
 		"wa": 31,
 		"ha": 10,
@@ -10167,7 +10245,7 @@
 	},
 	{
 		"Bundle": "Kopianget's Art",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 20,
 		"wa": 0,
 		"ha": 0,
@@ -10180,7 +10258,7 @@
 	},
 	{
 		"Bundle": "Kouhaku Kuroboshi's Art",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 31,
 		"wa": 21,
 		"ha": 6,
@@ -10271,7 +10349,7 @@
 	},
 	{
 		"Bundle": "Kung Fu Panda Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 13,
 		"wa": 2,
 		"ha": 11,
@@ -10336,7 +10414,7 @@
 	},
 	{
 		"Bundle": "Kurage Bunch",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 23,
 		"wa": 17,
 		"ha": 9,
@@ -10362,7 +10440,7 @@
 	},
 	{
 		"Bundle": "Kuromoto-kun's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 3,
 		"ha": 0,
@@ -10388,7 +10466,7 @@
 	},
 	{
 		"Bundle": "Kurumadapro",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 168,
 		"wa": 34,
 		"ha": 135,
@@ -10427,7 +10505,7 @@
 	},
 	{
 		"Bundle": "L-I-B Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2,
 		"wa": 0,
 		"ha": 0,
@@ -10440,7 +10518,7 @@
 	},
 	{
 		"Bundle": "Lab Zero",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 47,
 		"wa": 0,
 		"ha": 0,
@@ -10453,7 +10531,7 @@
 	},
 	{
 		"Bundle": "Laika Studios",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 10,
 		"wa": 5,
 		"ha": 5,
@@ -10466,7 +10544,7 @@
 	},
 	{
 		"Bundle": "LaLa",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 102,
 		"wa": 35,
 		"ha": 66,
@@ -10505,7 +10583,7 @@
 	},
 	{
 		"Bundle": "Lantis",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2481,
 		"wa": 1468,
 		"ha": 975,
@@ -10518,7 +10596,7 @@
 	},
 	{
 		"Bundle": "Lapin Track",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 39,
 		"wa": 16,
 		"ha": 23,
@@ -10531,7 +10609,7 @@
 	},
 	{
 		"Bundle": "Lasengle",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 242,
 		"wa": 30,
 		"ha": 21,
@@ -10544,7 +10622,7 @@
 	},
 	{
 		"Bundle": "Last Exile Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 11,
 		"wa": 6,
 		"ha": 5,
@@ -10557,7 +10635,7 @@
 	},
 	{
 		"Bundle": "Leaf",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 88,
 		"wa": 33,
 		"ha": 23,
@@ -10570,7 +10648,7 @@
 	},
 	{
 		"Bundle": "Leaf Geometry",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 16,
 		"wa": 0,
 		"ha": 0,
@@ -10583,7 +10661,7 @@
 	},
 	{
 		"Bundle": "Lebre e Coelho Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 2,
 		"ha": 6,
@@ -10596,7 +10674,7 @@
 	},
 	{
 		"Bundle": "Lee Yeon's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 2,
 		"ha": 2,
@@ -10609,7 +10687,7 @@
 	},
 	{
 		"Bundle": "Leed",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 9,
 		"wa": 6,
 		"ha": 3,
@@ -10635,7 +10713,7 @@
 	},
 	{
 		"Bundle": "LEGO",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 94,
 		"wa": 26,
 		"ha": 62,
@@ -10648,7 +10726,7 @@
 	},
 	{
 		"Bundle": "LEGO Star Wars",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2,
 		"wa": 0,
 		"ha": 1,
@@ -10674,7 +10752,7 @@
 	},
 	{
 		"Bundle": "Leisure Suit Larry Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2,
 		"wa": 0,
 		"ha": 0,
@@ -10700,7 +10778,7 @@
 	},
 	{
 		"Bundle": "Lerche",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 528,
 		"wa": 327,
 		"ha": 147,
@@ -10713,7 +10791,7 @@
 	},
 	{
 		"Bundle": "Lethal League Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 11,
 		"wa": 0,
 		"ha": 0,
@@ -10765,7 +10843,7 @@
 	},
 	{
 		"Bundle": "Libre Shuppan",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 44,
 		"wa": 2,
 		"ha": 42,
@@ -10778,7 +10856,7 @@
 	},
 	{
 		"Bundle": "LIDENFILMS",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 258,
 		"wa": 138,
 		"ha": 120,
@@ -10804,7 +10882,7 @@
 	},
 	{
 		"Bundle": "Lifewonders",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 200,
 		"wa": 0,
 		"ha": 0,
@@ -10817,7 +10895,7 @@
 	},
 	{
 		"Bundle": "Light Chaser Animation Studios",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 2,
 		"ha": 1,
@@ -10883,19 +10961,19 @@
 	{
 		"Bundle": "Literature",
 		"Aliases": ["Books", "Novels"],
-		"Size": 1324,
+		"Size": 1325,
 		"wa": 533,
-		"ha": 789,
+		"ha": 790,
 		"wg": 27,
 		"hg": 39,
-		"wap": "040.26",
-		"hap": "059.59",
+		"wap": "040.23",
+		"hap": "059.62",
 		"wgp": "002.04",
-		"hgp": "002.95"
+		"hgp": "002.94"
 	},
 	{
 		"Bundle": "Little Nightmares Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 0,
 		"ha": 0,
@@ -10908,7 +10986,7 @@
 	},
 	{
 		"Bundle": "Little Tail Bronx",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 7,
 		"wa": 0,
 		"ha": 0,
@@ -10935,15 +11013,15 @@
 	{
 		"Bundle": "Live-Action",
 		"Aliases": ["Live Action", "IRL Expansion Pack", "IRL DLC", "Western 3", "IRL 2", "NOTE: This bundle doesn't actually feature Dante from the Devil May Cry Series & Knuckles"],
-		"Size": 1920,
-		"wa": 630,
-		"ha": 1331,
+		"Size": 2101,
+		"wa": 658,
+		"ha": 1484,
 		"wg": 17,
 		"hg": 11,
-		"wap": "032.81",
-		"hap": "069.32",
-		"wgp": "000.89",
-		"hgp": "000.57"
+		"wap": "031.32",
+		"hap": "070.63",
+		"wgp": "000.81",
+		"hgp": "000.52"
 	},
 	{
 		"Bundle": "Live-Action Horror",
@@ -10973,7 +11051,7 @@
 	},
 	{
 		"Bundle": "Looney Tunes Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 29,
 		"wa": 8,
 		"ha": 21,
@@ -10986,7 +11064,7 @@
 	},
 	{
 		"Bundle": "Lose",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 26,
 		"wa": 0,
 		"ha": 0,
@@ -10999,7 +11077,7 @@
 	},
 	{
 		"Bundle": "Lost Kingdoms Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2,
 		"wa": 0,
 		"ha": 0,
@@ -11012,7 +11090,7 @@
 	},
 	{
 		"Bundle": "Lotte Campaigns",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 4,
 		"ha": 1,
@@ -11064,7 +11142,7 @@
 	},
 	{
 		"Bundle": "Luck & Logic Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 9,
 		"wa": 7,
 		"ha": 2,
@@ -11077,7 +11155,7 @@
 	},
 	{
 		"Bundle": "Ludosity",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 13,
 		"wa": 0,
 		"ha": 0,
@@ -11103,7 +11181,7 @@
 	},
 	{
 		"Bundle": "Luminous Arc Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 16,
 		"wa": 0,
 		"ha": 0,
@@ -11116,7 +11194,7 @@
 	},
 	{
 		"Bundle": "Lump of Sugar",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 1,
 		"ha": 0,
@@ -11142,7 +11220,7 @@
 	},
 	{
 		"Bundle": "Lune",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 52,
 		"wa": 43,
 		"ha": 0,
@@ -11155,7 +11233,7 @@
 	},
 	{
 		"Bundle": "Lunime",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 0,
 		"ha": 0,
@@ -11181,7 +11259,7 @@
 	},
 	{
 		"Bundle": "Mabinogi Franchise",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 42,
 		"wa": 0,
 		"ha": 0,
@@ -11194,7 +11272,7 @@
 	},
 	{
 		"Bundle": "Macross",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 62,
 		"wa": 32,
 		"ha": 29,
@@ -11207,7 +11285,7 @@
 	},
 	{
 		"Bundle": "Madagascar Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 18,
 		"wa": 3,
 		"ha": 15,
@@ -11220,7 +11298,7 @@
 	},
 	{
 		"Bundle": "Madhouse",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 1126,
 		"wa": 509,
 		"ha": 616,
@@ -11259,7 +11337,7 @@
 	},
 	{
 		"Bundle": "Magazine Be x Boy",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 29,
 		"wa": 1,
 		"ha": 28,
@@ -11272,7 +11350,7 @@
 	},
 	{
 		"Bundle": "Magazine Pocket",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 66,
 		"wa": 50,
 		"ha": 16,
@@ -11298,7 +11376,7 @@
 	},
 	{
 		"Bundle": "Magic Capsule",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 839,
 		"wa": 515,
 		"ha": 313,
@@ -11323,6 +11401,19 @@
 		"hgp": "000.00"
 	},
 	{
+		"Bundle": "Maho Film",
+		"Aliases": [],
+		"Size": 10,
+		"wa": 6,
+		"ha": 4,
+		"wg": 0,
+		"hg": 0,
+		"wap": "060.00",
+		"hap": "040.00",
+		"wgp": "000.00",
+		"hgp": "000.00"
+	},
+	{
 		"Bundle": "Mahou Shoujo",
 		"Aliases": ["Magical Girl Bundle", "Majokko Bundle", "Witch-Girl Bundle", "Mahou Shoujo Bundle", "Magical Girl", "Majokko", "Witch Girl Bundle", "Witch-Girl", "Witch Girl", "Magical Girls"],
 		"Size": 1268,
@@ -11337,7 +11428,7 @@
 	},
 	{
 		"Bundle": "Mahou Shoujo Site Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 22,
 		"wa": 19,
 		"ha": 4,
@@ -11350,7 +11441,7 @@
 	},
 	{
 		"Bundle": "Mahouka Koukou no Rettousei Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 38,
 		"wa": 24,
 		"ha": 14,
@@ -11402,7 +11493,7 @@
 	},
 	{
 		"Bundle": "Maitetsu Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 23,
 		"wa": 9,
 		"ha": 0,
@@ -11441,7 +11532,7 @@
 	},
 	{
 		"Bundle": "Majin Tensei series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 2,
 		"ha": 0,
@@ -11454,7 +11545,7 @@
 	},
 	{
 		"Bundle": "Major Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 36,
 		"wa": 13,
 		"ha": 23,
@@ -11467,7 +11558,7 @@
 	},
 	{
 		"Bundle": "Majorariatto",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2,
 		"wa": 0,
 		"ha": 0,
@@ -11480,7 +11571,7 @@
 	},
 	{
 		"Bundle": "Makai Tenshi Jibril Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 0,
 		"ha": 0,
@@ -11532,7 +11623,7 @@
 	},
 	{
 		"Bundle": "Man of Action",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 35,
 		"wa": 15,
 		"ha": 21,
@@ -11571,7 +11662,7 @@
 	},
 	{
 		"Bundle": "Manga Action",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 35,
 		"wa": 15,
 		"ha": 20,
@@ -11584,7 +11675,7 @@
 	},
 	{
 		"Bundle": "Manga Erotics F",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 11,
 		"wa": 5,
 		"ha": 6,
@@ -11597,7 +11688,7 @@
 	},
 	{
 		"Bundle": "Manga Life",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 15,
 		"wa": 5,
 		"ha": 10,
@@ -11610,7 +11701,7 @@
 	},
 	{
 		"Bundle": "Manga Life MOMO",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 7,
 		"wa": 5,
 		"ha": 2,
@@ -11623,7 +11714,7 @@
 	},
 	{
 		"Bundle": "Manga Life STORIA",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 24,
 		"wa": 22,
 		"ha": 2,
@@ -11675,7 +11766,7 @@
 	},
 	{
 		"Bundle": "Mangatoon",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 104,
 		"wa": 50,
 		"ha": 54,
@@ -11688,7 +11779,7 @@
 	},
 	{
 		"Bundle": "Manglobe Inc.",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 157,
 		"wa": 83,
 		"ha": 74,
@@ -11714,16 +11805,16 @@
 	},
 	{
 		"Bundle": "MAPPA",
-		"Aliases": [""],
-		"Size": 563,
+		"Aliases": [],
+		"Size": 575,
 		"wa": 227,
 		"ha": 312,
-		"wg": 45,
-		"hg": 8,
-		"wap": "040.32",
-		"hap": "055.42",
-		"wgp": "007.99",
-		"hgp": "001.42"
+		"wg": 48,
+		"hg": 17,
+		"wap": "039.48",
+		"hap": "054.26",
+		"wgp": "008.35",
+		"hgp": "002.96"
 	},
 	{
 		"Bundle": "Mari Okada's Works",
@@ -11753,7 +11844,7 @@
 	},
 	{
 		"Bundle": "Mario Golf Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 0,
 		"ha": 0,
@@ -11766,7 +11857,7 @@
 	},
 	{
 		"Bundle": "Mario Kart",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 0,
 		"ha": 0,
@@ -11779,7 +11870,7 @@
 	},
 	{
 		"Bundle": "Mario Party",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 0,
 		"ha": 0,
@@ -11792,7 +11883,7 @@
 	},
 	{
 		"Bundle": "Mario Tennis",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 0,
 		"ha": 0,
@@ -11805,7 +11896,7 @@
 	},
 	{
 		"Bundle": "Marsupilami Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 1,
 		"ha": 7,
@@ -11818,7 +11909,7 @@
 	},
 	{
 		"Bundle": "Marvel Multiverse",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 732,
 		"wa": 334,
 		"ha": 404,
@@ -11844,7 +11935,7 @@
 	},
 	{
 		"Bundle": "Marvelous",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 450,
 		"wa": 64,
 		"ha": 24,
@@ -11857,7 +11948,7 @@
 	},
 	{
 		"Bundle": "Mary Jane",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 57,
 		"wa": 41,
 		"ha": 0,
@@ -11896,7 +11987,7 @@
 	},
 	{
 		"Bundle": "Masahiro Anbe's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 20,
 		"wa": 17,
 		"ha": 3,
@@ -11922,7 +12013,7 @@
 	},
 	{
 		"Bundle": "Masaki Kawakami's Art",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 13,
 		"wa": 11,
 		"ha": 2,
@@ -11935,7 +12026,7 @@
 	},
 	{
 		"Bundle": "Masaya Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 123,
 		"wa": 0,
 		"ha": 0,
@@ -12000,7 +12091,7 @@
 	},
 	{
 		"Bundle": "Matrix Software",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 98,
 		"wa": 0,
 		"ha": 0,
@@ -12026,7 +12117,7 @@
 	},
 	{
 		"Bundle": "Mattel",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 131,
 		"wa": 67,
 		"ha": 64,
@@ -12039,7 +12130,7 @@
 	},
 	{
 		"Bundle": "Mayonaka Love Alliance",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 0,
 		"ha": 6,
@@ -12065,7 +12156,7 @@
 	},
 	{
 		"Bundle": "MazM",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 9,
 		"wa": 0,
 		"ha": 0,
@@ -12091,7 +12182,7 @@
 	},
 	{
 		"Bundle": "Media Factory",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 1490,
 		"wa": 1011,
 		"ha": 484,
@@ -12104,7 +12195,7 @@
 	},
 	{
 		"Bundle": "Media Molecule",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 0,
 		"ha": 0,
@@ -12130,7 +12221,7 @@
 	},
 	{
 		"Bundle": "Medievil Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 0,
 		"ha": 0,
@@ -12143,7 +12234,7 @@
 	},
 	{
 		"Bundle": "Mega Man",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 107,
 		"wa": 4,
 		"ha": 11,
@@ -12221,7 +12312,7 @@
 	},
 	{
 		"Bundle": "Mega Man World",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 0,
 		"ha": 0,
@@ -12299,7 +12390,7 @@
 	},
 	{
 		"Bundle": "Mega Man ZX Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 12,
 		"wa": 0,
 		"ha": 0,
@@ -12325,7 +12416,7 @@
 	},
 	{
 		"Bundle": "Meguru Hinohara's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 0,
 		"ha": 6,
@@ -12338,7 +12429,7 @@
 	},
 	{
 		"Bundle": "Mei Fujimatsu's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 3,
 		"ha": 0,
@@ -12429,7 +12520,7 @@
 	},
 	{
 		"Bundle": "MGA Entertainment",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 6,
 		"ha": 0,
@@ -12442,7 +12533,7 @@
 	},
 	{
 		"Bundle": "Michel Ocelot's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 2,
 		"ha": 4,
@@ -12456,19 +12547,19 @@
 	{
 		"Bundle": "Mickey Mouse Universe",
 		"Aliases": ["Mickey Universe", "Mickey Mouse"],
-		"Size": 53,
-		"wa": 17,
+		"Size": 55,
+		"wa": 19,
 		"ha": 36,
 		"wg": 0,
 		"hg": 5,
-		"wap": "032.08",
-		"hap": "067.92",
+		"wap": "034.55",
+		"hap": "065.45",
 		"wgp": "000.00",
-		"hgp": "009.43"
+		"hgp": "009.09"
 	},
 	{
 		"Bundle": "Micro Magazine",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 156,
 		"wa": 100,
 		"ha": 59,
@@ -12572,7 +12663,7 @@
 	},
 	{
 		"Bundle": "Miki Yoshikawa's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 40,
 		"wa": 23,
 		"ha": 17,
@@ -12598,7 +12689,7 @@
 	},
 	{
 		"Bundle": "Milkshake!",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 10,
 		"wa": 3,
 		"ha": 7,
@@ -12611,7 +12702,7 @@
 	},
 	{
 		"Bundle": "Million Arthur",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 19,
 		"wa": 12,
 		"ha": 0,
@@ -12637,7 +12728,7 @@
 	},
 	{
 		"Bundle": "Minecraft Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 13,
 		"wa": 0,
 		"ha": 1,
@@ -12689,7 +12780,7 @@
 	},
 	{
 		"Bundle": "Mistwalker",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 22,
 		"wa": 3,
 		"ha": 3,
@@ -12728,7 +12819,7 @@
 	},
 	{
 		"Bundle": "Miwaku's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 0,
 		"ha": 6,
@@ -12754,7 +12845,7 @@
 	},
 	{
 		"Bundle": "Mixer",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 25,
 		"wa": 8,
 		"ha": 17,
@@ -12767,7 +12858,7 @@
 	},
 	{
 		"Bundle": "Mizore Saba's Art",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 5,
 		"ha": 0,
@@ -12833,19 +12924,19 @@
 	{
 		"Bundle": "Mobile Games",
 		"Aliases": ["Mobage", "Android Games", "iOS Games", "Mobile"],
-		"Size": 7633,
-		"wa": 853,
-		"ha": 586,
-		"wg": 4598,
-		"hg": 3060,
-		"wap": "011.18",
-		"hap": "007.68",
-		"wgp": "060.24",
-		"hgp": "040.09"
+		"Size": 7695,
+		"wa": 855,
+		"ha": 587,
+		"wg": 4620,
+		"hg": 3099,
+		"wap": "011.11",
+		"hap": "007.63",
+		"wgp": "060.04",
+		"hgp": "040.27"
 	},
 	{
 		"Bundle": "Mochi Au Lait's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 6,
 		"ha": 0,
@@ -12858,7 +12949,7 @@
 	},
 	{
 		"Bundle": "Modern Warfare Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 11,
 		"wa": 0,
 		"ha": 0,
@@ -12871,7 +12962,7 @@
 	},
 	{
 		"Bundle": "MoeNovel",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 23,
 		"wa": 0,
 		"ha": 0,
@@ -12897,7 +12988,7 @@
 	},
 	{
 		"Bundle": "MondoMedia",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 26,
 		"wa": 4,
 		"ha": 22,
@@ -12923,7 +13014,7 @@
 	},
 	{
 		"Bundle": "Monolith Soft",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 212,
 		"wa": 0,
 		"ha": 0,
@@ -13014,7 +13105,7 @@
 	},
 	{
 		"Bundle": "Moonlight Lady Collection",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 6,
 		"ha": 0,
@@ -13027,7 +13118,7 @@
 	},
 	{
 		"Bundle": "Moonstone",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 39,
 		"wa": 0,
 		"ha": 0,
@@ -13066,7 +13157,7 @@
 	},
 	{
 		"Bundle": "Mr. Blue",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 14,
 		"wa": 1,
 		"ha": 13,
@@ -13079,7 +13170,7 @@
 	},
 	{
 		"Bundle": "Mr. Magazine",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 2,
 		"ha": 4,
@@ -13118,7 +13209,7 @@
 	},
 	{
 		"Bundle": "MTV",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 37,
 		"wa": 14,
 		"ha": 23,
@@ -13131,7 +13222,7 @@
 	},
 	{
 		"Bundle": "Mugen Souls Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 0,
 		"ha": 0,
@@ -13157,7 +13248,7 @@
 	},
 	{
 		"Bundle": "Muru Imigi's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 14,
 		"wa": 12,
 		"ha": 2,
@@ -13170,7 +13261,7 @@
 	},
 	{
 		"Bundle": "Musashi",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 0,
 		"ha": 0,
@@ -13183,7 +13274,7 @@
 	},
 	{
 		"Bundle": "Mushi Productions",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 37,
 		"wa": 17,
 		"ha": 20,
@@ -13261,7 +13352,7 @@
 	},
 	{
 		"Bundle": "MyDearest Inc",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 0,
 		"ha": 0,
@@ -13287,7 +13378,7 @@
 	},
 	{
 		"Bundle": "Nadesico",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 10,
 		"wa": 7,
 		"ha": 3,
@@ -13313,7 +13404,7 @@
 	},
 	{
 		"Bundle": "Nagi Ichi",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 0,
 		"ha": 3,
@@ -13339,7 +13430,7 @@
 	},
 	{
 		"Bundle": "Nakayoshi",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 243,
 		"wa": 156,
 		"ha": 105,
@@ -13365,7 +13456,7 @@
 	},
 	{
 		"Bundle": "namo's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 3,
 		"ha": 2,
@@ -13404,7 +13495,7 @@
 	},
 	{
 		"Bundle": "Naruto Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 220,
 		"wa": 70,
 		"ha": 155,
@@ -13443,7 +13534,7 @@
 	},
 	{
 		"Bundle": "Naughty Dog",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 64,
 		"wa": 0,
 		"ha": 0,
@@ -13456,7 +13547,7 @@
 	},
 	{
 		"Bundle": "NAZ",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 77,
 		"wa": 35,
 		"ha": 39,
@@ -13482,7 +13573,7 @@
 	},
 	{
 		"Bundle": "NCSoft",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 59,
 		"wa": 1,
 		"ha": 0,
@@ -13521,7 +13612,7 @@
 	},
 	{
 		"Bundle": "NEKO WORKs",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 38,
 		"wa": 2,
 		"ha": 0,
@@ -13534,7 +13625,7 @@
 	},
 	{
 		"Bundle": "NEKO-NIN exHeart Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 0,
 		"ha": 0,
@@ -13547,7 +13638,7 @@
 	},
 	{
 		"Bundle": "NekoNyan",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 68,
 		"wa": 15,
 		"ha": 3,
@@ -13560,7 +13651,7 @@
 	},
 	{
 		"Bundle": "Nekopara Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 26,
 		"wa": 2,
 		"ha": 0,
@@ -13573,7 +13664,7 @@
 	},
 	{
 		"Bundle": "Nelvana",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 67,
 		"wa": 21,
 		"ha": 43,
@@ -13586,7 +13677,7 @@
 	},
 	{
 		"Bundle": "NEOWIZ",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 48,
 		"wa": 0,
 		"ha": 0,
@@ -13599,7 +13690,7 @@
 	},
 	{
 		"Bundle": "Neromashin's Art",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 3,
 		"ha": 0,
@@ -13625,7 +13716,7 @@
 	},
 	{
 		"Bundle": "NetEase Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 108,
 		"wa": 0,
 		"ha": 0,
@@ -13651,7 +13742,7 @@
 	},
 	{
 		"Bundle": "Netmarble",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 39,
 		"wa": 4,
 		"ha": 1,
@@ -13703,7 +13794,7 @@
 	},
 	{
 		"Bundle": "NEXON",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 422,
 		"wa": 57,
 		"ha": 9,
@@ -13729,7 +13820,7 @@
 	},
 	{
 		"Bundle": "ni Warau Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 15,
 		"wa": 4,
 		"ha": 11,
@@ -13743,19 +13834,19 @@
 	{
 		"Bundle": "Nickelodeon",
 		"Aliases": ["Nick", "Nicktoons"],
-		"Size": 454,
-		"wa": 167,
-		"ha": 287,
+		"Size": 459,
+		"wa": 170,
+		"ha": 289,
 		"wg": 0,
 		"hg": 3,
-		"wap": "036.78",
-		"hap": "063.22",
+		"wap": "037.04",
+		"hap": "062.96",
 		"wgp": "000.00",
-		"hgp": "000.66"
+		"hgp": "000.65"
 	},
 	{
 		"Bundle": "NieR Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 44,
 		"wa": 0,
 		"ha": 0,
@@ -13768,7 +13859,7 @@
 	},
 	{
 		"Bundle": "Night School Studio",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 7,
 		"wa": 0,
 		"ha": 0,
@@ -13781,7 +13872,7 @@
 	},
 	{
 		"Bundle": "Nights of Azure Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 0,
 		"ha": 0,
@@ -13794,7 +13885,7 @@
 	},
 	{
 		"Bundle": "Nihon Animator Mihonichi",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 5,
 		"ha": 0,
@@ -13807,7 +13898,7 @@
 	},
 	{
 		"Bundle": "Nihon Bungeisha",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 7,
 		"wa": 6,
 		"ha": 1,
@@ -13833,7 +13924,7 @@
 	},
 	{
 		"Bundle": "Nikki UP2U Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 70,
 		"wa": 0,
 		"ha": 0,
@@ -13850,11 +13941,11 @@
 		"Size": 2551,
 		"wa": 217,
 		"ha": 258,
-		"wg": 1134,
+		"wg": 1133,
 		"hg": 1603,
 		"wap": "008.51",
 		"hap": "010.11",
-		"wgp": "044.45",
+		"wgp": "044.41",
 		"hgp": "062.84"
 	},
 	{
@@ -13863,16 +13954,16 @@
 		"Size": 3453,
 		"wa": 486,
 		"ha": 586,
-		"wg": 1358,
+		"wg": 1357,
 		"hg": 1905,
 		"wap": "014.07",
 		"hap": "016.97",
-		"wgp": "039.33",
+		"wgp": "039.30",
 		"hgp": "055.17"
 	},
 	{
 		"Bundle": "Nippon Animation",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 225,
 		"wa": 83,
 		"ha": 145,
@@ -13924,7 +14015,7 @@
 	},
 	{
 		"Bundle": "Nitro+CHiRAL",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 60,
 		"wa": 2,
 		"ha": 27,
@@ -13950,7 +14041,7 @@
 	},
 	{
 		"Bundle": "Nix Hydra",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 29,
 		"wa": 0,
 		"ha": 0,
@@ -14002,7 +14093,7 @@
 	},
 	{
 		"Bundle": "NOCO's Art",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 44,
 		"wa": 24,
 		"ha": 4,
@@ -14015,7 +14106,7 @@
 	},
 	{
 		"Bundle": "Noggin",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 41,
 		"wa": 14,
 		"ha": 27,
@@ -14041,7 +14132,7 @@
 	},
 	{
 		"Bundle": "Nomad",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 97,
 		"wa": 75,
 		"ha": 22,
@@ -14080,7 +14171,7 @@
 	},
 	{
 		"Bundle": "NormalBoots",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 0,
 		"ha": 3,
@@ -14093,7 +14184,7 @@
 	},
 	{
 		"Bundle": "Nozomi Kota's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 10,
 		"wa": 8,
 		"ha": 2,
@@ -14119,7 +14210,7 @@
 	},
 	{
 		"Bundle": "Nur",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 5,
 		"ha": 0,
@@ -14145,7 +14236,7 @@
 	},
 	{
 		"Bundle": "Nutaku",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 222,
 		"wa": 0,
 		"ha": 0,
@@ -14158,7 +14249,7 @@
 	},
 	{
 		"Bundle": "Object Shows",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 44,
 		"wa": 24,
 		"ha": 29,
@@ -14171,7 +14262,7 @@
 	},
 	{
 		"Bundle": "Oddworld",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 0,
 		"ha": 0,
@@ -14184,7 +14275,7 @@
 	},
 	{
 		"Bundle": "Ogeretsu Tanaka's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 21,
 		"wa": 0,
 		"ha": 21,
@@ -14197,7 +14288,7 @@
 	},
 	{
 		"Bundle": "Ohisashiburi's Art",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 3,
 		"ha": 0,
@@ -14236,7 +14327,7 @@
 	},
 	{
 		"Bundle": "Old Literature",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 69,
 		"wa": 22,
 		"ha": 47,
@@ -14262,7 +14353,7 @@
 	},
 	{
 		"Bundle": "Omega Labyrinth Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 15,
 		"wa": 0,
 		"ha": 0,
@@ -14288,7 +14379,7 @@
 	},
 	{
 		"Bundle": "One Piece Movies",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 13,
 		"wa": 4,
 		"ha": 9,
@@ -14314,7 +14405,7 @@
 	},
 	{
 		"Bundle": "One Room Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 10,
 		"wa": 7,
 		"ha": 3,
@@ -14340,7 +14431,7 @@
 	},
 	{
 		"Bundle": "Onimusha",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2,
 		"wa": 0,
 		"ha": 0,
@@ -14379,7 +14470,7 @@
 	},
 	{
 		"Bundle": "Opera",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 0,
 		"ha": 8,
@@ -14418,7 +14509,7 @@
 	},
 	{
 		"Bundle": "Ordem Paranormal",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 49,
 		"wa": 14,
 		"ha": 37,
@@ -14457,7 +14548,7 @@
 	},
 	{
 		"Bundle": "OTAKU Plan",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 7,
 		"wa": 0,
 		"ha": 0,
@@ -14470,7 +14561,7 @@
 	},
 	{
 		"Bundle": "Otomate",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 342,
 		"wa": 24,
 		"ha": 94,
@@ -14509,7 +14600,7 @@
 	},
 	{
 		"Bundle": "Outlast Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 0,
 		"ha": 0,
@@ -14522,7 +14613,7 @@
 	},
 	{
 		"Bundle": "Overdrive",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 21,
 		"wa": 1,
 		"ha": 0,
@@ -14535,7 +14626,7 @@
 	},
 	{
 		"Bundle": "Overlap",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 151,
 		"wa": 119,
 		"ha": 33,
@@ -14548,7 +14639,7 @@
 	},
 	{
 		"Bundle": "Overlord Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 75,
 		"wa": 38,
 		"ha": 35,
@@ -14561,7 +14652,7 @@
 	},
 	{
 		"Bundle": "Oyari Ashito's Art",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 48,
 		"wa": 0,
 		"ha": 0,
@@ -14588,19 +14679,19 @@
 	{
 		"Bundle": "pako's Art",
 		"Aliases": ["pako"],
-		"Size": 40,
-		"wa": 15,
+		"Size": 21,
+		"wa": 12,
 		"ha": 9,
-		"wg": 15,
-		"hg": 6,
-		"wap": "037.50",
-		"hap": "022.50",
-		"wgp": "037.50",
-		"hgp": "015.00"
+		"wg": 1,
+		"hg": 1,
+		"wap": "057.14",
+		"hap": "042.86",
+		"wgp": "004.76",
+		"hgp": "004.76"
 	},
 	{
 		"Bundle": "Palette",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 20,
 		"wa": 3,
 		"ha": 0,
@@ -14613,7 +14704,7 @@
 	},
 	{
 		"Bundle": "Palm Studio",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 16,
 		"wa": 6,
 		"ha": 10,
@@ -14626,7 +14717,7 @@
 	},
 	{
 		"Bundle": "Paper Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 82,
 		"wa": 0,
 		"ha": 0,
@@ -14652,7 +14743,7 @@
 	},
 	{
 		"Bundle": "Paradox Interactive",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 24,
 		"wa": 0,
 		"ha": 11,
@@ -14678,7 +14769,7 @@
 	},
 	{
 		"Bundle": "PashminaA",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 13,
 		"wa": 10,
 		"ha": 1,
@@ -14691,7 +14782,7 @@
 	},
 	{
 		"Bundle": "Passione",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 198,
 		"wa": 145,
 		"ha": 52,
@@ -14704,7 +14795,7 @@
 	},
 	{
 		"Bundle": "PBS Kids",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 67,
 		"wa": 18,
 		"ha": 54,
@@ -14795,7 +14886,7 @@
 	},
 	{
 		"Bundle": "Phantasy Star Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 63,
 		"wa": 10,
 		"ha": 4,
@@ -14808,7 +14899,7 @@
 	},
 	{
 		"Bundle": "Piacci",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 24,
 		"wa": 15,
 		"ha": 3,
@@ -14821,7 +14912,7 @@
 	},
 	{
 		"Bundle": "PICOPICOSOFT",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2,
 		"wa": 1,
 		"ha": 0,
@@ -14834,7 +14925,7 @@
 	},
 	{
 		"Bundle": "Picture Books",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 52,
 		"wa": 10,
 		"ha": 42,
@@ -14847,7 +14938,7 @@
 	},
 	{
 		"Bundle": "Pikmin Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 0,
 		"ha": 0,
@@ -14860,7 +14951,7 @@
 	},
 	{
 		"Bundle": "Pillow Fight",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 11,
 		"wa": 0,
 		"ha": 0,
@@ -14873,7 +14964,7 @@
 	},
 	{
 		"Bundle": "Pine Jam",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 35,
 		"wa": 22,
 		"ha": 13,
@@ -14886,7 +14977,7 @@
 	},
 	{
 		"Bundle": "PingPu",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 33,
 		"wa": 9,
 		"ha": 24,
@@ -14899,7 +14990,7 @@
 	},
 	{
 		"Bundle": "Pink Pineapple",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 204,
 		"wa": 177,
 		"ha": 6,
@@ -14925,7 +15016,7 @@
 	},
 	{
 		"Bundle": "PixelFade",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 7,
 		"wa": 0,
 		"ha": 0,
@@ -14968,16 +15059,16 @@
 		"Size": 1472,
 		"wa": 21,
 		"ha": 49,
-		"wg": 636,
+		"wg": 635,
 		"hg": 974,
 		"wap": "001.43",
 		"hap": "003.33",
-		"wgp": "043.21",
+		"wgp": "043.14",
 		"hgp": "066.17"
 	},
 	{
 		"Bundle": "PlatinumGames",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 53,
 		"wa": 0,
 		"ha": 0,
@@ -14990,7 +15081,7 @@
 	},
 	{
 		"Bundle": "PLAYISM",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 258,
 		"wa": 4,
 		"ha": 4,
@@ -15003,7 +15094,7 @@
 	},
 	{
 		"Bundle": "Podcasts",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 190,
 		"wa": 76,
 		"ha": 126,
@@ -15224,7 +15315,7 @@
 	},
 	{
 		"Bundle": "Pokémon Snap Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2,
 		"wa": 0,
 		"ha": 1,
@@ -15276,7 +15367,7 @@
 	},
 	{
 		"Bundle": "Portal Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 18,
 		"wa": 1,
 		"ha": 2,
@@ -15289,7 +15380,7 @@
 	},
 	{
 		"Bundle": "Porter Robinson's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 4,
 		"ha": 2,
@@ -15380,7 +15471,7 @@
 	},
 	{
 		"Bundle": "Primastea",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 3,
 		"ha": 0,
@@ -15393,7 +15484,7 @@
 	},
 	{
 		"Bundle": "Princess Maker Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 0,
 		"ha": 0,
@@ -15406,7 +15497,7 @@
 	},
 	{
 		"Bundle": "Prinny Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 0,
 		"ha": 0,
@@ -15420,19 +15511,19 @@
 	{
 		"Bundle": "Production I.G",
 		"Aliases": ["Production IG"],
-		"Size": 980,
-		"wa": 301,
+		"Size": 962,
+		"wa": 299,
 		"ha": 628,
-		"wg": 57,
-		"hg": 85,
-		"wap": "030.71",
-		"hap": "064.08",
-		"wgp": "005.82",
-		"hgp": "008.67"
+		"wg": 45,
+		"hg": 79,
+		"wap": "031.08",
+		"hap": "065.28",
+		"wgp": "004.68",
+		"hgp": "008.21"
 	},
 	{
 		"Bundle": "Production IMS",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 144,
 		"wa": 128,
 		"ha": 16,
@@ -15445,7 +15536,7 @@
 	},
 	{
 		"Bundle": "Production Reed",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 75,
 		"wa": 44,
 		"ha": 31,
@@ -15471,7 +15562,7 @@
 	},
 	{
 		"Bundle": "Project No.9",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 160,
 		"wa": 80,
 		"ha": 32,
@@ -15497,7 +15588,7 @@
 	},
 	{
 		"Bundle": "Psycho-Pass Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 30,
 		"wa": 11,
 		"ha": 16,
@@ -15510,7 +15601,7 @@
 	},
 	{
 		"Bundle": "Psychonauts Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 32,
 		"wa": 0,
 		"ha": 0,
@@ -15523,7 +15614,7 @@
 	},
 	{
 		"Bundle": "Pulltop",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 23,
 		"wa": 0,
 		"ha": 0,
@@ -15536,7 +15627,7 @@
 	},
 	{
 		"Bundle": "Punchline Company",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 0,
 		"ha": 0,
@@ -15549,7 +15640,7 @@
 	},
 	{
 		"Bundle": "Punica",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 1,
 		"ha": 2,
@@ -15562,7 +15653,7 @@
 	},
 	{
 		"Bundle": "Purgatory Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 0,
 		"ha": 0,
@@ -15575,7 +15666,7 @@
 	},
 	{
 		"Bundle": "Purple Software",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 38,
 		"wa": 0,
 		"ha": 0,
@@ -15588,7 +15679,7 @@
 	},
 	{
 		"Bundle": "Puu no Puupuupuu's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 5,
 		"ha": 0,
@@ -15601,7 +15692,7 @@
 	},
 	{
 		"Bundle": "Puyo Puyo Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 57,
 		"wa": 0,
 		"ha": 0,
@@ -15614,7 +15705,7 @@
 	},
 	{
 		"Bundle": "Puzzle Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 416,
 		"wa": 22,
 		"ha": 17,
@@ -15640,7 +15731,7 @@
 	},
 	{
 		"Bundle": "Quake Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 0,
 		"ha": 0,
@@ -15653,7 +15744,7 @@
 	},
 	{
 		"Bundle": "Quantic Dream",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 26,
 		"wa": 0,
 		"ha": 0,
@@ -15666,7 +15757,7 @@
 	},
 	{
 		"Bundle": "Queen Bee",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 41,
 		"wa": 41,
 		"ha": 0,
@@ -15705,7 +15796,7 @@
 	},
 	{
 		"Bundle": "qureate",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 10,
 		"wa": 0,
 		"ha": 0,
@@ -15744,7 +15835,7 @@
 	},
 	{
 		"Bundle": "Radix Ace Entertainment",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 12,
 		"wa": 12,
 		"ha": 0,
@@ -15770,7 +15861,7 @@
 	},
 	{
 		"Bundle": "Rainbow Rowell",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 7,
 		"wa": 3,
 		"ha": 4,
@@ -15783,7 +15874,7 @@
 	},
 	{
 		"Bundle": "Raising Sims",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 365,
 		"wa": 208,
 		"ha": 55,
@@ -15796,7 +15887,7 @@
 	},
 	{
 		"Bundle": "Rance",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 109,
 		"wa": 9,
 		"ha": 1,
@@ -15822,7 +15913,7 @@
 	},
 	{
 		"Bundle": "Ranmaru Zariya's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 0,
 		"ha": 8,
@@ -15848,7 +15939,7 @@
 	},
 	{
 		"Bundle": "Rare Replay",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 37,
 		"wa": 0,
 		"ha": 1,
@@ -15900,7 +15991,7 @@
 	},
 	{
 		"Bundle": "Rayman Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 18,
 		"wa": 0,
 		"ha": 3,
@@ -15926,7 +16017,7 @@
 	},
 	{
 		"Bundle": "Read Comics Publishing",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 6,
 		"ha": 0,
@@ -15952,7 +16043,7 @@
 	},
 	{
 		"Bundle": "Record of Agarest War Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 13,
 		"wa": 0,
 		"ha": 0,
@@ -15978,7 +16069,7 @@
 	},
 	{
 		"Bundle": "REDICE STUDIO",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 102,
 		"wa": 36,
 		"ha": 67,
@@ -15991,7 +16082,7 @@
 	},
 	{
 		"Bundle": "redjuice's Art",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 24,
 		"wa": 17,
 		"ha": 7,
@@ -16004,7 +16095,7 @@
 	},
 	{
 		"Bundle": "Rejet",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 106,
 		"wa": 7,
 		"ha": 77,
@@ -16030,7 +16121,7 @@
 	},
 	{
 		"Bundle": "Remtairy",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 2,
 		"ha": 0,
@@ -16056,7 +16147,7 @@
 	},
 	{
 		"Bundle": "Resident Evil: Revelations Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 0,
 		"ha": 0,
@@ -16069,7 +16160,7 @@
 	},
 	{
 		"Bundle": "Revoroot",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 22,
 		"wa": 16,
 		"ha": 6,
@@ -16173,7 +16264,7 @@
 	},
 	{
 		"Bundle": "Rising Star Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 92,
 		"wa": 0,
 		"ha": 0,
@@ -16186,7 +16277,7 @@
 	},
 	{
 		"Bundle": "Risk of Rain Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 14,
 		"wa": 0,
 		"ha": 0,
@@ -16225,7 +16316,7 @@
 	},
 	{
 		"Bundle": "Robotech",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 14,
 		"wa": 9,
 		"ha": 5,
@@ -16252,13 +16343,13 @@
 	{
 		"Bundle": "Rodong's Art",
 		"Aliases": ["Rodong's"],
-		"Size": 8,
-		"wa": 7,
+		"Size": 9,
+		"wa": 8,
 		"ha": 1,
 		"wg": 0,
 		"hg": 0,
-		"wap": "087.50",
-		"hap": "012.50",
+		"wap": "088.89",
+		"hap": "011.11",
 		"wgp": "000.00",
 		"hgp": "000.00"
 	},
@@ -16290,7 +16381,7 @@
 	},
 	{
 		"Bundle": "Rosenkreuzstilette Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 16,
 		"wa": 0,
 		"ha": 0,
@@ -16303,7 +16394,7 @@
 	},
 	{
 		"Bundle": "RPG Maker 2000 Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 130,
 		"wa": 0,
 		"ha": 3,
@@ -16329,7 +16420,7 @@
 	},
 	{
 		"Bundle": "Rui Tsukiyo's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 24,
 		"wa": 18,
 		"ha": 6,
@@ -16368,7 +16459,7 @@
 	},
 	{
 		"Bundle": "Ruria Miyuki's Art",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 7,
 		"wa": 5,
 		"ha": 2,
@@ -16381,7 +16472,7 @@
 	},
 	{
 		"Bundle": "Rusty Quill",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2,
 		"wa": 1,
 		"ha": 2,
@@ -16446,7 +16537,7 @@
 	},
 	{
 		"Bundle": "SaGa Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 11,
 		"wa": 0,
 		"ha": 0,
@@ -16459,7 +16550,7 @@
 	},
 	{
 		"Bundle": "Sagold's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 0,
 		"ha": 8,
@@ -16485,7 +16576,7 @@
 	},
 	{
 		"Bundle": "Sakae Esuno's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 28,
 		"wa": 12,
 		"ha": 16,
@@ -16498,7 +16589,7 @@
 	},
 	{
 		"Bundle": "Saki Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 50,
 		"wa": 48,
 		"ha": 2,
@@ -16524,7 +16615,7 @@
 	},
 	{
 		"Bundle": "Sakuragi Ren's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 4,
 		"ha": 0,
@@ -16537,7 +16628,7 @@
 	},
 	{
 		"Bundle": "San-X",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 11,
 		"wa": 7,
 		"ha": 11,
@@ -16550,7 +16641,7 @@
 	},
 	{
 		"Bundle": "Sanrio",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 163,
 		"wa": 85,
 		"ha": 72,
@@ -16563,7 +16654,7 @@
 	},
 	{
 		"Bundle": "Sanrio Mascots",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 42,
 		"wa": 22,
 		"ha": 22,
@@ -16576,7 +16667,7 @@
 	},
 	{
 		"Bundle": "Sanzigen",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 105,
 		"wa": 79,
 		"ha": 19,
@@ -16589,7 +16680,7 @@
 	},
 	{
 		"Bundle": "Sarah J. Maas' Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 24,
 		"wa": 11,
 		"ha": 13,
@@ -16602,7 +16693,7 @@
 	},
 	{
 		"Bundle": "Satelight",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 549,
 		"wa": 270,
 		"ha": 254,
@@ -16628,7 +16719,7 @@
 	},
 	{
 		"Bundle": "Satoshi Kon",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 15,
 		"wa": 10,
 		"ha": 5,
@@ -16641,7 +16732,7 @@
 	},
 	{
 		"Bundle": "Satoshi Mizukami",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 38,
 		"wa": 18,
 		"ha": 20,
@@ -16693,7 +16784,7 @@
 	},
 	{
 		"Bundle": "Scary Go Round",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 5,
 		"ha": 0,
@@ -16732,7 +16823,7 @@
 	},
 	{
 		"Bundle": "Science SARU",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 41,
 		"wa": 19,
 		"ha": 22,
@@ -16797,7 +16888,7 @@
 	},
 	{
 		"Bundle": "Screamo",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 24,
 		"wa": 12,
 		"ha": 12,
@@ -16823,7 +16914,7 @@
 	},
 	{
 		"Bundle": "Segawa",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 32,
 		"wa": 0,
 		"ha": 0,
@@ -16849,7 +16940,7 @@
 	},
 	{
 		"Bundle": "Seikai Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 4,
 		"ha": 2,
@@ -16875,7 +16966,7 @@
 	},
 	{
 		"Bundle": "Sekai Project",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 328,
 		"wa": 23,
 		"ha": 11,
@@ -16888,7 +16979,7 @@
 	},
 	{
 		"Bundle": "selector WIXOSS",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 14,
 		"wa": 14,
 		"ha": 0,
@@ -16901,7 +16992,7 @@
 	},
 	{
 		"Bundle": "Selfish",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 19,
 		"wa": 16,
 		"ha": 0,
@@ -16914,7 +17005,7 @@
 	},
 	{
 		"Bundle": "Sen's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 10,
 		"wa": 0,
 		"ha": 0,
@@ -16927,7 +17018,7 @@
 	},
 	{
 		"Bundle": "Sengoku Period Fiction",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 335,
 		"wa": 75,
 		"ha": 98,
@@ -16979,7 +17070,7 @@
 	},
 	{
 		"Bundle": "SEQUEL",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 16,
 		"wa": 0,
 		"ha": 0,
@@ -17005,7 +17096,7 @@
 	},
 	{
 		"Bundle": "Seven",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 161,
 		"wa": 101,
 		"ha": 54,
@@ -17018,7 +17109,7 @@
 	},
 	{
 		"Bundle": "Seven Arcs",
-		"Aliases": [""],
+		"Aliases": ["Seven Arcs Pictures"],
 		"Size": 194,
 		"wa": 161,
 		"ha": 34,
@@ -17031,7 +17122,7 @@
 	},
 	{
 		"Bundle": "Seven Knights Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 10,
 		"wa": 3,
 		"ha": 1,
@@ -17044,7 +17135,7 @@
 	},
 	{
 		"Bundle": "Seven Seas Entertainment",
-		"Aliases": ["Air Ship"],
+		"Aliases": ["Air Ship", "Seven Seas"],
 		"Size": 1076,
 		"wa": 765,
 		"ha": 322,
@@ -17057,7 +17148,7 @@
 	},
 	{
 		"Bundle": "Shadow Hearts Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 13,
 		"wa": 1,
 		"ha": 0,
@@ -17083,7 +17174,7 @@
 	},
 	{
 		"Bundle": "Shadowhunters",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 37,
 		"wa": 15,
 		"ha": 23,
@@ -17096,7 +17187,7 @@
 	},
 	{
 		"Bundle": "Shaft",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 485,
 		"wa": 287,
 		"ha": 120,
@@ -17122,7 +17213,7 @@
 	},
 	{
 		"Bundle": "Shenmue",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 16,
 		"wa": 0,
 		"ha": 0,
@@ -17148,7 +17239,7 @@
 	},
 	{
 		"Bundle": "Shigeru Miyamoto's Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 34,
 		"wa": 0,
 		"ha": 0,
@@ -17200,7 +17291,7 @@
 	},
 	{
 		"Bundle": "Shin-Ei Animation",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 103,
 		"wa": 44,
 		"ha": 61,
@@ -17278,7 +17369,7 @@
 	},
 	{
 		"Bundle": "Shinigami Kareshi Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 0,
 		"ha": 0,
@@ -17290,8 +17381,21 @@
 		"hgp": "080.00"
 	},
 	{
+		"Bundle": "Shining Series",
+		"Aliases": ["Shining"],
+		"Size": 22,
+		"wa": 3,
+		"ha": 0,
+		"wg": 16,
+		"hg": 6,
+		"wap": "013.64",
+		"hap": "000.00",
+		"wgp": "072.73",
+		"hgp": "027.27"
+	},
+	{
 		"Bundle": "Shinkansen Henkei Robo Shinkalion Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 0,
 		"ha": 5,
@@ -17304,7 +17408,7 @@
 	},
 	{
 		"Bundle": "Shinshokan",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 76,
 		"wa": 8,
 		"ha": 69,
@@ -17317,7 +17421,7 @@
 	},
 	{
 		"Bundle": "Shinta Fujimoto's Art",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 41,
 		"wa": 17,
 		"ha": 24,
@@ -17356,7 +17460,7 @@
 	},
 	{
 		"Bundle": "Shiren the Wanderer Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 0,
 		"ha": 0,
@@ -17382,7 +17486,7 @@
 	},
 	{
 		"Bundle": "Shogakukan",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2988,
 		"wa": 1334,
 		"ha": 1629,
@@ -17408,7 +17512,7 @@
 	},
 	{
 		"Bundle": "Shooter Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 1239,
 		"wa": 15,
 		"ha": 25,
@@ -17486,7 +17590,7 @@
 	},
 	{
 		"Bundle": "Shounen Gangan",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 545,
 		"wa": 335,
 		"ha": 211,
@@ -17499,7 +17603,7 @@
 	},
 	{
 		"Bundle": "Shounen Jump+ Originals",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 189,
 		"wa": 122,
 		"ha": 76,
@@ -17512,7 +17616,7 @@
 	},
 	{
 		"Bundle": "Shounen Sirius",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 230,
 		"wa": 120,
 		"ha": 113,
@@ -17538,7 +17642,7 @@
 	},
 	{
 		"Bundle": "Showten",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 12,
 		"wa": 6,
 		"ha": 0,
@@ -17551,20 +17655,20 @@
 	},
 	{
 		"Bundle": "Shueisha",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6938,
-		"wa": 2714,
-		"ha": 4286,
-		"wg": 77,
+		"wa": 2715,
+		"ha": 4285,
+		"wg": 78,
 		"hg": 292,
-		"wap": "039.12",
-		"hap": "061.78",
-		"wgp": "001.11",
+		"wap": "039.13",
+		"hap": "061.76",
+		"wgp": "001.12",
 		"hgp": "004.21"
 	},
 	{
 		"Bundle": "Shuka",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 88,
 		"wa": 32,
 		"ha": 57,
@@ -17577,7 +17681,7 @@
 	},
 	{
 		"Bundle": "Shungiku Nakamura's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 23,
 		"wa": 0,
 		"ha": 23,
@@ -17590,7 +17694,7 @@
 	},
 	{
 		"Bundle": "Shuuzou Oshimi",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 12,
 		"wa": 10,
 		"ha": 3,
@@ -17607,11 +17711,11 @@
 		"Size": 973,
 		"wa": 20,
 		"ha": 38,
-		"wg": 439,
+		"wg": 438,
 		"hg": 613,
 		"wap": "002.06",
 		"hap": "003.91",
-		"wgp": "045.12",
+		"wgp": "045.02",
 		"hgp": "063.00"
 	},
 	{
@@ -17642,7 +17746,7 @@
 	},
 	{
 		"Bundle": "Signal.MD",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 33,
 		"wa": 13,
 		"ha": 20,
@@ -17668,7 +17772,7 @@
 	},
 	{
 		"Bundle": "Silver Link",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 562,
 		"wa": 411,
 		"ha": 127,
@@ -17681,7 +17785,7 @@
 	},
 	{
 		"Bundle": "Sims Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 16,
 		"wa": 0,
 		"ha": 0,
@@ -17707,7 +17811,7 @@
 	},
 	{
 		"Bundle": "sin Franchise",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 17,
 		"wa": 17,
 		"ha": 0,
@@ -17720,7 +17824,7 @@
 	},
 	{
 		"Bundle": "Sitcoms",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 523,
 		"wa": 167,
 		"ha": 361,
@@ -17746,7 +17850,7 @@
 	},
 	{
 		"Bundle": "Sly Cooper",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 28,
 		"wa": 0,
 		"ha": 0,
@@ -17772,7 +17876,7 @@
 	},
 	{
 		"Bundle": "Smilegate",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 158,
 		"wa": 0,
 		"ha": 0,
@@ -17798,7 +17902,7 @@
 	},
 	{
 		"Bundle": "so-bin's Art",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 76,
 		"wa": 38,
 		"ha": 35,
@@ -17811,7 +17915,7 @@
 	},
 	{
 		"Bundle": "Sol Press",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 24,
 		"wa": 0,
 		"ha": 0,
@@ -17824,7 +17928,7 @@
 	},
 	{
 		"Bundle": "Solo Musicians",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 196,
 		"wa": 73,
 		"ha": 126,
@@ -17850,7 +17954,7 @@
 	},
 	{
 		"Bundle": "Sonic Advance Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 4,
 		"ha": 2,
@@ -17863,7 +17967,7 @@
 	},
 	{
 		"Bundle": "Sonic Gems Collection",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 9,
 		"wa": 2,
 		"ha": 5,
@@ -17876,7 +17980,7 @@
 	},
 	{
 		"Bundle": "Sonic Mega Collection",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 0,
 		"ha": 4,
@@ -17889,7 +17993,7 @@
 	},
 	{
 		"Bundle": "Sonic Origins",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 7,
 		"wa": 1,
 		"ha": 5,
@@ -17902,7 +18006,7 @@
 	},
 	{
 		"Bundle": "Sonic Rush Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 2,
 		"ha": 0,
@@ -17915,7 +18019,7 @@
 	},
 	{
 		"Bundle": "Sonic Storybook Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 0,
 		"ha": 0,
@@ -17928,7 +18032,7 @@
 	},
 	{
 		"Bundle": "Sonic Team",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 109,
 		"wa": 9,
 		"ha": 21,
@@ -17994,32 +18098,32 @@
 	{
 		"Bundle": "Sony (Publisher)",
 		"Aliases": ["Sony Interactive Entertainment", "Sony Computer Entertainment", "SIE", "SCE", "Titles Published by Sony", "Published by Sony", "Sony Publisher", "Sony Published Games"],
-		"Size": 554,
+		"Size": 553,
 		"wa": 17,
-		"ha": 40,
+		"ha": 39,
 		"wg": 212,
 		"hg": 325,
 		"wap": "003.07",
-		"hap": "007.22",
-		"wgp": "038.27",
-		"hgp": "058.66"
+		"hap": "007.05",
+		"wgp": "038.34",
+		"hgp": "058.77"
 	},
 	{
 		"Bundle": "Sony Pictures Animation",
-		"Aliases": [""],
-		"Size": 65,
+		"Aliases": [],
+		"Size": 67,
 		"wa": 21,
-		"ha": 32,
+		"ha": 34,
 		"wg": 7,
 		"hg": 12,
-		"wap": "032.31",
-		"hap": "049.23",
-		"wgp": "010.77",
-		"hgp": "018.46"
+		"wap": "031.34",
+		"hap": "050.75",
+		"wgp": "010.45",
+		"hgp": "017.91"
 	},
 	{
 		"Bundle": "Sony Pictures Television",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 69,
 		"wa": 26,
 		"ha": 43,
@@ -18032,7 +18136,7 @@
 	},
 	{
 		"Bundle": "Sotsu",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 1358,
 		"wa": 858,
 		"ha": 475,
@@ -18058,7 +18162,7 @@
 	},
 	{
 		"Bundle": "Soul Eater Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 48,
 		"wa": 23,
 		"ha": 27,
@@ -18071,7 +18175,7 @@
 	},
 	{
 		"Bundle": "Soul Land Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 22,
 		"wa": 12,
 		"ha": 10,
@@ -18110,7 +18214,7 @@
 	},
 	{
 		"Bundle": "Sound Horizon",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 1,
 		"ha": 4,
@@ -18123,7 +18227,7 @@
 	},
 	{
 		"Bundle": "Souryuu's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 8,
 		"ha": 0,
@@ -18149,7 +18253,7 @@
 	},
 	{
 		"Bundle": "Soviet Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 16,
 		"wa": 0,
 		"ha": 0,
@@ -18162,7 +18266,7 @@
 	},
 	{
 		"Bundle": "Space Ghost Chronology",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 19,
 		"wa": 1,
 		"ha": 18,
@@ -18188,7 +18292,7 @@
 	},
 	{
 		"Bundle": "Spelunky Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 0,
 		"ha": 0,
@@ -18201,7 +18305,7 @@
 	},
 	{
 		"Bundle": "Spike Chunsoft",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 298,
 		"wa": 69,
 		"ha": 44,
@@ -18214,7 +18318,7 @@
 	},
 	{
 		"Bundle": "Spirit Hunter Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 9,
 		"wa": 0,
 		"ha": 0,
@@ -18266,7 +18370,7 @@
 	},
 	{
 		"Bundle": "Sports Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 315,
 		"wa": 106,
 		"ha": 120,
@@ -18292,7 +18396,7 @@
 	},
 	{
 		"Bundle": "Spyro Multiverse",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 79,
 		"wa": 1,
 		"ha": 2,
@@ -18305,7 +18409,7 @@
 	},
 	{
 		"Bundle": "Spyro Reignited Trilogy",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 16,
 		"wa": 0,
 		"ha": 0,
@@ -18344,7 +18448,7 @@
 	},
 	{
 		"Bundle": "Sr Pelo's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 1,
 		"ha": 7,
@@ -18358,13 +18462,13 @@
 	{
 		"Bundle": "Stage Musicals",
 		"Aliases": ["Musical Theatre", "Broadway"],
-		"Size": 35,
-		"wa": 18,
-		"ha": 18,
+		"Size": 40,
+		"wa": 22,
+		"ha": 19,
 		"wg": 0,
 		"hg": 0,
-		"wap": "051.43",
-		"hap": "051.43",
+		"wap": "055.00",
+		"hap": "047.50",
 		"wgp": "000.00",
 		"hgp": "000.00"
 	},
@@ -18422,7 +18526,7 @@
 	},
 	{
 		"Bundle": "Star Wars: Knights of the Old Republic Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 21,
 		"wa": 0,
 		"ha": 0,
@@ -18435,7 +18539,7 @@
 	},
 	{
 		"Bundle": "Star Wars: The Force Unleashed Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 0,
 		"ha": 0,
@@ -18448,7 +18552,7 @@
 	},
 	{
 		"Bundle": "Stardew Valley Universe",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 48,
 		"wa": 0,
 		"ha": 0,
@@ -18461,7 +18565,7 @@
 	},
 	{
 		"Bundle": "Stargate",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 12,
 		"wa": 4,
 		"ha": 8,
@@ -18473,8 +18577,21 @@
 		"hgp": "000.00"
 	},
 	{
+		"Bundle": "Stargroove",
+		"Aliases": [],
+		"Size": 7,
+		"wa": 0,
+		"ha": 0,
+		"wg": 5,
+		"hg": 2,
+		"wap": "000.00",
+		"hap": "000.00",
+		"wgp": "071.43",
+		"hgp": "028.57"
+	},
+	{
 		"Bundle": "Starship Entertainment",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 12,
 		"wa": 5,
 		"ha": 7,
@@ -18487,7 +18604,7 @@
 	},
 	{
 		"Bundle": "Steel Wool Studios",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 9,
 		"wa": 0,
 		"ha": 0,
@@ -18552,7 +18669,7 @@
 	},
 	{
 		"Bundle": "Story of Eroolia",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 0,
 		"ha": 0,
@@ -18566,15 +18683,15 @@
 	{
 		"Bundle": "Strategy Games",
 		"Aliases": ["RTS", "Real-time Strategy Games", "Turn-based Strategy Games"],
-		"Size": 1605,
+		"Size": 1615,
 		"wa": 59,
 		"ha": 28,
-		"wg": 839,
-		"hg": 779,
-		"wap": "003.68",
-		"hap": "001.74",
-		"wgp": "052.27",
-		"hgp": "048.54"
+		"wg": 845,
+		"hg": 783,
+		"wap": "003.65",
+		"hap": "001.73",
+		"wgp": "052.32",
+		"hgp": "048.48"
 	},
 	{
 		"Bundle": "Street Fighter",
@@ -18604,7 +18721,7 @@
 	},
 	{
 		"Bundle": "Streets of Rage Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 10,
 		"wa": 0,
 		"ha": 0,
@@ -18617,7 +18734,7 @@
 	},
 	{
 		"Bundle": "Studio 1st",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 13,
 		"wa": 13,
 		"ha": 1,
@@ -18630,7 +18747,7 @@
 	},
 	{
 		"Bundle": "Studio 3Hz",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 98,
 		"wa": 40,
 		"ha": 50,
@@ -18656,7 +18773,7 @@
 	},
 	{
 		"Bundle": "Studio 9 Maiami",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 33,
 		"wa": 30,
 		"ha": 3,
@@ -18669,7 +18786,7 @@
 	},
 	{
 		"Bundle": "Studio Chizu",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 24,
 		"wa": 9,
 		"ha": 16,
@@ -18682,7 +18799,7 @@
 	},
 	{
 		"Bundle": "Studio Colorido",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 32,
 		"wa": 16,
 		"ha": 16,
@@ -18695,7 +18812,7 @@
 	},
 	{
 		"Bundle": "Studio Comet",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 127,
 		"wa": 44,
 		"ha": 44,
@@ -18721,7 +18838,7 @@
 	},
 	{
 		"Bundle": "Studio Fantasia",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 27,
 		"wa": 25,
 		"ha": 2,
@@ -18734,7 +18851,7 @@
 	},
 	{
 		"Bundle": "Studio Filmów Rysunkowych",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 0,
 		"ha": 3,
@@ -18760,7 +18877,7 @@
 	},
 	{
 		"Bundle": "Studio Gokumi",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 151,
 		"wa": 129,
 		"ha": 21,
@@ -18773,7 +18890,7 @@
 	},
 	{
 		"Bundle": "Studio Kai",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 14,
 		"wa": 8,
 		"ha": 6,
@@ -18786,7 +18903,7 @@
 	},
 	{
 		"Bundle": "Studio Klondike",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 0,
 		"ha": 0,
@@ -18799,7 +18916,7 @@
 	},
 	{
 		"Bundle": "Studio Mir",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 76,
 		"wa": 33,
 		"ha": 43,
@@ -18812,7 +18929,7 @@
 	},
 	{
 		"Bundle": "Studio Orange",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 142,
 		"wa": 85,
 		"ha": 86,
@@ -18825,7 +18942,7 @@
 	},
 	{
 		"Bundle": "Studio Pierrot",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 1140,
 		"wa": 408,
 		"ha": 727,
@@ -18838,7 +18955,7 @@
 	},
 	{
 		"Bundle": "Studio Pierrot Magical Girls",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 5,
 		"ha": 0,
@@ -18851,7 +18968,7 @@
 	},
 	{
 		"Bundle": "Studio Rikka",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 11,
 		"wa": 9,
 		"ha": 3,
@@ -18877,7 +18994,7 @@
 	},
 	{
 		"Bundle": "STUDIO WASABI",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 9,
 		"wa": 0,
 		"ha": 0,
@@ -18890,7 +19007,7 @@
 	},
 	{
 		"Bundle": "Subnautica Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 0,
 		"ha": 0,
@@ -18903,7 +19020,7 @@
 	},
 	{
 		"Bundle": "Success",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 0,
 		"ha": 0,
@@ -18916,7 +19033,7 @@
 	},
 	{
 		"Bundle": "Sucker Punch Productions",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 35,
 		"wa": 0,
 		"ha": 0,
@@ -18929,7 +19046,7 @@
 	},
 	{
 		"Bundle": "SUGURI Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 18,
 		"wa": 0,
 		"ha": 0,
@@ -18981,7 +19098,7 @@
 	},
 	{
 		"Bundle": "Summon Night Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 19,
 		"wa": 0,
 		"ha": 0,
@@ -19007,7 +19124,7 @@
 	},
 	{
 		"Bundle": "Sumomo Yumeka's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 7,
 		"wa": 4,
 		"ha": 3,
@@ -19046,7 +19163,7 @@
 	},
 	{
 		"Bundle": "Sunsoft",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 20,
 		"wa": 1,
 		"ha": 1,
@@ -19072,7 +19189,7 @@
 	},
 	{
 		"Bundle": "Super Dimension Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 13,
 		"wa": 8,
 		"ha": 5,
@@ -19089,11 +19206,11 @@
 		"Size": 271,
 		"wa": 2,
 		"ha": 4,
-		"wg": 111,
+		"wg": 110,
 		"hg": 200,
 		"wap": "000.74",
 		"hap": "001.48",
-		"wgp": "040.96",
+		"wgp": "040.59",
 		"hgp": "073.80"
 	},
 	{
@@ -19189,7 +19306,7 @@
 	},
 	{
 		"Bundle": "Super Sonico",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 8,
 		"ha": 0,
@@ -19202,7 +19319,7 @@
 	},
 	{
 		"Bundle": "Super String",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 11,
 		"wa": 6,
 		"ha": 5,
@@ -19215,7 +19332,7 @@
 	},
 	{
 		"Bundle": "Supercell",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 31,
 		"wa": 0,
 		"ha": 0,
@@ -19228,7 +19345,7 @@
 	},
 	{
 		"Bundle": "Supergiant Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 53,
 		"wa": 0,
 		"ha": 0,
@@ -19254,7 +19371,7 @@
 	},
 	{
 		"Bundle": "Supermassive Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 15,
 		"wa": 0,
 		"ha": 0,
@@ -19319,7 +19436,7 @@
 	},
 	{
 		"Bundle": "Synapse Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 22,
 		"wa": 22,
 		"ha": 0,
@@ -19332,7 +19449,7 @@
 	},
 	{
 		"Bundle": "SynergySP",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 200,
 		"wa": 78,
 		"ha": 122,
@@ -19384,7 +19501,7 @@
 	},
 	{
 		"Bundle": "Tabletop Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 511,
 		"wa": 106,
 		"ha": 140,
@@ -19397,7 +19514,7 @@
 	},
 	{
 		"Bundle": "Tachibana Koushi's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 42,
 		"wa": 32,
 		"ha": 5,
@@ -19410,7 +19527,7 @@
 	},
 	{
 		"Bundle": "Tactics",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 0,
 		"ha": 0,
@@ -19423,7 +19540,7 @@
 	},
 	{
 		"Bundle": "Tadatoshi Fujimaki's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 45,
 		"wa": 4,
 		"ha": 41,
@@ -19436,7 +19553,7 @@
 	},
 	{
 		"Bundle": "Taimanin",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 56,
 		"wa": 9,
 		"ha": 1,
@@ -19462,7 +19579,7 @@
 	},
 	{
 		"Bundle": "Taito",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 28,
 		"wa": 0,
 		"ha": 1,
@@ -19475,7 +19592,7 @@
 	},
 	{
 		"Bundle": "Takagi-san Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 11,
 		"wa": 8,
 		"ha": 3,
@@ -19488,7 +19605,7 @@
 	},
 	{
 		"Bundle": "Takahiro's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 150,
 		"wa": 70,
 		"ha": 21,
@@ -19527,7 +19644,7 @@
 	},
 	{
 		"Bundle": "Takehiko Inoue's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 30,
 		"wa": 3,
 		"ha": 27,
@@ -19553,7 +19670,7 @@
 	},
 	{
 		"Bundle": "Takeshobo",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 180,
 		"wa": 109,
 		"ha": 78,
@@ -19579,7 +19696,7 @@
 	},
 	{
 		"Bundle": "Tales of Arcadia",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 17,
 		"wa": 5,
 		"ha": 13,
@@ -19618,7 +19735,7 @@
 	},
 	{
 		"Bundle": "Tales of the World: Radiant Mythology Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 0,
 		"ha": 0,
@@ -19631,7 +19748,7 @@
 	},
 	{
 		"Bundle": "Tales of Xillia Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 19,
 		"wa": 0,
 		"ha": 0,
@@ -19644,7 +19761,7 @@
 	},
 	{
 		"Bundle": "Tamamusi's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 4,
 		"ha": 0,
@@ -19657,7 +19774,7 @@
 	},
 	{
 		"Bundle": "Tangled Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 9,
 		"wa": 3,
 		"ha": 6,
@@ -19696,7 +19813,7 @@
 	},
 	{
 		"Bundle": "Tarzan Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 7,
 		"wa": 4,
 		"ha": 3,
@@ -19748,7 +19865,7 @@
 	},
 	{
 		"Bundle": "Team Ico",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 25,
 		"wa": 0,
 		"ha": 0,
@@ -19761,7 +19878,7 @@
 	},
 	{
 		"Bundle": "Team Tapas",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 9,
 		"wa": 0,
 		"ha": 0,
@@ -19787,7 +19904,7 @@
 	},
 	{
 		"Bundle": "Tears to Tiara Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 1,
 		"ha": 0,
@@ -19800,7 +19917,7 @@
 	},
 	{
 		"Bundle": "Techland",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 0,
 		"ha": 0,
@@ -19813,7 +19930,7 @@
 	},
 	{
 		"Bundle": "Technos Japan Corp.",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 18,
 		"wa": 0,
 		"ha": 0,
@@ -19865,7 +19982,7 @@
 	},
 	{
 		"Bundle": "Telecom Animation Film",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 214,
 		"wa": 110,
 		"ha": 107,
@@ -19878,7 +19995,7 @@
 	},
 	{
 		"Bundle": "Telescreen B.V.",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 27,
 		"wa": 15,
 		"ha": 12,
@@ -19891,16 +20008,16 @@
 	},
 	{
 		"Bundle": "Teletoon",
-		"Aliases": [""],
-		"Size": 154,
-		"wa": 66,
+		"Aliases": [],
+		"Size": 155,
+		"wa": 67,
 		"ha": 89,
 		"wg": 1,
 		"hg": 5,
-		"wap": "042.86",
-		"hap": "057.79",
+		"wap": "043.23",
+		"hap": "057.42",
 		"wgp": "000.65",
-		"hgp": "003.25"
+		"hgp": "003.23"
 	},
 	{
 		"Bundle": "Tellius Series",
@@ -19917,7 +20034,7 @@
 	},
 	{
 		"Bundle": "Telltale Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 54,
 		"wa": 2,
 		"ha": 3,
@@ -19930,7 +20047,7 @@
 	},
 	{
 		"Bundle": "Ten Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 0,
 		"ha": 5,
@@ -19943,7 +20060,7 @@
 	},
 	{
 		"Bundle": "Tencent Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 74,
 		"wa": 0,
 		"ha": 0,
@@ -19982,7 +20099,7 @@
 	},
 	{
 		"Bundle": "Tencent Penguin Pictures",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 123,
 		"wa": 41,
 		"ha": 84,
@@ -20008,7 +20125,7 @@
 	},
 	{
 		"Bundle": "Tenioha! Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 5,
 		"ha": 0,
@@ -20025,11 +20142,11 @@
 		"Size": 724,
 		"wa": 375,
 		"ha": 362,
-		"wg": 16,
+		"wg": 17,
 		"hg": 47,
 		"wap": "051.80",
 		"hap": "050.00",
-		"wgp": "002.21",
+		"wgp": "002.35",
 		"hgp": "006.49"
 	},
 	{
@@ -20060,7 +20177,7 @@
 	},
 	{
 		"Bundle": "Terraria Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 30,
 		"wa": 0,
 		"ha": 0,
@@ -20073,7 +20190,7 @@
 	},
 	{
 		"Bundle": "Tezuka Productions",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 118,
 		"wa": 42,
 		"ha": 40,
@@ -20099,7 +20216,7 @@
 	},
 	{
 		"Bundle": "The Behemoth",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 14,
 		"wa": 0,
 		"ha": 0,
@@ -20112,7 +20229,7 @@
 	},
 	{
 		"Bundle": "The CW",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 27,
 		"wa": 14,
 		"ha": 13,
@@ -20151,7 +20268,7 @@
 	},
 	{
 		"Bundle": "The Disney Afternoon",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 51,
 		"wa": 19,
 		"ha": 32,
@@ -20203,7 +20320,7 @@
 	},
 	{
 		"Bundle": "The Grishaverse",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 14,
 		"wa": 8,
 		"ha": 6,
@@ -20255,7 +20372,7 @@
 	},
 	{
 		"Bundle": "The Jungle Book Anthology",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 0,
 		"ha": 6,
@@ -20268,7 +20385,7 @@
 	},
 	{
 		"Bundle": "The Jungle Book Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 7,
 		"wa": 1,
 		"ha": 6,
@@ -20307,7 +20424,7 @@
 	},
 	{
 		"Bundle": "The Last of Us Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 22,
 		"wa": 0,
 		"ha": 0,
@@ -20359,7 +20476,7 @@
 	},
 	{
 		"Bundle": "The Lion King Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 23,
 		"wa": 11,
 		"ha": 12,
@@ -20372,7 +20489,7 @@
 	},
 	{
 		"Bundle": "The Little Mermaid Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 11,
 		"wa": 4,
 		"ha": 7,
@@ -20385,7 +20502,7 @@
 	},
 	{
 		"Bundle": "The Living Tombstone's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2,
 		"wa": 2,
 		"ha": 1,
@@ -20411,7 +20528,7 @@
 	},
 	{
 		"Bundle": "The Muppets",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 15,
 		"wa": 2,
 		"ha": 13,
@@ -20437,7 +20554,7 @@
 	},
 	{
 		"Bundle": "The Pinkfong Company",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2,
 		"wa": 1,
 		"ha": 2,
@@ -20463,7 +20580,7 @@
 	},
 	{
 		"Bundle": "The Third Wheel",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 42,
 		"wa": 19,
 		"ha": 26,
@@ -20554,7 +20671,7 @@
 	},
 	{
 		"Bundle": "Tiger & Bunny Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 12,
 		"wa": 3,
 		"ha": 9,
@@ -20567,7 +20684,7 @@
 	},
 	{
 		"Bundle": "Tiger Mask Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 2,
 		"wa": 1,
 		"ha": 1,
@@ -20632,7 +20749,7 @@
 	},
 	{
 		"Bundle": "To Be Hero Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 2,
 		"ha": 1,
@@ -20645,7 +20762,7 @@
 	},
 	{
 		"Bundle": "To Books",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 46,
 		"wa": 28,
 		"ha": 18,
@@ -20710,7 +20827,7 @@
 	},
 	{
 		"Bundle": "toi8's Art",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 13,
 		"wa": 0,
 		"ha": 0,
@@ -20749,7 +20866,7 @@
 	},
 	{
 		"Bundle": "Tokuma Shoten",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 147,
 		"wa": 52,
 		"ha": 96,
@@ -20762,7 +20879,7 @@
 	},
 	{
 		"Bundle": "Tokusatsu",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 334,
 		"wa": 85,
 		"ha": 258,
@@ -20775,7 +20892,7 @@
 	},
 	{
 		"Bundle": "Tokyo Ghoul Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 75,
 		"wa": 31,
 		"ha": 44,
@@ -20788,7 +20905,7 @@
 	},
 	{
 		"Bundle": "TokyoPop",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 1127,
 		"wa": 533,
 		"ha": 613,
@@ -20814,7 +20931,7 @@
 	},
 	{
 		"Bundle": "Tong Li",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 3,
 		"ha": 4,
@@ -20841,15 +20958,15 @@
 	{
 		"Bundle": "Tony Taka's Art",
 		"Aliases": ["Tanaka Takayuki's Art", "Tony Taka", "Tanaka Takayuki"],
-		"Size": 29,
-		"wa": 11,
+		"Size": 18,
+		"wa": 10,
 		"ha": 0,
-		"wg": 15,
-		"hg": 6,
-		"wap": "037.93",
+		"wg": 9,
+		"hg": 1,
+		"wap": "055.56",
 		"hap": "000.00",
-		"wgp": "051.72",
-		"hgp": "020.69"
+		"wgp": "050.00",
+		"hgp": "005.56"
 	},
 	{
 		"Bundle": "Tookyo Games",
@@ -20879,7 +20996,7 @@
 	},
 	{
 		"Bundle": "Toonami",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3226,
 		"wa": 1076,
 		"ha": 2250,
@@ -20905,7 +21022,7 @@
 	},
 	{
 		"Bundle": "Toptoon",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 56,
 		"wa": 52,
 		"ha": 4,
@@ -20918,7 +21035,7 @@
 	},
 	{
 		"Bundle": "Tose",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 41,
 		"wa": 6,
 		"ha": 7,
@@ -20944,7 +21061,7 @@
 	},
 	{
 		"Bundle": "Tosuisha",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 12,
 		"wa": 1,
 		"ha": 11,
@@ -21035,7 +21152,7 @@
 	},
 	{
 		"Bundle": "Tower Defense Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 85,
 		"wa": 1,
 		"ha": 1,
@@ -21048,7 +21165,7 @@
 	},
 	{
 		"Bundle": "Toy Story Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 20,
 		"wa": 4,
 		"ha": 16,
@@ -21061,7 +21178,7 @@
 	},
 	{
 		"Bundle": "Toys",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 831,
 		"wa": 277,
 		"ha": 468,
@@ -21073,8 +21190,8 @@
 		"hgp": "011.79"
 	},
 	{
-		"Bundle": "Toys For Bob",
-		"Aliases": [""],
+		"Bundle": "Toys for Bob",
+		"Aliases": [],
 		"Size": 68,
 		"wa": 0,
 		"ha": 2,
@@ -21091,11 +21208,11 @@
 		"Size": 1290,
 		"wa": 393,
 		"ha": 460,
-		"wg": 639,
+		"wg": 640,
 		"hg": 494,
 		"wap": "030.47",
 		"hap": "035.66",
-		"wgp": "049.53",
+		"wgp": "049.61",
 		"hgp": "038.29"
 	},
 	{
@@ -21139,7 +21256,7 @@
 	},
 	{
 		"Bundle": "Treasure",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 0,
 		"ha": 1,
@@ -21152,7 +21269,7 @@
 	},
 	{
 		"Bundle": "Treyarch",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 22,
 		"wa": 0,
 		"ha": 0,
@@ -21165,7 +21282,7 @@
 	},
 	{
 		"Bundle": "Tri-State Area Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 32,
 		"wa": 9,
 		"ha": 24,
@@ -21178,7 +21295,7 @@
 	},
 	{
 		"Bundle": "Triangle Staff",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 24,
 		"wa": 12,
 		"ha": 12,
@@ -21256,7 +21373,7 @@
 	},
 	{
 		"Bundle": "Tsukinomizu Project",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 2,
 		"ha": 0,
@@ -21282,7 +21399,7 @@
 	},
 	{
 		"Bundle": "Tsunako's Art",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 140,
 		"wa": 58,
 		"ha": 8,
@@ -21295,7 +21412,7 @@
 	},
 	{
 		"Bundle": "TUFOS",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 2,
 		"ha": 1,
@@ -21309,19 +21426,19 @@
 	{
 		"Bundle": "Turn-Based RPGs",
 		"Aliases": ["Turn Based RPGs", "TBRPGs"],
-		"Size": 6008,
-		"wa": 520,
+		"Size": 5997,
+		"wa": 518,
 		"ha": 454,
-		"wg": 3452,
-		"hg": 2726,
-		"wap": "008.66",
-		"hap": "007.56",
-		"wgp": "057.46",
-		"hgp": "045.37"
+		"wg": 3444,
+		"hg": 2723,
+		"wap": "008.64",
+		"hap": "007.57",
+		"wgp": "057.43",
+		"hgp": "045.41"
 	},
 	{
 		"Bundle": "Twitch",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 106,
 		"wa": 33,
 		"ha": 74,
@@ -21347,7 +21464,7 @@
 	},
 	{
 		"Bundle": "Typhoon Graphics",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 35,
 		"wa": 8,
 		"ha": 27,
@@ -21373,20 +21490,20 @@
 	},
 	{
 		"Bundle": "Ubisoft",
-		"Aliases": [""],
-		"Size": 438,
-		"wa": 15,
-		"ha": 34,
-		"wg": 168,
-		"hg": 248,
-		"wap": "003.42",
-		"hap": "007.76",
-		"wgp": "038.36",
-		"hgp": "056.62"
+		"Aliases": ["Ubi Soft"],
+		"Size": 393,
+		"wa": 0,
+		"ha": 4,
+		"wg": 164,
+		"hg": 240,
+		"wap": "000.00",
+		"hap": "001.02",
+		"wgp": "041.73",
+		"hgp": "061.07"
 	},
 	{
 		"Bundle": "ufotable",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 243,
 		"wa": 84,
 		"ha": 107,
@@ -21399,7 +21516,7 @@
 	},
 	{
 		"Bundle": "Ultra Jump",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 273,
 		"wa": 138,
 		"ha": 140,
@@ -21438,7 +21555,7 @@
 	},
 	{
 		"Bundle": "Ume Aoki's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 43,
 		"wa": 37,
 		"ha": 7,
@@ -21464,7 +21581,7 @@
 	},
 	{
 		"Bundle": "Universal Classic Monsters",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 3,
 		"wa": 0,
 		"ha": 3,
@@ -21516,15 +21633,15 @@
 	},
 	{
 		"Bundle": "V Jump",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 332,
 		"wa": 120,
 		"ha": 219,
-		"wg": 41,
+		"wg": 42,
 		"hg": 95,
 		"wap": "036.14",
 		"hap": "065.96",
-		"wgp": "012.35",
+		"wgp": "012.65",
 		"hgp": "028.61"
 	},
 	{
@@ -21594,7 +21711,7 @@
 	},
 	{
 		"Bundle": "Vanillaware",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 50,
 		"wa": 0,
 		"ha": 0,
@@ -21607,7 +21724,7 @@
 	},
 	{
 		"Bundle": "Vanpool",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 0,
 		"ha": 0,
@@ -21633,7 +21750,7 @@
 	},
 	{
 		"Bundle": "VenusBlood Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 32,
 		"wa": 0,
 		"ha": 0,
@@ -21647,19 +21764,19 @@
 	{
 		"Bundle": "ViacomCBS",
 		"Aliases": ["Columbia Broadcasting System", "The Eye Network", "CBS", "Viacom", "CBS Corporation"],
-		"Size": 923,
-		"wa": 302,
-		"ha": 629,
+		"Size": 1049,
+		"wa": 352,
+		"ha": 703,
 		"wg": 0,
-		"hg": 1,
-		"wap": "032.72",
-		"hap": "068.15",
+		"hg": 3,
+		"wap": "033.56",
+		"hap": "067.02",
 		"wgp": "000.00",
-		"hgp": "000.11"
+		"hgp": "000.29"
 	},
 	{
 		"Bundle": "Vicarious Visions",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 92,
 		"wa": 1,
 		"ha": 3,
@@ -21672,7 +21789,7 @@
 	},
 	{
 		"Bundle": "VictimGirlsR Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 4,
 		"ha": 0,
@@ -21685,7 +21802,7 @@
 	},
 	{
 		"Bundle": "Virtual Music",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 1662,
 		"wa": 820,
 		"ha": 645,
@@ -21699,15 +21816,15 @@
 	{
 		"Bundle": "Virtual Pets",
 		"Aliases": ["Digital Pets", "Artificial Pets"],
-		"Size": 98,
+		"Size": 105,
 		"wa": 28,
 		"ha": 13,
-		"wg": 33,
-		"hg": 35,
-		"wap": "028.57",
-		"hap": "013.27",
-		"wgp": "033.67",
-		"hgp": "035.71"
+		"wg": 35,
+		"hg": 40,
+		"wap": "026.67",
+		"hap": "012.38",
+		"wgp": "033.33",
+		"hgp": "038.10"
 	},
 	{
 		"Bundle": "Virtual YouTubers",
@@ -21724,7 +21841,7 @@
 	},
 	{
 		"Bundle": "Visceral Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 15,
 		"wa": 0,
 		"ha": 0,
@@ -21737,7 +21854,7 @@
 	},
 	{
 		"Bundle": "Visual Arts",
-		"Aliases": [""],
+		"Aliases": ["VisualArt's", "Visual Artist Office"],
 		"Size": 163,
 		"wa": 81,
 		"ha": 37,
@@ -21763,7 +21880,7 @@
 	},
 	{
 		"Bundle": "Vivendi Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 40,
 		"wa": 0,
 		"ha": 0,
@@ -21789,7 +21906,7 @@
 	},
 	{
 		"Bundle": "Vlambeer",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 14,
 		"wa": 0,
 		"ha": 0,
@@ -21802,7 +21919,7 @@
 	},
 	{
 		"Bundle": "Vocaloid Song Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 245,
 		"wa": 122,
 		"ha": 114,
@@ -21841,7 +21958,7 @@
 	},
 	{
 		"Bundle": "Waffle",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 42,
 		"wa": 25,
 		"ha": 3,
@@ -21880,7 +21997,7 @@
 	},
 	{
 		"Bundle": "Walt Disney Pictures",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 30,
 		"wa": 10,
 		"ha": 20,
@@ -21893,7 +22010,7 @@
 	},
 	{
 		"Bundle": "Wand of Fortune Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 9,
 		"wa": 0,
 		"ha": 0,
@@ -21906,7 +22023,7 @@
 	},
 	{
 		"Bundle": "Wani Magazine",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 12,
 		"wa": 12,
 		"ha": 0,
@@ -21919,7 +22036,7 @@
 	},
 	{
 		"Bundle": "WAO World",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 43,
 		"wa": 25,
 		"ha": 17,
@@ -21932,7 +22049,7 @@
 	},
 	{
 		"Bundle": "Warcraft Universe",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 173,
 		"wa": 0,
 		"ha": 0,
@@ -21945,7 +22062,7 @@
 	},
 	{
 		"Bundle": "Warhammer",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 60,
 		"wa": 0,
 		"ha": 1,
@@ -21985,19 +22102,19 @@
 	{
 		"Bundle": "Warner Bros.",
 		"Aliases": ["WB", "Warner Media", "Warner Bros", "Warner Brothers"],
-		"Size": 2004,
-		"wa": 735,
-		"ha": 1227,
+		"Size": 2028,
+		"wa": 744,
+		"ha": 1244,
 		"wg": 63,
 		"hg": 51,
-		"wap": "036.68",
-		"hap": "061.23",
-		"wgp": "003.14",
-		"hgp": "002.54"
+		"wap": "036.69",
+		"hap": "061.34",
+		"wgp": "003.11",
+		"hgp": "002.51"
 	},
 	{
 		"Bundle": "Warriors Orochi Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 89,
 		"wa": 0,
 		"ha": 0,
@@ -22049,7 +22166,7 @@
 	},
 	{
 		"Bundle": "WayForward",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 55,
 		"wa": 0,
 		"ha": 0,
@@ -22075,7 +22192,7 @@
 	},
 	{
 		"Bundle": "WEB Comic Gamma Plus",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 12,
 		"wa": 11,
 		"ha": 1,
@@ -22088,7 +22205,7 @@
 	},
 	{
 		"Bundle": "Web Comic Zenyon",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 20,
 		"wa": 12,
 		"ha": 8,
@@ -22115,15 +22232,15 @@
 	{
 		"Bundle": "Webcomics",
 		"Aliases": ["Web Comics", "Webtoons", "webcomic"],
-		"Size": 4749,
-		"wa": 2051,
-		"ha": 2744,
+		"Size": 4762,
+		"wa": 2056,
+		"ha": 2752,
 		"wg": 31,
 		"hg": 45,
-		"wap": "043.19",
-		"hap": "057.78",
+		"wap": "043.18",
+		"hap": "057.79",
 		"wgp": "000.65",
-		"hgp": "000.95"
+		"hgp": "000.94"
 	},
 	{
 		"Bundle": "Webmanga",
@@ -22140,7 +22257,7 @@
 	},
 	{
 		"Bundle": "Weekly Comic Bunch",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 14,
 		"wa": 4,
 		"ha": 10,
@@ -22168,13 +22285,13 @@
 		"Bundle": "Weekly Shounen Jump",
 		"Aliases": ["Weekly Shonen Jump", "WSJ", "Shounen Jump+", "Shonen Jump+", "Shuukan Shounen Jump"],
 		"Size": 3945,
-		"wa": 1298,
-		"ha": 2716,
-		"wg": 25,
+		"wa": 1299,
+		"ha": 2715,
+		"wg": 26,
 		"hg": 99,
-		"wap": "032.90",
-		"hap": "068.85",
-		"wgp": "000.63",
+		"wap": "032.93",
+		"hap": "068.82",
+		"wgp": "000.66",
 		"hgp": "002.51"
 	},
 	{
@@ -22309,7 +22426,7 @@
 	},
 	{
 		"Bundle": "White Album Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 14,
 		"wa": 7,
 		"ha": 4,
@@ -22322,7 +22439,7 @@
 	},
 	{
 		"Bundle": "White Fox",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 361,
 		"wa": 201,
 		"ha": 167,
@@ -22335,7 +22452,7 @@
 	},
 	{
 		"Bundle": "Whoniverse",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 56,
 		"wa": 28,
 		"ha": 33,
@@ -22361,7 +22478,7 @@
 	},
 	{
 		"Bundle": "Wii",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 0,
 		"ha": 0,
@@ -22374,7 +22491,7 @@
 	},
 	{
 		"Bundle": "Wild ARMs Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 18,
 		"wa": 0,
 		"ha": 0,
@@ -22400,7 +22517,7 @@
 	},
 	{
 		"Bundle": "Williams Street",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 122,
 		"wa": 23,
 		"ha": 99,
@@ -22465,7 +22582,7 @@
 	},
 	{
 		"Bundle": "Wings",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 28,
 		"wa": 7,
 		"ha": 22,
@@ -22478,20 +22595,20 @@
 	},
 	{
 		"Bundle": "Wit Studio",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 350,
-		"wa": 161,
+		"wa": 163,
 		"ha": 164,
 		"wg": 78,
 		"hg": 7,
-		"wap": "046.00",
+		"wap": "046.57",
 		"hap": "046.86",
 		"wgp": "022.29",
 		"hgp": "002.00"
 	},
 	{
 		"Bundle": "Witchblade Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 5,
 		"ha": 0,
@@ -22530,7 +22647,7 @@
 	},
 	{
 		"Bundle": "Wizards of the Coast",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 95,
 		"wa": 5,
 		"ha": 3,
@@ -22557,19 +22674,19 @@
 	{
 		"Bundle": "WOLF RPG Editor Games",
 		"Aliases": ["WOLF RPG"],
-		"Size": 130,
+		"Size": 131,
 		"wa": 0,
 		"ha": 0,
-		"wg": 66,
+		"wg": 67,
 		"hg": 64,
 		"wap": "000.00",
 		"hap": "000.00",
-		"wgp": "050.77",
-		"hgp": "049.23"
+		"wgp": "051.15",
+		"hgp": "048.85"
 	},
 	{
 		"Bundle": "Woodwalkers Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 7,
 		"wa": 4,
 		"ha": 3,
@@ -22582,7 +22699,7 @@
 	},
 	{
 		"Bundle": "WOOMA",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 4,
 		"ha": 2,
@@ -22595,7 +22712,7 @@
 	},
 	{
 		"Bundle": "Working Designs",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 29,
 		"wa": 9,
 		"ha": 7,
@@ -22608,7 +22725,7 @@
 	},
 	{
 		"Bundle": "World Witches",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 36,
 		"wa": 35,
 		"ha": 1,
@@ -22621,7 +22738,7 @@
 	},
 	{
 		"Bundle": "Worst Girls Games",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 9,
 		"wa": 0,
 		"ha": 0,
@@ -22634,7 +22751,7 @@
 	},
 	{
 		"Bundle": "Wrestling",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 76,
 		"wa": 12,
 		"ha": 64,
@@ -22647,7 +22764,7 @@
 	},
 	{
 		"Bundle": "X.D. Network Inc.",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 0,
 		"ha": 0,
@@ -22660,7 +22777,7 @@
 	},
 	{
 		"Bundle": "Xebec",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 522,
 		"wa": 331,
 		"ha": 149,
@@ -22673,7 +22790,7 @@
 	},
 	{
 		"Bundle": "Xeno Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 167,
 		"wa": 0,
 		"ha": 0,
@@ -22725,7 +22842,7 @@
 	},
 	{
 		"Bundle": "Yaegashi Nan's Art",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 118,
 		"wa": 31,
 		"ha": 2,
@@ -22738,7 +22855,7 @@
 	},
 	{
 		"Bundle": "Yai Gameworks",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 0,
 		"ha": 0,
@@ -22777,7 +22894,7 @@
 	},
 	{
 		"Bundle": "Yeondam Comics",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 60,
 		"wa": 27,
 		"ha": 33,
@@ -22803,7 +22920,7 @@
 	},
 	{
 		"Bundle": "Yokohama Animation Laboratory",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 54,
 		"wa": 48,
 		"ha": 6,
@@ -22933,7 +23050,7 @@
 	},
 	{
 		"Bundle": "Young Animal",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 160,
 		"wa": 84,
 		"ha": 82,
@@ -22959,7 +23076,7 @@
 	},
 	{
 		"Bundle": "Young Gangan",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 431,
 		"wa": 296,
 		"ha": 139,
@@ -22972,7 +23089,7 @@
 	},
 	{
 		"Bundle": "Young Horses",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 8,
 		"wa": 0,
 		"ha": 0,
@@ -22986,15 +23103,15 @@
 	{
 		"Bundle": "YouTube",
 		"Aliases": ["YT"],
-		"Size": 1322,
+		"Size": 1323,
 		"wa": 717,
-		"ha": 647,
+		"ha": 648,
 		"wg": 16,
 		"hg": 8,
-		"wap": "054.24",
-		"hap": "048.94",
+		"wap": "054.20",
+		"hap": "048.98",
 		"wgp": "001.21",
-		"hgp": "000.61"
+		"hgp": "000.60"
 	},
 	{
 		"Bundle": "YouTubers",
@@ -23028,16 +23145,16 @@
 		"Size": 480,
 		"wa": 132,
 		"ha": 242,
-		"wg": 219,
+		"wg": 220,
 		"hg": 212,
 		"wap": "027.50",
 		"hap": "050.42",
-		"wgp": "045.63",
+		"wgp": "045.83",
 		"hgp": "044.17"
 	},
 	{
 		"Bundle": "Yui Hara's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 15,
 		"wa": 14,
 		"ha": 1,
@@ -23050,7 +23167,7 @@
 	},
 	{
 		"Bundle": "Yuki Tabata's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 103,
 		"wa": 41,
 		"ha": 65,
@@ -23115,7 +23232,7 @@
 	},
 	{
 		"Bundle": "Yuu Minazuki's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 4,
 		"wa": 0,
 		"ha": 4,
@@ -23128,7 +23245,7 @@
 	},
 	{
 		"Bundle": "Yuu Watase's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 37,
 		"wa": 12,
 		"ha": 26,
@@ -23141,7 +23258,7 @@
 	},
 	{
 		"Bundle": "Yuuji Kaku's Works",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 31,
 		"wa": 13,
 		"ha": 23,
@@ -23154,7 +23271,7 @@
 	},
 	{
 		"Bundle": "Yuusha de Aru Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 30,
 		"wa": 25,
 		"ha": 1,
@@ -23180,7 +23297,7 @@
 	},
 	{
 		"Bundle": "Yuzusoft",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 40,
 		"wa": 0,
 		"ha": 0,
@@ -23232,7 +23349,7 @@
 	},
 	{
 		"Bundle": "Zenescope Entertainment",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 12,
 		"wa": 9,
 		"ha": 3,
@@ -23245,7 +23362,7 @@
 	},
 	{
 		"Bundle": "Zeppelin TV",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 5,
 		"wa": 3,
 		"ha": 2,
@@ -23271,7 +23388,7 @@
 	},
 	{
 		"Bundle": "Zexcs",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 148,
 		"wa": 79,
 		"ha": 68,
@@ -23284,7 +23401,7 @@
 	},
 	{
 		"Bundle": "Zoids Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 15,
 		"wa": 8,
 		"ha": 7,
@@ -23297,7 +23414,7 @@
 	},
 	{
 		"Bundle": "Zone of the Enders Series",
-		"Aliases": [""],
+		"Aliases": [],
 		"Size": 6,
 		"wa": 1,
 		"ha": 1,
