@@ -28,6 +28,7 @@ function sleep(ms) {
 let dat = []
 bot.on(`messageCreate`, async msg => {
   if (!self.channel_ids.includes(msg.channel.id)) { return; };
+
   if (msg.author.id == bot_master) {
     if (msg.content.startsWith(prefix)) {
       cmd = msg.content.slice(prefix.length, msg.content.length).trim()
@@ -43,30 +44,34 @@ bot.on(`messageCreate`, async msg => {
       }
     }
   }
-  if (msg.author.id == '432610292342587392') {
+
+  if (msg.author.id == mudae.id) {
     if (msg.embeds[0].author.name.includes('\n(bundle)')) {
       let emDat = msg.embeds[0];
-      let siz = emDat.author.name.split('\n')[0].split('/')[1]
+      let siz = Number(emDat.author.name.split('\n')[0].split('/')[1])
       let types = []
+      for (let i=0; i<4; i++) {
+        types[i] = Number(types[i].slice(0, -4).trim())
+      };
       let ali = []
       if (emDat.description.split('\n\n').length == 3){
         ali = emDat.description.split('\n\n')[0].split('\n')
-        types = emDat.description.split('\n\n')[1].slice(1, -1).split(', ')
+        types = emDat.description.split('\n\n')[-2].slice(1, -1).split(', ')
       } else {
         types = emDat.description.split('\n\n')[0].slice(1, -1).split(', ')
       }
       dat.push({
         "Bundle": emDat.author.name.split('   ')[0].trim(),
         "Aliases": ali,
-        "Size": Number(siz),
-        "wa": Number(types[0].slice(0, -4).trim()),
-        "ha": Number(types[1].slice(0, -4).trim()),
-        "wg": Number(types[2].slice(0, -4).trim()),
-        "hg": Number(types[3].slice(0, -4).trim()),
-        "wap": padDigits((100*(Number(types[0].slice(0, -4).trim())) / Number(siz)).toFixed(2), 6),
-        "hap": padDigits((100*(Number(types[1].slice(0, -4).trim())) / Number(siz)).toFixed(2), 6),
-        "wgp": padDigits((100*(Number(types[2].slice(0, -4).trim())) / Number(siz)).toFixed(2), 6),
-        "hgp": padDigits((100*(Number(types[3].slice(0, -4).trim())) / Number(siz)).toFixed(2), 6)
+        "Size": siz,
+        "wa": types[0],
+        "ha": types[1],
+        "wg": types[2],
+        "hg": types[3],
+        "wap": padDigits((100*(types[0])/siz).toFixed(2),6),
+        "hap": padDigits((100*(types[1])/siz).toFixed(2),6),
+        "wgp": padDigits((100*(types[2])/siz).toFixed(2),6),
+        "hgp": padDigits((100*(types[3])/siz).toFixed(2),6)
       })
       fs.writeFile('out.json', JSON.stringify(dat), function(err) {
         if (err) throw err;

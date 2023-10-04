@@ -1,0 +1,28 @@
+The index.js file is a selfbot and is not permitted by discord
+Use at your own risk
+
+The .env file needs your [token = DiscordUserToken] and [ID = DiscordUserID]
+DO NOT SHARE YOUR TOKEN WITH ANYONE
+DO NOT UPLOAD YOUR TOKEN TO GITHUB
+
+If you fork this directory and edit the .env file remember to create a .gitignore file and place the .env file in it
+
+The congif.json file only needs you to edit "self"
+Place the channel(s) you want to use in the "channel_ids" array
+Choose your prefix and place it in the "prefix" array
+
+To get the most up to date bundle list you need to head over to the Mudae World Discord and run the command $bundlelist
+Mudatest will then send you all the bundles
+Then just replace the info in bundlelist.txt with the data that Mudatest gave you
+Then run the bundleListToMessages.py file which will update the msgToSend.txt file with the new commands
+
+After that you should be able to run the index.js file
+To start sending the messages in the msgToSend.txt file use the command {prefix}send in your selected channel
+This will take a long time (Took 6.5 hours last time I updated it)
+
+And then finally after the bot is done running you can turn it off and run reformatter.py
+This will remove the asterisks (italicization) on the aliases
+(This can be done with slicing in index.js if you want, but using regex will not work since some bundles have asterisks in their title) 
+And pretty print the JSON to newBundles.json
+
+And there you have it, the new bundles in JSON form ready to replace the old data
