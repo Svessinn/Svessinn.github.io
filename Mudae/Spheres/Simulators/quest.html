@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mudae $oq Simulator - Persistent Colors</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/nav.js" defer></script>
+    <script>
+      // Ensure the navbar highlights Quest on load
+      window.addEventListener("DOMContentLoaded", () => switchTab("quest"));
+    </script>
+  </head>
+  <body>
+    <div id="main-nav" class="nav-container view-quest">
+      <div class="nav-row">
+        <div id="tab-quest" class="nav-btn btn-quest active" onclick="switchTab('quest')">$OQ QUEST</div>
+        <div id="tab-trace" class="nav-btn btn-trace" onclick="switchTab('trace')">$OT TRACE</div>
+      </div>
+
+      <div class="nav-row mode-section quest-links">
+        <a href="../Solvers/quest.html" class="nav-btn">QUEST SOLVER</a>
+        <a href="#" class="nav-btn current-page">QUEST SIMULATOR</a>
+      </div>
+
+      <div class="nav-row mode-section trace-links">
+        <a href="../Solvers/trace.html" class="nav-btn">TRACE SOLVER</a>
+        <a href="trace.html" class="nav-btn">TRACE SIMULATOR</a>
+      </div>
+    </div>
+    <div class="stats">
+      <h1>$oq Game Simulator</h1>
+      <div class="stat-row">
+        <div class="stat-item">
+          <span class="stat-val" id="clicks-left">7</span>
+          <span class="stat-lbl">CLICKS LEFT</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-val" id="spheres-found">0/4</span>
+          <span class="stat-lbl">SPHERES FOUND</span>
+        </div>
+      </div>
+      <div id="mode-status" style="font-size: 11px; font-weight: bold; color: #2ecc71; margin-top: 10px">
+        MODE: HUNTING SPHERES
+      </div>
+    </div>
+
+    <div class="grid" id="grid"></div>
+
+    <div class="controls">
+      <button class="reset-btn" onclick="resetGame()">RESET SIMULATOR</button>
+    </div>
+
+    <script>
+      const SIZE = 5;
+      const TOTAL_PURPLES = 4;
+      const COLOR_MAP = {
+        0: { letter: "B", name: "BLUE", color: "#3498db", class: "blue" },
+        1: { letter: "T", name: "TEAL", color: "#1abc9c", class: "teal" },
+        2: { letter: "G", name: "GREEN", color: "#2ecc71", class: "green" },
+        3: { letter: "Y", name: "YELLOW", color: "#f1c40f", class: "yellow" },
+        4: { letter: "O", name: "ORANGE", color: "#e67e22", class: "orange" },
+        "P": { letter: "P", name: "PURPLE", color: "#9b59b6", class: "purple" },
+        "R": { letter: "R", name: "RED", color: "#ff4757", class: "red" },
+      };
+
+      let purples = [];
+      let revealed = [];
+      let clicksLeft = 7;
+      let foundCount = 0;
+
+      function getNeighbors(idx) {
+        let n = [];
+        let r = Math.floor(idx / SIZE);
+        let c = idx % SIZE;
+        for (let dr = -1; dr <= 1; dr++) {
+          for (let dc = -1; dc <= 1; dc++) {
+            if (dr === 0 && dc === 0) continue;
+            let nr = r + dr,
+              nc = c + dc;
+            if (nr >= 0 && nr < SIZE && nc >= 0 && nc < SIZE) n.push(nr * SIZE + nc);
+          }
+        }
+        return n;
+      }
+
+      function getCombinations(arr, k) {
+        let results = [];
+        function helper(start, combo) {
+          if (combo.length === k) {
+            results.push([...combo]);
+            return;
+          }
+          for (let i = start; i < arr.length; i++) helper(i + 1, [...combo, arr[i]]);
+        }
+        helper(0, []);
+        return results;
+      }
+      const ALL_COMBOS = getCombinations(
+        Array.from({ length: 25 }, (_, i) => i),
+        4,
+      );
+
+      function resetGame() {
+        purples = [];
+        revealed = [];
+        clicksLeft = 7;
+        foundCount = 0;
+        while (purples.length < TOTAL_PURPLES) {
+          let r = Math.floor(Math.random() * 25);
+          if (!purples.includes(r)) purples.push(r);
+        }
+        render();
+      }
+
+      function calculateProbabilities() {
+        const filtered = ALL_COMBOS.filter((combo) => {
+          return revealed.every((rev) => {
+            if (rev.isPurple) return combo.includes(rev.idx);
+            let count = getNeighbors(rev.idx).filter((idx) => combo.includes(idx)).length;
+            return count === rev.val && !combo.includes(rev.idx);
+          });
+        });
+
+        const probs = Array(25).fill(0);
+        const possibleVals = {};
+
+        filtered.forEach((combo) => {
+          combo.forEach((idx) => probs[idx]++);
+          for (let i = 0; i < 25; i++) {
+            if (revealed.some((r) => r.idx === i) || combo.includes(i)) continue;
+            let val = getNeighbors(i).filter((idx) => combo.includes(idx)).length;
+            if (!possibleVals[i]) possibleVals[i] = new Set();
+            possibleVals[i].add(val);
+          }
+        });
+
+        return {
+          probs: probs.map((p) => (filtered.length ? (p / filtered.length) * 100 : 0)),
+          validCount: filtered.length,
+          possibleVals: possibleVals,
+        };
+      }
+
+      function clickCell(idx) {
+        if (clicksLeft <= 0 || revealed.some((r) => r.idx === idx)) return;
+
+        clicksLeft--;
+        if (purples.includes(idx)) {
+          foundCount++;
+          if (foundCount <= 3) clicksLeft++;
+          revealed.push({ idx, val: "P", isPurple: true });
+        } else {
+          let n = getNeighbors(idx);
+          let count = n.filter((pIdx) => purples.includes(pIdx)).length;
+          revealed.push({ idx, val: count, isPurple: false });
+        }
+        render();
+      }
+
+      function render() {
+        const gridEl = document.getElementById("grid");
+        gridEl.innerHTML = "";
+        const { probs, validCount, possibleVals } = calculateProbabilities();
+
+        document.getElementById("clicks-left").innerText = clicksLeft;
+        document.getElementById("spheres-found").innerText = `${foundCount}/4`;
+        const status = document.getElementById("mode-status");
+
+        if (clicksLeft <= 0) {
+          status.innerText = "GAME OVER: NO CLICKS LEFT";
+          status.style.color = "#ff4757";
+        } else if (foundCount >= 4) {
+          status.innerText = "MODE: HARVESTING REWARDS";
+          status.style.color = "#f1c40f";
+        } else {
+          status.innerText = "MODE: HUNTING SPHERES";
+          status.style.color = "#2ecc71";
+        }
+
+        for (let i = 0; i < 25; i++) {
+          const cell = document.createElement("div");
+          cell.className = "cell";
+          const rev = revealed.find((r) => r.idx === i);
+
+          if (rev) {
+            let displayKey = rev.val;
+            if (rev.isPurple) {
+              let order = revealed.filter((r) => r.isPurple).map((r) => r.idx);
+              if (order.indexOf(i) === 3) displayKey = "R";
+            }
+            const config = COLOR_MAP[displayKey];
+            cell.classList.add("revealed", config.class);
+            cell.innerHTML = `<span class="big-letter">${config.letter}</span>`;
+          } else {
+            if (clicksLeft > 0) cell.onclick = () => clickCell(i);
+            else cell.classList.add("disabled");
+
+            let p = probs[i];
+            let possibleSet = possibleVals[i];
+
+            if (p === 100) {
+              const config = foundCount >= 3 ? COLOR_MAP["R"] : COLOR_MAP["P"];
+              cell.innerHTML = `<span class="locked-text" style="color:${config.color}">${config.name}</span>`;
+            } else if (p === 0 && possibleSet && possibleSet.size === 1) {
+              const val = Array.from(possibleSet)[0];
+              const config = COLOR_MAP[val];
+              cell.innerHTML = `<span class="locked-text" style="color:${config.color}">${config.name}</span>`;
+            } else if (p > 0) {
+              let color = p > 50 ? "#ff4757" : p > 20 ? "#ffa502" : "#2ed573";
+              cell.innerHTML = `<span class="prob" style="color:${color}">${p.toFixed(1)}%</span>`;
+            }
+          }
+          gridEl.appendChild(cell);
+        }
+      }
+
+      resetGame();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mudae $ot Simulator</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/nav.js" defer></script>
+    <script>
+      // Ensure the navbar highlights Trace on load
+      window.addEventListener("DOMContentLoaded", () => switchTab("trace"));
+    </script>
+  </head>
+  <body>
+    <div id="main-nav" class="nav-container view-quest">
+      <div class="nav-row">
+        <div id="tab-quest" class="nav-btn btn-quest active" onclick="switchTab('quest')">$OQ QUEST</div>
+        <div id="tab-trace" class="nav-btn btn-trace" onclick="switchTab('trace')">$OT TRACE</div>
+      </div>
+
+      <div class="nav-row mode-section quest-links">
+        <a href="../Solvers/quest.html" class="nav-btn">QUEST SOLVER</a>
+        <a href="quest.html" class="nav-btn">QUEST SIMULATOR</a>
+      </div>
+
+      <div class="nav-row mode-section trace-links">
+        <a href="../Solvers/trace.html" class="nav-btn">TRACE SOLVER</a>
+        <a href="#" class="nav-btn current-page">TRACE SIMULATOR</a>
+      </div>
+    </div>
+
+    <div class="stats">
+      <h1>$ot Game Simulator</h1>
+      <div>Blue Clicks Used: <span id="clicks" style="color: #ff4757; font-weight: bold">0</span> / 4</div>
+      <div id="status" style="margin-top: 5px; font-size: 12px; color: #aaa">Click spheres. Only Blue costs a click!</div>
+    </div>
+
+    <div class="grid" id="grid"></div>
+    <button onclick="resetGame()" style="margin-top: 20px; padding: 10px">RESET GAME</button>
+
+    <script>
+      let board = Array(25).fill("B");
+      let revealed = Array(25).fill(false);
+      let blueClicks = 0;
+
+      function resetGame() {
+        board = Array(25).fill("B");
+        revealed = Array(25).fill(false);
+        blueClicks = 0;
+
+        const setup = [
+          { c: "T", n: 4 },
+          { c: "G", n: 4 },
+          { c: "Y", n: 3 },
+          { c: "O", n: 2 },
+          { c: "P", n: 2 },
+          { c: "R", n: 2 },
+        ];
+
+        setup.forEach((item) => {
+          let placed = false;
+          while (!placed) {
+            let isRow = Math.random() > 0.5;
+            let lineIdx = Math.floor(Math.random() * 5);
+            let startPos = Math.floor(Math.random() * (6 - item.n));
+
+            let indices = [];
+            for (let i = 0; i < item.n; i++) {
+              indices.push(isRow ? lineIdx * 5 + (startPos + i) : (startPos + i) * 5 + lineIdx);
+            }
+
+            if (indices.every((idx) => board[idx] === "B")) {
+              indices.forEach((idx) => (board[idx] = item.c));
+              placed = true;
+            }
+          }
+        });
+        render();
+      }
+
+      function clickCell(i) {
+        if (revealed[i] || blueClicks >= 4) return;
+        revealed[i] = true;
+        if (board[i] === "B") blueClicks++;
+        render();
+      }
+
+      function render() {
+        const gridEl = document.getElementById("grid");
+        gridEl.innerHTML = "";
+        document.getElementById("clicks").innerText = blueClicks;
+
+        board.forEach((color, i) => {
+          const cell = document.createElement("div");
+          cell.className = "cell";
+          if (revealed[i]) {
+            cell.classList.add(getColorClass(color));
+            cell.innerText = color;
+          } else {
+            cell.onclick = () => clickCell(i);
+          }
+          gridEl.appendChild(cell);
+        });
+      }
+
+      function getColorClass(c) {
+        const map = { "B": "blue", "T": "teal", "G": "green", "Y": "yellow", "O": "orange", "P": "purple", "R": "red" };
+        return map[c];
+      }
+
+      resetGame();
+    </script>
+  </body>
+</html>

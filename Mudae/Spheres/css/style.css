@@ -1,0 +1,280 @@
+/* --- Global Styles --- */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #121212;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* --- Grid & Cell Basics --- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 75px);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cell {
+  width: 75px;
+  height: 75px;
+  background: #2c2c2c;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid #444;
+  transition: 0.2s;
+  position: relative;
+}
+
+.cell:hover {
+  border-color: #9b59b6;
+  background: #333;
+}
+
+.cell.selected {
+  border-color: #00d4ff !important;
+  box-shadow: 0 0 15px #00d4ff;
+  z-index: 10;
+}
+
+.cell.solved {
+  cursor: default;
+  border: none;
+}
+
+.cell.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* --- Solver Specifics (Best Move & Probs) --- */
+.best-move {
+  border: 2px solid #f1c40f !important;
+  box-shadow: 0 0 15px rgba(241, 196, 15, 0.7);
+  animation: pulse-best 1.5s infinite;
+}
+
+.best-label {
+  position: absolute;
+  top: -10px;
+  background: #f1c40f;
+  color: black;
+  font-size: 9px;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-weight: bold;
+  z-index: 5;
+}
+
+@keyframes pulse-best {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.prob {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.locked-text {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+/* --- Color Picker Styles --- */
+.picker-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.picker {
+  display: flex;
+  gap: 8px;
+  background: #1e1e1e;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  margin-top: 10px;
+}
+
+.pick-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s;
+}
+
+.pick-btn:disabled {
+  background: #121212 !important;
+  color: #333 !important;
+  cursor: not-allowed;
+  border: 1px solid #222;
+}
+
+/* --- Mudae Color Palette --- */
+.blue {
+  background: #3498db;
+  color: white;
+  --text: #3498db;
+}
+.teal {
+  background: #1abc9c;
+  color: white;
+  --text: #1abc9c;
+}
+.green {
+  background: #2ecc71;
+  color: white;
+  --text: #2ecc71;
+}
+.yellow {
+  background: #f1c40f;
+  color: black;
+  --text: #f1c40f;
+}
+.orange {
+  background: #e67e22;
+  color: white;
+  --text: #e67e22;
+}
+.purple {
+  background: #9b59b6;
+  color: white;
+  --text: #9b59b6;
+}
+.red {
+  background: #ff4757;
+  color: white;
+  --text: #ff4757;
+  box-shadow: 0 0 15px rgba(255, 71, 87, 0.6);
+}
+
+/* --- Stats Header Styles --- */
+.stats {
+  text-align: center;
+  background: #1e1e1e;
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 420px;
+  border: 1px solid #333;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-val {
+  font-size: 20px;
+  font-weight: 900;
+  color: #00d4ff;
+}
+
+.stat-lbl {
+  font-size: 10px;
+  color: #888;
+}
+
+.big-letter {
+  font-size: 28px;
+  font-weight: 900;
+}
+
+/* --- Two-Row Navigation System --- */
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 25px;
+  width: 420px;
+}
+
+.nav-row {
+  display: flex;
+  gap: 10px;
+  background: #1e1e1e;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.nav-btn {
+  flex: 1;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  transition: 0.2s;
+  color: #888;
+  background: #2a2a2a;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  background: #383838;
+  color: white;
+}
+
+/* Navigation Active/Current States */
+.btn-quest.active {
+  background: #9b59b6 !important;
+  color: white !important;
+}
+
+.btn-trace.active {
+  background: #1abc9c !important;
+  color: white !important;
+}
+
+.nav-btn.current-page {
+  background: #444;
+  color: #00d4ff;
+  pointer-events: none;
+  border: 1px solid #00d4ff;
+}
+
+/* Navigation Visibility Logic */
+.mode-section {
+  display: none;
+  width: 100%;
+  gap: 10px;
+}
+
+.nav-container.view-quest .quest-links {
+  display: flex;
+}
+
+.nav-container.view-trace .trace-links {
+  display: flex;
+}

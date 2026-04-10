@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mudae $ot Strategic Solver</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/nav.js" defer></script>
+    <script>
+      // Ensure the navbar highlights Trace on load
+      window.addEventListener("DOMContentLoaded", () => switchTab("trace"));
+    </script>
+  </head>
+  <body>
+    <div id="main-nav" class="nav-container view-quest">
+      <div class="nav-row">
+        <div id="tab-quest" class="nav-btn btn-quest active" onclick="switchTab('quest')">$OQ QUEST</div>
+        <div id="tab-trace" class="nav-btn btn-trace" onclick="switchTab('trace')">$OT TRACE</div>
+      </div>
+
+      <div class="nav-row mode-section quest-links">
+        <a href="quest.html" class="nav-btn">QUEST SOLVER</a>
+        <a href="../Simulators/quest.html" class="nav-btn">QUEST SIMULATOR</a>
+      </div>
+
+      <div class="nav-row mode-section trace-links">
+        <a href="#" class="nav-btn current-page">TRACE SOLVER</a>
+        <a href="../Simulators/trace.html" class="nav-btn">TRACE SIMULATOR</a>
+      </div>
+    </div>
+
+    <div class="stats">
+      <h1>$ot Strategic Solver</h1>
+      <div id="mode-status">Identify colors to find the lines. Avoid Blue!</div>
+      <div style="margin-top: 10px">Blue Probability = <span class="stat-val" id="blue-chance">--</span></div>
+    </div>
+
+    <div class="grid" id="grid"></div>
+
+    <div id="picker-area" style="display: none; margin-top: 20px">
+      <div class="picker">
+        <button class="pick-btn blue" onclick="setTile('B')">B</button>
+        <button class="pick-btn teal" onclick="setTile('T')">T</button>
+        <button class="pick-btn green" onclick="setTile('G')">G</button>
+        <button class="pick-btn yellow" onclick="setTile('Y')">Y</button>
+        <button class="pick-btn orange" onclick="setTile('O')">O</button>
+        <button class="pick-btn purple" onclick="setTile('P')">P</button>
+        <button class="pick-btn red" onclick="setTile('R')">R</button>
+      </div>
+    </div>
+
+    <script>
+      const SIZE = 5;
+      const COLORS = {
+        "B": { name: "BLUE", class: "blue", count: 8 }, // 25 - (4+4+3+2+2+2) = 8
+        "T": { name: "TEAL", class: "teal", count: 4 },
+        "G": { name: "GREEN", class: "green", count: 4 },
+        "Y": { name: "YELLOW", class: "yellow", count: 3 },
+        "O": { name: "ORANGE", class: "orange", count: 2 },
+        "P": { name: "PURPLE", class: "purple", count: 2 },
+        "R": { name: "RED", class: "red", count: 2 },
+      };
+
+      let revealed = {};
+      let selectedIdx = null;
+
+      function selectTile(i) {
+        selectedIdx = i;
+        document.getElementById("picker-area").style.display = "block";
+        render();
+      }
+
+      function setTile(color) {
+        revealed[selectedIdx] = color;
+        selectedIdx = null;
+        document.getElementById("picker-area").style.display = "none";
+        render();
+      }
+
+      // $ot Logic: Checks if a board state is valid based on Mudae's "Linear" rule
+      function isValid(board) {
+        for (let color in COLORS) {
+          if (color === "B") continue; // Blue doesn't follow lines
+          let positions = board.reduce((a, v, i) => (v === color ? a.concat(i) : a), []);
+          if (positions.length === 0) continue;
+
+          let rows = positions.map((p) => Math.floor(p / 5));
+          let cols = positions.map((p) => p % 5);
+
+          const allSameRow = rows.every((r) => r === rows[0]);
+          const allSameCol = cols.every((c) => c === cols[0]);
+
+          if (!allSameRow && !allSameCol) return false;
+
+          // Check if they are contiguous
+          let line = allSameRow ? cols.sort((a, b) => a - b) : rows.sort((a, b) => a - b);
+          for (let i = 0; i < line.length - 1; i++) {
+            if (line[i + 1] - line[i] !== 1) return false;
+          }
+        }
+        return true;
+      }
+
+      function render() {
+        const gridEl = document.getElementById("grid");
+        gridEl.innerHTML = "";
+
+        for (let i = 0; i < 25; i++) {
+          const cell = document.createElement("div");
+          cell.className = "cell";
+          if (i === selectedIdx) cell.classList.add("selected");
+
+          if (revealed[i]) {
+            const c = COLORS[revealed[i]];
+            cell.classList.add("solved", c.class);
+            cell.innerHTML = `<b>${revealed[i]}</b>`;
+          } else {
+            cell.onclick = () => selectTile(i);
+            // In a full implementation, we would run a simulation here to calculate
+            // the % chance of Blue. For now, we display the UI.
+            cell.innerHTML = `<span class="prob">?</span>`;
+          }
+          gridEl.appendChild(cell);
+        }
+      }
+
+      render();
+    </script>
+  </body>
+</html>
