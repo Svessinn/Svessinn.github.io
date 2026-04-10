@@ -1,277 +1,488 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Mudae $oq Strategic Solver - Full Color Sync</title>
-    <style>
-        body { font-family: 'Segoe UI', sans-serif; background: #121212; color: white; display: flex; flex-direction: column; align-items: center; padding: 20px; }
-        .grid { display: grid; grid-template-columns: repeat(5, 75px); gap: 10px; margin-top: 20px; }
-        
-        .cell { 
-            width: 75px; height: 75px; background: #2c2c2c; border-radius: 10px; 
-            display: flex; flex-direction: column; align-items: center; justify-content: center; 
-            cursor: pointer; border: 2px solid #444; transition: 0.2s; position: relative;
-        }
-        .cell:hover { border-color: #9b59b6; background: #333; }
-        .cell.selected { border-color: #00d4ff !important; box-shadow: 0 0 15px #00d4ff; z-index: 10; }
-        .cell.solved { cursor: default; border: none; }
-        .cell.disabled { cursor: not-allowed; opacity: 0.6; pointer-events: none; }
+  <head>
+  <meta charset="UTF-8" />
+  <title>Mudae $oq Strategic Solver - Full Color Sync</title>
+  <style>
+    body {
+    font-family: "Segoe UI", sans-serif;
+    background: #121212;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    }
+    .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 75px);
+    gap: 10px;
+    margin-top: 20px;
+    }
 
-        .best-move { 
-            border: 2px solid #f1c40f !important; 
-            box-shadow: 0 0 15px rgba(241, 196, 15, 0.7);
-            animation: pulse-best 1.5s infinite;
-        }
-        .best-label {
-            position: absolute; top: -10px; background: #f1c40f; color: black;
-            font-size: 9px; padding: 2px 5px; border-radius: 4px; font-weight: bold; z-index: 5;
-        }
+    .cell {
+    width: 75px;
+    height: 75px;
+    background: #2c2c2c;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid #444;
+    transition: 0.2s;
+    position: relative;
+    }
+    .cell:hover {
+    border-color: #9b59b6;
+    background: #333;
+    }
+    .cell.selected {
+    border-color: #00d4ff !important;
+    box-shadow: 0 0 15px #00d4ff;
+    z-index: 10;
+    }
+    .cell.solved {
+    cursor: default;
+    border: none;
+    }
+    .cell.disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+    pointer-events: none;
+    }
 
-        @keyframes pulse-best {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.04); }
-            100% { transform: scale(1); }
-        }
+    .best-move {
+    border: 2px solid #f1c40f !important;
+    box-shadow: 0 0 15px rgba(241, 196, 15, 0.7);
+    animation: pulse-best 1.5s infinite;
+    }
+    .best-label {
+    position: absolute;
+    top: -10px;
+    background: #f1c40f;
+    color: black;
+    font-size: 9px;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-weight: bold;
+    z-index: 5;
+    }
 
-        .prob { font-size: 16px; font-weight: bold; }
-        .locked-text { font-size: 11px; font-weight: 900; letter-spacing: 0.5px; text-align: center; }
+    @keyframes pulse-best {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.04);
+    }
+    100% {
+      transform: scale(1);
+    }
+    }
 
-        .picker-container { margin-top: 20px; text-align: center; }
-        .picker { display: flex; gap: 8px; background: #1e1e1e; padding: 15px; border-radius: 12px; border: 1px solid #333; margin-top: 10px; }
-        .pick-btn { width: 50px; height: 50px; border-radius: 50%; border: none; cursor: pointer; font-weight: 900; font-size: 18px; display: flex; align-items: center; justify-content: center; transition: 0.1s; }
-        .pick-btn:disabled { background: #121212 !important; color: #333 !important; cursor: not-allowed; border: 1px solid #222; }
+    .prob {
+    font-size: 16px;
+    font-weight: bold;
+    }
+    .locked-text {
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    text-align: center;
+    }
 
-        /* Color Scheme Definitions */
-        .blue { background: #3498db; color: white; --text: #3498db; }
-        .teal { background: #1abc9c; color: white; --text: #1abc9c; }
-        .green { background: #2ecc71; color: white; --text: #2ecc71; }
-        .yellow { background: #f1c40f; color: black; --text: #f1c40f; }
-        .orange { background: #e67e22; color: white; --text: #e67e22; }
-        .purple { background: #9b59b6; color: white; --text: #9b59b6; }
-        .red { background: #ff4757; color: white; --text: #ff4757; box-shadow: 0 0 15px rgba(255, 71, 87, 0.6); }
+    .picker-container {
+    margin-top: 20px;
+    text-align: center;
+    }
+    .picker {
+    display: flex;
+    gap: 8px;
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    margin-top: 10px;
+    }
+    .pick-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s;
+    }
+    .pick-btn:disabled {
+    background: #121212 !important;
+    color: #333 !important;
+    cursor: not-allowed;
+    border: 1px solid #222;
+    }
 
-        .stats { text-align: center; background: #1e1e1e; padding: 15px; border-radius: 10px; min-width: 420px; border: 1px solid #333; }
-        .stat-row { display: flex; justify-content: space-around; margin-top: 10px; }
-        .stat-item { display: flex; flex-direction: column; }
-        .stat-val { font-size: 20px; font-weight: 900; color: #00d4ff; }
-        .stat-lbl { font-size: 10px; color: #888; }
-        .big-letter { font-size: 28px; font-weight: 900; }
-    </style>
-</head>
-<body>
+    /* Color Scheme Definitions */
+    .blue {
+    background: #3498db;
+    color: white;
+    --text: #3498db;
+    }
+    .teal {
+    background: #1abc9c;
+    color: white;
+    --text: #1abc9c;
+    }
+    .green {
+    background: #2ecc71;
+    color: white;
+    --text: #2ecc71;
+    }
+    .yellow {
+    background: #f1c40f;
+    color: black;
+    --text: #f1c40f;
+    }
+    .orange {
+    background: #e67e22;
+    color: white;
+    --text: #e67e22;
+    }
+    .purple {
+    background: #9b59b6;
+    color: white;
+    --text: #9b59b6;
+    }
+    .red {
+    background: #ff4757;
+    color: white;
+    --text: #ff4757;
+    box-shadow: 0 0 15px rgba(255, 71, 87, 0.6);
+    }
 
-    <div class="stats">
-        <h1>$oq Strategic Solver</h1>
-        <div class="stat-row">
-            <div class="stat-item">
-                <span class="stat-val" id="clicks-left">7</span>
-                <span class="stat-lbl">CLICKS LEFT</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-val" id="combinations">12,650</span>
-                <span class="stat-lbl">POSSIBILITIES</span>
-            </div>
-        </div>
-        <div id="mode-status" style="font-size: 11px; font-weight: bold; color: #2ecc71; margin-top: 10px;">MODE: HUNTING SPHERES</div>
+    .stats {
+    text-align: center;
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 420px;
+    border: 1px solid #333;
+    }
+    .stat-row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    }
+    .stat-item {
+    display: flex;
+    flex-direction: column;
+    }
+    .stat-val {
+    font-size: 20px;
+    font-weight: 900;
+    color: #00d4ff;
+    }
+    .stat-lbl {
+    font-size: 10px;
+    color: #888;
+    }
+    .big-letter {
+    font-size: 28px;
+    font-weight: 900;
+    }
+
+    .nav-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    background: #1e1e1e;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    }
+    .nav-btn {
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 13px;
+    transition: 0.2s;
+    }
+    .nav-btn.inactive {
+    background: #333;
+    color: #888;
+    }
+    .nav-btn.inactive:hover {
+    background: #444;
+    color: white;
+    }
+    .nav-btn.active {
+    background: #00d4ff;
+    color: black;
+    cursor: default;
+    }
+  </style>
+  </head>
+  <body>
+  <div class="nav-bar">
+    <a href="#" class="nav-btn active">STRATEGIC SOLVER</a>
+    <a href="../Simulator/index.html" class="nav-btn inactive">GAME SIMULATOR</a>
+  </div>
+  <div class="stats">
+    <h1>$oq Strategic Solver</h1>
+    <div class="stat-row">
+    <div class="stat-item">
+      <span class="stat-val" id="clicks-left">7</span>
+      <span class="stat-lbl">CLICKS LEFT</span>
     </div>
-
-    <div class="grid" id="grid"></div>
-
-    <div class="picker-container" id="picker-area" style="display:none;">
-        <div style="font-size: 12px; color: #00d4ff; font-weight: bold;">SELECT RESULT IN MUDAE:</div>
-        <div class="picker">
-            <button id="btn-0" class="pick-btn blue" onclick="setTile(0)">B</button>
-            <button id="btn-1" class="pick-btn teal" onclick="setTile(1)">T</button>
-            <button id="btn-2" class="pick-btn green" onclick="setTile(2)">G</button>
-            <button id="btn-3" class="pick-btn yellow" onclick="setTile(3)">Y</button>
-            <button id="btn-4" class="pick-btn orange" onclick="setTile(4)">O</button>
-            <button id="special-btn" class="pick-btn purple" onclick="setTile('P')">P</button>
-        </div>
+    <div class="stat-item">
+      <span class="stat-val" id="combinations">12,650</span>
+      <span class="stat-lbl">POSSIBILITIES</span>
     </div>
-
-    <div style="margin-top:20px;">
-        <button onclick="location.reload()" style="padding:10px 20px; cursor:pointer; background:#444; color:white; border:none; border-radius:5px; font-weight:bold;">RESET SOLVER</button>
     </div>
+    <div id="mode-status" style="font-size: 11px; font-weight: bold; color: #2ecc71; margin-top: 10px">
+    MODE: HUNTING SPHERES
+    </div>
+  </div>
 
-<script>
+  <div class="grid" id="grid"></div>
+
+  <div class="picker-container" id="picker-area" style="display: none">
+    <div style="font-size: 12px; color: #00d4ff; font-weight: bold">SELECT RESULT IN MUDAE:</div>
+    <div class="picker">
+    <button id="btn-0" class="pick-btn blue" onclick="setTile(0)">B</button>
+    <button id="btn-1" class="pick-btn teal" onclick="setTile(1)">T</button>
+    <button id="btn-2" class="pick-btn green" onclick="setTile(2)">G</button>
+    <button id="btn-3" class="pick-btn yellow" onclick="setTile(3)">Y</button>
+    <button id="btn-4" class="pick-btn orange" onclick="setTile(4)">O</button>
+    <button id="special-btn" class="pick-btn purple" onclick="setTile('P')">P</button>
+    </div>
+  </div>
+
+  <div style="margin-top: 20px">
+    <button
+    onclick="location.reload()"
+    style="
+      padding: 10px 20px;
+      cursor: pointer;
+      background: #444;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+    "
+    >
+    RESET SOLVER
+    </button>
+  </div>
+
+  <script>
     const SIZE = 5;
-    const REWARDS = { 'P': 5, 0: 10, 1: 20, 2: 35, 3: 55, 4: 90, 'R': 150 };
+    const REWARDS = { "P": 5, 0: 10, 1: 20, 2: 35, 3: 55, 4: 90, "R": 150 };
     const COLOR_MAP = {
-        0: { letter: 'B', name: 'BLUE', color: '#3498db', class: 'blue' },
-        1: { letter: 'T', name: 'TEAL', color: '#1abc9c', class: 'teal' },
-        2: { letter: 'G', name: 'GREEN', color: '#2ecc71', class: 'green' },
-        3: { letter: 'Y', name: 'YELLOW', color: '#f1c40f', class: 'yellow' },
-        4: { letter: 'O', name: 'ORANGE', color: '#e67e22', class: 'orange' },
-        'P': { letter: 'P', name: 'PURPLE', color: '#9b59b6', class: 'purple' },
-        'R': { letter: 'R', name: 'RED', color: '#ff4757', class: 'red' }
+    0: { letter: "B", name: "BLUE", color: "#3498db", class: "blue" },
+    1: { letter: "T", name: "TEAL", color: "#1abc9c", class: "teal" },
+    2: { letter: "G", name: "GREEN", color: "#2ecc71", class: "green" },
+    3: { letter: "Y", name: "YELLOW", color: "#f1c40f", class: "yellow" },
+    4: { letter: "O", name: "ORANGE", color: "#e67e22", class: "orange" },
+    "P": { letter: "P", name: "PURPLE", color: "#9b59b6", class: "purple" },
+    "R": { letter: "R", name: "RED", color: "#ff4757", class: "red" },
     };
 
     let selectedIdx = null;
-    let revealed = []; 
+    let revealed = [];
 
     function getNeighbors(idx) {
-        let n = [];
-        let r = Math.floor(idx / SIZE);
-        let c = idx % SIZE;
-        for(let dr = -1; dr <= 1; dr++) {
-            for(let dc = -1; dc <= 1; dc++) {
-                if(dr === 0 && dc === 0) continue;
-                let nr = r + dr, nc = c + dc;
-                if(nr >= 0 && nr < SIZE && nc >= 0 && nc < SIZE) n.push(nr * SIZE + nc);
-            }
-        }
-        return n;
+    let n = [];
+    let r = Math.floor(idx / SIZE);
+    let c = idx % SIZE;
+    for (let dr = -1; dr <= 1; dr++) {
+      for (let dc = -1; dc <= 1; dc++) {
+      if (dr === 0 && dc === 0) continue;
+      let nr = r + dr,
+        nc = c + dc;
+      if (nr >= 0 && nr < SIZE && nc >= 0 && nc < SIZE) n.push(nr * SIZE + nc);
+      }
+    }
+    return n;
     }
 
     function getCombinations(arr, k) {
-        let results = [];
-        function helper(start, combo) {
-            if (combo.length === k) { results.push([...combo]); return; }
-            for (let i = start; i < arr.length; i++) helper(i + 1, [...combo, arr[i]]);
-        }
-        helper(0, []);
-        return results;
+    let results = [];
+    function helper(start, combo) {
+      if (combo.length === k) {
+      results.push([...combo]);
+      return;
+      }
+      for (let i = start; i < arr.length; i++) helper(i + 1, [...combo, arr[i]]);
     }
-    const ALL_COMBOS = getCombinations(Array.from({length: 25}, (_, i) => i), 4);
+    helper(0, []);
+    return results;
+    }
+    const ALL_COMBOS = getCombinations(
+    Array.from({ length: 25 }, (_, i) => i),
+    4,
+    );
 
     function calculate() {
-        const filtered = ALL_COMBOS.filter(combo => {
-            return revealed.every(rev => {
-                if (rev.val === 'P' || rev.val === 'R') return combo.includes(rev.idx);
-                return getNeighbors(rev.idx).filter(idx => combo.includes(idx)).length === rev.val && !combo.includes(rev.idx);
-            });
-        });
+    const filtered = ALL_COMBOS.filter((combo) => {
+      return revealed.every((rev) => {
+      if (rev.val === "P" || rev.val === "R") return combo.includes(rev.idx);
+      return getNeighbors(rev.idx).filter((idx) => combo.includes(idx)).length === rev.val && !combo.includes(rev.idx);
+      });
+    });
 
-        const probs = Array(25).fill(0);
-        filtered.forEach(combo => combo.forEach(idx => probs[idx]++));
-        const percentProbs = probs.map(p => (filtered.length ? (p / filtered.length) * 100 : 0));
-        
-        const purplesFound = revealed.filter(r => r.val === 'P').length;
-        const redFound = revealed.some(r => r.val === 'R');
-        const spheresFound = purplesFound + (redFound ? 1 : 0);
-        
-        let totalClicks = 7 - revealed.length + Math.min(purplesFound, 3);
-        let bestIdx = -1;
-        let maxVal = -1;
+    const probs = Array(25).fill(0);
+    filtered.forEach((combo) => combo.forEach((idx) => probs[idx]++));
+    const percentProbs = probs.map((p) => (filtered.length ? (p / filtered.length) * 100 : 0));
 
-        for(let i=0; i<25; i++) {
-            if(revealed.some(r => r.idx === i)) continue;
-            if (spheresFound < 4) {
-                let score = percentProbs[i] * 10 + getNeighbors(i).filter(nIdx => !revealed.some(r => r.idx === nIdx)).length;
-                if (score > maxVal) { maxVal = score; bestIdx = i; }
-            } else {
-                let ev = [0, 1, 2, 3, 4].reduce((acc, opt) => {
-                    let count = filtered.filter(combo => getNeighbors(i).filter(nIdx => combo.includes(nIdx)).length === opt).length;
-                    return acc + (count / filtered.length) * REWARDS[opt];
-                }, 0);
-                if (ev > maxVal) { maxVal = ev; bestIdx = i; }
-            }
-        }
-        return { probs: percentProbs, validCount: filtered.length, bestIdx, spheresFound, clicks: totalClicks, filteredLayouts: filtered };
+    const purplesFound = revealed.filter((r) => r.val === "P").length;
+    const redFound = revealed.some((r) => r.val === "R");
+    const spheresFound = purplesFound + (redFound ? 1 : 0);
+
+    let totalClicks = 7 - revealed.length + Math.min(purplesFound, 3);
+    let bestIdx = -1;
+    let maxVal = -1;
+
+    for (let i = 0; i < 25; i++) {
+      if (revealed.some((r) => r.idx === i)) continue;
+      if (spheresFound < 4) {
+      let score = percentProbs[i] * 10 + getNeighbors(i).filter((nIdx) => !revealed.some((r) => r.idx === nIdx)).length;
+      if (score > maxVal) {
+        maxVal = score;
+        bestIdx = i;
+      }
+      } else {
+      let ev = [0, 1, 2, 3, 4].reduce((acc, opt) => {
+        let count = filtered.filter(
+        (combo) => getNeighbors(i).filter((nIdx) => combo.includes(nIdx)).length === opt,
+        ).length;
+        return acc + (count / filtered.length) * REWARDS[opt];
+      }, 0);
+      if (ev > maxVal) {
+        maxVal = ev;
+        bestIdx = i;
+      }
+      }
+    }
+    return {
+      probs: percentProbs,
+      validCount: filtered.length,
+      bestIdx,
+      spheresFound,
+      clicks: totalClicks,
+      filteredLayouts: filtered,
+    };
     }
 
     function selectTile(idx) {
-        if (revealed.some(r => r.idx === idx)) return;
-        const state = calculate();
-        if (state.clicks <= 0) return;
+    if (revealed.some((r) => r.idx === idx)) return;
+    const state = calculate();
+    if (state.clicks <= 0) return;
 
-        selectedIdx = idx;
-        const purpleCount = revealed.filter(r => r.val === 'P').length;
-        const specBtn = document.getElementById('special-btn');
-        
-        if (purpleCount >= 3) {
-            specBtn.innerText = 'R'; specBtn.className = 'pick-btn red';
-            specBtn.onclick = () => setTile('R');
-        } else {
-            specBtn.innerText = 'P'; specBtn.className = 'pick-btn purple';
-            specBtn.onclick = () => setTile('P');
-        }
+    selectedIdx = idx;
+    const purpleCount = revealed.filter((r) => r.val === "P").length;
+    const specBtn = document.getElementById("special-btn");
 
-        [0, 1, 2, 3, 4, (purpleCount >= 3 ? 'R' : 'P')].forEach(val => {
-            const isPossible = state.filteredLayouts.some(combo => {
-                if (val === 'P' || val === 'R') return combo.includes(idx);
-                return getNeighbors(idx).filter(nIdx => combo.includes(nIdx)).length === val && !combo.includes(idx);
-            });
-            const btnId = (val === 'P' || val === 'R') ? 'special-btn' : `btn-${val}`;
-            document.getElementById(btnId).disabled = !isPossible;
-        });
+    if (purpleCount >= 3) {
+      specBtn.innerText = "R";
+      specBtn.className = "pick-btn red";
+      specBtn.onclick = () => setTile("R");
+    } else {
+      specBtn.innerText = "P";
+      specBtn.className = "pick-btn purple";
+      specBtn.onclick = () => setTile("P");
+    }
 
-        document.getElementById('picker-area').style.display = 'block';
-        render();
+    [0, 1, 2, 3, 4, purpleCount >= 3 ? "R" : "P"].forEach((val) => {
+      const isPossible = state.filteredLayouts.some((combo) => {
+      if (val === "P" || val === "R") return combo.includes(idx);
+      return getNeighbors(idx).filter((nIdx) => combo.includes(nIdx)).length === val && !combo.includes(idx);
+      });
+      const btnId = val === "P" || val === "R" ? "special-btn" : `btn-${val}`;
+      document.getElementById(btnId).disabled = !isPossible;
+    });
+
+    document.getElementById("picker-area").style.display = "block";
+    render();
     }
 
     function setTile(val) {
-        revealed.push({idx: selectedIdx, val: val});
-        selectedIdx = null;
-        document.getElementById('picker-area').style.display = 'none';
-        render();
+    revealed.push({ idx: selectedIdx, val: val });
+    selectedIdx = null;
+    document.getElementById("picker-area").style.display = "none";
+    render();
     }
 
     function render() {
-        const gridEl = document.getElementById('grid');
-        gridEl.innerHTML = '';
-        const { probs, validCount, bestIdx, spheresFound, clicks, filteredLayouts } = calculate();
-        
-        document.getElementById('combinations').innerText = validCount.toLocaleString();
-        document.getElementById('clicks-left').innerText = clicks;
-        
-        const modeStatus = document.getElementById('mode-status');
-        if (clicks <= 0) {
-            modeStatus.innerText = "OUT OF CLICKS - GAME OVER";
-            modeStatus.style.color = "#ff4757";
-        } else if (spheresFound >= 4) {
-            modeStatus.innerText = "MODE: HARVESTING REWARDS";
-            modeStatus.style.color = "#f1c40f";
-        } else {
-            modeStatus.innerText = "MODE: HUNTING SPHERES";
-            modeStatus.style.color = "#2ecc71";
+    const gridEl = document.getElementById("grid");
+    gridEl.innerHTML = "";
+    const { probs, validCount, bestIdx, spheresFound, clicks, filteredLayouts } = calculate();
+
+    document.getElementById("combinations").innerText = validCount.toLocaleString();
+    document.getElementById("clicks-left").innerText = clicks;
+
+    const modeStatus = document.getElementById("mode-status");
+    if (clicks <= 0) {
+      modeStatus.innerText = "OUT OF CLICKS - GAME OVER";
+      modeStatus.style.color = "#ff4757";
+    } else if (spheresFound >= 4) {
+      modeStatus.innerText = "MODE: HARVESTING REWARDS";
+      modeStatus.style.color = "#f1c40f";
+    } else {
+      modeStatus.innerText = "MODE: HUNTING SPHERES";
+      modeStatus.style.color = "#2ecc71";
+    }
+
+    for (let i = 0; i < 25; i++) {
+      const cell = document.createElement("div");
+      cell.className = "cell";
+      const rev = revealed.find((r) => r.idx === i);
+
+      if (rev) {
+      const config = COLOR_MAP[rev.val];
+      cell.classList.add("solved", config.class);
+      cell.innerHTML = `<span class="big-letter">${config.letter}</span>`;
+      } else {
+      if (clicks > 0) {
+        cell.onclick = () => selectTile(i);
+        if (i === selectedIdx) cell.classList.add("selected");
+        if (i === bestIdx && validCount > 0) {
+        cell.classList.add("best-move");
+        cell.innerHTML += `<div class="best-label">${spheresFound >= 4 ? "MAX REWARD" : "BEST MOVE"}</div>`;
         }
+      } else {
+        cell.classList.add("disabled");
+      }
 
-        for(let i = 0; i < 25; i++) {
-            const cell = document.createElement('div');
-            cell.className = 'cell';
-            const rev = revealed.find(r => r.idx === i);
-            
-            if (rev) {
-                const config = COLOR_MAP[rev.val];
-                cell.classList.add('solved', config.class);
-                cell.innerHTML = `<span class="big-letter">${config.letter}</span>`;
-            } else {
-                if (clicks > 0) {
-                    cell.onclick = () => selectTile(i);
-                    if (i === selectedIdx) cell.classList.add('selected');
-                    if (i === bestIdx && validCount > 0) {
-                        cell.classList.add('best-move');
-                        cell.innerHTML += `<div class="best-label">${spheresFound >= 4 ? 'MAX REWARD' : 'BEST MOVE'}</div>`;
-                    }
-                } else {
-                    cell.classList.add('disabled');
-                }
+      const possibleVals = [0, 1, 2, 3, 4, "P", "R"].filter((val) => {
+        return filteredLayouts.some((combo) => {
+        if (val === "P" || val === "R") return combo.includes(i);
+        return getNeighbors(i).filter((nIdx) => combo.includes(nIdx)).length === val && !combo.includes(i);
+        });
+      });
 
-                const possibleVals = [0, 1, 2, 3, 4, 'P', 'R'].filter(val => {
-                    return filteredLayouts.some(combo => {
-                        if (val === 'P' || val === 'R') return combo.includes(i);
-                        return getNeighbors(i).filter(nIdx => combo.includes(nIdx)).length === val && !combo.includes(i);
-                    });
-                });
-
-                let p = probs[i];
-                if (p === 100) {
-                    const isRed = (spheresFound >= 3);
-                    const config = isRed ? COLOR_MAP['R'] : COLOR_MAP['P'];
-                    cell.innerHTML += `<span class="locked-text" style="color:${config.color}">${config.name}</span>`;
-                } else if (p === 0 && possibleVals.length === 1) {
-                    const config = COLOR_MAP[possibleVals[0]];
-                    cell.innerHTML += `<span class="locked-text" style="color:${config.color}">${config.name}</span>`;
-                } else {
-                    let color = p > 50 ? "#ff4757" : (p > 20 ? "#ffa502" : "#2ed573");
-                    cell.innerHTML += `<span class="prob" style="color:${color}">${p.toFixed(1)}%</span>`;
-                }
-            }
-            gridEl.appendChild(cell);
-        }
+      let p = probs[i];
+      if (p === 100) {
+        const isRed = spheresFound >= 3;
+        const config = isRed ? COLOR_MAP["R"] : COLOR_MAP["P"];
+        cell.innerHTML += `<span class="locked-text" style="color:${config.color}">${config.name}</span>`;
+      } else if (p === 0 && possibleVals.length === 1) {
+        const config = COLOR_MAP[possibleVals[0]];
+        cell.innerHTML += `<span class="locked-text" style="color:${config.color}">${config.name}</span>`;
+      } else {
+        let color = p > 50 ? "#ff4757" : p > 20 ? "#ffa502" : "#2ed573";
+        cell.innerHTML += `<span class="prob" style="color:${color}">${p.toFixed(1)}%</span>`;
+      }
+      }
+      gridEl.appendChild(cell);
+    }
     }
     render();
-</script>
-</body>
+  </script>
+  </body>
 </html>

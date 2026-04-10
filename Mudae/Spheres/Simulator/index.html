@@ -136,9 +136,44 @@
       .reset-btn:hover {
         background: #555;
       }
+
+      .nav-bar {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+        background: #1e1e1e;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #333;
+      }
+      .nav-btn {
+        padding: 8px 16px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 13px;
+        transition: 0.2s;
+      }
+      .nav-btn.inactive {
+        background: #333;
+        color: #888;
+      }
+      .nav-btn.inactive:hover {
+        background: #444;
+        color: white;
+      }
+      .nav-btn.active {
+        background: #00d4ff;
+        color: black;
+        cursor: default;
+      }
     </style>
   </head>
   <body>
+    <div class="nav-bar">
+      <a href="../Solver/index.html" class="nav-btn inactive">STRATEGIC SOLVER</a>
+      <a href="#" class="nav-btn active">GAME SIMULATOR</a>
+    </div>
     <div class="stats">
       <h1>$oq Game Simulator</h1>
       <div class="stat-row">
