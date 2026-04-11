@@ -34,7 +34,6 @@ body {
 
 .cell:hover {
   border-color: #9b59b6;
-  background: #333;
 }
 
 .cell.selected {
@@ -171,7 +170,24 @@ body {
   --text: #ff4757;
   box-shadow: 0 0 15px rgba(255, 71, 87, 0.6);
 }
+.rainbow {
+  background: linear-gradient(45deg, #ff4757, #e67e22, #f1c40f, #2ecc71, #1abc9c, #3498db, #9b59b6);
+  background-size: 100% 100%;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
 
+@keyframes rainbow-glow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 /* --- Stats Header Styles --- */
 .stats {
   text-align: center;
@@ -277,4 +293,16 @@ body {
 
 .nav-container.view-trace .trace-links {
   display: flex;
+}
+
+.value-label {
+  font-size: 10px;
+  color: #ffd700; /* Gold color */
+  font-weight: bold;
+  margin-top: 2px;
+}
+.total-score {
+  color: #ffd700;
+  font-size: 24px;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }

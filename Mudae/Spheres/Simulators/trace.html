@@ -39,6 +39,16 @@
     <button onclick="resetGame()" style="margin-top: 20px; padding: 10px">RESET GAME</button>
 
     <script>
+      const COLOR_MAP = {
+        "B": { name: "BLUE", class: "blue" },
+        "T": { name: "TEAL", class: "teal" },
+        "G": { name: "GREEN", class: "green" },
+        "Y": { name: "YELLOW", class: "yellow" },
+        "O": { name: "ORANGE", class: "orange" },
+        "R": { name: "RED", class: "red" },
+        "W": { name: "RAINBOW", class: "rainbow" }, // 'W' for White/Rainbow
+      };
+
       let board = Array(25).fill("B");
       let revealed = Array(25).fill(false);
       let blueClicks = 0;
@@ -48,33 +58,42 @@
         revealed = Array(25).fill(false);
         blueClicks = 0;
 
-        const setup = [
-          { c: "T", n: 4 },
-          { c: "G", n: 4 },
-          { c: "Y", n: 3 },
-          { c: "O", n: 2 },
-          { c: "P", n: 2 },
-          { c: "R", n: 2 },
+        // 1. Determine the "Random Rarer Rarity" for this specific session
+        const rarerOptions = ["O", "R", "W"];
+        const selectedRarer = rarerOptions[Math.floor(Math.random() * rarerOptions.length)];
+
+        // 2. Define the counts based on your rules
+        const pool = [
+          { color: "T", count: 4 }, // 4 Teals
+          { color: "G", count: 4 }, // 4 Greens
+          { color: "Y", count: 3 }, // 3 Yellows
+          { color: selectedRarer, count: 2 }, // 2 of the Rarer Rarity
         ];
 
-        setup.forEach((item) => {
+        // 3. Place them following the "Line Rule"
+        pool.forEach((item) => {
           let placed = false;
-          while (!placed) {
-            let isRow = Math.random() > 0.5;
-            let lineIdx = Math.floor(Math.random() * 5);
-            let startPos = Math.floor(Math.random() * (6 - item.n));
+          let attempts = 0;
+
+          while (!placed && attempts < 100) {
+            attempts++;
+            const isRow = Math.random() > 0.5;
+            const lineIdx = Math.floor(Math.random() * 5); // Which row or column
+            const startPos = Math.floor(Math.random() * (6 - item.count)); // Start index in that line
 
             let indices = [];
-            for (let i = 0; i < item.n; i++) {
+            for (let i = 0; i < item.count; i++) {
               indices.push(isRow ? lineIdx * 5 + (startPos + i) : (startPos + i) * 5 + lineIdx);
             }
 
+            // Check if all selected spots are currently Blue (empty)
             if (indices.every((idx) => board[idx] === "B")) {
-              indices.forEach((idx) => (board[idx] = item.c));
+              indices.forEach((idx) => (board[idx] = item.color));
               placed = true;
             }
           }
         });
+
         render();
       }
 
@@ -104,8 +123,16 @@
       }
 
       function getColorClass(c) {
-        const map = { "B": "blue", "T": "teal", "G": "green", "Y": "yellow", "O": "orange", "P": "purple", "R": "red" };
-        return map[c];
+        const map = {
+          "B": "blue",
+          "T": "teal",
+          "G": "green",
+          "Y": "yellow",
+          "O": "orange",
+          "R": "red",
+          "W": "rainbow",
+        };
+        return map[c] || "blue"; // Fallback to blue if something goes wrong
       }
 
       resetGame();
