@@ -78,6 +78,9 @@
       let possibleRedIndices = [];
       const ALL_POSSIBLE_REDS = Array.from({ length: 25 }, (_, i) => i).filter((i) => i !== 12);
 
+      // Constants for Mudae limits
+      const LIMITS = { "R": 1, "O": 2, "Y": 3, "G": 4 };
+
       function resetSolver() {
         selectedIdx = null;
         revealedColors = {};
@@ -87,11 +90,31 @@
       }
 
       function selectCell(idx) {
-        // If cell is not revealed and we already have 5 clicks, do nothing (silent disable)
         const clickCount = Object.keys(revealedColors).length;
         if (!revealedColors[idx] && clickCount >= 5) return;
 
         selectedIdx = idx;
+
+        // Disable picker buttons if the specific color limit is reached
+        const counts = {};
+        Object.values(revealedColors).forEach((c) => (counts[c] = (counts[c] || 0) + 1));
+
+        // If we are editing an existing cell, don't count its current color against the limit
+        if (revealedColors[idx]) counts[revealedColors[idx]]--;
+
+        document.querySelectorAll(".pick-btn").forEach((btn) => {
+          const color = btn.innerText;
+          if (LIMITS[color] && counts[color] >= LIMITS[color]) {
+            btn.disabled = true;
+            btn.style.opacity = "0.3";
+            btn.style.cursor = "not-allowed";
+          } else {
+            btn.disabled = false;
+            btn.style.opacity = "1";
+            btn.style.cursor = "pointer";
+          }
+        });
+
         document.getElementById("picker-ui").style.display = "block";
         render();
       }
@@ -144,8 +167,8 @@
           const redIdx = possibleRedIndices[0];
           const orangeCells = [];
           const yellowCells = [];
-          const revealedO = Object.values(revealedColors).filter((c) => c === "O").length;
-          const revealedY = Object.values(revealedColors).filter((c) => c === "Y").length;
+          const revO = Object.values(revealedColors).filter((c) => c === "O").length;
+          const revY = Object.values(revealedColors).filter((c) => c === "Y").length;
 
           for (let i = 0; i < 25; i++) {
             if (revealedColors[i] || i === redIdx) continue;
@@ -154,9 +177,9 @@
             if (expected === "Y") yellowCells.push(i);
           }
 
-          if (revealedO < 2 && orangeCells.length > 0) {
+          if (revO < LIMITS["O"] && orangeCells.length > 0) {
             return { idxs: orangeCells, target: "ORANGE", colorCode: "#ffa502" };
-          } else if (revealedY < 3 && yellowCells.length > 0) {
+          } else if (revY < LIMITS["Y"] && yellowCells.length > 0) {
             return { idxs: yellowCells, target: "YELLOW", colorCode: "#f1c40f" };
           }
           return null;
@@ -217,7 +240,6 @@
             cell.innerHTML = `<span class="big-letter">${color}</span>`;
             cell.onclick = () => selectCell(i);
           } else {
-            // Apply grayscale/disabled look if we are at 5 clicks and cell isn't revealed
             if (clickCount >= 5) {
               cell.style.opacity = "0.4";
               cell.style.cursor = "not-allowed";
@@ -246,7 +268,7 @@
                     let oPool = 0;
                     for (let k = 0; k < 25; k++) if (getExpectedColor(k, redIdx) === "O") oPool++;
                     prob = (
-                      ((2 - revO) /
+                      ((LIMITS["O"] - revO) /
                         (oPool - Object.keys(revealedColors).filter((idx) => getExpectedColor(idx, redIdx) === "O").length)) *
                       100
                     ).toFixed(0);
@@ -254,7 +276,7 @@
                     let yPool = 0;
                     for (let k = 0; k < 25; k++) if (getExpectedColor(k, redIdx) === "Y") yPool++;
                     prob = (
-                      ((3 - revY) /
+                      ((LIMITS["Y"] - revY) /
                         (yPool - Object.keys(revealedColors).filter((idx) => getExpectedColor(idx, redIdx) === "Y").length)) *
                       100
                     ).toFixed(0);

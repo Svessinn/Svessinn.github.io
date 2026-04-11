@@ -42,6 +42,7 @@
       <h1>Trace Simulator</h1>
       <div>Blue Clicks Used: <span id="clicks" style="color: #ff4757; font-weight: bold">0</span> / 4</div>
       <div id="status" style="margin-top: 5px; font-size: 12px; color: #aaa">Click spheres. Only Blue costs a click!</div>
+      <div id="ship-counter" style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center"></div>
     </div>
 
     <div class="grid" id="grid"></div>
@@ -50,20 +51,30 @@
     </div>
 
     <script>
-      const COLOR_MAP = {
-        "B": { name: "BLUE", class: "blue" },
-        "T": { name: "TEAL", class: "teal" },
-        "G": { name: "GREEN", class: "green" },
-        "Y": { name: "YELLOW", class: "yellow" },
-        "O": { name: "ORANGE", class: "orange" },
-        "R": { name: "RED", class: "red" },
-        "W": { name: "RAINBOW", class: "rainbow" },
+      // Percentages stored as variables for easy updating
+      const SHIP_PROBABILITIES = {
+        "R": 0.16, // Red
+        "W": 0.18, // Rainbow
+        "L": 0.82, // Light
+        "D": 0.39, // Dark
+      };
+
+      const SHIP_CONFIG = {
+        "T": { name: "TEAL", length: 4, always: true },
+        "G": { name: "GREEN", length: 3, always: true },
+        "Y": { name: "YELLOW", length: 3, always: true },
+        "O": { name: "ORANGE", length: 2, always: true },
+        "R": { name: "RED", length: 2, always: false },
+        "W": { name: "RAINBOW", length: 2, always: false },
+        "L": { name: "LIGHT", length: 2, always: false },
+        "D": { name: "DARK", length: 2, always: false },
       };
 
       let board = Array(25).fill("B");
       let revealed = Array(25).fill(false);
       let blueClicks = 0;
       let gameOver = false;
+      let currentShips = []; // To keep track of ships placed in current game
 
       function resetGame() {
         board = Array(25).fill("B");
@@ -73,27 +84,40 @@
         document.getElementById("status").innerText = "Click spheres. Only Blue costs a click!";
         document.getElementById("status").style.color = "#aaa";
 
-        const rarerOptions = ["O", "R", "W"];
-        const selectedRer = rarerOptions[Math.floor(Math.random() * rarerOptions.length)];
+        const pool = [];
+        Object.keys(SHIP_CONFIG).forEach((key) => {
+          if (SHIP_CONFIG[key].always) {
+            pool.push({ color: key, length: SHIP_CONFIG[key].length });
+          }
+        });
 
-        const pool = [
-          { color: "T", count: 4 },
-          { color: "G", count: 4 },
-          { color: "Y", count: 3 },
-          { color: selectedRer, count: 2 },
-        ];
+        let optionalShips = [];
+        Object.keys(SHIP_PROBABILITIES).forEach((key) => {
+          if (Math.random() < SHIP_PROBABILITIES[key]) {
+            optionalShips.push({ color: key, length: SHIP_CONFIG[key].length });
+          }
+        });
 
-        pool.forEach((item) => {
+        if (optionalShips.length === 0) {
+          optionalShips.push({ color: "L", length: 2 });
+        } else if (optionalShips.length > 4) {
+          optionalShips = optionalShips.slice(0, 4);
+        }
+
+        currentShips = [...pool, ...optionalShips];
+
+        // Place ships
+        currentShips.forEach((item) => {
           let placed = false;
           let attempts = 0;
-          while (!placed && attempts < 100) {
+          while (!placed && attempts < 200) {
             attempts++;
             const isRow = Math.random() > 0.5;
             const lineIdx = Math.floor(Math.random() * 5);
-            const startPos = Math.floor(Math.random() * (6 - item.count));
+            const startPos = Math.floor(Math.random() * (6 - item.length));
 
             let indices = [];
-            for (let i = 0; i < item.count; i++) {
+            for (let i = 0; i < item.length; i++) {
               indices.push(isRow ? lineIdx * 5 + (startPos + i) : (startPos + i) * 5 + lineIdx);
             }
 
@@ -103,12 +127,12 @@
             }
           }
         });
+
         render();
       }
 
       function clickCell(i) {
         if (revealed[i] || gameOver) return;
-
         revealed[i] = true;
 
         if (board[i] === "B") {
@@ -119,7 +143,6 @@
             document.getElementById("status").style.color = "#ff4757";
           }
         }
-
         render();
       }
 
@@ -128,36 +151,79 @@
         gridEl.innerHTML = "";
         document.getElementById("clicks").innerText = blueClicks;
 
+        // 1. Render Grid
         board.forEach((color, i) => {
           const cell = document.createElement("div");
           cell.className = "cell";
-
-          // If the cell was actually clicked by the user
-          if (revealed[i]) {
+          if (revealed[i] || gameOver) {
             cell.classList.add(getColorClass(color));
+            if (gameOver && !revealed[i]) cell.classList.add("unrevealed-cell");
             cell.innerText = color;
-          }
-          // If the game is over, show the cells that were NOT clicked
-          else if (gameOver) {
-            cell.classList.add(getColorClass(color));
-            cell.classList.add("unrevealed-cell"); // Add a faded style
-            cell.innerText = color;
-          }
-          // Otherwise, it's a normal clickable hidden cell
-          else {
+          } else {
             cell.onclick = () => clickCell(i);
           }
-
           gridEl.appendChild(cell);
         });
+
+        // 2. Render/Update Counter
+        const counterEl = document.getElementById("ship-counter");
+        if (counterEl) {
+          counterEl.innerHTML = "";
+
+          // Calculate how many cells of each color are revealed
+          const revealedCounts = {};
+          board.forEach((color, i) => {
+            if (revealed[i]) {
+              revealedCounts[color] = (revealedCounts[color] || 0) + 1;
+            }
+          });
+
+          currentShips.forEach((item) => {
+            const isFound = revealedCounts[item.color] >= item.length;
+            const badge = document.createElement("span");
+            badge.innerText = SHIP_CONFIG[item.color].name;
+
+            // Dynamic styles based on discovery status
+            badge.style.cssText = `
+          background: ${isFound ? "#2ed573" : "var(--" + getColorClass(item.color) + ", #555)"}; 
+          color: #fff; 
+          padding: 2px 8px; 
+          border-radius: 4px; 
+          font-size: 10px; 
+          font-weight: bold;
+          text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+          margin: 2px;
+          display: inline-block;
+          border: ${isFound ? "1px solid #fff" : "1px solid transparent"};
+          opacity: ${isFound ? "1" : "0.8"};
+          text-decoration: ${isFound ? "line-through" : "none"};
+        `;
+
+            if (isFound) {
+              badge.innerText += " ✓";
+            }
+
+            counterEl.appendChild(badge);
+          });
+        }
       }
 
       function getColorClass(c) {
-        const map = { "B": "blue", "T": "teal", "G": "green", "Y": "yellow", "O": "orange", "R": "red", "W": "rainbow" };
+        const map = {
+          "B": "blue",
+          "T": "teal",
+          "G": "green",
+          "Y": "yellow",
+          "O": "orange",
+          "R": "red",
+          "W": "rainbow",
+          "L": "light",
+          "D": "dark",
+        };
         return map[c] || "blue";
       }
 
-      resetGame();
+      window.addEventListener("DOMContentLoaded", resetGame);
     </script>
   </body>
 </html>
