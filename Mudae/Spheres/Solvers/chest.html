@@ -36,8 +36,251 @@
         <a href="../Simulators/trace.html" class="nav-btn">TRACE SIMULATOR</a>
       </div>
     </div>
+
     <div class="stats">
-      <h3>Work in Progress</h3>
+      <h3 class="wip">Work in Progress</h3>
+      <h1>Chest Solver</h1>
+      <div class="stat-row">
+        <div class="stat-item">
+          <span class="stat-val" id="possible-reds">24</span>
+          <span class="stat-lbl">POSSIBLE RED LOCATIONS</span>
+        </div>
+      </div>
+      <div id="status" style="margin-top: 10px; font-size: 12px; color: #aaa">Click any cell to input or change a color.</div>
     </div>
+
+    <div class="grid" id="grid"></div>
+
+    <div class="picker-container" id="picker-ui" style="display: none">
+      <div id="picker-title" style="font-size: 12px; font-weight: bold; color: #00d4ff; margin-bottom: 8px">
+        SELECT COLOR FOUND
+      </div>
+      <div class="picker">
+        <button class="pick-btn blue" onclick="setCellColor('B')">B</button>
+        <button class="pick-btn teal" onclick="setCellColor('T')">T</button>
+        <button class="pick-btn green" onclick="setCellColor('G')">G</button>
+        <button class="pick-btn yellow" onclick="setCellColor('Y')">Y</button>
+        <button class="pick-btn orange" onclick="setCellColor('O')">O</button>
+        <button class="pick-btn red" onclick="setCellColor('R')">R</button>
+        <button class="pick-btn reset-button" style="margin-top: 5px; height: 30px; font-size: 10px" onclick="setCellColor(null)">
+          CLEAR
+        </button>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button class="reset-button" onclick="resetSolver()">RESET ALL</button>
+    </div>
+
+    <script>
+      let selectedIdx = null;
+      let revealedColors = {};
+      let possibleRedIndices = [];
+      const ALL_POSSIBLE_REDS = Array.from({ length: 25 }, (_, i) => i).filter((i) => i !== 12);
+
+      function resetSolver() {
+        selectedIdx = null;
+        revealedColors = {};
+        possibleRedIndices = [...ALL_POSSIBLE_REDS];
+        document.getElementById("picker-ui").style.display = "none";
+        render();
+      }
+
+      function selectCell(idx) {
+        // If cell is not revealed and we already have 5 clicks, do nothing (silent disable)
+        const clickCount = Object.keys(revealedColors).length;
+        if (!revealedColors[idx] && clickCount >= 5) return;
+
+        selectedIdx = idx;
+        document.getElementById("picker-ui").style.display = "block";
+        render();
+      }
+
+      function setCellColor(color) {
+        if (selectedIdx === null) return;
+        if (color === null) delete revealedColors[selectedIdx];
+        else revealedColors[selectedIdx] = color;
+
+        recalculatePossibilities();
+        selectedIdx = null;
+        document.getElementById("picker-ui").style.display = "none";
+        render();
+      }
+
+      function recalculatePossibilities() {
+        let filtered = [...ALL_POSSIBLE_REDS];
+        Object.keys(revealedColors).forEach((idx) => {
+          const targetIdx = parseInt(idx);
+          const foundColor = revealedColors[idx];
+          filtered = filtered.filter((redIdx) => {
+            if (foundColor === "R") return redIdx === targetIdx;
+            return checkPossibility(targetIdx, foundColor, redIdx);
+          });
+        });
+        possibleRedIndices = filtered;
+      }
+
+      function checkPossibility(targetIdx, foundColor, redIdx) {
+        const rr = Math.floor(redIdx / 5),
+          rc = redIdx % 5;
+        const tr = Math.floor(targetIdx / 5),
+          tc = targetIdx % 5;
+        const dr = Math.abs(rr - tr),
+          dc = Math.abs(rc - tc);
+
+        if (foundColor === "O") return (dr === 1 && dc === 0) || (dr === 0 && dc === 1);
+        if (foundColor === "Y") return dr === dc && dr > 0;
+        if (foundColor === "G") return (dr === 0 || dc === 0) && (dr > 1 || dc > 1);
+        if (foundColor === "T") return dr === dc || dr === 0 || dc === 0;
+        if (foundColor === "B") return !(dr === 0 || dc === 0 || dr === dc);
+        return true;
+      }
+
+      function calculateBestMove() {
+        const clickCount = Object.keys(revealedColors).length;
+        if (clickCount >= 5) return null;
+
+        if (possibleRedIndices.length === 1) {
+          const redIdx = possibleRedIndices[0];
+          const orangeCells = [];
+          const yellowCells = [];
+          const revealedO = Object.values(revealedColors).filter((c) => c === "O").length;
+          const revealedY = Object.values(revealedColors).filter((c) => c === "Y").length;
+
+          for (let i = 0; i < 25; i++) {
+            if (revealedColors[i] || i === redIdx) continue;
+            const expected = getExpectedColor(i, redIdx);
+            if (expected === "O") orangeCells.push(i);
+            if (expected === "Y") yellowCells.push(i);
+          }
+
+          if (revealedO < 2 && orangeCells.length > 0) {
+            return { idxs: orangeCells, target: "ORANGE", colorCode: "#ffa502" };
+          } else if (revealedY < 3 && yellowCells.length > 0) {
+            return { idxs: yellowCells, target: "YELLOW", colorCode: "#f1c40f" };
+          }
+          return null;
+        }
+
+        let bestScore = -1,
+          bestIdx = -1;
+        for (let i = 0; i < 25; i++) {
+          if (revealedColors[i]) continue;
+          let outcomes = { "B": 0, "T": 0, "G": 0, "Y": 0, "O": 0, "R": 0 };
+          possibleRedIndices.forEach((redIdx) => outcomes[getExpectedColor(i, redIdx)]++);
+          let score = 0;
+          Object.values(outcomes).forEach((count) => {
+            if (count > 0) score += count * count;
+          });
+          if (bestIdx === -1 || score < bestScore) {
+            bestScore = score;
+            bestIdx = i;
+          }
+        }
+        return { idxs: [bestIdx], target: "RED", colorCode: "#ff4757" };
+      }
+
+      function getExpectedColor(targetIdx, redIdx) {
+        if (targetIdx === redIdx) return "R";
+        const rr = Math.floor(redIdx / 5),
+          rc = redIdx % 5;
+        const tr = Math.floor(targetIdx / 5),
+          tc = targetIdx % 5;
+        const dr = Math.abs(rr - tr),
+          dc = Math.abs(rc - tc);
+        if ((dr === 1 && dc === 0) || (dr === 0 && dc === 1)) return "O";
+        if (dr === dc && dr > 0) return "Y";
+        if (dr === 0 || dc === 0) return "G";
+        if (dr === dc) return "T";
+        return "B";
+      }
+
+      function render() {
+        const gridEl = document.getElementById("grid");
+        gridEl.innerHTML = "";
+        const clickCount = Object.keys(revealedColors).length;
+        document.getElementById("possible-reds").innerText = possibleRedIndices.length;
+
+        const moveData = calculateBestMove();
+        const bestMoveIdxs = moveData ? moveData.idxs : [];
+        const targetName = moveData ? moveData.target : "";
+        const targetColor = moveData ? moveData.colorCode : "#aaa";
+
+        for (let i = 0; i < 25; i++) {
+          const cell = document.createElement("div");
+          cell.className = "cell";
+          if (i === selectedIdx) cell.classList.add("selected");
+
+          if (revealedColors[i]) {
+            const color = revealedColors[i];
+            cell.classList.add(getColorClass(color));
+            cell.innerHTML = `<span class="big-letter">${color}</span>`;
+            cell.onclick = () => selectCell(i);
+          } else {
+            // Apply grayscale/disabled look if we are at 5 clicks and cell isn't revealed
+            if (clickCount >= 5) {
+              cell.style.opacity = "0.4";
+              cell.style.cursor = "not-allowed";
+            }
+
+            if (bestMoveIdxs.includes(i)) {
+              cell.classList.add("best-move");
+              const label = possibleRedIndices.length === 1 ? `FIND ${targetName}` : "BEST MOVE";
+              cell.innerHTML = `<div class="best-label">${label}</div>`;
+            }
+
+            if (possibleRedIndices.length > 0) {
+              let prob = 0;
+              if (possibleRedIndices.length > 1) {
+                if (possibleRedIndices.includes(i)) prob = ((1 / possibleRedIndices.length) * 100).toFixed(0);
+              } else {
+                const redIdx = possibleRedIndices[0];
+                if (i === redIdx) {
+                  cell.classList.add("ghost-tile");
+                  cell.innerHTML = `<span class="locked-text" style="color:#ff4757; font-weight:bold; font-size:10px; text-align:center;">RED HERE</span>`;
+                } else {
+                  const expected = getExpectedColor(i, redIdx);
+                  const revO = Object.values(revealedColors).filter((c) => c === "O").length;
+                  const revY = Object.values(revealedColors).filter((c) => c === "Y").length;
+                  if (expected === "O" && targetName === "ORANGE") {
+                    let oPool = 0;
+                    for (let k = 0; k < 25; k++) if (getExpectedColor(k, redIdx) === "O") oPool++;
+                    prob = (
+                      ((2 - revO) /
+                        (oPool - Object.keys(revealedColors).filter((idx) => getExpectedColor(idx, redIdx) === "O").length)) *
+                      100
+                    ).toFixed(0);
+                  } else if (expected === "Y" && targetName === "YELLOW") {
+                    let yPool = 0;
+                    for (let k = 0; k < 25; k++) if (getExpectedColor(k, redIdx) === "Y") yPool++;
+                    prob = (
+                      ((3 - revY) /
+                        (yPool - Object.keys(revealedColors).filter((idx) => getExpectedColor(idx, redIdx) === "Y").length)) *
+                      100
+                    ).toFixed(0);
+                  }
+                }
+              }
+              if (prob > 0) {
+                cell.classList.add("ghost-tile");
+                cell.innerHTML += `<span class="prob-ghost" style="color: ${targetColor}">${prob}%</span>`;
+              }
+            }
+            cell.onclick = () => selectCell(i);
+          }
+          gridEl.appendChild(cell);
+        }
+      }
+
+      function getColorClass(c) {
+        const map = { "B": "blue", "T": "teal", "G": "green", "Y": "yellow", "O": "orange", "R": "red" };
+        return map[c] || "blue";
+      }
+
+      window.addEventListener("DOMContentLoaded", () => {
+        if (typeof switchTab === "function") switchTab("chest");
+        resetSolver();
+      });
+    </script>
   </body>
 </html>
