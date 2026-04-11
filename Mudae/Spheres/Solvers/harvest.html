@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mudae $oc Simulator</title>
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+    <link rel="stylesheet" href="../stylesheets/traceSimulator.css" />
+    <script src="../scripts/nav.js" defer></script>
+  </head>
+  <body>
+    <div id="main-nav" class="nav-container view-harvest">
+      <div class="nav-row">
+        <div id="tab-chest" class="nav-btn btn-chest" onclick="switchTab('chest')">$OC CHEST</div>
+        <div id="tab-harvest" class="nav-btn btn-harvest" onclick="switchTab('harvest')">$OH HARVEST</div>
+        <div id="tab-quest" class="nav-btn btn-quest" onclick="switchTab('quest')">$OQ QUEST</div>
+        <div id="tab-trace" class="nav-btn btn-trace" onclick="switchTab('trace')">$OT TRACE</div>
+      </div>
+
+      <div class="nav-row mode-section chest-links">
+        <a href="chest.html" class="nav-btn">CHEST SOLVER</a>
+        <a href="../Simulators/chest.html" class="nav-btn">CHEST SIMULATOR</a>
+      </div>
+
+      <div class="nav-row mode-section harvest-links">
+        <a href="#" class="nav-btn current-page">HARVEST SOLVER</a>
+        <a href="../Simulators/harvest.html" class="nav-btn">HARVEST SIMULATOR</a>
+      </div>
+
+      <div class="nav-row mode-section quest-links">
+        <a href="quest.html" class="nav-btn">QUEST SOLVER</a>
+        <a href="../Simulators/quest.html" class="nav-btn">QUEST SIMULATOR</a>
+      </div>
+
+      <div class="nav-row mode-section trace-links">
+        <a href="trace.html" class="nav-btn">TRACE SOLVER</a>
+        <a href="../Simulators/trace.html" class="nav-btn">TRACE SIMULATOR</a>
+      </div>
+    </div>
+  </body>
+</html>

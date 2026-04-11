@@ -5,16 +5,24 @@
     <title>Mudae $oq Strategic Solver - Full Color Sync</title>
     <link rel="stylesheet" href="../stylesheets/style.css" />
     <script src="../scripts/nav.js" defer></script>
-    <script>
-      // Ensure the navbar highlights Quest on load
-      window.addEventListener("DOMContentLoaded", () => switchTab("quest"));
-    </script>
   </head>
   <body>
     <div id="main-nav" class="nav-container view-quest">
       <div class="nav-row">
-        <div id="tab-quest" class="nav-btn btn-quest active" onclick="switchTab('quest')">$OQ QUEST</div>
+        <div id="tab-chest" class="nav-btn btn-chest" onclick="switchTab('chest')">$OC CHEST</div>
+        <div id="tab-harvest" class="nav-btn btn-harvest" onclick="switchTab('harvest')">$OH HARVEST</div>
+        <div id="tab-quest" class="nav-btn btn-quest" onclick="switchTab('quest')">$OQ QUEST</div>
         <div id="tab-trace" class="nav-btn btn-trace" onclick="switchTab('trace')">$OT TRACE</div>
+      </div>
+
+      <div class="nav-row mode-section chest-links">
+        <a href="../Solvers/chest.html" class="nav-btn">CHEST SOLVER</a>
+        <a href="../Simulators/chest.html" class="nav-btn">CHEST SIMULATOR</a>
+      </div>
+
+      <div class="nav-row mode-section harvest-links">
+        <a href="../Solvers/harvest.html" class="nav-btn">HARVEST SOLVER</a>
+        <a href="../Simulators/harvest.html" class="nav-btn">HARVEST SIMULATOR</a>
       </div>
 
       <div class="nav-row mode-section quest-links">

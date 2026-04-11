@@ -1,0 +1,9 @@
+.unrevealed-chest {
+  opacity: 0.5;
+  filter: saturate(0.8);
+  border: 2px dotted rgba(255, 255, 255, 0.3) !important;
+}
+
+.stat-val.red-text {
+  color: #ff4757;
+}

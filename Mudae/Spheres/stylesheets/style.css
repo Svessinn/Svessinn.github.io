@@ -263,6 +263,16 @@ body {
 }
 
 /* Navigation Active/Current States */
+.btn-chest.active {
+  background: #3498db !important;
+  color: white !important;
+}
+
+.btn-harvest.active {
+  background: #2ecc71 !important;
+  color: white !important;
+}
+
 .btn-quest.active {
   background: #9b59b6 !important;
   color: white !important;
@@ -285,6 +295,13 @@ body {
   display: none;
   width: 100%;
   gap: 10px;
+}
+.view-chest .chest-links {
+  display: flex;
+}
+
+.view-harvest .harvest-links {
+  display: flex;
 }
 
 .nav-container.view-quest .quest-links {

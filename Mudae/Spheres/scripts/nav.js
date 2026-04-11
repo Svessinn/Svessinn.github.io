@@ -4,18 +4,38 @@
  * @param {string} mode - 'quest' or 'trace'
  */
 function switchTab(mode) {
-  // If an event exists (like a click), prevent default behavior
-  if (window.event) window.event.preventDefault();
+  // Use a more modern check for the event
+  if (typeof event !== "undefined") event.preventDefault();
 
   const nav = document.getElementById("main-nav");
-  const questTab = document.getElementById("tab-quest");
-  const traceTab = document.getElementById("tab-trace");
-
   if (!nav) return;
 
-  nav.classList.remove("view-quest", "view-trace");
-  nav.classList.add("view-" + mode);
+  // Define all possible modes to clean up classes efficiently
+  const modes = ["chest", "harvest", "quest", "trace"];
 
-  if (questTab) questTab.classList.toggle("active", mode === "quest");
-  if (traceTab) traceTab.classList.toggle("active", mode === "trace");
+  // Remove all potential view classes and the active state from all tabs
+  modes.forEach((m) => {
+    nav.classList.remove("view-" + m);
+    const tab = document.getElementById("tab-" + m);
+    if (tab) tab.classList.remove("active");
+  });
+
+  // Add the new active classes
+  nav.classList.add("view-" + mode);
+  const activeTab = document.getElementById("tab-" + mode);
+  if (activeTab) activeTab.classList.add("active");
 }
+/**
+ * AUTOMATION: Runs every time a page loads
+ */
+document.addEventListener("DOMContentLoaded", () => {
+  // Extract "chest" from "path/to/chest.html"
+  const path = window.location.pathname;
+  const page = path.split("/").pop().split(".")[0];
+
+  const validModes = ["chest", "harvest", "quest", "trace"];
+
+  if (validModes.includes(page)) {
+    switchTab(page);
+  }
+});

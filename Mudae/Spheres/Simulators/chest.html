@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mudae $oc Simulator</title>
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+    <link rel="stylesheet" href="../stylesheets/traceSimulator.css" />
+    <script src="../scripts/nav.js" defer></script>
+  </head>
+  <body>
+    <div id="main-nav" class="nav-container view-chest">
+      <div class="nav-row">
+        <div id="tab-chest" class="nav-btn btn-chest active" onclick="switchTab('chest')">$OC CHEST</div>
+        <div id="tab-harvest" class="nav-btn btn-harvest" onclick="switchTab('harvest')">$OH HARVEST</div>
+        <div id="tab-quest" class="nav-btn btn-quest" onclick="switchTab('quest')">$OQ QUEST</div>
+        <div id="tab-trace" class="nav-btn btn-trace" onclick="switchTab('trace')">$OT TRACE</div>
+      </div>
+
+      <div class="nav-row mode-section chest-links">
+        <a href="../Solvers/chest.html" class="nav-btn">CHEST SOLVER</a>
+        <a href="#" class="nav-btn current-page">CHEST SIMULATOR</a>
+      </div>
+
+      <div class="nav-row mode-section harvest-links">
+        <a href="../Solvers/harvest.html" class="nav-btn">HARVEST SOLVER</a>
+        <a href="harvest.html" class="nav-btn">HARVEST SIMULATOR</a>
+      </div>
+
+      <div class="nav-row mode-section quest-links">
+        <a href="../Solvers/quest.html" class="nav-btn">QUEST SOLVER</a>
+        <a href="quest.html" class="nav-btn">QUEST SIMULATOR</a>
+      </div>
+
+      <div class="nav-row mode-section trace-links">
+        <a href="../Solvers/trace.html" class="nav-btn">TRACE SOLVER</a>
+        <a href="trace.html" class="nav-btn">TRACE SIMULATOR</a>
+      </div>
+    </div>
+
+    <div class="stats">
+      <h1>$oc Chest Simulator</h1>
+      <div class="stat-row">
+        <div class="stat-item">
+          <span class="stat-val" id="clicks" style="color: #ff4757">0</span>
+          <span class="stat-lbl">CLICKS USED / 5</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-val" id="red-status" style="color: #aaa">HIDDEN</span>
+          <span class="stat-lbl">RED SPHERE</span>
+        </div>
+      </div>
+      <div id="status" style="margin-top: 10px; font-size: 12px; color: #aaa">
+        Rules: 2 Orange, 3 Yellow, 4 Green. Teal fills remaining lines/diagonals.
+      </div>
+    </div>
+
+    <div class="grid" id="grid"></div>
+
+    <div class="controls">
+      <button class="reset-button" onclick="resetGame()">RESET CHEST</button>
+    </div>
+
+    <script>
+      let board = Array(25).fill("B");
+      let revealed = Array(25).fill(false);
+      let clicks = 0;
+      let gameOver = false;
+      let redFound = false;
+
+      function resetGame() {
+        board = Array(25).fill("B");
+        revealed = Array(25).fill(false);
+        clicks = 0;
+        gameOver = false;
+        redFound = false;
+
+        document.getElementById("status").innerText = "Find the Red sphere! 5 clicks total.";
+        document.getElementById("red-status").innerText = "HIDDEN";
+
+        // 1. Place Red (Never at center index 12)
+        let possibleRed = Array.from({ length: 25 }, (_, i) => i).filter((i) => i !== 12);
+        let redIdx = possibleRed[Math.floor(Math.random() * possibleRed.length)];
+        board[redIdx] = "R";
+
+        const rr = Math.floor(redIdx / 5);
+        const rc = redIdx % 5;
+
+        // 2. Define exact pools
+        let candidates = { "O": [], "Y": [], "G": [] };
+        let allLineTiles = []; // To track what should be Teal later
+
+        for (let i = 0; i < 25; i++) {
+          if (i === redIdx) continue;
+          const r = Math.floor(i / 5);
+          const c = i % 5;
+          const dr = Math.abs(r - rr);
+          const dc = Math.abs(c - rc);
+
+          const isAxial = r === rr || c === rc;
+          const isDiagonal = dr === dc;
+
+          if (isAxial || isDiagonal) {
+            allLineTiles.push(i);
+
+            // Assign to potential pools
+            if ((dr === 1 && dc === 0) || (dr === 0 && dc === 1)) {
+              candidates["O"].push(i); // Adjacent
+            } else if (isDiagonal) {
+              candidates["Y"].push(i); // Any diagonal (near or far)
+            } else if (isAxial) {
+              candidates["G"].push(i); // Any axial (not adjacent)
+            }
+          } else {
+            board[i] = "B"; // Outside the Red sphere's reach
+          }
+        }
+
+        // 3. Exact Count Enforcement
+        // We pick exactly 2 Orange, 3 Yellow, 4 Green
+        const finalSelection = new Set();
+
+        const placeExact = (color, count) => {
+          let list = candidates[color].sort(() => Math.random() - 0.5);
+          for (let j = 0; j < count && j < list.length; j++) {
+            board[list[j]] = color;
+            finalSelection.add(list[j]);
+          }
+        };
+
+        placeExact("O", 2);
+        placeExact("Y", 3);
+        placeExact("G", 4);
+
+        // 4. Teal Filler
+        // Any tile that is axial/diagonal but wasn't picked for O, Y, or G becomes Teal
+        allLineTiles.forEach((idx) => {
+          if (!finalSelection.has(idx)) {
+            board[idx] = "T";
+          }
+        });
+
+        render();
+      }
+
+      function clickCell(i) {
+        if (revealed[i] || gameOver) return;
+
+        revealed[i] = true;
+        clicks++;
+
+        if (board[i] === "R") {
+          redFound = true;
+          document.getElementById("red-status").innerText = "FOUND";
+          document.getElementById("red-status").style.color = "#2ecc71";
+          document.getElementById("status").innerText = "RED FOUND! Harvest remaining clicks.";
+        }
+
+        if (clicks >= 5) {
+          gameOver = true;
+          document.getElementById("status").innerText = redFound ? "GAME OVER: Success!" : "GAME OVER: Failed.";
+          document.getElementById("status").style.color = redFound ? "#2ecc71" : "#ff4757";
+        }
+        render();
+      }
+
+      function render() {
+        const gridEl = document.getElementById("grid");
+        gridEl.innerHTML = "";
+        document.getElementById("clicks").innerText = clicks;
+
+        board.forEach((color, i) => {
+          const cell = document.createElement("div");
+          cell.className = "cell";
+
+          if (revealed[i]) {
+            cell.classList.add(getColorClass(color));
+            cell.innerHTML = `<span class="big-letter">${color}</span>`;
+          } else if (gameOver) {
+            cell.classList.add(getColorClass(color), "unrevealed-cell");
+            cell.innerHTML = `<span class="big-letter">${color}</span>`;
+          } else {
+            cell.onclick = () => clickCell(i);
+          }
+          gridEl.appendChild(cell);
+        });
+      }
+
+      function getColorClass(c) {
+        const map = { "B": "blue", "T": "teal", "G": "green", "Y": "yellow", "O": "orange", "R": "red" };
+        return map[c] || "blue";
+      }
+
+      resetGame();
+    </script>
+  </body>
+</html>
