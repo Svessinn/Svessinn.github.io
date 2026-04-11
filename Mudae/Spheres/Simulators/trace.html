@@ -41,18 +41,15 @@
     <div class="stats">
       <h3 class="wip">Work in Progress</h3>
       <h1>Trace Simulator</h1>
-      <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 10px">
-        <div>Blue Clicks: <span id="clicks" style="color: #ff4757; font-weight: bold">0</span> / 4</div>
-        <div>Total Value: <span id="total-value" style="color: #ffd700; font-weight: bold">0</span></div>
+      <div class="info-row">
+        <div>Blue Clicks: <span id="clicks">0</span> / 4</div>
+        <div>Total Value: <span id="total-value">0</span></div>
       </div>
-      <div id="status" style="font-size: 12px; color: #aaa">Click spheres. Only Blue costs a click!</div>
+      <div id="status">Click spheres. Only Blue costs a click!</div>
+      <div id="breakdown-log"></div>
+      <div id="breakdown-tray"></div>
 
-      <div
-        id="breakdown-tray"
-        style="margin-top: 10px; display: flex; justify-content: center; gap: 5px; min-height: 32px; flex-wrap: wrap"
-      ></div>
-
-      <div id="ship-counter" style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center"></div>
+      <div id="ship-counter"></div>
     </div>
 
     <div class="grid" id="grid"></div>
@@ -108,6 +105,7 @@
         const statusDiv = document.getElementById("status");
         statusDiv.innerHTML = "Click spheres. Only Blue costs a click!";
         statusDiv.style.color = "#aaa";
+        document.getElementById("breakdown-log").innerHTML = "";
         document.getElementById("breakdown-tray").innerHTML = "";
 
         const pool = [];
@@ -208,21 +206,21 @@
 
         // 4. UI and Recursion Logic
         if (results.length > 0) {
-          const statusDiv = document.getElementById("status");
+          const logContainer = document.getElementById("breakdown-log");
           const logEntry = document.createElement("div");
-          logEntry.style.cssText = "color: #ffd700; font-size: 11px; margin-top: 4px; font-weight: bold;";
+          logEntry.style.cssText = "color: #ffd700; font-size: 11px; margin-top: 4px; font-weight: bold; padding-left: 5px;";
 
           const names = results.map((r) => (r === "L" ? "Light" : gameData.colors[r]?.name || r));
           logEntry.innerText = `${SHIP_CONFIG[color].name} cell yielded: ${names.join(", ")}`;
-          statusDiv.appendChild(logEntry);
+
+          // Using prepend keeps the latest discovery at the top
+          logContainer.prepend(logEntry);
 
           for (const res of results) {
             totalValue += getVal(res);
             addBreakdownUI(res);
 
-            // RECURSION: If a Dark cell yields a Light sphere ("L"), break it down too
             if (res === "L") {
-              // Optional: wait 200ms so the user sees the chain reaction happen
               await new Promise((resolve) => setTimeout(resolve, 200));
               await handleBreakdown("L");
             }
