@@ -215,18 +215,13 @@
         const identifiedRaresCount = activeList.length - 4;
         const raresRemainingSlots = currentColorCount - 5 - identifiedRaresCount;
 
-        // Render all buttons, but disable them if no cell is selected or rare limit hit
         Object.keys(ALL_COLORS).forEach((k) => {
           const isRare = !ALL_COLORS[k].always;
           const alreadyFound = activeList.includes(k);
-
           const btn = document.createElement("button");
           btn.className = `pick-btn ${ALL_COLORS[k].class}`;
           btn.innerText = k;
 
-          // DISABLE LOGIC:
-          // 1. If no cell is selected
-          // 2. If it's a rare color, hasn't been found yet, but we are at the rare color limit
           const isAtRareLimit = isRare && !alreadyFound && raresRemainingSlots <= 0;
 
           if (selectedIdx === null || isAtRareLimit) {
@@ -234,7 +229,6 @@
           } else {
             btn.onclick = () => setTile(k);
           }
-
           container.appendChild(btn);
         });
       }
@@ -273,7 +267,9 @@
             return Math.max(0, 1 - totalShipProb);
           });
 
-        const availableIndices = Array.from({ length: 25 }, (_, i) => i).filter((i) => !revealed[i]);
+        // Calculate max blue probability ONLY for cells that aren't certain ships
+        const availableIndices = Array.from({ length: 25 }, (_, i) => i).filter((i) => !revealed[i] && !cachedCertain[i]);
+
         const maxBlueProb = availableIndices.length > 0 ? Math.max(...availableIndices.map((i) => cellProbs[i])) : 0;
 
         for (let i = 0; i < 25; i++) {
@@ -286,6 +282,22 @@
             cell.classList.add("solved", ALL_COLORS[color].class);
             cell.innerHTML = `<span class="big-letter">${color}</span>`;
             cell.onclick = () => selectTile(i);
+          } else if (isHuntingBlue) {
+            cell.onclick = () => selectTile(i);
+            const blueProb = cellProbs[i];
+
+            // If it's a certain ship, just show the letter. No "SAFE" label, no special class.
+            if (cachedCertain[i]) {
+              const color = cachedCertain[i];
+              cell.innerHTML = `<span class="prob" style="color:var(--${ALL_COLORS[color].class}); font-size: 14px;">${color}</span>`;
+            } else {
+              // Highlight only if it's the safest blue click and NOT a certain ship
+              if (blueProb === maxBlueProb && maxBlueProb > 0) {
+                cell.classList.add("best-move");
+                cell.innerHTML = `<div class="best-label">SAFE</div>`;
+              }
+              cell.innerHTML += `<span class="prob" style="color:#3498db">${Math.round(blueProb * 100)}% BLUE</span>`;
+            }
           } else if (cachedCertain[i]) {
             const color = cachedCertain[i];
             cell.classList.add("best-move");
@@ -293,31 +305,21 @@
             cell.innerHTML = `<div class="best-label">100%</div><span class="prob" style="color:var(--${ALL_COLORS[color].class})">${color}</span>`;
           } else {
             cell.onclick = () => selectTile(i);
-            const blueProb = cellProbs[i];
+            let possibleColors = Object.keys(heatmap[i]);
+            let bestColor = null;
+            let maxShipWeight = 0;
 
-            if (isHuntingBlue) {
-              if (blueProb === maxBlueProb && maxBlueProb > 0) {
-                cell.classList.add("best-move");
-                cell.innerHTML = `<div class="best-label">SAFE</div>`;
+            possibleColors.forEach((c) => {
+              if (heatmap[i][c] > maxShipWeight) {
+                maxShipWeight = heatmap[i][c];
+                bestColor = c;
               }
-              cell.innerHTML += `<span class="prob" style="color:#3498db">${Math.round(blueProb * 100)}% BLUE</span>`;
+            });
+
+            if (bestColor && maxShipWeight > 0.05) {
+              cell.innerHTML = `<span class="prob" style="color:var(--${ALL_COLORS[bestColor].class})">${Math.round(maxShipWeight * 100)}% ${bestColor}</span>`;
             } else {
-              let possibleColors = Object.keys(heatmap[i]);
-              let bestColor = null;
-              let maxShipWeight = 0;
-
-              possibleColors.forEach((c) => {
-                if (heatmap[i][c] > maxShipWeight) {
-                  maxShipWeight = heatmap[i][c];
-                  bestColor = c;
-                }
-              });
-
-              if (bestColor && maxShipWeight > 0.05) {
-                cell.innerHTML = `<span class="prob" style="color:var(--${ALL_COLORS[bestColor].class})">${Math.round(maxShipWeight * 100)}% ${bestColor}</span>`;
-              } else {
-                cell.innerHTML = `<span class="prob" style="color: #555">?</span>`;
-              }
+              cell.innerHTML = `<span class="prob" style="color: #555">?</span>`;
             }
           }
           gridEl.appendChild(cell);
