@@ -19,3 +19,55 @@
   font-weight: bold;
   opacity: 0.6;
 }
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.color-toggle.current-page {
+  background-color: #2ecc71 !important;
+  color: white !important;
+  border-color: #27ae60 !important;
+}
+
+.best-label {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-size: 8px;
+  background: gold;
+  color: black;
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.cell.selected {
+  outline: 3px solid #3498db;
+  outline-offset: -3px;
+  background: rgba(52, 152, 219, 0.2);
+}
+
+.pick-btn:disabled {
+  opacity: 0.1 !important;
+  filter: grayscale(1);
+  cursor: not-allowed;
+}
+
+.prob {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+}
+
+[style*="--dark"] {
+  color: #b0b0b0 !important;
+  text-shadow: 0 0 3px #000;
+}
+
+.solved.dark .big-letter {
+  color: #fff;
+}

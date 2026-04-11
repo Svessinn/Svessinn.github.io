@@ -30,35 +30,37 @@
         <a href="quest.html" class="nav-btn">QUEST SOLVER</a>
         <a href="../Simulators/quest.html" class="nav-btn">QUEST SIMULATOR</a>
       </div>
+
       <div class="nav-row mode-section trace-links">
         <a href="#" class="nav-btn current-page">TRACE SOLVER</a>
         <a href="../Simulators/trace.html" class="nav-btn">TRACE SIMULATOR</a>
       </div>
     </div>
-
     <div class="stats">
-      <h3 class="wip">Work in Progress</h3>
       <h1>Trace Solver</h1>
-      <div id="status">Ships: Teal(4), Green(4), Yellow(3), Rare(2)</div>
+      <div style="margin-bottom: 15px">
+        <div style="font-size: 11px; color: #888; margin-bottom: 8px">TOTAL COLORS (INCLUDING BLUE)</div>
+        <div class="nav-row" style="justify-content: center; background: transparent; border: none; padding: 0">
+          <button class="nav-btn color-toggle" onclick="updateColorCount(6, this)">6</button>
+          <button class="nav-btn color-toggle" onclick="updateColorCount(7, this)">7</button>
+          <button class="nav-btn color-toggle" onclick="updateColorCount(8, this)">8</button>
+          <button class="nav-btn color-toggle" onclick="updateColorCount(9, this)">9</button>
+        </div>
+      </div>
+      <div id="status" style="font-size: 11px; color: #aaa">PHASE: Hunting Blues</div>
       <div class="stat-row">
         <div class="stat-item">
-          <span class="stat-val" id="found-count">0/13</span>
-          <span class="stat-lbl">SPHERES FOUND</span>
+          <span class="stat-val" id="found-count">0/--</span>
+          <span class="stat-lbl">SHIP SEGMENTS</span>
         </div>
       </div>
     </div>
 
-    <div class="grid" id="grid"></div>
+    <div class="game-container">
+      <div class="grid" id="grid"></div>
 
-    <div id="picker-area" class="picker-container" style="display: none">
-      <div class="picker">
-        <button class="pick-btn blue" onclick="setTile('B')">B</button>
-        <button class="pick-btn teal" onclick="setTile('T')">T</button>
-        <button class="pick-btn green" onclick="setTile('G')">G</button>
-        <button class="pick-btn yellow" onclick="setTile('Y')">Y</button>
-        <button class="pick-btn orange" onclick="setTile('O')">O</button>
-        <button class="pick-btn red" onclick="setTile('R')">R</button>
-        <button class="pick-btn rainbow" onclick="setTile('W')">W</button>
+      <div id="picker-area" class="picker-container" style="display: none">
+        <div class="picker" id="dynamic-picker"></div>
       </div>
     </div>
 
@@ -69,18 +71,157 @@
     <script>
       let revealed = {};
       let selectedIdx = null;
+      let currentColorCount = 6;
+      let cachedCertain = {};
 
-      // Applied requested ship lengths
-      const SHIPS = {
-        "T": { class: "teal", name: "TEAL", val: 20, len: 4 },
-        "G": { class: "green", name: "GREEN", val: 35, len: 4 },
-        "Y": { class: "yellow", name: "YELLOW", val: 55, len: 3 },
-        "O": { class: "orange", name: "ORANGE", val: 90, len: 2 },
-        "R": { class: "red", name: "RED", val: 150, len: 2 },
-        "W": { class: "rainbow", name: "RAINBOW", val: 500, len: 2 },
+      const ALL_COLORS = {
+        "B": { class: "blue", name: "BLUE", len: 0, always: true },
+        "T": { class: "teal", name: "TEAL", len: 4, always: true },
+        "G": { class: "green", name: "GREEN", len: 3, always: true },
+        "Y": { class: "yellow", name: "YELLOW", len: 3, always: true },
+        "O": { class: "orange", name: "ORANGE", len: 2, always: true },
+        "R": { class: "red", name: "RED", len: 2, always: false },
+        "W": { class: "rainbow", name: "RAINBOW", len: 2, always: false },
+        "L": { class: "light", name: "LIGHT", len: 2, always: false },
+        "D": { class: "dark", name: "DARK", len: 2, always: false },
       };
 
-      const BLUE = { class: "blue", name: "BLUE", val: 10 };
+      function updateColorCount(count, btn) {
+        document.querySelectorAll(".color-toggle").forEach((b) => b.classList.remove("current-page"));
+        btn.classList.add("current-page");
+        currentColorCount = parseInt(count);
+        resetSolver();
+      }
+
+      function resetSolver() {
+        revealed = {};
+        selectedIdx = null;
+        document.getElementById("picker-area").style.display = "none";
+        render();
+      }
+
+      function getActiveShips() {
+        const identifiedRares = Object.values(revealed).filter((c) => ALL_COLORS[c] && !ALL_COLORS[c].always);
+        const uniqueRares = [...new Set(identifiedRares)];
+        return ["T", "G", "Y", "O", ...uniqueRares];
+      }
+
+      function getPossiblePlacements(len) {
+        let placements = [];
+        for (let r = 0; r < 5; r++) {
+          for (let c = 0; c <= 5 - len; c++) {
+            let ship = [];
+            for (let i = 0; i < len; i++) ship.push(r * 5 + (c + i));
+            placements.push(ship);
+          }
+        }
+        for (let c = 0; c < 5; c++) {
+          for (let r = 0; r <= 5 - len; r++) {
+            let ship = [];
+            for (let i = 0; i < len; i++) ship.push((r + i) * 5 + c);
+            placements.push(ship);
+          }
+        }
+        return placements;
+      }
+
+      function getDeductions() {
+        let virtualRevealed = { ...revealed };
+        let heatmap = Array(25)
+          .fill(null)
+          .map(() => ({}));
+        let certain = {};
+        let foundNewCertainty = true;
+        const active = getActiveShips();
+
+        while (foundNewCertainty) {
+          foundNewCertainty = false;
+          const counts = {};
+          Object.values(virtualRevealed).forEach((v) => (counts[v] = (counts[v] || 0) + 1));
+
+          active.forEach((color) => {
+            const ship = ALL_COLORS[color];
+            const foundIndices = Object.keys(virtualRevealed)
+              .filter((k) => virtualRevealed[k] === color)
+              .map(Number);
+            if (counts[color] >= ship.len) return;
+
+            let validPositions = getPossiblePlacements(ship.len).filter((pos) => {
+              if (!foundIndices.every((idx) => pos.includes(idx))) return false;
+              if (pos.some((idx) => virtualRevealed[idx] && virtualRevealed[idx] !== color)) return false;
+              return true;
+            });
+
+            if (validPositions.length > 0) {
+              validPositions[0].forEach((idx) => {
+                if (validPositions.every((p) => p.includes(idx)) && !virtualRevealed[idx]) {
+                  virtualRevealed[idx] = color;
+                  certain[idx] = color;
+                  foundNewCertainty = true;
+                }
+              });
+            }
+          });
+        }
+
+        const finalCounts = {};
+        Object.values(virtualRevealed).forEach((v) => (finalCounts[v] = (finalCounts[v] || 0) + 1));
+
+        active.forEach((color) => {
+          const ship = ALL_COLORS[color];
+          const foundIndices = Object.keys(virtualRevealed)
+            .filter((k) => virtualRevealed[k] === color)
+            .map(Number);
+          if (finalCounts[color] >= ship.len) return;
+
+          let validPositions = getPossiblePlacements(ship.len).filter((pos) => {
+            if (!foundIndices.every((idx) => pos.includes(idx))) return false;
+            if (pos.some((idx) => virtualRevealed[idx] && virtualRevealed[idx] !== color)) return false;
+            return true;
+          });
+
+          if (validPositions.length > 0) {
+            validPositions.forEach((p) => {
+              p.forEach((idx) => {
+                if (!virtualRevealed[idx]) {
+                  heatmap[idx][color] = (heatmap[idx][color] || 0) + 1 / validPositions.length;
+                }
+              });
+            });
+          }
+        });
+
+        return { certain, heatmap };
+      }
+
+      function setupPicker() {
+        const container = document.getElementById("dynamic-picker");
+        container.innerHTML = "";
+        const activeList = getActiveShips();
+        const identifiedRaresCount = activeList.length - 4;
+        const raresRemainingSlots = currentColorCount - 5 - identifiedRaresCount;
+
+        const blueBtn = document.createElement("button");
+        blueBtn.className = "pick-btn blue";
+        blueBtn.innerText = "B";
+        blueBtn.onclick = () => setTile("B");
+        container.appendChild(blueBtn);
+
+        Object.keys(ALL_COLORS).forEach((k) => {
+          if (k === "B") return;
+          const isRare = !ALL_COLORS[k].always;
+          const alreadyFound = activeList.includes(k);
+          const btn = document.createElement("button");
+          btn.className = `pick-btn ${ALL_COLORS[k].class}`;
+          btn.innerText = k;
+          if (isRare && !alreadyFound && raresRemainingSlots <= 0) {
+            btn.disabled = true;
+          } else {
+            btn.onclick = () => setTile(k);
+          }
+          container.appendChild(btn);
+        });
+      }
 
       function setTile(color) {
         revealed[selectedIdx] = color;
@@ -89,121 +230,35 @@
         render();
       }
 
-      function getCounts() {
-        let counts = { T: 0, G: 0, Y: 0, O: 0, R: 0, W: 0, B: 0 };
-        Object.values(revealed).forEach((v) => {
-          if (counts[v] !== undefined) counts[v]++;
-        });
-        return counts;
-      }
-
-      function getDeductions() {
-        let certain = {};
-        let heatmap = Array(25)
-          .fill(null)
-          .map(() => ({}));
-        let totalPlacementsPerColor = {};
-        const counts = getCounts();
-
-        Object.keys(SHIPS).forEach((color) => {
-          const ship = SHIPS[color];
-          const pos = Object.keys(revealed)
-            .filter((k) => revealed[k] === color)
-            .map(Number);
-
-          if (counts[color] >= ship.len) return;
-
-          let validPlacements = [];
-          totalPlacementsPerColor[color] = 0;
-
-          // Scan Horizontal
-          for (let r = 0; r < 5; r++) {
-            for (let c = 0; c <= 5 - ship.len; c++) {
-              let tiles = [];
-              let possible = true;
-              for (let i = 0; i < ship.len; i++) {
-                let idx = r * 5 + (c + i);
-                if (revealed[idx] && revealed[idx] !== color) {
-                  possible = false;
-                  break;
-                }
-                tiles.push(idx);
-              }
-              if (possible && pos.every((p) => tiles.includes(p))) validPlacements.push(tiles);
-            }
-          }
-
-          // Scan Vertical
-          for (let c = 0; c < 5; c++) {
-            for (let r = 0; r <= 5 - ship.len; r++) {
-              let tiles = [];
-              let possible = true;
-              for (let i = 0; i < ship.len; i++) {
-                let idx = (r + i) * 5 + c;
-                if (revealed[idx] && revealed[idx] !== color) {
-                  possible = false;
-                  break;
-                }
-                tiles.push(idx);
-              }
-              if (possible && pos.every((p) => tiles.includes(p))) validPlacements.push(tiles);
-            }
-          }
-
-          // Calculate Heatmap & Certainty
-          if (validPlacements.length > 0) {
-            totalPlacementsPerColor[color] = validPlacements.length;
-
-            // Check for 100% Certainty
-            validPlacements[0].forEach((idx) => {
-              if (validPlacements.every((p) => p.includes(idx))) {
-                if (!revealed[idx]) certain[idx] = color;
-              }
-            });
-
-            // Count occurrences for percentage
-            validPlacements.forEach((p) => {
-              p.forEach((idx) => {
-                if (!revealed[idx]) {
-                  heatmap[idx][color] = (heatmap[idx][color] || 0) + 1;
-                }
-              });
-            });
-          }
-        });
-
-        return { certain, heatmap, totalPlacementsPerColor };
-      }
-
-      function selectTile(idx) {
-        const { certain } = getDeductions();
-        if (certain[idx]) {
-          selectedIdx = idx;
-          setTile(certain[idx]);
-          return;
-        }
-
-        selectedIdx = idx;
-        document.getElementById("picker-area").style.display = "block";
-        const counts = getCounts();
-
-        document.querySelectorAll(".pick-btn").forEach((btn) => {
-          const color = btn.innerText === "W" ? "W" : btn.innerText;
-          if (color === "B") {
-            btn.disabled = false;
-            return;
-          }
-          btn.disabled = counts[color] >= (SHIPS[color] ? SHIPS[color].len : 0);
-        });
-        render();
-      }
-
       function render() {
         const gridEl = document.getElementById("grid");
         gridEl.innerHTML = "";
-        const { certain, heatmap, totalPlacementsPerColor } = getDeductions();
+        const deductions = getDeductions();
+        const heatmap = deductions.heatmap;
+        cachedCertain = deductions.certain;
 
-        document.getElementById("found-count").innerText = `${Object.values(revealed).filter((v) => v !== "B").length}/13`;
+        const nonBlueSegments = Object.values(revealed).filter((v) => v !== "B").length;
+        const blueFoundCount = Object.values(revealed).filter((v) => v === "B").length;
+        const rareColorCount = currentColorCount - 5;
+        const totalSegments = 12 + rareColorCount * 2;
+        const totalPossibleBlues = 25 - totalSegments;
+
+        const isHuntingBlue = nonBlueSegments < 5 && blueFoundCount < totalPossibleBlues;
+
+        document.getElementById("found-count").innerText = `${nonBlueSegments}/${totalSegments}`;
+        const statusEl = document.getElementById("status");
+        statusEl.innerText = isHuntingBlue ? "PHASE: Hunting Blues (Safe Clicks)" : "PHASE: Hunting Ships";
+        statusEl.style.color = isHuntingBlue ? "#3498db" : "#aaa";
+
+        const cellProbs = Array(25)
+          .fill(0)
+          .map((_, i) => {
+            const totalShipProb = Object.values(heatmap[i]).reduce((a, b) => a + b, 0);
+            return Math.max(0, 1 - totalShipProb);
+          });
+
+        const availableIndices = Array.from({ length: 25 }, (_, i) => i).filter((i) => !revealed[i]);
+        const maxBlueProb = availableIndices.length > 0 ? Math.max(...availableIndices.map((i) => cellProbs[i])) : 0;
 
         for (let i = 0; i < 25; i++) {
           const cell = document.createElement("div");
@@ -211,43 +266,63 @@
           if (i === selectedIdx) cell.classList.add("selected");
 
           if (revealed[i]) {
-            const data = SHIPS[revealed[i]] || BLUE;
-            cell.classList.add("solved", data.class);
-            cell.innerHTML = `<span class="big-letter">${revealed[i]}</span><span class="value-label">+${data.val}</span>`;
-          } else if (certain[i]) {
-            const data = SHIPS[certain[i]];
+            const color = revealed[i];
+            cell.classList.add("solved", ALL_COLORS[color].class);
+            cell.innerHTML = `<span class="big-letter">${color}</span>`;
+          } else if (cachedCertain[i]) {
+            const color = cachedCertain[i];
             cell.classList.add("best-move");
             cell.onclick = () => selectTile(i);
-            cell.innerHTML = `<div class="best-label">100%</div><span class="prob" style="color:white;">${data.name}</span>`;
+            cell.innerHTML = `<div class="best-label">100%</div><span class="prob" style="color:var(--${ALL_COLORS[color].class})">${color}</span>`;
           } else {
             cell.onclick = () => selectTile(i);
+            const blueProb = cellProbs[i];
 
-            // Calculate highest probability color for this tile
-            let bestColor = null;
-            let maxPct = 0;
-
-            Object.keys(heatmap[i]).forEach((color) => {
-              let pct = (heatmap[i][color] / totalPlacementsPerColor[color]) * 100;
-              if (pct > maxPct) {
-                maxPct = pct;
-                bestColor = color;
+            if (isHuntingBlue) {
+              if (blueProb === maxBlueProb && maxBlueProb > 0) {
+                cell.classList.add("best-move");
+                cell.innerHTML = `<div class="best-label">SAFE</div>`;
               }
-            });
-
-            if (bestColor && maxPct > 5) {
-              const data = SHIPS[bestColor];
-              cell.innerHTML = `<span class="prob" style="color:var(--${data.class})">${Math.round(maxPct)}% ${bestColor}</span>`;
-              // Add a subtle background glow based on probability
-              cell.style.boxShadow = `inset 0 0 ${maxPct / 5}px var(--${data.class})`;
+              cell.innerHTML += `<span class="prob" style="color:#3498db">${Math.round(blueProb * 100)}% BLUE</span>`;
             } else {
-              cell.innerHTML = `<span class="prob" style="color: #555">??</span>`;
+              let possibleColors = Object.keys(heatmap[i]);
+              let bestColor = null;
+              let maxShipWeight = 0;
+
+              possibleColors.forEach((c) => {
+                if (heatmap[i][c] > maxShipWeight) {
+                  maxShipWeight = heatmap[i][c];
+                  bestColor = c;
+                }
+              });
+
+              if (bestColor && maxShipWeight > 0.05) {
+                cell.innerHTML = `<span class="prob" style="color:var(--${ALL_COLORS[bestColor].class})">${Math.round(maxShipWeight * 100)}% ${bestColor}</span>`;
+              } else {
+                cell.innerHTML = `<span class="prob" style="color: #555">?</span>`;
+              }
             }
           }
           gridEl.appendChild(cell);
         }
+        setupPicker();
       }
 
-      render();
+      function selectTile(idx) {
+        if (cachedCertain[idx]) {
+          selectedIdx = idx;
+          setTile(cachedCertain[idx]);
+          return;
+        }
+        selectedIdx = idx;
+        document.getElementById("picker-area").style.display = "block";
+        render();
+      }
+
+      window.addEventListener("DOMContentLoaded", () => {
+        const defaultBtn = document.querySelectorAll(".color-toggle")[0];
+        updateColorCount(6, defaultBtn);
+      });
     </script>
   </body>
 </html>
