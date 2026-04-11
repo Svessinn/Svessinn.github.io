@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../stylesheets/style.css" />
     <link rel="stylesheet" href="../stylesheets/traceSimulator.css" />
     <script src="../scripts/nav.js" defer></script>
+    <script src="../scripts/sphereSimulator.js"></script>
   </head>
   <body>
     <div id="main-nav" class="nav-container view-quest">
@@ -40,8 +41,17 @@
     <div class="stats">
       <h3 class="wip">Work in Progress</h3>
       <h1>Trace Simulator</h1>
-      <div>Blue Clicks Used: <span id="clicks" style="color: #ff4757; font-weight: bold">0</span> / 4</div>
-      <div id="status" style="margin-top: 5px; font-size: 12px; color: #aaa">Click spheres. Only Blue costs a click!</div>
+      <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 10px">
+        <div>Blue Clicks: <span id="clicks" style="color: #ff4757; font-weight: bold">0</span> / 4</div>
+        <div>Total Value: <span id="total-value" style="color: #ffd700; font-weight: bold">0</span></div>
+      </div>
+      <div id="status" style="font-size: 12px; color: #aaa">Click spheres. Only Blue costs a click!</div>
+
+      <div
+        id="breakdown-tray"
+        style="margin-top: 10px; display: flex; justify-content: center; gap: 5px; min-height: 32px; flex-wrap: wrap"
+      ></div>
+
       <div id="ship-counter" style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center"></div>
     </div>
 
@@ -51,14 +61,7 @@
     </div>
 
     <script>
-      // Percentages stored as variables for easy updating
-      const SHIP_PROBABILITIES = {
-        "R": 0.16, // Red
-        "W": 0.18, // Rainbow
-        "L": 0.82, // Light
-        "D": 0.39, // Dark
-      };
-
+      const SHIP_PROBABILITIES = { "R": 0.16, "W": 0.18, "L": 0.82, "D": 0.39 };
       const SHIP_CONFIG = {
         "T": { name: "TEAL", length: 4, always: true },
         "G": { name: "GREEN", length: 3, always: true },
@@ -73,38 +76,52 @@
       let board = Array(25).fill("B");
       let revealed = Array(25).fill(false);
       let blueClicks = 0;
+      let totalValue = 0;
       let gameOver = false;
       let currentShips = [];
+      let gameData = null;
+
+      async function loadGameData() {
+        try {
+          const response = await fetch("../data/colorData.json");
+          gameData = await response.json();
+        } catch (e) {
+          console.warn("JSON failed to load.");
+        }
+      }
+
+      function getVal(color) {
+        if (gameData && gameData.colors && gameData.colors[color]) {
+          return Number(gameData.colors[color].value) || 0;
+        }
+        const fallbacks = { "P": 5, "B": 10, "T": 20, "G": 35, "Y": 55, "O": 90, "R": 150, "W": 500 };
+        return fallbacks[color] || 0;
+      }
 
       function resetGame() {
         board = Array(25).fill("B");
         revealed = Array(25).fill(false);
         blueClicks = 0;
+        totalValue = 0;
         gameOver = false;
-        document.getElementById("status").innerText = "Click spheres. Only Blue costs a click!";
-        document.getElementById("status").style.color = "#aaa";
+
+        const statusDiv = document.getElementById("status");
+        statusDiv.innerHTML = "Click spheres. Only Blue costs a click!";
+        statusDiv.style.color = "#aaa";
+        document.getElementById("breakdown-tray").innerHTML = "";
 
         const pool = [];
         Object.keys(SHIP_CONFIG).forEach((key) => {
-          if (SHIP_CONFIG[key].always) {
-            pool.push({ color: key, length: SHIP_CONFIG[key].length });
-          }
+          if (SHIP_CONFIG[key].always) pool.push({ color: key, length: SHIP_CONFIG[key].length });
         });
 
         let optionalShips = [];
         Object.keys(SHIP_PROBABILITIES).forEach((key) => {
-          if (Math.random() < SHIP_PROBABILITIES[key]) {
-            optionalShips.push({ color: key, length: SHIP_CONFIG[key].length });
-          }
+          if (Math.random() < SHIP_PROBABILITIES[key]) optionalShips.push({ color: key, length: SHIP_CONFIG[key].length });
         });
 
-        if (optionalShips.length === 0) {
-          optionalShips.push({ color: "L", length: 2 });
-        } else if (optionalShips.length > 4) {
-          optionalShips = optionalShips.slice(0, 4);
-        }
-
-        currentShips = [...pool, ...optionalShips];
+        if (optionalShips.length === 0) optionalShips.push({ color: "L", length: 2 });
+        currentShips = [...pool, ...optionalShips.slice(0, 4)];
 
         currentShips.forEach((item) => {
           let placed = false;
@@ -124,51 +141,113 @@
             }
           }
         });
-
         render();
       }
 
-      function clickCell(i) {
+      async function clickCell(i) {
         if (revealed[i] || gameOver) return;
-
-        const isBlue = board[i] === "B";
+        const color = board[i];
         revealed[i] = true;
-
-        // Count non-blue segments AFTER this click
         const nonBlueFound = Object.keys(revealed).filter((idx) => revealed[idx] && board[idx] !== "B").length;
 
-        if (isBlue) {
-          // Extra Chance Mechanic
+        totalValue += getVal(color);
+
+        if (color === "B") {
           if (blueClicks === 3 && nonBlueFound < 5) {
-            document.getElementById("status").innerText = "EXTRA CHANCE USED! +1 Blue Click granted.";
+            document.getElementById("status").innerText = "EXTRA CHANCE USED!";
             document.getElementById("status").style.color = "#2ecc71";
           } else {
             blueClicks++;
-            // Reset status if a normal blue click happens
-            document.getElementById("status").innerText = "Click spheres. Only Blue costs a click!";
-            document.getElementById("status").style.color = "#aaa";
           }
-
           if (blueClicks >= 4) {
             gameOver = true;
-            document.getElementById("status").innerText = "GAME OVER - Board Revealed";
+            document.getElementById("status").innerText = "GAME OVER";
             document.getElementById("status").style.color = "#ff4757";
           }
         } else {
-          // Status update on the 5th non-blue click
-          if (nonBlueFound === 5) {
-            document.getElementById("status").innerText = "5 segments found! Extra Chance now inactive on next Blue.";
-            document.getElementById("status").style.color = "#00d4ff";
+          // Trigger breakdown per-cell for L and D
+          if (color === "L" || color === "D") {
+            await handleBreakdown(color);
           }
         }
-
         render();
       }
 
+      async function handleBreakdown(color) {
+        const typeMap = { "L": "light", "D": "dark" };
+        const jsonKey = typeMap[color];
+
+        // 1. Safety check for data
+        if (!gameData || !gameData.breakdown_rules || !gameData.breakdown_rules[jsonKey]) {
+          console.error(`Missing rules for ${jsonKey}.`);
+          return;
+        }
+
+        const rule = gameData.breakdown_rules[jsonKey];
+        let results = [];
+
+        // 2. Determine sphere count (handles both "count" and "count_options")
+        let count = rule.count || 0;
+        if (rule.count_options) {
+          count = rule.count_options[Math.floor(Math.random() * rule.count_options.length)];
+        }
+
+        // 3. Internal Weighted Random Logic (Handles your decimal weights)
+        for (let i = 0; i < count; i++) {
+          const totalWeight = rule.weights.reduce((a, b) => a + b, 0);
+          let random = Math.random() * totalWeight;
+
+          for (let j = 0; j < rule.weights.length; j++) {
+            if (random < rule.weights[j]) {
+              results.push(rule.possible_outcomes[j]);
+              break;
+            }
+            random -= rule.weights[j];
+          }
+        }
+
+        // 4. UI and Recursion Logic
+        if (results.length > 0) {
+          const statusDiv = document.getElementById("status");
+          const logEntry = document.createElement("div");
+          logEntry.style.cssText = "color: #ffd700; font-size: 11px; margin-top: 4px; font-weight: bold;";
+
+          const names = results.map((r) => (r === "L" ? "Light" : gameData.colors[r]?.name || r));
+          logEntry.innerText = `${SHIP_CONFIG[color].name} cell yielded: ${names.join(", ")}`;
+          statusDiv.appendChild(logEntry);
+
+          for (const res of results) {
+            totalValue += getVal(res);
+            addBreakdownUI(res);
+
+            // RECURSION: If a Dark cell yields a Light sphere ("L"), break it down too
+            if (res === "L") {
+              // Optional: wait 200ms so the user sees the chain reaction happen
+              await new Promise((resolve) => setTimeout(resolve, 200));
+              await handleBreakdown("L");
+            }
+          }
+          render();
+        }
+      }
+
+      function addBreakdownUI(sphereColor) {
+        const tray = document.getElementById("breakdown-tray");
+        const sphere = document.createElement("div");
+        sphere.className = `cell solved ${getColorClass(sphereColor)}`;
+        sphere.style.cssText =
+          "width:28px; height:28px; font-size:10px; margin:2px; line-height:28px; border-radius:50%; text-align:center; font-weight:bold; color:white; border:1px solid rgba(255,255,255,0.3);";
+        sphere.style.background = `var(--${getColorClass(sphereColor)}, #555)`;
+        sphere.innerText = sphereColor;
+        tray.appendChild(sphere);
+      }
+
       function render() {
+        document.getElementById("total-value").innerText = totalValue;
+        document.getElementById("clicks").innerText = blueClicks;
+
         const gridEl = document.getElementById("grid");
         gridEl.innerHTML = "";
-        document.getElementById("clicks").innerText = blueClicks;
 
         board.forEach((color, i) => {
           const cell = document.createElement("div");
@@ -186,32 +265,15 @@
         const counterEl = document.getElementById("ship-counter");
         if (counterEl) {
           counterEl.innerHTML = "";
-          const revealedCounts = {};
-          board.forEach((color, i) => {
-            if (revealed[i]) {
-              revealedCounts[color] = (revealedCounts[color] || 0) + 1;
-            }
+          const counts = {};
+          board.forEach((c, i) => {
+            if (revealed[i]) counts[c] = (counts[c] || 0) + 1;
           });
-
           currentShips.forEach((item) => {
-            const isFound = (revealedCounts[item.color] || 0) >= item.length;
+            const isFound = (counts[item.color] || 0) >= item.length;
             const badge = document.createElement("span");
-            badge.innerText = SHIP_CONFIG[item.color].name;
-            badge.style.cssText = `
-          background: ${isFound ? "#2ed573" : "var(--" + getColorClass(item.color) + ", #555)"}; 
-          color: #fff; 
-          padding: 2px 8px; 
-          border-radius: 4px; 
-          font-size: 10px; 
-          font-weight: bold;
-          text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-          margin: 2px;
-          display: inline-block;
-          border: ${isFound ? "1px solid #fff" : "1px solid transparent"};
-          opacity: ${isFound ? "1" : "0.8"};
-          text-decoration: ${isFound ? "line-through" : "none"};
-        `;
-            if (isFound) badge.innerText += " ✓";
+            badge.innerText = SHIP_CONFIG[item.color].name + (isFound ? " ✓" : "");
+            badge.style.cssText = `background: ${isFound ? "#2ed573" : "var(--" + getColorClass(item.color) + ", #555)"}; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: bold; margin: 2px; text-decoration: ${isFound ? "line-through" : "none"}; border: ${isFound ? "1px solid #fff" : "1px solid transparent"}; opacity: ${isFound ? "1" : "0.7"}`;
             counterEl.appendChild(badge);
           });
         }
@@ -228,11 +290,15 @@
           "W": "rainbow",
           "L": "light",
           "D": "dark",
+          "P": "purple",
         };
         return map[c] || "blue";
       }
 
-      window.addEventListener("DOMContentLoaded", resetGame);
+      window.addEventListener("DOMContentLoaded", async () => {
+        await loadGameData();
+        resetGame();
+      });
     </script>
   </body>
 </html>

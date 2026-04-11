@@ -1,0 +1,24 @@
+{
+  "colors": {
+    "P": { "name": "Purple", "value": 5 },
+    "B": { "name": "Blue", "value": 10 },
+    "T": { "name": "Teal", "value": 20 },
+    "G": { "name": "Green", "value": 35 },
+    "Y": { "name": "Yellow", "value": 55 },
+    "O": { "name": "Orange", "value": 90 },
+    "R": { "name": "Red", "value": 150 },
+    "W": { "name": "Rainbow", "value": 500 }
+  },
+  "breakdown_rules": {
+    "light": {
+      "count_options": [4, 5],
+      "possible_outcomes": ["P", "B", "T", "G", "Y", "O", "R", "W"],
+      "weights": [0.046, 0.6167, 0.2103, 0.0833, 0.0294, 0.0103, 0.0032, 0.0008]
+    },
+    "dark": {
+      "count": 1,
+      "possible_outcomes": ["P", "B", "T", "G", "Y", "O", "R", "W", "L"],
+      "weights": [1, 1, 1, 1, 1, 1, 1, 1, 1]
+    }
+  }
+}
