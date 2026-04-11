@@ -71,12 +71,16 @@
       </div>
     </div>
 
-    <div class="controls">
+    <div class="controls" style="display: flex; gap: 10px; justify-content: center">
+      <button onclick="undoMove()" class="reset-button" id="undo-btn" style="background: #444; border-color: #666" disabled>
+        UNDO LAST MOVE
+      </button>
       <button onclick="location.reload()" class="reset-button">RESET SOLVER</button>
     </div>
 
     <script>
       let revealed = {};
+      let history = []; // Stack for undo functionality
       let selectedIdx = null;
       let currentColorCount = 6;
       let cachedCertain = {};
@@ -102,7 +106,22 @@
 
       function resetSolver() {
         revealed = {};
+        history = [];
         selectedIdx = null;
+        render();
+      }
+
+      function saveHistory() {
+        // Deep copy of revealed object
+        history.push(JSON.stringify(revealed));
+        document.getElementById("undo-btn").disabled = false;
+      }
+
+      function undoMove() {
+        if (history.length === 0) return;
+        revealed = JSON.parse(history.pop());
+        selectedIdx = null;
+        if (history.length === 0) document.getElementById("undo-btn").disabled = true;
         render();
       }
 
@@ -235,6 +254,7 @@
 
       function setTile(color) {
         if (selectedIdx === null) return;
+        saveHistory();
         revealed[selectedIdx] = color;
         selectedIdx = null;
         render();
@@ -267,7 +287,6 @@
             return Math.max(0, 1 - totalShipProb);
           });
 
-        // Calculate max blue probability ONLY for cells that aren't certain ships
         const availableIndices = Array.from({ length: 25 }, (_, i) => i).filter((i) => !revealed[i] && !cachedCertain[i]);
 
         const maxBlueProb = availableIndices.length > 0 ? Math.max(...availableIndices.map((i) => cellProbs[i])) : 0;
@@ -286,12 +305,10 @@
             cell.onclick = () => selectTile(i);
             const blueProb = cellProbs[i];
 
-            // If it's a certain ship, just show the letter. No "SAFE" label, no special class.
             if (cachedCertain[i]) {
               const color = cachedCertain[i];
               cell.innerHTML = `<span class="prob" style="color:var(--${ALL_COLORS[color].class}); font-size: 14px;">${color}</span>`;
             } else {
-              // Highlight only if it's the safest blue click and NOT a certain ship
               if (blueProb === maxBlueProb && maxBlueProb > 0) {
                 cell.classList.add("best-move");
                 cell.innerHTML = `<div class="best-label">SAFE</div>`;
