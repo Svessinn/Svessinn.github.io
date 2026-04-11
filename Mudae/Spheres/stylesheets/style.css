@@ -284,6 +284,12 @@ body {
   transition: 0.1s;
 }
 
+.controls {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
 .reset-button {
   padding: 10px 20px;
   cursor: pointer;
