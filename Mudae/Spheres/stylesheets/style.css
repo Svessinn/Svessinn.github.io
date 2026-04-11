@@ -108,48 +108,48 @@ body {
 }
 
 .blue {
-  background: var(--blue);
-  color: white;
+  background: var(--blue) !important;
+  color: white !important;
 }
 .teal {
-  background: var(--teal);
-  color: white;
+  background: var(--teal) !important;
+  color: white !important;
 }
 .green {
-  background: var(--green);
-  color: white;
+  background: var(--green) !important;
+  color: white !important;
 }
 .yellow {
-  background: var(--yellow);
-  color: black;
+  background: var(--yellow) !important;
+  color: black !important;
 }
 .orange {
-  background: var(--orange);
-  color: white;
+  background: var(--orange) !important;
+  color: white !important;
 }
 .purple {
-  background: var(--purple);
-  color: white;
+  background: var(--purple) !important;
+  color: white !important;
 }
 .red {
-  background: var(--red);
-  color: white;
+  background: var(--red) !important;
+  color: white !important;
   box-shadow: 0 0 15px rgba(255, 71, 87, 0.4);
 }
 .light {
-  background: var(--light);
-  color: #2d3436;
+  background: var(--light) !important;
+  color: #2d3436 !important;
 }
 .dark {
-  background: var(--dark);
-  color: #dfe6e9;
+  background: var(--dark) !important;
+  color: #dfe6e9 !important;
 }
 
 .rainbow {
-  background: var(--rainbow);
+  background: var(--rainbow) !important;
   background-size: 200% 200%;
-  color: white;
-  text-shadow: 1px 1px 2px black;
+  color: white !important;
+  text-shadow: 1px 1px 2px black !important;
 }
 
 @keyframes rainbow-glow {
