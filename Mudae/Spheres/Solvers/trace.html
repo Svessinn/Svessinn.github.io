@@ -36,8 +36,8 @@
         <a href="../Simulators/trace.html" class="nav-btn">TRACE SIMULATOR</a>
       </div>
     </div>
+
     <div class="stats">
-      <h3 class="wip">Work in Progress</h3>
       <h1>Trace Solver</h1>
       <div style="margin-bottom: 15px">
         <div style="font-size: 11px; color: #888; margin-bottom: 8px">TOTAL COLORS (INCLUDING BLUE)</div>
@@ -60,7 +60,13 @@
     <div class="game-container">
       <div class="grid" id="grid"></div>
 
-      <div id="picker-area" class="picker-container" style="display: none">
+      <div id="picker-area" class="picker-container">
+        <div
+          id="selection-info"
+          style="font-size: 10px; color: #888; margin-bottom: 10px; text-align: center; text-transform: uppercase"
+        >
+          Select a cell on the grid
+        </div>
         <div class="picker" id="dynamic-picker"></div>
       </div>
     </div>
@@ -97,7 +103,6 @@
       function resetSolver() {
         revealed = {};
         selectedIdx = null;
-        document.getElementById("picker-area").style.display = "none";
         render();
       }
 
@@ -197,37 +202,47 @@
 
       function setupPicker() {
         const container = document.getElementById("dynamic-picker");
+        const info = document.getElementById("selection-info");
         container.innerHTML = "";
+
+        if (selectedIdx !== null) {
+          info.innerText = `SETTING COLOR FOR CELL #${selectedIdx + 1}`;
+        } else {
+          info.innerText = "SELECT A CELL ON THE GRID";
+        }
+
         const activeList = getActiveShips();
         const identifiedRaresCount = activeList.length - 4;
         const raresRemainingSlots = currentColorCount - 5 - identifiedRaresCount;
 
-        const blueBtn = document.createElement("button");
-        blueBtn.className = "pick-btn blue";
-        blueBtn.innerText = "B";
-        blueBtn.onclick = () => setTile("B");
-        container.appendChild(blueBtn);
-
+        // Render all buttons, but disable them if no cell is selected or rare limit hit
         Object.keys(ALL_COLORS).forEach((k) => {
-          if (k === "B") return;
           const isRare = !ALL_COLORS[k].always;
           const alreadyFound = activeList.includes(k);
+
           const btn = document.createElement("button");
           btn.className = `pick-btn ${ALL_COLORS[k].class}`;
           btn.innerText = k;
-          if (isRare && !alreadyFound && raresRemainingSlots <= 0) {
+
+          // DISABLE LOGIC:
+          // 1. If no cell is selected
+          // 2. If it's a rare color, hasn't been found yet, but we are at the rare color limit
+          const isAtRareLimit = isRare && !alreadyFound && raresRemainingSlots <= 0;
+
+          if (selectedIdx === null || isAtRareLimit) {
             btn.disabled = true;
           } else {
             btn.onclick = () => setTile(k);
           }
+
           container.appendChild(btn);
         });
       }
 
       function setTile(color) {
+        if (selectedIdx === null) return;
         revealed[selectedIdx] = color;
         selectedIdx = null;
-        document.getElementById("picker-area").style.display = "none";
         render();
       }
 
@@ -270,6 +285,7 @@
             const color = revealed[i];
             cell.classList.add("solved", ALL_COLORS[color].class);
             cell.innerHTML = `<span class="big-letter">${color}</span>`;
+            cell.onclick = () => selectTile(i);
           } else if (cachedCertain[i]) {
             const color = cachedCertain[i];
             cell.classList.add("best-move");
@@ -316,7 +332,6 @@
           return;
         }
         selectedIdx = idx;
-        document.getElementById("picker-area").style.display = "block";
         render();
       }
 
