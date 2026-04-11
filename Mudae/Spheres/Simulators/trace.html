@@ -74,7 +74,7 @@
       let revealed = Array(25).fill(false);
       let blueClicks = 0;
       let gameOver = false;
-      let currentShips = []; // To keep track of ships placed in current game
+      let currentShips = [];
 
       function resetGame() {
         board = Array(25).fill("B");
@@ -106,7 +106,6 @@
 
         currentShips = [...pool, ...optionalShips];
 
-        // Place ships on the board
         currentShips.forEach((item) => {
           let placed = false;
           let attempts = 0;
@@ -115,12 +114,10 @@
             const isRow = Math.random() > 0.5;
             const lineIdx = Math.floor(Math.random() * 5);
             const startPos = Math.floor(Math.random() * (6 - item.length));
-
             let indices = [];
             for (let i = 0; i < item.length; i++) {
               indices.push(isRow ? lineIdx * 5 + (startPos + i) : (startPos + i) * 5 + lineIdx);
             }
-
             if (indices.every((idx) => board[idx] === "B")) {
               indices.forEach((idx) => (board[idx] = item.color));
               placed = true;
@@ -134,18 +131,20 @@
       function clickCell(i) {
         if (revealed[i] || gameOver) return;
 
-        if (board[i] === "B") {
-          // Extra Chance Mechanic:
-          // Triggered if on last click (3) and fewer than 5 non-blue segments found
-          const nonBlueFound = Object.keys(revealed).filter((idx) => revealed[idx] && board[idx] !== "B").length;
+        const isBlue = board[i] === "B";
+        revealed[i] = true;
 
+        // Count non-blue segments AFTER this click
+        const nonBlueFound = Object.keys(revealed).filter((idx) => revealed[idx] && board[idx] !== "B").length;
+
+        if (isBlue) {
+          // Extra Chance Mechanic
           if (blueClicks === 3 && nonBlueFound < 5) {
-            // Grant extra click: blueClicks remains at 3
-            document.getElementById("status").innerText = "EXTRA CHANCE! +1 Blue Click awarded.";
+            document.getElementById("status").innerText = "EXTRA CHANCE USED! +1 Blue Click granted.";
             document.getElementById("status").style.color = "#2ecc71";
           } else {
             blueClicks++;
-            // Reset status text if it was showing Extra Chance previously
+            // Reset status if a normal blue click happens
             document.getElementById("status").innerText = "Click spheres. Only Blue costs a click!";
             document.getElementById("status").style.color = "#aaa";
           }
@@ -155,9 +154,14 @@
             document.getElementById("status").innerText = "GAME OVER - Board Revealed";
             document.getElementById("status").style.color = "#ff4757";
           }
+        } else {
+          // Status update on the 5th non-blue click
+          if (nonBlueFound === 5) {
+            document.getElementById("status").innerText = "5 segments found! Extra Chance now active on next Blue.";
+            document.getElementById("status").style.color = "#00d4ff";
+          }
         }
 
-        revealed[i] = true;
         render();
       }
 
@@ -166,7 +170,6 @@
         gridEl.innerHTML = "";
         document.getElementById("clicks").innerText = blueClicks;
 
-        // 1. Render Grid
         board.forEach((color, i) => {
           const cell = document.createElement("div");
           cell.className = "cell";
@@ -180,11 +183,9 @@
           gridEl.appendChild(cell);
         });
 
-        // 2. Render/Update Counter
         const counterEl = document.getElementById("ship-counter");
         if (counterEl) {
           counterEl.innerHTML = "";
-
           const revealedCounts = {};
           board.forEach((color, i) => {
             if (revealed[i]) {
@@ -196,8 +197,6 @@
             const isFound = (revealedCounts[item.color] || 0) >= item.length;
             const badge = document.createElement("span");
             badge.innerText = SHIP_CONFIG[item.color].name;
-
-            // Discovery styles
             badge.style.cssText = `
           background: ${isFound ? "#2ed573" : "var(--" + getColorClass(item.color) + ", #555)"}; 
           color: #fff; 
@@ -212,7 +211,6 @@
           opacity: ${isFound ? "1" : "0.8"};
           text-decoration: ${isFound ? "line-through" : "none"};
         `;
-
             if (isFound) badge.innerText += " ✓";
             counterEl.appendChild(badge);
           });
