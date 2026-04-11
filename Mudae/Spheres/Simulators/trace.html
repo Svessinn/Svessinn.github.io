@@ -106,7 +106,7 @@
 
         currentShips = [...pool, ...optionalShips];
 
-        // Place ships
+        // Place ships on the board
         currentShips.forEach((item) => {
           let placed = false;
           let attempts = 0;
@@ -133,16 +133,31 @@
 
       function clickCell(i) {
         if (revealed[i] || gameOver) return;
-        revealed[i] = true;
 
         if (board[i] === "B") {
-          blueClicks++;
+          // Extra Chance Mechanic:
+          // Triggered if on last click (3) and fewer than 5 non-blue segments found
+          const nonBlueFound = Object.keys(revealed).filter((idx) => revealed[idx] && board[idx] !== "B").length;
+
+          if (blueClicks === 3 && nonBlueFound < 5) {
+            // Grant extra click: blueClicks remains at 3
+            document.getElementById("status").innerText = "EXTRA CHANCE! +1 Blue Click awarded.";
+            document.getElementById("status").style.color = "#2ecc71";
+          } else {
+            blueClicks++;
+            // Reset status text if it was showing Extra Chance previously
+            document.getElementById("status").innerText = "Click spheres. Only Blue costs a click!";
+            document.getElementById("status").style.color = "#aaa";
+          }
+
           if (blueClicks >= 4) {
             gameOver = true;
             document.getElementById("status").innerText = "GAME OVER - Board Revealed";
             document.getElementById("status").style.color = "#ff4757";
           }
         }
+
+        revealed[i] = true;
         render();
       }
 
@@ -170,7 +185,6 @@
         if (counterEl) {
           counterEl.innerHTML = "";
 
-          // Calculate how many cells of each color are revealed
           const revealedCounts = {};
           board.forEach((color, i) => {
             if (revealed[i]) {
@@ -179,11 +193,11 @@
           });
 
           currentShips.forEach((item) => {
-            const isFound = revealedCounts[item.color] >= item.length;
+            const isFound = (revealedCounts[item.color] || 0) >= item.length;
             const badge = document.createElement("span");
             badge.innerText = SHIP_CONFIG[item.color].name;
 
-            // Dynamic styles based on discovery status
+            // Discovery styles
             badge.style.cssText = `
           background: ${isFound ? "#2ed573" : "var(--" + getColorClass(item.color) + ", #555)"}; 
           color: #fff; 
@@ -199,10 +213,7 @@
           text-decoration: ${isFound ? "line-through" : "none"};
         `;
 
-            if (isFound) {
-              badge.innerText += " ✓";
-            }
-
+            if (isFound) badge.innerText += " ✓";
             counterEl.appendChild(badge);
           });
         }

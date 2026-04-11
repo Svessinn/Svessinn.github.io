@@ -30,6 +30,7 @@ body {
   border: 2px solid #444;
   transition: 0.2s;
   position: relative;
+  overflow: hidden; /* Keeps rainbow gradient contained */
 }
 
 .cell:hover {
@@ -42,15 +43,10 @@ body {
   z-index: 10;
 }
 
-.cell.solved {
-  cursor: default;
-  border: none;
-}
-
 .cell.disabled {
   cursor: not-allowed;
-  opacity: 0.6;
-  pointer-events: none;
+  opacity: 0.4;
+  filter: grayscale(80%);
 }
 
 /* --- Solver Specifics (Best Move & Probs) --- */
@@ -69,7 +65,13 @@ body {
   padding: 2px 5px;
   border-radius: 4px;
   font-weight: bold;
-  z-index: 5;
+  z-index: 15;
+}
+
+.prob-ghost {
+  font-size: 14px;
+  font-weight: 900;
+  text-shadow: 1px 1px 2px black;
 }
 
 @keyframes pulse-best {
@@ -84,95 +86,68 @@ body {
   }
 }
 
-.prob {
-  font-size: 16px;
-  font-weight: bold;
+/* --- Simulator States --- */
+.unrevealed-cell {
+  opacity: 0.5;
+  filter: grayscale(40%);
+  border: 1px dashed rgba(255, 255, 255, 0.3) !important;
 }
 
-.locked-text {
-  font-size: 11px;
-  font-weight: 900;
-  letter-spacing: 0.5px;
-  text-align: center;
+/* --- Mudae Color Palette & Variables --- */
+:root {
+  --blue: #3498db;
+  --teal: #1abc9c;
+  --green: #2ecc71;
+  --yellow: #f1c40f;
+  --orange: #e67e22;
+  --purple: #9b59b6;
+  --red: #ff4757;
+  --light: #dfe6e9;
+  --dark: #2d3436;
+  --rainbow: linear-gradient(45deg, #ff4757, #e67e22, #f1c40f, #2ecc71, #1abc9c, #3498db, #9b59b6);
 }
 
-/* --- Color Picker Styles --- */
-.picker-container {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.picker {
-  display: flex;
-  gap: 8px;
-  background: #1e1e1e;
-  padding: 15px;
-  border-radius: 12px;
-  border: 1px solid #333;
-  margin-top: 10px;
-}
-
-.pick-btn {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  font-weight: 900;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.1s;
-}
-
-.pick-btn:disabled {
-  background: #121212 !important;
-  color: #333 !important;
-  cursor: not-allowed;
-  border: 1px solid #222;
-}
-
-/* --- Mudae Color Palette --- */
 .blue {
-  background: #3498db;
+  background: var(--blue);
   color: white;
-  --text: #3498db;
 }
 .teal {
-  background: #1abc9c;
+  background: var(--teal);
   color: white;
-  --text: #1abc9c;
 }
 .green {
-  background: #2ecc71;
+  background: var(--green);
   color: white;
-  --text: #2ecc71;
 }
 .yellow {
-  background: #f1c40f;
+  background: var(--yellow);
   color: black;
-  --text: #f1c40f;
 }
 .orange {
-  background: #e67e22;
+  background: var(--orange);
   color: white;
-  --text: #e67e22;
 }
 .purple {
-  background: #9b59b6;
+  background: var(--purple);
   color: white;
-  --text: #9b59b6;
 }
 .red {
-  background: #ff4757;
+  background: var(--red);
   color: white;
-  --text: #ff4757;
-  box-shadow: 0 0 15px rgba(255, 71, 87, 0.6);
+  box-shadow: 0 0 15px rgba(255, 71, 87, 0.4);
 }
+.light {
+  background: var(--light);
+  color: #2d3436;
+}
+.dark {
+  background: var(--dark);
+  color: #dfe6e9;
+}
+
 .rainbow {
-  background: linear-gradient(45deg, #ff4757, #e67e22, #f1c40f, #2ecc71, #1abc9c, #3498db, #9b59b6);
-  background-size: 100% 100%;
+  background: var(--rainbow);
+  background-size: 200% 200%;
   color: white;
   text-shadow: 1px 1px 2px black;
 }
@@ -188,7 +163,22 @@ body {
     background-position: 0% 50%;
   }
 }
-/* --- Stats Header Styles --- */
+
+/* --- Counter Badges --- */
+#ship-counter {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+}
+
+#ship-counter span {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Stats & Header --- */
 .stats {
   text-align: center;
   background: #1e1e1e;
@@ -198,34 +188,12 @@ body {
   border: 1px solid #333;
 }
 
-.stat-row {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 10px;
-}
-
-.stat-item {
-  display: flex;
-  flex-direction: column;
-}
-
-.stat-val {
-  font-size: 20px;
-  font-weight: 900;
-  color: #00d4ff;
-}
-
-.stat-lbl {
-  font-size: 10px;
-  color: #888;
-}
-
 .big-letter {
   font-size: 28px;
   font-weight: 900;
 }
 
-/* --- Two-Row Navigation System --- */
+/* --- Navigation System --- */
 .nav-container {
   display: flex;
   flex-direction: column;
@@ -255,6 +223,7 @@ body {
   color: #888;
   background: #2a2a2a;
   cursor: pointer;
+  border: none;
 }
 
 .nav-btn:hover {
@@ -262,24 +231,20 @@ body {
   color: white;
 }
 
-/* Navigation Active/Current States */
 .btn-chest.active {
-  background: #3498db !important;
+  background: var(--blue) !important;
   color: white !important;
 }
-
 .btn-harvest.active {
-  background: #2ecc71 !important;
+  background: var(--green) !important;
   color: white !important;
 }
-
 .btn-quest.active {
-  background: #9b59b6 !important;
+  background: var(--purple) !important;
   color: white !important;
 }
-
 .btn-trace.active {
-  background: #1abc9c !important;
+  background: var(--teal) !important;
   color: white !important;
 }
 
@@ -296,32 +261,39 @@ body {
   width: 100%;
   gap: 10px;
 }
-.view-chest .chest-links {
+.view-chest .chest-links,
+.view-harvest .harvest-links,
+.view-quest .quest-links,
+.view-trace .trace-links {
   display: flex;
 }
 
-.view-harvest .harvest-links {
+/* --- Controls & Utilities --- */
+.picker-container {
+  margin-top: 20px;
+  text-align: center;
+}
+.picker {
   display: flex;
+  gap: 8px;
+  background: #1e1e1e;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #333;
 }
 
-.nav-container.view-quest .quest-links {
+.pick-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 18px;
   display: flex;
-}
-
-.nav-container.view-trace .trace-links {
-  display: flex;
-}
-
-.value-label {
-  font-size: 10px;
-  color: #ffd700; /* Gold color */
-  font-weight: bold;
-  margin-top: 2px;
-}
-.total-score {
-  color: #ffd700;
-  font-size: 24px;
-  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s;
 }
 
 .reset-button {
@@ -334,8 +306,8 @@ body {
   font-weight: bold;
 }
 
-.controls {
-  margin-top: 20px;
+.reset-button:hover {
+  background: #555;
 }
 
 .wip {
