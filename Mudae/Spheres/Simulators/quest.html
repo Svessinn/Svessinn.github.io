@@ -170,7 +170,7 @@
       function render() {
         const gridEl = document.getElementById("grid");
         gridEl.innerHTML = "";
-        const { probs, possibleVals } = calculateProbabilities();
+        const { probs, possibleVals, validCount } = calculateProbabilities();
 
         document.getElementById("clicks-left").innerText = clicksLeft;
         document.getElementById("spheres-found").innerText = `${foundCount}/4`;
@@ -208,22 +208,31 @@
             let p = probs[i];
             let possibleSet = possibleVals[i];
 
-            // Final Purple/Red location identification
-            const isLastPurple = foundCount === 3 && purples.includes(i);
-
-            if (isLastPurple) {
-              cell.innerHTML = `<span class="locked-text" style="color:${COLOR_MAP["R"].color}">RED</span>`;
-              cell.classList.add("best-move");
-            } else if (p === 100) {
-              const config = foundCount >= 3 ? COLOR_MAP["R"] : COLOR_MAP["P"];
-              cell.innerHTML = `<span class="locked-text" style="color:${config.color}">${config.name}</span>`;
-            } else if (p === 0 && possibleSet && possibleSet.size === 1) {
-              const val = Array.from(possibleSet)[0];
-              const config = COLOR_MAP[val];
-              cell.innerHTML = `<span class="locked-text" style="color:${config.color}">${config.name}</span>`;
-            } else if (p > 0) {
-              let color = p > 50 ? "#ff4757" : p > 20 ? "#ffa502" : "#2ed573";
-              cell.innerHTML = `<span class="prob" style="color:${color}">${p.toFixed(1)}%</span>`;
+            // LOGIC: If 3 purples found, the board is effectively solved.
+            // Show names for EVERYTHING instead of percentages.
+            if (foundCount === 3) {
+              if (purples.includes(i)) {
+                cell.innerHTML = `<span class="locked-text" style="color:${COLOR_MAP["R"].color}">RED</span>`;
+                cell.classList.add("best-move");
+              } else if (possibleSet && possibleSet.size === 1) {
+                const val = Array.from(possibleSet)[0];
+                const config = COLOR_MAP[val];
+                cell.innerHTML = `<span class="locked-text" style="color:${config.color}">${config.name}</span>`;
+              }
+            }
+            // Standard Solver View (0-2 purples found)
+            else {
+              if (p === 100) {
+                const config = COLOR_MAP["P"];
+                cell.innerHTML = `<span class="locked-text" style="color:${config.color}">${config.name}</span>`;
+              } else if (p === 0 && possibleSet && possibleSet.size === 1) {
+                const val = Array.from(possibleSet)[0];
+                const config = COLOR_MAP[val];
+                cell.innerHTML = `<span class="locked-text" style="color:${config.color}">${config.name}</span>`;
+              } else if (p > 0) {
+                let color = p > 50 ? "#ff4757" : p > 20 ? "#ffa502" : "#2ed573";
+                cell.innerHTML = `<span class="prob" style="color:${color}">${p.toFixed(1)}%</span>`;
+              }
             }
           }
           gridEl.appendChild(cell);
