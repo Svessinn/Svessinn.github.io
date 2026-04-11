@@ -1,0 +1,16 @@
+.unrevealed-cell {
+  opacity: 0.4;
+  filter: grayscale(40%);
+  border: 1px dashed rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Optional: Add a slight scale effect to clicked cells to make them pop */
+.cell.teal,
+.cell.green,
+.cell.yellow,
+.cell.orange,
+.cell.red,
+.cell.rainbow {
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,21 @@
+.best-move {
+  background: #000 !important;
+  border: 2px solid #f1c40f !important;
+  box-shadow: inset 0 0 10px #f1c40f;
+}
+.best-label {
+  font-size: 8px;
+  color: #f1c40f;
+  font-weight: bold;
+}
+
+/* Ghost/Possible indicator styles */
+.ghost-tile {
+  background: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+}
+.prob-ghost {
+  font-size: 10px;
+  font-weight: bold;
+  opacity: 0.6;
+}
