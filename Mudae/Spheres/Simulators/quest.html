@@ -104,6 +104,7 @@
         helper(0, []);
         return results;
       }
+
       const ALL_COMBOS = getCombinations(
         Array.from({ length: 25 }, (_, i) => i),
         4,
@@ -169,7 +170,7 @@
       function render() {
         const gridEl = document.getElementById("grid");
         gridEl.innerHTML = "";
-        const { probs, validCount, possibleVals } = calculateProbabilities();
+        const { probs, possibleVals } = calculateProbabilities();
 
         document.getElementById("clicks-left").innerText = clicksLeft;
         document.getElementById("spheres-found").innerText = `${foundCount}/4`;
@@ -207,7 +208,13 @@
             let p = probs[i];
             let possibleSet = possibleVals[i];
 
-            if (p === 100) {
+            // Final Purple/Red location identification
+            const isLastPurple = foundCount === 3 && purples.includes(i);
+
+            if (isLastPurple) {
+              cell.innerHTML = `<span class="locked-text" style="color:${COLOR_MAP["R"].color}">RED</span>`;
+              cell.classList.add("best-move");
+            } else if (p === 100) {
               const config = foundCount >= 3 ? COLOR_MAP["R"] : COLOR_MAP["P"];
               cell.innerHTML = `<span class="locked-text" style="color:${config.color}">${config.name}</span>`;
             } else if (p === 0 && possibleSet && possibleSet.size === 1) {
@@ -223,7 +230,7 @@
         }
       }
 
-      resetGame();
+      window.addEventListener("DOMContentLoaded", resetGame);
     </script>
   </body>
 </html>
