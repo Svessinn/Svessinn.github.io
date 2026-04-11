@@ -4,6 +4,25 @@
     <meta charset="UTF-8" />
     <title>Mudae $ot Simulator</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      /* Faded style for ships that were revealed automatically at the end */
+      .unrevealed-ship {
+        opacity: 0.4;
+        filter: grayscale(40%);
+        border: 1px dashed rgba(255, 255, 255, 0.3) !important;
+      }
+
+      /* Optional: Add a slight scale effect to clicked cells to make them pop */
+      .cell.teal,
+      .cell.green,
+      .cell.yellow,
+      .cell.orange,
+      .cell.red,
+      .cell.rainbow {
+        font-weight: bold;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      }
+    </style>
     <script src="../js/nav.js" defer></script>
     <script>
       // Ensure the navbar highlights Trace on load
@@ -46,61 +65,69 @@
         "Y": { name: "YELLOW", class: "yellow" },
         "O": { name: "ORANGE", class: "orange" },
         "R": { name: "RED", class: "red" },
-        "W": { name: "RAINBOW", class: "rainbow" }, // 'W' for White/Rainbow
+        "W": { name: "RAINBOW", class: "rainbow" },
       };
 
       let board = Array(25).fill("B");
       let revealed = Array(25).fill(false);
       let blueClicks = 0;
+      let gameOver = false;
 
       function resetGame() {
         board = Array(25).fill("B");
         revealed = Array(25).fill(false);
         blueClicks = 0;
+        gameOver = false;
+        document.getElementById("status").innerText = "Click spheres. Only Blue costs a click!";
+        document.getElementById("status").style.color = "#aaa";
 
-        // 1. Determine the "Random Rarer Rarity" for this specific session
         const rarerOptions = ["O", "R", "W"];
-        const selectedRarer = rarerOptions[Math.floor(Math.random() * rarerOptions.length)];
+        const selectedRer = rarerOptions[Math.floor(Math.random() * rarerOptions.length)];
 
-        // 2. Define the counts based on your rules
         const pool = [
-          { color: "T", count: 4 }, // 4 Teals
-          { color: "G", count: 4 }, // 4 Greens
-          { color: "Y", count: 3 }, // 3 Yellows
-          { color: selectedRarer, count: 2 }, // 2 of the Rarer Rarity
+          { color: "T", count: 4 },
+          { color: "G", count: 4 },
+          { color: "Y", count: 3 },
+          { color: selectedRer, count: 2 },
         ];
 
-        // 3. Place them following the "Line Rule"
         pool.forEach((item) => {
           let placed = false;
           let attempts = 0;
-
           while (!placed && attempts < 100) {
             attempts++;
             const isRow = Math.random() > 0.5;
-            const lineIdx = Math.floor(Math.random() * 5); // Which row or column
-            const startPos = Math.floor(Math.random() * (6 - item.count)); // Start index in that line
+            const lineIdx = Math.floor(Math.random() * 5);
+            const startPos = Math.floor(Math.random() * (6 - item.count));
 
             let indices = [];
             for (let i = 0; i < item.count; i++) {
               indices.push(isRow ? lineIdx * 5 + (startPos + i) : (startPos + i) * 5 + lineIdx);
             }
 
-            // Check if all selected spots are currently Blue (empty)
             if (indices.every((idx) => board[idx] === "B")) {
               indices.forEach((idx) => (board[idx] = item.color));
               placed = true;
             }
           }
         });
-
         render();
       }
 
       function clickCell(i) {
-        if (revealed[i] || blueClicks >= 4) return;
+        if (revealed[i] || gameOver) return;
+
         revealed[i] = true;
-        if (board[i] === "B") blueClicks++;
+
+        if (board[i] === "B") {
+          blueClicks++;
+          if (blueClicks >= 4) {
+            gameOver = true;
+            document.getElementById("status").innerText = "GAME OVER - Board Revealed";
+            document.getElementById("status").style.color = "#ff4757";
+          }
+        }
+
         render();
       }
 
@@ -112,27 +139,30 @@
         board.forEach((color, i) => {
           const cell = document.createElement("div");
           cell.className = "cell";
+
+          // If the cell was actually clicked by the user
           if (revealed[i]) {
             cell.classList.add(getColorClass(color));
             cell.innerText = color;
-          } else {
+          }
+          // If the game is over, show the cells that were NOT clicked
+          else if (gameOver) {
+            cell.classList.add(getColorClass(color));
+            cell.classList.add("unrevealed-ship"); // Add a faded style
+            cell.innerText = color;
+          }
+          // Otherwise, it's a normal clickable hidden cell
+          else {
             cell.onclick = () => clickCell(i);
           }
+
           gridEl.appendChild(cell);
         });
       }
 
       function getColorClass(c) {
-        const map = {
-          "B": "blue",
-          "T": "teal",
-          "G": "green",
-          "Y": "yellow",
-          "O": "orange",
-          "R": "red",
-          "W": "rainbow",
-        };
-        return map[c] || "blue"; // Fallback to blue if something goes wrong
+        const map = { "B": "blue", "T": "teal", "G": "green", "Y": "yellow", "O": "orange", "R": "red", "W": "rainbow" };
+        return map[c] || "blue";
       }
 
       resetGame();
