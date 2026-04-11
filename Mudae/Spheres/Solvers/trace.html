@@ -311,7 +311,7 @@
             } else {
               if (blueProb === maxBlueProb && maxBlueProb > 0) {
                 cell.classList.add("best-move");
-                cell.innerHTML = `<div class="best-label">SAFE</div>`;
+                cell.innerHTML = `<div class="best-label">BEST</div>`;
               }
               cell.innerHTML += `<span class="prob" style="color:#3498db">${Math.round(blueProb * 100)}% BLUE</span>`;
             }
