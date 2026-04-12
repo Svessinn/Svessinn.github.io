@@ -46,10 +46,36 @@
   z-index: 2;
 }
 
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #222;
+  border: 1px solid #333;
+  aspect-ratio: 1/1;
+  transition: background 0.2s;
+}
+
+.cell:hover {
+  background: #2a2a2a;
+}
+
 .cell.selected {
-  outline: 3px solid #3498db;
-  outline-offset: -3px;
-  background: rgba(52, 152, 219, 0.2);
+  border-color: #3498db;
+  background: #1a2a3a;
+}
+
+.prob-container span {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.big-letter {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
 }
 
 .pick-btn:disabled {
@@ -70,4 +96,9 @@
 
 .solved.dark .big-letter {
   color: #fff;
+}
+
+.picker-btn.disabled {
+  filter: grayscale(1);
+  pointer-events: none;
 }

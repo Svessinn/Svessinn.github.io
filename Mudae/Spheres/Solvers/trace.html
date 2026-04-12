@@ -127,9 +127,22 @@
       }
 
       function getActiveShips() {
-        const identifiedRares = Object.values(revealed).filter((c) => ALL_COLORS[c] && !ALL_COLORS[c].always);
-        const uniqueRares = [...new Set(identifiedRares)];
-        return ["T", "G", "Y", "O", ...uniqueRares];
+        const common = Object.keys(ALL_COLORS).filter((k) => ALL_COLORS[k].always);
+        const revealedValues = Object.values(revealed);
+        const userPlacedRares = [...new Set(revealedValues)].filter((k) => !ALL_COLORS[k].always);
+
+        const totalRaresAllowed = Math.max(0, currentColorCount - 5);
+
+        // If we haven't reached the limit of rare ships, the solver
+        // MUST consider every possible rare color as a candidate.
+        if (userPlacedRares.length < totalRaresAllowed) {
+          const allRares = Object.keys(ALL_COLORS).filter((k) => !ALL_COLORS[k].always);
+          return [...common, ...allRares];
+        }
+
+        // Once the limit is hit, the solver only cares about common ships
+        // and the specific rare ships the user chose.
+        return [...common, ...userPlacedRares];
       }
 
       function getPossiblePlacements(len) {
@@ -158,29 +171,36 @@
           .map(() => ({}));
         let certain = {};
         let foundNewCertainty = true;
-        const active = getActiveShips();
 
+        const active = getActiveShips();
+        const allPossibleRares = Object.keys(ALL_COLORS).filter((k) => !ALL_COLORS[k].always);
+        const totalRaresExpected = currentColorCount - 5;
+        const identifiedRares = active.filter((c) => !ALL_COLORS[c].always);
+        const missingRaresCount = totalRaresExpected - identifiedRares.length;
+
+        // Phase 1: Geometric Certainty Loop
         while (foundNewCertainty) {
           foundNewCertainty = false;
-          const counts = {};
-          Object.values(virtualRevealed).forEach((v) => (counts[v] = (counts[v] || 0) + 1));
+          const currentCounts = {};
+          Object.values(virtualRevealed).forEach((v) => (currentCounts[v] = (currentCounts[v] || 0) + 1));
 
           active.forEach((color) => {
             const ship = ALL_COLORS[color];
-            const foundIndices = Object.keys(virtualRevealed)
+            const foundIdx = Object.keys(virtualRevealed)
               .filter((k) => virtualRevealed[k] === color)
               .map(Number);
-            if (counts[color] >= ship.len) return;
+            if (currentCounts[color] >= ship.len) return;
 
-            let validPositions = getPossiblePlacements(ship.len).filter((pos) => {
-              if (!foundIndices.every((idx) => pos.includes(idx))) return false;
-              if (pos.some((idx) => virtualRevealed[idx] && virtualRevealed[idx] !== color)) return false;
+            let validPos = getPossiblePlacements(ship.len).filter((pos) => {
+              if (!foundIdx.every((i) => pos.includes(i))) return false;
+              if (pos.some((i) => virtualRevealed[i] && virtualRevealed[i] !== color)) return false;
               return true;
             });
 
-            if (validPositions.length > 0) {
-              validPositions[0].forEach((idx) => {
-                if (validPositions.every((p) => p.includes(idx)) && !virtualRevealed[idx]) {
+            if (validPos.length === 1) {
+              // If only one possible spot exists, it's certain
+              validPos[0].forEach((idx) => {
+                if (!virtualRevealed[idx]) {
                   virtualRevealed[idx] = color;
                   certain[idx] = color;
                   foundNewCertainty = true;
@@ -190,73 +210,152 @@
           });
         }
 
-        const finalCounts = {};
-        Object.values(virtualRevealed).forEach((v) => (finalCounts[v] = (finalCounts[v] || 0) + 1));
-
+        // Phase 2: Heatmap for Identified Ships
         active.forEach((color) => {
           const ship = ALL_COLORS[color];
-          const foundIndices = Object.keys(virtualRevealed)
+          const currentCount = Object.values(virtualRevealed).filter((v) => v === color).length;
+          if (currentCount >= ship.len) return;
+
+          const foundIdx = Object.keys(virtualRevealed)
             .filter((k) => virtualRevealed[k] === color)
             .map(Number);
-          if (finalCounts[color] >= ship.len) return;
-
-          let validPositions = getPossiblePlacements(ship.len).filter((pos) => {
-            if (!foundIndices.every((idx) => pos.includes(idx))) return false;
-            if (pos.some((idx) => virtualRevealed[idx] && virtualRevealed[idx] !== color)) return false;
+          let validPos = getPossiblePlacements(ship.len).filter((pos) => {
+            if (!foundIdx.every((i) => pos.includes(i))) return false;
+            if (pos.some((i) => virtualRevealed[i] && virtualRevealed[i] !== color)) return false;
             return true;
           });
 
-          if (validPositions.length > 0) {
-            validPositions.forEach((p) => {
+          if (validPos.length > 0) {
+            const weight = 1 / validPos.length;
+            validPos.forEach((p) =>
               p.forEach((idx) => {
-                if (!virtualRevealed[idx]) {
-                  heatmap[idx][color] = (heatmap[idx][color] || 0) + 1 / validPositions.length;
-                }
-              });
-            });
+                if (!virtualRevealed[idx]) heatmap[idx][color] = (heatmap[idx][color] || 0) + weight;
+              }),
+            );
           }
         });
+
+        // Phase 3: Unknown Rares (The Fix)
+        // Instead of just "?", we populate the heatmap for EVERY rare color
+        // that hasn't been identified yet.
+        if (missingRaresCount > 0) {
+          const unidentifiedRares = allPossibleRares.filter((r) => !identifiedRares.includes(r));
+
+          // Most rare ships are length 2.
+          let validPos = getPossiblePlacements(2).filter((pos) => pos.every((idx) => !virtualRevealed[idx]));
+
+          if (validPos.length > 0) {
+            const weight = missingRaresCount / validPos.length;
+            validPos.forEach((p) =>
+              p.forEach((idx) => {
+                // KEY FIX: Assign this probability to EVERY potential rare color
+                // so the Picker sees they are physically possible.
+                unidentifiedRares.forEach((rareColor) => {
+                  heatmap[idx][rareColor] = (heatmap[idx][rareColor] || 0) + weight;
+                });
+                heatmap[idx]["?"] = (heatmap[idx]["?"] || 0) + weight;
+              }),
+            );
+          }
+        }
+
+        // Phase 4: Blue Remainder
+        for (let i = 0; i < 25; i++) {
+          if (!virtualRevealed[i]) {
+            const totalShipProb = Object.values(heatmap[i]).reduce((a, b) => a + b, 0);
+            heatmap[i]["B"] = Math.max(0, 1 - totalShipProb);
+          }
+        }
 
         return { certain, heatmap };
       }
 
       function setupPicker() {
         const container = document.getElementById("dynamic-picker");
-        const info = document.getElementById("selection-info");
+        if (!container) return;
         container.innerHTML = "";
 
-        if (selectedIdx !== null) {
-          info.innerText = `SETTING COLOR FOR CELL #${selectedIdx + 1}`;
-        } else {
-          info.innerText = "SELECT A CELL ON THE GRID";
-        }
+        const deductions = getDeductions();
+        const cellHeatmap = selectedIdx !== null ? deductions.heatmap[selectedIdx] : {};
+        const revealedValues = Object.values(revealed);
 
-        const activeList = getActiveShips();
-        const identifiedRaresCount = activeList.length - 4;
-        const raresRemainingSlots = currentColorCount - 5 - identifiedRaresCount;
+        // Re-calculate local rare counts for the UI logic
+        const userPlacedRares = [...new Set(revealedValues)].filter((k) => !ALL_COLORS[k].always);
+        const totalRaresAllowed = Math.max(0, currentColorCount - 5);
 
         Object.keys(ALL_COLORS).forEach((k) => {
-          const isRare = !ALL_COLORS[k].always;
-          const alreadyFound = activeList.includes(k);
+          const ship = ALL_COLORS[k];
+          const isRare = !ship.always;
+          const alreadyOnBoard = userPlacedRares.includes(k);
+
           const btn = document.createElement("button");
-          btn.className = `pick-btn ${ALL_COLORS[k].class}`;
+          btn.className = `pick-btn ${ship.class}`;
           btn.innerText = k;
 
-          const isAtRareLimit = isRare && !alreadyFound && raresRemainingSlots <= 0;
+          // --- FINAL LOCK LOGIC ---
 
-          if (selectedIdx === null || isAtRareLimit) {
+          // 1. Quota Lock: Only lock a rare if slots are full AND this isn't one of them.
+          const isLockedByQuota = isRare && !alreadyOnBoard && userPlacedRares.length >= totalRaresAllowed;
+
+          // 2. Geometry Lock: Only lock if the solver says it LITERALLY cannot fit.
+          // If the solver is working (Step 2), this will now be TRUE for rare ships at the start.
+          const isPhysicallyImpossible = selectedIdx !== null && k !== "B" && !cellHeatmap[k];
+
+          // 3. Segment Lock: Lock if you've placed all pieces of this ship.
+          const segmentsUsed = revealedValues.filter((v) => v === k).length;
+          const isFull = k !== "B" && segmentsUsed >= (ship.len || 0);
+
+          if (selectedIdx === null || isLockedByQuota || isPhysicallyImpossible || isFull) {
             btn.disabled = true;
+            btn.style.opacity = "0.2";
           } else {
             btn.onclick = () => setTile(k);
           }
+
           container.appendChild(btn);
         });
       }
 
+      function selectTile(idx) {
+        // 1. If the cell is already revealed, clicking it should just re-select it
+        if (revealed[idx]) {
+          selectedIdx = idx;
+          render();
+          return;
+        }
+
+        // 2. Check for 100% Certain Ship from geometric deductions
+        // This uses the cachedCertain object populated during the last render
+        if (cachedCertain[idx]) {
+          selectedIdx = idx;
+          setTile(cachedCertain[idx]);
+          return;
+        }
+
+        // 3. Check for 100% Certain Blue from the probability heatmap
+        // We call getDeductions here to ensure we have the most up-to-date map
+        const deductions = getDeductions();
+        const heatmap = deductions.heatmap;
+
+        if (heatmap[idx] && heatmap[idx]["B"] >= 0.999) {
+          selectedIdx = idx;
+          setTile("B");
+          return;
+        }
+
+        // 4. MANUAL SELECTION: If the cell is not 100% certain,
+        // allow the user to open the picker by setting the index and rendering
+        selectedIdx = idx;
+        render();
+      }
+
       function setTile(color) {
         if (selectedIdx === null) return;
+
         saveHistory();
         revealed[selectedIdx] = color;
+
+        // Clear selection and re-render
         selectedIdx = null;
         render();
       }
@@ -264,33 +363,28 @@
       function render() {
         const gridEl = document.getElementById("grid");
         gridEl.innerHTML = "";
+
         const deductions = getDeductions();
         const heatmap = deductions.heatmap;
         cachedCertain = deductions.certain;
 
-        const nonBlueSegments = Object.values(revealed).filter((v) => v !== "B").length;
-        const blueFoundCount = Object.values(revealed).filter((v) => v === "B").length;
+        const revealedEntries = Object.values(revealed);
+        const nonBlueSegmentsFound = revealedEntries.filter((v) => v !== "B").length;
         const rareColorCount = currentColorCount - 5;
-        const totalSegments = 12 + rareColorCount * 2;
-        const totalPossibleBlues = 25 - totalSegments;
+        const totalShipSegments = 12 + rareColorCount * 2;
+        const totalBluesExpected = 25 - totalShipSegments;
+        const bluesFound = revealedEntries.filter((v) => v === "B").length;
 
-        const isHuntingBlue = nonBlueSegments < 5 && blueFoundCount < totalPossibleBlues;
+        const allBluesFound = bluesFound >= totalBluesExpected;
+        const isHuntingBlue = nonBlueSegmentsFound < 5 && !allBluesFound;
 
-        document.getElementById("found-count").innerText = `${nonBlueSegments}/${totalSegments}`;
+        // Update Status UI
         const statusEl = document.getElementById("status");
-        statusEl.innerText = isHuntingBlue ? "PHASE: Hunting Blues (Safe Clicks)" : "PHASE: Hunting Ships";
-        statusEl.style.color = isHuntingBlue ? "#3498db" : "#aaa";
+        const countEl = document.getElementById("found-count");
+        if (countEl) countEl.innerText = `${nonBlueSegmentsFound}/${totalShipSegments}`;
 
-        const cellProbs = Array(25)
-          .fill(0)
-          .map((_, i) => {
-            const totalShipProb = Object.values(heatmap[i]).reduce((a, b) => a + b, 0);
-            return Math.max(0, 1 - totalShipProb);
-          });
-
-        const availableIndices = Array.from({ length: 25 }, (_, i) => i).filter((i) => !revealed[i] && !cachedCertain[i]);
-
-        const maxBlueProb = availableIndices.length > 0 ? Math.max(...availableIndices.map((i) => cellProbs[i])) : 0;
+        const availableIndices = Array.from({ length: 25 }, (_, i) => i).filter((i) => !revealed[i]);
+        const maxBlueProb = availableIndices.length > 0 ? Math.max(...availableIndices.map((i) => heatmap[i]["B"] || 0)) : 0;
 
         for (let i = 0; i < 25; i++) {
           const cell = document.createElement("div");
@@ -298,61 +392,90 @@
           if (i === selectedIdx) cell.classList.add("selected");
 
           if (revealed[i]) {
+            // --- 1. REVEALED CELL ---
             const color = revealed[i];
             cell.classList.add("solved", ALL_COLORS[color].class);
             cell.innerHTML = `<span class="big-letter">${color}</span>`;
-            cell.onclick = () => selectTile(i);
-          } else if (isHuntingBlue) {
-            cell.onclick = () => selectTile(i);
-            const blueProb = cellProbs[i];
-
-            if (cachedCertain[i]) {
-              const color = cachedCertain[i];
-              cell.innerHTML = `<span class="prob" style="color:var(--${ALL_COLORS[color].class}); font-size: 14px;">${color}</span>`;
-            } else {
-              if (blueProb === maxBlueProb && maxBlueProb > 0) {
-                cell.classList.add("best-move");
-                cell.innerHTML = `<div class="best-label">BEST</div>`;
-              }
-              cell.innerHTML += `<span class="prob" style="color:#3498db">${Math.round(blueProb * 100)}% BLUE</span>`;
-            }
           } else if (cachedCertain[i]) {
+            // --- 2. 100% CERTAIN SHIP (CLEAN VERSION) ---
             const color = cachedCertain[i];
-            cell.classList.add("best-move");
-            cell.onclick = () => selectTile(i);
-            cell.innerHTML = `<div class="best-label">100%</div><span class="prob" style="color:var(--${ALL_COLORS[color].class})">${color}</span>`;
-          } else {
-            cell.onclick = () => selectTile(i);
-            let possibleColors = Object.keys(heatmap[i]);
-            let bestColor = null;
-            let maxShipWeight = 0;
+            const colorClass = ALL_COLORS[color].class;
 
-            possibleColors.forEach((c) => {
-              if (heatmap[i][c] > maxShipWeight) {
-                maxShipWeight = heatmap[i][c];
-                bestColor = c;
+            if (!isHuntingBlue) {
+              // Post-Blue Phase: Full Glow and Colored Background
+              cell.classList.add("best-move", "solved-predict");
+              cell.style.background = `var(--${colorClass})`;
+              cell.innerHTML = `
+          <div class="best-label">100%</div>
+          <span class="big-letter" style="color:white">${color}</span>
+        `;
+            } else {
+              // Hunting Blue Phase: Just the Big Letter in its color (No Glow/BG)
+              const colorHex = `var(--${colorClass})`;
+              cell.innerHTML = `<span class="big-letter" style="color: ${colorHex}; opacity: 0.8;">${color}</span>`;
+            }
+          } else if (heatmap[i]["B"] >= 0.999) {
+            // --- 3. 100% CERTAIN BLUE ---
+            cell.innerHTML = `<span class="big-letter" style="color: #3498db; opacity: 0.5;">B</span>`;
+            if (isHuntingBlue) {
+              cell.classList.add("best-move");
+              cell.innerHTML += `<div class="best-label">BEST</div>`;
+            }
+          } else {
+            // --- 4. PERCENTAGE BREAKDOWN ---
+            const probContainer = document.createElement("div");
+            probContainer.style.cssText =
+              "display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; width: 100%; gap: 1px; pointer-events: none;";
+
+            let combinedRareWeight = 0;
+            const displayProbs = [];
+
+            Object.entries(heatmap[i]).forEach(([color, weight]) => {
+              if (weight <= 0.01) return;
+              if (color === "?" || (ALL_COLORS[color] && !ALL_COLORS[color].always)) {
+                combinedRareWeight += weight;
+              } else {
+                displayProbs.push({ color, weight });
               }
             });
 
-            if (bestColor && maxShipWeight > 0.05) {
-              cell.innerHTML = `<span class="prob" style="color:var(--${ALL_COLORS[bestColor].class})">${Math.round(maxShipWeight * 100)}% ${bestColor}</span>`;
-            } else {
-              cell.innerHTML = `<span class="prob" style="color: #555">?</span>`;
+            if (combinedRareWeight > 0.01) {
+              displayProbs.push({ color: "RARE", weight: combinedRareWeight, isRare: true });
             }
+
+            displayProbs.sort((a, b) => b.weight - a.weight);
+
+            displayProbs.forEach(({ color, weight, isRare }) => {
+              const pTag = document.createElement("span");
+              const pct = Math.round(weight * 100);
+              let colorHex = "#aaa";
+
+              if (isRare) colorHex = "#e74c3c";
+              else if (color === "B") colorHex = "#3498db";
+              else if (ALL_COLORS[color]) colorHex = `var(--${ALL_COLORS[color].class})`;
+
+              pTag.style.cssText = `font-size: 9px; font-weight: bold; color: ${colorHex}; line-height: 1; text-shadow: 1px 1px 1px rgba(0,0,0,0.5);`;
+              pTag.innerText = `${pct}% ${color === "B" ? "BLUE" : color}`;
+              probContainer.appendChild(pTag);
+            });
+
+            // Highlight best blue move only during hunting phase
+            if (isHuntingBlue && maxBlueProb > 0 && heatmap[i]["B"] === maxBlueProb) {
+              cell.classList.add("best-move");
+              const label = document.createElement("div");
+              label.className = "best-label";
+              label.innerText = "BEST";
+              cell.appendChild(label);
+            }
+
+            cell.appendChild(probContainer);
           }
+
+          cell.onclick = () => selectTile(i);
           gridEl.appendChild(cell);
         }
-        setupPicker();
-      }
 
-      function selectTile(idx) {
-        if (cachedCertain[idx]) {
-          selectedIdx = idx;
-          setTile(cachedCertain[idx]);
-          return;
-        }
-        selectedIdx = idx;
-        render();
+        setupPicker();
       }
 
       window.addEventListener("DOMContentLoaded", () => {
