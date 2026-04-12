@@ -164,6 +164,10 @@
             document.getElementById("status").style.color = "#ff4757";
           }
         } else {
+          if (nonBlueFound < 5) {
+            document.getElementById("status").innerText = "NO EXTRA CHANCES LEFT!";
+            document.getElementById("status").style.color = "#3498db";
+          }
           // Trigger breakdown per-cell for L and D
           if (color === "L" || color === "D") {
             await handleBreakdown(color);
