@@ -128,13 +128,18 @@
       function getActiveShips() {
         const common = Object.keys(ALL_COLORS).filter((k) => ALL_COLORS[k].always);
         const revealedValues = Object.values(revealed);
+
+        // Find which rare colors the user has actually used on the board
         const userPlacedRares = [...new Set(revealedValues)].filter((k) => !ALL_COLORS[k].always);
         const totalRaresAllowed = Math.max(0, currentColorCount - 5);
 
         if (userPlacedRares.length < totalRaresAllowed) {
+          // Quota not met: Solver considers every possible rare color as a candidate
           const allRares = Object.keys(ALL_COLORS).filter((k) => !ALL_COLORS[k].always);
           return [...common, ...allRares];
         }
+
+        // Quota met: Solver only cares about common ships and the specific rares revealed
         return [...common, ...userPlacedRares];
       }
 
@@ -171,7 +176,7 @@
         const identifiedRares = [...new Set(Object.values(revealed))].filter((k) => !ALL_COLORS[k].always);
         const missingRaresCount = totalRaresExpected - identifiedRares.length;
 
-        // PASS 1: GEOMETRIC INTERSECTION (Forced Cells)
+        // --- PASS 1: GEOMETRIC INTERSECTION (Forced Cells) ---
         while (foundNewCertainty) {
           foundNewCertainty = false;
           const currentCounts = {};
@@ -196,7 +201,7 @@
                 if (!virtualRevealed[idx]) {
                   virtualRevealed[idx] = color;
                   certain[idx] = color;
-                  heatmap[idx] = { [color]: 1 };
+                  heatmap[idx] = { [color]: 1 }; // Hard Lock
                   foundNewCertainty = true;
                 }
               });
@@ -204,7 +209,7 @@
           });
         }
 
-        // PASS 2: FLOATING SHIP WEIGHTS
+        // --- PASS 2: FLOATING SHIP WEIGHTS ---
         active.forEach((color) => {
           const ship = ALL_COLORS[color];
           const currentCount = Object.values(virtualRevealed).filter((v) => v === color).length;
@@ -231,27 +236,32 @@
           }
         });
 
-        // PASS 3: MYSTERY RARE PROBABILITY
+        // --- PASS 3: IDENTITY-AWARE RARE PROBABILITY ---
         if (missingRaresCount > 0) {
           const unidentifiedRares = allPossibleRares.filter((r) => !identifiedRares.includes(r));
           let validPos = getPossiblePlacements(2).filter((pos) => pos.every((idx) => !virtualRevealed[idx]));
 
           if (validPos.length > 0) {
-            const weight = missingRaresCount / validPos.length;
+            // Weight for the category total
+            const categoryWeight = missingRaresCount / validPos.length;
+
             validPos.forEach((p) =>
               p.forEach((idx) => {
                 if (!revealed[idx] && !certain[idx]) {
+                  heatmap[idx]["?"] = (heatmap[idx]["?"] || 0) + categoryWeight;
+
+                  // Split weight among potential identities so Picker knows they are valid
+                  const individualWeight = categoryWeight / unidentifiedRares.length;
                   unidentifiedRares.forEach((r) => {
-                    heatmap[idx][r] = (heatmap[idx][r] || 0) + weight;
+                    heatmap[idx][r] = (heatmap[idx][r] || 0) + individualWeight;
                   });
-                  heatmap[idx]["?"] = (heatmap[idx]["?"] || 0) + weight;
                 }
               }),
             );
           }
         }
 
-        // PASS 4: BLUE POOL & FINAL NORMALIZATION
+        // --- PASS 4: BLUE & NORMALIZATION ---
         const totalShipSegments = 12 + totalRaresExpected * 2;
         const totalBluesExpected = 25 - totalShipSegments;
         const bluesFound = Object.values(revealed).filter((v) => v === "B").length;
@@ -262,10 +272,14 @@
 
         for (let i = 0; i < 25; i++) {
           if (revealed[i] || certain[i]) continue;
+
           heatmap[i]["B"] = blueWeight;
           const total = Object.values(heatmap[i]).reduce((a, b) => a + b, 0);
-          if (total > 0) Object.keys(heatmap[i]).forEach((k) => (heatmap[i][k] /= total));
-          else heatmap[i] = { "B": 1 };
+          if (total > 0) {
+            Object.keys(heatmap[i]).forEach((k) => (heatmap[i][k] /= total));
+          } else {
+            heatmap[i] = { "B": 1 };
+          }
         }
 
         return { certain, heatmap };
@@ -395,8 +409,11 @@
 
             Object.entries(heatmap[i]).forEach(([color, weight]) => {
               if (weight <= 0.01) return;
-              if (color === "?" || (ALL_COLORS[color] && !ALL_COLORS[color].always && !identifiedRares.includes(color))) {
-                combinedRareWeight += weight;
+              if (color === "?") {
+                combinedRareWeight = weight;
+              } else if (ALL_COLORS[color] && !ALL_COLORS[color].always && !identifiedRares.includes(color)) {
+                // Do not add individual unknown rares to the display list
+                return;
               } else {
                 displayProbs.push({ color, weight });
               }
