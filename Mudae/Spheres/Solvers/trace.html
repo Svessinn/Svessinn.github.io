@@ -178,7 +178,8 @@
         const identifiedRares = active.filter((c) => !ALL_COLORS[c].always);
         const missingRaresCount = totalRaresExpected - identifiedRares.length;
 
-        // Phase 1: Geometric Certainty Loop
+        // --- PASS 1: GEOMETRIC FORCED (INTERSECTION LOGIC) ---
+        // If ALL valid placements for a ship share a specific cell, that cell is 100% certain.
         while (foundNewCertainty) {
           foundNewCertainty = false;
           const currentCounts = {};
@@ -189,20 +190,26 @@
             const foundIdx = Object.keys(virtualRevealed)
               .filter((k) => virtualRevealed[k] === color)
               .map(Number);
+
             if (currentCounts[color] >= ship.len) return;
 
             let validPos = getPossiblePlacements(ship.len).filter((pos) => {
+              // Ship must cover segments already confirmed for this color
               if (!foundIdx.every((i) => pos.includes(i))) return false;
+              // Ship cannot overlap with a different confirmed color or revealed Blue
               if (pos.some((i) => virtualRevealed[i] && virtualRevealed[i] !== color)) return false;
               return true;
             });
 
-            if (validPos.length === 1) {
-              // If only one possible spot exists, it's certain
-              validPos[0].forEach((idx) => {
+            if (validPos.length > 0) {
+              // Find cells that appear in EVERY valid placement (Intersection)
+              let intersection = validPos[0].filter((idx) => validPos.every((pos) => pos.includes(idx)));
+
+              intersection.forEach((idx) => {
                 if (!virtualRevealed[idx]) {
                   virtualRevealed[idx] = color;
                   certain[idx] = color;
+                  heatmap[idx] = { [color]: 1 }; // LOCK heatmap at 100% color
                   foundNewCertainty = true;
                 }
               });
@@ -210,7 +217,7 @@
           });
         }
 
-        // Phase 2: Heatmap for Identified Ships
+        // --- PASS 2: SHIP HEATMAP (PROBABILITY FOR UNCERTAIN CELLS) ---
         active.forEach((color) => {
           const ship = ALL_COLORS[color];
           const currentCount = Object.values(virtualRevealed).filter((v) => v === color).length;
@@ -229,41 +236,62 @@
             const weight = 1 / validPos.length;
             validPos.forEach((p) =>
               p.forEach((idx) => {
-                if (!virtualRevealed[idx]) heatmap[idx][color] = (heatmap[idx][color] || 0) + weight;
+                // Only distribute weight to cells not already locked as Certain
+                if (!revealed[idx] && !certain[idx]) {
+                  heatmap[idx][color] = (heatmap[idx][color] || 0) + weight;
+                }
               }),
             );
           }
         });
 
-        // Phase 3: Unknown Rares (The Fix)
-        // Instead of just "?", we populate the heatmap for EVERY rare color
-        // that hasn't been identified yet.
+        // --- PASS 3: UNKNOWN RARE SHIPS ---
         if (missingRaresCount > 0) {
           const unidentifiedRares = allPossibleRares.filter((r) => !identifiedRares.includes(r));
-
-          // Most rare ships are length 2.
           let validPos = getPossiblePlacements(2).filter((pos) => pos.every((idx) => !virtualRevealed[idx]));
 
           if (validPos.length > 0) {
             const weight = missingRaresCount / validPos.length;
             validPos.forEach((p) =>
               p.forEach((idx) => {
-                // KEY FIX: Assign this probability to EVERY potential rare color
-                // so the Picker sees they are physically possible.
-                unidentifiedRares.forEach((rareColor) => {
-                  heatmap[idx][rareColor] = (heatmap[idx][rareColor] || 0) + weight;
-                });
-                heatmap[idx]["?"] = (heatmap[idx]["?"] || 0) + weight;
+                if (!revealed[idx] && !certain[idx]) {
+                  unidentifiedRares.forEach((rareColor) => {
+                    heatmap[idx][rareColor] = (heatmap[idx][rareColor] || 0) + weight;
+                  });
+                  heatmap[idx]["?"] = (heatmap[idx]["?"] || 0) + weight;
+                }
               }),
             );
           }
         }
 
-        // Phase 4: Blue Remainder
+        // --- PASS 4: BLUE REMAINDER & NORMALIZATION ---
+        const totalShipSegments = 12 + totalRaresExpected * 2;
+        const totalBluesExpected = 25 - totalShipSegments;
+        const bluesFound = Object.values(revealed).filter((v) => v === "B").length;
+        const bluesRemaining = Math.max(0, totalBluesExpected - bluesFound);
+
+        // Blue is only allowed in cells that are NOT revealed and NOT geometrically forced
+        const blueEligibleIndices = Array.from({ length: 25 }, (_, i) => i).filter((i) => !revealed[i] && !certain[i]);
+
+        const blueWeightPerCell = blueEligibleIndices.length > 0 ? bluesRemaining / blueEligibleIndices.length : 0;
+
         for (let i = 0; i < 25; i++) {
-          if (!virtualRevealed[i]) {
-            const totalShipProb = Object.values(heatmap[i]).reduce((a, b) => a + b, 0);
-            heatmap[i]["B"] = Math.max(0, 1 - totalShipProb);
+          if (revealed[i]) continue;
+
+          // THE HARD WALL: If Pass 1 locked it, we skip the rest of the math for this cell
+          if (certain[i]) {
+            continue;
+          }
+
+          heatmap[i]["B"] = blueWeightPerCell;
+
+          const totalWeight = Object.values(heatmap[i]).reduce((a, b) => a + b, 0);
+          if (totalWeight > 0) {
+            Object.keys(heatmap[i]).forEach((k) => (heatmap[i][k] /= totalWeight));
+          } else {
+            // If a cell is physically blocked for all ships, it is 100% Blue
+            heatmap[i] = { "B": 1 };
           }
         }
 
@@ -476,6 +504,8 @@
         }
 
         setupPicker();
+
+        //console.log(cachedCertain);
       }
 
       window.addEventListener("DOMContentLoaded", () => {
