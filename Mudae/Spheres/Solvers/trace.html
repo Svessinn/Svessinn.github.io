@@ -81,7 +81,7 @@
 
     <script>
       let revealed = {};
-      let history = []; // Stack for undo functionality
+      let history = [];
       let selectedIdx = null;
       let currentColorCount = 6;
       let cachedCertain = {};
@@ -113,7 +113,6 @@
       }
 
       function saveHistory() {
-        // Deep copy of revealed object
         history.push(JSON.stringify(revealed));
         document.getElementById("undo-btn").disabled = false;
       }
@@ -130,18 +129,12 @@
         const common = Object.keys(ALL_COLORS).filter((k) => ALL_COLORS[k].always);
         const revealedValues = Object.values(revealed);
         const userPlacedRares = [...new Set(revealedValues)].filter((k) => !ALL_COLORS[k].always);
-
         const totalRaresAllowed = Math.max(0, currentColorCount - 5);
 
-        // If we haven't reached the limit of rare ships, the solver
-        // MUST consider every possible rare color as a candidate.
         if (userPlacedRares.length < totalRaresAllowed) {
           const allRares = Object.keys(ALL_COLORS).filter((k) => !ALL_COLORS[k].always);
           return [...common, ...allRares];
         }
-
-        // Once the limit is hit, the solver only cares about common ships
-        // and the specific rare ships the user chose.
         return [...common, ...userPlacedRares];
       }
 
@@ -175,11 +168,10 @@
         const active = getActiveShips();
         const allPossibleRares = Object.keys(ALL_COLORS).filter((k) => !ALL_COLORS[k].always);
         const totalRaresExpected = currentColorCount - 5;
-        const identifiedRares = active.filter((c) => !ALL_COLORS[c].always);
+        const identifiedRares = [...new Set(Object.values(revealed))].filter((k) => !ALL_COLORS[k].always);
         const missingRaresCount = totalRaresExpected - identifiedRares.length;
 
-        // --- PASS 1: GEOMETRIC FORCED (INTERSECTION LOGIC) ---
-        // If ALL valid placements for a ship share a specific cell, that cell is 100% certain.
+        // PASS 1: GEOMETRIC INTERSECTION (Forced Cells)
         while (foundNewCertainty) {
           foundNewCertainty = false;
           const currentCounts = {};
@@ -190,26 +182,21 @@
             const foundIdx = Object.keys(virtualRevealed)
               .filter((k) => virtualRevealed[k] === color)
               .map(Number);
-
             if (currentCounts[color] >= ship.len) return;
 
             let validPos = getPossiblePlacements(ship.len).filter((pos) => {
-              // Ship must cover segments already confirmed for this color
               if (!foundIdx.every((i) => pos.includes(i))) return false;
-              // Ship cannot overlap with a different confirmed color or revealed Blue
               if (pos.some((i) => virtualRevealed[i] && virtualRevealed[i] !== color)) return false;
               return true;
             });
 
             if (validPos.length > 0) {
-              // Find cells that appear in EVERY valid placement (Intersection)
-              let intersection = validPos[0].filter((idx) => validPos.every((pos) => pos.includes(idx)));
-
+              let intersection = validPos[0].filter((idx) => validPos.every((p) => p.includes(idx)));
               intersection.forEach((idx) => {
                 if (!virtualRevealed[idx]) {
                   virtualRevealed[idx] = color;
                   certain[idx] = color;
-                  heatmap[idx] = { [color]: 1 }; // LOCK heatmap at 100% color
+                  heatmap[idx] = { [color]: 1 };
                   foundNewCertainty = true;
                 }
               });
@@ -217,7 +204,7 @@
           });
         }
 
-        // --- PASS 2: SHIP HEATMAP (PROBABILITY FOR UNCERTAIN CELLS) ---
+        // PASS 2: FLOATING SHIP WEIGHTS
         active.forEach((color) => {
           const ship = ALL_COLORS[color];
           const currentCount = Object.values(virtualRevealed).filter((v) => v === color).length;
@@ -236,7 +223,6 @@
             const weight = 1 / validPos.length;
             validPos.forEach((p) =>
               p.forEach((idx) => {
-                // Only distribute weight to cells not already locked as Certain
                 if (!revealed[idx] && !certain[idx]) {
                   heatmap[idx][color] = (heatmap[idx][color] || 0) + weight;
                 }
@@ -245,7 +231,7 @@
           }
         });
 
-        // --- PASS 3: UNKNOWN RARE SHIPS ---
+        // PASS 3: MYSTERY RARE PROBABILITY
         if (missingRaresCount > 0) {
           const unidentifiedRares = allPossibleRares.filter((r) => !identifiedRares.includes(r));
           let validPos = getPossiblePlacements(2).filter((pos) => pos.every((idx) => !virtualRevealed[idx]));
@@ -255,8 +241,8 @@
             validPos.forEach((p) =>
               p.forEach((idx) => {
                 if (!revealed[idx] && !certain[idx]) {
-                  unidentifiedRares.forEach((rareColor) => {
-                    heatmap[idx][rareColor] = (heatmap[idx][rareColor] || 0) + weight;
+                  unidentifiedRares.forEach((r) => {
+                    heatmap[idx][r] = (heatmap[idx][r] || 0) + weight;
                   });
                   heatmap[idx]["?"] = (heatmap[idx]["?"] || 0) + weight;
                 }
@@ -265,34 +251,21 @@
           }
         }
 
-        // --- PASS 4: BLUE REMAINDER & NORMALIZATION ---
+        // PASS 4: BLUE POOL & FINAL NORMALIZATION
         const totalShipSegments = 12 + totalRaresExpected * 2;
         const totalBluesExpected = 25 - totalShipSegments;
         const bluesFound = Object.values(revealed).filter((v) => v === "B").length;
         const bluesRemaining = Math.max(0, totalBluesExpected - bluesFound);
 
-        // Blue is only allowed in cells that are NOT revealed and NOT geometrically forced
-        const blueEligibleIndices = Array.from({ length: 25 }, (_, i) => i).filter((i) => !revealed[i] && !certain[i]);
-
-        const blueWeightPerCell = blueEligibleIndices.length > 0 ? bluesRemaining / blueEligibleIndices.length : 0;
+        const blueEligible = Array.from({ length: 25 }, (_, i) => i).filter((i) => !revealed[i] && !certain[i]);
+        const blueWeight = blueEligible.length > 0 ? bluesRemaining / blueEligible.length : 0;
 
         for (let i = 0; i < 25; i++) {
-          if (revealed[i]) continue;
-
-          // THE HARD WALL: If Pass 1 locked it, we skip the rest of the math for this cell
-          if (certain[i]) {
-            continue;
-          }
-
-          heatmap[i]["B"] = blueWeightPerCell;
-
-          const totalWeight = Object.values(heatmap[i]).reduce((a, b) => a + b, 0);
-          if (totalWeight > 0) {
-            Object.keys(heatmap[i]).forEach((k) => (heatmap[i][k] /= totalWeight));
-          } else {
-            // If a cell is physically blocked for all ships, it is 100% Blue
-            heatmap[i] = { "B": 1 };
-          }
+          if (revealed[i] || certain[i]) continue;
+          heatmap[i]["B"] = blueWeight;
+          const total = Object.values(heatmap[i]).reduce((a, b) => a + b, 0);
+          if (total > 0) Object.keys(heatmap[i]).forEach((k) => (heatmap[i][k] /= total));
+          else heatmap[i] = { "B": 1 };
         }
 
         return { certain, heatmap };
@@ -306,8 +279,6 @@
         const deductions = getDeductions();
         const cellHeatmap = selectedIdx !== null ? deductions.heatmap[selectedIdx] : {};
         const revealedValues = Object.values(revealed);
-
-        // Re-calculate local rare counts for the UI logic
         const userPlacedRares = [...new Set(revealedValues)].filter((k) => !ALL_COLORS[k].always);
         const totalRaresAllowed = Math.max(0, currentColorCount - 5);
 
@@ -320,16 +291,8 @@
           btn.className = `pick-btn ${ship.class}`;
           btn.innerText = k;
 
-          // --- FINAL LOCK LOGIC ---
-
-          // 1. Quota Lock: Only lock a rare if slots are full AND this isn't one of them.
           const isLockedByQuota = isRare && !alreadyOnBoard && userPlacedRares.length >= totalRaresAllowed;
-
-          // 2. Geometry Lock: Only lock if the solver says it LITERALLY cannot fit.
-          // If the solver is working (Step 2), this will now be TRUE for rare ships at the start.
           const isPhysicallyImpossible = selectedIdx !== null && k !== "B" && !cellHeatmap[k];
-
-          // 3. Segment Lock: Lock if you've placed all pieces of this ship.
           const segmentsUsed = revealedValues.filter((v) => v === k).length;
           const isFull = k !== "B" && segmentsUsed >= (ship.len || 0);
 
@@ -339,51 +302,35 @@
           } else {
             btn.onclick = () => setTile(k);
           }
-
           container.appendChild(btn);
         });
       }
 
       function selectTile(idx) {
-        // 1. If the cell is already revealed, clicking it should just re-select it
         if (revealed[idx]) {
           selectedIdx = idx;
           render();
           return;
         }
-
-        // 2. Check for 100% Certain Ship from geometric deductions
-        // This uses the cachedCertain object populated during the last render
         if (cachedCertain[idx]) {
           selectedIdx = idx;
           setTile(cachedCertain[idx]);
           return;
         }
-
-        // 3. Check for 100% Certain Blue from the probability heatmap
-        // We call getDeductions here to ensure we have the most up-to-date map
         const deductions = getDeductions();
-        const heatmap = deductions.heatmap;
-
-        if (heatmap[idx] && heatmap[idx]["B"] >= 0.999) {
+        if (deductions.heatmap[idx] && deductions.heatmap[idx]["B"] >= 0.999) {
           selectedIdx = idx;
           setTile("B");
           return;
         }
-
-        // 4. MANUAL SELECTION: If the cell is not 100% certain,
-        // allow the user to open the picker by setting the index and rendering
         selectedIdx = idx;
         render();
       }
 
       function setTile(color) {
         if (selectedIdx === null) return;
-
         saveHistory();
         revealed[selectedIdx] = color;
-
-        // Clear selection and re-render
         selectedIdx = null;
         render();
       }
@@ -397,22 +344,20 @@
         cachedCertain = deductions.certain;
 
         const revealedEntries = Object.values(revealed);
-        const nonBlueSegmentsFound = revealedEntries.filter((v) => v !== "B").length;
-        const rareColorCount = currentColorCount - 5;
-        const totalShipSegments = 12 + rareColorCount * 2;
-        const totalBluesExpected = 25 - totalShipSegments;
+        const nonBlueFound = revealedEntries.filter((v) => v !== "B").length;
+        const rareCount = currentColorCount - 5;
+        const totalSegments = 12 + rareCount * 2;
+        const totalBlues = 25 - totalSegments;
         const bluesFound = revealedEntries.filter((v) => v === "B").length;
 
-        const allBluesFound = bluesFound >= totalBluesExpected;
-        const isHuntingBlue = nonBlueSegmentsFound < 5 && !allBluesFound;
+        const isHuntingBlue = nonBlueFound < 5 && bluesFound < totalBlues;
 
-        // Update Status UI
         const statusEl = document.getElementById("status");
         const countEl = document.getElementById("found-count");
-        if (countEl) countEl.innerText = `${nonBlueSegmentsFound}/${totalShipSegments}`;
+        if (countEl) countEl.innerText = `${nonBlueFound}/${totalSegments}`;
 
-        const availableIndices = Array.from({ length: 25 }, (_, i) => i).filter((i) => !revealed[i]);
-        const maxBlueProb = availableIndices.length > 0 ? Math.max(...availableIndices.map((i) => heatmap[i]["B"] || 0)) : 0;
+        const available = Array.from({ length: 25 }, (_, i) => i).filter((i) => !revealed[i]);
+        const maxBlue = available.length > 0 ? Math.max(...available.map((i) => heatmap[i]["B"] || 0)) : 0;
 
         for (let i = 0; i < 25; i++) {
           const cell = document.createElement("div");
@@ -420,92 +365,69 @@
           if (i === selectedIdx) cell.classList.add("selected");
 
           if (revealed[i]) {
-            // --- 1. REVEALED CELL ---
             const color = revealed[i];
             cell.classList.add("solved", ALL_COLORS[color].class);
             cell.innerHTML = `<span class="big-letter">${color}</span>`;
           } else if (cachedCertain[i]) {
-            // --- 2. 100% CERTAIN SHIP (CLEAN VERSION) ---
             const color = cachedCertain[i];
             const colorClass = ALL_COLORS[color].class;
-
             if (!isHuntingBlue) {
-              // Post-Blue Phase: Full Glow and Colored Background
               cell.classList.add("best-move", "solved-predict");
               cell.style.background = `var(--${colorClass})`;
-              cell.innerHTML = `
-          <div class="best-label">100%</div>
-          <span class="big-letter" style="color:white">${color}</span>
-        `;
+              cell.innerHTML = `<div class="best-label">100%</div><span class="big-letter" style="color:white">${color}</span>`;
             } else {
-              // Hunting Blue Phase: Just the Big Letter in its color (No Glow/BG)
-              const colorHex = `var(--${colorClass})`;
-              cell.innerHTML = `<span class="big-letter" style="color: ${colorHex}; opacity: 0.8;">${color}</span>`;
+              cell.innerHTML = `<span class="big-letter" style="color: var(--${colorClass}); opacity: 0.8;">${color}</span>`;
             }
           } else if (heatmap[i]["B"] >= 0.999) {
-            // --- 3. 100% CERTAIN BLUE ---
             cell.innerHTML = `<span class="big-letter" style="color: #3498db; opacity: 0.5;">B</span>`;
             if (isHuntingBlue) {
               cell.classList.add("best-move");
               cell.innerHTML += `<div class="best-label">BEST</div>`;
             }
           } else {
-            // --- 4. PERCENTAGE BREAKDOWN ---
             const probContainer = document.createElement("div");
             probContainer.style.cssText =
               "display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; width: 100%; gap: 1px; pointer-events: none;";
 
             let combinedRareWeight = 0;
             const displayProbs = [];
+            const identifiedRares = getActiveShips().filter((k) => !ALL_COLORS[k].always && Object.values(revealed).includes(k));
 
             Object.entries(heatmap[i]).forEach(([color, weight]) => {
               if (weight <= 0.01) return;
-              if (color === "?" || (ALL_COLORS[color] && !ALL_COLORS[color].always)) {
+              if (color === "?" || (ALL_COLORS[color] && !ALL_COLORS[color].always && !identifiedRares.includes(color))) {
                 combinedRareWeight += weight;
               } else {
                 displayProbs.push({ color, weight });
               }
             });
 
-            if (combinedRareWeight > 0.01) {
-              displayProbs.push({ color: "RARE", weight: combinedRareWeight, isRare: true });
-            }
-
+            if (combinedRareWeight > 0.01) displayProbs.push({ color: "RARE", weight: combinedRareWeight, isRare: true });
             displayProbs.sort((a, b) => b.weight - a.weight);
 
             displayProbs.forEach(({ color, weight, isRare }) => {
               const pTag = document.createElement("span");
               const pct = Math.round(weight * 100);
-              let colorHex = "#aaa";
-
-              if (isRare) colorHex = "#e74c3c";
-              else if (color === "B") colorHex = "#3498db";
-              else if (ALL_COLORS[color]) colorHex = `var(--${ALL_COLORS[color].class})`;
-
+              let colorHex = isRare ? "#ff369b" : `var(--${ALL_COLORS[color].class})`;
               pTag.style.cssText = `font-size: 9px; font-weight: bold; color: ${colorHex}; line-height: 1; text-shadow: 1px 1px 1px rgba(0,0,0,0.5);`;
-              pTag.innerText = `${pct}% ${color === "B" ? "BLUE" : color}`;
+              pTag.innerText = `${pct}% ${color}`;
+              pTag.className = color === "W" ? "rainbow-text" : "";
               probContainer.appendChild(pTag);
             });
 
-            // Highlight best blue move only during hunting phase
-            if (isHuntingBlue && maxBlueProb > 0 && heatmap[i]["B"] === maxBlueProb) {
+            if (isHuntingBlue && maxBlue > 0 && heatmap[i]["B"] === maxBlue) {
               cell.classList.add("best-move");
               const label = document.createElement("div");
               label.className = "best-label";
               label.innerText = "BEST";
               cell.appendChild(label);
             }
-
             cell.appendChild(probContainer);
           }
-
           cell.onclick = () => selectTile(i);
           gridEl.appendChild(cell);
         }
-
         setupPicker();
-
-        //console.log(cachedCertain);
       }
 
       window.addEventListener("DOMContentLoaded", () => {
