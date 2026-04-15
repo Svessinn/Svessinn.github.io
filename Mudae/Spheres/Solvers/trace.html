@@ -347,7 +347,8 @@
 
         // Logic to detect if this specific placement kills the player
         const shipSegments = Object.values(revealed).filter((v) => v !== "B").length;
-        if (shipSegments >= 5 && color === "B") {
+        const blueCount = Object.values(revealed).filter((v) => v === "B").length;
+        if (shipSegments >= 5 && color === "B" && blueCount >= 4) {
           lastMoveWasBadBlue = true;
         }
 
