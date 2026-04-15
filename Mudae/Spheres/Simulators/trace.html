@@ -6,8 +6,10 @@
     <meta name="description" content="Interactive simulator for Mudae's Trace ($ot) Game mode." />
     <link rel="stylesheet" href="../stylesheets/style.css" />
     <link rel="stylesheet" href="../stylesheets/traceSimulator.css" />
+    <link rel="stylesheet" href="../stylesheets/settings.css" />
     <script src="../scripts/nav.js" defer></script>
     <script src="../scripts/sphereSimulator.js"></script>
+    <script src="../scripts/settings.js" defer></script>
   </head>
   <body>
     <div id="main-nav" class="nav-container view-quest">
@@ -40,7 +42,15 @@
     </div>
 
     <div class="stats">
-      <h3 class="wip">Work in Progress</h3>
+      <div id="status-container" style="position: relative">
+        <button
+          id="settings-btn"
+          onclick="toggleSettings(true)"
+          style="position: absolute; top: 10px; right: 10px; cursor: pointer"
+        >
+          ⚙️
+        </button>
+      </div>
       <h1>Trace Simulator</h1>
       <div class="info-row">
         <div>Blue Clicks: <span id="clicks">0</span> / 4</div>
@@ -55,7 +65,40 @@
 
     <div class="grid" id="grid"></div>
     <div class="controls">
-      <button onclick="resetGame()" class="reset-button">RESET GAME</button>
+      <button onclick="reset()" class="reset-button">RESET GAME</button>
+    </div>
+
+    <div id="settings-overlay" class="hidden">
+      <div class="settings-content">
+        <button class="close-btn" onclick="toggleSettings(false)">×</button>
+        <h2>Settings</h2>
+        <hr />
+
+        <div class="setting-item">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px">
+            <label>Value Value</label>
+            <span id="multiplier-display" style="font-weight: bold; color: #2ecc71">100%</span>
+          </div>
+          <input
+            type="range"
+            id="multiplier-slider"
+            min="100"
+            max="500"
+            value="100"
+            oninput="updateMultiplier(this.value)"
+            style="width: 100%; cursor: pointer"
+          />
+        </div>
+
+        <div class="setting-item">
+          <label>Grid Opacity</label>
+          <input type="range" id="opacity-slider" min="10" max="100" value="100" oninput="updateOpacity(this.value)" />
+        </div>
+
+        <div class="setting-item">
+          <button class="reset-btn" onclick="settingsReset()">Hard Reset Game</button>
+        </div>
+      </div>
     </div>
 
     <script>
@@ -75,6 +118,7 @@
       let revealed = Array(25).fill(false);
       let blueClicks = 0;
       let totalValue = 0;
+      let valueMultiplier = 1.0;
       let gameOver = false;
       let currentShips = [];
       let gameData = null;
@@ -88,15 +132,32 @@
         }
       }
 
-      function getVal(color) {
-        if (gameData && gameData.colors && gameData.colors[color]) {
-          return Number(gameData.colors[color].value) || 0;
-        }
-        const fallbacks = { "P": 5, "B": 10, "T": 20, "G": 35, "Y": 55, "O": 90, "R": 150, "W": 500 };
-        return fallbacks[color] || 0;
+      function updateMultiplier(val) {
+        const display = document.getElementById("multiplier-display");
+        if (display) display.innerText = val + "%";
+
+        valueMultiplier = parseFloat(val) / 100.0;
+        console.log("Value multiplier set to:", valueMultiplier);
+
+        // Recalculate total value based on already revealed cells if desired,
+        // though typically multipliers apply to new gains.
+        // For a simulator, it's cleanest to let it apply to the next clicks.
       }
 
-      function resetGame() {
+      function getVal(color) {
+        let baseValue = 0;
+        if (gameData && gameData.colors && gameData.colors[color]) {
+          baseValue = Number(gameData.colors[color].value) || 0;
+        } else {
+          const fallbacks = { "P": 5, "B": 10, "T": 20, "G": 35, "Y": 55, "O": 90, "R": 150, "W": 500 };
+          baseValue = fallbacks[color] || 0;
+        }
+
+        // Apply the multiplier from settings
+        return Math.floor(baseValue * valueMultiplier);
+      }
+
+      function reset() {
         board = Array(25).fill("B");
         revealed = Array(25).fill(false);
         blueClicks = 0;
@@ -300,7 +361,7 @@
 
       window.addEventListener("DOMContentLoaded", async () => {
         await loadGameData();
-        resetGame();
+        reset();
       });
     </script>
   </body>

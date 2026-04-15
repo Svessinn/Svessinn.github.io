@@ -58,7 +58,7 @@
     <div class="grid" id="grid"></div>
 
     <div class="controls">
-      <button class="reset-button" onclick="resetGame()">RESET CHEST</button>
+      <button class="reset-button" onclick="reset()">RESET CHEST</button>
     </div>
 
     <script>
@@ -68,7 +68,7 @@
       let gameOver = false;
       let redFound = false;
 
-      function resetGame() {
+      function reset() {
         board = Array(25).fill("B");
         revealed = Array(25).fill(false);
         clicks = 0;
@@ -191,7 +191,7 @@
         return map[c] || "blue";
       }
 
-      resetGame();
+      reset();
     </script>
   </body>
 </html>

@@ -69,7 +69,7 @@
     </div>
 
     <div class="controls">
-      <button class="reset-button" onclick="resetSolver()">RESET ALL</button>
+      <button class="reset-button" onclick="reset()">RESET ALL</button>
     </div>
 
     <script>
@@ -81,7 +81,7 @@
       // Constants for Mudae limits
       const LIMITS = { "R": 1, "O": 2, "Y": 3, "G": 4 };
 
-      function resetSolver() {
+      function reset() {
         selectedIdx = null;
         revealedColors = {};
         possibleRedIndices = [...ALL_POSSIBLE_REDS];
@@ -301,7 +301,7 @@
 
       window.addEventListener("DOMContentLoaded", () => {
         if (typeof switchTab === "function") switchTab("chest");
-        resetSolver();
+        reset();
       });
     </script>
   </body>
