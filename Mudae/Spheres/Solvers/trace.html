@@ -319,7 +319,9 @@
 
         if (isGameOver()) {
           container.innerHTML =
-            "<div style='color:#e74c3c; font-weight:bold; padding:10px;'>GAME OVER: HIT BLUE DURING SHIP HUNTING PHASE</div>";
+            Object.keys(revealed).length === 25
+              ? "<div style='color:#2ecc71; font-weight:bold; padding:10px;'>VICTORY!</div>"
+              : "<div style='color:#e74c3c; font-weight:bold; padding:10px;'>GAME OVER: HIT BLUE DURING SHIP HUNTING PHASE</div>";
           return;
         }
 
@@ -410,12 +412,12 @@
         if (countEl) countEl.innerText = `${nonBlueFound}/${totalSegments}`;
 
         if (statusEl) {
-          if (isGameOverState) {
-            statusEl.innerText = "STATUS: GAME OVER (Hit Blue)";
-            statusEl.style.color = "#ff369b"; // Matching your rare color hex
-          } else if (allCellsRevealed) {
+          if (allCellsRevealed) {
             statusEl.innerText = "STATUS: VICTORY!";
             statusEl.style.color = "#2ecc71";
+          } else if (isGameOverState) {
+            statusEl.innerText = "STATUS: GAME OVER (Hit Blue)";
+            statusEl.style.color = "#ff369b"; // Matching your rare color hex
           } else {
             statusEl.innerText = isHuntingBlue ? "PHASE: Hunting Blues" : "PHASE: Hunting Ships (CAUTION)";
             statusEl.style.color = isHuntingBlue ? "#3498db" : "#f1c40f";
