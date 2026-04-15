@@ -308,3 +308,15 @@ body {
   color: #ffa502;
   margin-bottom: 5px;
 }
+
+.picker-game-over {
+  color: #e74c3c;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.picker-victory {
+  color: #2ecc71;
+  font-weight: bold;
+  padding: 10px;
+}

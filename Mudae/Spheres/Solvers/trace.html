@@ -132,6 +132,10 @@
         return lastMoveWasBadBlue;
       }
 
+      function isVictory() {
+        return Object.keys(revealed).length === 25;
+      }
+
       function updateColorCount(count, btn) {
         document.querySelectorAll(".color-toggle").forEach((b) => b.classList.remove("current-page"));
         btn.classList.add("current-page");
@@ -317,11 +321,11 @@
         if (!container) return;
         container.innerHTML = "";
 
-        if (isGameOver()) {
-          container.innerHTML =
-            Object.keys(revealed).length === 25
-              ? "<div style='color:#2ecc71; font-weight:bold; padding:10px;'>VICTORY!</div>"
-              : "<div style='color:#e74c3c; font-weight:bold; padding:10px;'>GAME OVER: HIT BLUE DURING SHIP HUNTING PHASE</div>";
+        if (isVictory()) {
+          container.innerHTML = "<div class='picker-victory'>VICTORY!</div>";
+          return;
+        } else if (isGameOver()) {
+          container.innerHTML = "<div class='picker-game-over'>GAME OVER: HIT BLUE DURING SHIP HUNTING PHASE</div>";
           return;
         }
 
@@ -351,7 +355,7 @@
       }
 
       function selectTile(idx) {
-        if (isGameOver()) return;
+        if (isGameOver() || isVictory()) return;
         if (revealed[idx]) {
           selectedIdx = idx;
           render();
@@ -403,7 +407,7 @@
 
         // Phase Logic
         const isGameOverState = isGameOver(); // Uses the new variable-based check
-        const allCellsRevealed = Object.keys(revealed).length === 25;
+        const allCellsRevealed = isVictory();
         const isHuntingBlue = nonBlueFound < 5 && !allCellsRevealed && !isGameOverState;
 
         // Status Updates
