@@ -30,9 +30,11 @@ function settingsReset() {
 
 // Global Event Listeners for UX
 window.addEventListener("keydown", (e) => {
-  // Close menu on Escape key
+  // Toggle menu on Escape key
   if (e.key === "Escape") {
-    toggleSettings(false);
+    const settingsStatus = Boolean(document.getElementById("settings-overlay").classList.contains("hidden"));
+    // console.log("Escape key pressed. Settings menu currently open:", !settingsStatus);
+    toggleSettings(settingsStatus);
   }
 });
 
@@ -71,4 +73,34 @@ function syncGridOpacity() {
   if (grid) {
     grid.style.setProperty("opacity", currentGridOpacity, "important");
   }
+}
+
+/**
+ * Fine-tunes the multiplier value via buttons
+ * @param {number} amount - The amount to add or subtract (e.g., 10 or -10)
+ */
+function adjustMultiplier(amount) {
+  const slider = document.getElementById("multiplier-slider");
+  if (!slider) return;
+
+  // Calculate new value and keep it within 0-500 bounds
+  let newValue = parseInt(slider.value) + amount;
+  if (newValue < 100) newValue = 100;
+  if (newValue > 500) newValue = 500;
+
+  // Update slider position and trigger the update logic
+  slider.value = newValue;
+  updateMultiplier(newValue);
+}
+
+/**
+ *
+ * @param {number} val
+ */
+function updateMultiplier(val) {
+  const display = document.getElementById("multiplier-display");
+  if (display) display.innerText = val + "%";
+
+  valueMultiplier = parseFloat(val) / 100.0;
+  // console.log("Value multiplier set to:", valueMultiplier);
 }
