@@ -93,7 +93,7 @@ body {
   border: 1px dashed rgba(255, 255, 255, 0.3) !important;
 }
 
-/* --- Mudae Color Palette & Variables --- */
+/* --- Color Palette & Variables --- */
 :root {
   --blue: #3498db;
   --teal: #1abc9c;
@@ -182,43 +182,6 @@ body {
 }
 
 /* --- Navigation System --- */
-.nav-container {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-bottom: 25px;
-  width: 420px;
-}
-
-.nav-row {
-  display: flex;
-  gap: 10px;
-  background: #1e1e1e;
-  padding: 8px;
-  border-radius: 8px;
-  border: 1px solid #333;
-}
-
-.nav-btn {
-  flex: 1;
-  padding: 10px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 12px;
-  text-align: center;
-  transition: 0.2s;
-  color: #888;
-  background: #2a2a2a;
-  cursor: pointer;
-  border: none;
-}
-
-.nav-btn:hover {
-  background: #383838;
-  color: white;
-}
-
 .btn-chest.active {
   background: var(--blue) !important;
   color: white !important;
@@ -234,26 +197,6 @@ body {
 .btn-trace.active {
   background: var(--teal) !important;
   color: white !important;
-}
-
-.nav-btn.current-page {
-  background: #444;
-  color: #00d4ff;
-  pointer-events: none;
-  border: 1px solid #00d4ff;
-}
-
-/* Navigation Visibility Logic */
-.mode-section {
-  display: none;
-  width: 100%;
-  gap: 10px;
-}
-.view-chest .chest-links,
-.view-harvest .harvest-links,
-.view-quest .quest-links,
-.view-trace .trace-links {
-  display: flex;
 }
 
 /* --- Controls & Utilities --- */

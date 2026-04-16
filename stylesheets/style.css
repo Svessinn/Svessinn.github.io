@@ -1,0 +1,41 @@
+/* --- Global Styles --- */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #121212;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* --- Color Palette & Variables --- */
+:root {
+  --blue: #3498db;
+  --teal: #1abc9c;
+  --green: #2ecc71;
+  --yellow: #f1c40f;
+  --orange: #e67e22;
+  --purple: #9b59b6;
+  --red: #ff4757;
+  --light: #dfe6e9;
+  --dark: #2d3436;
+  --rainbow: linear-gradient(45deg, #ff4757, #e67e22, #f1c40f, #2ecc71, #1abc9c, #3498db, #9b59b6);
+}
+/* --- Navigation System --- */
+.btn-chest.active {
+  background: var(--blue) !important;
+  color: white !important;
+}
+.btn-harvest.active {
+  background: var(--green) !important;
+  color: white !important;
+}
+.btn-quest.active {
+  background: var(--purple) !important;
+  color: white !important;
+}
+.btn-trace.active {
+  background: var(--teal) !important;
+  color: white !important;
+}

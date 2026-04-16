@@ -1,13 +1,14 @@
 /**
  * Handles the switching of the top row tabs and visibility
  * of the corresponding bottom row links.
- * @param {string} mode - 'quest' or 'trace'
+ * @param {string} mode - 'chest', 'harvest', 'quest', or 'trace'
+ * @param {string} id - ID of the nav container to update (default: 'main-nav')
  */
-function switchTab(mode) {
+function switchTab(mode, id = "main-nav") {
   // Use a more modern check for the event
   if (typeof event !== "undefined") event.preventDefault();
 
-  const nav = document.getElementById("main-nav");
+  const nav = document.getElementById(id);
   if (!nav) return;
 
   // Define all possible modes to clean up classes efficiently

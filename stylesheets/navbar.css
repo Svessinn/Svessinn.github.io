@@ -1,0 +1,70 @@
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0 auto 25px auto;
+  width: fit-content;
+  min-width: 240px;
+  max-width: 80vw;
+  background: #1e1e1e;
+  padding: 8px 8px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  align-items: center;
+  overflow: hidden; /* Ensures the child's background doesn't spill over the rounded corners */
+}
+
+.nav-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  box-sizing: border-box; /* Ensures padding doesn't push the row wider than 100% */
+}
+
+.nav-btn {
+  flex: 1 1 0;
+  min-width: 100px; /* Optional: keeps buttons from getting too squashed */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  transition: 0.2s;
+  color: #888;
+  background: #2a2a2a;
+  cursor: pointer;
+  border: none;
+}
+
+.nav-btn:hover {
+  background: #383838;
+  color: white;
+}
+
+.nav-btn.current-page {
+  background: #444;
+  color: #00d4ff;
+  pointer-events: none;
+  border: 1px solid #00d4ff;
+}
+
+/* Navigation Visibility Logic */
+.mode-section {
+  display: none;
+  width: 100%;
+  gap: 10px;
+}
+.view-chest .chest-links,
+.view-harvest .harvest-links,
+.view-quest .quest-links,
+.view-trace .trace-links {
+  display: flex;
+}
+
+/* active states stored in each subpage's CSS */

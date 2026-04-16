@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Svess's Front Page</title>
+    <meta name="description" content="Stop looking 👀" />
+    <link rel="stylesheet" href="stylesheets/navbar.css" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <script src="scripts/nav.js" defer></script>
+  </head>
+  <body>
+    <h1>Welcome to Svess's Front Page!</h1>
+    <p>Why are you here...</p>
+
+    <div id="sphere-nav" class="nav-container">
+      <div class="nav-row">
+        <div id="tab-chest" class="nav-btn btn-chest" onclick="switchTab('chest', 'sphere-nav')">CHEST</div>
+        <div id="tab-harvest" class="nav-btn btn-harvest" onclick="switchTab('harvest', 'sphere-nav')">HARVEST</div>
+        <div id="tab-quest" class="nav-btn btn-quest" onclick="switchTab('quest', 'sphere-nav')">QUEST</div>
+        <div id="tab-trace" class="nav-btn btn-trace" onclick="switchTab('trace', 'sphere-nav')">TRACE</div>
+      </div>
+
+      <div class="nav-row mode-section chest-links">
+        <a href="Mudae/Spheres/Solvers/chest.html" class="nav-btn">CHEST SOLVER</a>
+        <a href="Mudae/Spheres/Simulators/chest.html" class="nav-btn">CHEST SIMULATOR</a>
+      </div>
+
+      <div class="nav-row mode-section harvest-links">
+        <a href="Mudae/Spheres/Solvers/harvest.html" class="nav-btn">HARVEST SOLVER</a>
+        <a href="Mudae/Spheres/Simulators/harvest.html" class="nav-btn">HARVEST SIMULATOR</a>
+      </div>
+
+      <div class="nav-row mode-section quest-links">
+        <a href="Mudae/Spheres/Solvers/quest.html" class="nav-btn">QUEST SOLVER</a>
+        <a href="Mudae/Spheres/Simulators/quest.html" class="nav-btn">QUEST SIMULATOR</a>
+      </div>
+
+      <div class="nav-row mode-section trace-links">
+        <a href="Mudae/Spheres/Solvers/trace.html" class="nav-btn">TRACE SOLVER</a>
+        <a href="Mudae/Spheres/Simulators/trace.html" class="nav-btn">TRACE SIMULATOR</a>
+      </div>
+    </div>
+
+    <div id="mudae-nav" class="nav-container">
+      <div class="nav-row">
+        <a href="Mudae/BadgeEfficiencyCalc/index.html" class="nav-btn btn-chest">Badge Efficiency Calculator</a>
+        <!-- <a href="Mudae/Badges/index.html" class="nav-btn btn-harvest">Badges</a> -->
+        <a href="Mudae/Bundles/index.html" class="nav-btn btn-quest">Bundles</a>
+        <!-- <a href="Mudae/DisableList/index.html" class="nav-btn btn-quest">Disable List</a> -->
+        <a href="Mudae/KakeraLoots/index.html" class="nav-btn btn-quest">Kakera Loots</a>
+        <!-- <a href="Mudae/KakeraProject/index.html" class="nav-btn btn-quest">Kakera Project</a> -->
+        <a href="Mudae/Spheres/index.html" class="nav-btn btn-quest">Spheres</a>
+        <a href="Mudae/WishSpawnrateCalc/index.html" class="nav-btn btn-quest">Wish Spawnrate Calculator</a>
+      </div>
+    </div>
+  </body>
+</html>
