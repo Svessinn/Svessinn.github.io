@@ -99,7 +99,7 @@
               type="range"
               id="start-count"
               min="3"
-              max="25"
+              max="12"
               value="3"
               oninput="document.getElementById('start-val').innerText = this.value"
               style="flex: 1"
@@ -306,7 +306,6 @@
 
         if (type === "B") unveilChain(3);
         else if (type === "T") unveilChain(1);
-        else if (type === "P") unveilChain(1);
 
         if (type === "L" || type === "D") {
           await handleBreakdown(type);
