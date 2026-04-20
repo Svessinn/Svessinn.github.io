@@ -1,24 +1,3 @@
-.best-move {
-  background: #000 !important;
-  border: 2px solid #f1c40f !important;
-  box-shadow: inset 0 0 10px #f1c40f;
-}
-.best-label {
-  font-size: 8px;
-  color: #f1c40f;
-  font-weight: bold;
-}
-
-/* Ghost/Possible indicator styles */
-.ghost-tile {
-  background: rgba(255, 255, 255, 0.05);
-  cursor: pointer;
-}
-.prob-ghost {
-  font-size: 10px;
-  font-weight: bold;
-  opacity: 0.6;
-}
 .game-container {
   display: flex;
   flex-direction: column;
@@ -31,50 +10,6 @@
   background-color: #2ecc71 !important;
   color: white !important;
   border-color: #27ae60 !important;
-}
-
-.best-label {
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  font-size: 8px;
-  background: gold;
-  color: black;
-  padding: 1px 4px;
-  border-radius: 3px;
-  font-weight: bold;
-  z-index: 2;
-}
-
-.cell {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2px;
-  overflow: hidden;
-  cursor: pointer;
-  background: #222;
-  border: 1px solid #333;
-  aspect-ratio: 1/1;
-  transition: background 0.2s;
-}
-
-.cell:hover {
-  background: #2a2a2a;
-}
-
-.cell.selected {
-  border-color: #3498db;
-  background: #1a2a3a;
-}
-
-.prob-container span {
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
-}
-
-.big-letter {
-  font-size: 24px;
-  font-weight: bold;
 }
 
 .pick-btn:disabled {
@@ -100,11 +35,4 @@
 .picker-btn.disabled {
   filter: grayscale(1);
   pointer-events: none;
-}
-
-.rainbow-text {
-  background-image: linear-gradient(45deg, #ff4757, #f1c40f, #2ecc71, #3498db, #9b59b6) !important;
-  color: transparent !important;
-  background-clip: text !important;
-  -webkit-background-clip: text !important;
 }

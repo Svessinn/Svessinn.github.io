@@ -70,6 +70,7 @@
     </div>
 
     <div class="controls">
+      <button id="undo-btn" class="reset-button" onclick="undoMove()" style="background: #444" disabled>UNDO MOVE</button>
       <button class="reset-button" onclick="reset()">RESET ALL</button>
     </div>
 
@@ -77,14 +78,38 @@
       let selectedIdx = null;
       let revealedColors = {};
       let possibleRedIndices = [];
+      let history = []; // NEW: State history
       const ALL_POSSIBLE_REDS = Array.from({ length: 25 }, (_, i) => i).filter((i) => i !== 12);
-
-      // Constants for Mudae limits
       const LIMITS = { "R": 1, "O": 2, "Y": 3, "G": 4 };
+
+      function saveHistory() {
+        history.push(JSON.stringify(revealedColors));
+        const undoBtn = document.getElementById("undo-btn");
+        if (undoBtn) undoBtn.disabled = false;
+      }
+
+      function undoMove() {
+        if (history.length === 0) return;
+        revealedColors = JSON.parse(history.pop());
+        selectedIdx = null;
+
+        if (history.length === 0) {
+          const undoBtn = document.getElementById("undo-btn");
+          if (undoBtn) undoBtn.disabled = true;
+        }
+
+        recalculatePossibilities();
+        render();
+      }
 
       function reset() {
         selectedIdx = null;
         revealedColors = {};
+        history = [];
+
+        const undoBtn = document.getElementById("undo-btn");
+        if (undoBtn) undoBtn.disabled = true;
+
         possibleRedIndices = [...ALL_POSSIBLE_REDS];
         document.getElementById("picker-ui").style.display = "none";
         render();
@@ -92,22 +117,34 @@
 
       function selectCell(idx) {
         const clickCount = Object.keys(revealedColors).length;
+        // Limit to 5 clicks total as per Chest rules
         if (!revealedColors[idx] && clickCount >= 5) return;
 
         selectedIdx = idx;
 
-        // Disable picker buttons if the specific color limit is reached
         const counts = {};
         Object.values(revealedColors).forEach((c) => (counts[c] = (counts[c] || 0) + 1));
-
-        // If we are editing an existing cell, don't count its current color against the limit
         if (revealedColors[idx]) counts[revealedColors[idx]]--;
 
         document.querySelectorAll(".pick-btn").forEach((btn) => {
           const color = btn.innerText;
-          if (LIMITS[color] && counts[color] >= LIMITS[color]) {
+          if (color === "CLEAR") return;
+
+          // Check 1: Mudae Quantity Limits
+          const isOverLimit = LIMITS[color] && counts[color] >= LIMITS[color];
+
+          // Check 2: Mathematical Impossibility
+          // We check if picking this color for this cell would empty the list of possible Reds
+          let isImpossible = false;
+          if (color === "R") {
+            isImpossible = !possibleRedIndices.includes(idx);
+          } else {
+            isImpossible = !possibleRedIndices.some((redIdx) => checkPossibility(idx, color, redIdx));
+          }
+
+          if (isOverLimit || isImpossible) {
             btn.disabled = true;
-            btn.style.opacity = "0.3";
+            btn.style.opacity = "0.2";
             btn.style.cursor = "not-allowed";
           } else {
             btn.disabled = false;
@@ -120,10 +157,37 @@
         render();
       }
 
+      function saveHistory() {
+        history.push(JSON.stringify(revealedColors));
+        const undoBtn = document.getElementById("undo-btn");
+        if (undoBtn) undoBtn.disabled = false;
+      }
+
+      function undoMove() {
+        if (history.length === 0) return;
+
+        // Restore the last state
+        revealedColors = JSON.parse(history.pop());
+        selectedIdx = null;
+
+        // Disable button if history is empty
+        const undoBtn = document.getElementById("undo-btn");
+        if (history.length === 0 && undoBtn) undoBtn.disabled = true;
+
+        recalculatePossibilities();
+        render();
+      }
+
       function setCellColor(color) {
         if (selectedIdx === null) return;
-        if (color === null) delete revealedColors[selectedIdx];
-        else revealedColors[selectedIdx] = color;
+
+        saveHistory();
+
+        if (color === null) {
+          delete revealedColors[selectedIdx];
+        } else {
+          revealedColors[selectedIdx] = color;
+        }
 
         recalculatePossibilities();
         selectedIdx = null;
@@ -133,6 +197,11 @@
 
       function recalculatePossibilities() {
         let filtered = [...ALL_POSSIBLE_REDS];
+
+        // NEW: Exclude any cell that already has a non-Red color revealed
+        const occupiedIndices = Object.keys(revealedColors).map(Number);
+        filtered = filtered.filter((idx) => !occupiedIndices.includes(idx) || revealedColors[idx] === "R");
+
         Object.keys(revealedColors).forEach((idx) => {
           const targetIdx = parseInt(idx);
           const foundColor = revealedColors[idx];
@@ -154,7 +223,7 @@
 
         if (foundColor === "O") return (dr === 1 && dc === 0) || (dr === 0 && dc === 1);
         if (foundColor === "Y") return dr === dc && dr > 0;
-        if (foundColor === "G") return (dr === 0 || dc === 0) && (dr > 1 || dc > 1);
+        if (foundColor === "G") return dr === 0 || dc === 0;
         if (foundColor === "T") return dr === dc || dr === 0 || dc === 0;
         if (foundColor === "B") return !(dr === 0 || dc === 0 || dr === dc);
         return true;
@@ -246,6 +315,7 @@
               cell.style.cursor = "not-allowed";
             }
 
+            // Fix: Only show "BEST MOVE" or "FIND..." if not revealed
             if (bestMoveIdxs.includes(i)) {
               cell.classList.add("best-move");
               const label = possibleRedIndices.length === 1 ? `FIND ${targetName}` : "BEST MOVE";
@@ -254,36 +324,38 @@
 
             if (possibleRedIndices.length > 0) {
               let prob = 0;
+              // Logic Fix: Only display "RED HERE" if the list of possibilities is exactly 1
               if (possibleRedIndices.length > 1) {
-                if (possibleRedIndices.includes(i)) prob = ((1 / possibleRedIndices.length) * 100).toFixed(0);
-              } else {
+                if (possibleRedIndices.includes(i)) {
+                  prob = ((1 / possibleRedIndices.length) * 100).toFixed(0);
+                }
+              } else if (possibleRedIndices.length === 1) {
                 const redIdx = possibleRedIndices[0];
                 if (i === redIdx) {
                   cell.classList.add("ghost-tile");
-                  cell.innerHTML = `<span class="locked-text" style="color:#ff4757; font-weight:bold; font-size:10px; text-align:center;">RED HERE</span>`;
+                  cell.innerHTML = `<span class="locked-text" style="color:#ff4757; font-weight:bold; font-size:10px; text-align:center; position: relative; z-index: 5;">RED HERE</span>`;
                 } else {
+                  // Logic for probabilities when red is known
                   const expected = getExpectedColor(i, redIdx);
                   const revO = Object.values(revealedColors).filter((c) => c === "O").length;
                   const revY = Object.values(revealedColors).filter((c) => c === "Y").length;
+
                   if (expected === "O" && targetName === "ORANGE") {
                     let oPool = 0;
                     for (let k = 0; k < 25; k++) if (getExpectedColor(k, redIdx) === "O") oPool++;
-                    prob = (
-                      ((LIMITS["O"] - revO) /
-                        (oPool - Object.keys(revealedColors).filter((idx) => getExpectedColor(idx, redIdx) === "O").length)) *
-                      100
-                    ).toFixed(0);
+                    const denom =
+                      oPool - Object.keys(revealedColors).filter((idx) => getExpectedColor(idx, redIdx) === "O").length;
+                    prob = denom > 0 ? (((LIMITS["O"] - revO) / denom) * 100).toFixed(0) : 0;
                   } else if (expected === "Y" && targetName === "YELLOW") {
                     let yPool = 0;
                     for (let k = 0; k < 25; k++) if (getExpectedColor(k, redIdx) === "Y") yPool++;
-                    prob = (
-                      ((LIMITS["Y"] - revY) /
-                        (yPool - Object.keys(revealedColors).filter((idx) => getExpectedColor(idx, redIdx) === "Y").length)) *
-                      100
-                    ).toFixed(0);
+                    const denom =
+                      yPool - Object.keys(revealedColors).filter((idx) => getExpectedColor(idx, redIdx) === "Y").length;
+                    prob = denom > 0 ? (((LIMITS["Y"] - revY) / denom) * 100).toFixed(0) : 0;
                   }
                 }
               }
+
               if (prob > 0) {
                 cell.classList.add("ghost-tile");
                 cell.innerHTML += `<span class="prob-ghost" style="color: ${targetColor}">${prob}%</span>`;

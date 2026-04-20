@@ -51,21 +51,22 @@ body {
 
 /* --- Solver Specifics (Best Move & Probs) --- */
 .best-move {
+  background: #000 !important;
   border: 2px solid #f1c40f !important;
-  box-shadow: 0 0 15px rgba(241, 196, 15, 0.7);
-  animation: pulse-best 1.5s infinite;
+  box-shadow: inset 0 0 10px #f1c40f;
 }
 
 .best-label {
   position: absolute;
-  top: -10px;
-  background: #f1c40f;
+  top: 2px;
+  left: 2px;
+  font-size: 8px;
+  background: gold;
   color: black;
-  font-size: 9px;
-  padding: 2px 5px;
-  border-radius: 4px;
+  padding: 1px 4px;
+  border-radius: 3px;
   font-weight: bold;
-  z-index: 15;
+  z-index: 2;
 }
 
 .prob-ghost {
@@ -262,4 +263,11 @@ body {
   color: #2ecc71;
   font-weight: bold;
   padding: 10px;
+}
+
+.rainbow-text {
+  background-image: linear-gradient(45deg, #ff4757, #f1c40f, #2ecc71, #3498db, #9b59b6) !important;
+  color: transparent !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
 }
