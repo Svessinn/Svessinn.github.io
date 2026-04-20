@@ -198,46 +198,52 @@
       function recalculatePossibilities() {
         let filtered = [...ALL_POSSIBLE_REDS];
 
-        // 1. Basic Geometry & Occupied Cell Filter
+        // 1. Basic Occupancy Filter
         const occupiedIndices = Object.keys(revealedColors).map(Number);
-        // Red cannot be on a cell already revealed as a different color.
         filtered = filtered.filter((idx) => !occupiedIndices.includes(idx) || revealedColors[idx] === "R");
 
         filtered = filtered.filter((redIdx) => {
           const currentCounts = { "O": 0, "Y": 0, "G": 0 };
-          const availableSlots = { "O": 0, "Y": 0, "G": 0 };
+          const potentialSlots = { "O": 0, "Y": 0, "G": 0 };
 
-          // Validate existing hints: Does this Red location conflict with what's already on board?
+          // 2. Geometry Validation (Revealed Hints)
           for (const idx in revealedColors) {
             if (!checkPossibility(parseInt(idx), revealedColors[idx], redIdx)) return false;
           }
 
-          // 2. Resource Availability Check
-          // For this specific redIdx, count how many of each color are already found
-          // and how many empty cells could potentially hold the remaining ones.
+          // 3. Smart Resource Check
           for (let i = 0; i < 25; i++) {
             if (i === redIdx) continue;
 
-            const expected = getExpectedColor(i, redIdx);
             const isRevealed = revealedColors[i] !== undefined;
+            const rr = Math.floor(redIdx / 5),
+              rc = redIdx % 5;
+            const tr = Math.floor(i / 5),
+              tc = i % 5;
+            const dr = Math.abs(rr - tr),
+              dc = Math.abs(rc - tc);
 
             if (isRevealed) {
-              if (revealedColors[i] === expected && currentCounts[expected] !== undefined) {
-                currentCounts[expected]++;
-              }
+              const color = revealedColors[i];
+              if (currentCounts[color] !== undefined) currentCounts[color]++;
             } else {
-              // Cell is empty; check if it could host a required color based on this Red position
-              if (availableSlots[expected] !== undefined) {
-                availableSlots[expected]++;
-              }
+              // Check ALL possible roles this empty cell could play for this Red position
+              // Orange role: Adjacent
+              if ((dr === 1 && dc === 0) || (dr === 0 && dc === 1)) potentialSlots["O"]++;
+
+              // Yellow role: Diagonal
+              if (dr === dc && dr > 0) potentialSlots["Y"]++;
+
+              // Green role: Row or Column (including adjacent!)
+              if (dr === 0 || dc === 0) potentialSlots["G"]++;
             }
           }
 
-          // 3. Final Validation: Are there enough slots left to reach the Mudae limits?
+          // 4. Final Validation
+          // Does (Found) + (ANY cell that COULD be this color) >= (Limit)?
           for (const color in currentCounts) {
-            const remainingNeeded = LIMITS[color] - currentCounts[color];
-            if (availableSlots[color] < remainingNeeded) {
-              return false; // Not enough empty space to fit the required Yellows/Oranges/Greens
+            if (currentCounts[color] + potentialSlots[color] < LIMITS[color]) {
+              return false; // Only purge if it's physically impossible to reach the limit
             }
           }
 
@@ -315,10 +321,19 @@
           tc = targetIdx % 5;
         const dr = Math.abs(rr - tr),
           dc = Math.abs(rc - tc);
+
+        // 1. Orange: Exact adjacency
         if ((dr === 1 && dc === 0) || (dr === 0 && dc === 1)) return "O";
+
+        // 2. Yellow: Pure diagonal (dr === dc)
         if (dr === dc && dr > 0) return "Y";
+
+        // 3. Green: Pure row or column (but not orange, handled above)
         if (dr === 0 || dc === 0) return "G";
-        if (dr === dc) return "T";
+
+        // 4. Teal: Everything else in row/col/diagonal (should be redundant now)
+        if (dr === dc || dr === 0 || dc === 0) return "T";
+
         return "B";
       }
 
