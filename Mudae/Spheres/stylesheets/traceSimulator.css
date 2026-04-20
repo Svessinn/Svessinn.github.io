@@ -15,15 +15,6 @@
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-#breakdown-tray {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-  min-height: 32px;
-  flex-wrap: wrap;
-}
-
 #ship-counter {
   margin-top: 10px;
   display: flex;

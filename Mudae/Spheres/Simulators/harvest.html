@@ -6,6 +6,7 @@
     <meta name="description" content="Interactive simulator for Mudae's Harvest ($oh) Game mode." />
     <link rel="stylesheet" href="../stylesheets/style.css" />
     <link rel="stylesheet" href="../../../stylesheets/navbar.css" />
+    <link rel="stylesheet" href="../stylesheets/settings.css" />
     <script src="../../../scripts/nav.js" defer></script>
   </head>
   <body>
@@ -37,8 +38,300 @@
         <a href="trace.html" class="nav-btn">TRACE SIMULATOR</a>
       </div>
     </div>
+
     <div class="stats">
-      <h3 class="wip">Work in Progress</h3>
+      <div id="status-container" style="position: relative">
+        <button
+          id="settings-btn"
+          onclick="toggleSettings(true)"
+          style="position: absolute; top: 10px; right: 10px; cursor: pointer; background: none; border: none; font-size: 20px"
+        >
+          ⚙️
+        </button>
+      </div>
+      <h1>Harvest Simulator</h1>
+      <div class="info-row">
+        <div>Actions: <span id="clicks">5</span> / 5</div>
+        <div>Total Value: <span id="total-value">0</span></div>
+      </div>
+      <div id="status">Purple is free! Blue reveals 3, Teal reveals 1.</div>
+
+      <div id="breakdown-log"></div>
+      <div id="breakdown-tray"></div>
     </div>
+
+    <div class="grid" id="grid"></div>
+
+    <div class="controls">
+      <button onclick="initGame()" class="reset-button">RESET GAME</button>
+    </div>
+
+    <div id="settings-overlay" class="hidden">
+      <div class="settings-content">
+        <button class="close-btn" onclick="toggleSettings(false)">×</button>
+        <h2>Settings</h2>
+        <hr />
+        <div class="setting-item">
+          <label>Starting Revealed Cells</label>
+          <div style="display: flex; align-items: center; gap: 10px; margin-top: 10px">
+            <input
+              type="range"
+              id="start-count"
+              min="0"
+              max="25"
+              value="3"
+              oninput="document.getElementById('start-val').innerText = this.value"
+              style="flex: 1"
+            />
+            <span id="start-val" style="font-weight: bold; width: 20px">3</span>
+          </div>
+        </div>
+        <div class="setting-item">
+          <button
+            class="reset-btn"
+            onclick="
+              initGame();
+              toggleSettings(false);
+            "
+          >
+            Apply & Restart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let gameData = null;
+      let valueMultiplier = 1;
+      let currentBoard = [];
+      let isVisible = {};
+      let isClaimed = {};
+      let clicksUsed = 0;
+      let totalScore = 0;
+      let gameOver = false;
+
+      const CONFIG = [
+        { type: "B", weight: 54.52, min: 4, max: 22, class: "blue", name: "Blue" },
+        { type: "T", weight: 23.46, min: 0, max: 15, class: "teal", name: "Teal" },
+        { type: "G", weight: 7.86, min: 0, max: 9, class: "green", name: "Green" },
+        { type: "P", weight: 3.92, min: 0, max: 6, class: "purple", name: "Purple" },
+        { type: "L", weight: 2.96, min: 0, max: 5, class: "light", name: "Light" },
+        { type: "Y", weight: 2.58, min: 0, max: 5, class: "yellow", name: "Yellow" },
+        { type: "?", weight: 1.99, min: 0, max: 1, class: "additional", name: "Gold" },
+        { type: "D", weight: 1.46, min: 0, max: 4, class: "dark", name: "Dark" },
+        { type: "O", weight: 0.98, min: 0, max: 4, class: "orange", name: "Orange" },
+        { type: "R", weight: 0.23, min: 0, max: 3, class: "red", name: "Red" },
+        { type: "W", weight: 0.04, min: 0, max: 1, class: "rainbow", name: "Rainbow" },
+      ];
+
+      async function loadGameData() {
+        try {
+          const response = await fetch("../data/colorData.json");
+          gameData = await response.json();
+        } catch (e) {
+          console.warn("JSON failed to load.");
+        }
+        initGame();
+      }
+
+      function getVal(color) {
+        let baseValue = 0;
+        if (gameData && gameData.colors && gameData.colors[color]) {
+          baseValue = Number(gameData.colors[color].value) || 0;
+        } else {
+          const fallbacks = {
+            "P": 5,
+            "B": 10,
+            "T": 20,
+            "G": 35,
+            "Y": 55,
+            "O": 90,
+            "R": 150,
+            "W": 500,
+            "L": 10,
+            "D": 300,
+            "U": 100,
+          };
+          baseValue = fallbacks[color] || 0;
+        }
+        return Math.floor(baseValue * valueMultiplier);
+      }
+
+      function generateBoard() {
+        let board = [];
+        let counts = {};
+        CONFIG.forEach((c) => (counts[c.type] = 0));
+        CONFIG.forEach((c) => {
+          for (let i = 0; i < c.min; i++) {
+            if (board.length < 25) {
+              board.push(c.type);
+              counts[c.type]++;
+            }
+          }
+        });
+        while (board.length < 25) {
+          const roll = Math.random() * 100;
+          let cumulative = 0;
+          let selectedType = "B";
+          for (const item of CONFIG) {
+            cumulative += item.weight;
+            if (roll <= cumulative) {
+              selectedType = item.type;
+              break;
+            }
+          }
+          const typeCfg = CONFIG.find((c) => c.type === selectedType);
+          if (counts[selectedType] < typeCfg.max) {
+            board.push(selectedType);
+            counts[selectedType]++;
+          }
+        }
+        return board.sort(() => Math.random() - 0.5);
+      }
+
+      function initGame() {
+        currentBoard = generateBoard();
+        isVisible = {};
+        isClaimed = {};
+        clicksUsed = 0;
+        totalScore = 0;
+        gameOver = false;
+        document.getElementById("breakdown-log").innerHTML = "";
+        document.getElementById("breakdown-tray").innerHTML = "";
+        const startCount = parseInt(document.getElementById("start-count").value);
+        const indices = [...Array(25).keys()].sort(() => Math.random() - 0.5);
+        for (let i = 0; i < startCount; i++) isVisible[indices[i]] = true;
+        render();
+      }
+
+      async function handleBreakdown(color) {
+        const typeMap = { "L": "light", "D": "dark" };
+        const jsonKey = typeMap[color];
+
+        if (!gameData || !gameData.breakdown_rules || !gameData.breakdown_rules[jsonKey]) return;
+
+        const rule = gameData.breakdown_rules[jsonKey];
+        let results = [];
+        let count = rule.count || 0;
+        if (rule.count_options) {
+          count = rule.count_options[Math.floor(Math.random() * rule.count_options.length)];
+        }
+
+        for (let i = 0; i < count; i++) {
+          const totalWeight = rule.weights.reduce((a, b) => a + b, 0);
+          let random = Math.random() * totalWeight;
+          for (let j = 0; j < rule.weights.length; j++) {
+            if (random < rule.weights[j]) {
+              results.push(rule.possible_outcomes[j]);
+              break;
+            }
+            random -= rule.weights[j];
+          }
+        }
+
+        if (results.length > 0) {
+          const logContainer = document.getElementById("breakdown-log");
+          const logEntry = document.createElement("div");
+          logEntry.style.cssText = "color: #ffd700; font-size: 11px; margin-top: 4px; font-weight: bold; padding-left: 5px;";
+
+          const names = results.map((r) => (r === "L" ? "Light" : gameData.colors[r]?.name || r));
+          const sourceName = CONFIG.find((c) => c.type === color)?.name || color;
+          logEntry.innerText = `${sourceName} cell yielded: ${names.join(", ")}`;
+          logContainer.prepend(logEntry);
+
+          for (const res of results) {
+            totalScore += getVal(res);
+            addBreakdownUI(res);
+            if (res === "L") {
+              await new Promise((resolve) => setTimeout(resolve, 200));
+              await handleBreakdown("L");
+            }
+          }
+          render();
+        }
+      }
+
+      function addBreakdownUI(sphereColor) {
+        const tray = document.getElementById("breakdown-tray");
+        const sphere = document.createElement("div");
+        const config = CONFIG.find((c) => c.type === sphereColor);
+        const className = config ? config.class : "blue";
+        sphere.className = `cell solved ${className}`;
+        sphere.style.cssText =
+          "width:28px; height:28px; font-size:10px; margin:2px; line-height:28px; border-radius:50%; text-align:center; font-weight:bold; color:white; border:1px solid rgba(255,255,255,0.3);";
+        sphere.innerText = sphereColor;
+        tray.appendChild(sphere);
+      }
+
+      async function clickCell(idx) {
+        if (isClaimed[idx] || gameOver) return;
+        const type = currentBoard[idx];
+        const isFreeMove = type === "P";
+
+        if (!isFreeMove) {
+          if (clicksUsed >= 5) return;
+          clicksUsed++;
+        }
+
+        isClaimed[idx] = true;
+        isVisible[idx] = true;
+        totalScore += getVal(type);
+
+        if (type === "B") unveilChain(3);
+        else if (type === "T") unveilChain(1);
+        else if (type === "P") unveilChain(1);
+
+        if (type === "L" || type === "D") {
+          await handleBreakdown(type);
+        }
+
+        if (clicksUsed >= 5) gameOver = true;
+        render();
+      }
+
+      function unveilChain(count) {
+        const hidden = [...Array(25).keys()].filter((i) => !isVisible[i]).sort(() => Math.random() - 0.5);
+        hidden.slice(0, count).forEach((tIdx) => {
+          isVisible[tIdx] = true;
+        });
+      }
+
+      function render() {
+        const gridEl = document.getElementById("grid");
+        gridEl.innerHTML = "";
+        document.getElementById("clicks").innerText = 5 - clicksUsed;
+        document.getElementById("total-value").innerText = totalScore;
+
+        currentBoard.forEach((type, i) => {
+          const config = CONFIG.find((w) => w.type === type);
+          const cell = document.createElement("div");
+          cell.className = "cell";
+
+          if (isClaimed[i]) {
+            cell.classList.add(config.class);
+            cell.style.opacity = "0.3";
+            cell.innerHTML = `<span class="big-letter">${type}</span>`;
+          } else if (gameOver) {
+            cell.classList.add(config.class, "unrevealed-cell");
+            cell.innerHTML = `<span class="big-letter">${type}</span>`;
+            cell.style.cursor = "default";
+          } else if (isVisible[i]) {
+            cell.classList.add(config.class);
+            cell.innerHTML = `<span class="big-letter">${type}</span>`;
+            cell.onclick = () => clickCell(i);
+          } else {
+            cell.innerHTML = `<span class="big-letter">?</span>`;
+            cell.onclick = () => clickCell(i);
+          }
+          gridEl.appendChild(cell);
+        });
+      }
+
+      function toggleSettings(show) {
+        document.getElementById("settings-overlay").classList.toggle("hidden", !show);
+      }
+
+      loadGameData();
+    </script>
   </body>
 </html>

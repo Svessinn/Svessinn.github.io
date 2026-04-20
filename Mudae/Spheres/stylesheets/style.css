@@ -271,3 +271,12 @@ body {
   background-clip: text !important;
   -webkit-background-clip: text !important;
 }
+
+#breakdown-tray {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  min-height: 32px;
+  flex-wrap: wrap;
+}
