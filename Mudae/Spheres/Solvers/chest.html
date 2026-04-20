@@ -198,18 +198,52 @@
       function recalculatePossibilities() {
         let filtered = [...ALL_POSSIBLE_REDS];
 
-        // NEW: Exclude any cell that already has a non-Red color revealed
+        // 1. Basic Geometry & Occupied Cell Filter
         const occupiedIndices = Object.keys(revealedColors).map(Number);
+        // Red cannot be on a cell already revealed as a different color.
         filtered = filtered.filter((idx) => !occupiedIndices.includes(idx) || revealedColors[idx] === "R");
 
-        Object.keys(revealedColors).forEach((idx) => {
-          const targetIdx = parseInt(idx);
-          const foundColor = revealedColors[idx];
-          filtered = filtered.filter((redIdx) => {
-            if (foundColor === "R") return redIdx === targetIdx;
-            return checkPossibility(targetIdx, foundColor, redIdx);
-          });
+        filtered = filtered.filter((redIdx) => {
+          const currentCounts = { "O": 0, "Y": 0, "G": 0 };
+          const availableSlots = { "O": 0, "Y": 0, "G": 0 };
+
+          // Validate existing hints: Does this Red location conflict with what's already on board?
+          for (const idx in revealedColors) {
+            if (!checkPossibility(parseInt(idx), revealedColors[idx], redIdx)) return false;
+          }
+
+          // 2. Resource Availability Check
+          // For this specific redIdx, count how many of each color are already found
+          // and how many empty cells could potentially hold the remaining ones.
+          for (let i = 0; i < 25; i++) {
+            if (i === redIdx) continue;
+
+            const expected = getExpectedColor(i, redIdx);
+            const isRevealed = revealedColors[i] !== undefined;
+
+            if (isRevealed) {
+              if (revealedColors[i] === expected && currentCounts[expected] !== undefined) {
+                currentCounts[expected]++;
+              }
+            } else {
+              // Cell is empty; check if it could host a required color based on this Red position
+              if (availableSlots[expected] !== undefined) {
+                availableSlots[expected]++;
+              }
+            }
+          }
+
+          // 3. Final Validation: Are there enough slots left to reach the Mudae limits?
+          for (const color in currentCounts) {
+            const remainingNeeded = LIMITS[color] - currentCounts[color];
+            if (availableSlots[color] < remainingNeeded) {
+              return false; // Not enough empty space to fit the required Yellows/Oranges/Greens
+            }
+          }
+
+          return true;
         });
+
         possibleRedIndices = filtered;
       }
 
