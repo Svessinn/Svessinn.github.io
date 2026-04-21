@@ -163,7 +163,7 @@
         { type: "P", weight: 3.92, min: 0, max: 6, class: "purple", name: "Purple" },
         { type: "L", weight: 2.96, min: 0, max: 5, class: "light", name: "Light" },
         { type: "Y", weight: 2.58, min: 0, max: 5, class: "yellow", name: "Yellow" },
-        { type: "?", weight: 1.99, min: 0, max: 1, class: "additional", name: "Gold" },
+        { type: "?", weight: 1.99, min: 0, max: 1, class: "unknown", name: "$oc" },
         { type: "D", weight: 1.46, min: 0, max: 4, class: "dark", name: "Dark" },
         { type: "O", weight: 0.98, min: 0, max: 4, class: "orange", name: "Orange" },
         { type: "R", weight: 0.23, min: 0, max: 3, class: "red", name: "Red" },
@@ -238,6 +238,14 @@
         render();
       }
 
+      function logUnkownFound(name) {
+        const logContainer = document.getElementById("breakdown-log");
+        const logEntry = document.createElement("div");
+        logEntry.style.cssText = "color: #f1c40f; font-size: 11px; margin-top: 4px; font-weight: bold; padding-left: 5px;";
+        logEntry.innerText = `Found an unknown cell: ${name}!`;
+        logContainer.prepend(logEntry);
+      }
+
       async function handleBreakdown(color) {
         const typeMap = { "L": "light", "D": "dark" };
         const jsonKey = typeMap[color];
@@ -310,6 +318,10 @@
         isClaimed[idx] = true;
         isVisible[idx] = true;
         totalScore += getVal(type);
+
+        if (type === "?") {
+          logUnkownFound(gameData && gameData.colors && gameData.colors["?"] ? gameData.colors["?"].name : "$oc");
+        }
 
         if (type === "B") unveilChain(3);
         else if (type === "T") unveilChain(1);
