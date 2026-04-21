@@ -7,6 +7,30 @@
     <link rel="stylesheet" href="../stylesheets/style.css" />
     <link rel="stylesheet" href="../../../stylesheets/navbar.css" />
     <script src="../../../scripts/nav.js" defer></script>
+    <style>
+      .revealed {
+        cursor: default;
+      }
+      .big-letter {
+        font-weight: bold;
+        font-size: 18px;
+        color: white;
+      }
+      .locked-text {
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .auto-reveal {
+        opacity: 0.5;
+        filter: saturate(0.4);
+        border: 1px dashed #fff;
+      }
+      .disabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+      }
+    </style>
   </head>
   <body>
     <div id="main-nav" class="nav-container view-quest">
@@ -148,7 +172,6 @@
 
         return {
           probs: probs.map((p) => (filtered.length ? (p / filtered.length) * 100 : 0)),
-          validCount: filtered.length,
           possibleVals: possibleVals,
         };
       }
@@ -172,13 +195,15 @@
       function render() {
         const gridEl = document.getElementById("grid");
         gridEl.innerHTML = "";
-        const { probs, possibleVals, validCount } = calculateProbabilities();
+        const { probs, possibleVals } = calculateProbabilities();
 
         document.getElementById("clicks-left").innerText = clicksLeft;
         document.getElementById("spheres-found").innerText = `${foundCount}/4`;
         const status = document.getElementById("mode-status");
 
-        if (clicksLeft <= 0) {
+        const isGameOver = clicksLeft <= 0;
+
+        if (isGameOver) {
           status.innerText = "GAME OVER: NO CLICKS LEFT";
           status.style.color = "#ff4757";
         } else if (foundCount >= 4) {
@@ -203,27 +228,34 @@
             const config = COLOR_MAP[displayKey];
             cell.classList.add("revealed", config.class);
             cell.innerHTML = `<span class="big-letter">${config.letter}</span>`;
+          } else if (isGameOver) {
+            // AUTO-REVEAL LOGIC
+            const isPurple = purples.includes(i);
+            let displayKey;
+            if (isPurple) {
+              // If it was the only one left or part of the purples not found
+              displayKey = "P";
+            } else {
+              displayKey = getNeighbors(i).filter((pIdx) => purples.includes(pIdx)).length;
+            }
+            const config = COLOR_MAP[displayKey];
+            cell.classList.add("revealed", "auto-reveal", config.class);
+            cell.innerHTML = `<span class="big-letter">${config.letter}</span>`;
           } else {
-            if (clicksLeft > 0) cell.onclick = () => clickCell(i);
-            else cell.classList.add("disabled");
+            cell.onclick = () => clickCell(i);
 
             let p = probs[i];
             let possibleSet = possibleVals[i];
 
-            // LOGIC: If 3 purples found, the board is effectively solved.
-            // Show names for EVERYTHING instead of percentages.
             if (foundCount === 3) {
               if (purples.includes(i)) {
                 cell.innerHTML = `<span class="locked-text" style="color:${COLOR_MAP["R"].color}">RED</span>`;
-                cell.classList.add("best-move");
               } else if (possibleSet && possibleSet.size === 1) {
                 const val = Array.from(possibleSet)[0];
                 const config = COLOR_MAP[val];
                 cell.innerHTML = `<span class="locked-text" style="color:${config.color}">${config.name}</span>`;
               }
-            }
-            // Standard Solver View (0-2 purples found)
-            else {
+            } else {
               if (p === 100) {
                 const config = COLOR_MAP["P"];
                 cell.innerHTML = `<span class="locked-text" style="color:${config.color}">${config.name}</span>`;
@@ -241,7 +273,7 @@
         }
       }
 
-      window.addEventListener("DOMContentLoaded", resetGame);
+      window.addEventListener("DOMContentLoaded", reset);
     </script>
   </body>
 </html>
