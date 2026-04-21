@@ -30,13 +30,13 @@ function switchTab(mode, id = "main-nav") {
  * AUTOMATION: Runs every time a page loads
  */
 document.addEventListener("DOMContentLoaded", () => {
-  // Extract "chest" from "path/to/chest.html"
-  const path = window.location.pathname;
-  const page = path.split("/").pop().split(".")[0];
-
+  const path = window.location.pathname.toLowerCase();
   const validModes = ["chest", "harvest", "quest", "trace"];
 
-  if (validModes.includes(page)) {
-    switchTab(page);
+  // Find which mode is present in the URL path
+  const currentMode = validModes.find((mode) => path.includes("/" + mode + "/"));
+
+  if (currentMode) {
+    switchTab(currentMode);
   }
 });

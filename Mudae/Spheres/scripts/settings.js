@@ -48,11 +48,28 @@ window.addEventListener("click", (e) => {
 
 let currentGridOpacity = 1.0;
 
+function adjustOpacity(amount) {
+  const slider = document.getElementById("opacity-slider");
+  if (!slider) return;
+
+  // Calculate new value and keep it within 10-100 bounds
+  let newValue = parseInt(slider.value) + amount;
+  if (newValue < 10) newValue = 10;
+  if (newValue > 100) newValue = 100;
+
+  // Update slider position and trigger the update logic
+  slider.value = newValue;
+  updateOpacity(newValue);
+}
+
 /**
  * Updates the grid opacity dynamically
  * @param {string} val - The slider value (10-100)
  */
 function updateOpacity(val) {
+  const opacityDisplay = document.getElementById("opacity-val");
+  if (opacityDisplay) opacityDisplay.innerText = val + "%";
+
   const grid = document.getElementById("grid");
 
   // Update our global memory of what the opacity should be
@@ -65,8 +82,7 @@ function updateOpacity(val) {
 }
 
 /**
- * Re-applies the saved opacity.
- * Call this at the end of your render() function in script.js!
+ * Re-applies the saved opacity. This is needed after a reset since the reset logic may override the opacity style.
  */
 function syncGridOpacity() {
   const grid = document.getElementById("grid");
@@ -92,15 +108,40 @@ function adjustMultiplier(amount) {
   slider.value = newValue;
   updateMultiplier(newValue);
 }
-
 /**
- *
+ * Updates the multiplier display and value
  * @param {number} val
  */
 function updateMultiplier(val) {
-  const display = document.getElementById("multiplier-display");
-  if (display) display.innerText = val + "%";
+  const multiplierDisplay = document.getElementById("multiplier-display");
+  if (multiplierDisplay) multiplierDisplay.innerText = val + "%";
 
   valueMultiplier = parseFloat(val) / 100.0;
-  // console.log("Value multiplier set to:", valueMultiplier);
+}
+
+/**
+ * Fine-tunes the starting count value via buttons
+ * @param {number} amount - The amount to add or subtract (e.g., 10 or -10)
+ */
+function adjustStartCount(amount) {
+  const slider = document.getElementById("start-count");
+  if (!slider) return;
+
+  // Calculate new value and keep it within 1-10 bounds
+  let newValue = parseInt(slider.value) + amount;
+  if (newValue < 1) newValue = 1;
+  if (newValue > 10) newValue = 10;
+
+  // Update slider position and trigger the update logic
+  slider.value = newValue;
+  updateStartCount(newValue);
+}
+
+/**
+ * Updates the starting count display
+ * @param {number} val
+ */
+function updateStartCount(val) {
+  const startCountDisplay = document.getElementById("start-val");
+  if (startCountDisplay) startCountDisplay.innerText = val;
 }

@@ -12,32 +12,32 @@
     <script src="../scripts/settings.js" defer></script>
   </head>
   <body>
-    <div id="main-nav" class="nav-container view-quest">
+    <div id="main-nav" class="nav-container view-trace">
       <div class="nav-row">
         <div id="tab-chest" class="nav-btn btn-chest" onclick="switchTab('chest')">CHEST</div>
         <div id="tab-harvest" class="nav-btn btn-harvest" onclick="switchTab('harvest')">HARVEST</div>
         <div id="tab-quest" class="nav-btn btn-quest" onclick="switchTab('quest')">QUEST</div>
-        <div id="tab-trace" class="nav-btn btn-trace" onclick="switchTab('trace')">TRACE</div>
+        <div id="tab-trace" class="nav-btn btn-trace onclick="switchTab('trace')">TRACE</div>
       </div>
 
       <div class="nav-row mode-section chest-links">
-        <a href="../Solvers/chest.html" class="nav-btn">CHEST SOLVER</a>
-        <a href="../Simulators/chest.html" class="nav-btn">CHEST SIMULATOR</a>
+        <a href="../Chest/simulator.html" class="nav-btn">CHEST SIMULATOR</a>
+        <a href="../Chest/solver.html" class="nav-btn">CHEST SOLVER</a>
       </div>
 
       <div class="nav-row mode-section harvest-links">
-        <a href="../Solvers/harvest.html" class="nav-btn">HARVEST SOLVER</a>
-        <a href="../Simulators/harvest.html" class="nav-btn">HARVEST SIMULATOR</a>
+        <a href="../Harvest/simulator.html" class="nav-btn">HARVEST SIMULATOR</a>
+        <a href="../Harvest/solver.html" class="nav-btn">HARVEST SOLVER</a>
       </div>
 
       <div class="nav-row mode-section quest-links">
-        <a href="quest.html" class="nav-btn">QUEST SOLVER</a>
-        <a href="../Simulators/quest.html" class="nav-btn">QUEST SIMULATOR</a>
+        <a href="../Quest/simulator.html" class="nav-btn">QUEST SIMULATOR</a>
+        <a href="../Quest/solver.html" class="nav-btn">QUEST SOLVER</a>
       </div>
 
       <div class="nav-row mode-section trace-links">
-        <a href="#" class="nav-btn current-page">TRACE SOLVER</a>
-        <a href="../Simulators/trace.html" class="nav-btn">TRACE SIMULATOR</a>
+        <a href="../Trace/simulator.html" class="nav-btn">TRACE SIMULATOR</a>
+        <a href="../Trace/solver.html" class="nav-btn current-page">TRACE SOLVER</a>
       </div>
     </div>
 
@@ -98,8 +98,23 @@
         <hr />
 
         <div class="setting-item">
-          <label>Grid Opacity</label>
-          <input type="range" id="opacity-slider" min="10" max="100" value="100" oninput="updateOpacity(this.value)" />
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px">
+            <label>Grid Opacity</label>
+            <span id="opacity-val" style="font-weight: bold; color: #2ecc71">100%</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px; margin-top: 10px">
+            <button onclick="adjustOpacity(-1)" class="fine-tune-btn">−</button>
+            <input 
+              type="range" 
+              id="opacity-slider" 
+              min="10" 
+              max="100" 
+              value="100" 
+              oninput="updateOpacity(this.value)" 
+              style="flex: 1" 
+            />
+            <button onclick="adjustOpacity(1)" class="fine-tune-btn">+</button>
+          </div>
         </div>
 
         <div class="setting-item">
