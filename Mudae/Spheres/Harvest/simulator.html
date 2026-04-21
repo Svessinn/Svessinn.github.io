@@ -288,6 +288,16 @@
               await new Promise((resolve) => setTimeout(resolve, 200));
               await handleBreakdown("L");
             }
+
+            if (color === "D") {
+              if (res === "P") {
+                clicksUsed = Math.max(0, clicksUsed - 1);
+              } else if (res === "B") {
+                unveilChain(3);
+              } else if (res === "T") {
+                unveilChain(1);
+              }
+            }
           }
           render();
         }
