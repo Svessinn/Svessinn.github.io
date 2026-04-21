@@ -14,7 +14,7 @@
     <div id="main-nav" class="nav-container view-harvest">
       <div class="nav-row">
         <div id="tab-chest" class="nav-btn btn-chest" onclick="switchTab('chest')">CHEST</div>
-        <div id="tab-harvest" class="nav-btn btn-harvest onclick="switchTab('harvest')">HARVEST</div>
+        <div id="tab-harvest" class="nav-btn btn-harvest" onclick="switchTab('harvest')">HARVEST</div>
         <div id="tab-quest" class="nav-btn btn-quest" onclick="switchTab('quest')">QUEST</div>
         <div id="tab-trace" class="nav-btn btn-trace" onclick="switchTab('trace')">TRACE</div>
       </div>
@@ -93,10 +93,10 @@
         </div>
 
         <div class="setting-item">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px">
-              <label>Starting Revealed Cells</label>
-              <span id="start-val" style="font-weight: bold; color: #2ecc71">1</span>
-            </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px">
+            <label>Starting Revealed Cells</label>
+            <span id="start-val" style="font-weight: bold; color: #2ecc71">1</span>
+          </div>
           <div style="display: flex; align-items: center; gap: 10px; margin-top: 10px">
             <button onclick="adjustStartCount(-1)" class="fine-tune-btn">−</button>
             <input
@@ -119,14 +119,14 @@
           </div>
           <div style="display: flex; align-items: center; gap: 10px; margin-top: 10px">
             <button onclick="adjustOpacity(-1)" class="fine-tune-btn">−</button>
-            <input 
-              type="range" 
-              id="opacity-slider" 
-              min="10" 
-              max="100" 
-              value="100" 
-              oninput="updateOpacity(this.value)" 
-              style="flex: 1" 
+            <input
+              type="range"
+              id="opacity-slider"
+              min="10"
+              max="100"
+              value="100"
+              oninput="updateOpacity(this.value)"
+              style="flex: 1"
             />
             <button onclick="adjustOpacity(1)" class="fine-tune-btn">+</button>
           </div>

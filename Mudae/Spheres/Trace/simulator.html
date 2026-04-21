@@ -18,7 +18,7 @@
         <div id="tab-chest" class="nav-btn btn-chest" onclick="switchTab('chest')">CHEST</div>
         <div id="tab-harvest" class="nav-btn btn-harvest" onclick="switchTab('harvest')">HARVEST</div>
         <div id="tab-quest" class="nav-btn btn-quest" onclick="switchTab('quest')">QUEST</div>
-        <div id="tab-trace" class="nav-btn btn-trace onclick="switchTab('trace')">TRACE</div>
+        <div id="tab-trace" class="nav-btn btn-trace" onclick="switchTab('trace')">TRACE</div>
       </div>
 
       <div class="nav-row mode-section chest-links">
@@ -102,14 +102,14 @@
           </div>
           <div style="display: flex; align-items: center; gap: 10px; margin-top: 10px">
             <button onclick="adjustOpacity(-1)" class="fine-tune-btn">−</button>
-            <input 
-              type="range" 
-              id="opacity-slider" 
-              min="10" 
-              max="100" 
-              value="100" 
-              oninput="updateOpacity(this.value)" 
-              style="flex: 1" 
+            <input
+              type="range"
+              id="opacity-slider"
+              min="10"
+              max="100"
+              value="100"
+              oninput="updateOpacity(this.value)"
+              style="flex: 1"
             />
             <button onclick="adjustOpacity(1)" class="fine-tune-btn">+</button>
           </div>
