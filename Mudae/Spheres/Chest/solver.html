@@ -347,7 +347,7 @@
             if (possibleRedIndices.length === 1) {
               const redIdx = possibleRedIndices[0];
               if (i === redIdx) {
-                cell.classList.add("best-move ghost-tile");
+                cell.classList.add("best-move");
                 cell.innerHTML = `<span class="locked-text" style="color:#ff4757; font-weight:bold; font-size:10px;">RED HERE</span>`;
               } else {
                 // Determine what color this cell WOULD be for probability display
@@ -366,14 +366,12 @@
                   const prob = poolSize > 0 ? ((needed / poolSize) * 100).toFixed(0) : 0;
 
                   if (prob > 0) {
-                    cell.classList.add("ghost-tile");
                     cell.innerHTML += `<span class="prob-ghost" style="color: ${targetColor}">${prob}%</span>`;
                   }
                 }
               }
             } else if (possibleRedIndices.length > 1 && possibleRedIndices.includes(i)) {
               const prob = ((1 / possibleRedIndices.length) * 100).toFixed(0);
-              cell.classList.add("ghost-tile");
               cell.innerHTML += `<span class="prob-ghost" style="color: #ff4757">${prob}%</span>`;
             }
             cell.onclick = () => selectCell(i);
