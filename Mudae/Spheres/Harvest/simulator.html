@@ -133,6 +133,19 @@
         </div>
 
         <div class="setting-item">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px">
+            <label>Reveal Logic</label>
+            <select
+              id="reveal-mode"
+              style="background: #333; color: white; border: 1px solid #555; padding: 5px; border-radius: 4px"
+            >
+              <option value="1">Mode 1: Reveal All</option>
+              <option value="2">Mode 2: No $oc Reveals</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="setting-item">
           <button
             class="reset-btn"
             onclick="
@@ -242,7 +255,8 @@
         const logContainer = document.getElementById("breakdown-log");
         const logEntry = document.createElement("div");
         logEntry.style.cssText = "color: #f1c40f; font-size: 11px; margin-top: 4px; font-weight: bold; padding-left: 5px;";
-        logEntry.innerText = `Found an unknown cell: ${name}!`;
+        // Bold fix: use innerHTML and <b> tags
+        logEntry.innerHTML = `Found an unknown cell: <b>${name}</b>!`;
         logContainer.prepend(logEntry);
       }
 
@@ -276,19 +290,23 @@
           const logEntry = document.createElement("div");
           logEntry.style.cssText = "color: #ffd700; font-size: 11px; margin-top: 4px; font-weight: bold; padding-left: 5px;";
 
-          const names = results.map((r) => (r === "L" ? "Light" : gameData.colors[r]?.name || r));
+          // Bold the yielded names
+          const names = results.map((r) => `<b>${r === "L" ? "Light" : gameData.colors[r]?.name || r}</b>`);
           const sourceName = CONFIG.find((c) => c.type === color)?.name || color;
-          logEntry.innerText = `${sourceName} cell yielded: ${names.join(", ")}`;
+          logEntry.innerHTML = `${sourceName} cell yielded: ${names.join(", ")}`;
           logContainer.prepend(logEntry);
 
           for (const res of results) {
             totalScore += getVal(res);
             addBreakdownUI(res);
+
+            // Light breakdown is always recursive
             if (res === "L") {
               await new Promise((resolve) => setTimeout(resolve, 200));
               await handleBreakdown("L");
             }
 
+            // Dark-only special effects
             if (color === "D") {
               if (res === "P") {
                 clicksUsed = Math.max(0, clicksUsed - 1);
@@ -345,8 +363,19 @@
       }
 
       function unveilChain(count) {
-        const hidden = [...Array(25).keys()].filter((i) => !isVisible[i]).sort(() => Math.random() - 0.5);
-        hidden.slice(0, count).forEach((tIdx) => {
+        const revealMode = document.getElementById("reveal-mode").value;
+
+        let hidden = [...Array(25).keys()].filter((i) => !isVisible[i]);
+
+        // Mode 2 Logic: Filter out "?" (Unknown/$oc) cells
+        if (revealMode === "2") {
+          hidden = hidden.filter((idx) => currentBoard[idx] !== "?");
+        }
+
+        // Shuffle and reveal the specified amount
+        const selected = hidden.sort(() => Math.random() - 0.5).slice(0, count);
+
+        selected.forEach((tIdx) => {
           isVisible[tIdx] = true;
         });
       }
