@@ -196,57 +196,24 @@
       }
 
       function recalculatePossibilities() {
-        let filtered = [...ALL_POSSIBLE_REDS];
+        const entries = Object.entries(revealedColors);
+        const knownRed = entries.find(([_, color]) => color === "R");
 
-        // 1. Basic Occupancy Filter
-        const occupiedIndices = Object.keys(revealedColors).map(Number);
-        filtered = filtered.filter((idx) => !occupiedIndices.includes(idx) || revealedColors[idx] === "R");
+        if (knownRed) {
+          // Strict Lock: Only the index that was clicked "R" is possible
+          possibleRedIndices = [parseInt(knownRed[0])];
+          return;
+        }
+
+        // Otherwise, filter normally
+        let filtered = [...ALL_POSSIBLE_REDS];
+        const occupied = Object.keys(revealedColors).map(Number);
+        filtered = filtered.filter((idx) => !occupied.includes(idx));
 
         filtered = filtered.filter((redIdx) => {
-          const currentCounts = { "O": 0, "Y": 0, "G": 0 };
-          const potentialSlots = { "O": 0, "Y": 0, "G": 0 };
-
-          // 2. Geometry Validation (Revealed Hints)
-          for (const idx in revealedColors) {
-            if (!checkPossibility(parseInt(idx), revealedColors[idx], redIdx)) return false;
+          for (const [idx, color] of entries) {
+            if (!checkPossibility(parseInt(idx), color, redIdx)) return false;
           }
-
-          // 3. Smart Resource Check
-          for (let i = 0; i < 25; i++) {
-            if (i === redIdx) continue;
-
-            const isRevealed = revealedColors[i] !== undefined;
-            const rr = Math.floor(redIdx / 5),
-              rc = redIdx % 5;
-            const tr = Math.floor(i / 5),
-              tc = i % 5;
-            const dr = Math.abs(rr - tr),
-              dc = Math.abs(rc - tc);
-
-            if (isRevealed) {
-              const color = revealedColors[i];
-              if (currentCounts[color] !== undefined) currentCounts[color]++;
-            } else {
-              // Check ALL possible roles this empty cell could play for this Red position
-              // Orange role: Adjacent
-              if ((dr === 1 && dc === 0) || (dr === 0 && dc === 1)) potentialSlots["O"]++;
-
-              // Yellow role: Diagonal
-              if (dr === dc && dr > 0) potentialSlots["Y"]++;
-
-              // Green role: Row or Column (including adjacent!)
-              if (dr === 0 || dc === 0) potentialSlots["G"]++;
-            }
-          }
-
-          // 4. Final Validation
-          // Does (Found) + (ANY cell that COULD be this color) >= (Limit)?
-          for (const color in currentCounts) {
-            if (currentCounts[color] + potentialSlots[color] < LIMITS[color]) {
-              return false; // Only purge if it's physically impossible to reach the limit
-            }
-          }
-
           return true;
         });
 
@@ -261,9 +228,11 @@
         const dr = Math.abs(rr - tr),
           dc = Math.abs(rc - tc);
 
+        if (foundColor === "R") return targetIdx === redIdx;
         if (foundColor === "O") return (dr === 1 && dc === 0) || (dr === 0 && dc === 1);
         if (foundColor === "Y") return dr === dc && dr > 0;
-        if (foundColor === "G") return dr === 0 || dc === 0;
+        // FIX: Green can be ANYWHERE in the same row or column (dr=0 or dc=0)
+        if (foundColor === "G") return (dr === 0 || dc === 0) && targetIdx !== redIdx;
         if (foundColor === "T") return dr === dc || dr === 0 || dc === 0;
         if (foundColor === "B") return !(dr === 0 || dc === 0 || dr === dc);
         return true;
@@ -273,44 +242,53 @@
         const clickCount = Object.keys(revealedColors).length;
         if (clickCount >= 5) return null;
 
+        // SEEK RED FIRST
+        if (possibleRedIndices.length > 1) {
+          let bestScore = -1,
+            bestIdx = -1;
+          for (let i = 0; i < 25; i++) {
+            if (revealedColors[i]) continue;
+            let outcomes = { "B": 0, "T": 0, "G": 0, "Y": 0, "O": 0, "R": 0 };
+            possibleRedIndices.forEach((rIdx) => outcomes[getExpectedColor(i, rIdx)]++);
+            let score = 0;
+            Object.values(outcomes).forEach((count) => {
+              if (count > 0) score += count * count;
+            });
+            if (bestIdx === -1 || score < bestScore) {
+              bestScore = score;
+              bestIdx = i;
+            }
+          }
+          return { idxs: [bestIdx], target: "RED", colorCode: "#ff4757" };
+        }
+
+        // RED IS FOUND
         if (possibleRedIndices.length === 1) {
           const redIdx = possibleRedIndices[0];
-          const orangeCells = [];
-          const yellowCells = [];
-          const revO = Object.values(revealedColors).filter((c) => c === "O").length;
-          const revY = Object.values(revealedColors).filter((c) => c === "Y").length;
+          const counts = {};
+          Object.values(revealedColors).forEach((c) => (counts[c] = (counts[c] || 0) + 1));
 
-          for (let i = 0; i < 25; i++) {
-            if (revealedColors[i] || i === redIdx) continue;
-            const expected = getExpectedColor(i, redIdx);
-            if (expected === "O") orangeCells.push(i);
-            if (expected === "Y") yellowCells.push(i);
-          }
+          const searchOrder = [
+            { type: "O", name: "ORANGE", color: "#ffa502" },
+            { type: "Y", name: "YELLOW", color: "#f1c40f" },
+            { type: "G", name: "GREEN", color: "#2ecc71" },
+          ];
 
-          if (revO < LIMITS["O"] && orangeCells.length > 0) {
-            return { idxs: orangeCells, target: "ORANGE", colorCode: "#ffa502" };
-          } else if (revY < LIMITS["Y"] && yellowCells.length > 0) {
-            return { idxs: yellowCells, target: "YELLOW", colorCode: "#f1c40f" };
-          }
-          return null;
-        }
-
-        let bestScore = -1,
-          bestIdx = -1;
-        for (let i = 0; i < 25; i++) {
-          if (revealedColors[i]) continue;
-          let outcomes = { "B": 0, "T": 0, "G": 0, "Y": 0, "O": 0, "R": 0 };
-          possibleRedIndices.forEach((redIdx) => outcomes[getExpectedColor(i, redIdx)]++);
-          let score = 0;
-          Object.values(outcomes).forEach((count) => {
-            if (count > 0) score += count * count;
-          });
-          if (bestIdx === -1 || score < bestScore) {
-            bestScore = score;
-            bestIdx = i;
+          for (const goal of searchOrder) {
+            if ((counts[goal.type] || 0) < LIMITS[goal.type]) {
+              const targets = [];
+              for (let i = 0; i < 25; i++) {
+                if (!revealedColors[i] && i !== redIdx && checkPossibility(i, goal.type, redIdx)) {
+                  targets.push(i);
+                }
+              }
+              if (targets.length > 0) {
+                return { idxs: targets, target: goal.name, colorCode: goal.color, type: goal.type };
+              }
+            }
           }
         }
-        return { idxs: [bestIdx], target: "RED", colorCode: "#ff4757" };
+        return null;
       }
 
       function getExpectedColor(targetIdx, redIdx) {
@@ -322,17 +300,14 @@
         const dr = Math.abs(rr - tr),
           dc = Math.abs(rc - tc);
 
-        // 1. Orange: Exact adjacency
+        // 1. Orange: Adjacent (Distance 1)
         if ((dr === 1 && dc === 0) || (dr === 0 && dc === 1)) return "O";
 
-        // 2. Yellow: Pure diagonal (dr === dc)
+        // 2. Yellow: Diagonal
         if (dr === dc && dr > 0) return "Y";
 
-        // 3. Green: Pure row or column (but not orange, handled above)
+        // 3. Green: Row or Column (Distance > 0)
         if (dr === 0 || dc === 0) return "G";
-
-        // 4. Teal: Everything else in row/col/diagonal (should be redundant now)
-        if (dr === dc || dr === 0 || dc === 0) return "T";
 
         return "B";
       }
@@ -364,51 +339,42 @@
               cell.style.cursor = "not-allowed";
             }
 
-            // Fix: Only show "BEST MOVE" or "FIND..." if not revealed
             if (bestMoveIdxs.includes(i)) {
               cell.classList.add("best-move");
-              const label = possibleRedIndices.length === 1 ? `FIND ${targetName}` : "BEST MOVE";
-              cell.innerHTML = `<div class="best-label">${label}</div>`;
+              cell.innerHTML = `<div class="best-label"">BEST MOVE</div>`;
             }
 
-            if (possibleRedIndices.length > 0) {
-              let prob = 0;
-              // Logic Fix: Only display "RED HERE" if the list of possibilities is exactly 1
-              if (possibleRedIndices.length > 1) {
-                if (possibleRedIndices.includes(i)) {
-                  prob = ((1 / possibleRedIndices.length) * 100).toFixed(0);
-                }
-              } else if (possibleRedIndices.length === 1) {
-                const redIdx = possibleRedIndices[0];
-                if (i === redIdx) {
-                  cell.classList.add("ghost-tile");
-                  cell.innerHTML = `<span class="locked-text" style="color:#ff4757; font-weight:bold; font-size:10px; text-align:center; position: relative; z-index: 5;">RED HERE</span>`;
-                } else {
-                  // Logic for probabilities when red is known
-                  const expected = getExpectedColor(i, redIdx);
-                  const revO = Object.values(revealedColors).filter((c) => c === "O").length;
-                  const revY = Object.values(revealedColors).filter((c) => c === "Y").length;
+            if (possibleRedIndices.length === 1) {
+              const redIdx = possibleRedIndices[0];
+              if (i === redIdx) {
+                cell.classList.add("best-move ghost-tile");
+                cell.innerHTML = `<span class="locked-text" style="color:#ff4757; font-weight:bold; font-size:10px;">RED HERE</span>`;
+              } else {
+                // Determine what color this cell WOULD be for probability display
+                // If it's adjacent, it shows Orange prob; if row/col, it shows Green prob
+                const counts = {};
+                Object.values(revealedColors).forEach((c) => (counts[c] = (counts[c] || 0) + 1));
 
-                  if (expected === "O" && targetName === "ORANGE") {
-                    let oPool = 0;
-                    for (let k = 0; k < 25; k++) if (getExpectedColor(k, redIdx) === "O") oPool++;
-                    const denom =
-                      oPool - Object.keys(revealedColors).filter((idx) => getExpectedColor(idx, redIdx) === "O").length;
-                    prob = denom > 0 ? (((LIMITS["O"] - revO) / denom) * 100).toFixed(0) : 0;
-                  } else if (expected === "Y" && targetName === "YELLOW") {
-                    let yPool = 0;
-                    for (let k = 0; k < 25; k++) if (getExpectedColor(k, redIdx) === "Y") yPool++;
-                    const denom =
-                      yPool - Object.keys(revealedColors).filter((idx) => getExpectedColor(idx, redIdx) === "Y").length;
-                    prob = denom > 0 ? (((LIMITS["Y"] - revY) / denom) * 100).toFixed(0) : 0;
+                // Use checkPossibility to see if this cell matches the current target
+                const currentGoalType = moveData ? moveData.type : null;
+                if (currentGoalType && checkPossibility(i, currentGoalType, redIdx)) {
+                  let poolSize = 0;
+                  for (let k = 0; k < 25; k++) {
+                    if (!revealedColors[k] && k !== redIdx && checkPossibility(k, currentGoalType, redIdx)) poolSize++;
+                  }
+                  const needed = LIMITS[currentGoalType] - (counts[currentGoalType] || 0);
+                  const prob = poolSize > 0 ? ((needed / poolSize) * 100).toFixed(0) : 0;
+
+                  if (prob > 0) {
+                    cell.classList.add("ghost-tile");
+                    cell.innerHTML += `<span class="prob-ghost" style="color: ${targetColor}">${prob}%</span>`;
                   }
                 }
               }
-
-              if (prob > 0) {
-                cell.classList.add("ghost-tile");
-                cell.innerHTML += `<span class="prob-ghost" style="color: ${targetColor}">${prob}%</span>`;
-              }
+            } else if (possibleRedIndices.length > 1 && possibleRedIndices.includes(i)) {
+              const prob = ((1 / possibleRedIndices.length) * 100).toFixed(0);
+              cell.classList.add("ghost-tile");
+              cell.innerHTML += `<span class="prob-ghost" style="color: #ff4757">${prob}%</span>`;
             }
             cell.onclick = () => selectCell(i);
           }
