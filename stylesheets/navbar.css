@@ -60,10 +60,15 @@
   width: 100%;
   gap: 10px;
 }
+
 .view-chest .chest-links,
 .view-harvest .harvest-links,
 .view-quest .quest-links,
-.view-trace .trace-links {
+.view-trace .trace-links,
+.view-calculator .calculator-links,
+.view-other .other-links,
+.view-simulator .simulator-links,
+.view-solver .solver-links {
   display: flex;
 }
 

@@ -1,7 +1,10 @@
+// Define all possible modes to clean up classes efficiently
+const modes = ["chest", "harvest", "quest", "trace", "calculator", "other", "simulator", "solver"];
+
 /**
  * Handles the switching of the top row tabs and visibility
  * of the corresponding bottom row links.
- * @param {string} mode - 'chest', 'harvest', 'quest', or 'trace'
+ * @param {string} mode - The mode to switch to (e.g., 'chest', 'harvest', etc.)
  * @param {string} id - ID of the nav container to update (default: 'main-nav')
  */
 function switchTab(mode, id = "main-nav") {
@@ -10,9 +13,6 @@ function switchTab(mode, id = "main-nav") {
 
   const nav = document.getElementById(id);
   if (!nav) return;
-
-  // Define all possible modes to clean up classes efficiently
-  const modes = ["chest", "harvest", "quest", "trace"];
 
   // Remove all potential view classes and the active state from all tabs
   modes.forEach((m) => {
@@ -31,10 +31,9 @@ function switchTab(mode, id = "main-nav") {
  */
 document.addEventListener("DOMContentLoaded", () => {
   const path = window.location.pathname.toLowerCase();
-  const validModes = ["chest", "harvest", "quest", "trace"];
 
   // Find which mode is present in the URL path
-  const currentMode = validModes.find((mode) => path.includes("/" + mode + "/"));
+  const currentMode = modes.find((mode) => path.includes("/" + mode + "/"));
 
   if (currentMode) {
     switchTab(currentMode);

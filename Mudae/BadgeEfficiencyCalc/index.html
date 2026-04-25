@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Badge Efficiency Calculator</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/lightfair.min.css">
-    <link rel="stylesheet" href="stylesheets/BadgeEfficiencyCalc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/lightfair.min.css" />
+    <link rel="stylesheet" href="stylesheets/BadgeEfficiencyCalc.css" />
     <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -16,7 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
-    <script src='https://github.com/MikeMcl/bignumber.js/blob/master/bignumber.js'></script>
+    <script src="https://github.com/MikeMcl/bignumber.js/blob/master/bignumber.js"></script>
   </head>
   <body class="d-flex flex-column h-100">
     <header>
@@ -28,8 +28,17 @@
           <div class="mx-auto">
             <a class="navbar-brand">Badge Efficiency Calculator</a>
           </div>
-          <button id="navButton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <button
+            id="navButton"
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
           </button>
         </nav>
         <div class="collapse" id="navbarToggleExternalContent">
@@ -48,15 +57,87 @@
           <div id="calc-form" aria-labelledby="formula-header">
             <div class="card-body">
               <form>
-                <value-input id="bronzeValue" label="Base Value of the Bronze Badge" fa-icon="certificate" v-model:value.number="bronzeValue" :min-tick="1000" :max-tick="100000" :tick-vals="[500, 1000]"></value-input>
-                <value-input id="silverValue" label="Base Value of the Silver Badge" fa-icon="certificate" v-model:value.number="silverValue" :min-tick="1000" :max-tick="100000" :tick-vals="[500, 1000]"></value-input>
-                <value-input id="goldValue" label="Base Value of the Gold Badge" fa-icon="certificate" v-model:value.number="goldValue" :min-tick="1000" :max-tick="100000" :tick-vals="[500, 1000]"></value-input>
-                <value-input id="sapphireValue" label="Base Value of the Sapphire Badge" fa-icon="certificate" v-model:value.number="sapphireValue" :min-tick="1000" :max-tick="100000" :tick-vals="[500, 1000]"></value-input>
-                <value-input id="rubyValue" label="Base Value of the Ruby Badge" fa-icon="certificate" v-model:value.number="rubyValue" :min-tick="1000" :max-tick="100000" :tick-vals="[500, 1000]"></value-input>
-                <value-input id="emeraldValue" label="Base Value of the Emerald Badge" fa-icon="certificate" v-model:value.number="emeraldValue" :min-tick="1000" :max-tick="100000" :tick-vals="[500, 1000]"></value-input>
-                <value-input id="timeWasted" label="Hours of Playing Mudae per Day" fa-icon="clock" v-model:value.number="timeWasted" :min-tick="1" :max-tick="24" :tick-vals="[1, 3]"></value-input>
-                <value-input id="hoursPerClaim" label="Claim interval" fa-icon="users" v-model:value.number="hoursPerClaim" :min-tick="1" :max-tick="10" :tick-vals="[1]"></value-input>
-                <value-input id="averageCharacterValue" label="Average Value of a Claimed Character" fa-icon="users" v-model:value.number="averageCharacterValue" :min-tick="26" :max-tick="13180" :tick-vals="[10, 50]"></value-input>
+                <value-input
+                  id="bronzeValue"
+                  label="Base Value of the Bronze Badge"
+                  fa-icon="certificate"
+                  v-model:value.number="bronzeValue"
+                  :min-tick="1000"
+                  :max-tick="100000"
+                  :tick-vals="[500, 1000]"
+                ></value-input>
+                <value-input
+                  id="silverValue"
+                  label="Base Value of the Silver Badge"
+                  fa-icon="certificate"
+                  v-model:value.number="silverValue"
+                  :min-tick="1000"
+                  :max-tick="100000"
+                  :tick-vals="[500, 1000]"
+                ></value-input>
+                <value-input
+                  id="goldValue"
+                  label="Base Value of the Gold Badge"
+                  fa-icon="certificate"
+                  v-model:value.number="goldValue"
+                  :min-tick="1000"
+                  :max-tick="100000"
+                  :tick-vals="[500, 1000]"
+                ></value-input>
+                <value-input
+                  id="sapphireValue"
+                  label="Base Value of the Sapphire Badge"
+                  fa-icon="certificate"
+                  v-model:value.number="sapphireValue"
+                  :min-tick="1000"
+                  :max-tick="100000"
+                  :tick-vals="[500, 1000]"
+                ></value-input>
+                <value-input
+                  id="rubyValue"
+                  label="Base Value of the Ruby Badge"
+                  fa-icon="certificate"
+                  v-model:value.number="rubyValue"
+                  :min-tick="1000"
+                  :max-tick="100000"
+                  :tick-vals="[500, 1000]"
+                ></value-input>
+                <value-input
+                  id="emeraldValue"
+                  label="Base Value of the Emerald Badge"
+                  fa-icon="certificate"
+                  v-model:value.number="emeraldValue"
+                  :min-tick="1000"
+                  :max-tick="100000"
+                  :tick-vals="[500, 1000]"
+                ></value-input>
+                <value-input
+                  id="timeWasted"
+                  label="Hours of Playing Mudae per Day"
+                  fa-icon="clock"
+                  v-model:value.number="timeWasted"
+                  :min-tick="1"
+                  :max-tick="24"
+                  :tick-vals="[1, 3]"
+                ></value-input>
+                <value-input
+                  id="hoursPerClaim"
+                  label="Claim interval"
+                  fa-icon="users"
+                  v-model:value.number="hoursPerClaim"
+                  :min-tick="1"
+                  :max-tick="10"
+                  :tick-vals="[1]"
+                ></value-input>
+                <value-input
+                  id="averageCharacterValue"
+                  label="Average Value of a Claimed Character"
+                  fa-icon="users"
+                  v-model:value.number="averageCharacterValue"
+                  :min-tick="26"
+                  :max-tick="13180"
+                  :tick-vals="[10, 50]"
+                ></value-input>
               </form>
               <table class="table table-sm text-center">
                 <thead>
@@ -119,12 +200,19 @@
             </div>
           </div>
         </div>
-        
+
         <div class="card mb-4">
           <h5 class="card-header">
-            <a data-toggle="collapse" href="#badge-values" aria-expanded="true" aria-controls="badge-values" id="badge-header" class="collapsed d-block">
-            <i class="fa fa-chevron-down float-right"></i>
-            Badge Values
+            <a
+              data-toggle="collapse"
+              href="#badge-values"
+              aria-expanded="true"
+              aria-controls="badge-values"
+              id="badge-header"
+              class="collapsed d-block"
+            >
+              <i class="fa fa-chevron-down float-right"></i>
+              Badge Values
             </a>
           </h5>
           <div id="badge-values" class="collapse" aria-labelledby="badge-header">
@@ -187,12 +275,19 @@
             </div>
           </div>
         </div>
-        
+
         <div class="card mb-4">
           <h5 class="card-header">
-            <a data-toggle="collapse" href="#income-routes" aria-expanded="true" aria-controls="income-routes" id="income-header" class="collapsed d-block">
-            <i class="fa fa-chevron-down float-right"></i>
-            Income Routes
+            <a
+              data-toggle="collapse"
+              href="#income-routes"
+              aria-expanded="true"
+              aria-controls="income-routes"
+              id="income-header"
+              class="collapsed d-block"
+            >
+              <i class="fa fa-chevron-down float-right"></i>
+              Income Routes
             </a>
           </h5>
           <div id="income-routes" class="collapse" aria-labelledby="income-header">
@@ -266,17 +361,23 @@
             </div>
           </div>
         </div>
-        
+
         <div class="card mb-4">
           <h5 class="card-header">
-            <a data-toggle="collapse" href="#ruby-cost" aria-expanded="true" aria-controls="ruby-cost" id="ruby-header" class="collapsed d-block">
-            <i class="fa fa-chevron-down float-right"></i>
-            Ruby Costs
+            <a
+              data-toggle="collapse"
+              href="#ruby-cost"
+              aria-expanded="true"
+              aria-controls="ruby-cost"
+              id="ruby-header"
+              class="collapsed d-block"
+            >
+              <i class="fa fa-chevron-down float-right"></i>
+              Ruby Costs
             </a>
           </h5>
           <div id="ruby-cost" class="collapse" aria-labelledby="ruby-header">
             <div class="card-body" id="ruby-shit" ref="rubyShit">
-              
               <table class="table table-sm text-center">
                 <thead>
                   <tr>
@@ -302,9 +403,9 @@
                   </tr>
                 </tbody>
               </table>
-              
+
               <small>Base Value includes Bronze II, Silver II, Gold II, and Ruby IV</small>
-              
+
               <table class="table table-sm text-center">
                 <thead>
                   <tr>
@@ -357,7 +458,7 @@
                   </tr>
                 </tbody>
               </table>
-              
+
               <table class="table table-sm text-center">
                 <thead>
                   <tr>
@@ -385,21 +486,26 @@
                   </tr>
                 </tbody>
               </table>
-              
             </div>
           </div>
         </div>
-        
+
         <div class="card mb-4">
           <h5 class="card-header">
-            <a data-toggle="collapse" href="#emerald-cost" aria-expanded="true" aria-controls="emerald-cost" id="emerald-header" class="collapsed d-block">
-            <i class="fa fa-chevron-down float-right"></i>
-            Emerald Costs
+            <a
+              data-toggle="collapse"
+              href="#emerald-cost"
+              aria-expanded="true"
+              aria-controls="emerald-cost"
+              id="emerald-header"
+              class="collapsed d-block"
+            >
+              <i class="fa fa-chevron-down float-right"></i>
+              Emerald Costs
             </a>
           </h5>
           <div id="emerald-cost" class="collapse" aria-labelledby="emerald-header">
             <div class="card-body" id="emerald-shit" ref="emeraldShit">
-              
               <table class="table table-sm text-center">
                 <thead>
                   <tr>
@@ -421,7 +527,7 @@
                   </tr>
                 </tbody>
               </table>
-              
+
               <table class="table table-sm text-center">
                 <thead>
                   <tr>
@@ -610,7 +716,7 @@
                   </tr>
                 </tbody>
               </table>
-              
+
               <table class="table table-sm text-center">
                 <thead>
                   <tr>
@@ -662,7 +768,6 @@
                   </tr>
                 </tbody>
               </table>
-              
             </div>
           </div>
         </div>
@@ -671,14 +776,24 @@
     <footer class="footer mt-auto py-3">
       <div class="container">
         <small class="text-muted">
-          <b>DISCLAIMER:</b> Values may be slightly inaccurate, but this is the best approximation we could get.<br>
-          Value calculations by Svess, Page setup and managed by Svess.<br>
-          <a href="https://docs.google.com/spreadsheets/d/186UoRV2QQsJrQSU30ZC5VOE1-jrtHWHDz_owVOWtsXY/edit?usp=sharing" target="_blank">Spreadsheet with all the data</a>
+          <b>DISCLAIMER:</b> Values may be slightly inaccurate, but this is the best approximation we could get.<br />
+          Value calculations by Svess, Page setup and managed by Svess.<br />
+          <a
+            href="https://docs.google.com/spreadsheets/d/186UoRV2QQsJrQSU30ZC5VOE1-jrtHWHDz_owVOWtsXY/edit?usp=sharing"
+            target="_blank"
+            >Spreadsheet with all the data</a
+          >
         </small>
       </div>
       <script src="js/BadgeEfficiencyCalc.js"></script>
-      <script>window.console = window.console || function(t) {};</script>
-      <script>if (document.location.search.match(/type=embed/gi)) {window.parent.postMessage("resize", "*");}</script>
+      <script>
+        window.console = window.console || function (t) {};
+      </script>
+      <script>
+        if (document.location.search.match(/type=embed/gi)) {
+          window.parent.postMessage("resize", "*");
+        }
+      </script>
     </footer>
   </body>
 </html>

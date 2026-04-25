@@ -1,55 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-      <meta charset="UTF-8">
-      <title>Mudae</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/lightfair.min.css">
-
-      <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+    <meta charset="UTF-8" />
+    <title>Mudae</title>
+    <meta name="description" content="Why you ogling my page... 👀" />
+    <link rel="stylesheet" href="../stylesheets/navbar.css" />
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+    <script src="../scripts/nav.js" defer></script>
   </head>
   <body>
-    <a href="/Mudae/BadgeEfficiencyCalc/">
-      BadgeEfficiencyCalc
-    </a>
-    </br>
-    <a href="/Mudae/Badges/">
-      Badges
-    </a>
-    </br>
-    <a href="/Mudae/Bundles/">
-      Bundles
-    </a>
-    </br>
-    <a href="/Mudae/DisableList/">
-      DisableList
-    </a>
-    </br>
-    <a href="/Mudae/KakeraLoots/">
-      KakeraLoots
-    </a>
-    </br>
-    <a href="/Mudae/KakeraProject/">
-      KakeraProject
-    </a>
-    </br>
-    <a href="/Mudae/Other/">
-      Other
-    </a>
-    </br>
-    <a href="/Mudae/WishSpawnrateCalc/">
-      WishSpawnrateCalc
-    </a>
+    <div id="mudae-nav" class="nav-container">
+      <div class="nav-row">
+        <div id="tab-calculator" class="nav-btn btn-chest" onclick="switchTab('calculator', 'mudae-nav')">CALCULATORS</div>
+        <div id="tab-other" class="nav-btn btn-chest" onclick="switchTab('other', 'mudae-nav')">OTHER</div>
+        <div id="tab-simulator" class="nav-btn btn-harvest" onclick="switchTab('simulator', 'mudae-nav')">SIMULATORS</div>
+        <div id="tab-solver" class="nav-btn btn-quest" onclick="switchTab('solver', 'mudae-nav')">SOLVERS</div>
+      </div>
+
+      <div class="nav-row mode-section calculator-links">
+        <a href="BadgeEfficiencyCalc/index.html" class="nav-btn">BADGE EFFICIENCY</a>
+        <a href="WishSpawnrateCalc/index.html" class="nav-btn">WISH SPAWNRATE</a>
+      </div>
+
+      <div class="nav-row mode-section other-links">
+        <a href="Bundles/index.html" class="nav-btn">BUNDLES</a>
+        <a href="KakeraLoots/index.html" class="nav-btn">KAKERA LOOTS</a>
+        <!-- <a href="KakeraProject/index.html" class="nav-btn">KAKERA PROJECT</a> -->
+        <!-- <a href="DisableList/index.html" class="nav-btn">DISABLE LIST</a> -->
+        <!-- <a href="Badges/index.html" class="nav-btn">BADGES</a> -->
+        <!-- <a href="Other/index.html" class="nav-btn">OTHER</a> -->
+      </div>
+
+      <div class="nav-row mode-section simulator-links">
+        <a href="Spheres/Chest/simulator.html" class="nav-btn">CHEST</a>
+        <a href="Spheres/Harvest/simulator.html" class="nav-btn">HARVEST</a>
+        <a href="Spheres/Quest/simulator.html" class="nav-btn">QUEST</a>
+        <a href="Spheres/Trace/simulator.html" class="nav-btn">TRACE</a>
+      </div>
+
+      <div class="nav-row mode-section solver-links">
+        <a href="Spheres/Chest/solver.html" class="nav-btn">CHEST</a>
+        <a href="Spheres/Harvest/solver.html" class="nav-btn">HARVEST</a>
+        <a href="Spheres/Quest/solver.html" class="nav-btn">QUEST</a>
+        <a href="Spheres/Trace/solver.html" class="nav-btn">TRACE</a>
+      </div>
   </body>
-  <footer>
-  </footer>
 </html>
