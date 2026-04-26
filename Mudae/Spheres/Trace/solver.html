@@ -395,6 +395,9 @@
       function setTile(color) {
         if (selectedIdx === null) return;
 
+        saveHistory();
+        revealed[selectedIdx] = color;
+
         // Logic to detect if this specific placement kills the player
         const shipSegments = Object.values(revealed).filter((v) => v !== "B").length;
         const blueCount = Object.values(revealed).filter((v) => v === "B").length;
@@ -402,8 +405,6 @@
           lastMoveWasBadBlue = true;
         }
 
-        saveHistory();
-        revealed[selectedIdx] = color;
         selectedIdx = null;
         render();
       }
