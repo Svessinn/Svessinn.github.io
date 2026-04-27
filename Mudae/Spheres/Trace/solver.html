@@ -585,23 +585,7 @@
 
             switch (currentMode) {
               case "anti-teal":
-                if (isHuntingBlue) {
-                  // PHASE 1: Find Blue while aggressively avoiding Teal.
-                  // We penalize Teal heavily (* 3) and Green/Yellow moderately (* 1.5).
-                  // This pushes the "BEST" move toward cells that are almost certainly Blue.
-                  finalScore = blueProb - tealProb * 3 - greenProb * 1.5 - yellowProb * 1.5;
-                } else {
-                  // PHASE 2: After 5 ships found, if Teal is NOT yet found,
-                  // keep avoiding it while looking for smaller ships.
-                  const tealFound = Object.values(revealed).includes("T");
-                  if (!tealFound) {
-                    // Target ships, but stay away from the Teal heat
-                    finalScore = shipSum - tealProb - tealProb * 2;
-                  } else {
-                    // If Teal is already found, revert to standard ship hunting
-                    finalScore = shipSum;
-                  }
-                }
+                finalScore = isHuntingBlue ? blueProb - tealProb * 3 - greenProb * 1.5 - yellowProb * 1.5 : shipSum;
                 break;
 
               case "ship-hunter":
