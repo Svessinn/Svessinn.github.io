@@ -118,12 +118,42 @@
         </div>
 
         <div class="setting-item">
+          <label style="display: block; margin-bottom: 10px">Solving Strategy</label>
+          <select
+            id="strategy-select"
+            onchange="updateStrategy(this.value)"
+            style="
+              width: 100%;
+              padding: 8px;
+              background: #2ecc71;
+              font-weight: bold;
+              color: black;
+              border: 1px solid #30bb6a;
+              border-radius: 4px;
+              cursor: pointer;
+            "
+          >
+            <option value="standard">Standard (Blue Focus)</option>
+            <option value="anti-teal">Anti-Teal (Avoid Teal)</option>
+            <option value="ship-hunter">Aggressive (Ship Hunter)</option>
+          </select>
+        </div>
+
+        <div class="setting-item">
           <button class="reset-btn" onclick="settingsReset()">Hard Reset Game</button>
         </div>
       </div>
     </div>
 
     <script>
+      const MODES = {
+        STANDARD: "standard", // Current logic: Blues first, then Ships
+        ANTI_TEAL: "anti-teal", // Avoids the Teal ship specifically
+        SHIP_HUNTER: "ship-hunter", // Ignores safety, targets any ship density
+      };
+
+      let currentMode = MODES.STANDARD;
+
       let revealed = {};
       let history = [];
       let selectedIdx = null;
@@ -536,23 +566,58 @@
           }
         }
 
-        // --- FIXED Best Move Calculation ---
+        // --- EXPANDED BEST MOVE CALCULATION ---
         const available = Array.from({ length: 25 }, (_, i) => i).filter((i) => !revealed[i]);
         let bestIdx = -1;
 
         if (available.length > 0) {
           let scores = available.map((i) => {
-            const shipSum = Object.entries(heatmap[i])
+            const h = heatmap[i];
+            const blueProb = h["B"] || 0;
+            const tealProb = h["T"] || 0;
+            const greenProb = h["G"] || 0;
+            const yellowProb = h["Y"] || 0;
+            const shipSum = Object.entries(h)
               .filter(([k]) => k !== "B")
               .reduce((a, b) => a + b[1], 0);
-            return { idx: i, shipSum: shipSum };
+
+            let finalScore = 0;
+
+            switch (currentMode) {
+              case "anti-teal":
+                if (isHuntingBlue) {
+                  // PHASE 1: Find Blue while aggressively avoiding Teal.
+                  // We penalize Teal heavily (* 3) and Green/Yellow moderately (* 1.5).
+                  // This pushes the "BEST" move toward cells that are almost certainly Blue.
+                  finalScore = blueProb - tealProb * 3 - greenProb * 1.5 - yellowProb * 1.5;
+                } else {
+                  // PHASE 2: After 5 ships found, if Teal is NOT yet found,
+                  // keep avoiding it while looking for smaller ships.
+                  const tealFound = Object.values(revealed).includes("T");
+                  if (!tealFound) {
+                    // Target ships, but stay away from the Teal heat
+                    finalScore = shipSum - tealProb - tealProb * 2;
+                  } else {
+                    // If Teal is already found, revert to standard ship hunting
+                    finalScore = shipSum;
+                  }
+                }
+                break;
+
+              case "ship-hunter":
+                finalScore = shipSum;
+                break;
+
+              case "standard":
+              default:
+                finalScore = isHuntingBlue ? -shipSum : shipSum;
+                break;
+            }
+
+            return { idx: i, score: finalScore };
           });
 
-          if (isHuntingBlue) {
-            scores.sort((a, b) => a.shipSum - b.shipSum);
-          } else {
-            scores.sort((a, b) => b.shipSum - a.shipSum);
-          }
+          scores.sort((a, b) => b.score - a.score);
           bestIdx = scores[0].idx;
         }
 
@@ -625,6 +690,7 @@
               const label = document.createElement("div");
               label.className = "best-label";
               label.innerText = isHuntingBlue ? "BEST" : "SAFEST";
+
               cell.appendChild(label);
             }
             cell.appendChild(probContainer);

@@ -145,3 +145,12 @@ function updateStartCount(val) {
   const startCountDisplay = document.getElementById("start-val");
   if (startCountDisplay) startCountDisplay.innerText = val;
 }
+
+/**
+ * Updates the current strategy choice for trace game mode and triggers a board update
+ * @param {string} val - The selected strategy value (e.g., "standard", "anti-teal", "ship-hunter")
+ */
+function updateStrategy(val) {
+  currentMode = val; // Store the choice
+  if (typeof render === "function") render(); // Update the board
+}
