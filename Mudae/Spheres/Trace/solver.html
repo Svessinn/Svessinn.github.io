@@ -590,9 +590,7 @@
                 const yellowFound = Boolean(Object.values(revealed).filter((v) => v === "Y").length);
                 if (!tealFound) {
                   finalScore = isHuntingBlue ? blueProb - tealProb * 10 : shipSum;
-                } else if (!greenFound) {
-                  finalScore = isHuntingBlue ? blueProb - tealProb * 10 - greenProb * 10 : shipSum;
-                } else if (!yellowFound) {
+                } else if (!greenFound || !yellowFound) {
                   finalScore = isHuntingBlue ? blueProb - tealProb * 10 - greenProb * 10 - yellowProb * 10 : shipSum;
                 } else {
                   finalScore = isHuntingBlue ? blueProb : shipSum;
