@@ -585,7 +585,18 @@
 
             switch (currentMode) {
               case "anti-teal":
-                finalScore = isHuntingBlue ? blueProb - tealProb * 3 - greenProb * 1.5 - yellowProb * 1.5 : shipSum;
+                const tealFound = Boolean(Object.values(revealed).filter((v) => v === "T").length);
+                const greenFound = Boolean(Object.values(revealed).filter((v) => v === "G").length);
+                const yellowFound = Boolean(Object.values(revealed).filter((v) => v === "Y").length);
+                if (!tealFound) {
+                  finalScore = isHuntingBlue ? blueProb - tealProb * 10 : shipSum;
+                } else if (!greenFound) {
+                  finalScore = isHuntingBlue ? blueProb - tealProb * 10 - greenProb * 10 : shipSum;
+                } else if (!yellowFound) {
+                  finalScore = isHuntingBlue ? blueProb - tealProb * 10 - greenProb * 10 - yellowProb * 10 : shipSum;
+                } else {
+                  finalScore = isHuntingBlue ? blueProb : shipSum;
+                }
                 break;
 
               case "ship-hunter":
