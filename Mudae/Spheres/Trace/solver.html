@@ -225,7 +225,6 @@
           .map(() => ({}));
         let certain = {};
         let foundNewCertainty = true;
-
         let canContainShip = Array(25).fill(false);
 
         const active = getActiveShips();
@@ -234,7 +233,7 @@
         const identifiedRares = [...new Set(Object.values(revealed))].filter((k) => !ALL_COLORS[k].always);
         const missingRaresCount = totalRaresExpected - identifiedRares.length;
 
-        // PASS 1: GEOMETRIC CERTAINTY (Strict deduction)
+        // PASS 1: GEOMETRIC CERTAINTY (Strict deduction loop)
         while (foundNewCertainty) {
           foundNewCertainty = false;
           const currentCounts = {};
@@ -267,7 +266,7 @@
           });
         }
 
-        // PASS 2: COMBINATORIAL SHIP WEIGHTS
+        // PASS 2: COMBINATORIAL SHIP WEIGHTS (T, G, Y, O)
         active.forEach((color) => {
           const ship = ALL_COLORS[color];
           const foundIdx = Object.keys(virtualRevealed)
@@ -289,101 +288,96 @@
               });
             });
 
-            // --- THE FIX ---
-            // Probability is simply the frequency of the cell in all valid positions.
-            // If a cell is in 2 out of 4 possible positions, it's a 50% chance.
             Object.entries(cellCounts).forEach(([idx, count]) => {
               const cellIdx = parseInt(idx);
               if (!revealed[cellIdx] && !certain[cellIdx]) {
                 canContainShip[cellIdx] = true;
-
-                // Probability is count / total placements
                 heatmap[cellIdx][color] = count / validPos.length;
               }
             });
           }
         });
 
-        // PASS 3: COMBINATORIAL RARE LOGIC
+        // PASS 3: COMBINATORIAL RARE LOGIC (Restricted Colors)
         if (missingRaresCount > 0) {
           const unidentifiedRares = allPossibleRares.filter((r) => !identifiedRares.includes(r));
-
-          // 1. Calculate Rares we are already SURE of but haven't clicked
           const raresCertainCount =
             Object.entries(certain).filter(([idx, color]) => unidentifiedRares.includes(color) && !revealed[idx]).length / 2;
-
           const raresToDistribute = Math.max(0, missingRaresCount - raresCertainCount);
 
-          // 2. Find all possible 1x2 placements
-          let validPos = getPossiblePlacements(2).filter((pos) => {
-            return pos.every((idx) => !virtualRevealed[idx]);
-          });
+          let validPos = getPossiblePlacements(2).filter((pos) => pos.every((idx) => !virtualRevealed[idx]));
 
           if (validPos.length > 0 && raresToDistribute > 0) {
-            // Count how many valid 1x2 placements cover each cell
             const cellCounts = {};
-            validPos.forEach((pos) => {
-              pos.forEach((idx) => {
-                cellCounts[idx] = (cellCounts[idx] || 0) + 1;
-              });
-            });
+            validPos.forEach((pos) => pos.forEach((idx) => (cellCounts[idx] = (cellCounts[idx] || 0) + 1)));
 
-            // --- THE WEIGHT LOGIC ---
-            // If 1 rare is left and a cell is in 5/10 placements, it's 50%.
-            // If 2 rares are left and a cell is in 5/10 placements, it's 100%.
             const weightPerOccurrence = raresToDistribute / validPos.length;
 
             Object.entries(cellCounts).forEach(([idx, count]) => {
               const cellIdx = parseInt(idx);
               if (!revealed[cellIdx] && !certain[cellIdx]) {
                 canContainShip[cellIdx] = true;
-
-                // Probability for the generic "?" category
-                // Math.min(1, ...) prevents rounding/overlap errors from exceeding 100%
                 const probability = Math.min(1, count * weightPerOccurrence);
-                heatmap[cellIdx]["?"] = (heatmap[cellIdx]["?"] || 0) + probability;
 
-                // Probability for specific individual rare colors
-                const individualWeight = probability / unidentifiedRares.length;
+                // Use generic "?" for unknown rares
+                heatmap[cellIdx]["?"] = probability;
+
+                // Only add specific color keys if that specific rare ship has been started
                 unidentifiedRares.forEach((r) => {
-                  heatmap[cellIdx][r] = (heatmap[cellIdx][r] || 0) + individualWeight;
+                  if (Object.values(revealed).includes(r)) {
+                    heatmap[cellIdx][r] = (heatmap[cellIdx][r] || 0) + probability / unidentifiedRares.length;
+                  }
                 });
               }
             });
           }
         }
 
-        // --- PASS 4: REVISED SMART BLUE LOGIC ---
+        // PASS 4: SMART BLUE LOGIC
         const totalShipSegments = 12 + totalRaresExpected * 2;
         const totalBluesExpected = 25 - totalShipSegments;
         const bluesRevealed = Object.values(revealed).filter((v) => v === "B").length;
 
-        // 1. First, identify all cells that CANNOT contain any ship.
-        // These are "Implicitly Certain" Blues.
-        let implicitlyCertainBlueIndices = [];
         for (let i = 0; i < 25; i++) {
           if (!revealed[i] && !certain[i] && !canContainShip[i]) {
             certain[i] = "B";
             heatmap[i] = { "B": 1 };
-            implicitlyCertainBlueIndices.push(i);
           }
         }
 
-        // 2. Now count ALL certain blues (Geometric + the ones we just found)
         const bluesCertainCount = Object.entries(certain).filter(([idx, color]) => color === "B" && !revealed[idx]).length;
-
-        // 3. Calculate remaining blues to distribute among truly unknown cells
         const bluesToDistribute = Math.max(0, totalBluesExpected - (bluesRevealed + bluesCertainCount));
-
-        // 4. Mystery cells are those that are NOT revealed, NOT certain, AND CAN contain a ship
         const mysteryCells = Array.from({ length: 25 }, (_, i) => i).filter((i) => !revealed[i] && !certain[i]);
-
         const mysteryBlueProb = mysteryCells.length > 0 ? bluesToDistribute / mysteryCells.length : 0;
 
-        // 5. Apply that probability to the remaining heatmap slots
         mysteryCells.forEach((idx) => {
-          heatmap[idx]["B"] = mysteryBlueProb;
+          heatmap[idx]["B"] = (heatmap[idx]["B"] || 0) + mysteryBlueProb;
         });
+
+        // FINAL PASS: DYNAMIC NORMALIZATION
+        const revealedColors = Object.values(revealed);
+        const rareKeys = ["R", "L", "D", "W"];
+
+        for (let i = 0; i < 25; i++) {
+          if (revealed[i] || certain[i]) continue;
+
+          // Filter out unstarted rare colors so they don't bloat the total weight
+          const raresToIgnore = rareKeys.filter((color) => !revealedColors.includes(color));
+
+          const totalWeight = Object.entries(heatmap[i])
+            .filter(([k]) => !raresToIgnore.includes(k))
+            .reduce((sum, [_, v]) => sum + v, 0);
+
+          if (totalWeight > 0) {
+            Object.keys(heatmap[i]).forEach((color) => {
+              if (raresToIgnore.includes(color)) {
+                delete heatmap[i][color];
+              } else {
+                heatmap[i][color] /= totalWeight;
+              }
+            });
+          }
+        }
 
         return { certain, heatmap };
       }
