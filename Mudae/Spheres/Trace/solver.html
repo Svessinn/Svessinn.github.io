@@ -574,7 +574,6 @@
           let scores = available.map((i) => {
             const h = heatmap[i];
             const blueProb = h["B"] || 0;
-            if (blueProb <= 0.001) return { idx: i, score: -Infinity }; // Skip impossible blues
             const tealProb = h["T"] || 0;
             const greenProb = h["G"] || 0;
             const yellowProb = h["Y"] || 0;
@@ -586,6 +585,7 @@
 
             switch (currentMode) {
               case "anti-teal":
+                if (blueProb <= 0.001) return { idx: i, score: -Infinity }; // Skip impossible blues
                 const tealFound = Boolean(Object.values(revealed).filter((v) => v === "T").length);
                 const greenFound = Boolean(Object.values(revealed).filter((v) => v === "G").length);
                 const yellowFound = Boolean(Object.values(revealed).filter((v) => v === "Y").length);
