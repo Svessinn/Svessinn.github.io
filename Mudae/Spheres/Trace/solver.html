@@ -574,7 +574,7 @@
           let scores = available.map((i) => {
             const h = heatmap[i];
             const blueProb = h["B"] || 0;
-            if (blueProb === 0) return { idx: i, score: -Infinity }; // Skip impossible blues
+            if (blueProb <= 0.001) return { idx: i, score: -Infinity }; // Skip impossible blues
             const tealProb = h["T"] || 0;
             const greenProb = h["G"] || 0;
             const yellowProb = h["Y"] || 0;
