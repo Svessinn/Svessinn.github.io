@@ -122,7 +122,30 @@
     </div>
 
     <script>
-      const SHIP_PROBABILITIES = { "R": 0.16, "W": 0.18, "L": 0.82, "D": 0.39 };
+      // Updated Data
+      const COMBO_DATA = {
+        6: [
+          { rares: ["L"], weight: 515 },
+          { rares: ["D"], weight: 259 },
+          { rares: ["R"], weight: 0 },
+          { rares: ["W"], weight: 0 },
+        ],
+        7: [
+          { rares: ["L", "D"], weight: 98 },
+          { rares: ["L", "R"], weight: 77 },
+          { rares: ["L", "W"], weight: 28 },
+          { rares: ["D", "R"], weight: 27 },
+          { rares: ["D", "W"], weight: 13 },
+          { rares: ["R", "W"], weight: 0 },
+        ],
+        8: [
+          { rares: ["L", "D", "R"], weight: 15 },
+          { rares: ["L", "D", "W"], weight: 8 },
+          { rares: ["L", "R", "W"], weight: 4 },
+          { rares: ["D", "R", "W"], weight: 3 },
+        ],
+        9: [{ rares: ["L", "D", "R", "W"], weight: 1 }],
+      };
       const SHIP_CONFIG = {
         "T": { name: "TEAL", length: 4, always: true },
         "G": { name: "GREEN", length: 3, always: true },
@@ -178,36 +201,76 @@
         document.getElementById("breakdown-log").innerHTML = "";
         document.getElementById("breakdown-tray").innerHTML = "";
 
+        // 1. Core ships that are always present
         const pool = [];
         Object.keys(SHIP_CONFIG).forEach((key) => {
           if (SHIP_CONFIG[key].always) pool.push({ color: key, length: SHIP_CONFIG[key].length });
         });
 
-        let optionalShips = [];
-        Object.keys(SHIP_PROBABILITIES).forEach((key) => {
-          if (Math.random() < SHIP_PROBABILITIES[key]) optionalShips.push({ color: key, length: SHIP_CONFIG[key].length });
-        });
+        // 2. Select color count and a weighted rare combination
+        const countWeights = [
+          { count: 6, weight: 515 + 259 },
+          { count: 7, weight: 98 + 77 + 28 + 27 + 13 },
+          { count: 8, weight: 15 + 8 + 4 + 3 },
+          { count: 9, weight: 1 },
+        ];
 
-        if (optionalShips.length === 0) optionalShips.push({ color: "L", length: 2 });
-        currentShips = [...pool, ...optionalShips.slice(0, 4)];
+        const totalCountWeight = countWeights.reduce((sum, cw) => sum + cw.weight, 0);
+        let countRandom = Math.random() * totalCountWeight;
+        let selectedCount = 6;
 
-        currentShips.forEach((item) => {
+        for (const cw of countWeights) {
+          if (countRandom < cw.weight) {
+            selectedCount = cw.count;
+            break;
+          }
+          countRandom -= cw.weight;
+        }
+        const possibleCombos = COMBO_DATA[selectedCount];
+
+        const totalWeight = possibleCombos.reduce((sum, c) => sum + c.weight, 0);
+        let random = Math.random() * totalWeight;
+        let chosenCombo = possibleCombos[0];
+
+        for (const combo of possibleCombos) {
+          if (random < combo.weight) {
+            chosenCombo = combo;
+            break;
+          }
+          random -= combo.weight;
+        }
+
+        const optionalShips = chosenCombo.rares.map((color) => ({
+          color: color,
+          length: SHIP_CONFIG[color].length,
+        }));
+
+        currentShips = [...pool, ...optionalShips];
+
+        // 3. Robust Placement: Sort longest-to-shortest to ensure they fit
+        const sortedShips = [...currentShips].sort((a, b) => b.length - a.length);
+
+        sortedShips.forEach((item) => {
           let placed = false;
           let attempts = 0;
-          while (!placed && attempts < 200) {
+          while (!placed && attempts < 500) {
             attempts++;
             const isRow = Math.random() > 0.5;
-            const lineIdx = Math.floor(Math.random() * 5);
+            const lineIdx = Math.floor(Math.random() * 5); // Row or Column index
             const startPos = Math.floor(Math.random() * (6 - item.length));
+
             let indices = [];
             for (let i = 0; i < item.length; i++) {
               indices.push(isRow ? lineIdx * 5 + (startPos + i) : (startPos + i) * 5 + lineIdx);
             }
+
             if (indices.every((idx) => board[idx] === "B")) {
               indices.forEach((idx) => (board[idx] = item.color));
               placed = true;
             }
           }
+          // If a major ship fails to place, we force a board reset
+          if (!placed && item.length > 2) reset();
         });
         render();
       }
