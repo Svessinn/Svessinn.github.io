@@ -122,7 +122,6 @@
     </div>
 
     <script>
-      // Updated Data
       const RARE_DATA = {
         6: [
           { rares: ["L"], weight: 515 },
@@ -146,6 +145,7 @@
         ],
         9: [{ rares: ["L", "D", "R", "W"], weight: 1 }],
       };
+
       const SHIP_CONFIG = {
         "T": { name: "TEAL", length: 4, always: true },
         "G": { name: "GREEN", length: 3, always: true },
@@ -189,25 +189,32 @@
       }
 
       function reset() {
+        // PHASE 0
+        // Reset all game state variables
         board = Array(25).fill("B");
         revealed = Array(25).fill(false);
         blueClicks = 0;
         totalValue = 0;
         gameOver = false;
 
+        // Reset status message
         const statusDiv = document.getElementById("status");
         statusDiv.innerHTML = "Click spheres. Only Blue costs a click!";
         statusDiv.style.color = "#aaa";
+
+        // Clear breakdown log and tray
         document.getElementById("breakdown-log").innerHTML = "";
         document.getElementById("breakdown-tray").innerHTML = "";
 
-        // 1. Core ships that are always present
+        // PHASE 1
+        // Core ships that are always present
         const pool = [];
         Object.keys(SHIP_CONFIG).forEach((key) => {
           if (SHIP_CONFIG[key].always) pool.push({ color: key, length: SHIP_CONFIG[key].length });
         });
 
-        // 2. Select color count and a weighted rare combination
+        // PHASE 2
+        // Rare combination selection logic based on weighted probabilities from RARE_DATA
         const countWeights = [
           { count: 6, weight: RARE_DATA[6].reduce((sum, c) => sum + c.weight, 0) },
           { count: 7, weight: RARE_DATA[7].reduce((sum, c) => sum + c.weight, 0) },
@@ -215,10 +222,12 @@
           { count: 9, weight: RARE_DATA[9].reduce((sum, c) => sum + c.weight, 0) },
         ];
 
+        // Weighted random selection for color count
         const totalCountWeight = countWeights.reduce((sum, cw) => sum + cw.weight, 0);
         let countRandom = Math.random() * totalCountWeight;
         let selectedCount = 6;
 
+        // Determine the selected color count based on the random value
         for (const cw of countWeights) {
           if (countRandom < cw.weight) {
             selectedCount = cw.count;
@@ -226,12 +235,15 @@
           }
           countRandom -= cw.weight;
         }
+        // Now select a rare combination based on the selected color count
         const possibleCombos = RARE_DATA[selectedCount];
 
+        // Weighted random selection for rare combination
         const totalWeight = possibleCombos.reduce((sum, c) => sum + c.weight, 0);
         let random = Math.random() * totalWeight;
         let chosenCombo = possibleCombos[0];
 
+        // Iterate through the combinations to find the one corresponding to the random value
         for (const combo of possibleCombos) {
           if (random < combo.weight) {
             chosenCombo = combo;
@@ -240,16 +252,20 @@
           random -= combo.weight;
         }
 
+        // Add the chosen rare ships to the pool
         const optionalShips = chosenCombo.rares.map((color) => ({
           color: color,
           length: SHIP_CONFIG[color].length,
         }));
 
+        // Combine core and optional ships for placement
         currentShips = [...pool, ...optionalShips];
 
-        // 3. Robust Placement: Sort longest-to-shortest to ensure they fit
+        // PHASE 3
+        // Sort ships by length (descending) to place larger ships first, increasing placement success
         const sortedShips = [...currentShips].sort((a, b) => b.length - a.length);
 
+        // Attempt to place each ship on the board, with a retry mechanism for larger ships to ensure they fit
         sortedShips.forEach((item) => {
           let placed = false;
           let attempts = 0;
